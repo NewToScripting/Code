@@ -1,0 +1,23 @@
+<Modules>
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="System.Windows.Forms" />
+  <Module PersistentId="51F9DB65-B87A-43EF-B306-5122845C7F72" ModuleId="EffectLibrary" />
+  <Module PersistentId="3FFD3A50-8108-4C58-8B51-68029A4A484A" ModuleId="InspireDisplay" />
+  <Module PersistentId="84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B" ModuleId="Inspire" />
+  <Module PersistentId="CC0300A8-D5D3-4F1F-80BD-9FEF1ACFC764" ModuleId="Transitionals" />
+  <Module PersistentId="1768731F-5125-4118-9B9E-5E9C8A2BDF99" ModuleId="SpinningLogo" />
+  <Module PersistentId="9894825C-DCBD-47F1-B408-EA8D8A7053AC" ModuleId="VideoModule" />
+  <Module PersistentId="9CFB30BD-5AA0-4556-BEF0-37DE5208B461" ModuleId="QuickTimeModule" />
+  <Module PersistentId="4E0F599D-469D-406A-A8FA-6DAFE15F5DE4" ModuleId="EventsModule" />
+  <Module PersistentId="85982185-637D-47A5-B61C-AED57AD8FBF5" ModuleId="PlaylistModule" />
+  <Module PersistentId="48AF3708-C4E9-44DC-A6B1-EB02FE9A36C9" ModuleId="Inspire.Client.Designer" />
+  <Module PersistentId="C26A9A1E-D31B-4D0D-ACBB-B16C22DA4435" ModuleId="Inspire.Server.Proxy" />
+  <Module PersistentId="DA9210DD-D24D-468A-9083-F3D953E41C63" ModuleId="Inspire.Common" />
+  <Module PersistentId="E1FE049D-1CBB-4990-BDC5-F81482D01D25" ModuleId="Inspire.AnimationLibrary" />
+  <Module PersistentId="DA0F05DD-F187-4322-82C2-012B3810675F" ModuleId="MapModule" />
+  <Module PersistentId="A89714AD-6030-411D-8586-248A73086AAD" ModuleId="FlightInfoModule" />
+  <Module PersistentId="88A997E1-2967-4B1F-82CD-C7B026E18FD1" ModuleId="FlightInfoModule.Proxy" />
+  <Module PersistentId="2C96C2E7-4C1C-459D-BB97-54786EFA8F53" ModuleId="ScrollModule" />
+  <Module PersistentId="F5D65895-4DF7-46F3-BC30-365D49196B4E" ModuleId="Inspire.Display.Service" />
+  <Module PersistentId="C42FE9CE-592A-46AB-833F-07E413C8AF47" ModuleId="RSSModule" />
+  <Module PersistentId="22DE639D-39D6-46E6-98A9-A85E8BAD80EB" ModuleId="Inspire.WatchDog.Interface" />
+</Modules>

@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Inspire.Client.Designer.DragCanvas.DragCanvas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:DragCanvas="clr-namespace:Inspire.Client.Designer.DragCanvas"
+    xmlns:Commands="clr-namespace:Inspire.Commands;assembly=Inspire"
+    Width="Auto" Height="Auto" AllowDrop="True" Drop="UserControl_Drop" Background="White" BorderThickness="1" BorderBrush="Black" MouseLeftButtonDown="UserControl_MouseLeftButtonDown" ContextMenu="{StaticResource DesignerCanvasContextMenu}">
+    
+    <UserControl.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.SelectAllCommand}" Executed="SelectAllExecuted" CanExecute="SelectAllCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.BringToFrontCommand}" Executed="BringToFrontExecuted" CanExecute="BringToFrontCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.BringForwardCommand}" Executed="BringForwardCommandExecuted" CanExecute="BringForwardCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.SendToBackCommand}" Executed="SendToBackCommandExecuted" CanExecute="SendToBackCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.SendBackwardCommand}" Executed="SendBackwardCommandExecuted" CanExecute="SendBackwardCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.FitToSlideCommand}" Executed="FitToSlideCommandExecuted" CanExecute="FitToSlideCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.AddReflectionCommand}" Executed="AddReflectionCommandExecuted" CanExecute="AddReflectionCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.MoveItemUpCommand}" Executed="MoveItemUpExecuted" CanExecute="MoveItemUpCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.MoveItemDownCommand}" Executed="MoveItemDownExecuted" CanExecute="MoveItemDownCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.MoveItemLeftCommand}" Executed="MoveItemLeftExecuted" CanExecute="MoveItemLeftCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.MoveItemRightCommand}" Executed="MoveItemRightExecuted" CanExecute="MoveItemRightCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.MoveItemUpShiftCommand}" Executed="MoveItemUpShiftExecuted" CanExecute="MoveItemUpShiftCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.MoveItemDownShiftCommand}" Executed="MoveItemDownShiftExecuted" CanExecute="MoveItemDownShiftCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.MoveItemLeftShiftCommand}" Executed="MoveItemLeftShiftExecuted" CanExecute="MoveItemLeftShiftCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.MoveItemRightShiftCommand}" Executed="MoveItemRightShiftExecuted" CanExecute="MoveItemRightShiftCanExecute" />
+
+    </UserControl.CommandBindings>
+    
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="./CanvasItem.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+    <ItemsControl ItemsSource="{Binding Path=DataItems}">
+        <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+                <DragCanvas:InspireCanvas IsItemsHost="True" Drop="DesignerCanvas_Drop" AllowDrop="True" PreviewMouseDown="InspireCanvas_MouseDown" PreviewMouseLeftButtonUp="InspireCanvas_PreviewMouseLeftButtonUp">
+                        <!--<DragCanvas:InspireCanvas.CacheMode>
+                            <BitmapCache EnableClearType="False" RenderAtScale="1" />
+                        </DragCanvas:InspireCanvas.CacheMode>-->
+                    </DragCanvas:InspireCanvas>
+            </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+    </ItemsControl>
+    <Border SnapsToDevicePixels="True" BorderBrush="#FF324B77" BorderThickness="1">
+    </Border></Grid>
+</UserControl>

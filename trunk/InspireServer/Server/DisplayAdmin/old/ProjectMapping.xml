@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<ProjectMappingInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" FileName="ProjectMapping.xml" xmlns="http://schemas.microsoft.com/pag/project-mapping">
+  <ProjectMappingTables>
+    <ProjectMappingTable Name="Inspire.Server.Services">
+      <ProjectMappings>
+        <ProjectMapping ProjectId="4eaab8d2-1b8f-4f5f-bc1e-3ea53e88332f" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.DisplayAdmin.BusinessEntities">
+          <Roles>
+            <Role Name="BusinessEntityRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="7de5ccad-e432-44c3-acda-896c6e0a2e1c" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.DisplayAdmin.BusinessLogic">
+          <Roles>
+            <Role Name="BusinessLogicRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="895961ce-7f5e-4433-b44c-caf1e996b39e" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.DisplayAdmin.DataAccess">
+          <Roles />
+        </ProjectMapping>
+        <ProjectMapping ProjectId="aa4793bd-aa2b-4263-9dde-c3931b0def2f" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.DisplayAdmin.DataContracts">
+          <Roles>
+            <Role Name="DataContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="3068d59c-fbb2-4f0d-844c-d82650b415aa" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.DisplayAdmin.FaultContracts">
+          <Roles>
+            <Role Name="FaultContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="79285d83-2f23-4c78-9b55-3a6098ab7e69" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.DisplayAdmin.MessageContracts">
+          <Roles>
+            <Role Name="MessageContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="281ec351-799f-4ec5-a17e-66120468a5ce" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.DisplayAdmin.ServiceImplementation">
+          <Roles>
+            <Role Name="ServiceRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="c0e3d1f3-7bdd-4cec-a9bd-20eb0b9824bf" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.DisplayAdmin.ServiceContracts">
+          <Roles>
+            <Role Name="ServiceContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="7142b075-bfe9-4285-b26a-8eb190480d23" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.DisplayAdmin.Host">
+          <Roles>
+            <Role Name="HostRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="ad29b959-d534-410d-8789-e5af4214edd8" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.DisplayAdmin.Client">
+          <Roles>
+            <Role Name="ClientRole" />
+          </Roles>
+        </ProjectMapping>
+      </ProjectMappings>
+    </ProjectMappingTable>
+  </ProjectMappingTables>
+</ProjectMappingInformation>

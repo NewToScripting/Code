@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hostDesignerModel dslVersion="1.0.0.0" Id="016be2a7-377a-44f5-86fa-f8b62742413b" namespace="http://Host.InspireDisplays.com" xmlns="http://schemas.microsoft.com/dsltools/HostDesigner">
+  <hostApplications>
+    <hostApplication name="HostApplication1" implementationProject="C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Tests\Inspire.Server.DisplayAdmin.Host" implementationTechnology="{44e8a8c3-3651-4932-bae3-1faf3684e2f3}|WCF|WCF Extensions">
+      <serviceDescriptions>
+        <serviceReference objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WcfServiceDescription&quot;&gt;&#xD;&#xA;    &lt;IsRequired&gt;true&lt;/IsRequired&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="DisplayAdminServiceReference" serviceImplementationType="Microsoft.Practices.ServiceFactory.ServiceContracts\Service\ScheduleService@Inspire.Server\Inspire.Server.DisplayAdmin.ServiceContractModel">
+          <endpoints>
+            <endpoint Id="698665a4-d40a-47de-ab5b-1f5cab9a63b0" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WcfEndpoint&quot;&gt;&#xD;&#xA;    &lt;IsRequired&gt;basicHttpBinding&lt;/IsRequired&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="Endpoint1" />
+          </endpoints>
+        </serviceReference>
+      </serviceDescriptions>
+    </hostApplication>
+  </hostApplications>
+  <clientApplications>
+    <clientApplication name="ClientApplication1" implementationTechnology="{44e8a8c3-3651-4932-bae3-1faf3684e2f3}|WCF|WCF Extensions" implementationProject="Inspire.Server.Services\Tests\Inspire.Server.DisplayAdmin.Client\Inspire.Server.DisplayAdmin.Client.csproj">
+      <proxies>
+        <proxy name="Proxy1">
+          <endpoint>
+            <endpointMoniker Id="698665a4-d40a-47de-ab5b-1f5cab9a63b0" />
+          </endpoint>
+        </proxy>
+      </proxies>
+    </clientApplication>
+  </clientApplications>
+</hostDesignerModel>

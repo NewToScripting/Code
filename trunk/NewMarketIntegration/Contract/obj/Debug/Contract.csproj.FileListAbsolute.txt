@@ -1,0 +1,20 @@
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\Contract\obj\Debug\ResolveAssemblyReference.cache
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\Contract\bin\Debug\Contract.dll
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\Contract\bin\Debug\Contract.pdb
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\Contract\obj\Debug\Contract.dll
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\Contract\obj\Debug\Contract.pdb
+C:\Users\jhaveard\Desktop\NewMarketIntegration\Contract\bin\Debug\Contract.dll
+C:\Users\jhaveard\Desktop\NewMarketIntegration\Contract\bin\Debug\Contract.pdb
+C:\Users\jhaveard\Desktop\NewMarketIntegration\Contract\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\NewMarketIntegration\Contract\obj\Debug\Contract.dll
+C:\Users\jhaveard\Desktop\NewMarketIntegration\Contract\obj\Debug\Contract.pdb
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\Contract\bin\Debug\Contract.dll
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\Contract\bin\Debug\Contract.pdb
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\Contract\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\Contract\obj\Debug\Contract.dll
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\Contract\obj\Debug\Contract.pdb
+C:\CODE\trunk\NewMarketIntegration\Contract\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\NewMarketIntegration\Contract\bin\Debug\Inspire.NewmarketInterface.Contract.dll
+C:\CODE\trunk\NewMarketIntegration\Contract\bin\Debug\Inspire.NewmarketInterface.Contract.pdb
+C:\CODE\trunk\NewMarketIntegration\Contract\obj\Debug\Inspire.NewmarketInterface.Contract.dll
+C:\CODE\trunk\NewMarketIntegration\Contract\obj\Debug\Inspire.NewmarketInterface.Contract.pdb

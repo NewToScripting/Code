@@ -1,0 +1,40 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectGuid>{c48b07d9-6c83-4798-ade0-710ddfc14a2f}</ProjectGuid>
+    <RootNamespace>Inspire.Server</RootNamespace>
+    <AssemblyName>Inspire.Server</AssemblyName>
+    <Name>Inspire.Server</Name>
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Model Include="Inspire.Server.Services.DataContractModel.datacontract">
+      <SubType>Content</SubType>
+    </Model>
+    <Content Include="Inspire.Server.Services.DataContractModel.datacontract.diagram">
+      <SubType>Content</SubType>
+      <DependentUpon>Inspire.Server.Services.DataContractModel.datacontract</DependentUpon>
+    </Content>
+    <Model Include="Inspire.Server.Services.HostModel.host">
+      <SubType>Content</SubType>
+    </Model>
+    <Content Include="Inspire.Server.Services.ServiceContractModel.servicecontract.diagram">
+      <SubType>Content</SubType>
+      <DependentUpon>Inspire.Server.Services.ServiceContractModel.servicecontract</DependentUpon>
+    </Content>
+    <Model Include="Inspire.Server.Services.ServiceContractModel.servicecontract">
+      <SubType>Content</SubType>
+    </Model>
+  </ItemGroup>
+  <PropertyGroup>
+    <SFBasePath>$(DevEnvDir)\PublicAssemblies</SFBasePath>
+  </PropertyGroup>
+  <!-- Since this project flavor isnt supposed to be build, we do nothing in the following Targets -->
+  <Target Name="Build">
+  </Target>
+  <Target Name="Clean">
+  </Target>
+  <Target Name="Rebuild">
+  </Target>
+</Project>

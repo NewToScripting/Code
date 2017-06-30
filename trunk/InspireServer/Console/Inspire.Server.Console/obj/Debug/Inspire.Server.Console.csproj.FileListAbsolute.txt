@@ -1,0 +1,25 @@
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console\bin\Debug\Inspire.Server.Console.exe
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console\bin\Debug\Inspire.Server.Console.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.Form1.resources
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.Properties.Resources.resources
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.csproj.GenerateResource.Cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.exe
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.pdb
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console\bin\Debug\Inspire.Server.Console.exe
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console\bin\Debug\Inspire.Server.Console.pdb
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.Form1.resources
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.Properties.Resources.resources
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.csproj.GenerateResource.Cache
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.exe
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console\bin\Debug\Inspire.Server.Console.exe
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console\bin\Debug\Inspire.Server.Console.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.Form1.resources
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.Properties.Resources.resources
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.csproj.GenerateResource.Cache
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.exe
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.pdb
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console\obj\Debug\Inspire.Server.Console.pdb

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="88b2c29c-bef1-4c89-8df0-138f42036057" name="jhaveard@CAPEHORN 2009-10-06 20:46:54" runUser="CAPEHORN\jhaveard" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="f87716d9-9b5a-43ed-b471-b2677316cf16">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\CODE\InspireServer\Events Server\_RebuildAll\TestResults\jhaveard_CAPEHORN 2009-10-06 20_46_54">
+      <DeploymentItem filename="C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.dll" />
+      <DeploymentItem filename="C:\CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceImplementation\bin\Debug\Inspire.Server.Direction.ServiceImplementation.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Error">
+    <Counters total="2" executed="2" error="0" failed="1" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="CAPEHORN" outcome="Error" timestamp="2009-10-06T20:47:47.9255655-04:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <Times creation="2009-10-06T20:46:54.5055655-04:00" queuing="2009-10-06T20:46:55.9865655-04:00" start="2009-10-06T20:46:56.2315655-04:00" finish="2009-10-06T20:47:47.9255655-04:00" />
+  <TestDefinitions>
+    <UnitTest name="LoadNewEvents" storage="c:\code\inspireserver\events server\_rebuildall\events.unit.tests\bin\debug\events.unit.tests.dll" id="b862f161-07fc-bd47-d9af-d26885785c72">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="949aae4c-abbd-4c79-a7a2-4439fec90ede" />
+      <TestMethod codeBase="C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\bin\Debug\Events.Unit.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Events.Unit.Tests.EventTests, Events.Unit.Tests" name="LoadNewEvents" />
+    </UnitTest>
+    <UnitTest name="AddEventFileFormatUsingEndpoint" storage="c:\code\inspireserver\events server\_rebuildall\events.unit.tests\bin\debug\events.unit.tests.dll" id="f42e24c8-8c07-0c2c-dd07-a1341c79058b">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\bin\Debug\Events.Unit.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Events.Unit.Tests.EventTests, Events.Unit.Tests" name="AddEventFileFormatUsingEndpoint" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b862f161-07fc-bd47-d9af-d26885785c72" executionId="949aae4c-abbd-4c79-a7a2-4439fec90ede" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f42e24c8-8c07-0c2c-dd07-a1341c79058b" executionId="194f8e20-eaa9-4bac-a429-e601f05d37ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="949aae4c-abbd-4c79-a7a2-4439fec90ede" testId="b862f161-07fc-bd47-d9af-d26885785c72" testName="LoadNewEvents" computerName="CAPEHORN" duration="00:00:00.3087887" startTime="2009-10-06T20:46:56.3465655-04:00" endTime="2009-10-06T20:46:57.3545655-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Events.Unit.Tests.EventTests.LoadNewEvents threw exception:  System.ServiceModel.FaultException`1[Events.Unit.Tests.EventServiceReference.GeneralFaultContract]: Error loading events into database..</Message>
+          <StackTrace> 
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc&amp; rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   at Events.Unit.Tests.EventServiceReference.EventServiceContract.LoadEvents(LoadEventsRequestMessage request)
+   at Events.Unit.Tests.EventServiceReference.EventServiceContractClient.Events.Unit.Tests.EventServiceReference.EventServiceContract.LoadEvents(LoadEventsRequestMessage request) in C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\Service References\EventServiceReference\Reference.cs:line 1706
+   at Events.Unit.Tests.EventServiceReference.EventServiceContractClient.LoadEvents() in C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\Service References\EventServiceReference\Reference.cs:line 1711
+   at Events.Unit.Tests.EventTests.LoadNewEvents() in C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\EventTests.cs:line 149
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="194f8e20-eaa9-4bac-a429-e601f05d37ef" testId="f42e24c8-8c07-0c2c-dd07-a1341c79058b" testName="AddEventFileFormatUsingEndpoint" computerName="CAPEHORN" duration="00:00:50.5620000" startTime="2009-10-06T20:46:57.3635655-04:00" endTime="2009-10-06T20:47:47.9255655-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

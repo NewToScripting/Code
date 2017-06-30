@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c8210d96-2d97-47d4-879a-c075c75c9962" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/SlideManager/SlideFileManagerServiceReference.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SlideFileManagerServiceReference.disco" MetadataType="Disco" ID="681b9e6c-2d78-4e2c-9977-1b7698775b35" SourceId="1" SourceUrl="http://jhaveard-pc/SlideManager/SlideFileManagerServiceReference.svc?disco" />
+    <MetadataFile FileName="SlideFileManagerService.wsdl" MetadataType="Wsdl" ID="8e87e97e-f579-4341-ad96-e40c86d05e49" SourceId="1" SourceUrl="http://jhaveard-pc/SlideManager/SlideFileManagerServiceReference.svc?wsdl" />
+    <MetadataFile FileName="SlideFileManagerServiceReference.xsd" MetadataType="Schema" ID="7de5cfd4-8cee-4c27-94c9-51e577cfca14" SourceId="1" SourceUrl="http://jhaveard-pc/SlideManager/SlideFileManagerServiceReference.svc?xsd=xsd1" />
+    <MetadataFile FileName="SlideFileManagerServiceReference1.xsd" MetadataType="Schema" ID="55c5697b-c5d8-4c97-97e7-891c17a36077" SourceId="1" SourceUrl="http://jhaveard-pc/SlideManager/SlideFileManagerServiceReference.svc?xsd=xsd2" />
+    <MetadataFile FileName="SlideFileManagerServiceReference2.xsd" MetadataType="Schema" ID="2ee5653f-b603-4faa-9ee6-5e3f0c09ab8f" SourceId="1" SourceUrl="http://jhaveard-pc/SlideManager/SlideFileManagerServiceReference.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

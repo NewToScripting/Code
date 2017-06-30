@@ -1,0 +1,5 @@
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.FaultContracts\bin\Debug\Inspire.Server.Groups.FaultContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.FaultContracts\bin\Debug\Inspire.Server.Groups.FaultContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.FaultContracts\obj\Debug\Inspire.Server.Groups.FaultContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.FaultContracts\obj\Debug\Inspire.Server.Groups.FaultContracts.pdb

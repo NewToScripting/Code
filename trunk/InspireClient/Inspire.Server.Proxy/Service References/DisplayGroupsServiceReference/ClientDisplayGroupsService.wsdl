@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://schemas.inspiredisplays.com/ServiceContract.Model/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="ClientDisplayGroupsService" targetNamespace="http://schemas.inspiredisplays.com/ServiceContract.Model/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/ServiceContract.Model/Imports">
+      <xsd:import schemaLocation="http://testserver/DisplayManager/DisplayGroupServiceReference.svc?xsd=xsd2" namespace="http://schemas.inspiredisplays.com/ServiceContract.Model/" />
+      <xsd:import schemaLocation="http://testserver/DisplayManager/DisplayGroupServiceReference.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com/DataContract.Model/" />
+      <xsd:import schemaLocation="http://testserver/DisplayManager/DisplayGroupServiceReference.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllDisplayGroupsRequestMessage" />
+  <wsdl:message name="GetAllDisplayGroupsResponseMessage">
+    <wsdl:part name="DisplayGroups" element="tns:DisplayGroups" />
+  </wsdl:message>
+  <wsdl:message name="ClientDisplayGroupsServiceContract_GetAllDisplayGroups_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q1:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplayGroupsRequestMessage">
+    <wsdl:part name="PropertyID" element="tns:PropertyID" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplayGroupsResponseMessage">
+    <wsdl:part name="DisplayGroups" element="tns:DisplayGroups" />
+  </wsdl:message>
+  <wsdl:message name="ClientDisplayGroupsServiceContract_GetDisplayGroups_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q2:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddDisplayGroupRequestMessage">
+    <wsdl:part name="DisplayGroup" element="tns:DisplayGroup" />
+  </wsdl:message>
+  <wsdl:message name="AddDisplayGroupResponseMessage" />
+  <wsdl:message name="ClientDisplayGroupsServiceContract_AddDisplayGroup_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q3:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDisplayGroupRequestMessage">
+    <wsdl:part name="DisplayGroup" element="tns:DisplayGroup" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDisplayGroupResponseMessage" />
+  <wsdl:message name="ClientDisplayGroupsServiceContract_UpdateDisplayGroup_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q4:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDisplayGroupRequestMessage">
+    <wsdl:part name="GUID" element="tns:GUID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDisplayGroupResponseMessage" />
+  <wsdl:message name="ClientDisplayGroupsServiceContract_DeleteDisplayGroup_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q5:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="ClientDisplayGroupsServiceContract">
+    <wsdl:operation name="GetAllDisplayGroups">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/GetAllDisplayGroups" name="GetAllDisplayGroupsRequestMessage" message="tns:GetAllDisplayGroupsRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/GetAllDisplayGroupsResponse" name="GetAllDisplayGroupsResponseMessage" message="tns:GetAllDisplayGroupsResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/GetAllDisplayGroupsGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayGroupsServiceContract_GetAllDisplayGroups_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayGroups">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/GetDisplayGroups" name="GetDisplayGroupsRequestMessage" message="tns:GetDisplayGroupsRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/GetDisplayGroupsResponse" name="GetDisplayGroupsResponseMessage" message="tns:GetDisplayGroupsResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/GetDisplayGroupsGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayGroupsServiceContract_GetDisplayGroups_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDisplayGroup">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/AddDisplayGroup" name="AddDisplayGroupRequestMessage" message="tns:AddDisplayGroupRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/AddDisplayGroupResponse" name="AddDisplayGroupResponseMessage" message="tns:AddDisplayGroupResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/AddDisplayGroupGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayGroupsServiceContract_AddDisplayGroup_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDisplayGroup">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/UpdateDisplayGroup" name="UpdateDisplayGroupRequestMessage" message="tns:UpdateDisplayGroupRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/UpdateDisplayGroupResponse" name="UpdateDisplayGroupResponseMessage" message="tns:UpdateDisplayGroupResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/UpdateDisplayGroupGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayGroupsServiceContract_UpdateDisplayGroup_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDisplayGroup">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/DeleteDisplayGroup" name="DeleteDisplayGroupRequestMessage" message="tns:DeleteDisplayGroupRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/DeleteDisplayGroupResponse" name="DeleteDisplayGroupResponseMessage" message="tns:DeleteDisplayGroupResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/DeleteDisplayGroupGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayGroupsServiceContract_DeleteDisplayGroup_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DisplayGroupEndpoint" type="tns:ClientDisplayGroupsServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllDisplayGroups">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/GetAllDisplayGroups" style="document" />
+      <wsdl:input name="GetAllDisplayGroupsRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetAllDisplayGroupsResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayGroups">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/GetDisplayGroups" style="document" />
+      <wsdl:input name="GetDisplayGroupsRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetDisplayGroupsResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddDisplayGroup">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/AddDisplayGroup" style="document" />
+      <wsdl:input name="AddDisplayGroupRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddDisplayGroupResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDisplayGroup">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/UpdateDisplayGroup" style="document" />
+      <wsdl:input name="UpdateDisplayGroupRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateDisplayGroupResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDisplayGroup">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayGroupsServiceContract/DeleteDisplayGroup" style="document" />
+      <wsdl:input name="DeleteDisplayGroupRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteDisplayGroupResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClientDisplayGroupsService">
+    <wsdl:port name="DisplayGroupEndpoint" binding="tns:DisplayGroupEndpoint">
+      <soap:address location="http://testserver/DisplayManager/DisplayGroupServiceReference.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

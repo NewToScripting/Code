@@ -1,0 +1,56 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer>
+      <setting name="UsedSolutionBuilderID">0</setting>
+    </integer>
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="7DE5CCAD-E432-44C3-ACDA-896C6E0A2E1C/f:SlideFile.cs" caret="0" scrollPosition="0|0" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:MainForm.Designer.cs" caret="2873" scrollPosition="0|0" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:MainForm.cs" caret="1605" scrollPosition="0|0" />
+      <File id="C0E3D1F3-7BDD-4CEC-A9BD-20EB0B9824BF/d:GeneratedCode/f:IScheduleServiceContract.cs" caret="0" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:EventLogger.cs" caret="934" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:ScheduleDatabaseAccess.cs" caret="0" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:SlideDatabaseAccess.cs" caret="699" scrollPosition="0|0" />
+      <File id="3068D59C-FBB2-4F0D-844C-D82650B415AA/d:GeneratedCode/f:DefaultFaultContract.cs" caret="0" scrollPosition="0|0" />
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:UpdateDisplaysRequest.cs" caret="0" scrollPosition="0|0" />
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:PingDisplaysRequest.cs" caret="0" scrollPosition="0|0" />
+      <File id="281EC351-799F-4EC5-A17E-66120468A5CE/d:GeneratedCode/f:ScheduleService.cs" caret="1263" scrollPosition="0|27" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplayDatabaseAccess.cs" caret="228" scrollPosition="0|27" />
+      <File id="4EAAB8D2-1B8F-4F5F-BC1E-3EA53E88332F/f:_ResourceAccessFasade.cs" caret="703" scrollPosition="0|6" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="362" scrollPosition="0|2" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:EventLogger.cs" caret="1977" scrollPosition="0|39" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:EventLogger.cs" caret="86" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="5254" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:SlideDatabaseAccess.cs" caret="892" scrollPosition="0|20" />
+      <File id="4EAAB8D2-1B8F-4F5F-BC1E-3EA53E88332F/f:_ResourceAccessFasade.cs" caret="756" scrollPosition="0|4" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:MainForm.cs" caret="1605" scrollPosition="0|37" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:MainForm.Designer.cs" caret="2392" scrollPosition="0|50" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:MainForm.Designer.cs" caret="2873" scrollPosition="0|50" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="5270" scrollPosition="0|127" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:SlideDatabaseAccess.cs" caret="2087" scrollPosition="0|49" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:SlideDatabaseAccess.cs" caret="176" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="4837" scrollPosition="0|124" />
+      <File id="281EC351-799F-4EC5-A17E-66120468A5CE/d:GeneratedCode/f:ScheduleService.cs" caret="1312" scrollPosition="0|22" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="272" scrollPosition="0|0" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+</Configuration>

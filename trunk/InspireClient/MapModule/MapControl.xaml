@@ -1,0 +1,228 @@
+﻿<UserControl x:Class="MapModule.MapControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:Windows7Touch="clr-namespace:InfoStrat.VE.Windows7Touch;assembly=InfoStrat.VE.Windows7Touch" xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire" xmlns:Controls="clr-namespace:Transitionals.Controls;assembly=Transitionals" xmlns:MapModule="clr-namespace:MapModule" xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" mc:Ignorable="d" 
+             PreviewMouseDown="UserControl_PreviewMouseDown" PreviewTouchDown="UserControl_PreviewTouchDown" TouchMove="UserControl_TouchMove" IsVisibleChanged="UserControl_IsVisibleChanged" xmlns:sw ="clr-namespace:System.Windows;assembly=PresentationFramework">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type Windows7Touch:Win7TouchVEPushPin}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Windows7Touch:Win7TouchVEPushPin}">
+                        <StackPanel>
+                            <sw:VisualStateManager.VisualStateGroups>
+                                <sw:VisualStateGroup x:Name="SizeStates">
+                                    <sw:VisualState x:Name="Normal"/>
+                                    <sw:VisualState x:Name="State1">
+                                            <Storyboard>
+                                                <!--<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.04" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.2"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.04" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.2"/>
+                                            </DoubleAnimationUsingKeyFrames>-->
+                                                <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" />
+                                                <DoubleAnimation To="1.2" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" />
+                                                <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" />
+                                                <DoubleAnimation To="1.2" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" />
+                                                <DoubleAnimation To="0" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" />
+                                                <DoubleAnimation To="-10" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" />
+                                            <DoubleAnimation To="0" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" />
+                                            <DoubleAnimation To="-10" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" />
+                                            <DoubleAnimation To="0" Duration="0:00:00.0" Storyboard.TargetName="myText" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                                                <DoubleAnimation To="100" Duration="0:00:00.2" BeginTime="00:00:00.4" Storyboard.TargetName="myText" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                                            </Storyboard>
+                                    </sw:VisualState>
+                                    <sw:VisualState x:Name="State2">
+                                            <Storyboard>
+                                                <!--<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.04" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.04" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>-->
+                                                <DoubleAnimation To="1.2" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" />
+                                                <DoubleAnimation To="1" Duration="0:00:00.2" BeginTime="00:00:00.4" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" />
+                                                <DoubleAnimation To="1.2" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" />
+                                                <DoubleAnimation To="1" Duration="0:00:00.2" BeginTime="00:00:00.4" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" />
+                                                <DoubleAnimation To="-10" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" />
+                                                <DoubleAnimation To="0" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" />
+                                            <DoubleAnimation To="-10" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" />
+                                            <DoubleAnimation To="0" Duration="0:00:00.2" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" />
+                                            <DoubleAnimation To="100" Duration="0:00:00.0" Storyboard.TargetName="myText" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                                                <DoubleAnimation To="0" Duration="0:00:00.2" Storyboard.TargetName="myText" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                                                <!--<DoubleAnimation To="0" Duration="0:00:00.7" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                                            <DoubleAnimation To="1" Duration="0:00:00.4" Storyboard.TargetName="myContentPresenter" Storyboard.TargetProperty="(UIElement.Opacity)" />-->
+                                                <!--<DoubleAnimation To="0" Duration="0:00:00.4" Storyboard.TargetName="myText" Storyboard.TargetProperty="Width" />
+                                            <DoubleAnimation To="100" Duration="0:00:00.7" Storyboard.TargetName="myText" Storyboard.TargetProperty="Width" />-->
+                                            </Storyboard>
+                                    </sw:VisualState>
+                                </sw:VisualStateGroup>
+                            </sw:VisualStateManager.VisualStateGroups>
+                                <StackPanel x:Name="myContentPresenter">
+                                    <StackPanel.RenderTransform>
+                                        <TransformGroup>
+                                            <TransformGroup.Children>
+                                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                <SkewTransform AngleX="0" AngleY="0" />
+                                                <RotateTransform Angle="0" CenterX="0" CenterY="0" />
+                                                <TranslateTransform X="0" Y="0" />
+                                            </TransformGroup.Children>
+                                        </TransformGroup>
+                                    </StackPanel.RenderTransform>
+                                <Border  
+                  CornerRadius="5,5,5,5" 
+                  BorderThickness="2,2,2,2" 
+                  Name="myText" Opacity="0" Background="#CB020202"
+                  BorderBrush="White"
+                  RenderTransformOrigin="0.5,0.5">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Border Grid.Row="0" CornerRadius="4,4,0,0">
+                                            <Border.Background>
+                                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                    <GradientStop Color="#08FFFFFF" Offset="0"/>
+                                                    <GradientStop Color="#3FFFFFFF" Offset="1"/>
+                                                </LinearGradientBrush>
+                                            </Border.Background>
+                                        </Border>
+                                        <TextBlock Grid.RowSpan="2" VerticalAlignment="Center" Margin="10,5,10,5" FontWeight="Bold" Foreground="White" Text="{Binding Path=Name}"/>
+                                    </Grid>
+                                </Border>
+                                <MapModule:DynamicMarker TouchDown="DynamicMarker_TouchDown" MouseDown="DynamicMarker_MouseDown" SelectedTemplate="{Binding Path=CategoryStyle}" Title="{Binding Path=LocationName}">
+                                    <MapModule:DynamicMarker.Effect>
+                                <DropShadowEffect ShadowDepth="3" BlurRadius="6"/>
+                            </MapModule:DynamicMarker.Effect>
+                        </MapModule:DynamicMarker>
+                        </StackPanel>
+                        </StackPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+		
+		<SolidColorBrush x:Key="CheckBoxStroke" Color="#8E8F8F"/>
+                                <Style x:Key="CheckRadioFocusVisual">
+                                                <Setter Property="Control.Template">
+                                                                <Setter.Value>
+                                                                                <ControlTemplate>
+                                                                                                <Rectangle Stroke="Black" StrokeDashArray="1 2" StrokeThickness="1" Margin="14,0,0,0" SnapsToDevicePixels="true"/>
+                                                                                </ControlTemplate>
+                                                                </Setter.Value>
+                                                </Setter>
+                                </Style>
+                                <Style x:Key="RadioButtonStyle1" TargetType="{x:Type RadioButton}">
+                                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+                                                <Setter Property="Background" Value="#B2F4F4F4"/>
+                                                <Setter Property="BorderBrush" Value="{StaticResource CheckBoxStroke}"/>
+                                                <Setter Property="BorderThickness" Value="1"/>
+                                                <Setter Property="Template">
+                                                                <Setter.Value>
+                                                                                <ControlTemplate TargetType="{x:Type RadioButton}">
+                                                                                                <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                                                                                                                <ContentPresenter HorizontalAlignment="Center" Margin="10" VerticalAlignment="Center" RecognizesAccessKey="True"/>
+                                                                                                </Border>
+                                                                                                <ControlTemplate.Triggers>
+                                                                                                                <Trigger Property="HasContent" Value="true">
+                                                                                                                                <Setter Property="FocusVisualStyle" Value="{StaticResource CheckRadioFocusVisual}"/>
+                                                                                                                                <Setter Property="Padding" Value="4,0,0,0"/>
+                                                                                                                </Trigger>
+                                                                                                                <Trigger Property="IsEnabled" Value="false">
+                                                                                                                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                                                                                                                </Trigger>
+                                                                                                                <Trigger Property="IsChecked" Value="true">
+                                                                                                                                <Setter Property="Background" Value="Blue"/>
+                                                                                                                                <Setter Property="Foreground" Value="White"/>
+                                                                                                                </Trigger>
+                                                                                                </ControlTemplate.Triggers>
+                                                                                </ControlTemplate>
+                                                                </Setter.Value>
+                                                </Setter>
+                                </Style>
+
+        <Style x:Key="ButtonFocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Stroke="Black" StrokeDashArray="1 2" StrokeThickness="1" Margin="2" SnapsToDevicePixels="true"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <LinearGradientBrush x:Key="ButtonNormalBackground" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#F3F3F3" Offset="0"/>
+            <GradientStop Color="#EBEBEB" Offset="0.5"/>
+            <GradientStop Color="#DDDDDD" Offset="0.5"/>
+            <GradientStop Color="#CDCDCD" Offset="1"/>
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="ButtonNormalBorder" Color="#FF707070"/>
+        <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource ButtonNormalBackground}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource ButtonNormalBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Microsoft_Windows_Themes:ButtonChrome x:Name="Chrome" SnapsToDevicePixels="true" BorderBrush="{TemplateBinding BorderBrush}" RenderDefaulted="{TemplateBinding IsDefaulted}" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}">
+                            <Microsoft_Windows_Themes:ButtonChrome.Background>
+                                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                    <GradientStop Color="#19F3F3F3" Offset="0"/>
+                                    <GradientStop Color="#4CEBEBEB" Offset="0.5"/>
+                                    <GradientStop Color="#33DDDDDD" Offset="0.5"/>
+                                    <GradientStop Color="#19CDCDCD" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Microsoft_Windows_Themes:ButtonChrome.Background>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True"/>
+                        </Microsoft_Windows_Themes:ButtonChrome>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter Property="RenderDefaulted" TargetName="Chrome" Value="true"/>
+                            </Trigger>
+                            <Trigger Property="ToggleButton.IsChecked" Value="true">
+                                <Setter Property="RenderPressed" TargetName="Chrome" Value="true"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="#ADADAD"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <DockPanel x:Name="PART_DockPanel" LastChildFill="True"><!---->
+        <StackPanel x:Name="PART_SearchButton" HorizontalAlignment="Left" Width="500" DockPanel.Dock="Bottom" MouseDown="StackPanel_MouseDown" Height="100" TouchDown="StackPanel_TouchDown"   Orientation="Horizontal" Background="{DynamicResource BarelyVisible}">
+            <Image Margin="30,0,0,0" Source="Resources/Images/search.png" Width="80" RenderTransformOrigin="1.221,0.013"/>
+            <TextBlock Margin="31,3,0,13"  TextWrapping="Wrap" Text="Search" Width="288" FontSize="60" FontWeight="Bold" Foreground="White" VerticalAlignment="Center">
+        		<TextBlock.Effect>
+        			<DropShadowEffect ShadowDepth="3" BlurRadius="8"/>
+        		</TextBlock.Effect>
+            </TextBlock>
+        </StackPanel>
+        <Controls:TransitionElement DockPanel.Dock="Left" x:Name="PART_CategoryHolder" Width="500" HorizontalAlignment="Stretch" />
+        <Grid>
+            <Viewbox Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <ContentPresenter x:Name="mapHolder"/>
+            </Viewbox>
+            <StackPanel x:Name="PART_MapMode"   Margin="0,11.556,9,0" VerticalAlignment="Top" Height="48" Orientation="Horizontal" HorizontalAlignment="Right" Width="277.778">
+                <RadioButton x:Name="tglArial" FontWeight="Bold" GroupName="mapView" Checked="tglMap_Checked" IsChecked="True" Width="80" Margin="5" Style="{DynamicResource RadioButtonStyle1}" Content="Aerial" />
+                <RadioButton x:Name="tglHybrid" FontWeight="Bold" GroupName="mapView" Checked="tglMap_Checked" Width="80" Style="{DynamicResource RadioButtonStyle1}" Margin="5" Content="Hybrid" />
+                <RadioButton x:Name="tglRoad" FontWeight="Bold" Checked="tglMap_Checked" GroupName="mapView" Width="80" Style="{DynamicResource RadioButtonStyle1}" Margin="5" Content="Road" />
+            </StackPanel>
+            <StackPanel x:Name="PART_ZoomControls" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10">
+                <Button Foreground="White" Click="ZoomIn_Click" Height="40" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="25" VerticalContentAlignment="Center" Width="40" Style="{StaticResource ButtonStyle1}">+</Button>
+                <Button Foreground="White" Click="ZoomOut_Click" Height="40" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="25" Margin="5" VerticalContentAlignment="Center" Width="40" Style="{StaticResource ButtonStyle1}">-</Button>
+            </StackPanel>
+            <Controls:TransitionElement Grid.Column="1" x:Name="detailsHolder" HorizontalAlignment="Left" Width="600" VerticalAlignment="Top" Margin="10" />
+        </Grid>
+    </DockPanel>
+</UserControl>

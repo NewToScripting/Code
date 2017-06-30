@@ -1,0 +1,144 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:WeatherModule="clr-namespace:WeatherModule">
+    <DataTemplate DataType="{x:Type WeatherModule:WeatherControl}">
+    <Viewbox>
+    <StackPanel Orientation="Vertical">
+                <StackPanel Margin="10" Orientation="Vertical">
+                <TextBlock Foreground="White" Margin="5,0,0,0" FontSize="22" FontWeight="Bold" Text="Today" />
+                <Grid VerticalAlignment="Top" Height="135.5" Width="500">
+                    <Image HorizontalAlignment="Left" Margin="18,19,0,36.5" Width="80" Source="{Binding WeatherReport.BackgroundImage, Mode=OneWay}"/>
+                    <StackPanel Margin="117,14.5,0,0" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <TextBlock Foreground="White" VerticalAlignment="Top" FontSize="65" Text="{Binding WeatherReport.LatestWeather.TemperatureString, Mode=OneWay}" />
+                    </StackPanel>
+                    <TextBlock Foreground="White" Text="{Binding WeatherReport.LatestWeather.SkyCondition.SkyCondition, Mode=OneWay}" FontSize="19" FontWeight="Bold" Margin="20,0,0,11" VerticalAlignment="Bottom" Height="26.543" HorizontalAlignment="Left" />
+                    <StackPanel Orientation="Horizontal" Margin="0,10,20,0" HorizontalAlignment="Right" >
+                            <StackPanel HorizontalAlignment="Right" Margin="0,0,8,0"  VerticalAlignment="Top" ><!--Width="96.843" Height="84.957"-->
+                                <TextBlock Foreground="White" FontSize="18" Text="High:" />
+                                <TextBlock Foreground="White" FontSize="18" Text="Low:" />
+                                <TextBlock Foreground="White" FontSize="18" Text="Humidity:" />
+                                <TextBlock Foreground="White" FontSize="18" Text="Wind:" />
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.Forecast[0].HighTemperatureString}"/>
+                            <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.Forecast[0].LowTemperatureString}"/>
+                            <StackPanel Orientation="Horizontal">
+                                    <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.LatestWeather.Humidity}"/>
+                                    <TextBlock Foreground="White" FontWeight="Bold" FontSize="17" Text="%"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.LatestWeather.WindVector.Speed}"/>
+                                <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.LatestWeather.WindVector.Direction}"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                    <TextBlock Margin="0,0,64,8" Foreground="White" FontSize="18" VerticalAlignment="Bottom" Height="19.543" Text="Chance of Rain:" HorizontalAlignment="Right" Width="160"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="73.987" Height="24.543" Margin="0,0,2,4.5">
+                            <TextBlock FontWeight="Bold" Text="{Binding Path=WeatherReport.Forecast[0].Precipitation}" Foreground="White" FontSize="20" />
+                            <TextBlock FontWeight="Bold" Foreground="White" FontSize="18" Text="%"/>
+                        </StackPanel>
+                    </Grid>
+            </StackPanel>
+                <StackPanel Margin="10" Orientation="Vertical">
+                    <TextBlock Foreground="White" Margin="5,0,0,0" FontSize="22" FontWeight="Bold" Text="{Binding Path=WeatherReport.Forecast[1].StartTime.DayOfWeek}" />
+                    <Grid VerticalAlignment="Top" Height="135.5" Width="500">
+                        <Image HorizontalAlignment="Left" Margin="18,19,0,36.5" Width="80" Source="{Binding Path=Day1Image, Mode=OneWay}"/>
+                        <StackPanel Margin="117,14.5,0,0" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                            <TextBlock Foreground="White" VerticalAlignment="Top" FontSize="65" Text="{Binding WeatherReport.Forecast[1].HighTemperatureString, Mode=OneWay}" />
+                        </StackPanel>
+                        <TextBlock Foreground="White" Text="{Binding WeatherReport.Forecast[1].SkyCondition.SkyCondition, Mode=OneWay}" FontSize="19" FontWeight="Bold" Margin="20,0,0,11" VerticalAlignment="Bottom" Height="26.543" HorizontalAlignment="Left" />
+                        <StackPanel Orientation="Horizontal" Margin="0,10,20,0" HorizontalAlignment="Right" >
+                            <StackPanel HorizontalAlignment="Right" Margin="0,0,8,0" VerticalAlignment="Top">
+                                <TextBlock Foreground="White" FontSize="18" Text="High:" />
+                                <TextBlock Foreground="White" FontSize="18" Text="Low:" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.Forecast[1].HighTemperatureString}"/>
+                                <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.Forecast[1].LowTemperatureString}"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <TextBlock Margin="0,0,64,8" Foreground="White" FontSize="18" VerticalAlignment="Bottom" Height="19.543" Text="Chance of Rain:" HorizontalAlignment="Right" Width="160"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="73.987" Height="24.543" Margin="0,0,2,4.5">
+                            <TextBlock FontWeight="Bold" Text="{Binding Path=WeatherReport.Forecast[1].Precipitation}" Foreground="White" FontSize="20" />
+                            <TextBlock FontWeight="Bold" Foreground="White" FontSize="18" Text="%"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+                <StackPanel Margin="10" Orientation="Vertical">
+                    <TextBlock Foreground="White" Margin="5,0,0,0" FontSize="22" FontWeight="Bold" Text="{Binding Path=WeatherReport.Forecast[2].StartTime.DayOfWeek}" />
+                    <Grid VerticalAlignment="Top" Height="135.5" Width="500">
+                        <Image HorizontalAlignment="Left" Margin="18,19,0,36.5" Width="80" Source="{Binding Path=Day2Image, Mode=OneWay}"/>
+                        <StackPanel Margin="117,14.5,0,0" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                            <TextBlock Foreground="White" VerticalAlignment="Top" FontSize="65" Text="{Binding WeatherReport.Forecast[2].HighTemperatureString, Mode=OneWay}" />
+                        </StackPanel>
+                        <TextBlock Foreground="White" Text="{Binding WeatherReport.Forecast[2].SkyCondition.SkyCondition, Mode=OneWay}" FontSize="19" FontWeight="Bold" Margin="20,0,0,11" VerticalAlignment="Bottom" Height="26.543" HorizontalAlignment="Left" />
+                        <StackPanel Orientation="Horizontal" Margin="0,10,20,0" HorizontalAlignment="Right" >
+                            <StackPanel HorizontalAlignment="Right" Margin="0,0,8,0" VerticalAlignment="Top">
+                                <TextBlock Foreground="White" FontSize="18" Text="High:" />
+                                <TextBlock Foreground="White" FontSize="18" Text="Low:" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.Forecast[2].HighTemperatureString}"/>
+                                <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.Forecast[2].LowTemperatureString}"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <TextBlock Margin="0,0,64,8" Foreground="White" FontSize="18" VerticalAlignment="Bottom" Height="19.543" Text="Chance of Rain:" HorizontalAlignment="Right" Width="160"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="73.987" Height="24.543" Margin="0,0,2,4.5">
+                            <TextBlock FontWeight="Bold" Text="{Binding Path=WeatherReport.Forecast[2].Precipitation}" Foreground="White" FontSize="20" />
+                            <TextBlock FontWeight="Bold" Foreground="White" FontSize="18" Text="%"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+                <StackPanel Margin="10" Orientation="Vertical">
+                    <TextBlock Foreground="White" Margin="5,0,0,0" FontSize="22" FontWeight="Bold" Text="{Binding Path=WeatherReport.Forecast[3].StartTime.DayOfWeek}" />
+                    <Grid VerticalAlignment="Top" Height="135.5" Width="500">
+                        <Image HorizontalAlignment="Left" Margin="18,19,0,36.5" Width="80" Source="{Binding Path=Day3Image, Mode=OneWay}"/>
+                        <StackPanel Margin="117,14.5,0,0" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                            <TextBlock Foreground="White" VerticalAlignment="Top" FontSize="65" Text="{Binding WeatherReport.Forecast[3].HighTemperatureString, Mode=OneWay}" />
+                        </StackPanel>
+                        <TextBlock Foreground="White" Text="{Binding WeatherReport.Forecast[3].SkyCondition.SkyCondition, Mode=OneWay}" FontSize="19" FontWeight="Bold" Margin="20,0,0,11" VerticalAlignment="Bottom" Height="26.543" HorizontalAlignment="Left" />
+                        <StackPanel Orientation="Horizontal" Margin="0,10,20,0" HorizontalAlignment="Right" >
+                            <StackPanel HorizontalAlignment="Right" Margin="0,0,8,0" VerticalAlignment="Top">
+                                <TextBlock Foreground="White" FontSize="18" Text="High:" />
+                                <TextBlock Foreground="White" FontSize="18" Text="Low:" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.Forecast[3].HighTemperatureString}"/>
+                                <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.Forecast[3].LowTemperatureString}"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <TextBlock Margin="0,0,64,8" Foreground="White" FontSize="18" VerticalAlignment="Bottom" Height="19.543" Text="Chance of Rain:" HorizontalAlignment="Right" Width="160"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="73.987" Height="24.543" Margin="0,0,2,4.5">
+                            <TextBlock FontWeight="Bold" Text="{Binding Path=WeatherReport.Forecast[3].Precipitation}" Foreground="White" FontSize="20" />
+                            <TextBlock FontWeight="Bold" Foreground="White" FontSize="18" Text="%"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+                <StackPanel Margin="10" Orientation="Vertical">
+                    <TextBlock Foreground="White" Margin="5,0,0,0" FontSize="22" FontWeight="Bold" Text="{Binding Path=WeatherReport.Forecast[4].StartTime.DayOfWeek}" />
+                    <Grid VerticalAlignment="Top" Height="135.5" Width="500">
+                        <Image HorizontalAlignment="Left" Margin="18,19,0,36.5" Width="80" Source="{Binding Path=Day4Image, Mode=OneWay}"/>
+                        <StackPanel Margin="117,14.5,0,0" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                            <TextBlock Foreground="White" VerticalAlignment="Top" FontSize="65" Text="{Binding WeatherReport.Forecast[4].HighTemperatureString, Mode=OneWay}" />
+                        </StackPanel>
+                        <TextBlock Foreground="White" Text="{Binding WeatherReport.Forecast[4].SkyCondition.SkyCondition, Mode=OneWay}" FontSize="19" FontWeight="Bold" Margin="20,0,0,11" VerticalAlignment="Bottom" Height="26.543" HorizontalAlignment="Left"/>
+                        <StackPanel Orientation="Horizontal" Margin="0,10,20,0" HorizontalAlignment="Right" >
+                            <StackPanel HorizontalAlignment="Right" Margin="0,0,8,0" VerticalAlignment="Top">
+                                <TextBlock Foreground="White" FontSize="18" Text="High:" />
+                                <TextBlock Foreground="White" FontSize="18" Text="Low:" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.Forecast[4].HighTemperatureString}"/>
+                                <TextBlock Foreground="White" FontWeight="Bold" FontSize="18" Text="{Binding Path=WeatherReport.Forecast[4].LowTemperatureString}"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <TextBlock Margin="0,0,64,8" Foreground="White" FontSize="18" VerticalAlignment="Bottom" Height="19.543" Text="Chance of Rain:" HorizontalAlignment="Right" Width="160"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="73.987" Height="24.543" Margin="0,0,2,4.5">
+                            <TextBlock FontWeight="Bold" Text="{Binding Path=WeatherReport.Forecast[4].Precipitation}" Foreground="White" FontSize="20" />
+                            <TextBlock FontWeight="Bold" Foreground="White" FontSize="18" Text="%"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+        </Viewbox>
+    </DataTemplate>
+</ResourceDictionary>

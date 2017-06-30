@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bfdd28ac-4246-4ac4-a8d0-c5ec68312e27" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/users/ServiceReference1.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceReference1.xsd" MetadataType="Schema" ID="d24865e1-e197-4abf-89c7-7d3f8fd36666" SourceId="1" SourceUrl="http://jhaveard-pc/users/ServiceReference1.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceReference11.xsd" MetadataType="Schema" ID="c8722ebd-8ca5-43b8-86d3-4999e4ef7366" SourceId="1" SourceUrl="http://jhaveard-pc/users/ServiceReference1.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceReference1.disco" MetadataType="Disco" ID="cf748599-2c59-4ab9-8379-80bb56e24da5" SourceId="1" SourceUrl="http://jhaveard-pc/users/ServiceReference1.svc?disco" />
+    <MetadataFile FileName="UserService.wsdl" MetadataType="Wsdl" ID="34630af1-372c-42f9-bfb4-54c81aad80ca" SourceId="1" SourceUrl="http://jhaveard-pc/users/ServiceReference1.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

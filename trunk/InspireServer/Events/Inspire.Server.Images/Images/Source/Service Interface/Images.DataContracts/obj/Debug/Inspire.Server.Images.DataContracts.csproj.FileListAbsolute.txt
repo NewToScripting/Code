@@ -1,0 +1,30 @@
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\bin\Debug\Inspire.Server.Images.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\bin\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\Inspire.Server.Images.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\bin\Debug\Inspire.Server.Images.DataContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\bin\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\Inspire.Server.Images.DataContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\bin\Debug\Inspire.Server.Images.DataContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\bin\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\Inspire.Server.Images.DataContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\bin\Debug\Inspire.Server.Images.DataContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\bin\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\Inspire.Server.Images.DataContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\bin\Debug\Inspire.Server.Images.DataContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\bin\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\Inspire.Server.Images.DataContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\bin\Debug\Inspire.Server.Images.DataContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\bin\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\Inspire.Server.Images.DataContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\obj\Debug\Inspire.Server.Images.DataContracts.pdb

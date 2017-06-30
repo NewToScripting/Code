@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:WeatherModule">
+    <DataTemplate DataType="{x:Type local:WeatherControl}">
+        <Viewbox>
+            <DockPanel>
+                <Image Width="300" Source="{Binding WeatherReport.BackgroundImage, Mode=OneWay}" />
+            <StackPanel DockPanel.Dock="Right">
+                <TextBlock TextAlignment="Center" FontSize="60" Foreground="White" Text="{Binding WeatherReport.Location.City, Mode=OneWay}">
+                    <TextBlock.Effect>
+                    <DropShadowEffect />
+                </TextBlock.Effect>
+                </TextBlock>
+            <TextBlock Margin="0,-30,0,0" FontSize="300" Foreground="White" Text="{Binding WeatherReport.LatestWeather.TemperatureString, Mode=OneWay}">
+                <TextBlock.Effect>
+                    <DropShadowEffect />
+                </TextBlock.Effect>
+            </TextBlock>
+            </StackPanel>
+            </DockPanel>
+        </Viewbox>
+    </DataTemplate>
+</ResourceDictionary>

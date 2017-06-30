@@ -1,0 +1,293 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="C42FE9CE-592A-46AB-833F-07E413C8AF47/f:RSSHelpers.cs" caret="6750" fromTop="77" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:FolderAccess/f:ZipUtil.cs" caret="236" fromTop="0" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:ServerCommunication/f:ProxySlideFile.cs" caret="189" fromTop="9" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/f:App.config" caret="699" fromTop="9" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/f:InspireDisplayService.Designer.cs" caret="0" fromTop="0" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/f:Program.cs" caret="0" fromTop="0" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:Timers/f:DailyUpdateTimer.cs" caret="0" fromTop="0" />
+      <File id="84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B/d:Properties/f:Resources.Designer.cs" caret="0" fromTop="0" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/d:Properties/f:Resources.Designer.cs" caret="0" fromTop="0" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:App.xaml" caret="342" fromTop="7" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:Timers/f:UpdateTimer.cs" caret="1763" fromTop="13" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:InspirePlayer.xaml.cs" caret="5936" fromTop="17" />
+      <File id="22DE639D-39D6-46E6-98A9-A85E8BAD80EB/f:Window1.xaml" caret="43" fromTop="0" />
+      <File id="22DE639D-39D6-46E6-98A9-A85E8BAD80EB/f:Window1.xaml.cs" caret="130" fromTop="5" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:DisplaySettings.xaml.cs" caret="1257" fromTop="21" />
+      <File id="22DE639D-39D6-46E6-98A9-A85E8BAD80EB/f:App.xaml" caret="48" fromTop="0" />
+      <File id="22DE639D-39D6-46E6-98A9-A85E8BAD80EB/f:AppManager.cs" caret="218" fromTop="8" />
+      <File id="22DE639D-39D6-46E6-98A9-A85E8BAD80EB/f:AppManagerTimer.cs" caret="157" fromTop="7" />
+      <File id="22DE639D-39D6-46E6-98A9-A85E8BAD80EB/f:ConfigHelper.cs" caret="184" fromTop="7" />
+      <File id="22DE639D-39D6-46E6-98A9-A85E8BAD80EB/f:EventLogger.cs" caret="184" fromTop="7" />
+      <File id="22DE639D-39D6-46E6-98A9-A85E8BAD80EB/d:Properties/f:AssemblyInfo.cs" caret="566" fromTop="13" />
+      <File id="22DE639D-39D6-46E6-98A9-A85E8BAD80EB/d:Properties/f:Resources.Designer.cs" caret="439" fromTop="10" />
+      <File id="22DE639D-39D6-46E6-98A9-A85E8BAD80EB/f:App.xaml.cs" caret="180" fromTop="7" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:ServerCommunication/f:ScheduleServiceProxy.cs" caret="1028" fromTop="16" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:ServerCommunication/f:ScheduledSlideServiceProxy.cs" caret="0" fromTop="0" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:WCF/f:IDisplayServiceContract.cs" caret="0" fromTop="0" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:WCF/f:DisplayService.cs" caret="1132" fromTop="11" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:BusinessLogic/f:ResourceAccessFasade.cs" caret="2046" fromTop="18" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:BusinessLogic/f:UtilityLogic.cs" caret="3138" fromTop="11" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:FolderAccess/f:SlideFolderAccess.cs" caret="1823" fromTop="1" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:DisplaySettings.xaml.cs" caret="624" fromTop="10" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:DisplaySettings.xaml.cs" caret="823" fromTop="16" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:DisplaySettings.xaml.cs" caret="1087" fromTop="16" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:Activation.xaml.cs" caret="446" fromTop="10" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:Activation.xaml.cs" caret="797" fromTop="10" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:Activation.xaml" caret="364" fromTop="2" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:Activation.xaml" caret="819" fromTop="5" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:DisplaySettings.xaml" caret="1118" fromTop="7" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:DisplaySettings.xaml.cs" caret="1455" fromTop="25" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:DisplaySettings.xaml.cs" caret="1721" fromTop="30" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:DisplaySettings.xaml" caret="4" fromTop="0" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:FolderAccess/f:SlideFolderAccess.cs" caret="1646" fromTop="13" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:FolderAccess/f:ZipUtil.cs" caret="763" fromTop="20" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:FolderAccess/f:ZipUtil.cs" caret="1488" fromTop="23" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:FolderAccess/f:ZipUtil.cs" caret="1488" fromTop="10" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:BusinessLogic/f:ResourceAccessFasade.cs" caret="1107" fromTop="18" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:FolderAccess/f:SlideFolderAccess.cs" caret="5135" fromTop="12" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:FolderAccess/f:SlideFolderAccess.cs" caret="5637" fromTop="11" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:Timers/f:UpdateTimer.cs" caret="6104" fromTop="8" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/f:App.config" caret="417" fromTop="0" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/f:App.config" caret="713" fromTop="9" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:BusinessLogic/f:ResourceAccessFasade.cs" caret="1987" fromTop="11" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:FolderAccess/f:SlideFolderAccess.cs" caret="2524" fromTop="13" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:FolderAccess/f:SlideFolderAccess.cs" caret="7623" fromTop="25" />
+      <File id="F5D65895-4DF7-46F3-BC30-365D49196B4E/d:Timers/f:UpdateTimer.cs" caret="1913" fromTop="27" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:App.xaml" caret="408" fromTop="7" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:InspirePlayer.xaml.cs" caret="6286" fromTop="21" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:InspirePlayer.xaml.cs" caret="6737" fromTop="29" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:InspirePlayer.xaml.cs" caret="6286" fromTop="24" />
+      <File id="3FFD3A50-8108-4C58-8B51-68029A4A484A/f:InspirePlayer.xaml.cs" caret="6477" fromTop="30" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:InspireDisplay.PlayListSlide">
+      <Item value="GUID" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inspire.ScheduledSlide">
+      <Item value="GUID" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="false" priority="0" />
+      <Item value="Unloaded" priority="2" />
+      <Item value="if" priority="16" />
+      <Item value="IsVisible" priority="1" />
+      <Item value="Dispose`0" priority="1" />
+      <Item value="DesignVideo_Unloaded`0" priority="0" />
+      <Item value="private" priority="1" />
+      <Item value="DispatcherTimer`0" priority="0" />
+      <Item value="new" priority="10" />
+      <Item value="DispatcherTimer" priority="0" />
+      <Item value="_focusTimer" priority="3" />
+      <Item value="TimeSpan" priority="0" />
+      <Item value="TimeSpan`0" priority="5" />
+      <Item value="Focus`0" priority="1" />
+      <Item value="public" priority="4" />
+      <Item value="override" priority="2" />
+      <Item value="prop" priority="1" />
+      <Item value="InspireMapLocation`0" priority="2" />
+      <Item value="InspireMapLocations" priority="0" />
+      <Item value="double" priority="0" />
+      <Item value="_inspireMapLocations" priority="6" />
+      <Item value="_inspireMapCategories" priority="1" />
+      <Item value="null" priority="13" />
+      <Item value="List&lt;MapCategory&gt;" priority="0" />
+      <Item value="_showMapOnly" priority="0" />
+      <Item value="true" priority="1" />
+      <Item value="else" priority="1" />
+      <Item value="slideTimer" priority="4" />
+      <Item value="try" priority="3" />
+      <Item value="return" priority="5" />
+      <Item value="duration" priority="0" />
+      <Item value="sender" priority="0" />
+      <Item value="directions" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="effect" priority="1" />
+      <Item value="oldContent" priority="0" />
+      <Item value="Collapsed" priority="0" />
+      <Item value="PageTransition`0" priority="0" />
+      <Item value="is" priority="0" />
+      <Item value="SearchControl`0" priority="0" />
+      <Item value="_InstanceObject" priority="1" />
+      <Item value="pushPin" priority="0" />
+      <Item value="_autoAdvanceLocations" priority="0" />
+      <Item value="class" priority="0" />
+      <Item value="List&lt;InspireMapLocation&gt;" priority="0" />
+      <Item value="InspireApp`0" priority="1" />
+      <Item value="_detailHolder" priority="0" />
+      <Item value="ICSubCategories" priority="0" />
+      <Item value="lbDirections" priority="4" />
+      <Item value="_endLocation" priority="1" />
+      <Item value="PrintForm`0" priority="0" />
+      <Item value="_home" priority="1" />
+      <Item value="this" priority="0" />
+      <Item value="DataContext" priority="0" />
+      <Item value="endLocation" priority="4" />
+      <Item value="itemsSource" priority="0" />
+      <Item value="printForm" priority="3" />
+      <Item value="Size" priority="1" />
+      <Item value="Rect" priority="0" />
+      <Item value="txtPhone" priority="0" />
+      <Item value="txtLocation" priority="0" />
+      <Item value="txtAddress" priority="0" />
+      <Item value="txtDistance" priority="0" />
+      <Item value="pd" priority="1" />
+      <Item value="Address" priority="1" />
+      <Item value="_locationDescription" priority="0" />
+      <Item value="RestartTimer`0" priority="0" />
+      <Item value="location" priority="2" />
+      <Item value="SubCategorySlider`0" priority="0" />
+      <Item value="_idleTimer" priority="1" />
+      <Item value="_autoAdvanceTimer" priority="0" />
+      <Item value="MapControl" priority="0" />
+      <Item value="detailsHolder" priority="1" />
+      <Item value="PART_CategoryHolder" priority="1" />
+      <Item value="Dispatcher" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="SlideManager`0" priority="0" />
+      <Item value="_slide" priority="0" />
+      <Item value="PreviewKeyDownEvent" priority="0" />
+      <Item value="e" priority="1" />
+      <Item value="Key`0" priority="0" />
+      <Item value="Close`0" priority="0" />
+      <Item value="var" priority="1" />
+      <Item value="Activation`0" priority="0" />
+      <Item value="activation" priority="0" />
+      <Item value="file" priority="0" />
+      <Item value="ZipUtil`0" priority="0" />
+      <Item value="test" priority="0" />
+      <Item value="zip" priority="2" />
+      <Item value="GC`0" priority="0" />
+      <Item value="proxyFile" priority="0" />
+      <Item value="writer" priority="0" />
+      <Item value="x" priority="0" />
+      <Item value="processes" priority="0" />
+      <Item value="Count`1" priority="0" />
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Threading.DispatcherTimer">
+      <Item value="Interval" priority="3" />
+      <Item value="Tick" priority="0" />
+      <Item value="Stop`0" priority="3" />
+      <Item value="Start`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.TimeSpan">
+      <Item value="FromSeconds`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Transitionals.TransitionEffect">
+      <Item value="Freeze`0" priority="0" />
+      <Item value="CanFreeze" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ContentPresenter">
+      <Item value="Visibility" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Window">
+      <Item value="Hide`0" priority="1" />
+      <Item value="IsActive" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="AddRange`0" priority="0" />
+      <Item value="Shuffle`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MapModule.InspirePushPin">
+      <Item value="Longitude" priority="1" />
+      <Item value="Latitude" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Inspire.InspireApp">
+      <Item value="IsPlayer" priority="0" />
+      <Item value="CurrentSlideGuid" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Transitionals.Controls.TransitionElement">
+      <Item value="Content" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ListBox">
+      <Item value="SelectedItem" priority="0" />
+      <Item value="Foreground" priority="0" />
+      <Item value="ItemsSource" priority="0" />
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MapModule.InspireMapLocation">
+      <Item value="LocationName" priority="1" />
+      <Item value="PhoneNumber" priority="0" />
+      <Item value="Address" priority="0" />
+      <Item value="LocationDistance" priority="0" />
+      <Item value="MarkerPin" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Media.Brushes">
+      <Item value="Black" priority="0" />
+      <Item value="White" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MapModule.PrintForm">
+      <Item value="Measure`0" priority="0" />
+      <Item value="UpdateLayout`0" priority="0" />
+      <Item value="Arrange`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBlock">
+      <Item value="Text" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MapModule.MapAddress">
+      <Item value="FormattedAddress" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Visibility">
+      <Item value="Collapsed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Threading.Dispatcher">
+      <Item value="Invoke`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Input.KeyEventArgs">
+      <Item value="Key" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Input.Key">
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Input.Key">
+      <Item value="Escape" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InspireDisplay.Activation">
+      <Item value="Show`0" priority="0" />
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileStream">
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Diagnostics.Process">
+      <Item value="CloseMainWindow`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ionic.Zip.ZipFile">
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inspire.Display.Service.ServerCommunication.ProxySlideFile">
+      <Item value="SlideFileStream" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Stream">
+      <Item value="Dispose`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlWriter">
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

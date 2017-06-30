@@ -1,0 +1,7 @@
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Data.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Data.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Data.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Data.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.pdb

@@ -1,0 +1,14 @@
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Service Interface\Events.MessageContracts\bin\Debug\Events.MessageContracts.MessageContracts.dll
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Service Interface\Events.MessageContracts\bin\Debug\Events.MessageContracts.MessageContracts.pdb
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Service Interface\Events.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Service Interface\Events.MessageContracts\obj\Debug\Events.MessageContracts.MessageContracts.dll
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Service Interface\Events.MessageContracts\obj\Debug\Events.MessageContracts.MessageContracts.pdb
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Service Interface\Events.MessageContracts\bin\Debug\Events.DataContracts.DataContracts.dll
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Service Interface\Events.MessageContracts\bin\Debug\Events.DataContracts.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Service Interface\Events.MessageContracts\bin\Debug\Events.MessageContracts.MessageContracts.dll
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Service Interface\Events.MessageContracts\bin\Debug\Events.MessageContracts.MessageContracts.pdb
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Service Interface\Events.MessageContracts\bin\Debug\Events.DataContracts.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Service Interface\Events.MessageContracts\bin\Debug\Events.DataContracts.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Service Interface\Events.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Service Interface\Events.MessageContracts\obj\Debug\Events.MessageContracts.MessageContracts.dll
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Service Interface\Events.MessageContracts\obj\Debug\Events.MessageContracts.MessageContracts.pdb

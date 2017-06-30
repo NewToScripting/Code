@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="7.7" version="7.7" Modules="msm" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_ModuleId" Value="B822456D_A422_4F2E_8051_F0A9A8409195"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="." IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="FilterModule.dll" ComponentId="{8C7B015C-71DE-4184-BD8C-8FC1F849403B}" Directory_="APPDIR" Attributes="0" KeyPath="FilterModule.dll"/>
+    <ROW Component="FlightInfoModule.Proxy.dll" ComponentId="{D2394B19-5804-467E-AE3F-481F4437E764}" Directory_="APPDIR" Attributes="0" KeyPath="FlightInfoModule.Proxy.dll"/>
+    <ROW Component="FlightInfoModule.dll" ComponentId="{795B1FF7-4D84-44C2-8699-A1B5726489E8}" Directory_="APPDIR" Attributes="0" KeyPath="FlightInfoModule.dll"/>
+    <ROW Component="IdentityMine.Evaluators.JScript.dll" ComponentId="{F469AD32-AC56-4B02-8E5B-E28DCE75DC9E}" Directory_="APPDIR" Attributes="0" KeyPath="IdentityMine.Evaluators.JScript."/>
+    <ROW Component="IdentityMine.Windows.Panels.dll" ComponentId="{F0BDBF3E-16AC-4375-B85E-6E6E3C984B2A}" Directory_="APPDIR" Attributes="0" KeyPath="IdentityMine.Windows.Panels.dll"/>
+    <ROW Component="IdentityMine.Windows.dll" ComponentId="{0654E96E-52EE-4FF5-93BB-92BFF6D7369A}" Directory_="APPDIR" Attributes="0" KeyPath="IdentityMine.Windows.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="TargetFeature" Title="TargetFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="FilterModule.dll FlightInfoModule.dll FlightInfoModule.Proxy.dll IdentityMine.Evaluators.JScript.dll IdentityMine.Windows.dll IdentityMine.Windows.Panels.dll"/>
+    <ATTRIBUTE name="CurrentFeature" value="TargetFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="FilterModule.dll" Component_="FilterModule.dll" FileName="Filter~1.dll|FilterModule.dll" Attributes="0" SourcePath="..\..\Built_Assemblies\Obfuscated\Client\Modules\FilterModule.dll" SelfReg="false" Sequence="1"/>
+    <ROW File="FlightInfoModule.Proxy.dll" Component_="FlightInfoModule.Proxy.dll" FileName="Flight~2.dll|FlightInfoModule.Proxy.dll" Attributes="0" SourcePath="..\..\Built_Assemblies\Obfuscated\Client\Modules\FlightInfoModule.Proxy.dll" SelfReg="false" Sequence="3"/>
+    <ROW File="FlightInfoModule.dll" Component_="FlightInfoModule.dll" FileName="Flight~1.dll|FlightInfoModule.dll" Attributes="0" SourcePath="..\..\Built_Assemblies\Obfuscated\Client\Modules\FlightInfoModule.dll" SelfReg="false" Sequence="2"/>
+    <ROW File="IdentityMine.Evaluators.JScript." Component_="IdentityMine.Evaluators.JScript.dll" FileName="Identi~1.dll|IdentityMine.Evaluators.JScript.dll" Attributes="0" SourcePath="..\..\..\trunk\InspireClient\Lib\IdentityMine.Evaluators.JScript.dll" SelfReg="false" Sequence="4"/>
+    <ROW File="IdentityMine.Windows.Panels.dll" Component_="IdentityMine.Windows.Panels.dll" FileName="Identi~3.dll|IdentityMine.Windows.Panels.dll" Attributes="0" SourcePath="..\..\..\trunk\InspireClient\Lib\IdentityMine.Windows.Panels.dll" SelfReg="false" Sequence="6"/>
+    <ROW File="IdentityMine.Windows.dll" Component_="IdentityMine.Windows.dll" FileName="Identi~2.dll|IdentityMine.Windows.dll" Attributes="0" SourcePath="..\..\..\trunk\InspireClient\Lib\IdentityMine.Windows.dll" SelfReg="false" Sequence="5"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="Setup Files" PackageFileName="FlightInstaller" Languages="en" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="MSMSequences.aip" Path="&lt;AI_FRAGS&gt;MSMSequences.aip"/>
+    <ROW Fragment="MsmValidation.aip" Path="&lt;AI_FRAGS&gt;MsmValidation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsmModuleSignatureComponent">
+    <ROW ModuleID="FlightModule" Version="1.5.0" GUID="B822456D_A422_4F2E_8051_F0A9A8409195" Name="FlightModule" Manufacturer="Inspire Digital Signage" Comments="This database contains the logic and data required to install &lt;module name&gt; component."/>
+  </COMPONENT>
+</DOCUMENT>

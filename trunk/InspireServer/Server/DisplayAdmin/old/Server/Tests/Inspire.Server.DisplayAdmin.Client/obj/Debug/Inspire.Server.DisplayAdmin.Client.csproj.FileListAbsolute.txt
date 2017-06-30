@@ -1,0 +1,15 @@
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\obj\Debug\Inspire.Server.Services.Client.Properties.Resources.resources
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\obj\Debug\Inspire.Server.DisplayAdmin.Client.csproj.GenerateResource.Cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\obj\Debug\Inspire.Server.Services.Client.MainForm.resources
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\bin\Debug\Inspire.Server.Services.Client.exe.config
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\bin\Debug\Inspire.Server.Services.Client.exe
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\bin\Debug\Inspire.Server.Services.Client.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\bin\Debug\Inspire.Server.DisplayAdmin.BusinessLogic.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\bin\Debug\Inspire.Server.DisplayAdmin.BusinessLogic.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\obj\Debug\Inspire.Server.Services.Client.exe
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\obj\Debug\Inspire.Server.Services.Client.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\bin\Debug\Inspire.Server.DisplayAdmin.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\bin\Debug\Inspire.Server.DisplayAdmin.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Tests\Inspire.Server.DisplayAdmin.Client\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb

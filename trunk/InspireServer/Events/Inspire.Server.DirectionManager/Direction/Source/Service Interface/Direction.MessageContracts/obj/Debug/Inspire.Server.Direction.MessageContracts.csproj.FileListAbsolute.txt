@@ -1,0 +1,56 @@
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.MessageContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\bin\Debug\Inspire.Server.Direction.DataContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\obj\Debug\Inspire.Server.Direction.MessageContracts.pdb

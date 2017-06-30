@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E0F599D-469D-406A-A8FA-6DAFE15F5DE4}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EventsModule</RootNamespace>
+    <AssemblyName>EventsModule</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\InspireClient\InspireClient\bin\Debug\Modules\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\InspireClient\InspireClient\bin\Release\Modules\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.Ribbon.Wpf30, Version=4.5.477.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ActiproSoftware.Ribbon.Wpf30.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiproSoftware.Shared.Wpf30, Version=4.5.477.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ActiproSoftware.Shared.Wpf30.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevComponents.WpfRibbon, Version=5.0.0.0, Culture=neutral, PublicKeyToken=2037e151916410e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevComponents.WpfRibbon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics3.Wpf.DataPresenter.v8.1.Express, Version=8.1.20081.2004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Infragistics3.Wpf.DataPresenter.v8.1.Express.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics3.Wpf.v8.1.Express, Version=8.1.20081.2004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Infragistics3.Wpf.v8.1.Express.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Inspire, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\InspireClient\Inspire\bin\Debug\Inspire.dll</HintPath>
+    </Reference>
+    <Reference Include="Inspire.Client.ConfigurationWindow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\InspireClient\InspireClient\bin\Debug\Inspire.Client.ConfigurationWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="Inspire.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\InspireClient\Inspire.Common\bin\Debug\Inspire.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Inspire.Server.Proxy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Inspire.Server.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ConfigurationControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfigureEventSource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\AddItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\AddRooms.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\ConfigureEvents.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\DirectionalImageSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DisplayTreeControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventTemplates\RoomEvents\RoomEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventTemplates\StackPanelEvents\EventStack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EventTemplates\StackPanelEvents\EventTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GroupControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModuleDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModuleDialog1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="ModuleDialog1.xaml.cs">
+      <DependentUpon>ModuleDialog1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\EventsModule.Commands.cs" />
+    <Compile Include="ConfigurationControl.xaml.cs">
+      <DependentUpon>ConfigurationControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigureEventSource.xaml.cs">
+      <DependentUpon>ConfigureEventSource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DesignEventsModule.cs" />
+    <Compile Include="Dialogs\AddItem.xaml.cs">
+      <DependentUpon>AddItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AddRooms.xaml.cs">
+      <DependentUpon>AddRooms.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ConfigureEvents.xaml.cs">
+      <DependentUpon>ConfigureEvents.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DirectionalImageSelector.xaml.cs">
+      <DependentUpon>DirectionalImageSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayRooms.cs" />
+    <Compile Include="DisplayTreeControl.xaml.cs">
+      <DependentUpon>DisplayTreeControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataItem.cs" />
+    <Compile Include="EventControl.cs" />
+    <Compile Include="EventSource.cs" />
+    <Compile Include="EventTextBlock.cs" />
+    <Compile Include="FeedContentControl.cs" />
+    <Compile Include="EventTemplates\RoomEvents\RoomEvent.xaml.cs">
+      <DependentUpon>RoomEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventTemplates\StackPanelEvents\EventStack.xaml.cs">
+      <DependentUpon>EventStack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GroupControl.xaml.cs">
+      <DependentUpon>GroupControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BagOfNuts.cs" />
+    <Compile Include="ModuleDialog.xaml.cs">
+      <DependentUpon>ModuleDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PropertyPanel.xaml.cs">
+      <DependentUpon>PropertyPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomContentControl.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Imageold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Display.ico" />
+    <Resource Include="Resources\Images\DisplayGroup.ico" />
+    <Resource Include="Resources\Images\Property.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dialogs\Resources\Images\FontColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dialogs\Resources\Images\FontSizeInc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dialogs\Resources\Images\FontSizeDec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dialogs\Resources\Images\Bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dialogs\Resources\Images\Italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dialogs\Resources\Images\TextHighlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resources\Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EventsModule.Proxy\EventsModule.Proxy.csproj">
+      <Project>{6855CEDB-194C-44C1-B026-AF4E3F58B53B}</Project>
+      <Name>EventsModule.Proxy</Name>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

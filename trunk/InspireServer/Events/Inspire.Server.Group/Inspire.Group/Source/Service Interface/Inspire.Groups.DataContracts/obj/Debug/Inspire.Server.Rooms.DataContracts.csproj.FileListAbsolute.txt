@@ -1,0 +1,15 @@
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\bin\Debug\Inspire.Server.Rooms.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\bin\Debug\Inspire.Server.Rooms.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\Inspire.Server.Rooms.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\Inspire.Server.Rooms.DataContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\bin\Debug\Inspire.Server.Rooms.DataContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\bin\Debug\Inspire.Server.Rooms.DataContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\Inspire.Server.Rooms.DataContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\Inspire.Server.Rooms.DataContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\bin\Debug\Inspire.Server.Rooms.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\bin\Debug\Inspire.Server.Rooms.DataContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\Inspire.Server.Rooms.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\Inspire.Server.Rooms.DataContracts.pdb

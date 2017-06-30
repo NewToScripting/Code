@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataContractDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="$safeitename$">
+  <dataContractModelMoniker Id="643c981a-e063-4eb7-a471-26a049b69a67" />
+  <nestedChildShapes>
+    <dataContractCompartmentShape Id="95d62d94-aec5-4868-9b67-0d01467f738d" absoluteBounds="0.5, 4.875, 2, 1.5285953776041668">
+      <dataContractMoniker Id="90440ffa-69bc-46ae-868f-b868f35d255b" />
+      <nestedChildShapes>
+        <elementListCompartment Id="752a323b-1573-4a9e-b058-28374d4f2934" absoluteBounds="0.51500000000000057, 5.285, 1.9700000000000002, 1.0185953776041665" name="DataMembersCompartment" titleTextColor="Black" itemTextColor="DarkGoldenrod" />
+      </nestedChildShapes>
+    </dataContractCompartmentShape>
+    <dataContractCompartmentShape Id="6fceb22e-a60b-42dc-bcc8-913da6faa132" absoluteBounds="0.5, 1.25, 2, 2.1054996744791659">
+      <dataContractMoniker Id="11229569-8040-47ab-9a2e-bca8164dca50" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c878a233-78e4-4ee8-806c-72b3dd0417bb" absoluteBounds="0.51500000000000057, 1.6600000000000001, 1.9700000000000002, 1.5954996744791665" name="DataMembersCompartment" titleTextColor="Black" itemTextColor="DarkGoldenrod" />
+      </nestedChildShapes>
+    </dataContractCompartmentShape>
+    <faultContractCompartmentShape Id="2dcf22f7-6076-4bcb-8684-bb69e8ee19f7" absoluteBounds="6.625, 0.5, 2, 1.1439925130208328">
+      <faultContractMoniker Id="a4a736dd-b92e-4202-b522-3460114fde8a" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff6f487d-eab6-429d-aa54-500899f05cf4" absoluteBounds="6.6400000000000006, 0.91000000000000014, 1.9700000000000002, 0.63399251302083326" name="FaultMembersCompartment" titleTextColor="Black" itemTextColor="IndianRed" />
+      </nestedChildShapes>
+    </faultContractCompartmentShape>
+    <dataContractCollectionShape Id="548ad940-e132-484c-92c0-9e443d03e370" absoluteBounds="0.5, 0.5, 2, 0.375">
+      <dataContractCollectionMoniker Id="58767773-62b1-4bee-af56-ddd9ebcefa47" />
+    </dataContractCollectionShape>
+    <referenceConnector edgePoints="[(1.5 : 1.25); (1.5 : 0.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="43328c47-57c3-4017-9c01-66b6a2b45c42">
+      <nodes>
+        <dataContractCompartmentShapeMoniker Id="6fceb22e-a60b-42dc-bcc8-913da6faa132" />
+        <dataContractCollectionShapeMoniker Id="548ad940-e132-484c-92c0-9e443d03e370" />
+      </nodes>
+    </referenceConnector>
+    <dataContractCollectionShape Id="9881010c-8349-4065-84be-294c4da5f1ae" absoluteBounds="0.5, 4.125, 2, 0.375">
+      <dataContractCollectionMoniker Id="2603db2f-0fa9-4a46-a20b-ff324236df29" />
+    </dataContractCollectionShape>
+    <referenceConnector edgePoints="[(1.5 : 4.875); (1.5 : 4.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="43328c47-57c3-4017-9c01-66b6a2b45c42">
+      <nodes>
+        <dataContractCompartmentShapeMoniker Id="95d62d94-aec5-4868-9b67-0d01467f738d" />
+        <dataContractCollectionShapeMoniker Id="9881010c-8349-4065-84be-294c4da5f1ae" />
+      </nodes>
+    </referenceConnector>
+  </nestedChildShapes>
+</dataContractDiagram>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CA92E55-AB27-4D5C-920E-11C65CDCBBAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspire.Server.Rooms.ServiceContracts</RootNamespace>
+    <AssemblyName>Inspire.Server.Rooms.ServiceContracts</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeneratedCode\IRoomsServiceContract.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\Inspire.Server.Common.FaultContracts.csproj">
+      <Project>{6EAC86FE-6121-46CD-8B48-844CF3D1405A}</Project>
+      <Name>Inspire.Server.Common.FaultContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logic\Inspire.Rooms.BusinessLogic\Inspire.Server.Rooms.BusinessLogic.csproj">
+      <Project>{08881379-D743-4B3E-8FA2-781EC977CB71}</Project>
+      <Name>Inspire.Server.Rooms.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Rooms.DataContracts\Inspire.Server.Rooms.DataContracts.csproj">
+      <Project>{A22C7AC2-4447-4A58-A8D9-37626BB446C4}</Project>
+      <Name>Inspire.Server.Rooms.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Rooms.MessageContracts\Inspire.Server.Rooms.MessageContracts.csproj">
+      <Project>{E765D6D8-6364-443D-860C-675A5E601538}</Project>
+      <Name>Inspire.Server.Rooms.MessageContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Roles="ServiceContractRole" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

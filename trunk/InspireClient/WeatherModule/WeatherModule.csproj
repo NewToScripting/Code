@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{118BD2D0-CA7A-4D59-8385-C4AC9EAE8EDF}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WeatherModule</RootNamespace>
+    <AssemblyName>WeatherModule</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\InspireClient\bin\Debug\Modules\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\InspireClient\bin\Release\Modules\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Inspire.Key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ModuleDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\3Day.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\3DayHorizontal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\3DayVertical.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\5DayHorizontal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\5DayVertical.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\CurrentCondition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\5DayDetailed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\TodayHiLow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Today.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\TodayImageHiLow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\TodayTemp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\WeatherCommands.cs" />
+    <Compile Include="DesignWeatherModule.cs" />
+    <Compile Include="ModuleDialog.xaml.cs">
+      <DependentUpon>ModuleDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PropertyPanel.xaml.cs">
+      <DependentUpon>PropertyPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="WeatherContentControl.cs" />
+    <Compile Include="WeatherControl.cs" />
+    <Compile Include="WeatherDataProvider.cs" />
+    <Compile Include="WeatherStyles.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Inspire.Key.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inspire\Inspire.csproj">
+      <Project>{84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B}</Project>
+      <Name>Inspire</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeatherModule.Proxy\WeatherModule.Proxy.csproj">
+      <Project>{4468808D-07AF-4A9B-AD3A-ABC5DF377198}</Project>
+      <Name>WeatherModule.Proxy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\Images\00.png" />
+    <Resource Include="Resources\Images\00n.png" />
+    <Resource Include="Resources\Images\1.png" />
+    <Resource Include="Resources\Images\10.png" />
+    <Resource Include="Resources\Images\10n.png" />
+    <Resource Include="Resources\Images\11.png" />
+    <Resource Include="Resources\Images\11n.png" />
+    <Resource Include="Resources\Images\12.png" />
+    <Resource Include="Resources\Images\12n.png" />
+    <Resource Include="Resources\Images\13.png" />
+    <Resource Include="Resources\Images\13n.png" />
+    <Resource Include="Resources\Images\14.png" />
+    <Resource Include="Resources\Images\14n.png" />
+    <Resource Include="Resources\Images\15.png" />
+    <Resource Include="Resources\Images\15n.png" />
+    <Resource Include="Resources\Images\16.png" />
+    <Resource Include="Resources\Images\16n.png" />
+    <Resource Include="Resources\Images\17.png" />
+    <Resource Include="Resources\Images\18.png" />
+    <Resource Include="Resources\Images\19.png" />
+    <Resource Include="Resources\Images\1n.png" />
+    <Resource Include="Resources\Images\2.png" />
+    <Resource Include="Resources\Images\20.png" />
+    <Resource Include="Resources\Images\21.png" />
+    <Resource Include="Resources\Images\22.png" />
+    <Resource Include="Resources\Images\23.png" />
+    <Resource Include="Resources\Images\24.png" />
+    <Resource Include="Resources\Images\25.png" />
+    <Resource Include="Resources\Images\25n.png" />
+    <Resource Include="Resources\Images\26.png" />
+    <Resource Include="Resources\Images\26n.png" />
+    <Resource Include="Resources\Images\27.png" />
+    <Resource Include="Resources\Images\27n.png" />
+    <Resource Include="Resources\Images\28.png" />
+    <Resource Include="Resources\Images\28n.png" />
+    <Resource Include="Resources\Images\29.png" />
+    <Resource Include="Resources\Images\29n.png" />
+    <Resource Include="Resources\Images\2n.png" />
+    <Resource Include="Resources\Images\3.png" />
+    <Resource Include="Resources\Images\30.png" />
+    <Resource Include="Resources\Images\30n.png" />
+    <Resource Include="Resources\Images\31.png" />
+    <Resource Include="Resources\Images\31n.png" />
+    <Resource Include="Resources\Images\32.png" />
+    <Resource Include="Resources\Images\32n.png" />
+    <Resource Include="Resources\Images\33.png" />
+    <Resource Include="Resources\Images\33n.png" />
+    <Resource Include="Resources\Images\34.png" />
+    <Resource Include="Resources\Images\34n.png" />
+    <Resource Include="Resources\Images\35.png" />
+    <Resource Include="Resources\Images\35n.png" />
+    <Resource Include="Resources\Images\36.png" />
+    <Resource Include="Resources\Images\37.png" />
+    <Resource Include="Resources\Images\37n.png" />
+    <Resource Include="Resources\Images\38.png" />
+    <Resource Include="Resources\Images\38n.png" />
+    <Resource Include="Resources\Images\39.png" />
+    <Resource Include="Resources\Images\39n.png" />
+    <Resource Include="Resources\Images\3n.png" />
+    <Resource Include="Resources\Images\4.png" />
+    <Resource Include="Resources\Images\40.png" />
+    <Resource Include="Resources\Images\40n.png" />
+    <Resource Include="Resources\Images\41.png" />
+    <Resource Include="Resources\Images\41n.png" />
+    <Resource Include="Resources\Images\42.png" />
+    <Resource Include="Resources\Images\42n.png" />
+    <Resource Include="Resources\Images\43.png" />
+    <Resource Include="Resources\Images\43n.png" />
+    <Resource Include="Resources\Images\44.png" />
+    <Resource Include="Resources\Images\45.png" />
+    <Resource Include="Resources\Images\45n.png" />
+    <Resource Include="Resources\Images\46.png" />
+    <Resource Include="Resources\Images\46n.png" />
+    <Resource Include="Resources\Images\47.png" />
+    <Resource Include="Resources\Images\47n.png" />
+    <Resource Include="Resources\Images\4n.png" />
+    <Resource Include="Resources\Images\5.png" />
+    <Resource Include="Resources\Images\5n.png" />
+    <Resource Include="Resources\Images\6.png" />
+    <Resource Include="Resources\Images\6n.png" />
+    <Resource Include="Resources\Images\7.png" />
+    <Resource Include="Resources\Images\7n.png" />
+    <Resource Include="Resources\Images\8.png" />
+    <Resource Include="Resources\Images\8n.png" />
+    <Resource Include="Resources\Images\9.png" />
+    <Resource Include="Resources\Images\9n.png" />
+    <Resource Include="Resources\Images\Cancel16.png" />
+    <Resource Include="Resources\Images\NA.png" />
+    <Resource Include="Resources\Images\Ok16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

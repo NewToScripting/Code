@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Client", "InspireClient\Inspire.Client.csproj", "{0D344094-B9B9-457E-A308-50D13A432FC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client.Application", "Client.Application", "{4828F710-1BB7-41F2-80B4-192C7A470499}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Common", "Inspire.Common\Inspire.Common.csproj", "{DA9210DD-D24D-468A-9083-F3D953E41C63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Inspire Framework", "_Inspire Framework", "{2C492688-B3EE-4AC5-BCCD-7FD992817DF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire", "Inspire\Inspire.csproj", "{84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Inspire Common", "_Inspire Common", "{F195C932-5721-4617-9837-5829D1C90847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Client.ConfigurationWindow", "Inspire.Client.ConfigurationWindow\Inspire.Client.ConfigurationWindow.csproj", "{105063E4-04C5-4918-9FFC-675E8F826DFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Client.ScheduleWindow", "Inspire.Client.ScheduleWindow\Inspire.Client.ScheduleWindow.csproj", "{E26DFB8E-4A59-4523-AC10-C6FAC53AC4C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Client.Designer", "Inspire.Client.Designer\Inspire.Client.Designer.csproj", "{48AF3708-C4E9-44DC-A6B1-EB02FE9A36C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserConfig", "UserConfig\UserConfig.csproj", "{86A9348D-E697-441A-A35F-4D0CA8052135}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Inspire.ConfigModules", "_Inspire.ConfigModules", "{9652CE0C-D4C6-4AC9-90C4-2DAD4C38C678}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Inspire.ControlModules", "_Inspire.ControlModules", "{B50222FE-C806-4F25-AD8C-E38BA3F8742E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionModule", "ReflectionModule\ReflectionModule.csproj", "{81284490-566D-4123-832E-8CB7F773E44C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{E24724C1-86BF-4B56-949B-560D80218669}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\ActiproSoftware.Ribbon.Wpf30.dll = Lib\ActiproSoftware.Ribbon.Wpf30.dll
+		Lib\ActiproSoftware.Shared.Wpf30.dll = Lib\ActiproSoftware.Shared.Wpf30.dll
+		Lib\DevComponents.WpfDock.dll = Lib\DevComponents.WpfDock.dll
+		Lib\DevComponents.WpfEditors.dll = Lib\DevComponents.WpfEditors.dll
+		Lib\DevComponents.WpfRibbon.dll = Lib\DevComponents.WpfRibbon.dll
+		Lib\DevComponents.WpfSchedule.dll = Lib\DevComponents.WpfSchedule.dll
+		Lib\ICSharpCode.SharpZipLib.dll = Lib\ICSharpCode.SharpZipLib.dll
+		Lib\Infragistics.ToyBox.dll = Lib\Infragistics.ToyBox.dll
+		Lib\Inspire.Server.Proxy.dll = Lib\Inspire.Server.Proxy.dll
+		Lib\Interop.ShockwaveFlashObjects.dll = Lib\Interop.ShockwaveFlashObjects.dll
+		Lib\Ionic.Utils.Zip.dll = Lib\Ionic.Utils.Zip.dll
+		Lib\Transitionals.dll = Lib\Transitionals.dll
+		Lib\Xceed.Wpf.Controls.dll = Lib\Xceed.Wpf.Controls.dll
+		Lib\Xceed.Wpf.DataGrid.dll = Lib\Xceed.Wpf.DataGrid.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D344094-B9B9-457E-A308-50D13A432FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D344094-B9B9-457E-A308-50D13A432FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D344094-B9B9-457E-A308-50D13A432FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D344094-B9B9-457E-A308-50D13A432FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA9210DD-D24D-468A-9083-F3D953E41C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA9210DD-D24D-468A-9083-F3D953E41C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA9210DD-D24D-468A-9083-F3D953E41C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA9210DD-D24D-468A-9083-F3D953E41C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{105063E4-04C5-4918-9FFC-675E8F826DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105063E4-04C5-4918-9FFC-675E8F826DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105063E4-04C5-4918-9FFC-675E8F826DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105063E4-04C5-4918-9FFC-675E8F826DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E26DFB8E-4A59-4523-AC10-C6FAC53AC4C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E26DFB8E-4A59-4523-AC10-C6FAC53AC4C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E26DFB8E-4A59-4523-AC10-C6FAC53AC4C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E26DFB8E-4A59-4523-AC10-C6FAC53AC4C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48AF3708-C4E9-44DC-A6B1-EB02FE9A36C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48AF3708-C4E9-44DC-A6B1-EB02FE9A36C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48AF3708-C4E9-44DC-A6B1-EB02FE9A36C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48AF3708-C4E9-44DC-A6B1-EB02FE9A36C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86A9348D-E697-441A-A35F-4D0CA8052135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A9348D-E697-441A-A35F-4D0CA8052135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A9348D-E697-441A-A35F-4D0CA8052135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A9348D-E697-441A-A35F-4D0CA8052135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81284490-566D-4123-832E-8CB7F773E44C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81284490-566D-4123-832E-8CB7F773E44C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81284490-566D-4123-832E-8CB7F773E44C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81284490-566D-4123-832E-8CB7F773E44C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D344094-B9B9-457E-A308-50D13A432FC8} = {4828F710-1BB7-41F2-80B4-192C7A470499}
+		{105063E4-04C5-4918-9FFC-675E8F826DFC} = {4828F710-1BB7-41F2-80B4-192C7A470499}
+		{E26DFB8E-4A59-4523-AC10-C6FAC53AC4C2} = {4828F710-1BB7-41F2-80B4-192C7A470499}
+		{48AF3708-C4E9-44DC-A6B1-EB02FE9A36C9} = {4828F710-1BB7-41F2-80B4-192C7A470499}
+		{DA9210DD-D24D-468A-9083-F3D953E41C63} = {F195C932-5721-4617-9837-5829D1C90847}
+		{84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B} = {2C492688-B3EE-4AC5-BCCD-7FD992817DF8}
+		{86A9348D-E697-441A-A35F-4D0CA8052135} = {9652CE0C-D4C6-4AC9-90C4-2DAD4C38C678}
+		{81284490-566D-4123-832E-8CB7F773E44C} = {B50222FE-C806-4F25-AD8C-E38BA3F8742E}
+	EndGlobalSection
+EndGlobal

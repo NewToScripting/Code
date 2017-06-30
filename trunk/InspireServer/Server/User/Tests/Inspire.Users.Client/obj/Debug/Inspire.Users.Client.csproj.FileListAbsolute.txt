@@ -1,0 +1,28 @@
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Tests\Inspire.Users.Client\bin\Debug\Inspire.Users.Client.Client.exe.config
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Tests\Inspire.Users.Client\bin\Debug\Inspire.Users.Client.Client.exe
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Tests\Inspire.Users.Client\bin\Debug\Inspire.Users.Client.Client.pdb
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.Properties.Resources.resources
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.MainForm.resources
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.ResultsGrid.resources
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.csproj.GenerateResource.Cache
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.Client.exe
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.Client.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Tests\Inspire.Users.Client\bin\Debug\Inspire.Users.Client.Client.exe.config
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Tests\Inspire.Users.Client\bin\Debug\Inspire.Users.Client.Client.exe
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Tests\Inspire.Users.Client\bin\Debug\Inspire.Users.Client.Client.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.Properties.Resources.resources
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.MainForm.resources
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.csproj.GenerateResource.Cache
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.Client.exe
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.Client.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Tests\Inspire.Users.Client\bin\Debug\Inspire.Users.Client.Client.exe.config
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.Client.exe
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.Client.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Tests\Inspire.Users.Client\bin\Debug\Inspire.Users.Client.Client.exe
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Tests\Inspire.Users.Client\bin\Debug\Inspire.Users.Client.Client.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.Properties.Resources.resources
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.MainForm.resources
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Tests\Inspire.Users.Client\obj\Debug\Inspire.Users.Client.csproj.GenerateResource.Cache

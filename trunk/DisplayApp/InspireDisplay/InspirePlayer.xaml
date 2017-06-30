@@ -1,0 +1,25 @@
+﻿<Window x:Class="InspireDisplay.InspirePlayer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:InspireDisplay="clr-namespace:InspireDisplay"
+    xmlns:Commands="clr-namespace:Inspire.Commands;assembly=Inspire"
+    xmlns:trans="clr-namespace:Transitionals.Controls;assembly=Transitionals"
+    Title="InspirePlayer" Background="Black" WindowState="Maximized" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" TouchDown="Window_TouchDown"><!--ResizeMode="NoResize"-->
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.GoToSlideCommand}" CanExecute="GoToSlideCanExecute" Executed="GoToSlideExecuted"/>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.PlayNextSlideCommand}" CanExecute="PlayNextSlideCanExecute" Executed="PlayNextSlideExecuted"/>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.PlayPreviousSlideCommand}" CanExecute="PlayPreviousSlideCanExecute" Executed="PlayPreviousSlideExecuted"/>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.RestartTimerCommand}" CanExecute="RestartTimerCanExecute" Executed="RestartTimerExecuted"/>
+        <!--<CommandBinding Command="{x:Static Commands:InspireCommands.SkipSlideCommand}" CanExecute="SkipSlideCommandCanExecute" Executed="SkipSlideCommandExecuted"/>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.DontSkipSlideCommand}" CanExecute="DontSkipCommandCanExecute" Executed="DontSkipCommandExecuted"/>-->
+    </Window.CommandBindings>
+    <!--<DockPanel LastChildFill="True">
+        <Grid>-->
+            <!--<Viewbox x:Name="vbPlayer" Margin="0">-->
+    <trans:TransitionElement VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="MainCanvas" ClipToBounds="True">
+            
+    </trans:TransitionElement>
+        <!--</Viewbox>-->
+           <!-- </Grid>
+    </DockPanel>-->
+</Window>

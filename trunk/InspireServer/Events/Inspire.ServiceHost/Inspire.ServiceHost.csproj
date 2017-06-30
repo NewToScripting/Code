@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CF0F9F8-DA01-4340-A57D-A4645B6F57F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspire.ServiceHost</RootNamespace>
+    <AssemblyName>Inspire.Events.ServiceHost</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigEncrypt.cs" />
+    <Compile Include="ServiceHostHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceHostHandler.Designer.cs">
+      <DependentUpon>ServiceHostHandler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.csproj">
+      <Project>{1E2B53A2-5EB2-46B6-88AF-5377A72E277B}</Project>
+      <Name>Inspire.Server.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\Inspire.Server.Common.FaultContracts.csproj">
+      <Project>{6EAC86FE-6121-46CD-8B48-844CF3D1405A}</Project>
+      <Name>Inspire.Server.Common.FaultContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.DirectionManager\Direction\Source\Business Logic\Direction.BusinessLogic\Inspire.Server.Direction.BusinessLogic.csproj">
+      <Project>{D1530174-F1D5-49CE-8F1B-4D8EEDF33EDA}</Project>
+      <Name>Inspire.Server.Direction.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\Inspire.Server.Direction.DataAccess.csproj">
+      <Project>{E7449AC8-2051-4CF2-A298-9FAFEB5C89D1}</Project>
+      <Name>Inspire.Server.Direction.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.DataContracts\Inspire.Server.Direction.DataContracts.csproj">
+      <Project>{2E197084-94D1-45F7-94D7-AF1C3080A588}</Project>
+      <Name>Inspire.Server.Direction.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.MessageContracts\Inspire.Server.Direction.MessageContracts.csproj">
+      <Project>{917A4A16-61FE-4228-AC40-1B9C63321384}</Project>
+      <Name>Inspire.Server.Direction.MessageContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\Inspire.Server.Direction.ServiceContracts.csproj">
+      <Project>{A8DA78C7-96E1-4BCB-9AEC-5B9D69DFB62A}</Project>
+      <Name>Inspire.Server.Direction.ServiceContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceImplementation\Inspire.Server.Direction.ServiceImplementation.csproj">
+      <Project>{E0F103B7-80B7-49E3-82FD-74EA2345CCE4}</Project>
+      <Name>Inspire.Server.Direction.ServiceImplementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Events\Inspire.Events\Source\Business Logic\Inspire.Feeds.BusinessLogic\Inspire.Server.Events.BusinessLogic.csproj">
+      <Project>{8AD78E91-FDF7-422F-B1F2-FD882F96B6A2}</Project>
+      <Name>Inspire.Server.Events.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\Inspire.Server.Events.DataAccess.csproj">
+      <Project>{354D2DB9-B2E4-4870-9888-F88642790DEE}</Project>
+      <Name>Inspire.Server.Events.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.DataContracts\Inspire.Server.Events.DataContracts.csproj">
+      <Project>{B91AFF04-5FBF-473F-98D1-57BD35FB5078}</Project>
+      <Name>Inspire.Server.Events.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.MessageContracts\Inspire.Server.Events.MessageContracts.csproj">
+      <Project>{D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6}</Project>
+      <Name>Inspire.Server.Events.MessageContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\Inspire.Server.Events.ServiceContracts.csproj">
+      <Project>{3253A543-020E-4DC0-A34E-99CA83A98EF9}</Project>
+      <Name>Inspire.Server.Events.ServiceContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceImplementation\Inspire.Server.Events.ServiceImplementation.csproj">
+      <Project>{C0F6CFEB-25A6-4224-B6E0-EF5C87EC985A}</Project>
+      <Name>Inspire.Server.Events.ServiceImplementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\Inspire.Server.Groups.BusinessEntities.csproj">
+      <Project>{7BA2D75E-F5F2-4A63-922E-D6617EDFCB0C}</Project>
+      <Name>Inspire.Server.Groups.BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessLogic\Inspire.Server.Groups.BusinessLogic.csproj">
+      <Project>{C9D2E6A9-0AF7-4601-A9BE-854B65BBB574}</Project>
+      <Name>Inspire.Server.Groups.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Group\Inspire.Group\Source\Resource Access\Inspire.Server.Groups.DataAccess\Inspire.Server.Groups.DataAccess.csproj">
+      <Project>{9E4215D1-2147-4471-AFD0-0320829F8A9C}</Project>
+      <Name>Inspire.Server.Groups.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.DataContracts\Inspire.Server.Groups.DataContracts.csproj">
+      <Project>{6E3779B1-BE67-4167-860A-17E9FF166117}</Project>
+      <Name>Inspire.Server.Groups.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.MessageContracts\Inspire.Server.Groups.MessageContracts.csproj">
+      <Project>{E3BBD7F3-BEFC-417A-B572-CFD6D097AB4A}</Project>
+      <Name>Inspire.Server.Groups.MessageContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceContracts\Inspire.Server.Groups.ServiceContracts.csproj">
+      <Project>{09E2113E-8E7B-44C6-9421-53A5514179F1}</Project>
+      <Name>Inspire.Server.Groups.ServiceContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\Inspire.Server.Groups.ServiceImplementation.csproj">
+      <Project>{E8094128-27E8-44AD-AAB4-DA1C429710A9}</Project>
+      <Name>Inspire.Server.Groups.ServiceImplementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\Inspire.Server.Images.BusinessLogic.csproj">
+      <Project>{2AD49199-B19E-4E54-93DA-8D0FEB2B9985}</Project>
+      <Name>Inspire.Server.Images.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Images\Images\Source\Resource Access\Images.DataAccess\Inspire.Server.Images.DataAccess.csproj">
+      <Project>{78C071B3-F165-494E-8247-D73653C2F60B}</Project>
+      <Name>Inspire.Server.Images.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Images\Images\Source\Service Interface\Images.DataContracts\Inspire.Server.Images.DataContracts.csproj">
+      <Project>{DF64BEF7-A1DB-4EE6-9D6E-4C8DC0BC73E5}</Project>
+      <Name>Inspire.Server.Images.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Images\Images\Source\Service Interface\Images.MessageContracts\Inspire.Server.Images.MessageContracts.csproj">
+      <Project>{BA2B722E-7200-4AB8-BE3F-22BE030C834E}</Project>
+      <Name>Inspire.Server.Images.MessageContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Images\Images\Source\Service Interface\Images.ServiceContracts\Inspire.Server.Images.ServiceContracts.csproj">
+      <Project>{01B48C40-8D71-4C05-9082-67792DE13E82}</Project>
+      <Name>Inspire.Server.Images.ServiceContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Images\Images\Source\Service Interface\Images.ServiceImplementation\Inspire.Server.Images.ServiceImplementation.csproj">
+      <Project>{5FEA591C-C301-4A87-92F1-4A37929DF8D7}</Project>
+      <Name>Inspire.Server.Images.ServiceImplementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessLogic\Inspire.Server.Rooms.BusinessLogic.csproj">
+      <Project>{08881379-D743-4B3E-8FA2-781EC977CB71}</Project>
+      <Name>Inspire.Server.Rooms.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Resource Access\Inspire.Rooms.DataAccess\Inspire.Server.Rooms.DataAccess.csproj">
+      <Project>{94BDF929-06CB-4B5B-9136-24AA9B2B384B}</Project>
+      <Name>Inspire.Server.Rooms.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\Inspire.Server.Rooms.DataContracts.csproj">
+      <Project>{A22C7AC2-4447-4A58-A8D9-37626BB446C4}</Project>
+      <Name>Inspire.Server.Rooms.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.MessageContracts\Inspire.Server.Rooms.MessageContracts.csproj">
+      <Project>{E765D6D8-6364-443D-860C-675A5E601538}</Project>
+      <Name>Inspire.Server.Rooms.MessageContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceContracts\Inspire.Server.Rooms.ServiceContracts.csproj">
+      <Project>{3CA92E55-AB27-4D5C-920E-11C65CDCBBAE}</Project>
+      <Name>Inspire.Server.Rooms.ServiceContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\Inspire.Server.Rooms.ServiceImplementation.csproj">
+      <Project>{C8E68224-4D42-424C-8E98-60FA0A92EDAC}</Project>
+      <Name>Inspire.Server.Rooms.ServiceImplementation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

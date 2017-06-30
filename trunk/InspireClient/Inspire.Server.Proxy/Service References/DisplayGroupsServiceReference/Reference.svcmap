@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="771fbf0e-237a-4f8b-9942-5344993eb152" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://testserver/DisplayManager/DisplayGroupServiceReference.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DisplayGroupServiceReference.xsd" MetadataType="Schema" ID="21e5db5e-baef-4d24-b1f1-7b581d3b5247" SourceId="1" SourceUrl="http://testserver/DisplayManager/DisplayGroupServiceReference.svc?xsd=xsd2" />
+    <MetadataFile FileName="DisplayGroupServiceReference1.xsd" MetadataType="Schema" ID="6150f2fc-5a58-4b73-b315-5959d8ac4b73" SourceId="1" SourceUrl="http://testserver/DisplayManager/DisplayGroupServiceReference.svc?xsd=xsd1" />
+    <MetadataFile FileName="DisplayGroupServiceReference2.xsd" MetadataType="Schema" ID="8b1cfa93-52fe-4af6-b835-14d2881b44fb" SourceId="1" SourceUrl="http://testserver/DisplayManager/DisplayGroupServiceReference.svc?xsd=xsd0" />
+    <MetadataFile FileName="ClientDisplayGroupsService.wsdl" MetadataType="Wsdl" ID="1bff0085-e8f0-43cb-b169-6434c53ac0cd" SourceId="1" SourceUrl="http://testserver/DisplayManager/DisplayGroupServiceReference.svc?wsdl" />
+    <MetadataFile FileName="DisplayGroupServiceReference.disco" MetadataType="Disco" ID="5a3ecd94-1a55-48e1-af10-05511b05ab31" SourceId="1" SourceUrl="http://testserver/DisplayManager/DisplayGroupServiceReference.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,15 @@
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\bin\Debug\Inspire.Users.FaultContracts.FaultContracts.dll
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\bin\Debug\Inspire.Users.FaultContracts.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\obj\Debug\Inspire.Users.FaultContracts.FaultContracts.dll
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\obj\Debug\Inspire.Users.FaultContracts.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\bin\Debug\Inspire.Users.FaultContracts.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\bin\Debug\Inspire.Users.FaultContracts.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\obj\Debug\Inspire.Users.FaultContracts.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\obj\Debug\Inspire.Users.FaultContracts.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\bin\Debug\Inspire.Users.FaultContracts.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\bin\Debug\Inspire.Users.FaultContracts.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\obj\Debug\Inspire.Users.FaultContracts.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\obj\Debug\Inspire.Users.FaultContracts.FaultContracts.pdb

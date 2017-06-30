@@ -1,0 +1,78 @@
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.BusinessLogic.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.BusinessLogic.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataAccess.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataAccess.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\Inspire.Server.Images.BusinessLogic.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\Inspire.Server.Images.BusinessLogic.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.BusinessLogic.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.BusinessLogic.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataAccess.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataAccess.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\Inspire.Server.Images.BusinessLogic.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\Inspire.Server.Images.BusinessLogic.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.BusinessLogic.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.BusinessLogic.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataAccess.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataAccess.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\Inspire.Server.Images.BusinessLogic.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\Inspire.Server.Images.BusinessLogic.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.BusinessLogic.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.BusinessLogic.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataAccess.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataAccess.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\Inspire.Server.Images.BusinessLogic.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\Inspire.Server.Images.BusinessLogic.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.BusinessLogic.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.BusinessLogic.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataAccess.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataAccess.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\Inspire.Server.Images.BusinessLogic.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\Inspire.Server.Images.BusinessLogic.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.BusinessLogic.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.BusinessLogic.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataAccess.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataAccess.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Images.DataContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\Inspire.Server.Images.BusinessLogic.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Images\Images\Source\Business Logic\Images.BusinessLogic\obj\Debug\Inspire.Server.Images.BusinessLogic.pdb

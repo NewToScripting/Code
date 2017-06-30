@@ -1,0 +1,5 @@
+C:\CODE\trunk\InspireClient\FlightInfoModule.Proxy\bin\Debug\FlightInfoModule.Proxy.dll.config
+C:\CODE\trunk\InspireClient\FlightInfoModule.Proxy\bin\Debug\FlightInfoModule.Proxy.dll
+C:\CODE\trunk\InspireClient\FlightInfoModule.Proxy\bin\Debug\FlightInfoModule.Proxy.pdb
+C:\CODE\trunk\InspireClient\FlightInfoModule.Proxy\obj\Debug\FlightInfoModule.Proxy.dll
+C:\CODE\trunk\InspireClient\FlightInfoModule.Proxy\obj\Debug\FlightInfoModule.Proxy.pdb

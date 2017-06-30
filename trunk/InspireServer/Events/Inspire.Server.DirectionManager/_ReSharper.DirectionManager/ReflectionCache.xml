@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assemblies Version="1073741836">
+  <Assembly Name="System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Image="b7ea9da5-e753-453f-879f-f70f2311f170" Timestamp="633495214682608934" XmlDocIndexTimestamp="633490183300000000" />
+  <Assembly Name="System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Image="82d6ce40-28b1-4cd7-8987-a4e830ab7e70" Timestamp="633495214689015676" XmlDocIndexTimestamp="633489312100000000" />
+  <Assembly Name="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Image="9e0c30dd-0947-4c97-9159-7939810b94d0" Timestamp="633529860480000000" XmlDocIndexTimestamp="633490183300000000" />
+  <Assembly Name="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Image="3c555f67-9497-46c6-a5e5-a31f99315ee0" Timestamp="633529860480000000" XmlDocIndexTimestamp="633490183300000000" />
+  <Assembly Name="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Image="5126d04d-5517-4ed7-be79-3f247e7d5718" Timestamp="633529860480000000" XmlDocIndexTimestamp="633490183300000000" />
+  <Assembly Name="System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Image="a1680fbb-3540-455d-abdd-37f97478907a" Timestamp="633529860480000000" XmlDocIndexTimestamp="633490183300000000" />
+  <Assembly Name="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Image="48a7a46e-dfbc-474e-a7b5-adec63fa8979" Timestamp="633529860480000000" XmlDocIndexTimestamp="633492787960000000" />
+  <Assembly Name="System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Image="fab4f1fd-6cb6-4e4d-9914-22c80ecc96ec" Timestamp="633529860480000000" XmlDocIndexTimestamp="633480684880000000" />
+  <Assembly Name="System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Image="2fc8e013-0124-4b4a-a109-39330aa3b9cf" Timestamp="633495214680577528" XmlDocIndexTimestamp="633490183300000000" />
+  <Assembly Name="JetBrains.Annotations, Version=4.1.933.3, Culture=neutral, PublicKeyToken=1010a0d8d6380325" Image="c0b31488-3bcc-4ee4-a381-8dca5d2e2a9f" Timestamp="633559886920000000" XmlDocIndexTimestamp="633559886920000000" />
+</Assemblies>

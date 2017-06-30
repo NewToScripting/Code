@@ -1,0 +1,1 @@
+On  Windows 7, you must register capicom.dll - REGSVR32 capicom.dll

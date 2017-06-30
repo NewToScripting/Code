@@ -1,0 +1,8 @@
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.ConsoleService\bin\Debug\Inspire.Server.ConsoleService.exe.config
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.ConsoleService\bin\Debug\Inspire.Server.ConsoleService.exe
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.ConsoleService\bin\Debug\Inspire.Server.ConsoleService.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.ConsoleService\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.ConsoleService\obj\Debug\Inspire.Server.ConsoleService.exe
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.ConsoleService\obj\Debug\Inspire.Server.ConsoleService.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.ConsoleService\obj\Debug\Inspire.Server.ConsoleService.InspireConsoleServiceInstaller.resources
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.ConsoleService\obj\Debug\Inspire.Server.ConsoleService.csproj.GenerateResource.Cache

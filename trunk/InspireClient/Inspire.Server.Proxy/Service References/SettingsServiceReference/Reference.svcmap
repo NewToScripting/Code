@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="743da458-ec73-4e55-a14b-df757471f1ca" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Inspire.Server/Svc/settingService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SettingService.disco" MetadataType="Disco" ID="ab76ee87-c245-4c67-aaf6-77f8bdb4037a" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/SettingService?disco" />
+    <MetadataFile FileName="SettingService.wsdl" MetadataType="Wsdl" ID="4d64ca04-06f0-4113-8354-24fc06d9dc5d" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/SettingService?wsdl" />
+    <MetadataFile FileName="SettingService1.wsdl" MetadataType="Wsdl" ID="1f41b9cc-f708-4766-a88c-c6b1102ff0e1" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/SettingService?wsdl=wsdl0" />
+    <MetadataFile FileName="SettingService.xsd" MetadataType="Schema" ID="b434401e-0e27-4817-84f8-8d4f64dc7ec9" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/SettingService?xsd=xsd0" />
+    <MetadataFile FileName="SettingService1.xsd" MetadataType="Schema" ID="a9d409d4-29fc-4c5d-a1f6-73945a17c3fd" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/SettingService?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

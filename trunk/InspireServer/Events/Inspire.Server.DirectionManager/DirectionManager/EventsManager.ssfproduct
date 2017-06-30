@@ -1,0 +1,42 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectGuid>{a38604f7-c714-4238-ac4b-a3c7a95e26c0}</ProjectGuid>
+    <RootNamespace>EventsManager</RootNamespace>
+    <AssemblyName>EventsManager</AssemblyName>
+    <Name>EventsManager</Name>
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Model Include="EventsModel.ServiceContract.Model.servicecontract">
+      <SubType>Content</SubType>
+    </Model>
+  </ItemGroup>
+  <ItemGroup>
+    <Model Include="EventsManager.DataContract.Model.datacontract">
+      <SubType>Content</SubType>
+    </Model>
+    <Content Include="EventsManager.DataContract.Model.datacontract.diagram">
+      <SubType>Content</SubType>
+      <DependentUpon>EventsManager.DataContract.Model.datacontract</DependentUpon>
+    </Content>
+    <Model Include="EventsManager.Host.Model.host">
+      <SubType>Content</SubType>
+    </Model>
+    <Content Include="EventsModel.ServiceContract.Model.servicecontract.diagram">
+      <SubType>Content</SubType>
+      <DependentUpon>EventsModel.ServiceContract.Model.servicecontract</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <SFBasePath>$(DevEnvDir)\PublicAssemblies</SFBasePath>
+  </PropertyGroup>
+  <!-- Since this project flavor isnt supposed to be build, we do nothing in the following Targets -->
+  <Target Name="Build">
+  </Target>
+  <Target Name="Clean">
+  </Target>
+  <Target Name="Rebuild">
+  </Target>
+</Project>

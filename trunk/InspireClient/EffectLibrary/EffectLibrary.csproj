@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51F9DB65-B87A-43EF-B306-5122845C7F72}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EffectLibrary</RootNamespace>
+    <AssemblyName>EffectLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Inspire.Key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>true</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColorPicker\ColorPickerDialog.xaml.cs">
+      <DependentUpon>ColorPickerDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ColorPicker\ColorPickerSupportingClasses.cs" />
+    <Compile Include="ColorPicker\ColorPicker.cs" />
+    <Compile Include="EffectManager.cs" />
+    <Compile Include="EffectSelector.xaml.cs">
+      <DependentUpon>EffectSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effects\BandedSwirlEffect.cs" />
+    <Compile Include="Effects\BloomEffect.cs" />
+    <Compile Include="Effects\BrightExtractEffect.cs" />
+    <Compile Include="Effects\ChromaKeyAlphaEffect.cs" />
+    <Compile Include="Effects\ColorKeyAlphaEffect.cs" />
+    <Compile Include="Effects\ColorToneEffect.cs" />
+    <Compile Include="Effects\ContrastAdjustEffect.cs" />
+    <Compile Include="Effects\DirectionalBlurEffect.cs" />
+    <Compile Include="Effects\EmbossedEffect.cs" />
+    <Compile Include="Effects\GloomEffect.cs" />
+    <Compile Include="Effects\GrayScaleEffect.cs" />
+    <Compile Include="Effects\GrowablePoissonDiskEffect.cs" />
+    <Compile Include="Effects\HatchingEffect.cs" />
+    <Compile Include="Effects\InvertColorEffect.cs" />
+    <Compile Include="Effects\LightStreakEffect.cs" />
+    <Compile Include="Effects\MagnifyEffect.cs" />
+    <Compile Include="Effects\MonochromeEffect.cs" />
+    <Compile Include="Effects\PinchEffect.cs" />
+    <Compile Include="Effects\PixelateEffect.cs" />
+    <Compile Include="Effects\ReflectionEffect.cs" />
+    <Compile Include="Effects\RippleEffect.cs" />
+    <Compile Include="Effects\SharpenEffect.cs" />
+    <Compile Include="Effects\SmoothMagnifyEffect.cs" />
+    <Compile Include="Effects\SwirlEffect.cs" />
+    <Compile Include="Effects\ToneMappingEffect.cs" />
+    <Compile Include="Effects\ToonShaderEffect.cs" />
+    <Compile Include="Effects\WaveShaderEffect.cs" />
+    <Compile Include="Effects\ZoomBlurEffect.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Interfaces\ICustomEffect.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PropertyGrids\BandedSwirlPropertyGrid.xaml.cs">
+      <DependentUpon>BandedSwirlPropertyGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\BloomGrid.xaml.cs">
+      <DependentUpon>BloomGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\BlurGrid.xaml.cs">
+      <DependentUpon>BlurGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\BrightExtractGrid.xaml.cs">
+      <DependentUpon>BrightExtractGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\ChromaKeyAlphaEffectGrid.xaml.cs">
+      <DependentUpon>ChromaKeyAlphaEffectGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\ColorToneGrid.xaml.cs">
+      <DependentUpon>ColorToneGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\ContrastAdjustGrid.xaml.cs">
+      <DependentUpon>ContrastAdjustGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\DirectionalBlurGrid.xaml.cs">
+      <DependentUpon>DirectionalBlurGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\DropShadowGrid.xaml.cs">
+      <DependentUpon>DropShadowGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\EmbossedGrid.xaml.cs">
+      <DependentUpon>EmbossedGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\GloomGrid.xaml.cs">
+      <DependentUpon>GloomGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\GrowablePoissonDiskGrid.xaml.cs">
+      <DependentUpon>GrowablePoissonDiskGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\HatchingGrid.xaml.cs">
+      <DependentUpon>HatchingGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\InvertColorGrid.xaml.cs">
+      <DependentUpon>InvertColorGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\LightStreakGrid.xaml.cs">
+      <DependentUpon>LightStreakGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\MagnifyGrid.xaml.cs">
+      <DependentUpon>MagnifyGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\MonochromeGrid.xaml.cs">
+      <DependentUpon>MonochromeGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\PinchGrid.xaml.cs">
+      <DependentUpon>PinchGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\PixelateGrid.xaml.cs">
+      <DependentUpon>PixelateGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\RippleGrid.xaml.cs">
+      <DependentUpon>RippleGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\SharpenGrid.xaml.cs">
+      <DependentUpon>SharpenGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\SmoothMagnifyGrid.xaml.cs">
+      <DependentUpon>SmoothMagnifyGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\SwirlGrid.xaml.cs">
+      <DependentUpon>SwirlGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\ToneMappingGrid.xaml.cs">
+      <DependentUpon>ToneMappingGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrids\ZoomBlurShadowGrid.xaml.cs">
+      <DependentUpon>ZoomBlurShadowGrid.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="ShaderSource\ReflectionEffect.ps" />
+    <Resource Include="ShaderSource\Greyscale.ps" />
+    <Resource Include="ShaderSource\WaveEffect.ps" />
+    <None Include="Inspire.Key.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Resource Include="ShaderSource\HatchingEffect.ps" />
+    <Resource Include="ShaderSource\ChromaKeyAlpha.ps" />
+    <Resource Include="ShaderSource\BandedSwirl.ps" />
+    <Resource Include="ShaderSource\Bloom.ps" />
+    <Resource Include="ShaderSource\BrightExtract.ps" />
+    <Resource Include="ShaderSource\ColorKeyAlpha.ps" />
+    <Resource Include="ShaderSource\ColorTone.ps" />
+    <Resource Include="ShaderSource\ContrastAdjust.ps" />
+    <Resource Include="ShaderSource\DirectionalBlur.ps" />
+    <Resource Include="ShaderSource\Embossed.ps" />
+    <Resource Include="ShaderSource\Gloom.ps" />
+    <Resource Include="ShaderSource\GrowablePoissonDisk.ps" />
+    <Resource Include="ShaderSource\InvertColor.ps" />
+    <Resource Include="ShaderSource\LightStreak.ps" />
+    <Resource Include="ShaderSource\Magnify.ps" />
+    <Resource Include="ShaderSource\Monochrome.ps" />
+    <Resource Include="ShaderSource\Pinch.ps" />
+    <Resource Include="ShaderSource\Pixelate.ps" />
+    <Resource Include="ShaderSource\Ripple.ps" />
+    <Resource Include="ShaderSource\Sharpen.ps" />
+    <Resource Include="ShaderSource\SmoothMagnify.ps" />
+    <Resource Include="ShaderSource\Swirl.ps" />
+    <Resource Include="ShaderSource\ToneMapping.ps" />
+    <Resource Include="ShaderSource\ToonShader.ps" />
+    <Resource Include="ShaderSource\ZoomBlur.ps" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ColorPicker\ColorPickerDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EffectSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\BandedSwirlPropertyGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\BloomGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\BlurGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\BrightExtractGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\ChromaKeyAlphaEffectGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\ColorToneGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\ContrastAdjustGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\DirectionalBlurGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\DropShadowGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\EmbossedGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\GloomGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\GrowablePoissonDiskGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\HatchingGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\InvertColorGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\LightStreakGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\MagnifyGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\MonochromeGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\PinchGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\PixelateGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\RippleGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\SharpenGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\SmoothMagnifyGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\SwirlGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\ToneMappingGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyGrids\ZoomBlurShadowGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Textures\DarkToneTexture.png" />
+    <Resource Include="Textures\LightToneTexture.png" />
+    <Resource Include="Textures\MiddleToneTexture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

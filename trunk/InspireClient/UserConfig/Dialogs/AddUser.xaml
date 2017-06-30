@@ -1,0 +1,28 @@
+﻿<Window x:Class="UserConfig.Dialogs.AddUser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    xmlns:Commands="clr-namespace:Inspire.Commands;assembly=Inspire"
+    Title="Add New User" Height="361" Width="494" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.SaveCommand}" Executed="AddUserExecuted" CanExecute="AddUserCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.CancelCommand}" Executed="CancelExecuted" CanExecute="CancelCanExecute" />
+    </Window.CommandBindings>
+    <Grid Background="{StaticResource PopupBackgroundBrush}"> <!---->
+        <Label HorizontalAlignment="Left" Margin="41,30,0,0" Foreground="White" Name="lblUserName" Width="76"   Height="25" VerticalAlignment="Top">User Name :</Label>      
+        <Inspire:InfoTextBox Foreground="{StaticResource Foreground}" Margin="107,27,12,0" Name="tbUserName" Height="25" VerticalAlignment="Top" Width="344" TextBoxInfo="Enter the User's Name" />
+        <Label Foreground="White" Height="28" HorizontalAlignment="Left" Margin="69,62,0,0" VerticalAlignment="Top" Width="50">Login :</Label>
+        <Inspire:InfoTextBox Foreground="{StaticResource Foreground}" Height="25" Width="344" Margin="107,58,12,0" Name="tbUserLogin" VerticalAlignment="Top" TextBoxInfo="Enter the User Login ID Associated with the User" />
+        <Label Foreground="White"  HorizontalAlignment="Left" Margin="49,132,0,0"  Width="70" Height="22" VerticalAlignment="Top">Password :</Label>
+        <PasswordBox  Visibility="Collapsed" Foreground="{StaticResource Foreground}" Height="25" Margin="118,92,22,0" Name="pbOldPassword" VerticalAlignment="Top" />
+        <PasswordBox Foreground="{StaticResource Foreground}" Margin="118,127,22,0"  Height="25" Name="tbUserPassword"  VerticalAlignment="Top" />
+        <PasswordBox Foreground="{StaticResource Foreground}" Height="25" Margin="118,160,22,0" Name="pbConfirm"   VerticalAlignment="Top"/>
+        <Label HorizontalAlignment="Left" Height="25" Margin="39,193,0,0" Foreground="White" Name="label1" Width="79" VerticalAlignment="Top">Description :</Label>
+        <Inspire:InfoTextBox Foreground="{StaticResource Foreground}" Name="tbUserDescription" Margin="107,193,12,0" Width="344"  TextWrapping="Wrap" TextBoxInfo="Enter an optional description for the user"  Height="83" VerticalAlignment="Top"/>
+        <Button Height="35" Inspire:ButtonImage.Image="..\Resources\Images\Ok16.png" Margin="189,0,146,5" Name="btnSave" VerticalAlignment="Bottom" Command="{x:Static Commands:InspireCommands.SaveCommand}" Content="{Binding RelativeSource={RelativeSource Self}, Path=Command.Text}" IsDefault="True"></Button>
+        <Button Height="35" Inspire:ButtonImage.Image="..\Resources\Images\Cancel16.png" HorizontalAlignment="Right" Margin="0,0,12,5" Name="btnCancel" Command="{x:Static Commands:InspireCommands.CancelCommand}" Content="{Binding RelativeSource={RelativeSource Self}, Path=Command.Text}" VerticalAlignment="Bottom" Width="128" Click="btnCancel_Click"></Button>
+        <Label Content="Confirm Password :" Foreground="White" Height="25" HorizontalAlignment="Left" Margin="4,165,0,0" VerticalAlignment="Top" Width="101" />
+        <Label x:Name="lblOldPass" Visibility="Collapsed" Content="Old Password :" Foreground="White" Height="22" HorizontalAlignment="Left" Margin="29,97,0,0" VerticalAlignment="Top" Width="90" />
+        
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Resource Access\Events.DataAccess\bin\Debug\Events.DataAccess.DataAccess.dll
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Resource Access\Events.DataAccess\bin\Debug\Events.DataAccess.DataAccess.pdb
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Resource Access\Events.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Resource Access\Events.DataAccess\obj\Debug\Events.DataAccess.DataAccess.dll
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Resource Access\Events.DataAccess\obj\Debug\Events.DataAccess.DataAccess.pdb
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Resource Access\Events.DataAccess\bin\Debug\Events.DataContracts.DataContracts.dll
+C:\Users\jhaveard\Desktop\EventsManager\Events\Source\Resource Access\Events.DataAccess\bin\Debug\Events.DataContracts.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Resource Access\Events.DataAccess\bin\Debug\Events.DataAccess.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Resource Access\Events.DataAccess\bin\Debug\Events.DataAccess.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Resource Access\Events.DataAccess\bin\Debug\Events.DataContracts.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Resource Access\Events.DataAccess\bin\Debug\Events.DataContracts.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Resource Access\Events.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Resource Access\Events.DataAccess\obj\Debug\Events.DataAccess.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\EventsManager\Events\Source\Resource Access\Events.DataAccess\obj\Debug\Events.DataAccess.DataAccess.pdb

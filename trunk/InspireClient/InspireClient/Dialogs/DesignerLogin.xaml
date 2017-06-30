@@ -1,0 +1,40 @@
+﻿<Window x:Class="Inspire.Client.DesignerLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Login" Height="346" Background="Transparent" Width="533" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire" xmlns:System="clr-namespace:System;assembly=mscorlib" mc:Ignorable="d">
+    <Window.Resources>
+        <Inspire:FullDateConverter x:Key="fullDateConverter3" />
+    </Window.Resources>
+
+    <Border Opacity=".95" Background="{StaticResource ListBackgroundBrush}" CornerRadius="0" Height="269">
+        <Grid>
+            <TextBlock TextAlignment="Right" FontSize="14" Foreground="White" Text="{Binding Converter={StaticResource fullDateConverter3}, Source={x:Static System:DateTime.Now}}" HorizontalAlignment="Right" Margin="0,48,30,0" Width="201" Height="26" VerticalAlignment="Top" />
+            <Rectangle Height="4" Margin="0,70,-1,0" VerticalAlignment="Top" Fill="{StaticResource DefaultedBorderBrush}" />
+            <Image Margin="-15,-36,0,0" Source="../Logo.png"  Stretch="UniformToFill" HorizontalAlignment="Left" Width="233" Height="151" VerticalAlignment="Top" />
+            <TextBlock Margin="224,94,30,102" TextWrapping="Wrap" FontSize="15" Foreground="White" Text="The server cannot be reached. Would you like to open the software in Designer Mode?"/>
+            <Button x:Name="LoginButton" Height="35" Margin="217,0,164,39" VerticalAlignment="Bottom" Inspire:ButtonImage.Image="..\Resources\Images\Ok16.png" Click="btnLogin_Click" IsDefault="True" Content="Login"/>
+            <Button Height="35" HorizontalAlignment="Right" Margin="0,0,30,39" Inspire:ButtonImage.Image="..\Resources\Images\Cancel16.png" VerticalAlignment="Bottom" Width="128" Click="btnCancel_Click" Content="Cancel"/>
+            <Rectangle Fill="{StaticResource PopupBackgroundBrush}" Height="22" VerticalAlignment="Bottom"/>
+            <TextBlock Foreground="DarkGray" Margin="0,0,-2,-4" HorizontalAlignment="Right" Width="132" Height="23" VerticalAlignment="Bottom"><Run Text="INSPIRE Digital Signage"/></TextBlock>
+            <Image Margin="-14.959,29.5,0,88.322" x:Name="imgLogo_Copy" Source="..\Logo.png" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="240.96" >
+                <Image.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#00000000" Offset="0.304"/>
+                        <GradientStop Color="#FFFFFFFF" Offset="1"/>
+                        <GradientStop Color="#00646464" Offset="0.393"/>
+                        <GradientStop Color="#33A4A4A4" Offset="0.571"/>
+                        <GradientStop Color="#FFE9E9E9" Offset="0.683"/>
+                    </LinearGradientBrush>
+                </Image.OpacityMask>
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="179.886"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,55 @@
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\Documents and Settings\jhaveard\Desktop\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\Documents and Settings\jhaveard\Desktop\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\Documents and Settings\jhaveard\Desktop\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\jhaveard\Desktop\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\Documents and Settings\jhaveard\Desktop\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\bin\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.DisplayAdmin\Server\Source\Business Logic\Inspire.Server.DisplayAdmin.BusinessEntities\obj\Debug\Inspire.Server.DisplayAdmin.BusinessEntities.pdb

@@ -1,0 +1,31 @@
+﻿<Window x:Class="Inspire.Client.Designer.Dialogs.NewSlide"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    Title="New Slide" Height="439" Width="275" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" Background="{DynamicResource WindowBackgroundBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Click="CreateCustomSlide_Click">Custom Size Slide</Button>
+        <ListBox Grid.Row="1" Margin="5,5,5,5" Name="lbDisplays">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="24" Height="24" Margin="3,0" Source="Images\Display.ico" />
+                        <TextBlock Text="{Binding DisplayName}" />
+                        <TextBlock Text=" (" />
+                        <TextBlock Text="{Binding HResolution}" />
+                        <TextBlock Text="x" />
+                        <TextBlock Text="{Binding VResolution}" />
+                        <TextBlock Text=") " />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Grid.Row="2" Height="35" Name="btnCreateSlide" VerticalAlignment="Bottom" Inspire:ButtonImage.Image="Images\Ok16.png" Click="btnCreateSlide_Click" HorizontalAlignment="Left" Width="128" Margin="5,0,0,5">Create Slide</Button>
+        <Button Grid.Row="2" Height="35" Name="btnCancel" VerticalAlignment="Bottom" Click="btnCancel_Click" Inspire:ButtonImage.Image="Images\Cancel16.png" Margin="0,0,5,5" HorizontalAlignment="Right" Width="128">Cancel</Button>
+    </Grid>
+</Window>

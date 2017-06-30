@@ -1,0 +1,114 @@
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceImplementation.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceImplementation.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.BusinessLogic.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.MessageContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataAccess.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.BusinessLogic.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.MessageContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataAccess.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\Inspire.Server.Groups.ServiceImplementation.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\Inspire.Server.Groups.ServiceImplementation.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceImplementation.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceImplementation.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.BusinessLogic.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.MessageContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataAccess.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.BusinessLogic.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.MessageContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataAccess.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\Inspire.Server.Groups.ServiceImplementation.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\Inspire.Server.Groups.ServiceImplementation.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceImplementation.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceImplementation.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.BusinessLogic.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.MessageContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataAccess.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.BusinessLogic.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.MessageContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataAccess.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\Inspire.Server.Groups.ServiceImplementation.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\Inspire.Server.Groups.ServiceImplementation.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceImplementation.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceImplementation.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.BusinessLogic.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.MessageContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataAccess.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.BusinessLogic.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.MessageContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataAccess.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\Inspire.Server.Groups.ServiceImplementation.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\Inspire.Server.Groups.ServiceImplementation.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceImplementation.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceImplementation.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.BusinessLogic.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.MessageContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataAccess.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.BusinessLogic.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.MessageContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataAccess.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\Inspire.Server.Groups.ServiceImplementation.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\Inspire.Server.Groups.ServiceImplementation.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceImplementation.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceImplementation.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.BusinessLogic.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.MessageContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataAccess.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.BusinessLogic.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.MessageContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.ServiceContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Groups.DataAccess.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\Inspire.Server.Groups.ServiceImplementation.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Service Interface\Inspire.Groups.ServiceImplementation\obj\Debug\Inspire.Server.Groups.ServiceImplementation.pdb

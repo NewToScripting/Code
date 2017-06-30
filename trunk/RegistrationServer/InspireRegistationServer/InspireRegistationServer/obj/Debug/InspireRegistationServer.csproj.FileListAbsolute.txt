@@ -1,0 +1,6 @@
+C:\CODE\trunk\RegistrationServer\InspireRegistationServer\InspireRegistationServer\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\RegistrationServer\InspireRegistationServer\InspireRegistationServer\bin\Debug\InspireRegistationServer.dll.config
+C:\CODE\trunk\RegistrationServer\InspireRegistationServer\InspireRegistationServer\bin\Debug\InspireRegistationServer.dll
+C:\CODE\trunk\RegistrationServer\InspireRegistationServer\InspireRegistationServer\bin\Debug\InspireRegistationServer.pdb
+C:\CODE\trunk\RegistrationServer\InspireRegistationServer\InspireRegistationServer\obj\Debug\InspireRegistationServer.dll
+C:\CODE\trunk\RegistrationServer\InspireRegistationServer\InspireRegistationServer\obj\Debug\InspireRegistationServer.pdb

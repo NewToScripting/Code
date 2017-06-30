@@ -1,0 +1,1 @@
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Resource Access\Inspire.Groups.DataAccess\obj\Debug\ResolveAssemblyReference.cache

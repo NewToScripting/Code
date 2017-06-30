@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://schemas.inspiredisplays.com" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="TemplateService" targetNamespace="http://schemas.inspiredisplays.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/Imports">
+      <xsd:import schemaLocation="http://devserver2003/Inspire.ClientManager/TemplateService.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com" />
+      <xsd:import schemaLocation="http://devserver2003/Inspire.ClientManager/TemplateService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://devserver2003/Inspire.ClientManager/TemplateService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/Message" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTemplatesRequestMessage" />
+  <wsdl:message name="GetTemplatesResourceMessage">
+    <wsdl:part name="FeedTemplates" element="tns:FeedTemplates" />
+  </wsdl:message>
+  <wsdl:message name="TemplateServiceContract_GetTemplates_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleTemplateRequestMessage">
+    <wsdl:part name="templateID" element="tns:templateID" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleTemplateResponseMessage">
+    <wsdl:part name="TemplateStream" element="tns:TemplateStream" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleTemplateResponseMessage_Headers">
+    <wsdl:part name="FeedTemplate" element="tns:FeedTemplate" />
+    <wsdl:part name="FileSize" element="tns:FileSize" />
+  </wsdl:message>
+  <wsdl:message name="TemplateServiceContract_GetSingleTemplate_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddTemplateRequestMessage">
+    <wsdl:part name="TemplateStream" element="tns:TemplateStream" />
+  </wsdl:message>
+  <wsdl:message name="AddTemplateRequestMessage_Headers">
+    <wsdl:part name="FeedTemplate" element="tns:FeedTemplate" />
+    <wsdl:part name="FileSize" element="tns:FileSize" />
+  </wsdl:message>
+  <wsdl:message name="AddTemplateResponseMessage" />
+  <wsdl:message name="TemplateServiceContract_AddTemplate_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTemplateRequestMessage">
+    <wsdl:part name="templateID" element="tns:templateID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTemplateResponseMessage" />
+  <wsdl:message name="TemplateServiceContract_DeleteTemplate_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="TemplateServiceContract">
+    <wsdl:operation name="GetTemplates">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/TemplateServiceContract/GetTemplates" name="GetTemplatesRequestMessage" message="tns:GetTemplatesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/TemplateServiceContract/GetTemplatesResponse" name="GetTemplatesResourceMessage" message="tns:GetTemplatesResourceMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/TemplateServiceContract/GetTemplatesGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:TemplateServiceContract_GetTemplates_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleTemplate">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/TemplateServiceContract/GetSingleTemplate" name="GetSingleTemplateRequestMessage" message="tns:GetSingleTemplateRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/TemplateServiceContract/GetSingleTemplateResponse" name="GetSingleTemplateResponseMessage" message="tns:GetSingleTemplateResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/TemplateServiceContract/GetSingleTemplateGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:TemplateServiceContract_GetSingleTemplate_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTemplate">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/TemplateServiceContract/AddTemplate" name="AddTemplateRequestMessage" message="tns:AddTemplateRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/TemplateServiceContract/AddTemplateResponse" name="AddTemplateResponseMessage" message="tns:AddTemplateResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/TemplateServiceContract/AddTemplateGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:TemplateServiceContract_AddTemplate_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTemplate">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/TemplateServiceContract/DeleteTemplate" name="DeleteTemplateRequestMessage" message="tns:DeleteTemplateRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/TemplateServiceContract/DeleteTemplateResponse" name="DeleteTemplateResponseMessage" message="tns:DeleteTemplateResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/TemplateServiceContract/DeleteTemplateGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:TemplateServiceContract_DeleteTemplate_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TemplateEndpoint" type="tns:TemplateServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTemplates">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/TemplateServiceContract/GetTemplates" style="document" />
+      <wsdl:input name="GetTemplatesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetTemplatesResourceMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleTemplate">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/TemplateServiceContract/GetSingleTemplate" style="document" />
+      <wsdl:input name="GetSingleTemplateRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetSingleTemplateResponseMessage">
+        <soap:header message="tns:GetSingleTemplateResponseMessage_Headers" part="FeedTemplate" use="literal" />
+        <soap:header message="tns:GetSingleTemplateResponseMessage_Headers" part="FileSize" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddTemplate">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/TemplateServiceContract/AddTemplate" style="document" />
+      <wsdl:input name="AddTemplateRequestMessage">
+        <soap:header message="tns:AddTemplateRequestMessage_Headers" part="FeedTemplate" use="literal" />
+        <soap:header message="tns:AddTemplateRequestMessage_Headers" part="FileSize" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddTemplateResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTemplate">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/TemplateServiceContract/DeleteTemplate" style="document" />
+      <wsdl:input name="DeleteTemplateRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteTemplateResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TemplateService">
+    <wsdl:port name="TemplateEndpoint" binding="tns:TemplateEndpoint">
+      <soap:address location="http://devserver2003/Inspire.ClientManager/TemplateService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

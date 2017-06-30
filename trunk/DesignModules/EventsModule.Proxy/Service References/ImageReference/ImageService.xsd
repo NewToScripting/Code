@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.inspiredisplays.com" elementFormDefault="qualified" targetNamespace="http://schemas.inspiredisplays.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Type" type="xs:int" />
+  <xs:complexType name="EventImages">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EventImages" nillable="true" type="tns:EventImage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventImages" nillable="true" type="tns:EventImages" />
+  <xs:complexType name="EventImage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GUID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WebPath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileExtension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventImage" nillable="true" type="tns:EventImage" />
+  <xs:complexType name="GeneralFaultContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GeneralFaultContract" nillable="true" type="tns:GeneralFaultContract" />
+  <xs:element name="ImageFile" nillable="true" type="xs:base64Binary" />
+  <xs:element name="WebPath" nillable="true" type="xs:string" />
+</xs:schema>

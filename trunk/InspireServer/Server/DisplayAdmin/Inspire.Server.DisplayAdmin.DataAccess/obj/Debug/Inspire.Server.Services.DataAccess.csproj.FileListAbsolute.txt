@@ -1,0 +1,17 @@
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\bin\Debug\Inspire.Server.Services.DataAccess.dll
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\bin\Debug\Inspire.Server.Services.DataAccess.pdb
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\bin\Debug\Inspire.Server.Services.BusinessEntities.dll
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\bin\Debug\Inspire.Server.Services.BusinessEntities.pdb
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\obj\Debug\Inspire.Server.Services.DataAccess.dll
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\obj\Debug\Inspire.Server.Services.DataAccess.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\bin\Debug\Inspire.Server.Services.DataAccess.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\bin\Debug\Inspire.Server.Services.DataAccess.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\bin\Debug\Inspire.Server.Services.BusinessEntities.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\bin\Debug\Inspire.Server.Services.DataContracts.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\bin\Debug\Inspire.Server.Services.BusinessEntities.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\bin\Debug\Inspire.Server.Services.DataContracts.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\obj\Debug\Inspire.Server.Services.DataAccess.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\obj\Debug\Inspire.Server.Services.DataAccess.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Resource Access\Inspire.Server.Services.DataAccess\bin\Debug\Inspire.Server.Services.DataAccess.dll.config

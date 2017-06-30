@@ -1,0 +1,22 @@
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\obj\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.FaultContracts\obj\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Common\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Common\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Common\obj\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Common\obj\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Common\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Common\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Common\obj\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Common\obj\Debug\Inspire.Server.Common.pdb
+C:\CODE\trunk\InspireServer\Server\Common\bin\Debug\Inspire.Server.Common.dll
+C:\CODE\trunk\InspireServer\Server\Common\bin\Debug\Inspire.Server.Common.pdb
+C:\CODE\trunk\InspireServer\Server\Common\bin\Debug\Ionic.Zip.dll
+C:\CODE\trunk\InspireServer\Server\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Server\Common\obj\Debug\Inspire.Server.Common.dll
+C:\CODE\trunk\InspireServer\Server\Common\obj\Debug\Inspire.Server.Common.pdb
+C:\CODE\trunk\InspireServer\Server\Common\bin\Debug\System.Data.SqlServerCe.dll

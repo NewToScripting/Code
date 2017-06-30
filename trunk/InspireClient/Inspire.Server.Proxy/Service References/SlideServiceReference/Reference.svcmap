@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="53c5532f-a90b-47cd-b084-45d0e25abc30" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://twsignage/Inspire.server/svc/SlideService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SlideService.disco" MetadataType="Disco" ID="196212fc-63b8-4f19-ae1c-091cad110581" SourceId="1" SourceUrl="http://twsignage/Inspire.Server/Svc/SlideService.svc?disco" />
+    <MetadataFile FileName="SlideManagerService.wsdl" MetadataType="Wsdl" ID="f22ee68b-99b3-4159-b73a-f0919a58af92" SourceId="1" SourceUrl="http://twsignage/Inspire.Server/Svc/SlideService.svc?wsdl" />
+    <MetadataFile FileName="SlideService.xsd" MetadataType="Schema" ID="46018d96-d40f-428b-8327-93f6ec294df3" SourceId="1" SourceUrl="http://twsignage/Inspire.Server/Svc/SlideService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SlideService1.xsd" MetadataType="Schema" ID="4db5afdf-685d-4777-a153-0c759ddce2a6" SourceId="1" SourceUrl="http://twsignage/Inspire.Server/Svc/SlideService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

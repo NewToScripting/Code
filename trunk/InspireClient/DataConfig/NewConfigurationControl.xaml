@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="DataConfig.NewConfigurationControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="341" Width="558">
+    <Grid>
+        <TextBlock Text="DataSources:" Height="21" HorizontalAlignment="Left" VerticalAlignment="Top" Width="69" Margin="47,26,0,0" />
+        <ListBox Margin="122,26,0,0" HorizontalAlignment="Left" Width="193" Height="102" VerticalAlignment="Top"></ListBox>
+        <Button ToolTip="Add Data Source"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="22" VerticalAlignment="Top" Margin="247,134,0,0" HorizontalAlignment="Left" Width="31" Click="Button_Click">
+            <Image IsHitTestVisible="False" Source="Resources/Images/Add.png" />
+        </Button>
+        <Button ToolTip="Remove Data Source" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="22" Margin="284,134,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="31">
+            <Image IsHitTestVisible="False" Source="Resources/Images/Remove.png" />
+        </Button>
+        <Button Height="28" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="321,26,0,0" Content="Modify" />
+        <ListBox Margin="12,182,12,50"></ListBox>
+        <TextBlock HorizontalAlignment="Left" Margin="14,164,0,0" Text="Data:" Width="69" Height="21" VerticalAlignment="Top" />
+        <Button Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="116" Margin="0,0,134,7" Content="Save" />
+        <Button Height="30" HorizontalAlignment="Right" Margin="0,0,12,7" VerticalAlignment="Bottom" Width="116" Content="Cancel" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,20 @@
+C:\New_Code\InspireCloud\UnitTests\bin\Release\UnitTests.dll.config
+C:\New_Code\InspireCloud\UnitTests\bin\Release\UnitTests.dll
+C:\New_Code\InspireCloud\UnitTests\bin\Release\UnitTests.pdb
+C:\New_Code\InspireCloud\UnitTests\bin\Release\Inspire Proxy.dll
+C:\New_Code\InspireCloud\UnitTests\bin\Release\WeatherModule.Proxy.dll
+C:\New_Code\InspireCloud\UnitTests\bin\Release\WeatherModule.Proxy.pdb
+C:\New_Code\InspireCloud\UnitTests\bin\Release\Inspire Proxy.pdb
+C:\New_Code\InspireCloud\UnitTests\obj\Release\UnitTests.csprojResolveAssemblyReference.cache
+C:\New_Code\InspireCloud\UnitTests\obj\Release\UnitTests.dll
+C:\New_Code\InspireCloud\UnitTests\obj\Release\UnitTests.pdb
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Release\UnitTests.dll.config
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Release\UnitTests.dll
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Release\UnitTests.pdb
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Release\Inspire Proxy.dll
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Release\WeatherModule.Proxy.dll
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Release\WeatherModule.Proxy.pdb
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Release\Inspire Proxy.pdb
+C:\CODE\trunk\InspireCloud\UnitTests\obj\Release\UnitTests.csprojResolveAssemblyReference.cache
+C:\CODE\trunk\InspireCloud\UnitTests\obj\Release\UnitTests.dll
+C:\CODE\trunk\InspireCloud\UnitTests\obj\Release\UnitTests.pdb

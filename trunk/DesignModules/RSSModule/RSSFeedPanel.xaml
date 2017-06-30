@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="RSSModule.RSSFeedPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:RSSModule="clr-namespace:RSSModule" xmlns:InspireFwk="clr-namespace:Inspire;assembly=Inspire" mc:Ignorable="d">
+        <UserControl.Resources>
+            <DataTemplate  DataType="{x:Type RSSModule:RSSItem}">
+                <StackPanel Orientation="Vertical" Margin="10,10,10,50">
+                    <TextBlock Text="{Binding Title}" Margin="5" TextWrapping="Wrap" FontSize="{Binding RSSItemTitleFontSize}" Foreground="{Binding RSSItemTitleForeground}" FontFamily="{Binding RSSItemTitleFontFamily}" />
+                    <TextBlock Text="{Binding DescriptionText}" Margin="15,5,5,5" TextWrapping="Wrap" FontSize="{Binding RSSItemDescriptionFontSize}" Foreground="{Binding RSSItemDescriptionForeground}" FontFamily="{Binding RSSItemDescriptionFontFamily}" />
+                <!--<FlowDocumentScrollViewer Document="{Binding Description}" Margin="5,0,0,0" Foreground="{Binding RSSItemDescriptionForeground}" FontFamily="{Binding RSSItemDescriptionFontFamily}" ScrollViewer.VerticalScrollBarVisibility="Disabled"  />-->
+            </StackPanel>
+            </DataTemplate>
+        </UserControl.Resources>
+    <Grid>
+        <InspireFwk:LoadingControl HorizontalAlignment="Center" VerticalAlignment="Center" Name="LoadingControlPART" />
+        <InspireFwk:ScrollPanelWrapper ScrollViewer.VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled">
+        <ItemsControl Name="RSSContainerPART" Visibility="Collapsed" ClipToBounds="True">
+        <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Vertical"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+        </ItemsControl>
+        </InspireFwk:ScrollPanelWrapper>
+    </Grid>
+</UserControl>

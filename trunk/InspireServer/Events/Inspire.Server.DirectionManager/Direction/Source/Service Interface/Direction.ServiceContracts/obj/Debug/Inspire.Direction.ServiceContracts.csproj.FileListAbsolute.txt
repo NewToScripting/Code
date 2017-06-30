@@ -1,0 +1,33 @@
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.ServiceContracts\bin\Debug\Inspire.Direction.ServiceContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.ServiceContracts\bin\Debug\Inspire.Direction.ServiceContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.ServiceContracts\bin\Debug\Inspire.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.ServiceContracts\bin\Debug\Inspire.Direction.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.ServiceContracts\bin\Debug\Inspire.Direction.MessageContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.ServiceContracts\bin\Debug\Inspire.Direction.MessageContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.ServiceContracts\bin\Debug\Inspire.Direction.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.ServiceContracts\bin\Debug\Inspire.Direction.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.ServiceContracts\obj\Debug\Inspire.Direction.ServiceContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.ServiceContracts\obj\Debug\Inspire.Direction.ServiceContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.ServiceContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.ServiceContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.MessageContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.MessageContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\obj\Debug\Inspire.Direction.ServiceContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\obj\Debug\Inspire.Direction.ServiceContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.ServiceContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.ServiceContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.MessageContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.MessageContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\bin\Debug\Inspire.Direction.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\obj\Debug\Inspire.Direction.ServiceContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceContracts\obj\Debug\Inspire.Direction.ServiceContracts.pdb

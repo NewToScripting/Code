@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="186fe476-bd02-4aae-ab17-18ea8f63f7f4" name="jhaveard@CAPEHORN 2009-10-04 14:50:32" runUser="CAPEHORN\jhaveard" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="f87716d9-9b5a-43ed-b471-b2677316cf16">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\CODE\InspireServer\Events Server\_RebuildAll\TestResults\jhaveard_CAPEHORN 2009-10-04 14_50_32">
+      <DeploymentItem filename="C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.dll" />
+      <DeploymentItem filename="C:\CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceImplementation\bin\Debug\Inspire.Server.Direction.ServiceImplementation.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="3" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2009-10-04T14:50:32.6506137-04:00" queuing="2009-10-04T14:50:34.2946137-04:00" start="2009-10-04T14:50:34.5976137-04:00" finish="2009-10-04T14:50:42.0916137-04:00" />
+  <TestDefinitions>
+    <UnitTest name="UpdateEventFileFormatUsingEndpoint" storage="c:\code\inspireserver\events server\_rebuildall\events.unit.tests\bin\debug\events.unit.tests.dll" id="7d4d63fd-9be2-02c1-e3da-6f1b1f138a0d">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="a16e8af4-5807-432a-8ce9-55219ded8c3d" />
+      <TestMethod codeBase="C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\bin\Debug\Events.Unit.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Events.Unit.Tests.EventTests, Events.Unit.Tests" name="UpdateEventFileFormatUsingEndpoint" />
+    </UnitTest>
+    <UnitTest name="GetEventFileFormatUsingEndpoint" storage="c:\code\inspireserver\events server\_rebuildall\events.unit.tests\bin\debug\events.unit.tests.dll" id="c1ef0cd9-a0a2-b789-40a1-4dc7820886a4">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="f6f592de-f7c5-4004-aa49-7603a3186dce" />
+      <TestMethod codeBase="C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\bin\Debug\Events.Unit.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Events.Unit.Tests.EventTests, Events.Unit.Tests" name="GetEventFileFormatUsingEndpoint" />
+    </UnitTest>
+    <UnitTest name="GetEventFileFormatsUsingEndpoint" storage="c:\code\inspireserver\events server\_rebuildall\events.unit.tests\bin\debug\events.unit.tests.dll" id="361798ae-66ba-ba17-c3b6-83d6136259ea">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="b08019d6-6256-459c-a8a7-5f8d6608d3c1" />
+      <TestMethod codeBase="C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\bin\Debug\Events.Unit.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Events.Unit.Tests.EventTests, Events.Unit.Tests" name="GetEventFileFormatsUsingEndpoint" />
+    </UnitTest>
+    <UnitTest name="AddEventFileFormatUsingEndpoint" storage="c:\code\inspireserver\events server\_rebuildall\events.unit.tests\bin\debug\events.unit.tests.dll" id="f42e24c8-8c07-0c2c-dd07-a1341c79058b">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="b5d813bf-2fbd-40dc-90f6-0b2a34413dd8" />
+      <TestMethod codeBase="C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\bin\Debug\Events.Unit.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Events.Unit.Tests.EventTests, Events.Unit.Tests" name="AddEventFileFormatUsingEndpoint" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c1ef0cd9-a0a2-b789-40a1-4dc7820886a4" executionId="f6f592de-f7c5-4004-aa49-7603a3186dce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="361798ae-66ba-ba17-c3b6-83d6136259ea" executionId="b08019d6-6256-459c-a8a7-5f8d6608d3c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f42e24c8-8c07-0c2c-dd07-a1341c79058b" executionId="b5d813bf-2fbd-40dc-90f6-0b2a34413dd8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7d4d63fd-9be2-02c1-e3da-6f1b1f138a0d" executionId="a16e8af4-5807-432a-8ce9-55219ded8c3d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f6f592de-f7c5-4004-aa49-7603a3186dce" testId="c1ef0cd9-a0a2-b789-40a1-4dc7820886a4" testName="GetEventFileFormatUsingEndpoint" computerName="CAPEHORN" duration="00:00:03.1616631" startTime="2009-10-04T14:50:34.8316137-04:00" endTime="2009-10-04T14:50:38.6846137-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b08019d6-6256-459c-a8a7-5f8d6608d3c1" testId="361798ae-66ba-ba17-c3b6-83d6136259ea" testName="GetEventFileFormatsUsingEndpoint" computerName="CAPEHORN" duration="00:00:00.8199591" startTime="2009-10-04T14:50:38.7026137-04:00" endTime="2009-10-04T14:50:39.5356137-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b5d813bf-2fbd-40dc-90f6-0b2a34413dd8" testId="f42e24c8-8c07-0c2c-dd07-a1341c79058b" testName="AddEventFileFormatUsingEndpoint" computerName="CAPEHORN" duration="00:00:02.2340119" startTime="2009-10-04T14:50:39.5516137-04:00" endTime="2009-10-04T14:50:41.7966137-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a16e8af4-5807-432a-8ce9-55219ded8c3d" testId="7d4d63fd-9be2-02c1-e3da-6f1b1f138a0d" testName="UpdateEventFileFormatUsingEndpoint" computerName="CAPEHORN" duration="00:00:00.0932674" startTime="2009-10-04T14:50:41.8256137-04:00" endTime="2009-10-04T14:50:41.9266137-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Events.Unit.Tests.EventTests.UpdateEventFileFormatUsingEndpoint threw exception:  System.ServiceModel.FaultException`1[Events.Unit.Tests.EventServiceReference.GeneralFaultContract]: Error updateing event file format to database. An SqlParameter with ParameterName '@is_readonly' is not contained by this SqlParameterCollection..</Message>
+          <StackTrace> 
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc&amp; rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   at Events.Unit.Tests.EventServiceReference.EventServiceContract.UpdateEventFileFormat(UpdateEventFileFormatRequestMessage request)
+   at Events.Unit.Tests.EventServiceReference.EventServiceContractClient.Events.Unit.Tests.EventServiceReference.EventServiceContract.UpdateEventFileFormat(UpdateEventFileFormatRequestMessage request) in C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\Service References\EventServiceReference\Reference.cs:line 1608
+   at Events.Unit.Tests.EventServiceReference.EventServiceContractClient.UpdateEventFileFormat(EventFileFormat EventFileFormat) in C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\Service References\EventServiceReference\Reference.cs:line 1614
+   at Events.Unit.Tests.EventTests.UpdateEventFileFormatUsingEndpoint() in C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\EventTests.cs:line 197
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

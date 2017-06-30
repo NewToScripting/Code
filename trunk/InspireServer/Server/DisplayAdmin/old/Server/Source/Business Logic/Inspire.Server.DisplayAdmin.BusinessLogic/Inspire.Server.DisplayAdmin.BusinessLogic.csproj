@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4EAAB8D2-1B8F-4F5F-BC1E-3EA53E88332F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspire.Server.DisplayAdmin.BusinessLogic</RootNamespace>
+    <AssemblyName>Inspire.Server.DisplayAdmin.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_ResourceAccessFasade.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\SlideManager\Inspire.Server.SlideManager.csproj">
+      <Project>{0E8FBF2C-51CA-4CC6-9F13-FEFA382BBDF9}</Project>
+      <Name>Inspire.Server.SlideManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Resource Access\Inspire.Server.DisplayAdmin.DataAccess\Inspire.Server.DisplayAdmin.DataAccess.csproj">
+      <Project>{895961CE-7F5E-4433-B44C-CAF1E996B39E}</Project>
+      <Name>Inspire.Server.DisplayAdmin.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Service Interface\Inspire.Server.DisplayAdmin.DataContracts\Inspire.Server.DisplayAdmin.DataContracts.csproj">
+      <Project>{AA4793BD-AA2B-4263-9DDE-C3931B0DEF2F}</Project>
+      <Name>Inspire.Server.DisplayAdmin.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\Inspire.Server.DisplayAdmin.FaultContracts.csproj">
+      <Project>{3068D59C-FBB2-4F0D-844C-D82650B415AA}</Project>
+      <Name>Inspire.Server.DisplayAdmin.FaultContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GeneratedCode\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Roles="BusinessLogicRole" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

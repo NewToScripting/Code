@@ -1,0 +1,10 @@
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Service.BusinessEntities.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Service.BusinessEntities.pdb
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Service.BusinessEntities.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Service.BusinessEntities.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Service.BusinessEntities.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Service.BusinessEntities.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Service.BusinessEntities.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Service.BusinessEntities.pdb

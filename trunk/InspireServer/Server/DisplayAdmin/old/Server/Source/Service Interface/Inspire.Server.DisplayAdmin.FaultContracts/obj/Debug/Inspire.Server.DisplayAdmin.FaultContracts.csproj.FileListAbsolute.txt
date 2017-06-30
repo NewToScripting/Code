@@ -1,0 +1,55 @@
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\Documents and Settings\jhaveard\Desktop\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\Documents and Settings\jhaveard\Desktop\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\Documents and Settings\jhaveard\Desktop\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\jhaveard\Desktop\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\Documents and Settings\jhaveard\Desktop\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\Inspire Current\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.DisplayAdmin\Inspire.Server.DisplayAdmin\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\bin\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.FaultContracts\obj\Debug\Inspire.Server.DisplayAdmin.FaultContracts.pdb

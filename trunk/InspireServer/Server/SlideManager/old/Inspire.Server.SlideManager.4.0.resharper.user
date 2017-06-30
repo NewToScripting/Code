@@ -1,0 +1,126 @@
+<Configuration>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:DeleteSlideRequestMessage.cs" caret="457" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:DeleteSlideFlieRequestMessage.cs" caret="457" scrollPosition="0|0" />
+      <File id="7AC9247E-4A18-4575-A121-1E72B098C930/d:GeneratedCode/f:DefaultFaultContract.cs" caret="479" scrollPosition="0|0" />
+      <File id="AE07C941-C7A9-4BEB-A135-10561F02A3AD/d:GeneratedCode/f:Slides.cs" caret="479" scrollPosition="0|0" />
+      <File id="AE07C941-C7A9-4BEB-A135-10561F02A3AD/d:GeneratedCode/f:Slide.cs" caret="1199" scrollPosition="0|0" />
+      <File id="C59FB227-0BC5-47DC-B92E-78302037576D/f:SlideManagerServiceReference.svc" caret="0" scrollPosition="0|0" />
+      <File id="AE07C941-C7A9-4BEB-A135-10561F02A3AD/d:GeneratedCode/f:SlideFile.cs" caret="0" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:GetAllSlidesRequestMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="9CF5B819-3935-4A85-A39B-61686C9A3D08/d:GeneratedCode/f:ISlideFileManagerServiceContract.cs" caret="0" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:AddSlideFileResponseMessage.cs" caret="637" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:DeleteSlideFlieResponseMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:UpdateSlideFileResponseMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:AddSlideRequestMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:AddSlideResponseMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:UpdateSlideFilerRequestMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:GetAllSlidesResponseMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:GetSlideFileResponseMessage.cs" caret="1008" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:GetSlideFlieRequestMessage.cs" caret="739" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:AddSlideFileRequestMessage.cs" caret="1330" scrollPosition="0|0" />
+      <File id="F61288CC-C80F-4EB7-B802-9F2916422162/f:SlideDataAccess.cs" caret="0" scrollPosition="0|0" />
+      <File id="19A9200C-C725-491F-9388-ADBA6C32421A/f:app.config" caret="1164" scrollPosition="0|0" />
+      <File id="0C01B9B5-607D-44E0-AF97-3E13F2346F4F/f:StreamToBytes.cs" caret="1253" scrollPosition="0|22" />
+      <File id="F61288CC-C80F-4EB7-B802-9F2916422162/f:SlideFileDataAccess.cs" caret="2225" scrollPosition="0|54" />
+      <File id="0C01B9B5-607D-44E0-AF97-3E13F2346F4F/f:SlideManagerAccessFasade.cs" caret="1052" scrollPosition="0|21" />
+      <File id="0E8FBF2C-51CA-4CC6-9F13-FEFA382BBDF9/d:GeneratedCode/f:SlideFileManagerService.cs" caret="2285" scrollPosition="0|16" />
+      <File id="19A9200C-C725-491F-9388-ADBA6C32421A/f:Form1.Designer.cs" caret="491" scrollPosition="0|0" />
+      <File id="C59FB227-0BC5-47DC-B92E-78302037576D/d:App_Code/f:web.config" caret="2399" scrollPosition="0|12" />
+      <File id="19A9200C-C725-491F-9388-ADBA6C32421A/f:Form1.cs" caret="2102" scrollPosition="0|52" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:GetSlideFileResponseMessage.cs" caret="696" scrollPosition="0|0" />
+      <File id="19A9200C-C725-491F-9388-ADBA6C32421A/f:Form1.cs" caret="1669" scrollPosition="0|20" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:AddSlideFileRequestMessage.cs" caret="1004" scrollPosition="0|0" />
+      <File id="0C01B9B5-607D-44E0-AF97-3E13F2346F4F/f:StreamToBytes.cs" caret="95" scrollPosition="0|0" />
+      <File id="19A9200C-C725-491F-9388-ADBA6C32421A/f:Form1.cs" caret="2837" scrollPosition="0|33" />
+      <File id="19A9200C-C725-491F-9388-ADBA6C32421A/f:Form1.cs" caret="4118" scrollPosition="0|89" />
+      <File id="19A9200C-C725-491F-9388-ADBA6C32421A/f:Form1.cs" caret="4118" scrollPosition="0|89" />
+      <File id="C59FB227-0BC5-47DC-B92E-78302037576D/d:App_Code/f:web.config" caret="8507" scrollPosition="0|114" />
+      <File id="C59FB227-0BC5-47DC-B92E-78302037576D/d:App_Code/f:web.config" caret="7658" scrollPosition="0|102" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:AddSlideFileRequestMessage.cs" caret="1185" scrollPosition="0|6" />
+      <File id="0E8FBF2C-51CA-4CC6-9F13-FEFA382BBDF9/d:GeneratedCode/f:SlideFileManagerService.cs" caret="1945" scrollPosition="0|30" />
+      <File id="0C01B9B5-607D-44E0-AF97-3E13F2346F4F/f:StreamToBytes.cs" caret="1581" scrollPosition="0|3" />
+      <File id="0C01B9B5-607D-44E0-AF97-3E13F2346F4F/f:StreamToBytes.cs" caret="2679" scrollPosition="0|18" />
+      <File id="0C01B9B5-607D-44E0-AF97-3E13F2346F4F/f:StreamToBytes.cs" caret="2899" scrollPosition="0|12" />
+      <File id="0C01B9B5-607D-44E0-AF97-3E13F2346F4F/f:StreamToBytes.cs" caret="1266" scrollPosition="0|12" />
+      <File id="0E8FBF2C-51CA-4CC6-9F13-FEFA382BBDF9/d:GeneratedCode/f:SlideFileManagerService.cs" caret="2113" scrollPosition="0|21" />
+      <File id="0C01B9B5-607D-44E0-AF97-3E13F2346F4F/f:StreamToBytes.cs" caret="1180" scrollPosition="0|3" />
+      <File id="0C01B9B5-607D-44E0-AF97-3E13F2346F4F/f:StreamToBytes.cs" caret="1180" scrollPosition="0|3" />
+      <File id="0C01B9B5-607D-44E0-AF97-3E13F2346F4F/f:StreamToBytes.cs" caret="1118" scrollPosition="0|6" />
+      <File id="0C01B9B5-607D-44E0-AF97-3E13F2346F4F/f:StreamToBytes.cs" caret="903" scrollPosition="0|6" />
+      <File id="19A9200C-C725-491F-9388-ADBA6C32421A/f:Form1.cs" caret="2170" scrollPosition="0|49" />
+      <File id="19A9200C-C725-491F-9388-ADBA6C32421A/f:Form1.cs" caret="1651" scrollPosition="0|19" />
+      <File id="0C01B9B5-607D-44E0-AF97-3E13F2346F4F/f:StreamToBytes.cs" caret="1264" scrollPosition="0|25" />
+      <File id="0E8FBF2C-51CA-4CC6-9F13-FEFA382BBDF9/d:GeneratedCode/f:SlideFileManagerService.cs" caret="2629" scrollPosition="0|24" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:UpdateSlideFilerRequestMessage.cs" caret="1336" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:GetSlideFileResponseMessage.cs" caret="1008" scrollPosition="0|0" />
+      <File id="54F6DA65-09FA-4760-BB8D-E1103D06D09B/d:GeneratedCode/f:GetSlideFlieRequestMessage.cs" caret="739" scrollPosition="0|3" />
+      <File id="0E8FBF2C-51CA-4CC6-9F13-FEFA382BBDF9/d:GeneratedCode/f:SlideFileManagerService.cs" caret="1664" scrollPosition="0|9" />
+      <File id="C59FB227-0BC5-47DC-B92E-78302037576D/d:App_Code/f:web.config" caret="2590" scrollPosition="21|12" />
+      <File id="19A9200C-C725-491F-9388-ADBA6C32421A/f:Form1.cs" caret="2084" scrollPosition="0|52" />
+    </RecentEdits>
+  </RecentFiles>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+      <setting name="UseSolutionBuilder">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="GetSlideFile" priority="2" />
+      <Item value="string" priority="1" />
+      <Item value="Text" priority="0" />
+      <Item value="GUID" priority="7" />
+      <Item value="slideFile" priority="0" />
+      <Item value="UniqueIdentifier" priority="7" />
+      <Item value="ToString" priority="5" />
+      <Item value="AddSlideFile" priority="2" />
+      <Item value="VResolution" priority="1" />
+      <Item value="HResolution" priority="2" />
+      <Item value="NewGuid" priority="1" />
+      <Item value="Guid" priority="0" />
+      <Item value="Float" priority="1" />
+      <Item value="ToDouble" priority="0" />
+      <Item value="AddSlide" priority="0" />
+      <Item value="Slide" priority="0" />
+      <Item value="SlideManager" priority="0" />
+      <Item value="DataContracts" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="DeleteSlide" priority="0" />
+      <Item value="GetAllSlides" priority="0" />
+      <Item value="DataSource" priority="0" />
+      <Item value="GetDouble" priority="0" />
+      <Item value="SlideFile" priority="1" />
+      <Item value="byte" priority="3" />
+      <Item value="File" priority="2" />
+      <Item value="SlideFileID" priority="1" />
+      <Item value="Read" priority="0" />
+      <Item value="Length" priority="5" />
+      <Item value="MemoryStream" priority="2" />
+      <Item value="ToArray" priority="0" />
+      <Item value="Write" priority="0" />
+      <Item value="SlideFileStream" priority="1" />
+      <Item value="ReadFully" priority="0" />
+      <Item value="Byte" priority="0" />
+      <Item value="SlideFileSize" priority="1" />
+      <Item value="Dispose" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

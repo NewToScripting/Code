@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3BBD7F3-BEFC-417A-B572-CFD6D097AB4A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspire.Server.Groups.MessageContracts</RootNamespace>
+    <AssemblyName>Inspire.Server.Groups.MessageContracts</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeneratedCode\AddAliasRequestMessage.cs" />
+    <Compile Include="GeneratedCode\AddAliasResponseMessage.cs" />
+    <Compile Include="GeneratedCode\AddGroupRequestMessage.cs" />
+    <Compile Include="GeneratedCode\AddGroupResponseMessage.cs" />
+    <Compile Include="GeneratedCode\UpdateGroupRequestMessage.cs" />
+    <Compile Include="GeneratedCode\UpdateGroupResponseMessage.cs" />
+    <Compile Include="GeneratedCode\DeleteAliasRequestMessage.cs" />
+    <Compile Include="GeneratedCode\DeleteAliasResponseMessage.cs" />
+    <Compile Include="GeneratedCode\DeleteGroupRequestMessage.cs" />
+    <Compile Include="GeneratedCode\DeleteGroupResponseMessage.cs" />
+    <Compile Include="GeneratedCode\GetAliasesRequestMessage.cs" />
+    <Compile Include="GeneratedCode\GetAliasesResponseMessage.cs" />
+    <Compile Include="GeneratedCode\GetGroupsRequestMessage.cs" />
+    <Compile Include="GeneratedCode\GetGroupsResponseMessage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inspire.Groups.DataContracts\Inspire.Server.Groups.DataContracts.csproj">
+      <Project>{6E3779B1-BE67-4167-860A-17E9FF166117}</Project>
+      <Name>Inspire.Server.Groups.DataContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Roles="MessageContractRole" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

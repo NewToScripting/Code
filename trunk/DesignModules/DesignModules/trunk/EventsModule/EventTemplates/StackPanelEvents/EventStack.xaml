@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="EventsModule.EventTemplates.EventStack"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:EventTemplates="clr-namespace:EventsModule.EventTemplates"
+	xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    mc:Ignorable="d"
+    SnapsToDevicePixels="True" xmlns:Inspire_Events_Proxy="clr-namespace:Inspire.Events.Proxy;assembly=Inspire.Events.Proxy" xmlns:Diagnostics="clr-namespace:System.Diagnostics;assembly=WindowsBase">
+    <Viewbox SnapsToDevicePixels="True" x:Name="viewbox">
+        <ItemsControl x:Name="itemsControl" Template="{Binding RelativeSource={RelativeSource AncestorType={x:Type EventTemplates:EventStack}}, Path=EventTemplate}" />
+    </Viewbox>
+</UserControl>

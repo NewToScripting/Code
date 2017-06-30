@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Inspire.Client.ConfigurationWindow.ConfigurationWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:AdminTreeView="clr-namespace:Inspire.Client.ConfigurationWindow.AdminTreeView"
+    xmlns:Commands="clr-namespace:Inspire.Commands;assembly=Inspire"
+    xmlns:ConfigurationWindow="clr-namespace:Inspire.Client.ConfigurationWindow"
+    xmlns:WpfDock="clr-namespace:DevComponents.WpfDock;assembly=DevComponents.WpfDock" HorizontalAlignment="Stretch">
+
+    <DockPanel LastChildFill="False">
+        <!--<AdminTreeView:AdminTreeControl x:Name="ConfigurationTreeControl" MaxWidth="200" DockPanel.Dock="Left" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>-->
+        <ConfigurationWindow:ConfigurationPropertyControl x:Name="ConfigurePropertyControl" DockPanel.Dock="Right" SnapsToDevicePixels="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <WpfDock:DockSite DockPanel.Dock="Bottom" VerticalAlignment="Stretch" SnapsToDevicePixels="True" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="616*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" x:Name="ConfigurationWindowHolder"></Grid>
+            </Grid>
+        </WpfDock:DockSite>
+        <!--<TabControl Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left">
+            <TabItem Foreground="White" Header="Users" HorizontalAlignment="Stretch">
+                
+            </TabItem>
+            <TabItem Foreground="White" Header="Data Sources" HorizontalAlignment="Stretch">
+                
+            </TabItem>
+        </TabControl>-->
+    </DockPanel>
+</UserControl>

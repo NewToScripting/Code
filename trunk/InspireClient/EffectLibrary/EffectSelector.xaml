@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="EffectLibrary.EffectSelector"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Expander Margin="0,0,0,0" IsExpanded="True">
+            <Expander.Header>
+                <TextBlock Height="25" />
+            </Expander.Header>
+            <Grid VerticalAlignment="Top" Name="PropertyGridHolder" />
+        </Expander>
+        <ComboBox Name="cbEffects" Margin="23,7,20,2" Height="25" VerticalAlignment="Top" DropDownClosed="cbEffects_DropDownClosed" />
+        <Border BorderBrush="Black" BorderThickness="1" Margin="0,17,8,12" VerticalAlignment="Top" HorizontalAlignment="Right" Height="5" Width="5">
+        <Rectangle ToolTip="Clear Effect" Fill="White" MouseLeftButtonDown="ClearEffectClick" />
+        </Border>
+    </Grid>
+</UserControl>

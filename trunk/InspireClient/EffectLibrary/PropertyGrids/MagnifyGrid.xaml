@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="EffectLibrary.PropertyGrids.MagnifyGrid"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock HorizontalAlignment="Right" Margin="5" Text="Radii X:" Grid.Row="0" Grid.Column="1"></TextBlock>
+        <Slider Margin="2" x:Name="radiiX" Value="{Binding Radii.Width}" ValueChanged="radiiX_ValueChanged" Grid.Row="0" Grid.Column="3"  		
+				Minimum="0"
+                Maximum="1"                
+                SmallChange=".05"
+			/>
+        
+        <TextBlock HorizontalAlignment="Right" Margin="5" Text="Radii Y:" Grid.Row="2" Grid.Column="1"></TextBlock>
+        <Slider Margin="2" x:Name="radiiY" Value="{Binding Radii.Height}" ValueChanged="radiiY_ValueChanged" Grid.Row="2" Grid.Column="3"  		
+				Minimum="0"
+                Maximum="1"                
+                SmallChange=".05"
+			/>
+
+
+        <TextBlock HorizontalAlignment="Right" Margin="5" Text="Center X:" Grid.Row="3" Grid.Column="1"></TextBlock>
+        <Slider Margin="2" x:Name="centerX" Value="{Binding Center.X}" ValueChanged="centerX_ValueChanged" Grid.Row="3" Grid.Column="3"  		
+				Minimum="0"
+                Maximum="1"                
+                SmallChange=".05"
+			/>
+
+        <TextBlock HorizontalAlignment="Right" Margin="5" Text="Center Y:" Grid.Row="4" Grid.Column="1"></TextBlock>
+        <Slider Margin="2" x:Name="centerY" Value="{Binding Center.Y}" ValueChanged="centerY_ValueChanged" Grid.Row="4" Grid.Column="3" 		
+				Minimum="0"
+                Maximum="1"                
+                SmallChange=".05" 
+                />
+
+        <TextBlock HorizontalAlignment="Right" Margin="5" Text="Shrink Factor:" Grid.Row="5" Grid.Column="1"></TextBlock>
+        <Slider Margin="2" x:Name="shrinkFactor" Value="{Binding ShrinkFactor}"  Grid.Row="5" Grid.Column="3"  		
+				Minimum="0"
+                Maximum="1"                
+                SmallChange="0.1"
+			/>
+    </Grid>
+</UserControl>

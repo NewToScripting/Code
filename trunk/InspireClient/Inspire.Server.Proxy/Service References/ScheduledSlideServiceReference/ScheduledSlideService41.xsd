@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.inspiredisplays.com/DataContract/" elementFormDefault="qualified" targetNamespace="http://schemas.inspiredisplays.com/DataContract/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://twsignage/Inspire.Server/Svc/ScheduledSlideService.svc?xsd=xsd3" namespace="http://schemas.inspiredisplays.com" />
+  <xs:complexType name="ScheduledSlides">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ScheduledSlides" nillable="true" type="tns:ScheduledSlide" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScheduledSlides" nillable="true" type="tns:ScheduledSlides" />
+  <xs:complexType name="ScheduledSlide">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GUID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Transition" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransitionSpeed" type="xs:int" />
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Duration" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ScheduleID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ThumbNail" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="OriginalSlideID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HResolution" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="VResolution" nillable="true" type="xs:double" />
+      <xs:element xmlns:q1="http://schemas.inspiredisplays.com" minOccurs="0" name="Buttons" nillable="true" type="q1:Buttons" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScheduledSlide" nillable="true" type="tns:ScheduledSlide" />
+</xs:schema>

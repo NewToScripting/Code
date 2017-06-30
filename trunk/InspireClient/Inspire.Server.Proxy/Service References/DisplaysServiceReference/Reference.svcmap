@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8d185311-721f-46d5-908d-c8bdea42b1a3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://devserver2003/Inspire.Server/Svc/DisplayService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DisplayService42.xsd" MetadataType="Schema" ID="30c59274-da73-49df-95a9-cbabe0b9239b" SourceId="1" SourceUrl="http://devserver2003/Inspire.Server/Svc/DisplayService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DisplayService43.xsd" MetadataType="Schema" ID="e52d4d0f-576a-4c71-a0fb-53324262d490" SourceId="1" SourceUrl="http://devserver2003/Inspire.Server/Svc/DisplayService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DisplayService41.xsd" MetadataType="Schema" ID="af3e23dc-1bcd-4249-b1d9-cb260ba7138e" SourceId="1" SourceUrl="http://devserver2003/Inspire.Server/Svc/DisplayService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DisplayService4.xsd" MetadataType="Schema" ID="0610aa63-e989-4fd6-90bb-3fde5113fa4e" SourceId="1" SourceUrl="http://devserver2003/Inspire.Server/Svc/DisplayService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ClientDisplayService1.wsdl" MetadataType="Wsdl" ID="d3dacc03-f0b4-450a-a054-6845f85d0343" SourceId="1" SourceUrl="http://devserver2003/Inspire.Server/Svc/DisplayService.svc?wsdl" />
+    <MetadataFile FileName="DisplayService1.disco" MetadataType="Disco" ID="332384ae-8119-4b58-887b-6e3ae448cc54" SourceId="1" SourceUrl="http://devserver2003/Inspire.Server/Svc/DisplayService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

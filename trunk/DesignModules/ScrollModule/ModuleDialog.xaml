@@ -1,0 +1,132 @@
+﻿<Window x:Class="ScrollModule.ModuleDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:media="clr-namespace:System.Windows.Media;assembly=PresentationCore"
+	xmlns:Commands="clr-namespace:ScrollModule.Commands"
+	xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    Height="529" Width="704"  WindowStartupLocation="CenterScreen" Background="{StaticResource PopupBackgroundBrush}"
+    Title="Scroll Items" ResizeMode="NoResize"><!---->
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:ScrollModuleCommands.PlayScrollCommand}" Executed="PlayScrollExecuted" CanExecute="PlayScrollCanExecute" />
+        <CommandBinding Command="{x:Static Commands:ScrollModuleCommands.UpScrollItemCommand}" Executed="UpScrollItemExecuted" CanExecute="UpScrollItemCanExecute" />
+        <CommandBinding Command="{x:Static Commands:ScrollModuleCommands.DownScrollItemCommand}" Executed="DownScrollItemExecuted" CanExecute="DownScrollItemCanExecute" />
+<CommandBinding Command="{x:Static Commands:ScrollModuleCommands.StopScrollCommand}" Executed="StopScrollExecuted" CanExecute="StopScrollCanExecute" />
+    </Window.CommandBindings>
+    <Window.Resources>
+        <ContextMenu x:Key="ScrollItemContext" Background="Black">
+            <MenuItem Header="Remove Scroll Item" Click="DeleteScrollItem" Background="Black">
+                <MenuItem.Icon>
+                    <Image Source="Resources/Images/Remove.png"
+               Width="16"
+               Height="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+        </ContextMenu>
+            
+        <Style x:Key="TextStyle" TargetType="{x:Type Image}">
+            <Setter Property="UIElement.Visibility" Value="Collapsed"></Setter>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=ScrollType}" Value="Text">
+                    <Setter Property="UIElement.Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        
+        <Style x:Key="RSSStyle" TargetType="{x:Type Image}">
+            <Setter Property="UIElement.Visibility" Value="Collapsed"></Setter>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=ScrollType}" Value="RSS">
+                    <Setter Property="UIElement.Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+	<Border Margin="12,12,51,0" BorderBrush="#FFFFFFFF" IsHitTestVisible="False" BorderThickness="0.1,0.1,0.1,0.1" CornerRadius="4,4,4,4" Height="83" VerticalAlignment="Top">
+            <Border Background="#7F000000" BorderBrush="#FF000000" BorderThickness="0.5,0.5,0.5,0.5" CornerRadius="4,4,4,4">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="0.5*"/>
+                    </Grid.RowDefinitions>
+                    <Border Margin="0,0,0,8" CornerRadius="4,4,0,0">
+                        <Border.Background>
+                            <media:LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <media:GradientStop Color="#66FFFFFF" Offset="0.004"/>
+                                <media:GradientStop Color="#19FFFFFF" Offset="1"/>
+                            </media:LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+                    <Border HorizontalAlignment="Stretch" Width="Auto" Grid.RowSpan="2" CornerRadius="4,4,4,4">
+                        <Border.Background>
+                            <media:RadialGradientBrush>
+                                <media:RadialGradientBrush.RelativeTransform>
+                                    <media:TransformGroup>
+                                        <media:ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1" ScaleY="1.976"/>
+                                        <media:SkewTransform AngleX="0" AngleY="0" CenterX="0.5" CenterY="0.5"/>
+                                        <media:RotateTransform Angle="0" CenterX="0.5" CenterY="0.5"/>
+                                        <media:TranslateTransform X="0" Y="0.488"/>
+                                    </media:TransformGroup>
+                                </media:RadialGradientBrush.RelativeTransform>
+                                <media:GradientStop Color="#4C7BB7FF" Offset="0"/>
+                                <media:GradientStop Color="#00A4CCFD" Offset="1"/>
+                            </media:RadialGradientBrush>
+                        </Border.Background>
+                    </Border>
+                </Grid>
+            </Border>
+        </Border>
+        <ListBox Margin="5,101,0,12" Name="lbScrollItems" HorizontalAlignment="Left" Width="327">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <ContentControl MouseDoubleClick="ContentControl_MouseDoubleClick" ContextMenu="{StaticResource ScrollItemContext}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Style="{StaticResource TextStyle}" Width="24" Height="24" Margin="3,0" Source="Resources\Images\Text.png" />
+                        <Image Style="{StaticResource RSSStyle}" Width="24" Height="24" Margin="3,0" Source="Resources\Images\Rss.png" />
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" ToolTip="Number of items to show" Margin="8,0,8,0" FontStyle="Italic" FontWeight="Bold" Text="{Binding ScrollItemHelpers.Items[0].Tag}" />
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextBlock.TextTrimming="CharacterEllipsis" FontFamily="{Binding ScrollItemHelpers.Items[0].FontFamily}" Text="{Binding ScrollContent}" />
+                    </StackPanel>
+                    </ContentControl>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Margin="338,234,0,0"  Command="{x:Static Commands:ScrollModuleCommands.UpScrollItemCommand}"    HorizontalAlignment="Left" Width="30" Height="40" VerticalAlignment="Top"/>
+        <Image IsHitTestVisible="False" Source="Resources/Images/move_task_up.png"   Margin="345,245,0,0"          HorizontalAlignment="Left" Width="22"       Height="22" VerticalAlignment="Top"/>
+        <Button Margin="338,280,0,0" Command="{x:Static Commands:ScrollModuleCommands.DownScrollItemCommand}"      Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="30"/>
+        <Image IsHitTestVisible="False"  Height="22"  Source="Resources/Images/move_task_down.png"   Margin="345,290,0,0" VerticalAlignment="Top"   HorizontalAlignment="Left" Width="22"/>
+        <Grid Height="82.4" VerticalAlignment="Top" Background="Transparent" Margin="12,12.6,51,0" x:Name="scrollGrid">
+    </Grid>
+        <Grid HorizontalAlignment="Right" Width="85" Margin="0,101,224,0" Height="75" VerticalAlignment="Top">
+            <Button Height="75" VerticalAlignment="Center" Name="btnText" Click="btnText_Click" />
+            <Image IsHitTestVisible="False" VerticalAlignment="Center" HorizontalAlignment="Center" Width="60" Source="Resources\Images\Text.png" />
+        </Grid>
+        <Grid HorizontalAlignment="Right" Width="85" Margin="0,101,120,0" Height="75" VerticalAlignment="Top">
+            <Button Visibility="Visible" Height="75" Name="btnRss" Click="btnRss_Click" VerticalAlignment="Center"/>
+        <Image IsHitTestVisible="False" VerticalAlignment="Center" HorizontalAlignment="Center" Width="60" Source="Resources\Images\Rss.png" />
+        </Grid>
+        <Button Inspire:ButtonImage.Image="Resources\Images\Ok16.png" Height="36" HorizontalAlignment="Right" Margin="0,0,156,12" Name="btnInsert" VerticalAlignment="Bottom" Width="152" Click="btnInsert_Click">Ok</Button>
+        <Button Inspire:ButtonImage.Image="Resources\Images\Cancel16.png" Height="36" HorizontalAlignment="Right" Margin="0,0,5,12" Name="btnCancel" VerticalAlignment="Bottom" Width="145" Click="btnCancel_Click">Cancel</Button>
+        
+        <!--<ComboBox Height="25" HorizontalAlignment="Left" Margin="465,299,0,0" Name="cbScrollSpeed" VerticalAlignment="Top" Width="45" DropDownClosed="cbScrollSpeed_DropDownClosed" />--><!---->
+        <Slider x:Name="slFontSpeed" ToolTip="{Binding ElementName=slFontSpeed, Path=Value}" TickPlacement="TopLeft" AutoToolTipPlacement="None" Minimum="0.05" Maximum="1.5" Value=".25" ValueChanged="slFontSpeed_ValueChanged" HorizontalAlignment="Right" Width="130" Margin="0,0,69,162" Height="22" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" TickFrequency="0.1">
+            <Slider.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-180"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Slider.RenderTransform>
+        </Slider>
+        <Label Height="28" HorizontalAlignment="Right" Margin="0,0,210,154" Name="label1" VerticalAlignment="Bottom" Width="81" Foreground="#FFFFFFFF" >Scroll Speed:</Label>
+        <Label Height="28" HorizontalAlignment="Right" Margin="0,0,210,105" VerticalAlignment="Bottom" Width="81" Foreground="#FFFFFFFF" >Scroll Style:</Label>
+        <ComboBox x:Name="cbScrollStyle" SelectedIndex="0" HorizontalAlignment="Right" Width="140" Margin="0,0,70,115" Height="22" VerticalAlignment="Bottom" SelectionChanged="cbScrollStyle_SelectionChanged">
+            <ComboBoxItem>Continuous Scroll</ComboBoxItem>
+            <ComboBoxItem>One at a time</ComboBoxItem>
+        </ComboBox>
+        <Button Inspire:ButtonImage.Image="Resources\Images\Play32.png" Command="{x:Static Commands:ScrollModuleCommands.PlayScrollCommand}" SnapsToDevicePixels="True" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Margin="0,13,5,0">
+        </Button>
+        <Button Inspire:ButtonImage.Image="Resources\Images\Stop32.png" Command="{x:Static Commands:ScrollModuleCommands.StopScrollCommand}" SnapsToDevicePixels="True" Height="40" HorizontalAlignment="Right" Margin="0,55,5,0" VerticalAlignment="Top" Width="40">
+        </Button>
+    </Grid>
+</Window>

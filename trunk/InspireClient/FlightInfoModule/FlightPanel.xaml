@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="FlightInfoModule.FlightPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire" xmlns:blendables="clr-namespace:IdentityMine.Windows.Panels;assembly=IdentityMine.Windows.Panels" xmlns:Primitives="clr-namespace:IdentityMine.Windows.Panels.Primitives;assembly=IdentityMine.Windows.Panels" xmlns:FlightInfoModule="clr-namespace:FlightInfoModule" mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Inspire:BoolToVisibleConverter x:Key="boolToVisibilityConverter" />
+
+
+    </UserControl.Resources>
+    <DockPanel LastChildFill="True">
+        <Border DockPanel.Dock="Top" Background="{Binding HeaderBackground}" Visibility="{Binding ShowHeader, Converter={StaticResource boolToVisibilityConverter}}" Height="{Binding HeaderHeight}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontFamily="{Binding HeaderFontFamily}" Width="{Binding FlightImageWidth}" FontSize="{Binding HeaderFontSize}" Foreground="{Binding HeaderForeground}" TextAlignment="Center" VerticalAlignment="Center" Text="Airline" />
+                <TextBlock FontFamily="{Binding HeaderFontFamily}" Width="{Binding DestinationCityWidth}" FontSize="{Binding HeaderFontSize}" Foreground="{Binding HeaderForeground}" Text="Destination" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock FontFamily="{Binding HeaderFontFamily}" Width="{Binding ScheduleArrivalDepartureWidth}" Foreground="{Binding HeaderForeground}" FontSize="{Binding HeaderFontSize}" Text="Departure" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock FontFamily="{Binding HeaderFontFamily}" Width="{Binding StatusWidth}" Foreground="{Binding HeaderForeground}" FontSize="{Binding HeaderFontSize}" Text="Status" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock FontFamily="{Binding HeaderFontFamily}" Width="{Binding FlightNumberWidth}" Foreground="{Binding HeaderForeground}" FontSize="{Binding HeaderFontSize}" Text="Flight #" TextAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+        <Button Click="PART_BackButton_Click" DockPanel.Dock="Bottom" Visibility="{Binding IsTouchscreen, Converter={StaticResource boolToVisibilityConverter}}" Margin="60,5,5,5" x:Name="PART_BackButton" Style="{x:Null}" HorizontalAlignment="Left" Width="150" Background="Transparent" BorderBrush="Transparent">
+            <!--<Image Height="70" Source="Resources/Images/LeftArrow.png" />-->
+            <Viewbox Margin="10">
+                <Path Width="51.6855" Height="42.9533" Stretch="Fill" Fill="White" Data="F1 M 521.165,49.5046C 521.217,49.426 521.269,49.3488 521.316,49.2661C 521.365,49.178 521.409,49.0874 521.452,48.9967C 521.474,48.9474 521.504,48.9021 521.552,48.7688C 521.589,48.6714 521.62,48.5728 521.649,48.4741C 521.673,48.3927 521.697,48.3127 521.716,48.2314C 521.738,48.1354 521.75,48.0354 521.766,47.938C 521.777,47.854 521.79,47.7714 521.798,47.6874C 521.805,47.5874 521.804,47.4847 521.804,47.3834C 521.804,47.3033 521.804,47.222 521.798,47.1421C 521.792,47.0367 521.776,46.9341 521.76,46.8301C 521.749,46.7527 521.738,46.6754 521.72,46.5967C 521.698,46.4954 521.668,46.3954 521.637,46.2954C 521.613,46.2168 521.589,46.1407 521.526,45.9594C 521.501,45.8967 521.465,45.8407 521.436,45.7808C 521.4,45.7034 521.362,45.6301 521.321,45.5554C 521.272,45.4661 521.214,45.3781 521.157,45.2941C 521.11,45.2261 521.066,45.1581 521.016,45.094C 520.949,45.0088 520.876,44.9274 520.704,44.7341L 503.009,27.0381C 501.53,25.5608 499.138,25.5608 497.664,27.0381C 496.189,28.5127 496.189,30.9087 497.664,32.3821L 508.91,43.626L 473.901,43.626C 472.594,43.626 471.444,44.286 470.765,45.2927C 470.358,45.8954 470.118,46.6234 470.118,47.4073C 470.118,48.4501 470.542,49.3954 471.226,50.0793C 471.91,50.7634 472.856,51.1874 473.901,51.1874L 473.901,51.186L 508.908,51.186L 497.662,62.4287C 496.189,63.9048 496.186,66.2981 497.662,67.774C 498.401,68.514 499.369,68.8834 500.337,68.8834C 501.304,68.8834 502.272,68.5154 503.009,67.7781L 520.705,50.0781L 520.808,49.9594C 520.878,49.8821 520.948,49.8047 521.012,49.722C 521.066,49.6514 521.116,49.5793 521.165,49.5046 Z " RenderTransformOrigin="0.5,0.5">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1" ScaleY="1"/>
+                            <SkewTransform AngleX="0" AngleY="0"/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+            </Viewbox>
+        </Button>
+        <Inspire:ScrollPanelWrapper VerticalScrollBarVisibility="Hidden">
+        </Inspire:ScrollPanelWrapper>
+    </DockPanel>
+</UserControl>

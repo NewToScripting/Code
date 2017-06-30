@@ -1,0 +1,15 @@
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\bin\Debug\Inspire.Feeds.DataContracts.DataContracts.dll
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\bin\Debug\Inspire.Feeds.DataContracts.DataContracts.pdb
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\obj\Debug\Inspire.Feeds.DataContracts.DataContracts.dll
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\obj\Debug\Inspire.Feeds.DataContracts.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\bin\Debug\Inspire.Feeds.DataContracts.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\bin\Debug\Inspire.Feeds.DataContracts.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\obj\Debug\Inspire.Feeds.DataContracts.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\obj\Debug\Inspire.Feeds.DataContracts.DataContracts.pdb
+C:\_WORKING\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\bin\Debug\Inspire.Feeds.DataContracts.DataContracts.dll
+C:\_WORKING\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\bin\Debug\Inspire.Feeds.DataContracts.DataContracts.pdb
+C:\_WORKING\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\obj\Debug\Inspire.Feeds.DataContracts.DataContracts.dll
+C:\_WORKING\Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\obj\Debug\Inspire.Feeds.DataContracts.DataContracts.pdb

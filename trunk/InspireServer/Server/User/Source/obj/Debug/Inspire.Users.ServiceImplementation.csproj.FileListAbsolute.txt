@@ -1,0 +1,57 @@
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.ServiceImplementation.ServiceImplementation.dll
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.ServiceImplementation.ServiceImplementation.pdb
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.BusinessEntities.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.BusinessLogic.BusinessLogic.dll
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.DataContracts.DataContracts.dll
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.FaultContracts.FaultContracts.dll
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.MessageContracts.MessageContracts.dll
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.ServiceContracts.ServiceContracts.dll
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.BusinessLogic.BusinessLogic.pdb
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.MessageContracts.MessageContracts.pdb
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.BusinessEntities.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.DataContracts.DataContracts.pdb
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.ServiceContracts.ServiceContracts.pdb
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.FaultContracts.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\obj\Debug\Inspire.Users.ServiceImplementation.ServiceImplementation.dll
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\obj\Debug\Inspire.Users.ServiceImplementation.ServiceImplementation.pdb
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.DataAccess.DataAccess.dll
+C:\Users\jhaveard\Desktop\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.DataAccess.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.ServiceImplementation.ServiceImplementation.dll
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.ServiceImplementation.ServiceImplementation.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.BusinessEntities.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.BusinessLogic.BusinessLogic.dll
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.DataContracts.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.FaultContracts.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.MessageContracts.MessageContracts.dll
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.ServiceContracts.ServiceContracts.dll
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.DataAccess.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.BusinessLogic.BusinessLogic.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.MessageContracts.MessageContracts.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.BusinessEntities.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.DataContracts.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.ServiceContracts.ServiceContracts.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.FaultContracts.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.DataAccess.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\obj\Debug\Inspire.Users.ServiceImplementation.ServiceImplementation.dll
+C:\_INSPIRE_WORKING\06242008\User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\obj\Debug\Inspire.Users.ServiceImplementation.ServiceImplementation.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.ServiceImplementation.ServiceImplementation.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.ServiceImplementation.ServiceImplementation.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Server.Users.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.BusinessLogic.BusinessLogic.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.DataContracts.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.FaultContracts.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.MessageContracts.MessageContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.ServiceContracts.ServiceContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.DataAccess.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.BusinessLogic.BusinessLogic.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.MessageContracts.MessageContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.ServiceContracts.ServiceContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.DataContracts.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Server.Users.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.FaultContracts.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\bin\Debug\Inspire.Users.DataAccess.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\obj\Debug\Inspire.Users.ServiceImplementation.ServiceImplementation.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Inspire.Server.User\Inspire.Users\Source\Service Interface\Inspire.Users.ServiceImplementation\obj\Debug\Inspire.Users.ServiceImplementation.ServiceImplementation.pdb

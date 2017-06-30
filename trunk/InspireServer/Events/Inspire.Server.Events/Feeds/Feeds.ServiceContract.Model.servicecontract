@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<serviceContractModel dslVersion="1.0.0.0" Id="4b24febd-e7a8-446e-b5e4-ead9af2f5ead" implementationTechnology="{3d062fd1-5877-4760-ae82-d8a31af845b5}|WCF|WCF Extension" projectMappingTable="Inspire.Feeds" namespace="http://schemas.inspiredisplays.com" serializerType="DataContractSerializer" xmlns="http://schemas.microsoft.com/dsltools/ServiceContractDsl">
+  <serviceContracts>
+    <serviceContract name="FeedServiceContract" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFServiceContract&quot;&gt;&#xD;&#xA;    &lt;ProtectionLevel&gt;None&lt;/ProtectionLevel&gt;&#xD;&#xA;    &lt;SessionMode&gt;Allowed&lt;/SessionMode&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <operations>
+        <operationMoniker Id="39ad404a-3e12-49e7-96e4-1c2d1ba9b9ee" />
+        <operationMoniker Id="6afab5d3-8cb2-4d2c-9273-d775dc948f8c" />
+        <operationMoniker Id="7fe29042-fd3f-4e16-8a08-4d47b404e223" />
+        <operationMoniker Id="97bf830a-01bf-47dc-8050-c546532fabdf" />
+        <operationMoniker Id="4484e5bf-403a-4c8f-ac19-65907462f3f1" />
+        <operationMoniker Id="c05bfd8d-35ff-4d13-833a-a9888f38f86d" />
+        <operationMoniker Id="aecdc9d8-5d38-4e2a-b41b-4b5e3cdf495f" />
+      </operations>
+    </serviceContract>
+  </serviceContracts>
+  <operations>
+    <operation Id="39ad404a-3e12-49e7-96e4-1c2d1ba9b9ee" name="GetFeeds" action="http://schemas.inspiredisplays.com/FeedServiceContract/GetFeeds" isOneWay="false" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFOperationContract&quot;&gt;&#xD;&#xA;    &lt;ProtectionLevel&gt;None&lt;/ProtectionLevel&gt;&#xD;&#xA;    &lt;IsInitiating&gt;true&lt;/IsInitiating&gt;&#xD;&#xA;    &lt;IsTerminating&gt;false&lt;/IsTerminating&gt;&#xD;&#xA;    &lt;AsyncPattern&gt;false&lt;/AsyncPattern&gt;&#xD;&#xA;    &lt;ReplyAction /&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <faults>
+        <dataContractFault name="GeneralFault" objectExtenderContainer="" type="mel://Microsoft.Practices.ServiceFactory.DataContracts\FaultContract\GeneralFaultContract@Feeds\Feeds.DataContract.Model" />
+      </faults>
+      <response>
+        <messageMoniker Id="c54fcc98-30c4-4fed-9f97-1e8b4290b0bf" />
+      </response>
+    </operation>
+    <operation Id="6afab5d3-8cb2-4d2c-9273-d775dc948f8c" name="AddFeed" action="http://schemas.inspiredisplays.com/FeedServiceContract/AddFeed" isOneWay="false" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFOperationContract&quot;&gt;&#xD;&#xA;    &lt;ProtectionLevel&gt;None&lt;/ProtectionLevel&gt;&#xD;&#xA;    &lt;IsInitiating&gt;true&lt;/IsInitiating&gt;&#xD;&#xA;    &lt;IsTerminating&gt;false&lt;/IsTerminating&gt;&#xD;&#xA;    &lt;AsyncPattern&gt;false&lt;/AsyncPattern&gt;&#xD;&#xA;    &lt;ReplyAction /&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <faults>
+        <dataContractFault name="GeneralFault" objectExtenderContainer="" type="mel://Microsoft.Practices.ServiceFactory.DataContracts\FaultContract\GeneralFaultContract@Feeds\Feeds.DataContract.Model" />
+      </faults>
+      <response>
+        <messageMoniker Id="fc72428a-36f9-49d4-b49f-dd1f7a4f8166" />
+      </response>
+    </operation>
+    <operation Id="7fe29042-fd3f-4e16-8a08-4d47b404e223" name="UpdateFeed" action="http://schemas.inspiredisplays.com/FeedServiceContract/UpdateFeed" isOneWay="false" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFOperationContract&quot;&gt;&#xD;&#xA;    &lt;ProtectionLevel&gt;None&lt;/ProtectionLevel&gt;&#xD;&#xA;    &lt;IsInitiating&gt;true&lt;/IsInitiating&gt;&#xD;&#xA;    &lt;IsTerminating&gt;false&lt;/IsTerminating&gt;&#xD;&#xA;    &lt;AsyncPattern&gt;false&lt;/AsyncPattern&gt;&#xD;&#xA;    &lt;ReplyAction /&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <faults>
+        <dataContractFault name="GeneralFault" objectExtenderContainer="" type="mel://Microsoft.Practices.ServiceFactory.DataContracts\FaultContract\GeneralFaultContract@Feeds\Feeds.DataContract.Model" />
+      </faults>
+      <response>
+        <messageMoniker Id="262d235d-0b7b-4e10-b686-d0943bd90c5c" />
+      </response>
+    </operation>
+    <operation Id="97bf830a-01bf-47dc-8050-c546532fabdf" name="DeleteFeed" action="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteFeed" isOneWay="false" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFOperationContract&quot;&gt;&#xD;&#xA;    &lt;ProtectionLevel&gt;None&lt;/ProtectionLevel&gt;&#xD;&#xA;    &lt;IsInitiating&gt;true&lt;/IsInitiating&gt;&#xD;&#xA;    &lt;IsTerminating&gt;false&lt;/IsTerminating&gt;&#xD;&#xA;    &lt;AsyncPattern&gt;false&lt;/AsyncPattern&gt;&#xD;&#xA;    &lt;ReplyAction /&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <faults>
+        <dataContractFault name="GeneralFault" objectExtenderContainer="" type="mel://Microsoft.Practices.ServiceFactory.DataContracts\FaultContract\GeneralFaultContract@Feeds\Feeds.DataContract.Model" />
+      </faults>
+      <response>
+        <messageMoniker Id="5d501fc0-0c07-46b4-af0b-9b48a7d4b7d5" />
+      </response>
+    </operation>
+    <operation Id="4484e5bf-403a-4c8f-ac19-65907462f3f1" name="GetEntries" action="http://schemas.inspiredisplays.com/FeedServiceContract/GetEntries" isOneWay="false" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFOperationContract&quot;&gt;&#xD;&#xA;    &lt;ProtectionLevel&gt;None&lt;/ProtectionLevel&gt;&#xD;&#xA;    &lt;IsInitiating&gt;true&lt;/IsInitiating&gt;&#xD;&#xA;    &lt;IsTerminating&gt;false&lt;/IsTerminating&gt;&#xD;&#xA;    &lt;AsyncPattern&gt;false&lt;/AsyncPattern&gt;&#xD;&#xA;    &lt;ReplyAction /&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <faults>
+        <dataContractFault name="GeneralFault" objectExtenderContainer="" type="mel://Microsoft.Practices.ServiceFactory.DataContracts\FaultContract\GeneralFaultContract@Feeds\Feeds.DataContract.Model" />
+      </faults>
+      <response>
+        <messageMoniker Id="fe4a8671-de19-4a8a-9bff-88349aa9afac" />
+      </response>
+    </operation>
+    <operation Id="c05bfd8d-35ff-4d13-833a-a9888f38f86d" name="AddEntry" action="http://schemas.inspiredisplays.com/FeedServiceContract/AddEntry" isOneWay="false" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFOperationContract&quot;&gt;&#xD;&#xA;    &lt;ProtectionLevel&gt;None&lt;/ProtectionLevel&gt;&#xD;&#xA;    &lt;IsInitiating&gt;true&lt;/IsInitiating&gt;&#xD;&#xA;    &lt;IsTerminating&gt;false&lt;/IsTerminating&gt;&#xD;&#xA;    &lt;AsyncPattern&gt;false&lt;/AsyncPattern&gt;&#xD;&#xA;    &lt;ReplyAction /&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <faults>
+        <dataContractFault name="GeneralFault" objectExtenderContainer="" type="mel://Microsoft.Practices.ServiceFactory.DataContracts\FaultContract\GeneralFaultContract@Feeds\Feeds.DataContract.Model" />
+      </faults>
+      <response>
+        <messageMoniker Id="342f10c8-b5e0-4315-b7fd-0ed25d94a112" />
+      </response>
+    </operation>
+    <operation Id="aecdc9d8-5d38-4e2a-b41b-4b5e3cdf495f" name="DeleteEntry" action="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteEntry" isOneWay="false" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFOperationContract&quot;&gt;&#xD;&#xA;    &lt;ProtectionLevel&gt;None&lt;/ProtectionLevel&gt;&#xD;&#xA;    &lt;IsInitiating&gt;true&lt;/IsInitiating&gt;&#xD;&#xA;    &lt;IsTerminating&gt;false&lt;/IsTerminating&gt;&#xD;&#xA;    &lt;AsyncPattern&gt;false&lt;/AsyncPattern&gt;&#xD;&#xA;    &lt;ReplyAction /&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <faults>
+        <dataContractFault name="GeneralFault" objectExtenderContainer="" type="mel://Microsoft.Practices.ServiceFactory.DataContracts\FaultContract\GeneralFaultContract@Feeds\Feeds.DataContract.Model" />
+      </faults>
+      <response>
+        <messageMoniker Id="a401fc27-b650-408f-b706-c5f7f9e15ace" />
+      </response>
+    </operation>
+  </operations>
+  <services>
+    <service Id="18034c66-6568-4302-a23b-d11fda5be77c" name="FeedService" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFService&quot;&gt;&#xD;&#xA;    &lt;ConcurrencyMode&gt;Single&lt;/ConcurrencyMode&gt;&#xD;&#xA;    &lt;InstanceContextMode&gt;PerSession&lt;/InstanceContextMode&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" namespace="http://schemas.inspiredisplays.com">
+      <serviceContract>
+        <serviceContractMoniker name="/4b24febd-e7a8-446e-b5e4-ead9af2f5ead/FeedServiceContract" />
+      </serviceContract>
+    </service>
+  </services>
+  <messages>
+    <message Id="36c7eee4-1170-4adf-8d16-2ddeecd84de6" name="GetFeedsRequestMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <requestFor>
+        <operationMoniker Id="39ad404a-3e12-49e7-96e4-1c2d1ba9b9ee" />
+      </requestFor>
+    </message>
+    <message Id="c54fcc98-30c4-4fed-9f97-1e8b4290b0bf" name="GetFeedsResponseMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <messageParts>
+        <dataContractMessagePart name="Feeds" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFDataContractMessagePart&quot; /&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" type="mel://Microsoft.Practices.ServiceFactory.DataContracts\DataContractBase\Feeds@Feeds\Feeds.DataContract.Model" />
+      </messageParts>
+    </message>
+    <message Id="8201f22c-fe47-4e1b-8c0d-b4a91934de78" name="AddFeedRequestMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <requestFor>
+        <operationMoniker Id="6afab5d3-8cb2-4d2c-9273-d775dc948f8c" />
+      </requestFor>
+      <messageParts>
+        <dataContractMessagePart name="Feed" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFDataContractMessagePart&quot; /&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" type="mel://Microsoft.Practices.ServiceFactory.DataContracts\DataContractBase\Feed@Feeds\Feeds.DataContract.Model" />
+      </messageParts>
+    </message>
+    <message Id="fc72428a-36f9-49d4-b49f-dd1f7a4f8166" name="AddFeedResponseMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" />
+    <message Id="ad111274-c1f9-446e-abb3-f73fad7d6875" name="UpdateFeedRequestMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <requestFor>
+        <operationMoniker Id="7fe29042-fd3f-4e16-8a08-4d47b404e223" />
+      </requestFor>
+      <messageParts>
+        <dataContractMessagePart name="Feed" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFDataContractMessagePart&quot; /&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" type="mel://Microsoft.Practices.ServiceFactory.DataContracts\DataContractBase\Feed@Feeds\Feeds.DataContract.Model" />
+      </messageParts>
+    </message>
+    <message Id="262d235d-0b7b-4e10-b686-d0943bd90c5c" name="UpdateFeedResponseMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" />
+    <message Id="648ee38f-3d8b-42dc-9756-942a5e945552" name="DeleteFeedRequestMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <requestFor>
+        <operationMoniker Id="97bf830a-01bf-47dc-8050-c546532fabdf" />
+      </requestFor>
+      <messageParts>
+        <primitiveMessagePart name="FeedID" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFPrimitiveMessagePart&quot; /&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" isNullable="false" isCollection="false" />
+      </messageParts>
+    </message>
+    <message Id="5d501fc0-0c07-46b4-af0b-9b48a7d4b7d5" name="DeleteFeedResponseMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" />
+    <message Id="2974ad78-563c-4c2c-ac17-3283709b971f" name="GetEntriesRequestMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <requestFor>
+        <operationMoniker Id="4484e5bf-403a-4c8f-ac19-65907462f3f1" />
+      </requestFor>
+      <messageParts>
+        <primitiveMessagePart name="FeedID" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFPrimitiveMessagePart&quot; /&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" isNullable="false" isCollection="false" />
+      </messageParts>
+    </message>
+    <message Id="fe4a8671-de19-4a8a-9bff-88349aa9afac" name="GetEntriesResponseMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" />
+    <message Id="20428f3c-07ea-4c70-97e4-60af5866f01d" name="AddEntryRequestMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <requestFor>
+        <operationMoniker Id="c05bfd8d-35ff-4d13-833a-a9888f38f86d" />
+      </requestFor>
+      <messageParts>
+        <dataContractMessagePart name="FeedEntry" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFDataContractMessagePart&quot; /&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" type="mel://Microsoft.Practices.ServiceFactory.DataContracts\DataContractBase\FeedEntry@Feeds\Feeds.DataContract.Model" />
+      </messageParts>
+    </message>
+    <message Id="342f10c8-b5e0-4315-b7fd-0ed25d94a112" name="AddEntryResponseMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" />
+    <message Id="e19871d8-6579-4d3d-84fb-6bf43ae35b78" name="DeleteEntryRequestMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;">
+      <requestFor>
+        <operationMoniker Id="aecdc9d8-5d38-4e2a-b41b-4b5e3cdf495f" />
+      </requestFor>
+      <messageParts>
+        <primitiveMessagePart name="EntryID" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFPrimitiveMessagePart&quot; /&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" isNullable="false" isCollection="false" />
+      </messageParts>
+    </message>
+    <message Id="a401fc27-b650-408f-b706-c5f7f9e15ace" name="DeleteEntryResponseMessage" namespace="http://schemas.inspiredisplays.com" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;WCFMessageContract&quot;&gt;&#xD;&#xA;    &lt;IsWrapped&gt;false&lt;/IsWrapped&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" />
+  </messages>
+</serviceContractModel>

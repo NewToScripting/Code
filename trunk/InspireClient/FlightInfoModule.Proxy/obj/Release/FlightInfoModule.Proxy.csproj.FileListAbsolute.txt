@@ -1,0 +1,6 @@
+C:\CODE\trunk\InspireClient\InspireClient\bin\Release\Modules\FlightInfoModule.Proxy.dll.config
+C:\CODE\trunk\InspireClient\InspireClient\bin\Release\Modules\FlightInfoModule.Proxy.dll
+C:\CODE\trunk\InspireClient\InspireClient\bin\Release\Modules\FlightInfoModule.Proxy.pdb
+C:\CODE\trunk\InspireClient\FlightInfoModule.Proxy\obj\Release\FlightInfoModule.Proxy.dll
+C:\CODE\trunk\InspireClient\FlightInfoModule.Proxy\obj\Release\FlightInfoModule.Proxy.pdb
+C:\CODE\trunk\InspireClient\FlightInfoModule.Proxy\obj\Release\FlightInfoModule.Proxy.csprojResolveAssemblyReference.cache

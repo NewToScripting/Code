@@ -1,0 +1,30 @@
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Inspire.Server.SlideManager.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Inspire.Server.SlideManager.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Inspire.Server.SlideManager.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Inspire.Server.SlideManager.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Inspire.Server.SlideManager.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Inspire.Server.SlideManager.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Inspire.Server.SlideManager.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Inspire.Server.SlideManager.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Inspire.Server.SlideManager.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Inspire.Server.SlideManager.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Inspire.Server.SlideManager.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Inspire.Server.SlideManager.BusinessEntities.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Inspire.Server.SlideManager.BusinessEntities.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Inspire.Server.SlideManager.BusinessEntities.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Inspire.Server.SlideManager.BusinessEntities.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Inspire.Server.SlideManager.BusinessEntities.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Inspire.Server.SlideManager.BusinessEntities.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Inspire.Server.SlideManager.BusinessEntities.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Inspire.Server.SlideManager.BusinessEntities.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Inspire.Server.SlideManager.BusinessEntities.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Inspire.Server.SlideManager.BusinessEntities.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\bin\Debug\Inspire.Server.SlideManager.BusinessEntities.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Inspire.Server.SlideManager.BusinessEntities.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Business Logic\Service.BusinessEntities\obj\Debug\Inspire.Server.SlideManager.BusinessEntities.pdb

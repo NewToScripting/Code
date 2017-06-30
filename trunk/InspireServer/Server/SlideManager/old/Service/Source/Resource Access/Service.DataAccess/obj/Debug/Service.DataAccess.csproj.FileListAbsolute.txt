@@ -1,0 +1,14 @@
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\bin\Debug\Service.DataAccess.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\bin\Debug\Service.DataAccess.pdb
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\bin\Debug\Service.DataContracts.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\bin\Debug\Service.DataContracts.pdb
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\obj\Debug\Service.DataAccess.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\obj\Debug\Service.DataAccess.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\bin\Debug\Service.DataAccess.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\bin\Debug\Service.DataAccess.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\bin\Debug\Service.DataContracts.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\bin\Debug\Service.DataContracts.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\obj\Debug\Service.DataAccess.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Resource Access\Service.DataAccess\obj\Debug\Service.DataAccess.pdb

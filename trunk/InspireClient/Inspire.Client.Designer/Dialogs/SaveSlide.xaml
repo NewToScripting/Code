@@ -1,0 +1,19 @@
+﻿<Window x:Class="Inspire.Client.Designer.Dialogs.SaveSlide"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    Title="Save Slide" Height="238" Width="485" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
+    <Window.Resources>
+        <Inspire:ReverseIsEmptyConverter x:Key="reverseEmptyConverter" />
+    </Window.Resources>
+    
+    <Grid Background="{StaticResource PopupBackgroundBrush}">
+        <!---->
+        <Label HorizontalAlignment="Left" Margin="18,25,0,0" Foreground="White" Name="lblGroupName" Width="79" Height="25" VerticalAlignment="Top">Slide Name :</Label>
+        <Inspire:InfoTextBox Margin="95,27,12,0" Foreground="White" Name="tbSlideName" Height="25" VerticalAlignment="Top" TextBoxInfo="Enter a Name For The Slide." />
+        <Label HorizontalAlignment="Left" Margin="18,56,0,0" Foreground="White" Name="label1" Width="79" Height="25" VerticalAlignment="Top">Description :</Label>
+        <Inspire:InfoTextBox Name="tbSlideDescription" Margin="95,58,12,46" Height="95" TextWrapping="Wrap" Foreground="White" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" VerticalAlignment="Top" TextBoxInfo="Enter a Description For The Slide."/>
+        <Button Height="35" Margin="189,0,146,5" IsEnabled="{Binding ElementName=tbSlideName, Path=Text, Converter={StaticResource reverseEmptyConverter}}"  Inspire:ButtonImage.Image="Images\Ok16.png" Name="btnSave" VerticalAlignment="Bottom" Click="btnOk_Click">Save</Button>
+        <Button Height="35" HorizontalAlignment="Right" Inspire:ButtonImage.Image="Images\Cancel16.png" Margin="0,0,12,5" Name="btnCancel" VerticalAlignment="Bottom" Width="128" Click="btnCancel_Click">Cancel</Button>
+    </Grid>
+</Window>

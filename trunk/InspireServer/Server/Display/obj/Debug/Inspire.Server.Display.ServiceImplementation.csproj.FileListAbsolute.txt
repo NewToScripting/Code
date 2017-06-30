@@ -1,0 +1,133 @@
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceImplementation.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessEntities.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.BusinessLogic.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.MessageContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.ServiceContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Display.DataAccess.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.Display\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.Display.ServiceImplementation.pdb

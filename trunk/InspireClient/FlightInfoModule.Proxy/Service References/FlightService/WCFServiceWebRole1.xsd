@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/WCFServiceWebRole1" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFServiceWebRole1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="FlightRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AirlineCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AirportCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DnsHostName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FyteType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IpAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LookAheadCurrentTime" nillable="true" type="ser:duration" />
+      <xs:element minOccurs="0" name="LookBehindCurrentTime" nillable="true" type="ser:duration" />
+      <xs:element minOccurs="0" name="ShowNameInsteadOfImage" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FlightRequest" nillable="true" type="tns:FlightRequest" />
+  <xs:complexType name="ArrayOfAirport">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Airport" nillable="true" type="tns:Airport" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAirport" nillable="true" type="tns:ArrayOfAirport" />
+  <xs:complexType name="Airport">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AirportCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FAACode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IATACode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ICACode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsMajorAirport" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Latitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Longitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WeatherStationCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WeatherZone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Airport" nillable="true" type="tns:Airport" />
+  <xs:complexType name="ArrayOfFlight">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Flight" nillable="true" type="tns:Flight" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFlight" nillable="true" type="tns:ArrayOfFlight" />
+  <xs:complexType name="Flight">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActualArrivalDeparture" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Airline" nillable="true" type="tns:Airline" />
+      <xs:element minOccurs="0" name="DelayMinutes" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Destination" nillable="true" type="tns:Airport" />
+      <xs:element minOccurs="0" name="EstimatedArrivalDeparture" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FlightNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FlyteType" type="tns:Flight.FlightTypes" />
+      <xs:element minOccurs="0" name="Gate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Origin" nillable="true" type="tns:Airport" />
+      <xs:element minOccurs="0" name="ScheduleArrivalDeparture" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Flight" nillable="true" type="tns:Flight" />
+  <xs:complexType name="Airline">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AirlineCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IATACode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ICACode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImageUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Airline" nillable="true" type="tns:Airline" />
+  <xs:simpleType name="Flight.FlightTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Arrival" />
+      <xs:enumeration value="Departure" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Flight.FlightTypes" nillable="true" type="tns:Flight.FlightTypes" />
+  <xs:complexType name="ArrayOfAirline">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Airline" nillable="true" type="tns:Airline" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAirline" nillable="true" type="tns:ArrayOfAirline" />
+</xs:schema>

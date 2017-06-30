@@ -1,0 +1,14 @@
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\bin\Release\Inspire.WatchDog.Interface.exe.config
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\bin\Release\Inspire.WatchDog.Interface.exe
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\bin\Release\Inspire.WatchDog.Interface.pdb
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\bin\Release\Hardcodet.Wpf.TaskbarNotification.dll
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\obj\Release\Window1.baml
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\obj\Release\Window1.g.cs
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\obj\Release\App.g.cs
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\obj\Release\Inspire.WatchDog.Interface_Content.g.cs
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\obj\Release\Inspire.WatchDog.Interface_MarkupCompile.cache
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\obj\Release\Inspire.WatchDog.Interface.g.resources
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\obj\Release\Inspire.WatchDog.Interface.Properties.Resources.resources
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\obj\Release\Inspire.WatchDog.Interface.exe
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\obj\Release\Inspire.WatchDog.Interface.pdb
+C:\CODE\trunk\InspireWatchDog\Inspire.WatchDog.Interface\obj\Release\Inspire.WatchDog.Interface.csproj.GenerateResource.Cache

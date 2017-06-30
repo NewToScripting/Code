@@ -1,0 +1,27 @@
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Tests\Events.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Tests\Events.Client\obj\Debug\Inspire.Direction.Client.Properties.Resources.resources
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Tests\Events.Client\obj\Debug\Inspire.Direction.Client.csproj.GenerateResource.Cache
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Tests\Events.Client\bin\Debug\Inspire.Direction.Client.exe.config
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Tests\Events.Client\bin\Debug\Inspire.Direction.Client.exe
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Tests\Events.Client\bin\Debug\Inspire.Direction.Client.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Tests\Events.Client\obj\Debug\Inspire.Direction.Client.exe
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Tests\Events.Client\obj\Debug\Inspire.Direction.Client.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Tests\Events.Client\obj\Debug\Inspire.Direction.Client.MainForm.resources
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Tests\Direction.Client\bin\Debug\Inspire.Direction.Client.exe
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Tests\Direction.Client\bin\Debug\Inspire.Direction.Client.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Tests\Direction.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Tests\Direction.Client\obj\Debug\Inspire.Direction.Client.Properties.Resources.resources
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Tests\Direction.Client\obj\Debug\Inspire.Direction.Client.MainForm.resources
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Tests\Direction.Client\obj\Debug\Inspire.Direction.Client.csproj.GenerateResource.Cache
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Tests\Direction.Client\obj\Debug\Inspire.Direction.Client.exe
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Tests\Direction.Client\obj\Debug\Inspire.Direction.Client.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Tests\Direction.Client\bin\Debug\Inspire.Direction.Client.exe.config
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Tests\Direction.Client\bin\Debug\Inspire.Direction.Client.exe.config
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Tests\Direction.Client\bin\Debug\Inspire.Direction.Client.exe
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Tests\Direction.Client\bin\Debug\Inspire.Direction.Client.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Tests\Direction.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Tests\Direction.Client\obj\Debug\Inspire.Direction.Client.Properties.Resources.resources
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Tests\Direction.Client\obj\Debug\Inspire.Direction.Client.MainForm.resources
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Tests\Direction.Client\obj\Debug\Inspire.Direction.Client.csproj.GenerateResource.Cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Tests\Direction.Client\obj\Debug\Inspire.Direction.Client.exe
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Tests\Direction.Client\obj\Debug\Inspire.Direction.Client.pdb

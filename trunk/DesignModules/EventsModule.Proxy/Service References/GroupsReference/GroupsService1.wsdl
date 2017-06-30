@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://schemas.inspiredisplays.com" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="GroupsService" targetNamespace="http://schemas.inspiredisplays.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/Imports">
+      <xsd:import schemaLocation="http://devserver2003/Inspire.Events/svc/GroupService.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com" />
+      <xsd:import schemaLocation="http://devserver2003/Inspire.Events/svc/GroupService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetGroupsRequestMessage" />
+  <wsdl:message name="GetGroupsResponseMessage">
+    <wsdl:part name="Groups" element="tns:Groups" />
+  </wsdl:message>
+  <wsdl:message name="GroupsServiceContract_GetGroups_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddGroupRequestMessage">
+    <wsdl:part name="parameters" element="tns:AddGroupRequestMessage" />
+  </wsdl:message>
+  <wsdl:message name="AddGroupResponseMessage" />
+  <wsdl:message name="GroupsServiceContract_AddGroup_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGroupRequestMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGroupRequestMessage" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGroupResponseMessage" />
+  <wsdl:message name="GroupsServiceContract_UpdateGroup_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteGroupRequestMessage">
+    <wsdl:part name="GUID" element="tns:GUID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteGroupResponseMessage" />
+  <wsdl:message name="GroupsServiceContract_DeleteGroup_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetAliasesRequestMessage">
+    <wsdl:part name="GroupID" element="tns:GroupID" />
+  </wsdl:message>
+  <wsdl:message name="GetAliasesResponseMessage">
+    <wsdl:part name="Aliases" element="tns:Aliases" />
+  </wsdl:message>
+  <wsdl:message name="GroupsServiceContract_GetAliases_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddAliasRequestMessage">
+    <wsdl:part name="GroupAlias" element="tns:GroupAlias" />
+  </wsdl:message>
+  <wsdl:message name="AddAliasResponseMessage" />
+  <wsdl:message name="GroupsServiceContract_AddAlias_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAliasRequestMessage">
+    <wsdl:part name="AliasID" element="tns:AliasID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAliasResponseMessage" />
+  <wsdl:message name="GroupsServiceContract_DeleteAlias_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="GroupsServiceContract">
+    <wsdl:operation name="GetGroups">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/GetGroups" name="GetGroupsRequestMessage" message="tns:GetGroupsRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/GetGroupsResponse" name="GetGroupsResponseMessage" message="tns:GetGroupsResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/GetGroupsGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:GroupsServiceContract_GetGroups_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddGroup">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/AddGroup" name="AddGroupRequestMessage" message="tns:AddGroupRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/AddGroupResponse" name="AddGroupResponseMessage" message="tns:AddGroupResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/AddGroupGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:GroupsServiceContract_AddGroup_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroup">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/UpdateGroup" name="UpdateGroupRequestMessage" message="tns:UpdateGroupRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/UpdateGroupResponse" name="UpdateGroupResponseMessage" message="tns:UpdateGroupResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/UpdateGroupGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:GroupsServiceContract_UpdateGroup_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGroup">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/DeleteGroup" name="DeleteGroupRequestMessage" message="tns:DeleteGroupRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/DeleteGroupResponse" name="DeleteGroupResponseMessage" message="tns:DeleteGroupResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/DeleteGroupGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:GroupsServiceContract_DeleteGroup_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAliases">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/GetAliases" name="GetAliasesRequestMessage" message="tns:GetAliasesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/GetAliasesResponse" name="GetAliasesResponseMessage" message="tns:GetAliasesResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/GetAliasesGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:GroupsServiceContract_GetAliases_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAlias">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/AddAlias" name="AddAliasRequestMessage" message="tns:AddAliasRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/AddAliasResponse" name="AddAliasResponseMessage" message="tns:AddAliasResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/AddAliasGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:GroupsServiceContract_AddAlias_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlias">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/DeleteAlias" name="DeleteAliasRequestMessage" message="tns:DeleteAliasRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/DeleteAliasResponse" name="DeleteAliasResponseMessage" message="tns:DeleteAliasResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/GroupsServiceContract/DeleteAliasGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:GroupsServiceContract_DeleteAlias_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GroupEndpoint" type="tns:GroupsServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetGroups">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/GroupsServiceContract/GetGroups" style="document" />
+      <wsdl:input name="GetGroupsRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetGroupsResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddGroup">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/GroupsServiceContract/AddGroup" style="document" />
+      <wsdl:input name="AddGroupRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddGroupResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroup">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/GroupsServiceContract/UpdateGroup" style="document" />
+      <wsdl:input name="UpdateGroupRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateGroupResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGroup">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/GroupsServiceContract/DeleteGroup" style="document" />
+      <wsdl:input name="DeleteGroupRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteGroupResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAliases">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/GroupsServiceContract/GetAliases" style="document" />
+      <wsdl:input name="GetAliasesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetAliasesResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddAlias">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/GroupsServiceContract/AddAlias" style="document" />
+      <wsdl:input name="AddAliasRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddAliasResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlias">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/GroupsServiceContract/DeleteAlias" style="document" />
+      <wsdl:input name="DeleteAliasRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteAliasResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GroupsService">
+    <wsdl:port name="GroupEndpoint" binding="tns:GroupEndpoint">
+      <soap:address location="http://devserver2003/Inspire.Events/svc/GroupService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

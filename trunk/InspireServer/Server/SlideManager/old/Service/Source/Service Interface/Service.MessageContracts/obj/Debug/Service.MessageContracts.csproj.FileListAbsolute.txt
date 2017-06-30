@@ -1,0 +1,14 @@
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\bin\Debug\Service.MessageContracts.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\bin\Debug\Service.MessageContracts.pdb
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\bin\Debug\Service.DataContracts.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\bin\Debug\Service.DataContracts.pdb
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\obj\Debug\Service.MessageContracts.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\obj\Debug\Service.MessageContracts.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\bin\Debug\Service.MessageContracts.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\bin\Debug\Service.MessageContracts.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\bin\Debug\Service.DataContracts.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\bin\Debug\Service.DataContracts.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\obj\Debug\Service.MessageContracts.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.MessageContracts\obj\Debug\Service.MessageContracts.pdb

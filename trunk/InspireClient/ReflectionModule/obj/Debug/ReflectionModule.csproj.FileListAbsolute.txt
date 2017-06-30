@@ -1,0 +1,11 @@
+C:\CODE\trunk\InspireClient\InspireClient\bin\Debug\Modules\ReflectionModule.dll
+C:\CODE\trunk\InspireClient\InspireClient\bin\Debug\Modules\ReflectionModule.pdb
+C:\CODE\trunk\InspireClient\ReflectionModule\obj\Debug\PropertyPanel.baml
+C:\CODE\trunk\InspireClient\ReflectionModule\obj\Debug\PropertyPanel.g.cs
+C:\CODE\trunk\InspireClient\ReflectionModule\obj\Debug\ReflectionModule_MarkupCompile.cache
+C:\CODE\trunk\InspireClient\ReflectionModule\obj\Debug\ReflectionModule.g.resources
+C:\CODE\trunk\InspireClient\ReflectionModule\obj\Debug\ReflectionModule.Properties.Resources.resources
+C:\CODE\trunk\InspireClient\ReflectionModule\obj\Debug\ReflectionModule.dll
+C:\CODE\trunk\InspireClient\ReflectionModule\obj\Debug\ReflectionModule.pdb
+C:\CODE\trunk\InspireClient\ReflectionModule\obj\Debug\ReflectionModule.csprojResolveAssemblyReference.cache
+C:\CODE\trunk\InspireClient\ReflectionModule\obj\Debug\ReflectionModule.csproj.GenerateResource.Cache

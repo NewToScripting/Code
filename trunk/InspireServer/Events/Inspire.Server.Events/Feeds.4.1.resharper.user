@@ -1,0 +1,93 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer>
+      <setting name="UsedSolutionBuilderID">0</setting>
+    </integer>
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="C333263D-A959-4F81-BA80-F279C2B11FB9/d:App_Code/f:web.config" caret="0" scrollPosition="0|0" />
+      <File id="B26471DC-DF05-425B-AC7B-31EC62D60D2D/f:ProjectMapping.xml" caret="0" scrollPosition="0|0" />
+      <File id="8AD78E91-FDF7-422F-B1F2-FD882F96B6A2/f:FeedAccessFasade.cs" caret="0" scrollPosition="0|0" />
+      <File id="B91AFF04-5FBF-473F-98D1-57BD35FB5078/d:GeneratedCode/f:Feed.cs" caret="3635" scrollPosition="0|0" />
+      <File id="B91AFF04-5FBF-473F-98D1-57BD35FB5078/d:GeneratedCode/f:FeedEntry.cs" caret="0" scrollPosition="0|0" />
+      <File id="B91AFF04-5FBF-473F-98D1-57BD35FB5078/d:GeneratedCode/f:FeedEntrys.cs" caret="0" scrollPosition="0|0" />
+      <File id="B91AFF04-5FBF-473F-98D1-57BD35FB5078/d:GeneratedCode/f:Feeds.cs" caret="0" scrollPosition="0|0" />
+      <File id="469739D8-061A-431A-936C-E0F3906BD165/d:GeneratedCode/f:GeneralFaultContract.cs" caret="991" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:AddEntryRequestMessage.cs" caret="774" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:AddEntryResponseMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:AddFeedRequestMessage.cs" caret="758" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:AddFeedResponseMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:DeleteEntryRequestMessage.cs" caret="738" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:DeleteEntryResponseMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:DeleteFeedRequestMessage.cs" caret="735" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:DeleteFeedResponseMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:GetEntriesRequestMessage.cs" caret="735" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:GetEntriesResponseMessage.cs" caret="824" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:GetFeedsRequestMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:GetFeedsResponseMessage.cs" caret="765" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:UpdateFeedRequestMessage.cs" caret="765" scrollPosition="0|0" />
+      <File id="D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6/d:GeneratedCode/f:UpdateFeedResponseMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="3253A543-020E-4DC0-A34E-99CA83A98EF9/d:GeneratedCode/f:IFeedServiceContract.cs" caret="452" scrollPosition="0|0" />
+      <File id="3253A543-020E-4DC0-A34E-99CA83A98EF9/f:IFeedWebGetServiceContract.cs" caret="0" scrollPosition="0|0" />
+      <File id="C0F6CFEB-25A6-4224-B6E0-EF5C87EC985A/d:GeneratedCode/f:FeedService.cs" caret="0" scrollPosition="0|0" />
+      <File id="C0F6CFEB-25A6-4224-B6E0-EF5C87EC985A/f:Feeds.cs" caret="0" scrollPosition="0|0" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EventLogger.cs" caret="99" scrollPosition="0|0" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="2229" scrollPosition="10|314" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryDatabaseAccess.cs" caret="3564" scrollPosition="0|64" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="3322" scrollPosition="0|68" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryDatabaseAccess.cs" caret="3582" scrollPosition="0|68" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryDatabaseAccess.cs" caret="3363" scrollPosition="0|65" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryDatabaseAccess.cs" caret="835" scrollPosition="0|8" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="2146" scrollPosition="0|45" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="11683" scrollPosition="0|209" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="2824" scrollPosition="0|77" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="3558" scrollPosition="0|77" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="20978" scrollPosition="0|389" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="12884" scrollPosition="0|247" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="12123" scrollPosition="0|247" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="21295" scrollPosition="0|414" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="22131" scrollPosition="0|426" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="21816" scrollPosition="0|420" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="22314" scrollPosition="0|423" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="20912" scrollPosition="15|390" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="11604" scrollPosition="10|212" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:EntryWebGetDatabaseAccess.cs" caret="2328" scrollPosition="10|43" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="691" scrollPosition="0|12" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="3386" scrollPosition="0|66" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="1175" scrollPosition="0|36" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="1533" scrollPosition="0|36" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="8617" scrollPosition="0|170" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="14213" scrollPosition="0|222" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="14434" scrollPosition="0|324" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="15258" scrollPosition="0|335" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="15215" scrollPosition="0|327" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="14169" scrollPosition="0|301" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="8755" scrollPosition="0|194" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="3343" scrollPosition="0|68" />
+      <File id="354D2DB9-B2E4-4870-9888-F88642790DEE/f:FeedDatabaseAccess.cs" caret="871" scrollPosition="0|5" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="try" priority="11" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

@@ -1,0 +1,75 @@
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.FaultContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.FaultContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\obj\Debug\Inspire.Server.Events.DataAccess.pdb

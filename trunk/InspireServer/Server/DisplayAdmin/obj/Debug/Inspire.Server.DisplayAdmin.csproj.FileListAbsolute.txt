@@ -1,0 +1,8 @@
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.DisplayAdmin\Server\Source\Service Interface\Inspire.Server.DisplayAdmin.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\DisplayAdmin\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\DisplayAdmin\bin\Debug\Inspire.Server.DisplayAdmin.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\DisplayAdmin\bin\Debug\Inspire.Server.DisplayAdmin.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\DisplayAdmin\bin\Debug\Inspire.Server.DisplayAdmin.DataAccess.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\DisplayAdmin\bin\Debug\Inspire.Server.DisplayAdmin.DataAccess.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\DisplayAdmin\obj\Debug\Inspire.Server.DisplayAdmin.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\DisplayAdmin\obj\Debug\Inspire.Server.DisplayAdmin.pdb

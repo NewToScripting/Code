@@ -1,0 +1,41 @@
+﻿<Window x:Class="FlightInfoModule.FlightChooser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Height="456" Width="830" Background="{StaticResource WindowBackgroundBrush}" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="305*" />
+            <ColumnDefinition Width="503*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="387*" />
+            <RowDefinition Height="63*" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Single Panel Flight Information" TextAlignment="Center" FontSize="16" Foreground="White" FontWeight="Bold" Margin="5">
+            <TextBlock.Effect>
+                <DropShadowEffect />
+            </TextBlock.Effect>
+        </TextBlock>
+        <Image Source="resources/images/single.png" Margin="67,40,64,10" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="Single_MouseLeftButtonDown" Height="309" Width="174">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <TextBlock Text="Double Panel Flight Information" Grid.Column="1" TextAlignment="Center" FontSize="16" Foreground="White" FontWeight="Bold" Margin="5">
+            <TextBlock.Effect>
+                <DropShadowEffect />
+            </TextBlock.Effect>
+        </TextBlock>
+        <Image Source="Resources/images/double.png" Margin="20" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="Double_MouseLeftButtonDown">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+            <Button Content="Cancel" Width="150" Margin="6" Click="Button_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

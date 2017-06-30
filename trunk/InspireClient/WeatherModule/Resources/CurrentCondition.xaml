@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:WeatherModule">
+    <DataTemplate DataType="{x:Type local:WeatherControl}">
+        <Viewbox>
+            <TextBlock FontSize="30" Foreground="White" Text="{Binding WeatherReport.LatestWeather.SkyCondition.SkyCondition, Mode=OneWay}"/>
+        </Viewbox>
+    </DataTemplate>
+</ResourceDictionary>

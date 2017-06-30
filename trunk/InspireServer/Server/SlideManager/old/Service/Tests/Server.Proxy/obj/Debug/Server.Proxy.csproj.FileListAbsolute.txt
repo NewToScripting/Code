@@ -1,0 +1,10 @@
+C:\_WORKING\Inspire.Server.SlideManager\Service\Tests\Server.Proxy\bin\Debug\Server.Proxy.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Tests\Server.Proxy\bin\Debug\Server.Proxy.pdb
+C:\_WORKING\Inspire.Server.SlideManager\Service\Tests\Server.Proxy\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING\Inspire.Server.SlideManager\Service\Tests\Server.Proxy\obj\Debug\Server.Proxy.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Tests\Server.Proxy\obj\Debug\Server.Proxy.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Tests\Server.Proxy\bin\Debug\Server.Proxy.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Tests\Server.Proxy\bin\Debug\Server.Proxy.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Tests\Server.Proxy\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Tests\Server.Proxy\obj\Debug\Server.Proxy.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Tests\Server.Proxy\obj\Debug\Server.Proxy.pdb

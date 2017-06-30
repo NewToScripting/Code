@@ -1,0 +1,662 @@
+﻿<UserControl x:Class="EventsModule.ConfigurationControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Commands="clr-namespace:EventsModule.Commands"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    xmlns:TreeViewModel="clr-namespace:Inspire.Common.TreeViewModel;assembly=Inspire.Common"
+    xmlns:DataPresenter="clr-namespace:Infragistics.Windows.DataPresenter;assembly=Infragistics3.Wpf.DataPresenter.v8.1.Express" >
+    <UserControl.Resources>
+        
+        <DataTemplate x:Key="directionalTemplate">
+            <Border BorderThickness="1,1,1,1" CornerRadius="5,5,5,5" Margin=" 3,3,3,3" Width="100" ToolTip="{Binding Path=Description}">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#99000000" Offset="1"/>
+                        <GradientStop Color="#99202020" Offset="0.902"/>
+                        <GradientStop Color="#99090909" Offset="0.973"/>
+                        <GradientStop Color="#CCFFFFFF" Offset="0.196"/>
+                        <GradientStop Color="#99AAAAAA" Offset="0.482"/>
+                        <GradientStop Color="#99626262" Offset="0.522"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#FFD9D9D9" Offset="0"/>
+                        <GradientStop Color="#FF000000" Offset="0.598"/>
+                        <GradientStop Color="#FF474747" Offset="0.357"/>
+                        <GradientStop Color="#FF8C8C8C" Offset="0.071"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <Border.BitmapEffect>
+                    <DropShadowBitmapEffect />
+                </Border.BitmapEffect>
+                <Grid>
+                    <Button Height="100" Width="100" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" />
+                    <Image Source="{Binding Path=WebPath}" Margin="2,2,2,2" Height="85" IsHitTestVisible="False" >
+                        <Image.BitmapEffect>
+                            <DropShadowBitmapEffect />
+                        </Image.BitmapEffect>
+                    </Image>
+                </Grid>
+            </Border>
+        </DataTemplate>
+        
+        <ContextMenu x:Key="RemoveImageContext" Background="Black">
+            <MenuItem Header="Clear Image" Click="ClearDirectionalImage" Background="Black">
+                <MenuItem.Icon>
+                    <Image Source="Resources/Images/Remove.png"
+               Width="16"
+               Height="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+        </ContextMenu>
+        <Style TargetType="{x:Type DataPresenter:CellValuePresenter}" x:Key="DirectionalImage">
+            <Setter Property="DataPresenter:CellValuePresenter.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type DataPresenter:CellValuePresenter}">
+
+                        <Grid Width="{TemplateBinding DataPresenter:CellValuePresenter.Width}" Height="{TemplateBinding DataPresenter:CellValuePresenter.Height}">
+                            <Button ContextMenu="{StaticResource RemoveImageContext}" Click="ShowDirectionalImageSelector">
+                                <Image 
+					  Margin="{TemplateBinding DataPresenter:CellValuePresenter.Padding}"
+					  HorizontalAlignment="{TemplateBinding DataPresenter:CellValuePresenter.HorizontalContentAlignment}"
+					  VerticalAlignment="{TemplateBinding DataPresenter:CellValuePresenter.VerticalContentAlignment}"
+					  Source="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            </Button>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type DataPresenter:CellValuePresenter}" x:Key="DirectionalText">
+            <Setter Property="DataPresenter:CellValuePresenter.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type DataPresenter:CellValuePresenter}">
+                        <Grid Width="{TemplateBinding DataPresenter:CellValuePresenter.Width}" Height="{TemplateBinding DataPresenter:CellValuePresenter.Height}">
+                            <TextBlock Margin="{TemplateBinding DataPresenter:CellValuePresenter.Padding}" HorizontalAlignment="Left"
+					  VerticalAlignment="{TemplateBinding DataPresenter:CellValuePresenter.VerticalContentAlignment}" Foreground="White" Text="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <UserControl.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:EventsModuleCommands.AddDisplayRoomCommand}" Executed="AddDisplayRoomExecuted" CanExecute="AddDisplayRoomCanExecute" />
+        <CommandBinding Command="{x:Static Commands:EventsModuleCommands.RemoveDisplayRoomCommand}" Executed="RemoveDisplayRoomExecuted" CanExecute="RemoveDisplayRoomCanExecute" />
+        <CommandBinding Command="{x:Static Commands:EventsModuleCommands.AddRoomCommand}" Executed="AddRoomExecuted" CanExecute="AddRoomCanExecute" />
+        <CommandBinding Command="{x:Static Commands:EventsModuleCommands.RemoveRoomCommand}" Executed="RemoveRoomExecuted" CanExecute="RemoveRoomCanExecute" />
+    </UserControl.CommandBindings>
+    <Grid Margin="0,5,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="529*"/>
+        </Grid.ColumnDefinitions>
+            <TabControl Grid.Column="0" x:Name="tcEventConfig">
+                <TabItem Header="Rooms" Foreground="White" x:Name="tiRooms">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition MinWidth="200" Width="205*"/>
+                            <ColumnDefinition MinWidth="200" Width="205*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25" />
+                            <RowDefinition MinHeight="300" Height="300*" />
+                            <RowDefinition Height="54" />
+                        </Grid.RowDefinitions>
+                            <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Text="Rooms" Margin="5"/>
+                            <ListBox Grid.Column="0" Grid.Row="1" x:Name="lbRoomList" VerticalAlignment="Stretch" Margin="5" SelectionChanged="lbRoomList_SelectionChanged">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Foreground="White" Text="{Binding Path=Name}" />
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Stretch">
+                                <Button Width="125" Height="35" Margin="3" Command="{x:Static Commands:EventsModuleCommands.AddRoomCommand}" Content="+ Add"/>
+                                <Button Width="125" Height="35" Margin="3" Command="{x:Static Commands:EventsModuleCommands.RemoveRoomCommand}" Content="- Remove"/>
+                            </StackPanel>
+
+                            <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Text="Room Aliases" Margin="5"/>
+                            <ListBox Grid.Column="1" Grid.Row="1" x:Name="lbAliasList" VerticalAlignment="Stretch" Margin="5">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Foreground="White" Text="{Binding Path=Value}" />
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <Button Width="125" Height="35" Margin="3" Click="btnAliasAdd" Content="+ Add"/>
+                                <Button Width="125" Height="35" Margin="3" Click="btnAliasRemove" Content="- Remove"/>
+                            </StackPanel>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Room to Display Mappings" Foreground="White" x:Name="tiRoomMappings">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200*" MinWidth="200"/>
+                            <ColumnDefinition Width="200*"/>
+                        </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="500*"/>
+                        <RowDefinition Height="54" />
+                    </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" Text="Displays" Margin="5"/>
+                            <TreeView Grid.Row="1" Grid.Column="0" x:Name="mapTreeControl" ItemsSource="{Binding Path=DisplayProperties}" Margin="3" VerticalAlignment="Stretch" MinWidth="200" >
+                                <TreeView.Resources>
+                                    <HierarchicalDataTemplate DataType="{x:Type TreeViewModel:PropertyViewModel}" ItemsSource="{Binding Path=Children}">
+                                        <StackPanel Orientation="Horizontal" MouseRightButtonUp="OnRightMouseButtonUp">
+                                            <Image Width="24" Height="24" Margin="3,0" Source="Resources\Images\Property.ico" />
+                                            <TextBlock Text="{Binding Path=PropertyName}" Foreground="White" />
+                                        </StackPanel>
+                                    </HierarchicalDataTemplate>
+
+                                    <HierarchicalDataTemplate DataType="{x:Type TreeViewModel:DisplayGroupViewModel}" ItemsSource="{Binding Path=Children}">
+                                        <StackPanel Orientation="Horizontal" MouseRightButtonUp="OnRightMouseButtonUp" PreviewMouseLeftButtonDown="TreeItem_PreviewMouseLeftButtonDown">
+                                            <Image Width="24" Height="24" Margin="3,0" Source="Resources\Images\DisplayGroup.ico" SnapsToDevicePixels="True" />
+                                            <TextBlock Text="{Binding Path=DisplayGroupName}" />
+                                        </StackPanel>
+                                    </HierarchicalDataTemplate>
+
+                                    <DataTemplate DataType="{x:Type TreeViewModel:DisplayViewModel}">
+                                        <StackPanel Orientation="Horizontal" MouseRightButtonUp="OnRightMouseButtonUp" MouseLeftButtonDown="AdminDisplay_MouseLeftButtonDown" PreviewMouseLeftButtonDown="TreeItem_PreviewMouseLeftButtonDown">
+                                            <Grid>
+                                                <Image  Width="24" Height="24" Margin="3,0" Source="Resources\Images\Display.ico" />
+                                            </Grid>
+                                            <TextBlock Text="{Binding Path=DisplayName}"  />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </TreeView.Resources>
+                                <TreeView.ItemContainerStyle>
+                                    <!-- This Style binds a TreeViewItem to a TreeViewItemViewModel. -->
+                                    <Style TargetType="{x:Type TreeViewItem}">
+                                        <Setter Property="IsExpanded" Value="{Binding Path=IsExpanded, Mode=TwoWay}" />
+                                        <Setter Property="IsSelected" Value="{Binding Path=IsSelected, Mode=TwoWay}" />
+                                        <Setter Property="Background" Value="Transparent" />
+                                        <Setter Property="HorizontalContentAlignment" Value="{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
+                                        <Setter Property="VerticalContentAlignment" Value="{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
+                                        <Setter Property="Padding" Value="1,0,0,0" />
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="{x:Type TreeViewItem}">
+                                                    <ControlTemplate.Resources>
+                                                        <Storyboard x:Key="HoverOn">
+                                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_HeaderHover" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                                <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1" />
+                                                            </DoubleAnimationUsingKeyFrames>
+                                                        </Storyboard>
+                                                        <Storyboard x:Key="HoverOff">
+                                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_HeaderHover" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                                <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0" />
+                                                            </DoubleAnimationUsingKeyFrames>
+                                                        </Storyboard>
+                                                        <Storyboard x:Key="SelectedOn">
+                                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_Header" Storyboard.TargetProperty="(UIElement.BitmapEffect).(OuterGlowBitmapEffect.Opacity)">
+                                                                <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.6" />
+                                                            </DoubleAnimationUsingKeyFrames>
+                                                        </Storyboard>
+                                                        <Storyboard x:Key="SelectedOff">
+                                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_Header" Storyboard.TargetProperty="(UIElement.BitmapEffect).(OuterGlowBitmapEffect.Opacity)">
+                                                                <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0" />
+                                                            </DoubleAnimationUsingKeyFrames>
+                                                        </Storyboard>
+                                                        <Storyboard x:Key="SelectedHoverOn">
+                                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_HeaderSelectedHover" Storyboard.TargetProperty="(UIElement.BitmapEffect).(OuterGlowBitmapEffect.Opacity)">
+                                                                <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.6" />
+                                                            </DoubleAnimationUsingKeyFrames>
+                                                        </Storyboard>
+                                                        <Storyboard x:Key="SelectedHoverOff">
+                                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_HeaderSelectedHover" Storyboard.TargetProperty="(UIElement.BitmapEffect).(OuterGlowBitmapEffect.Opacity)">
+                                                                <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0" />
+                                                            </DoubleAnimationUsingKeyFrames>
+                                                        </Storyboard>
+                                                    </ControlTemplate.Resources>
+                                                    <Grid>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition MinWidth="19" Width="Auto" />
+                                                            <ColumnDefinition Width="Auto" />
+                                                            <ColumnDefinition Width="*" />
+                                                        </Grid.ColumnDefinitions>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto" />
+                                                            <RowDefinition />
+                                                        </Grid.RowDefinitions>
+                                                        <ToggleButton x:Name="Expander" Style="{DynamicResource nuclearTreeViewItemToggleButton}" IsChecked="{Binding Path=IsExpanded, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press" />
+                                                        <Border Grid.Column="1" x:Name="Selection_Border" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" CornerRadius="4,4,4,4">
+                                                            <Grid Width="Auto" Height="Auto" Margin="2,0,2,0">
+                                                                <ContentPresenter HorizontalAlignment="Stretch" x:Name="PART_Header" ContentSource="Header" d:LayoutOverrides="Width" Margin="0,1,0,1">
+                                                                    <ContentPresenter.BitmapEffect>
+                                                                        <OuterGlowBitmapEffect GlowColor="{DynamicResource MainColor}" Opacity="0" />
+                                                                    </ContentPresenter.BitmapEffect>
+                                                                </ContentPresenter>
+                                                                <ContentPresenter HorizontalAlignment="Stretch" x:Name="PART_HeaderHover" ContentSource="Header" d:LayoutOverrides="Width" Opacity="0" Margin="0,1,0,1">
+                                                                    <ContentPresenter.BitmapEffect>
+                                                                        <OuterGlowBitmapEffect GlowColor="{DynamicResource MainColor}" />
+                                                                    </ContentPresenter.BitmapEffect>
+                                                                </ContentPresenter>
+                                                                <ContentPresenter HorizontalAlignment="Stretch" x:Name="PART_HeaderSelectedHover" ContentSource="Header" d:LayoutOverrides="Width" Margin="0,1,0,1">
+                                                                    <ContentPresenter.BitmapEffect>
+                                                                        <OuterGlowBitmapEffect GlowColor="{DynamicResource MainColor}" Opacity="0" />
+                                                                    </ContentPresenter.BitmapEffect>
+                                                                </ContentPresenter>
+                                                            </Grid>
+                                                        </Border>
+                                                        <Border Margin="0,0,-3.803,0" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" x:Name="border" CornerRadius="4,4,4,4" />
+                                                        <ItemsPresenter Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" x:Name="ItemsHost" />
+                                                    </Grid>
+                                                    <ControlTemplate.Triggers>
+                                                        <MultiTrigger>
+                                                            <MultiTrigger.ExitActions>
+                                                                <BeginStoryboard Storyboard="{StaticResource SelectedHoverOff}" x:Name="SelectedHoverOff_BeginStoryboard" />
+                                                            </MultiTrigger.ExitActions>
+                                                            <MultiTrigger.EnterActions>
+                                                                <BeginStoryboard Storyboard="{StaticResource SelectedHoverOn}" x:Name="SelectedHoverOn_BeginStoryboard" />
+                                                            </MultiTrigger.EnterActions>
+                                                            <MultiTrigger.Conditions>
+                                                                <Condition Property="IsSelected" Value="True" />
+                                                                <Condition Property="IsMouseOver" Value="True" />
+                                                            </MultiTrigger.Conditions>
+                                                        </MultiTrigger>
+                                                        <MultiTrigger>
+                                                            <MultiTrigger.Conditions>
+                                                                <Condition Property="IsSelected" Value="False" />
+                                                                <Condition Property="IsMouseOver" SourceName="Selection_Border" Value="True" />
+                                                            </MultiTrigger.Conditions>
+                                                            <MultiTrigger.ExitActions>
+                                                                <BeginStoryboard x:Name="HoverOff_BeginStoryboard" Storyboard="{StaticResource HoverOff}" />
+                                                            </MultiTrigger.ExitActions>
+                                                            <MultiTrigger.EnterActions>
+                                                                <BeginStoryboard Storyboard="{StaticResource HoverOn}" />
+                                                            </MultiTrigger.EnterActions>
+                                                        </MultiTrigger>
+                                                        <Trigger Property="IsExpanded" Value="false">
+                                                            <Setter Property="Visibility" Value="Collapsed" TargetName="ItemsHost" />
+                                                        </Trigger>
+                                                        <Trigger Property="HasItems" Value="false">
+                                                            <Setter Property="Visibility" Value="Hidden" TargetName="Expander" />
+                                                        </Trigger>
+
+                                                        <Trigger Property="IsSelected" Value="true">
+                                                            <Trigger.ExitActions>
+                                                                <BeginStoryboard x:Name="SelectedOff_BeginStoryboard" Storyboard="{StaticResource SelectedOff}" />
+                                                            </Trigger.ExitActions>
+                                                            <Trigger.EnterActions>
+                                                                <BeginStoryboard x:Name="SelectedOn_BeginStoryboard" Storyboard="{StaticResource SelectedOn}" />
+                                                            </Trigger.EnterActions>
+                                                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" />
+                                                        </Trigger>
+                                                        <MultiTrigger>
+                                                            <MultiTrigger.Conditions>
+                                                                <Condition Property="IsSelected" Value="true" />
+                                                                <Condition Property="IsSelectionActive" Value="false" />
+                                                            </MultiTrigger.Conditions>
+                                                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+                                                            <Setter Property="Background" TargetName="Selection_Border" Value="#3F545454" />
+                                                            <Setter Property="Background" TargetName="border" Value="#72000000" />
+                                                        </MultiTrigger>
+                                                        <Trigger Property="IsEnabled" Value="false">
+                                                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                                                        </Trigger>
+                                                    </ControlTemplate.Triggers>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground">
+                                            <Setter.Value>
+                                                <SolidColorBrush Color="{DynamicResource WhiteColor}" />
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsSelected" Value="True">
+                                                <!--<Setter Property="FontWeight" Value="Bold" />-->
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TreeView.ItemContainerStyle>
+                            </TreeView>
+
+                            <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Text="Rooms" Margin="5"/>
+                            <ListBox Grid.Row="1" Grid.Column="1" Margin="3" x:Name="lbDisplayRooms" VerticalAlignment="Stretch">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Foreground="White" Text="{Binding Path=Name}" />
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Stretch">
+                                <Button Width="187" Height="35" Margin="3" Command="{x:Static Commands:EventsModuleCommands.AddDisplayRoomCommand}" Content="+ Add"/>
+                                <Button Width="187" Height="35" Margin="3" Command="{x:Static Commands:EventsModuleCommands.RemoveDisplayRoomCommand}" Content="- Remove"/>
+                            </StackPanel>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Directions" Foreground="White" x:Name="tiDirections">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="205*"/>
+                            <ColumnDefinition Width="310*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="571.04*"/>
+                        <RowDefinition Height="54"/>
+                    </Grid.RowDefinitions>
+                       
+                        <TreeView x:Name="directionTreeControl" ItemsSource="{Binding Path=DisplayProperties}" MinWidth="200" Margin="0,0,5,0">
+                            <TreeView.Resources>
+                                <HierarchicalDataTemplate DataType="{x:Type TreeViewModel:PropertyViewModel}" ItemsSource="{Binding Path=Children}">
+                                    <StackPanel Orientation="Horizontal" MouseRightButtonUp="OnRightMouseButtonUp">
+                                        <Image Width="24" Height="24" Margin="3,0" Source="Resources\Images\Property.ico" />
+                                        <TextBlock Text="{Binding Path=PropertyName}" Foreground="White" />
+                                    </StackPanel>
+                                </HierarchicalDataTemplate>
+
+                                <HierarchicalDataTemplate DataType="{x:Type TreeViewModel:DisplayGroupViewModel}" ItemsSource="{Binding Path=Children}">
+                                    <StackPanel Orientation="Horizontal" MouseRightButtonUp="OnRightMouseButtonUp" PreviewMouseLeftButtonDown="TreeItem_PreviewMouseLeftButtonDown">
+                                        <Image Width="24" Height="24" Margin="3,0" Source="Resources\Images\DisplayGroup.ico" SnapsToDevicePixels="True" />
+                                        <TextBlock Text="{Binding Path=DisplayGroupName}" />
+                                    </StackPanel>
+                                </HierarchicalDataTemplate>
+
+                                <DataTemplate DataType="{x:Type TreeViewModel:DisplayViewModel}">
+                                    <StackPanel Orientation="Horizontal" MouseRightButtonUp="OnRightMouseButtonUp" MouseLeftButtonDown="directionTree_MouseLeftButtonDown"  PreviewMouseLeftButtonDown="TreeItem_PreviewMouseLeftButtonDown">
+                                        <Grid>
+                                            <Image  Width="24" Height="24" Margin="3,0" Source="Resources\Images\Display.ico" />
+                                        </Grid>
+                                        <TextBlock Text="{Binding Path=DisplayName}"  />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </TreeView.Resources>
+                            <TreeView.ItemContainerStyle>
+                                <!-- This Style binds a TreeViewItem to a TreeViewItemViewModel. -->
+                                <Style TargetType="{x:Type TreeViewItem}">
+                                    <Setter Property="IsExpanded" Value="{Binding Path=IsExpanded, Mode=TwoWay}" />
+                                    <Setter Property="IsSelected" Value="{Binding Path=IsSelected, Mode=TwoWay}" />
+                                    <Setter Property="Background" Value="Transparent" />
+                                    <Setter Property="HorizontalContentAlignment" Value="{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
+                                    <Setter Property="VerticalContentAlignment" Value="{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
+                                    <Setter Property="Padding" Value="1,0,0,0" />
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type TreeViewItem}">
+                                                <ControlTemplate.Resources>
+                                                    <Storyboard x:Key="HoverOn">
+                                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_HeaderHover" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                            <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1" />
+                                                        </DoubleAnimationUsingKeyFrames>
+                                                    </Storyboard>
+                                                    <Storyboard x:Key="HoverOff">
+                                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_HeaderHover" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                            <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0" />
+                                                        </DoubleAnimationUsingKeyFrames>
+                                                    </Storyboard>
+                                                    <Storyboard x:Key="SelectedOn">
+                                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_Header" Storyboard.TargetProperty="(UIElement.BitmapEffect).(OuterGlowBitmapEffect.Opacity)">
+                                                            <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.6" />
+                                                        </DoubleAnimationUsingKeyFrames>
+                                                    </Storyboard>
+                                                    <Storyboard x:Key="SelectedOff">
+                                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_Header" Storyboard.TargetProperty="(UIElement.BitmapEffect).(OuterGlowBitmapEffect.Opacity)">
+                                                            <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0" />
+                                                        </DoubleAnimationUsingKeyFrames>
+                                                    </Storyboard>
+                                                    <Storyboard x:Key="SelectedHoverOn">
+                                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_HeaderSelectedHover" Storyboard.TargetProperty="(UIElement.BitmapEffect).(OuterGlowBitmapEffect.Opacity)">
+                                                            <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.6" />
+                                                        </DoubleAnimationUsingKeyFrames>
+                                                    </Storyboard>
+                                                    <Storyboard x:Key="SelectedHoverOff">
+                                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_HeaderSelectedHover" Storyboard.TargetProperty="(UIElement.BitmapEffect).(OuterGlowBitmapEffect.Opacity)">
+                                                            <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0" />
+                                                        </DoubleAnimationUsingKeyFrames>
+                                                    </Storyboard>
+                                                </ControlTemplate.Resources>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition MinWidth="19" Width="Auto" />
+                                                        <ColumnDefinition Width="Auto" />
+                                                        <ColumnDefinition Width="*" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition />
+                                                    </Grid.RowDefinitions>
+                                                    <ToggleButton x:Name="Expander" Style="{DynamicResource nuclearTreeViewItemToggleButton}" IsChecked="{Binding Path=IsExpanded, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press" />
+                                                    <Border Grid.Column="1" x:Name="Selection_Border" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" CornerRadius="4,4,4,4">
+                                                        <Grid Width="Auto" Height="Auto" Margin="2,0,2,0">
+                                                            <ContentPresenter HorizontalAlignment="Stretch" x:Name="PART_Header" ContentSource="Header" d:LayoutOverrides="Width" Margin="0,1,0,1">
+                                                                <ContentPresenter.BitmapEffect>
+                                                                    <OuterGlowBitmapEffect GlowColor="{DynamicResource MainColor}" Opacity="0" />
+                                                                </ContentPresenter.BitmapEffect>
+                                                            </ContentPresenter>
+                                                            <ContentPresenter HorizontalAlignment="Stretch" x:Name="PART_HeaderHover" ContentSource="Header" d:LayoutOverrides="Width" Opacity="0" Margin="0,1,0,1">
+                                                                <ContentPresenter.BitmapEffect>
+                                                                    <OuterGlowBitmapEffect GlowColor="{DynamicResource MainColor}" />
+                                                                </ContentPresenter.BitmapEffect>
+                                                            </ContentPresenter>
+                                                            <ContentPresenter HorizontalAlignment="Stretch" x:Name="PART_HeaderSelectedHover" ContentSource="Header" d:LayoutOverrides="Width" Margin="0,1,0,1">
+                                                                <ContentPresenter.BitmapEffect>
+                                                                    <OuterGlowBitmapEffect GlowColor="{DynamicResource MainColor}" Opacity="0" />
+                                                                </ContentPresenter.BitmapEffect>
+                                                            </ContentPresenter>
+                                                        </Grid>
+                                                    </Border>
+                                                    <Border Margin="0,0,-3.803,0" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" x:Name="border" CornerRadius="4,4,4,4" />
+                                                    <ItemsPresenter Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" x:Name="ItemsHost" />
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <MultiTrigger>
+                                                        <MultiTrigger.ExitActions>
+                                                            <BeginStoryboard Storyboard="{StaticResource SelectedHoverOff}" x:Name="SelectedHoverOff_BeginStoryboard" />
+                                                        </MultiTrigger.ExitActions>
+                                                        <MultiTrigger.EnterActions>
+                                                            <BeginStoryboard Storyboard="{StaticResource SelectedHoverOn}" x:Name="SelectedHoverOn_BeginStoryboard" />
+                                                        </MultiTrigger.EnterActions>
+                                                        <MultiTrigger.Conditions>
+                                                            <Condition Property="IsSelected" Value="True" />
+                                                            <Condition Property="IsMouseOver" Value="True" />
+                                                        </MultiTrigger.Conditions>
+                                                    </MultiTrigger>
+                                                    <MultiTrigger>
+                                                        <MultiTrigger.Conditions>
+                                                            <Condition Property="IsSelected" Value="False" />
+                                                            <Condition Property="IsMouseOver" SourceName="Selection_Border" Value="True" />
+                                                        </MultiTrigger.Conditions>
+                                                        <MultiTrigger.ExitActions>
+                                                            <BeginStoryboard x:Name="HoverOff_BeginStoryboard" Storyboard="{StaticResource HoverOff}" />
+                                                        </MultiTrigger.ExitActions>
+                                                        <MultiTrigger.EnterActions>
+                                                            <BeginStoryboard Storyboard="{StaticResource HoverOn}" />
+                                                        </MultiTrigger.EnterActions>
+                                                    </MultiTrigger>
+                                                    <Trigger Property="IsExpanded" Value="false">
+                                                        <Setter Property="Visibility" Value="Collapsed" TargetName="ItemsHost" />
+                                                    </Trigger>
+                                                    <Trigger Property="HasItems" Value="false">
+                                                        <Setter Property="Visibility" Value="Hidden" TargetName="Expander" />
+                                                    </Trigger>
+
+                                                    <Trigger Property="IsSelected" Value="true">
+                                                        <Trigger.ExitActions>
+                                                            <BeginStoryboard x:Name="SelectedOff_BeginStoryboard" Storyboard="{StaticResource SelectedOff}" />
+                                                        </Trigger.ExitActions>
+                                                        <Trigger.EnterActions>
+                                                            <BeginStoryboard x:Name="SelectedOn_BeginStoryboard" Storyboard="{StaticResource SelectedOn}" />
+                                                        </Trigger.EnterActions>
+                                                        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" />
+                                                    </Trigger>
+                                                    <MultiTrigger>
+                                                        <MultiTrigger.Conditions>
+                                                            <Condition Property="IsSelected" Value="true" />
+                                                            <Condition Property="IsSelectionActive" Value="false" />
+                                                        </MultiTrigger.Conditions>
+                                                        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+                                                        <Setter Property="Background" TargetName="Selection_Border" Value="#3F545454" />
+                                                        <Setter Property="Background" TargetName="border" Value="#72000000" />
+                                                    </MultiTrigger>
+                                                    <Trigger Property="IsEnabled" Value="false">
+                                                        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Setter Property="Foreground">
+                                        <Setter.Value>
+                                            <SolidColorBrush Color="{DynamicResource WhiteColor}" />
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsSelected" Value="True">
+                                            <!--<Setter Property="FontWeight" Value="Bold" />-->
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TreeView.ItemContainerStyle>
+
+                        </TreeView>
+
+                        <DataPresenter:XamDataGrid x:Name="DirectionsGrid" Grid.Column="1" Foreground="White" AutoFit="True" Margin="5,0,0,0" Theme="Office2k7Black">
+                            <DataPresenter:XamDataGrid.FieldLayouts>
+                                <DataPresenter:FieldLayout>
+                                    <DataPresenter:FieldLayout.Fields>
+                                        <DataPresenter:Field Name="Guid" Visibility="Collapsed" />
+                                        <DataPresenter:Field Name="DisplayID" Visibility="Collapsed" />
+                                        <DataPresenter:Field Name="RoomID" Visibility="Collapsed" />
+                                        <DataPresenter:Field Name="DirectionImageID" Visibility="Collapsed"/>
+                                        <DataPresenter:Field Name="RoomName" >
+                                            <DataPresenter:Field.Settings>
+                                                <DataPresenter:FieldSettings AllowResize="False" CellValuePresenterStyle="{StaticResource DirectionalText}" />
+                                            </DataPresenter:Field.Settings>
+                                        </DataPresenter:Field>
+                                        <DataPresenter:Field Name="DirectionImageWebPath" Label="Directional Image">
+                                            <DataPresenter:Field.Settings>
+                                                <DataPresenter:FieldSettings CellHeight="50" CellWidth="50" CellMaxHeight="50" CellMaxWidth="50"  AllowResize="False" CellValuePresenterStyle="{StaticResource DirectionalImage}" />
+                                            </DataPresenter:Field.Settings>
+                                        </DataPresenter:Field>
+                                        <DataPresenter:Field Name="Description" />
+                                    </DataPresenter:FieldLayout.Fields>
+                                </DataPresenter:FieldLayout>
+                            </DataPresenter:XamDataGrid.FieldLayouts>
+                        </DataPresenter:XamDataGrid>
+                        <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="1" Grid.ColumnSpan="2" FlowDirection="LeftToRight" HorizontalAlignment="Right">
+                            <Button Height="38" Margin="3" x:Name="btnDirectionSave" VerticalAlignment="Bottom" Click="btnDirectionSave_Click" Content="Save" HorizontalAlignment="Left" Width="187" />
+                            <Button Height="38" HorizontalAlignment="Right" Margin="3" x:Name="btnDirectionCancel" VerticalAlignment="Bottom" Width="187" Grid.Column="3" Content="Cancel"/>
+                        </StackPanel>
+                        <!--<xcdg:DataGridControl Grid.Column="1" Name="dgRoomDirections" HorizontalAlignment="Stretch" xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid" VerticalAlignment="Top">
+                                <xcdg:DataGridControl.Columns>
+                                    <xcdg:Column FieldName="Room" Title="Room Name" />
+                                    <xcdg:Column FieldName="RoomDirections" Title="Room Directions" />
+                                    <xcdg:Column FieldName="DirectionalImage" Title="Directional Image" />
+                                </xcdg:DataGridControl.Columns>
+                                <xcdg:DataGridControl.View>
+                                    <xcdg:TableView>
+                                        <xcdg:TableView.Theme>
+                                            <xcdg:AeroNormalColorTheme />
+                                        </xcdg:TableView.Theme>
+                                    </xcdg:TableView>
+                                </xcdg:DataGridControl.View>
+                            </xcdg:DataGridControl>-->
+                        <!--<Grid></Grid>-->
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Directional Images" Foreground="White" x:Name="tiDirectionalImages">
+                    <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="571.04*" />
+                        <RowDefinition Height="54" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="520*"/>
+                    </Grid.ColumnDefinitions>
+                        <ListBox Grid.Column="0" x:Name="lbDiectionalImages" ItemTemplate="{StaticResource directionalTemplate}" Margin="0,3,0,3">
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel IsItemsHost="True" Width="{Binding Path=ActualWidth, RelativeSource={RelativeSource AncestorType={x:Type ScrollContentPresenter}, Mode=FindAncestor}}" />
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                        </ListBox>
+                    <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="1" Grid.Column="0" FlowDirection="LeftToRight" HorizontalAlignment="Right">
+                        <Button Height="38" Width="187" Margin="3" x:Name="btnAddDirectionalImage" VerticalAlignment="Bottom" Click="btnAddDirectionalImage_Click" Content="Add" />
+                        <Button Height="38" HorizontalAlignment="Right" Margin="3" x:Name="btnRemoveDirectionalImage" VerticalAlignment="Bottom" Click="btnRemoveDirectionalImage_Click"  Width="187" Content="Remove" />
+                    </StackPanel>
+                    </Grid>
+                </TabItem>
+            <TabItem Header="Event Sources" Foreground="White" x:Name="tiEventSources">
+                <Grid Background="Gray">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="571.04*" />
+                        <RowDefinition Height="54" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="469.527*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Margin="34,172,29,185">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock TextAlignment="Center" Grid.Column="0" Text="Field Name"/>
+                        <TextBlock TextAlignment="Center" Grid.Column="1" Text="Data Type" />
+                        <TextBlock TextAlignment="Center" Grid.Column="2" Text="Field Location" />
+                        <TextBlock TextAlignment="Center" Grid.Column="3" Text="Field Length" />
+                    </Grid>
+                    <ListBox x:Name="lbFieldContracts" Margin="36,190,29,185">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                    <TextBox Margin="2" TextAlignment="Center" Grid.Column="0" Text="{Binding Path=Name}" />
+                                    <ComboBox Margin="2" TextBlock.TextAlignment="Center" Grid.Column="1" SelectedItem="{Binding Path=FieldType}">
+                                        <ComboBoxItem>String</ComboBoxItem>
+                                        <ComboBoxItem>Integer</ComboBoxItem>
+                                        <ComboBoxItem>Double</ComboBoxItem>
+                                        <ComboBoxItem>DateTime</ComboBoxItem>
+                                        <ComboBoxItem>Bool</ComboBoxItem>
+                                        <ComboBoxItem>ImagePath</ComboBoxItem>
+                                    </ComboBox>
+                                    <TextBox Margin="2" TextAlignment="Center" Grid.Column="2" Text="{Binding Path=Location}" />
+                                    <TextBox Margin="2" TextAlignment="Center" Grid.Column="3" Text="{Binding Path=FieldLength}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
+                    <DataPresenter:XamDataGrid x:Name="EventDataGrid" Foreground="White" AutoFit="True" Margin="6,0,8,52" Theme="Office2k7Black" Height="152" VerticalAlignment="Bottom" Grid.RowSpan="2">
+
+                    </DataPresenter:XamDataGrid>
+
+                    <StackPanel Orientation="Horizontal" Margin="78.527,5,5,5" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FlowDirection="LeftToRight">
+                        <Button Height="38" Width="187" Margin="3" x:Name="btnSaveDataSource" VerticalAlignment="Bottom" Click="Click_SaveDataSource" Content="Save" />
+                        <Button Height="38" HorizontalAlignment="Right" Margin="3" x:Name="btnCancelDataSource" VerticalAlignment="Bottom" Click="Click_CancelDataSource"  Width="187" Content="Cancel" />
+                    </StackPanel>
+                    <TextBlock Height="25" Margin="36,19,0,0" FontSize="16"  Text="Event Source:" VerticalAlignment="Top" HorizontalAlignment="Left" Width="116" />
+                    <ComboBox Height="25" Margin="156,19,166,0" Name="cbDataSource" VerticalAlignment="Top" />
+                    <Button Height="25" Margin="0,19,133,0" Name="btnAddEventSource" VerticalAlignment="Top" HorizontalAlignment="Right" Width="27" Click="btnAddEventSource_Click">+</Button>
+                    <Button Height="25" HorizontalAlignment="Right" Margin="0,19,100,0" Name="btnRemoveEventSource" VerticalAlignment="Top" Width="27" Click="btnRemoveEventSource_Click">-</Button>
+                    <TextBlock Height="22" HorizontalAlignment="Left" Margin="36,142,0,0" Text="File:" VerticalAlignment="Top" Width="31" />
+                    <GroupBox Header="Source Type" Height="59" Margin="34,60,29,0" Name="groupBox1" VerticalAlignment="Top">
+                        <Grid>
+                            <RadioButton Foreground="White" GroupName="sourceTypes" Margin="106,6,0,-6" Name="rbCSV" HorizontalAlignment="Left" Width="121.527">Comma Separated</RadioButton>
+                            <RadioButton Foreground="White" GroupName="sourceTypes" HorizontalAlignment="Left" Margin="233,6,0,3" Name="rbTab" Width="96.581">Tab Separated</RadioButton>
+                            <RadioButton IsChecked="True" GroupName="sourceTypes" Foreground="White" HorizontalAlignment="Left" Margin="11,6,0,3" Name="rbFixed" Width="96">Fixed Length</RadioButton>
+                            <RadioButton Foreground="White" GroupName="sourceTypes" HorizontalAlignment="Left" Margin="332.527,6,0,-6" Name="rbCustom" ToolTip="This is a custom source that is not populated from a csv, tab seperated, or field seperated file" Width="101">Custom Source</RadioButton>
+                        </Grid>
+                    </GroupBox>
+                    <TextBox Height="23" Margin="62,138,110,0" Name="tbEventFilePath" VerticalAlignment="Top" />
+                    <Button Height="23" HorizontalAlignment="Right" Margin="0,138,29,0" Name="btnEventSourceBrowse" VerticalAlignment="Top" Width="75" Click="btnEventSourceBrowse_Click">Browse</Button>
+                    <Button Height="23" HorizontalAlignment="Right" Margin="0,0,29,156" Name="btnModifyFields" VerticalAlignment="Bottom" Width="75" Click="btnModifyFields_Click">Modify</Button>
+                    <Button Height="23" HorizontalAlignment="Left" Margin="6,0,0,156" Name="btnPreviewData" VerticalAlignment="Bottom" Width="108" Click="btnPreviewData_Click">Preview Data</Button>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

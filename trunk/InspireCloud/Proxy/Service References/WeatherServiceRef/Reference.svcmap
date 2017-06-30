@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2744769e-a4ca-4559-a510-8f1684e8fda4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/weatherservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WeatherService.disco" MetadataType="Disco" ID="d143a108-aedd-4b2a-ae1c-eea2273dcd66" SourceId="1" SourceUrl="http://hptouchsmart600/WeatherService.svc?disco" />
+    <MetadataFile FileName="WeatherService.wsdl" MetadataType="Wsdl" ID="3337f659-9687-4bdb-9a67-500229fb5063" SourceId="1" SourceUrl="http://hptouchsmart600/WeatherService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="WeatherService.xsd" MetadataType="Schema" ID="164dafff-6a0b-47cf-b266-fe87d810a6ad" SourceId="1" SourceUrl="http://hptouchsmart600/WeatherService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WeatherService1.xsd" MetadataType="Schema" ID="418c7497-0821-4fd8-beb4-26e0cf18ccd3" SourceId="1" SourceUrl="http://hptouchsmart600/WeatherService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WeatherService2.xsd" MetadataType="Schema" ID="6456e0c3-dfe1-46e1-b08c-c0c5a056a02a" SourceId="1" SourceUrl="http://hptouchsmart600/WeatherService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WeatherService1.wsdl" MetadataType="Wsdl" ID="ce2a3115-23ef-4fe7-afe3-09b7dd7fe832" SourceId="1" SourceUrl="http://hptouchsmart600/WeatherService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

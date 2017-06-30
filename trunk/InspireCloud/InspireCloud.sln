@@ -1,0 +1,127 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proxies", "Proxies", "{2C855244-AFE8-4435-A8A8-7B28E686A757}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6D568826-67AF-4555-9B33-F0FE8578EA90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{75EB3835-072F-48A3-8483-CF52C70A69D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire Proxy", "Proxy\Inspire Proxy.csproj", "{A3D08178-4B1F-43BA-A43A-4A051CAC2123}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherModule.Proxy", "LegacyWeatherModuleProxy\WeatherModule.Proxy.csproj", "{4468808D-07AF-4A9B-AD3A-ABC5DF377198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{763BC424-DCE0-4253-B3B9-1B61B7E13FC2}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "InspireCloudService", "InspireCloudService\InspireCloudService.ccproj", "{A4D9EB53-840B-4B95-9DD6-A6FCEE4D33A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherServiceWebRole", "WeatherServiceWebRole\WeatherServiceWebRole.csproj", "{7CAF830D-8766-489B-9286-6C92FAB5D261}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7D1B0539-570E-4C1C-A865-9433DF1CAE83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{5202663C-7851-41CA-BF14-2903F40AD9ED}"
+	ProjectSection(SolutionItems) = preProject
+		UnitTests\TimeConverter.cs = UnitTests\TimeConverter.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Flights", "Flights", "{837147C1-1847-4F66-86F6-ECF2647D535D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsWCFService", "FlightsWCFService\FlightsWCFService.csproj", "{D51A7C5E-F98C-472E-A432-8B3A73C31F88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightAwareProxy", "FlightAwareProxy\FlightAwareProxy.csproj", "{0ECF89C5-A344-4EEB-BF8B-20C6BBB9F99E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightInfoModule.Proxy", "..\InspireClient\FlightInfoModule.Proxy\FlightInfoModule.Proxy.csproj", "{88A997E1-2967-4B1F-82CD-C7B026E18FD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsTestProxy", "FlightsTestProxy\FlightsTestProxy.csproj", "{B6F1892E-9F4C-485F-A9E8-D170BDEBC7F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IIS", "IIS", "{25560267-A63A-4169-8A96-938983A2C515}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "IISHost", "IISHost\", "{BA9F5072-9D78-47F8-B484-89DDB9F3F326}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{0ecf89c5-a344-4eeb-bf8b-20c6bbb9f99e}|FlightAwareProxy.dll;{88a997e1-2967-4b1f-82cd-c7b026e18fd1}|FlightInfoModule.Proxy.dll;{d51a7c5e-f98c-472e-a432-8b3a73c31f88}|FlightsWCFService.dll;{a3d08178-4b1f-43ba-a43a-4a051cac2123}|Inspire Proxy.dll;{7caf830d-8766-489b-9286-6c92fab5d261}|WeatherServiceWebRole.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_3029"
+		Debug.AspNetCompiler.PhysicalPath = "IISHost\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3029\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_3029"
+		Release.AspNetCompiler.PhysicalPath = "IISHost\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3029\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3029"
+		SlnRelativePath = "IISHost\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3D08178-4B1F-43BA-A43A-4A051CAC2123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D08178-4B1F-43BA-A43A-4A051CAC2123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D08178-4B1F-43BA-A43A-4A051CAC2123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D08178-4B1F-43BA-A43A-4A051CAC2123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4468808D-07AF-4A9B-AD3A-ABC5DF377198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4468808D-07AF-4A9B-AD3A-ABC5DF377198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4468808D-07AF-4A9B-AD3A-ABC5DF377198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4468808D-07AF-4A9B-AD3A-ABC5DF377198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{763BC424-DCE0-4253-B3B9-1B61B7E13FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{763BC424-DCE0-4253-B3B9-1B61B7E13FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{763BC424-DCE0-4253-B3B9-1B61B7E13FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{763BC424-DCE0-4253-B3B9-1B61B7E13FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D9EB53-840B-4B95-9DD6-A6FCEE4D33A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D9EB53-840B-4B95-9DD6-A6FCEE4D33A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D9EB53-840B-4B95-9DD6-A6FCEE4D33A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D9EB53-840B-4B95-9DD6-A6FCEE4D33A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CAF830D-8766-489B-9286-6C92FAB5D261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CAF830D-8766-489B-9286-6C92FAB5D261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CAF830D-8766-489B-9286-6C92FAB5D261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CAF830D-8766-489B-9286-6C92FAB5D261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51A7C5E-F98C-472E-A432-8B3A73C31F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51A7C5E-F98C-472E-A432-8B3A73C31F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51A7C5E-F98C-472E-A432-8B3A73C31F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51A7C5E-F98C-472E-A432-8B3A73C31F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ECF89C5-A344-4EEB-BF8B-20C6BBB9F99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ECF89C5-A344-4EEB-BF8B-20C6BBB9F99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ECF89C5-A344-4EEB-BF8B-20C6BBB9F99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ECF89C5-A344-4EEB-BF8B-20C6BBB9F99E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88A997E1-2967-4B1F-82CD-C7B026E18FD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A997E1-2967-4B1F-82CD-C7B026E18FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A997E1-2967-4B1F-82CD-C7B026E18FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A997E1-2967-4B1F-82CD-C7B026E18FD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F1892E-9F4C-485F-A9E8-D170BDEBC7F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F1892E-9F4C-485F-A9E8-D170BDEBC7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F1892E-9F4C-485F-A9E8-D170BDEBC7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F1892E-9F4C-485F-A9E8-D170BDEBC7F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA9F5072-9D78-47F8-B484-89DDB9F3F326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9F5072-9D78-47F8-B484-89DDB9F3F326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9F5072-9D78-47F8-B484-89DDB9F3F326}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9F5072-9D78-47F8-B484-89DDB9F3F326}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3D08178-4B1F-43BA-A43A-4A051CAC2123} = {2C855244-AFE8-4435-A8A8-7B28E686A757}
+		{4468808D-07AF-4A9B-AD3A-ABC5DF377198} = {2C855244-AFE8-4435-A8A8-7B28E686A757}
+		{763BC424-DCE0-4253-B3B9-1B61B7E13FC2} = {6D568826-67AF-4555-9B33-F0FE8578EA90}
+		{A4D9EB53-840B-4B95-9DD6-A6FCEE4D33A3} = {75EB3835-072F-48A3-8483-CF52C70A69D6}
+		{7CAF830D-8766-489B-9286-6C92FAB5D261} = {75EB3835-072F-48A3-8483-CF52C70A69D6}
+		{837147C1-1847-4F66-86F6-ECF2647D535D} = {7D1B0539-570E-4C1C-A865-9433DF1CAE83}
+		{D51A7C5E-F98C-472E-A432-8B3A73C31F88} = {837147C1-1847-4F66-86F6-ECF2647D535D}
+		{0ECF89C5-A344-4EEB-BF8B-20C6BBB9F99E} = {2C855244-AFE8-4435-A8A8-7B28E686A757}
+		{88A997E1-2967-4B1F-82CD-C7B026E18FD1} = {6D568826-67AF-4555-9B33-F0FE8578EA90}
+		{B6F1892E-9F4C-485F-A9E8-D170BDEBC7F6} = {6D568826-67AF-4555-9B33-F0FE8578EA90}
+		{BA9F5072-9D78-47F8-B484-89DDB9F3F326} = {25560267-A63A-4169-8A96-938983A2C515}
+	EndGlobalSection
+EndGlobal

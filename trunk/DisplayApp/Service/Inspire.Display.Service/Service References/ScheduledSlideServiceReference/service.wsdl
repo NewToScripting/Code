@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.inspiredisplays.com/ServiceContract/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ScheduledSlideManagerService" targetNamespace="http://schemas.inspiredisplays.com/ServiceContract/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/ServiceContract/Imports">
+      <xsd:import namespace="http://schemas.inspiredisplays.com/ServiceContract/" />
+      <xsd:import namespace="http://schemas.inspiredisplays.com" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.inspiredisplays.com/DataContract/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetScheduledSlidesRequestMessage">
+    <wsdl:part name="ScheduleID" element="tns:ScheduleID" />
+  </wsdl:message>
+  <wsdl:message name="GetScheduledSlidesResponseMessage">
+    <wsdl:part name="Schedules" element="tns:Schedules" />
+  </wsdl:message>
+  <wsdl:message name="ScheduledSlideManagerServiceContract_GetScheduledSlides_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.inspiredisplays.com" name="detail" element="q1:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetScheduledSlidesNoThumbRequestMessage">
+    <wsdl:part name="ScheduleID" element="tns:ScheduleID" />
+  </wsdl:message>
+  <wsdl:message name="GetScheduledSlidesNoThumbResponseMessage">
+    <wsdl:part name="Schedules" element="tns:Schedules" />
+  </wsdl:message>
+  <wsdl:message name="ScheduledSlideManagerServiceContract_GetScheduledSlidesNoThumb_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.inspiredisplays.com" name="detail" element="q2:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddScheduledSlideRequestMessage">
+    <wsdl:part name="ScheduledSlide" element="tns:ScheduledSlide" />
+  </wsdl:message>
+  <wsdl:message name="AddScheduledSlideResponseMessage" />
+  <wsdl:message name="ScheduledSlideManagerServiceContract_AddScheduledSlide_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.inspiredisplays.com" name="detail" element="q3:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="UpdateScheduleSlidesRequestMessage">
+    <wsdl:part name="ScheduledID" element="tns:ScheduledID" />
+    <wsdl:part name="ScheduledSlides" element="tns:ScheduledSlides" />
+  </wsdl:message>
+  <wsdl:message name="UpdateScheduleSlidesResponseMessage" />
+  <wsdl:message name="ScheduledSlideManagerServiceContract_UpdateScheduleSlides_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.inspiredisplays.com" name="detail" element="q4:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteScheduledSlideRequestMessage">
+    <wsdl:part name="ScheduledSlideID" element="tns:ScheduledSlideID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteScheduledSlideResponseMessage" />
+  <wsdl:message name="ScheduledSlideManagerServiceContract_DeleteScheduledSlide_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.inspiredisplays.com" name="detail" element="q5:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IsSlideScheduledRequestMessage">
+    <wsdl:part name="SlideID" element="tns:SlideID" />
+  </wsdl:message>
+  <wsdl:message name="IsSlideScheduledResponseMessage">
+    <wsdl:part name="IsSlideScheduled" element="tns:IsSlideScheduled" />
+  </wsdl:message>
+  <wsdl:message name="ScheduledSlideManagerServiceContract_IsSlideScheduled_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.inspiredisplays.com" name="detail" element="q6:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOriginalSlideIdsRequestMessage">
+    <wsdl:part name="DeleteExistingSlide" element="tns:DeleteExistingSlide" />
+    <wsdl:part name="NewSlideID" element="tns:NewSlideID" />
+    <wsdl:part name="OriginalSlideID" element="tns:OriginalSlideID" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOriginalSlideIdsResponseMessage" />
+  <wsdl:message name="ScheduledSlideManagerServiceContract_UpdateOriginalSlideIds_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.inspiredisplays.com" name="detail" element="q7:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSlideNavagationRequestMessage">
+    <wsdl:part name="ButtonID" element="tns:ButtonID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSlideNavagationResponseMessage" />
+  <wsdl:message name="ScheduledSlideManagerServiceContract_DeleteSlideNavagation_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.inspiredisplays.com" name="detail" element="q8:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddSlideNavagationRequestMessage" />
+  <wsdl:message name="AddSlideNavagationRequestMessage_Headers">
+    <wsdl:part name="SlideNavagation" element="tns:Button" />
+  </wsdl:message>
+  <wsdl:message name="AddSlideNavagationResponseMessage" />
+  <wsdl:message name="ScheduledSlideManagerServiceContract_AddSlideNavagation_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.inspiredisplays.com" name="detail" element="q9:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="ScheduledSlideManagerServiceContract">
+    <wsdl:operation name="GetScheduledSlides">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/GetScheduledSlides" name="GetScheduledSlidesRequestMessage" message="tns:GetScheduledSlidesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/GetScheduledSlidesResponse" name="GetScheduledSlidesResponseMessage" message="tns:GetScheduledSlidesResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/GetScheduledSlidesGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ScheduledSlideManagerServiceContract_GetScheduledSlides_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduledSlidesNoThumb">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/GetScheduledSlidesNoThumb" name="GetScheduledSlidesNoThumbRequestMessage" message="tns:GetScheduledSlidesNoThumbRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/GetScheduledSlidesNoThumbResponse" name="GetScheduledSlidesNoThumbResponseMessage" message="tns:GetScheduledSlidesNoThumbResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/GetScheduledSlidesNoThumbGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ScheduledSlideManagerServiceContract_GetScheduledSlidesNoThumb_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddScheduledSlide">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/AddScheduledSlide" name="AddScheduledSlideRequestMessage" message="tns:AddScheduledSlideRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/AddScheduledSlideResponse" name="AddScheduledSlideResponseMessage" message="tns:AddScheduledSlideResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/AddScheduledSlideGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ScheduledSlideManagerServiceContract_AddScheduledSlide_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScheduleSlides">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/UpdateScheduleSlide" name="UpdateScheduleSlidesRequestMessage" message="tns:UpdateScheduleSlidesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/UpdateScheduleSlidesResponse" name="UpdateScheduleSlidesResponseMessage" message="tns:UpdateScheduleSlidesResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/UpdateScheduleSlidesGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ScheduledSlideManagerServiceContract_UpdateScheduleSlides_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScheduledSlide">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/DeleteScheduledSlide" name="DeleteScheduledSlideRequestMessage" message="tns:DeleteScheduledSlideRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/DeleteScheduledSlideResponse" name="DeleteScheduledSlideResponseMessage" message="tns:DeleteScheduledSlideResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/DeleteScheduledSlideGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ScheduledSlideManagerServiceContract_DeleteScheduledSlide_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsSlideScheduled">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/IsSlideScheduled" name="IsSlideScheduledRequestMessage" message="tns:IsSlideScheduledRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/IsSlideScheduledResponse" name="IsSlideScheduledResponseMessage" message="tns:IsSlideScheduledResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/IsSlideScheduledGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ScheduledSlideManagerServiceContract_IsSlideScheduled_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOriginalSlideIds">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/UpdateOriginalSlideIds" name="UpdateOriginalSlideIdsRequestMessage" message="tns:UpdateOriginalSlideIdsRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/UpdateOriginalSlideIdsResponse" name="UpdateOriginalSlideIdsResponseMessage" message="tns:UpdateOriginalSlideIdsResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/UpdateOriginalSlideIdsGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ScheduledSlideManagerServiceContract_UpdateOriginalSlideIds_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSlideNavagation">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/SlideManagerServiceContract/DeleteSlideNavagation" name="DeleteSlideNavagationRequestMessage" message="tns:DeleteSlideNavagationRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/DeleteSlideNavagationResponse" name="DeleteSlideNavagationResponseMessage" message="tns:DeleteSlideNavagationResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/DeleteSlideNavagationGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ScheduledSlideManagerServiceContract_DeleteSlideNavagation_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSlideNavagation">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/SlideManagerServiceContract/AddSlideNavagation" name="AddSlideNavagationRequestMessage" message="tns:AddSlideNavagationRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/AddSlideNavagationResponse" name="AddSlideNavagationResponseMessage" message="tns:AddSlideNavagationResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/AddSlideNavagationGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ScheduledSlideManagerServiceContract_AddSlideNavagation_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ScheduledSlideEndpoint" type="tns:ScheduledSlideManagerServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetScheduledSlides">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/GetScheduledSlides" style="document" />
+      <wsdl:input name="GetScheduledSlidesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetScheduledSlidesResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduledSlidesNoThumb">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/GetScheduledSlidesNoThumb" style="document" />
+      <wsdl:input name="GetScheduledSlidesNoThumbRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetScheduledSlidesNoThumbResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddScheduledSlide">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/AddScheduledSlide" style="document" />
+      <wsdl:input name="AddScheduledSlideRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddScheduledSlideResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScheduleSlides">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/UpdateScheduleSlide" style="document" />
+      <wsdl:input name="UpdateScheduleSlidesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateScheduleSlidesResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScheduledSlide">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/DeleteScheduledSlide" style="document" />
+      <wsdl:input name="DeleteScheduledSlideRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteScheduledSlideResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IsSlideScheduled">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/IsSlideScheduled" style="document" />
+      <wsdl:input name="IsSlideScheduledRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="IsSlideScheduledResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOriginalSlideIds">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ScheduledSlideManagerServiceContract/UpdateOriginalSlideIds" style="document" />
+      <wsdl:input name="UpdateOriginalSlideIdsRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateOriginalSlideIdsResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSlideNavagation">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/SlideManagerServiceContract/DeleteSlideNavagation" style="document" />
+      <wsdl:input name="DeleteSlideNavagationRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteSlideNavagationResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddSlideNavagation">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/SlideManagerServiceContract/AddSlideNavagation" style="document" />
+      <wsdl:input name="AddSlideNavagationRequestMessage">
+        <soap:header message="tns:AddSlideNavagationRequestMessage_Headers" part="SlideNavagation" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddSlideNavagationResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ScheduledSlideManagerService">
+    <wsdl:port name="ScheduledSlideEndpoint" binding="tns:ScheduledSlideEndpoint">
+      <soap:address location="http://localhost/Inspire.Server/Svc/ScheduledSlideService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

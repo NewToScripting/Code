@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="FlightInfoModule.DoublePaneFlightPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire" xmlns:Primitives="clr-namespace:IdentityMine.Windows.Panels.Primitives;assembly=IdentityMine.Windows.Panels" xmlns:blendables="clr-namespace:IdentityMine.Windows.Panels;assembly=IdentityMine.Windows.Panels" mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="572">
+    <UserControl.Resources>
+        <ItemsPanelTemplate x:Key="panelTemplate">
+            <blendables:StackPanel Primitives:AnimationPanel.EnterFrom="250,-500,250,30" Primitives:AnimationPanel.ExitTo="250,-500,250,30" LayoutAnimator="{x:Null}" EnterAnimator="QuadEaseInOut" ExitAnimationRate=".8" EnterAnimationRate=".8" ExitAnimator="QuadEaseInOut" Orientation="Vertical"/>
+        </ItemsPanelTemplate>
+
+        <ItemsPanelTemplate x:Key="designerTemplate">
+            <StackPanel Orientation="Vertical"/>
+        </ItemsPanelTemplate>
+        <Inspire:BoolToVisibleConverter x:Key="boolToVisibilityConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="0,0,5,0" Orientation="Vertical">
+            <Border Name="headerBorder1" Background="{Binding HeaderBackground}" Visibility="{Binding ShowHeader, Converter={StaticResource boolToVisibilityConverter}}" Height="{Binding HeaderHeight}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Name="airlineColumn" FontFamily="{Binding HeaderFontFamily}" Width="{Binding FlightImageWidth}" FontSize="{Binding HeaderFontSize}" Foreground="{Binding HeaderForeground}" Text="Airline" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="destinationColumn" FontFamily="{Binding HeaderFontFamily}" Width="{Binding DestinationCityWidth}" FontSize="{Binding HeaderFontSize}" Foreground="{Binding HeaderForeground}" Text="Destination" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="schedArDepColumn" FontFamily="{Binding HeaderFontFamily}" Width="{Binding ScheduleArrivalDepartureWidth}" Foreground="{Binding HeaderForeground}" FontSize="{Binding HeaderFontSize}" Text="Departure" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="statusColumn" FontFamily="{Binding HeaderFontFamily}" Width="{Binding StatusWidth}" Foreground="{Binding HeaderForeground}" FontSize="{Binding HeaderFontSize}" Text="Status" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="flightNumColumn" FontFamily="{Binding HeaderFontFamily}" Width="{Binding FlightNumberWidth}" Foreground="{Binding HeaderForeground}" FontSize="{Binding HeaderFontSize}" Text="Flight #" TextAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+            <Inspire:ScrollPanelWrapper VerticalScrollBarVisibility="Hidden">
+            </Inspire:ScrollPanelWrapper>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="5,0,0,0" Orientation="Vertical">
+            <Border Name="headerBorder2" Background="{Binding HeaderBackground}" Visibility="{Binding ShowHeader, Converter={StaticResource boolToVisibilityConverter}}" Height="{Binding HeaderHeight}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Name="airlineColumn2" FontFamily="{Binding HeaderFontFamily}" Width="{Binding FlightImageWidth}" FontSize="{Binding HeaderFontSize}" Foreground="{Binding HeaderForeground}" Text="Airline" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="destinationColumn2" FontFamily="{Binding HeaderFontFamily}" Width="{Binding DestinationCityWidth}" FontSize="{Binding HeaderFontSize}" Foreground="{Binding HeaderForeground}" Text="Destination" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="schedArDepColumn2" FontFamily="{Binding HeaderFontFamily}" Width="{Binding ScheduleArrivalDepartureWidth}" Foreground="{Binding HeaderForeground}" FontSize="{Binding HeaderFontSize}" Text="Departure" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="statusColumn2" FontFamily="{Binding HeaderFontFamily}" Width="{Binding StatusWidth}" Foreground="{Binding HeaderForeground}" FontSize="{Binding HeaderFontSize}" Text="Status" TextAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="flightNumColumn2" FontFamily="{Binding HeaderFontFamily}" Width="{Binding FlightNumberWidth}" Foreground="{Binding HeaderForeground}" FontSize="{Binding HeaderFontSize}" Text="Flight #" TextAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+            <Inspire:ScrollPanelWrapper VerticalScrollBarVisibility="Hidden">
+            </Inspire:ScrollPanelWrapper>
+        </StackPanel>
+    </Grid>
+</UserControl>

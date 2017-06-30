@@ -1,0 +1,44 @@
+﻿<Window x:Class="EventsModule.ConfigureEventSource"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:DragDropListBox="clr-namespace:Inspire.Common.DragDropListBox;assembly=Inspire.Common"
+    Title="ConfigureEventSource" Height="591" Width="497" Foreground="White" AllowDrop="True" WindowStartupLocation="CenterScreen">
+    <Grid Background="Gray" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="444*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="237"/>
+            <ColumnDefinition Width="238*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lbSelectedFields" DragDropListBox:DragDropHelper.IsDragSource="True" DragDropListBox:DragDropHelper.IsDropTarget="True" Margin="6,113,25,75">
+        </ListBox>
+        <ListBox x:Name="lbAvailableFields" DragDropListBox:DragDropHelper.IsDragSource="True" DragDropListBox:DragDropHelper.IsDropTarget="True" Margin="25,113,8,75" Grid.Column="1">
+            <ListBoxItem>Hotel Name</ListBoxItem>
+            <ListBoxItem>Group Name</ListBoxItem>
+            <ListBoxItem>Group Logo URL</ListBoxItem>
+            <ListBoxItem>Event Name</ListBoxItem>
+            <ListBoxItem>Event Logo</ListBoxItem>
+            <ListBoxItem>Event "Post As" Name</ListBoxItem>
+            <ListBoxItem>Host Event Identifier</ListBoxItem>
+            <ListBoxItem>Meeting Room Space Display Name</ListBoxItem>
+            <ListBoxItem>Meeting Name</ListBoxItem>
+            <ListBoxItem>Meeting "Post As" Name</ListBoxItem>
+            <ListBoxItem>Date</ListBoxItem>
+            <ListBoxItem>Start Time</ListBoxItem>
+            <ListBoxItem>End Time</ListBoxItem>
+            <ListBoxItem>Postable Flag "Y/N"</ListBoxItem>
+            <ListBoxItem>Exhibit Flag "Y/N"</ListBoxItem>
+            <ListBoxItem>Backup Meeting Room Space Name</ListBoxItem>
+            <ListBoxItem>Overflow Meeting Room Space Name</ListBoxItem>
+        </ListBox>
+        <StackPanel Orientation="Horizontal" Margin="0,0,5,49" Grid.ColumnSpan="2" FlowDirection="LeftToRight" HorizontalAlignment="Right" Height="44" VerticalAlignment="Bottom" Width="386"></StackPanel>
+        <Button Height="38" Margin="48,0,5,5" VerticalAlignment="Bottom" Content="Cancel" Grid.Column="1" Click="Button_Click_1" />
+        <Button Height="38" Margin="90,0,198,5" VerticalAlignment="Bottom" Content="Save" Grid.ColumnSpan="2" Click="Button_Click" />
+        <Button x:Name="btnAddItem" Height="37" Margin="218,206.2,219,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Click="btnAddItem_Click"></Button>
+        <Button x:Name="btnRemoveItem" Margin="218,249.84,219,266" Grid.ColumnSpan="2">></Button>
+        <TextBlock Height="61" Margin="23,53,24,0" TextWrapping="Wrap" FontSize="19" Text="Select the fields that are available to be displayed from the data source." VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <TextBlock FontSize="16" Height="36" Margin="23,11,57,0" Text="Event Source Name:" VerticalAlignment="Top" />
+        <TextBox Grid.ColumnSpan="2" Height="30" Margin="183,7,66,0" Name="tbDataSourceName" VerticalAlignment="Top" />
+    </Grid>
+</Window>

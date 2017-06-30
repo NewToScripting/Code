@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="7.7" version="7.7" Modules="msm" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_ModuleId" Value="442CBA47_0AC7_4662_9D88_5F3D38246DF0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="." IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="InfoStrat.VE.Windows7Touch.dll" ComponentId="{60001AED-A2A8-4171-B200-A741172093A0}" Directory_="APPDIR" Attributes="0" KeyPath="InfoStrat.VE.Windows7Touch.dll"/>
+    <ROW Component="InfoStrat.VE.dll" ComponentId="{19348B29-965C-4925-818C-76B4D4D96A3A}" Directory_="APPDIR" Attributes="0" KeyPath="InfoStrat.VE.dll"/>
+    <ROW Component="MapModule.dll" ComponentId="{B091E796-607A-4020-91B6-29DD31632985}" Directory_="APPDIR" Attributes="0" KeyPath="MapModule.dll"/>
+    <ROW Component="Microsoft.MapPoint.Data.dll" ComponentId="{5F9F06B5-228F-4FA6-ACE7-68029294C7CA}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.MapPoint.Data.dll"/>
+    <ROW Component="Microsoft.MapPoint.Geometry.dll" ComponentId="{2A60D089-FABE-4261-BB07-AF93EEE68F39}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.MapPoint.Geometry.dll"/>
+    <ROW Component="Microsoft.MapPoint.Rendering3D.Util" ComponentId="{D32FC52F-3697-4F89-88B3-DAC7FCB9FA33}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.MapPoint.Rendering3D.U"/>
+    <ROW Component="Microsoft.MapPoint.Rendering3D.dll" ComponentId="{836FEA68-B139-4BCF-91AD-476E4783799C}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.MapPoint.Rendering3D.d"/>
+    <ROW Component="Windows7.Multitouch.WPF.dll" ComponentId="{890E8FD5-0F28-4692-9A8A-58A4FE83F471}" Directory_="APPDIR" Attributes="0" KeyPath="Windows7.Multitouch.WPF.dll"/>
+    <ROW Component="Windows7.Multitouch.dll" ComponentId="{C887BB6A-969F-4243-B522-541CDEED7F0A}" Directory_="APPDIR" Attributes="0" KeyPath="Windows7.Multitouch.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="TargetFeature" Title="TargetFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="InfoStrat.VE.dll InfoStrat.VE.Windows7Touch.dll Microsoft.MapPoint.Data.dll Microsoft.MapPoint.Rendering3D.dll Microsoft.MapPoint.Rendering3D.Util Windows7.Multitouch.dll Windows7.Multitouch.WPF.dll MapModule.dll Microsoft.MapPoint.Geometry.dll"/>
+    <ATTRIBUTE name="CurrentFeature" value="TargetFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="InfoStrat.VE.Windows7Touch.dll" Component_="InfoStrat.VE.Windows7Touch.dll" FileName="InfoSt~2.dll|InfoStrat.VE.Windows7Touch.dll" Attributes="0" SourcePath="..\..\..\trunk\InspireClient\Lib\InfoStrat.VE.Windows7Touch.dll" SelfReg="false" Sequence="2"/>
+    <ROW File="InfoStrat.VE.dll" Component_="InfoStrat.VE.dll" FileName="InfoSt~1.dll|InfoStrat.VE.dll" Attributes="0" SourcePath="..\..\..\trunk\InspireClient\Lib\InfoStrat.VE.dll" SelfReg="false" Sequence="1"/>
+    <ROW File="MapModule.dll" Component_="MapModule.dll" FileName="MapMod~1.dll|MapModule.dll" Attributes="0" SourcePath="..\..\Built_Assemblies\Obfuscated\Client\Modules\MapModule.dll" SelfReg="false" Sequence="8"/>
+    <ROW File="Microsoft.MapPoint.Data.dll" Component_="Microsoft.MapPoint.Data.dll" FileName="Micros~1.dll|Microsoft.MapPoint.Data.dll" Attributes="0" SourcePath="..\..\..\trunk\InspireClient\Lib\Microsoft.MapPoint.Data.dll" SelfReg="false" Sequence="3"/>
+    <ROW File="Microsoft.MapPoint.Geometry.dll" Component_="Microsoft.MapPoint.Geometry.dll" FileName="Micros~4.dll|Microsoft.MapPoint.Geometry.dll" Attributes="0" SourcePath="..\..\..\trunk\InspireClient\Lib\Microsoft.MapPoint.Geometry.dll" SelfReg="false" Sequence="9"/>
+    <ROW File="Microsoft.MapPoint.Rendering3D.U" Component_="Microsoft.MapPoint.Rendering3D.Util" FileName="Micros~3.dll|Microsoft.MapPoint.Rendering3D.Utility.dll" Attributes="0" SourcePath="..\..\..\trunk\InspireClient\Lib\Microsoft.MapPoint.Rendering3D.Utility.dll" SelfReg="false" Sequence="5"/>
+    <ROW File="Microsoft.MapPoint.Rendering3D.d" Component_="Microsoft.MapPoint.Rendering3D.dll" FileName="Micros~2.dll|Microsoft.MapPoint.Rendering3D.dll" Attributes="0" SourcePath="..\..\..\trunk\InspireClient\Lib\Microsoft.MapPoint.Rendering3D.dll" SelfReg="false" Sequence="4"/>
+    <ROW File="Windows7.Multitouch.WPF.dll" Component_="Windows7.Multitouch.WPF.dll" FileName="Window~2.dll|Windows7.Multitouch.WPF.dll" Attributes="0" SourcePath="..\..\..\trunk\InspireClient\Lib\Windows7.Multitouch.WPF.dll" SelfReg="false" Sequence="7"/>
+    <ROW File="Windows7.Multitouch.dll" Component_="Windows7.Multitouch.dll" FileName="Window~1.dll|Windows7.Multitouch.dll" Attributes="0" SourcePath="..\..\..\trunk\InspireClient\Lib\Windows7.Multitouch.dll" SelfReg="false" Sequence="6"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="Setup Files" PackageFileName="MapInstaller" Languages="en" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="MSMSequences.aip" Path="&lt;AI_FRAGS&gt;MSMSequences.aip"/>
+    <ROW Fragment="MsmValidation.aip" Path="&lt;AI_FRAGS&gt;MsmValidation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsmModuleSignatureComponent">
+    <ROW ModuleID="MapModule" Version="1.5.0" GUID="442CBA47_0AC7_4662_9D88_5F3D38246DF0" Name="Map Module" Manufacturer="Inspire Digital Signage" Comments="This database contains the logic and data required to install &lt;module name&gt; component."/>
+  </COMPONENT>
+</DOCUMENT>

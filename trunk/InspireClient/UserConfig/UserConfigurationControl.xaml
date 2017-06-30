@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="UserConfig.UserConfigurationControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Commands="clr-namespace:Inspire.Commands;assembly=Inspire"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire">
+    <UserControl.Resources>
+        <ContextMenu x:Key="EditUserContext" Background="#FF000000">
+            <MenuItem Command="{x:Static Commands:InspireCommands.EditUserCommand}" Header="{Binding RelativeSource={RelativeSource Self}, Path=Command.Text}" Background="#FF000000">
+                <MenuItem.Icon>
+                    <Image Source="Resources\Images\Edit.png"
+               Width="16"
+               Height="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+        </ContextMenu>
+    </UserControl.Resources>
+    <UserControl.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.AddUserFormCommand}" Executed="AddUserFormExecuted" CanExecute="AddUserFormCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.EditUserCommand}" Executed="EditUserExecuted" CanExecute="EditUserCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.DeleteUserCommand}" Executed="DeleteUserExecuted" CanExecute="DeleteUserCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.AddRoleFormCommand}" Executed="AddRoleFormExecuted" CanExecute="AddRoleFormCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.RemoveRoleCommand}" Executed="RemoveRoleExecuted" CanExecute="RemoveRoleCanExecute" />
+    </UserControl.CommandBindings>
+    <Grid HorizontalAlignment="Stretch" Margin="0,0,5,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="200" Width="205*"/>
+            <ColumnDefinition MinWidth="200" Width="205*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition MinHeight="300" Height="300*" />
+            <RowDefinition Height="54" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" FontSize="15" Text="Users:" Margin="5" Foreground="White"/>
+                <ListBox Grid.Column="0" Grid.Row="1" x:Name="lbUsers" Margin="3" HorizontalAlignment="Stretch" SelectionChanged="lbUsers_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" ContextMenu="{StaticResource EditUserContext}">
+                                <Image Width="24" Height="24" Margin="3,0" Source="Resources\Images\user.png" />
+                                <TextBlock Text="{Binding Name}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="0" Grid.Row="2">
+            <Button Height="35" Inspire:ButtonImage.Image="Resources\Images\add.png" Command="{x:Static Commands:InspireCommands.AddUserFormCommand}" Content="{Binding RelativeSource={RelativeSource Self}, Path=Command.Text}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="3" Width="128"></Button>
+            <Button Height="35" Inspire:ButtonImage.Image="Resources\Images\remove.png" Command="{x:Static Commands:InspireCommands.DeleteUserCommand}" Content="{Binding RelativeSource={RelativeSource Self}, Path=Command.Text}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="3" Width="128"></Button>
+                </StackPanel>
+                <TextBlock Grid.Column="1" Grid.Row="0" FontSize="15" HorizontalAlignment="Center" Text="Roles:" Margin="5" Foreground="White"/>
+                <ListBox Grid.Column="1" Grid.Row="1" x:Name="lbRoles" HorizontalAlignment="Stretch" Margin="3">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Name}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="2">
+                    <Button Height="35" Inspire:ButtonImage.Image="Resources\Images\add.png" Command="{x:Static Commands:InspireCommands.AddRoleFormCommand}" Content="{Binding RelativeSource={RelativeSource Self}, Path=Command.Text}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="3" Width="128"></Button>
+                    <Button Height="35" Inspire:ButtonImage.Image="Resources\Images\remove.png" Command="{x:Static Commands:InspireCommands.RemoveRoleCommand}" Content="{Binding RelativeSource={RelativeSource Self}, Path=Command.Text}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="3" Width="128"></Button>
+                </StackPanel>
+    </Grid>
+</UserControl>

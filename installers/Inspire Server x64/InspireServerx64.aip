@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="7.7" version="7.7" Modules="enterprise" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_MINDOTNETVERSION" MultiBuildValue="DefaultBuild:4.0" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="2" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPHELPTELEPHONE" Value="1.877.512.3451"/>
+    <ROW Property="ARPPRODUCTICON" Value="InspireI.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="www.inspiredisplays.com"/>
+    <ROW Property="BannerBitmap" MultiBuildValue="DefaultBuild:topBanner.jpg" Type="1"/>
+    <ROW Property="DialogBitmap" MultiBuildValue="DefaultBuild:style24_dialog.jpg" Type="1"/>
+    <ROW Property="Manufacturer" Value="Inspire Digital Signage" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{60FD375C-967A-489E-9CC2-4ACFAE1C6BFF} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Inspire Media Server" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.5.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{D5BCF2EC-EF9C-46D9-A427-7007259E10B2}"/>
+    <ROW Property="WindowsFamily9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsFamilyNT" MultiBuildValue="DefaultBuild:Windows NT/2k/XP/Vista/Windows7 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64" MultiBuildValue="DefaultBuild:Windows XP x64 ServicePack 2" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Core_DIR" Directory_Parent="APPDIR" DefaultDir="Core"/>
+    <ROW Directory="Database_1_DIR" Directory_Parent="Events_DIR" DefaultDir="Database"/>
+    <ROW Directory="Database_DIR" Directory_Parent="Core_DIR" DefaultDir="Database"/>
+    <ROW Directory="Endpoint_1_DIR" Directory_Parent="Events_DIR" DefaultDir="Endpoint"/>
+    <ROW Directory="Endpoint_DIR" Directory_Parent="Core_DIR" DefaultDir="Endpoint"/>
+    <ROW Directory="Events_DIR" Directory_Parent="APPDIR" DefaultDir="Events"/>
+    <ROW Directory="FSLOG_DIR" Directory_Parent="InspireServerFileStream_DIR" DefaultDir="$FSLOG"/>
+    <ROW Directory="Images_DIR" Directory_Parent="Events_DIR" DefaultDir="Images"/>
+    <ROW Directory="InspireServerFileStream_DIR" Directory_Parent="Database_DIR" DefaultDir="Inspir~1|InspireServerFileStream"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="a15a5_a461_4a79_ae37_3e7930f6a008_DIR" Directory_Parent="bf147f4f_7a4b_404e_85c2_c4dc37763fdc_DIR" DefaultDir="843a15~1|843a15a5-a461-4a79-ae37-3e7930f6a008"/>
+    <ROW Directory="a84c_4854_a303_a105438eeaf4_DIR" Directory_Parent="InspireServerFileStream_DIR" DefaultDir="209507~1|20950764-a84c-4854-a303-a105438eeaf4"/>
+    <ROW Directory="b962549_ac7f_409b_a8ea_e3376dc913ad_DIR" Directory_Parent="InspireServerFileStream_DIR" DefaultDir="3b9625~1|3b962549-ac7f-409b-a8ea-e3376dc913ad"/>
+    <ROW Directory="bf147f4f_7a4b_404e_85c2_c4dc37763fdc_DIR" Directory_Parent="InspireServerFileStream_DIR" DefaultDir="bf147f~1|bf147f4f-7a4b-404e-85c2-c4dc37763fdc"/>
+    <ROW Directory="fcd9290_6167_404e_9230_552b19fa2d72_DIR" Directory_Parent="a84c_4854_a303_a105438eeaf4_DIR" DefaultDir="7fcd92~1|7fcd9290-6167-404e-9230-552b19fa2d72"/>
+    <ROW Directory="fdf0ada3_3fc9_4192_9cac_6da75580902d_DIR" Directory_Parent="b962549_ac7f_409b_a8ea_e3376dc913ad_DIR" DefaultDir="fdf0ad~1|fdf0ada3-3fc9-4192-9cac-6da75580902d"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="FSLOG" ComponentId="{FF7FA8EE-A949-49F3-B151-80DFDFA90CE2}" Directory_="FSLOG_DIR" Attributes="0"/>
+    <ROW Component="Images" ComponentId="{4E0625D6-B2BD-49D5-A69F-CE907FB6C789}" Directory_="Images_DIR" Attributes="0"/>
+    <ROW Component="Inspire.Events.ServiceHost.exe" ComponentId="{B8B5B13D-58EE-4AE2-BD34-D4BBD4C5EFBC}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Events.ServiceHost.exe"/>
+    <ROW Component="Inspire.Events.ServiceHost.exe.config" ComponentId="{6C489735-B2F9-40DF-AB52-68416E47088D}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Events.ServiceHost.exe.config" Type="0"/>
+    <ROW Component="Inspire.Server.Common.FaultContracts.dll" ComponentId="{3B5952E3-F7AC-48CA-BA0E-255CE5220DE5}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Common.FaultContracts.dll"/>
+    <ROW Component="Inspire.Server.Common.dll" ComponentId="{4AFD0D49-62A7-446A-9540-FA691550C60F}" Directory_="Endpoint_DIR" Attributes="0" KeyPath="Inspire.Server.Common.dll"/>
+    <ROW Component="Inspire.Server.Common.dll_1" ComponentId="{BCE4AD95-126B-4E66-8AF7-623208EF1AA5}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Common.dll_1"/>
+    <ROW Component="Inspire.Server.Direction.BusinessLogic.d" ComponentId="{C6C1587B-12CE-4A81-85DB-09C58865C038}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Direction.BusinessLogic.dll"/>
+    <ROW Component="Inspire.Server.Direction.DataAccess.dll" ComponentId="{746EF32F-CD8A-4233-BC5C-105AB051C6D7}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Direction.DataAccess.dll"/>
+    <ROW Component="Inspire.Server.Direction.DataContracts.d" ComponentId="{230E0673-D49C-43FD-BF94-68804EEF658E}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Direction.DataContracts.dll"/>
+    <ROW Component="Inspire.Server.Direction.MessageContract" ComponentId="{398B2A1A-C120-4558-9E56-B7E0E7D7A301}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Direction.MessageContracts.dll"/>
+    <ROW Component="Inspire.Server.Direction.ServiceContract" ComponentId="{5E2ACE7E-2D51-400B-B233-6B6E46E22900}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Direction.ServiceContracts.dll"/>
+    <ROW Component="Inspire.Server.Direction.ServiceImplemen" ComponentId="{2C626535-033F-4D07-920A-C81502356FA9}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Direction.ServiceImplementation.dll"/>
+    <ROW Component="Inspire.Server.Display.dll" ComponentId="{197A3BF5-62D3-4611-A386-865F87402022}" Directory_="Endpoint_DIR" Attributes="0" KeyPath="Inspire.Server.Display.dll"/>
+    <ROW Component="Inspire.Server.DisplayAdmin.dll" ComponentId="{2E9CAF81-2852-417E-8679-C942FEE29D29}" Directory_="Endpoint_DIR" Attributes="0" KeyPath="Inspire.Server.DisplayAdmin.dll"/>
+    <ROW Component="Inspire.Server.Events.BusinessLogic.dll" ComponentId="{37639E4A-0C46-4DF6-81AD-46710AF631AE}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Events.BusinessLogic.dll"/>
+    <ROW Component="Inspire.Server.Events.DataAccess.dll" ComponentId="{C4F8CA2B-B2C9-4AEE-8EF8-9092A0195698}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Events.DataAccess.dll"/>
+    <ROW Component="Inspire.Server.Events.DataContracts.dll" ComponentId="{2E963B45-5DE0-4068-93D2-9B70DF2558E3}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Events.DataContracts.dll"/>
+    <ROW Component="Inspire.Server.Events.MessageContracts.d" ComponentId="{A33FD557-7E43-481F-AB48-B67473D19BA4}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Events.MessageContracts.dll"/>
+    <ROW Component="Inspire.Server.Events.ServiceContracts.d" ComponentId="{FBB8C043-08DA-4002-964E-765E2838A928}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Events.ServiceContracts.dll"/>
+    <ROW Component="Inspire.Server.Events.ServiceImplementat" ComponentId="{5FB70490-FC65-4835-AD09-D114DF050802}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Events.ServiceImplementation.ServiceImplementation.dll"/>
+    <ROW Component="Inspire.Server.Groups.BusinessEntities.d" ComponentId="{AEB37667-018A-4BB5-9954-8C815A7B2324}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Groups.BusinessEntities.dll"/>
+    <ROW Component="Inspire.Server.Groups.BusinessLogic.dll" ComponentId="{D7FA9084-A432-48D3-8683-DEF6D6C40B6D}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Groups.BusinessLogic.dll"/>
+    <ROW Component="Inspire.Server.Groups.DataAccess.dll" ComponentId="{3C07790D-C507-49AE-B19F-EE7CADE31A6C}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Groups.DataAccess.dll"/>
+    <ROW Component="Inspire.Server.Groups.DataContracts.dll" ComponentId="{115CD4A2-1A5E-4323-BE6D-719FEED03A5A}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Groups.DataContracts.dll"/>
+    <ROW Component="Inspire.Server.Groups.MessageContracts.d" ComponentId="{25350F19-887D-4311-920E-D245D61FA643}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Groups.MessageContracts.dll"/>
+    <ROW Component="Inspire.Server.Groups.ServiceContracts.d" ComponentId="{6B2C3D68-9E86-4940-9904-349288BD5065}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Groups.ServiceContracts.dll"/>
+    <ROW Component="Inspire.Server.Groups.ServiceImplementat" ComponentId="{3C27D6A9-B8F2-4BFA-8FDA-218E81B989ED}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Groups.ServiceImplementation.dll"/>
+    <ROW Component="Inspire.Server.Images.BusinessLogic.dll" ComponentId="{5F834F76-E2F1-4395-96D8-52D7EE80AFBA}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Images.BusinessLogic.dll"/>
+    <ROW Component="Inspire.Server.Images.DataAccess.dll" ComponentId="{DB9B054D-E409-4759-BA8B-9EF3AE75FCA0}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Images.DataAccess.dll"/>
+    <ROW Component="Inspire.Server.Images.DataContracts.dll" ComponentId="{9323341B-19B7-4FE6-94E7-D48FF8968BA3}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Images.DataContracts.dll"/>
+    <ROW Component="Inspire.Server.Images.MessageContracts.d" ComponentId="{3BCCD87E-C4D2-4B8A-894D-4EC325FB42A6}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Images.MessageContracts.dll"/>
+    <ROW Component="Inspire.Server.Images.ServiceContracts.d" ComponentId="{B09BD4E9-E027-4192-9648-F10435FDDB53}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Images.ServiceContracts.dll"/>
+    <ROW Component="Inspire.Server.Images.ServiceImplementat" ComponentId="{3EDC2110-6D68-478D-9368-4BCADC64820B}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Images.ServiceImplementation.dll"/>
+    <ROW Component="Inspire.Server.Rooms.BusinessLogic.dll" ComponentId="{7997B314-1AAC-47C1-827F-1AAA0EB73A52}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Rooms.BusinessLogic.dll"/>
+    <ROW Component="Inspire.Server.Rooms.DataAccess.dll" ComponentId="{939BA5CB-17BF-4359-9D36-4A25E012677A}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Rooms.DataAccess.dll"/>
+    <ROW Component="Inspire.Server.Rooms.DataContracts.dll" ComponentId="{5B72E6C7-EABF-4BEF-8A42-0758108720A4}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Rooms.DataContracts.dll"/>
+    <ROW Component="Inspire.Server.Rooms.MessageContracts.dl" ComponentId="{77532F3F-E839-468C-ADAF-FA3E61F82A9A}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Rooms.MessageContracts.dll"/>
+    <ROW Component="Inspire.Server.Rooms.ServiceContracts.dl" ComponentId="{629E607C-C857-4892-93C7-EAD1FD7501C9}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Rooms.ServiceContracts.dll"/>
+    <ROW Component="Inspire.Server.Rooms.ServiceImplementati" ComponentId="{2A01C3FB-C22E-4C7F-8241-3A0F6EF8C482}" Directory_="Endpoint_1_DIR" Attributes="0" KeyPath="Inspire.Server.Rooms.ServiceImplementation.dll"/>
+    <ROW Component="Inspire.Server.ScheduleManager.dll" ComponentId="{32244E97-3710-4F60-8E86-89A5A682D07B}" Directory_="Endpoint_DIR" Attributes="0" KeyPath="Inspire.Server.ScheduleManager.dll"/>
+    <ROW Component="Inspire.Server.ScheduledSlideManager.dll" ComponentId="{34CF90B9-8303-4FBC-B414-CDD8BC8DC7D2}" Directory_="Endpoint_DIR" Attributes="0" KeyPath="Inspire.Server.ScheduledSlideManager.dll"/>
+    <ROW Component="Inspire.Server.ServiceHost.exe" ComponentId="{8965213E-73B7-4902-9B9A-68D707C78787}" Directory_="Endpoint_DIR" Attributes="0" KeyPath="Inspire.Server.ServiceHost.exe"/>
+    <ROW Component="Inspire.Server.SlideManager.dll" ComponentId="{D4B54228-2240-4EEA-A4E7-9C4C75902938}" Directory_="Endpoint_DIR" Attributes="0" KeyPath="Inspire.Server.SlideManager.dll"/>
+    <ROW Component="Inspire.Server.Users.dll" ComponentId="{58FE503E-1354-4FE3-B0E9-6BA03F97F410}" Directory_="Endpoint_DIR" Attributes="0" KeyPath="Inspire.Server.Users.dll"/>
+    <ROW Component="InspireEventsDB.mdf" ComponentId="{24091C0F-5D00-41B7-A098-EABCB75DF27F}" Directory_="Database_1_DIR" Attributes="0" KeyPath="InspireEventsDB.mdf" Type="0"/>
+    <ROW Component="InspireServerDB_log.ldf" ComponentId="{66F651AF-7CD6-4E51-AFB5-1763B396C3FC}" Directory_="Database_DIR" Attributes="0" KeyPath="InspireServerDB_log.ldf" Type="0"/>
+    <ROW Component="SQL_Server_2008_Expr_1" ComponentId="{E6922E58-16A4-479A-A349-99CCB0B4EEE5}" Directory_="APPDIR" Attributes="4" KeyPath="SQL_Server_2008_Expr_1" Options="2"/>
+    <ROW Component="aa_000001d5_0002" ComponentId="{D88547EE-7186-4CA9-9BA5-BB07116B98A2}" Directory_="a15a5_a461_4a79_ae37_3e7930f6a008_DIR" Attributes="0" KeyPath="aa_000001d5_0002" Type="0"/>
+    <ROW Component="aa_000001db_0002" ComponentId="{359FD221-B26E-4E2D-B218-C351E4B04BE1}" Directory_="fcd9290_6167_404e_9230_552b19fa2d72_DIR" Attributes="0" KeyPath="aa_000001db_0002" Type="0"/>
+    <ROW Component="aa_000001ed_0002" ComponentId="{E8285978-8C4D-4841-8551-47C7443F4C6F}" Directory_="fdf0ada3_3fc9_4192_9cac_6da75580902d_DIR" Attributes="0" KeyPath="aa_000001ed_0002" Type="0"/>
+    <ROW Component="filestream.hdr" ComponentId="{A66750F7-22E6-4DBE-843B-A77D78A10E5B}" Directory_="InspireServerFileStream_DIR" Attributes="0" KeyPath="filestream.hdr" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="InspireServerDB_log.ldf InspireEventsDB.mdf Images aa_000001db_0002 aa_000001ed_0002 aa_000001d5_0002 filestream.hdr FSLOG Inspire.Events.ServiceHost.exe.config Inspire.Server.ServiceHost.exe Inspire.Server.Common.dll Inspire.Server.Display.dll Inspire.Server.DisplayAdmin.dll Inspire.Server.ScheduledSlideManager.dll Inspire.Server.ScheduleManager.dll Inspire.Server.SlideManager.dll Inspire.Server.Users.dll Inspire.Server.Direction.DataContracts.d Inspire.Server.Direction.MessageContract Inspire.Server.Direction.ServiceContract Inspire.Server.Direction.ServiceImplemen Inspire.Server.Events.BusinessLogic.dll Inspire.Server.Events.DataAccess.dll Inspire.Server.Events.DataContracts.dll Inspire.Server.Events.MessageContracts.d Inspire.Server.Events.ServiceContracts.d Inspire.Server.Events.ServiceImplementat Inspire.Server.Groups.BusinessEntities.d Inspire.Server.Groups.BusinessLogic.dll Inspire.Server.Groups.DataAccess.dll Inspire.Server.Groups.MessageContracts.d Inspire.Server.Groups.ServiceContracts.d Inspire.Server.Groups.ServiceImplementat Inspire.Server.Images.BusinessLogic.dll Inspire.Server.Images.DataAccess.dll Inspire.Server.Images.DataContracts.dll Inspire.Server.Images.MessageContracts.d Inspire.Server.Images.ServiceContracts.d Inspire.Server.Images.ServiceImplementat Inspire.Server.Rooms.BusinessLogic.dll Inspire.Server.Rooms.DataAccess.dll Inspire.Server.Rooms.DataContracts.dll Inspire.Server.Rooms.MessageContracts.dl Inspire.Server.Rooms.ServiceContracts.dl Inspire.Server.Rooms.ServiceImplementati Inspire.Events.ServiceHost.exe Inspire.Server.Common.dll_1 Inspire.Server.Common.FaultContracts.dll Inspire.Server.Direction.BusinessLogic.d Inspire.Server.Direction.DataAccess.dll Inspire.Server.Groups.DataContracts.dll"/>
+    <ROW Feature="SQL_Server_2008_Express_R2_1" Title="SQL Server 2008 Express R2 x64" Description="SQL Server 2008 Express R2 x64" Display="5" Level="1" Attributes="16" Components="SQL_Server_2008_Expr_1"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Inspire.Events.ServiceHost.exe" Component_="Inspire.Events.ServiceHost.exe" FileName="Inspir~1.exe|Inspire.Events.ServiceHost.exe" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Events.ServiceHost.exe" SelfReg="false" Sequence="46"/>
+    <ROW File="Inspire.Events.ServiceHost.exe.config" Component_="Inspire.Events.ServiceHost.exe.config" FileName="Inspir~1.con|Inspire.Events.ServiceHost.exe.config" Attributes="0" SourcePath="..\..\trunk\InspireServer\Events\Inspire.ServiceHost\bin\Release\Inspire.Events.ServiceHost.exe.config" SelfReg="false" Sequence="9"/>
+    <ROW File="Inspire.Server.Common.FaultContracts.dll" Component_="Inspire.Server.Common.FaultContracts.dll" FileName="Inspi~30.dll|Inspire.Server.Common.FaultContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Common.FaultContracts.dll" SelfReg="false" Sequence="48"/>
+    <ROW File="Inspire.Server.Common.dll" Component_="Inspire.Server.Common.dll" FileName="Inspir~1.dll|Inspire.Server.Common.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Core\Endpoint\Inspire.Server.Common.dll" SelfReg="false" Sequence="11"/>
+    <ROW File="Inspire.Server.Common.dll_1" Component_="Inspire.Server.Common.dll_1" FileName="Inspi~29.dll|Inspire.Server.Common.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Common.dll" SelfReg="false" Sequence="47"/>
+    <ROW File="Inspire.Server.Direction.BusinessLogic.dll" Component_="Inspire.Server.Direction.BusinessLogic.d" FileName="Inspi~31.dll|Inspire.Server.Direction.BusinessLogic.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Direction.BusinessLogic.dll" SelfReg="false" Sequence="49"/>
+    <ROW File="Inspire.Server.Direction.DataAccess.dll" Component_="Inspire.Server.Direction.DataAccess.dll" FileName="Inspi~32.dll|Inspire.Server.Direction.DataAccess.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Direction.DataAccess.dll" SelfReg="false" Sequence="50"/>
+    <ROW File="Inspire.Server.Direction.DataContracts.dll" Component_="Inspire.Server.Direction.DataContracts.d" FileName="Inspir~1.dll|Inspire.Server.Direction.DataContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Direction.DataContracts.dll" SelfReg="false" Sequence="18"/>
+    <ROW File="Inspire.Server.Direction.MessageContracts.dll" Component_="Inspire.Server.Direction.MessageContract" FileName="Inspir~2.dll|Inspire.Server.Direction.MessageContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Direction.MessageContracts.dll" SelfReg="false" Sequence="19"/>
+    <ROW File="Inspire.Server.Direction.ServiceContracts.dll" Component_="Inspire.Server.Direction.ServiceContract" FileName="Inspir~3.dll|Inspire.Server.Direction.ServiceContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Direction.ServiceContracts.dll" SelfReg="false" Sequence="20"/>
+    <ROW File="Inspire.Server.Direction.ServiceImplementation.dll" Component_="Inspire.Server.Direction.ServiceImplemen" FileName="Inspir~4.dll|Inspire.Server.Direction.ServiceImplementation.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Direction.ServiceImplementation.dll" SelfReg="false" Sequence="21"/>
+    <ROW File="Inspire.Server.Display.dll" Component_="Inspire.Server.Display.dll" FileName="Inspir~2.dll|Inspire.Server.Display.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Core\Endpoint\Inspire.Server.Display.dll" SelfReg="false" Sequence="12"/>
+    <ROW File="Inspire.Server.DisplayAdmin.dll" Component_="Inspire.Server.DisplayAdmin.dll" FileName="Inspir~3.dll|Inspire.Server.DisplayAdmin.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Core\Endpoint\Inspire.Server.DisplayAdmin.dll" SelfReg="false" Sequence="13"/>
+    <ROW File="Inspire.Server.Events.BusinessLogic.dll" Component_="Inspire.Server.Events.BusinessLogic.dll" FileName="Inspir~5.dll|Inspire.Server.Events.BusinessLogic.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Events.BusinessLogic.dll" SelfReg="false" Sequence="22"/>
+    <ROW File="Inspire.Server.Events.DataAccess.dll" Component_="Inspire.Server.Events.DataAccess.dll" FileName="Inspir~6.dll|Inspire.Server.Events.DataAccess.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Events.DataAccess.dll" SelfReg="false" Sequence="23"/>
+    <ROW File="Inspire.Server.Events.DataContracts.dll" Component_="Inspire.Server.Events.DataContracts.dll" FileName="Inspir~7.dll|Inspire.Server.Events.DataContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Events.DataContracts.dll" SelfReg="false" Sequence="24"/>
+    <ROW File="Inspire.Server.Events.MessageContracts.dll" Component_="Inspire.Server.Events.MessageContracts.d" FileName="Inspir~8.dll|Inspire.Server.Events.MessageContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Events.MessageContracts.dll" SelfReg="false" Sequence="25"/>
+    <ROW File="Inspire.Server.Events.ServiceContracts.dll" Component_="Inspire.Server.Events.ServiceContracts.d" FileName="Inspir~9.dll|Inspire.Server.Events.ServiceContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Events.ServiceContracts.dll" SelfReg="false" Sequence="26"/>
+    <ROW File="Inspire.Server.Events.ServiceImplementation.ServiceImplementation.dll" Component_="Inspire.Server.Events.ServiceImplementat" FileName="Inspi~10.dll|Inspire.Server.Events.ServiceImplementation.ServiceImplementation.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Events.ServiceImplementation.ServiceImplementation.dll" SelfReg="false" Sequence="27"/>
+    <ROW File="Inspire.Server.Groups.BusinessEntities.dll" Component_="Inspire.Server.Groups.BusinessEntities.d" FileName="Inspi~11.dll|Inspire.Server.Groups.BusinessEntities.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Groups.BusinessEntities.dll" SelfReg="false" Sequence="28"/>
+    <ROW File="Inspire.Server.Groups.BusinessLogic.dll" Component_="Inspire.Server.Groups.BusinessLogic.dll" FileName="Inspi~12.dll|Inspire.Server.Groups.BusinessLogic.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Groups.BusinessLogic.dll" SelfReg="false" Sequence="29"/>
+    <ROW File="Inspire.Server.Groups.DataAccess.dll" Component_="Inspire.Server.Groups.DataAccess.dll" FileName="Inspi~13.dll|Inspire.Server.Groups.DataAccess.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Groups.DataAccess.dll" SelfReg="false" Sequence="30"/>
+    <ROW File="Inspire.Server.Groups.DataContracts.dll" Component_="Inspire.Server.Groups.DataContracts.dll" FileName="Inspi~33.dll|Inspire.Server.Groups.DataContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Groups.DataContracts.dll" SelfReg="false" Sequence="51"/>
+    <ROW File="Inspire.Server.Groups.MessageContracts.dll" Component_="Inspire.Server.Groups.MessageContracts.d" FileName="Inspi~14.dll|Inspire.Server.Groups.MessageContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Groups.MessageContracts.dll" SelfReg="false" Sequence="31"/>
+    <ROW File="Inspire.Server.Groups.ServiceContracts.dll" Component_="Inspire.Server.Groups.ServiceContracts.d" FileName="Inspi~15.dll|Inspire.Server.Groups.ServiceContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Groups.ServiceContracts.dll" SelfReg="false" Sequence="32"/>
+    <ROW File="Inspire.Server.Groups.ServiceImplementation.dll" Component_="Inspire.Server.Groups.ServiceImplementat" FileName="Inspi~16.dll|Inspire.Server.Groups.ServiceImplementation.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Groups.ServiceImplementation.dll" SelfReg="false" Sequence="33"/>
+    <ROW File="Inspire.Server.Images.BusinessLogic.dll" Component_="Inspire.Server.Images.BusinessLogic.dll" FileName="Inspi~17.dll|Inspire.Server.Images.BusinessLogic.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Images.BusinessLogic.dll" SelfReg="false" Sequence="34"/>
+    <ROW File="Inspire.Server.Images.DataAccess.dll" Component_="Inspire.Server.Images.DataAccess.dll" FileName="Inspi~18.dll|Inspire.Server.Images.DataAccess.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Images.DataAccess.dll" SelfReg="false" Sequence="35"/>
+    <ROW File="Inspire.Server.Images.DataContracts.dll" Component_="Inspire.Server.Images.DataContracts.dll" FileName="Inspi~19.dll|Inspire.Server.Images.DataContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Images.DataContracts.dll" SelfReg="false" Sequence="36"/>
+    <ROW File="Inspire.Server.Images.MessageContracts.dll" Component_="Inspire.Server.Images.MessageContracts.d" FileName="Inspi~20.dll|Inspire.Server.Images.MessageContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Images.MessageContracts.dll" SelfReg="false" Sequence="37"/>
+    <ROW File="Inspire.Server.Images.ServiceContracts.dll" Component_="Inspire.Server.Images.ServiceContracts.d" FileName="Inspi~21.dll|Inspire.Server.Images.ServiceContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Images.ServiceContracts.dll" SelfReg="false" Sequence="38"/>
+    <ROW File="Inspire.Server.Images.ServiceImplementation.dll" Component_="Inspire.Server.Images.ServiceImplementat" FileName="Inspi~22.dll|Inspire.Server.Images.ServiceImplementation.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Images.ServiceImplementation.dll" SelfReg="false" Sequence="39"/>
+    <ROW File="Inspire.Server.Rooms.BusinessLogic.dll" Component_="Inspire.Server.Rooms.BusinessLogic.dll" FileName="Inspi~23.dll|Inspire.Server.Rooms.BusinessLogic.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Rooms.BusinessLogic.dll" SelfReg="false" Sequence="40"/>
+    <ROW File="Inspire.Server.Rooms.DataAccess.dll" Component_="Inspire.Server.Rooms.DataAccess.dll" FileName="Inspi~24.dll|Inspire.Server.Rooms.DataAccess.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Rooms.DataAccess.dll" SelfReg="false" Sequence="41"/>
+    <ROW File="Inspire.Server.Rooms.DataContracts.dll" Component_="Inspire.Server.Rooms.DataContracts.dll" FileName="Inspi~25.dll|Inspire.Server.Rooms.DataContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Rooms.DataContracts.dll" SelfReg="false" Sequence="42"/>
+    <ROW File="Inspire.Server.Rooms.MessageContracts.dll" Component_="Inspire.Server.Rooms.MessageContracts.dl" FileName="Inspi~26.dll|Inspire.Server.Rooms.MessageContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Rooms.MessageContracts.dll" SelfReg="false" Sequence="43"/>
+    <ROW File="Inspire.Server.Rooms.ServiceContracts.dll" Component_="Inspire.Server.Rooms.ServiceContracts.dl" FileName="Inspi~27.dll|Inspire.Server.Rooms.ServiceContracts.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Rooms.ServiceContracts.dll" SelfReg="false" Sequence="44"/>
+    <ROW File="Inspire.Server.Rooms.ServiceImplementation.dll" Component_="Inspire.Server.Rooms.ServiceImplementati" FileName="Inspi~28.dll|Inspire.Server.Rooms.ServiceImplementation.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Events\Endpoint\Inspire.Server.Rooms.ServiceImplementation.dll" SelfReg="false" Sequence="45"/>
+    <ROW File="Inspire.Server.ScheduleManager.dll" Component_="Inspire.Server.ScheduleManager.dll" FileName="Inspir~5.dll|Inspire.Server.ScheduleManager.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Core\Endpoint\Inspire.Server.ScheduleManager.dll" SelfReg="false" Sequence="15"/>
+    <ROW File="Inspire.Server.ScheduledSlideManager.dll" Component_="Inspire.Server.ScheduledSlideManager.dll" FileName="Inspir~4.dll|Inspire.Server.ScheduledSlideManager.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Core\Endpoint\Inspire.Server.ScheduledSlideManager.dll" SelfReg="false" Sequence="14"/>
+    <ROW File="Inspire.Server.ServiceHost.exe" Component_="Inspire.Server.ServiceHost.exe" FileName="Inspir~1.exe|Inspire.Server.ServiceHost.exe" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Core\Endpoint\Inspire.Server.ServiceHost.exe" SelfReg="false" Sequence="10"/>
+    <ROW File="Inspire.Server.SlideManager.dll" Component_="Inspire.Server.SlideManager.dll" FileName="Inspir~6.dll|Inspire.Server.SlideManager.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Core\Endpoint\Inspire.Server.SlideManager.dll" SelfReg="false" Sequence="16"/>
+    <ROW File="Inspire.Server.Users.dll" Component_="Inspire.Server.Users.dll" FileName="Inspir~7.dll|Inspire.Server.Users.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Server\Core\Endpoint\Inspire.Server.Users.dll" SelfReg="false" Sequence="17"/>
+    <ROW File="InspireEventsDB.mdf" Component_="InspireEventsDB.mdf" FileName="Inspir~1.mdf|InspireEventsDB.mdf" Attributes="0" SourcePath="..\..\trunk\InspireServer\Events\Database\InspireEventsDB.mdf" SelfReg="false" Sequence="3"/>
+    <ROW File="InspireEventsDB_log.ldf" Component_="InspireEventsDB.mdf" FileName="Inspir~1.ldf|InspireEventsDB_log.ldf" Attributes="0" SourcePath="..\..\trunk\InspireServer\Events\Database\InspireEventsDB_log.ldf" SelfReg="false" Sequence="4"/>
+    <ROW File="InspireServerDB.mdf" Component_="InspireServerDB_log.ldf" FileName="Inspir~1.mdf|InspireServerDB.mdf" Attributes="0" SourcePath="..\..\trunk\InspireServer\Server\Database\InspireServerDB.mdf" SelfReg="false" Sequence="2"/>
+    <ROW File="InspireServerDB_log.ldf" Component_="InspireServerDB_log.ldf" FileName="Inspir~1.ldf|InspireServerDB_log.ldf" Attributes="0" SourcePath="..\..\trunk\InspireServer\Server\Database\InspireServerDB_log.ldf" SelfReg="false" Sequence="1"/>
+    <ROW File="aa_000001d5_0002" Component_="aa_000001d5_0002" FileName="000014~1|000014aa-000001d5-0002" Attributes="0" SourcePath="..\..\trunk\InspireServer\Server\Database\InspireServerFileStream\bf147f4f-7a4b-404e-85c2-c4dc37763fdc\843a15a5-a461-4a79-ae37-3e7930f6a008\000014aa-000001d5-0002" SelfReg="false" Sequence="7"/>
+    <ROW File="aa_000001db_0002" Component_="aa_000001db_0002" FileName="000014~1|000014aa-000001db-0002" Attributes="0" SourcePath="..\..\trunk\InspireServer\Server\Database\InspireServerFileStream\20950764-a84c-4854-a303-a105438eeaf4\7fcd9290-6167-404e-9230-552b19fa2d72\000014aa-000001db-0002" SelfReg="false" Sequence="5"/>
+    <ROW File="aa_000001ed_0002" Component_="aa_000001ed_0002" FileName="000014~1|000014aa-000001ed-0002" Attributes="0" SourcePath="..\..\trunk\InspireServer\Server\Database\InspireServerFileStream\3b962549-ac7f-409b-a8ea-e3376dc913ad\fdf0ada3-3fc9-4192-9cac-6da75580902d\000014aa-000001ed-0002" SelfReg="false" Sequence="6"/>
+    <ROW File="filestream.hdr" Component_="filestream.hdr" FileName="filest~1.hdr|filestream.hdr" Attributes="0" SourcePath="..\..\trunk\InspireServer\Server\Database\InspireServerFileStream\filestream.hdr" SelfReg="false" Sequence="8"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" Options="2" EulaPathLocId="*" IntroTextPathLocId="*"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" Languages="en" InstallationType="4" PackageType="1" MsiPackageType="x64"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
+    <ROW DigitalCertificate="..\..\trunk\InspireCert\Inspire.Key.pfx" TimeStampUrl="http://timestamp.verisign.com/scripts/timstamp.dll" SignerDescription="[|ProductName]" DescriptionUrl="www.inspiredisplays.com" SignOptions="7" SignTool="0" Password="1999B1A4D793F2030C80BE53BA42FF11"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FirewallExceptionComponent">
+    <ROW FirewallException="Inspire_Server_TCP" DisplayName="Inspire Server - TCP" Enabled="1" Scope="*" Condition="1" Port="80" Protocol="TCP"/>
+    <ROW FirewallException="Inspire_Server_UDP" DisplayName="Inspire Server - UDP" Enabled="1" Scope="*" Condition="1" Port="80" Protocol="UDP"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DownloadPrereq" Description="Downloading prerequisite software" Template="Downloading [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_DownloadPrereq" TemplateLocId="ActionText.Template.AI_DownloadPrereq"/>
+    <ROW Action="AI_ExtractPrereq" Description="Extracting prerequisite software" Template="Extracting [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_ExtractPrereq" TemplateLocId="ActionText.Template.AI_ExtractPrereq"/>
+    <ROW Action="AI_FwConfig" Description="Executing Windows Firewall configurations" Template="Configuring Windows Firewall rule: &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_FwConfig" TemplateLocId="ActionText.Template.AI_FwConfig"/>
+    <ROW Action="AI_FwInstall" Description="Generating actions to configure Windows Firewall" DescriptionLocId="ActionText.Description.AI_FwInstall"/>
+    <ROW Action="AI_FwRemove" Description="Executing Windows Firewall configurations" Template="Configuring Windows Firewall rule:  &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_FwRemove" TemplateLocId="ActionText.Template.AI_FwRemove"/>
+    <ROW Action="AI_FwRollback" Description="Rolling back Windows Firewall configurations." Template="Rolling back Windows Firewall configurations." DescriptionLocId="ActionText.Description.AI_FwRollback" TemplateLocId="ActionText.Template.AI_FwRollback"/>
+    <ROW Action="AI_FwUninstall" Description="Generating actions to configure Windows Firewall" DescriptionLocId="ActionText.Description.AI_FwUninstall"/>
+    <ROW Action="AI_InstallPostPrerequisite" Description="Installing prerequisite software" Template="Installing [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_InstallPrerequisite" Description="Installing prerequisite software" Template="Installing [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_SqlConfig" Description="Executing install SQL scripts" Template="Connection: [1]  Script: [2]" DescriptionLocId="ActionText.Description.AI_SqlConfig" TemplateLocId="ActionText.Template.AI_SqlConfig"/>
+    <ROW Action="AI_SqlInstall" Description="Generating actions to configure databases for install SQL script execution" DescriptionLocId="ActionText.Description.AI_SqlInstall"/>
+    <ROW Action="AI_SqlMaint" Description="Executing maintenance SQL scripts" Template="Connection: [1]  Script: [2]" DescriptionLocId="ActionText.Description.AI_SqlMaint" TemplateLocId="ActionText.Template.AI_SqlMaint"/>
+    <ROW Action="AI_SqlRemove" Description="Executing uninstall SQL scripts" Template="Connection: [1]  Script: [2]" DescriptionLocId="ActionText.Description.AI_SqlRemove" TemplateLocId="ActionText.Template.AI_SqlRemove"/>
+    <ROW Action="AI_SqlRollback" Description="Executing rollback SQL scripts" Template="Connection: [1]  Script: [2]" DescriptionLocId="ActionText.Description.AI_SqlRollback" TemplateLocId="ActionText.Template.AI_SqlRollback"/>
+    <ROW Action="AI_SqlUninstall" Description="Generating actions to configure databases for uninstall SQL script execution" DescriptionLocId="ActionText.Description.AI_SqlUninstall"/>
+    <ROW Action="AI_VerifyPrereq" Description="Verifying prerequisites" Template="[1] was not installed correctly." DescriptionLocId="ActionText.Description.AI_VerifyPrereq" TemplateLocId="ActionText.Template.AI_VerifyPrereq"/>
+    <ROW Action="AI_XmlConfig" Description="Executing XML file configurations" Template="Configuring XML file: &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_XmlConfig" TemplateLocId="ActionText.Template.AI_XmlConfig"/>
+    <ROW Action="AI_XmlInstall" Description="Generating actions to configure XML files" DescriptionLocId="ActionText.Description.AI_XmlInstall"/>
+    <ROW Action="AI_XmlRemove" Description="Executing XML file configurations" Template="Configuring XML file: &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_XmlRemove" TemplateLocId="ActionText.Template.AI_XmlRemove"/>
+    <ROW Action="AI_XmlRollback" Description="Rolling back XML file configurations." Template="Rolling back XML file configurations." DescriptionLocId="ActionText.Description.AI_XmlRollback" TemplateLocId="ActionText.Template.AI_XmlRollback"/>
+    <ROW Action="AI_XmlUninstall" Description="Generating actions to configure XML files" DescriptionLocId="ActionText.Description.AI_XmlUninstall"/>
+    <ROW Action="SQLEXPR_x64_ENU.exe" Description="Removing Inspire SQL Database Instance..."/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_DOTNET40_SEARCH" Signature_="AI_DotNet40SearchSgn" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="NetFirewall.dll" SourcePath="&lt;AI_CUSTACTS&gt;NetFirewall.dll"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="SQLEXPR_x64_ENU.exe" SourcePath="SQLEXPR_x64_ENU.exe"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="sql.dll" SourcePath="&lt;AI_CUSTACTS&gt;sql.dll"/>
+    <ROW Name="style24_dialog.jpg" SourcePath="&lt;AI_THEMES&gt;classic\resources\style24_dialog.jpg"/>
+    <ROW Name="topBanner.jpg" SourcePath="..\icons\topBanner.jpg"/>
+    <ROW Name="xmlCfg.dll" SourcePath="&lt;AI_CUSTACTS&gt;xmlCfg.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="LicenseDialog" Control="Back" Type="PushButton" X="180" Y="243" Width="56" Height="17" Attributes="3" Text="[ButtonText_Back]" Control_Next="BannerBitmap" TextLocId="-"/>
+    <ROW Dialog_="LicenseDialog" Control="BannerBitmap" Type="Bitmap" X="0" Y="0" Width="370" Height="44" Attributes="1048577" Text="[BannerBitmap]" Control_Next="BannerLine"/>
+    <ROW Dialog_="LicenseDialog" Control="BannerLine" Type="Line" X="0" Y="44" Width="372" Height="0" Attributes="1" Control_Next="BottomLine"/>
+    <ROW Dialog_="LicenseDialog" Control="BottomLine" Type="Line" X="5" Y="234" Width="368" Height="0" Attributes="1" Control_Next="Description"/>
+    <ROW Dialog_="LicenseDialog" Control="Cancel" Type="PushButton" X="304" Y="243" Width="56" Height="17" Attributes="3" Text="[ButtonText_Cancel]" Control_Next="Back" TextLocId="-"/>
+    <ROW Dialog_="LicenseDialog" Control="Description" Type="Text" X="25" Y="23" Width="280" Height="15" Attributes="196611" Text="This is your Inspire Server license code." Control_Next="Logo"/>
+    <ROW Dialog_="LicenseDialog" Control="Logo" Type="Text" X="4" Y="228" Width="70" Height="12" Attributes="1" Text="Advanced Installer" Control_Next="Title"/>
+    <ROW Dialog_="LicenseDialog" Control="Next" Type="PushButton" X="236" Y="243" Width="56" Height="17" Attributes="3" Text="[ButtonText_Next]" Control_Next="Cancel" TextLocId="-"/>
+    <ROW Dialog_="LicenseDialog" Control="Title" Type="Text" X="15" Y="6" Width="200" Height="15" Attributes="196611" Text="Inspire Server License" TextStyle="[DlgTitleFont]" Control_Next="Text_1"/>
+    <ROW Dialog_="LicenseDialog" Control="Text_1" Type="Text" X="25" Y="108" Width="75" Height="11" Attributes="65539" Property="TEXT_1_PROP" Text="License Code:" Control_Next="Edit_1"/>
+    <ROW Dialog_="LicenseDialog" Control="Edit_1" Type="Edit" X="24" Y="125" Width="311" Height="18" Attributes="3" Property="LIC_NUM_PROP" Text="{260}" Control_Next="Text_2"/>
+    <ROW Dialog_="LicenseDialog" Control="Text_2" Type="Text" X="25" Y="70" Width="320" Height="41" Attributes="65539" Property="TEXT_2_PROP" Text="Please enter your license code. For single sign, leave blank and click &quot;Next&quot;." Control_Next="Next"/>
+    <ATTRIBUTE name="FixedSizeBitmaps" value="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="LicenseDialog" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="LicenseDialog" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="4"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="2"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="2"/>
+    <ROW Dialog_="LicenseDialog" Control_="Cancel" Event="SpawnDialog" Argument="CancelDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="LicenseDialog" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="LicenseDialog" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="FSLOG_DIR" Component_="FSLOG"/>
+    <ROW Directory_="Images_DIR" Component_="Images"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_CleanPrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DownloadPrereq" Type="1" Source="Prereq.dll" Target="DownloadPrereq"/>
+    <ROW Action="AI_ExtractPrereq" Type="65" Source="Prereq.dll" Target="ExtractPrereq"/>
+    <ROW Action="AI_FwConfig" Type="11265" Source="NetFirewall.dll" Target="OnFwConfig" WithoutSeq="true"/>
+    <ROW Action="AI_FwInstall" Type="1" Source="NetFirewall.dll" Target="OnFwInstall"/>
+    <ROW Action="AI_FwRemove" Type="11265" Source="NetFirewall.dll" Target="OnFwRemove" WithoutSeq="true"/>
+    <ROW Action="AI_FwRollback" Type="11521" Source="NetFirewall.dll" Target="OnFwRollback" WithoutSeq="true"/>
+    <ROW Action="AI_FwUninstall" Type="1" Source="NetFirewall.dll" Target="OnFwUninstall"/>
+    <ROW Action="AI_InstallPostPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPostPrereq"/>
+    <ROW Action="AI_InstallPrerequisite" Type="65" Source="Prereq.dll" Target="InstallPrereq"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_SqlConfig" Type="11265" Source="sql.dll" Target="OnSqlConfig" WithoutSeq="true"/>
+    <ROW Action="AI_SqlInstall" Type="1" Source="sql.dll" Target="OnSqlInstall"/>
+    <ROW Action="AI_SqlMaint" Type="11265" Source="sql.dll" Target="OnSqlMaint" WithoutSeq="true"/>
+    <ROW Action="AI_SqlRemove" Type="11265" Source="sql.dll" Target="OnSqlRemove" WithoutSeq="true"/>
+    <ROW Action="AI_SqlRollback" Type="11521" Source="sql.dll" Target="OnSqlRollback" WithoutSeq="true"/>
+    <ROW Action="AI_SqlUninstall" Type="1" Source="sql.dll" Target="OnSqlUninstall"/>
+    <ROW Action="AI_VerifyPrereq" Type="1" Source="Prereq.dll" Target="VerifyPrereq"/>
+    <ROW Action="AI_XmlConfig" Type="11265" Source="xmlCfg.dll" Target="OnXmlConfig" WithoutSeq="true"/>
+    <ROW Action="AI_XmlInstall" Type="1" Source="xmlCfg.dll" Target="OnXmlInstall"/>
+    <ROW Action="AI_XmlRemove" Type="11265" Source="xmlCfg.dll" Target="OnXmlRemove" WithoutSeq="true"/>
+    <ROW Action="AI_XmlRollback" Type="11521" Source="xmlCfg.dll" Target="OnXmlRollback" WithoutSeq="true"/>
+    <ROW Action="AI_XmlUninstall" Type="1" Source="xmlCfg.dll" Target="OnXmlUninstall"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder]Inspire\Server"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="DefaultBuild:[ProgramMenuFolder]Server"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+    <ROW Action="SQLEXPR_x64_ENU.exe" Type="1218" Source="SQLEXPR_x64_ENU.exe" Target="Setup /qs /ACTION=uninstall /FEATURES=SQLEngine /INSTANCENAME=INSPIRE /IACCEPTSQLSERVERLICENSETERMS"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="LicenseDialog" HCentering="50" VCentering="50" Width="370" Height="270" Attributes="3" Title="[ProductName] [Setup]" Control_First="Next" Control_Default="Next" Control_Cancel="Cancel"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="InspireI.exe" SourcePath="..\icons\InspireI.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_SqlInstall" Condition="(VersionNT &gt;= 500) AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5499"/>
+    <ROW Action="AI_SqlUninstall" Condition="(VersionNT &gt;= 500) AND (REMOVE=&quot;ALL&quot;)" Sequence="1649"/>
+    <ROW Action="AI_FwInstall" Condition="(VersionNT &gt;= 501) AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5849"/>
+    <ROW Action="AI_FwUninstall" Condition="(VersionNT &gt;= 501) AND (REMOVE=&quot;ALL&quot;)" Sequence="1699"/>
+    <ROW Action="AI_VerifyPrereq" Sequence="1201"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+    <ROW Action="SQLEXPR_x64_ENU.exe" Condition="REMOVE=&quot;ALL&quot;" Sequence="1651"/>
+    <ROW Action="AI_XmlInstall" Condition="(REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5101"/>
+    <ROW Action="AI_XmlUninstall" Condition="(REMOVE)" Sequence="3101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_InstallPrerequisite" Sequence="1283"/>
+    <ROW Action="AI_InstallPostPrerequisite" Sequence="1301"/>
+    <ROW Action="AI_ExtractPrereq" Sequence="1282"/>
+    <ROW Action="AI_DownloadPrereq" Sequence="1281"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(AI_DOTNET40_SEARCH = &quot;#1&quot;)" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_MINDOTNETVERSION]" DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="Version9X OR (VersionNT AND (NOT VersionNT64)) OR ((VersionNT64 &gt; 502) OR ((VersionNT64 = 502) AND (ServicePackLevel &gt;= 2)))" Description="[ProductName] cannot be installed on systems earlier than [WindowsTypeNT64]" DescriptionLocId="AI.LaunchCondition.NoSpecificNT64" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="Version9X OR VersionNT64" Description="[ProductName] cannot be installed on [WindowsFamilyNT]" DescriptionLocId="AI.LaunchCondition.NoNT" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsFamily9X]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_DotNet40SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" Name="Install" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="SQL_Server_2008_Expr_1" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="SQL_Server_2008_Expr_1" Value="1" Component_="SQL_Server_2008_Expr_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiServCtrlComponent">
+    <ROW ServiceControl="Inspire.Events.ServiceHost.exe" Name="InspireEvents" Event="161" Wait="1" Component_="Inspire.Events.ServiceHost.exe"/>
+    <ROW ServiceControl="Inspire.Server.ServiceHost.exe_1" Name="InspireServer" Event="161" Wait="1" Component_="Inspire.Server.ServiceHost.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiServInstComponent">
+    <ROW ServiceInstall="Inspire.Events.ServiceHost.exe" Name="InspireEvents" DisplayName="Inspire Events" ServiceType="16" StartType="2" ErrorControl="1" Component_="Inspire.Events.ServiceHost.exe" Description="Inspire Events Server"/>
+    <ROW ServiceInstall="Inspire.Server.ServiceHost.exe" Name="InspireServer" DisplayName="Inspire Server" ServiceType="16" StartType="2" ErrorControl="1" Component_="Inspire.Server.ServiceHost.exe" Description="Inspire Media Server"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="SQL_Server_2008_Expr_1" DisplayName="SQL Server 2008 Express R2 x64" SetupFileUrl="SQLEXPR_x64_ENU.exe" Location="0" ExactSize="0" MinWin9xVer="47" MinWinNTVer="47" MinWinNT64Ver="34" Operator="1" ComLine="Setup /qs /ACTION=Install /FEATURES=SQLEngine /INSTANCENAME=INSPIRE /SECURITYMODE=&quot;SQL&quot; /SQLSVCACCOUNT=&quot;NT AUTHORITY\SYSTEM&quot; /SAPWD=&quot;!nspire8&quot; /SQLSYSADMINACCOUNTS=&quot;BUILTIN\ADMINISTRATORS&quot; /FILESTREAMLEVEL=1 /IACCEPTSQLSERVERLICENSETERMS" Options="mx" TargetName="SQLEXPR_x64_ENU.exe" Type="1" Feature="SQL_Server_2008_Express_R2_1"/>
+    <ATTRIBUTE name="PrereqsOrder" value="SQL_Server_2008_Expr_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="Version" Prereq="SQL_Server_2008_Expr_1" SearchType="2" SearchString="HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\INSPIRE\MSSQLServer\CurrentVersion\CurrentVersion" Order="1" Property="PreReqSearch" Platform="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SqlConnectionComponent">
+    <ROW ConnectionName="Connection" Dbms="0" OdbcResource="SQL Server" Server="(local)\Inspire" Port="1433" Database="Master" Username="sa" Password="1999B1A4D793F2030C80BE53BA42FF11" Flags="4" Order="0" LoginTimeout="60"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SqlReplaceComponent">
+    <ROW ScriptName="attach_databases_apppath" Token="&lt;AppPath&gt;" Replacement="[APPDIR]Core\Database" Flags="0"/>
+    <ROW ScriptName="attach_event_databases_apppath" Token="&lt;AppPath&gt;" Replacement="[APPDIR]Events\Database" Flags="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SqlScriptComponent">
+    <ROW ScriptName="attach_databases_apppath" ConnectionName="Connection" Condition="1" Separator="GO" ScriptText="attach_databases_apppath.sql" Flags="18" Order="0"/>
+    <ROW ScriptName="attach_event_databases_apppath" ConnectionName="Connection" Condition="1" Separator="GO" ScriptText="attach_event_databases_apppath.sql" Flags="18" Order="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlAttributeComponent">
+    <ROW XmlElement="2" Name="key" Flags="14" Order="0" Value="DisplayService"/>
+    <ROW XmlElement="2" Name="value" Flags="14" Order="1" Value="/inspire/displayservice/"/>
+    <ROW XmlElement="3" Name="key" Flags="14" Order="0" Value="HttpType"/>
+    <ROW XmlElement="3" Name="value" Flags="14" Order="1" Value="http://"/>
+    <ROW XmlElement="4" Name="key" Flags="14" Order="0" Value="LogErrors"/>
+    <ROW XmlElement="4" Name="value" Flags="14" Order="1" Value="True"/>
+    <ROW XmlElement="5" Name="key" Flags="14" Order="0" Value="ScheduleDaysForward"/>
+    <ROW XmlElement="5" Name="value" Flags="14" Order="1" Value="30"/>
+    <ROW XmlElement="6" Name="key" Flags="15" Order="0" Value="DisplayLicense"/>
+    <ROW XmlElement="6" Name="value" Flags="14" Order="1" Value="[LIC_NUM_PROP]"/>
+    <ROW XmlElement="8" Name="name" Flags="14" Order="0" Value="Inspire.Data"/>
+    <ROW XmlElement="8" Name="connectionString" Flags="14" Order="1" Value="Data Source=localhost\inspire;Initial Catalog=InspireServerDB; Integrated Security=SSPI;"/>
+    <ROW XmlElement="8" Name="providerName" Flags="14" Order="2" Value="System.Data.SqlClient"/>
+    <ROW XmlElement="11" Name="debug" Flags="14" Order="0" Value="true"/>
+    <ROW XmlElement="13" Name="assembly" Flags="14" Order="0" Value="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+    <ROW XmlElement="14" Name="assembly" Flags="14" Order="0" Value="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+    <ROW XmlElement="15" Name="assembly" Flags="14" Order="0" Value="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+    <ROW XmlElement="16" Name="assembly" Flags="14" Order="0" Value="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+    <ROW XmlElement="18" Name="mode" Flags="14" Order="0" Value="Windows"/>
+    <ROW XmlElement="19" Name="mode" Flags="14" Order="0" Value="Off"/>
+    <ROW XmlElement="22" Name="maxRequestLength" Flags="14" Order="0" Value="2097151"/>
+    <ROW XmlElement="30" Name="aspNetCompatibilityEnabled" Flags="14" Order="0" Value="true"/>
+    <ROW XmlElement="33" Name="name" Flags="14" Order="0" Value="DefaultBehavior"/>
+    <ROW XmlElement="34" Name="includeExceptionDetailInFaults" Flags="14" Order="0" Value="true"/>
+    <ROW XmlElement="35" Name="httpGetEnabled" Flags="14" Order="0" Value="true"/>
+    <ROW XmlElement="36" Name="name" Flags="14" Order="0" Value="XPOHostBehavior"/>
+    <ROW XmlElement="37" Name="maxItemsInObjectGraph" Flags="14" Order="0" Value="10000000"/>
+    <ROW XmlElement="38" Name="includeExceptionDetailInFaults" Flags="14" Order="0" Value="true"/>
+    <ROW XmlElement="39" Name="httpGetEnabled" Flags="14" Order="0" Value="true"/>
+    <ROW XmlElement="42" Name="name" Flags="14" Order="0" Value="BufferedHTTP"/>
+    <ROW XmlElement="42" Name="transferMode" Flags="14" Order="1" Value="Buffered"/>
+    <ROW XmlElement="42" Name="maxReceivedMessageSize" Flags="14" Order="2" Value="1073741824"/>
+    <ROW XmlElement="42" Name="openTimeout" Flags="14" Order="3" Value="00:10:00"/>
+    <ROW XmlElement="42" Name="closeTimeout" Flags="14" Order="4" Value="00:10:00"/>
+    <ROW XmlElement="42" Name="sendTimeout" Flags="14" Order="5" Value="00:10:00"/>
+    <ROW XmlElement="42" Name="receiveTimeout" Flags="14" Order="6" Value="00:10:00"/>
+    <ROW XmlElement="43" Name="maxDepth" Flags="14" Order="0" Value="32"/>
+    <ROW XmlElement="43" Name="maxStringContentLength" Flags="14" Order="1" Value="8192"/>
+    <ROW XmlElement="43" Name="maxArrayLength" Flags="14" Order="2" Value="1073741824"/>
+    <ROW XmlElement="43" Name="maxBytesPerRead" Flags="14" Order="3" Value="4096"/>
+    <ROW XmlElement="43" Name="maxNameTableCharCount" Flags="14" Order="4" Value="16384"/>
+    <ROW XmlElement="44" Name="name" Flags="14" Order="0" Value="StreamedHTTP"/>
+    <ROW XmlElement="44" Name="transferMode" Flags="14" Order="1" Value="Streamed"/>
+    <ROW XmlElement="44" Name="maxReceivedMessageSize" Flags="14" Order="2" Value="1073741824"/>
+    <ROW XmlElement="44" Name="receiveTimeout" Flags="14" Order="3" Value="00:10:00"/>
+    <ROW XmlElement="44" Name="openTimeout" Flags="14" Order="4" Value="00:10:00"/>
+    <ROW XmlElement="44" Name="closeTimeout" Flags="14" Order="5" Value="00:10:00"/>
+    <ROW XmlElement="44" Name="sendTimeout" Flags="14" Order="6" Value="00:10:00"/>
+    <ROW XmlElement="44" Name="maxBufferSize" Flags="14" Order="7" Value="1073741824"/>
+    <ROW XmlElement="45" Name="maxDepth" Flags="14" Order="0" Value="32"/>
+    <ROW XmlElement="45" Name="maxStringContentLength" Flags="14" Order="1" Value="8192"/>
+    <ROW XmlElement="45" Name="maxArrayLength" Flags="14" Order="2" Value="1073741824"/>
+    <ROW XmlElement="45" Name="maxBytesPerRead" Flags="14" Order="3" Value="4096"/>
+    <ROW XmlElement="45" Name="maxNameTableCharCount" Flags="14" Order="4" Value="16384"/>
+    <ROW XmlElement="48" Name="address" Flags="14" Order="0" Value="http://capehorn/inspire/DisplayService"/>
+    <ROW XmlElement="48" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="48" Name="bindingConfiguration" Flags="14" Order="2" Value="StreamedHTTP"/>
+    <ROW XmlElement="48" Name="contract" Flags="14" Order="3" Value="ServiceReference1.DisplayServiceContract"/>
+    <ROW XmlElement="48" Name="name" Flags="14" Order="4" Value="DisplayEndpoint"/>
+    <ROW XmlElement="52" Name="behaviorConfiguration" Flags="14" Order="0" Value="DefaultBehavior"/>
+    <ROW XmlElement="52" Name="name" Flags="14" Order="1" Value="Inspire.Server.ScheduleManager.ServiceImplementation.ScheduleManagerService"/>
+    <ROW XmlElement="55" Name="baseAddress" Flags="14" Order="0" Value="http://localhost/Inspire.Server/Svc/ScheduleService"/>
+    <ROW XmlElement="56" Name="address" Flags="14" Order="0"/>
+    <ROW XmlElement="56" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="56" Name="bindingConfiguration" Flags="14" Order="2" Value="BufferedHTTP"/>
+    <ROW XmlElement="56" Name="name" Flags="14" Order="3" Value="ScheduleServiceEndpoint"/>
+    <ROW XmlElement="56" Name="bindingNamespace" Flags="14" Order="4" Value="http://schemas.inspiredisplays.com/ServiceContract/"/>
+    <ROW XmlElement="56" Name="contract" Flags="14" Order="5" Value="Inspire.Server.ScheduleManager.ServiceContracts.IServiceManagerServiceContract"/>
+    <ROW XmlElement="57" Name="address" Flags="14" Order="0" Value="mex"/>
+    <ROW XmlElement="57" Name="binding" Flags="14" Order="1" Value="mexHttpBinding"/>
+    <ROW XmlElement="57" Name="contract" Flags="14" Order="2" Value="IMetadataExchange"/>
+    <ROW XmlElement="59" Name="behaviorConfiguration" Flags="14" Order="0" Value="DefaultBehavior"/>
+    <ROW XmlElement="59" Name="name" Flags="14" Order="1" Value="Inspire.Server.Display.ServiceImplementation.ClientDisplayService"/>
+    <ROW XmlElement="62" Name="baseAddress" Flags="14" Order="0" Value="http://localhost/Inspire.Server/Svc/DisplayService"/>
+    <ROW XmlElement="63" Name="address" Flags="14" Order="0"/>
+    <ROW XmlElement="63" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="63" Name="bindingConfiguration" Flags="14" Order="2" Value="BufferedHTTP"/>
+    <ROW XmlElement="63" Name="name" Flags="14" Order="3" Value="DisplaysEndpoint"/>
+    <ROW XmlElement="63" Name="bindingNamespace" Flags="14" Order="4" Value="http://schemas.inspiredisplays.com/ServiceContract.Model/"/>
+    <ROW XmlElement="63" Name="contract" Flags="14" Order="5" Value="Inspire.Server.Display.ServiceContracts.IClientDisplayServiceContract"/>
+    <ROW XmlElement="64" Name="address" Flags="14" Order="0" Value="mex"/>
+    <ROW XmlElement="64" Name="binding" Flags="14" Order="1" Value="mexHttpBinding"/>
+    <ROW XmlElement="64" Name="contract" Flags="14" Order="2" Value="IMetadataExchange"/>
+    <ROW XmlElement="66" Name="behaviorConfiguration" Flags="14" Order="0" Value="DefaultBehavior"/>
+    <ROW XmlElement="66" Name="name" Flags="14" Order="1" Value="Inspire.Server.Display.ServiceImplementation.ClientDisplayPropertiesService"/>
+    <ROW XmlElement="69" Name="baseAddress" Flags="14" Order="0" Value="http://localhost/Inspire.Server/Svc/PropertyService"/>
+    <ROW XmlElement="70" Name="address" Flags="14" Order="0"/>
+    <ROW XmlElement="70" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="70" Name="bindingConfiguration" Flags="14" Order="2" Value="BufferedHTTP"/>
+    <ROW XmlElement="70" Name="name" Flags="14" Order="3" Value="Endpoint1"/>
+    <ROW XmlElement="70" Name="bindingNamespace" Flags="14" Order="4" Value="http://schemas.inspiredisplays.com/ServiceContract.Model/"/>
+    <ROW XmlElement="70" Name="contract" Flags="14" Order="5" Value="Inspire.Server.Display.ServiceContracts.IClientDisplayPropertiesServiceContract"/>
+    <ROW XmlElement="71" Name="address" Flags="14" Order="0" Value="mex"/>
+    <ROW XmlElement="71" Name="binding" Flags="14" Order="1" Value="mexHttpBinding"/>
+    <ROW XmlElement="71" Name="contract" Flags="14" Order="2" Value="IMetadataExchange"/>
+    <ROW XmlElement="73" Name="behaviorConfiguration" Flags="14" Order="0" Value="DefaultBehavior"/>
+    <ROW XmlElement="73" Name="name" Flags="14" Order="1" Value="Inspire.Server.Display.ServiceImplementation.ClientDisplayGroupsService"/>
+    <ROW XmlElement="76" Name="baseAddress" Flags="14" Order="0" Value="http://localhost/Inspire.Server/Svc/GroupService"/>
+    <ROW XmlElement="77" Name="address" Flags="14" Order="0"/>
+    <ROW XmlElement="77" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="77" Name="bindingConfiguration" Flags="14" Order="2" Value="BufferedHTTP"/>
+    <ROW XmlElement="77" Name="name" Flags="14" Order="3" Value="DisplayGroupEndpoint"/>
+    <ROW XmlElement="77" Name="bindingNamespace" Flags="14" Order="4" Value="http://schemas.inspiredisplays.com/ServiceContract.Model/"/>
+    <ROW XmlElement="77" Name="contract" Flags="14" Order="5" Value="Inspire.Server.Display.ServiceContracts.IClientDisplayGroupsServiceContract"/>
+    <ROW XmlElement="78" Name="address" Flags="14" Order="0" Value="mex"/>
+    <ROW XmlElement="78" Name="binding" Flags="14" Order="1" Value="mexHttpBinding"/>
+    <ROW XmlElement="78" Name="contract" Flags="14" Order="2" Value="IMetadataExchange"/>
+    <ROW XmlElement="80" Name="behaviorConfiguration" Flags="14" Order="0" Value="DefaultBehavior"/>
+    <ROW XmlElement="80" Name="name" Flags="14" Order="1" Value="Inspire.Server.SlideManager.ServiceImplementation.SlideManagerService"/>
+    <ROW XmlElement="83" Name="baseAddress" Flags="14" Order="0" Value="http://localhost/Inspire.Server/Svc/SlideService"/>
+    <ROW XmlElement="84" Name="address" Flags="14" Order="0"/>
+    <ROW XmlElement="84" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="84" Name="bindingConfiguration" Flags="14" Order="2" Value="BufferedHTTP"/>
+    <ROW XmlElement="84" Name="name" Flags="14" Order="3" Value="SlideEndpoint"/>
+    <ROW XmlElement="84" Name="bindingNamespace" Flags="14" Order="4" Value="http://schemas.inspiredisplays.com"/>
+    <ROW XmlElement="84" Name="contract" Flags="14" Order="5" Value="Inspire.Server.SlideManager.ServiceContracts.ISlideManagerServiceContract"/>
+    <ROW XmlElement="85" Name="address" Flags="14" Order="0" Value="mex"/>
+    <ROW XmlElement="85" Name="binding" Flags="14" Order="1" Value="mexHttpBinding"/>
+    <ROW XmlElement="85" Name="contract" Flags="14" Order="2" Value="IMetadataExchange"/>
+    <ROW XmlElement="87" Name="behaviorConfiguration" Flags="14" Order="0" Value="XPOHostBehavior"/>
+    <ROW XmlElement="87" Name="name" Flags="14" Order="1" Value="Inspire.Server.SlideManager.ServiceImplementation.SlideFileManagerService"/>
+    <ROW XmlElement="90" Name="baseAddress" Flags="14" Order="0" Value="http://localhost/Inspire.Server/Svc/SlideFileService"/>
+    <ROW XmlElement="91" Name="address" Flags="14" Order="0"/>
+    <ROW XmlElement="91" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="91" Name="bindingConfiguration" Flags="14" Order="2" Value="StreamedHTTP"/>
+    <ROW XmlElement="91" Name="name" Flags="14" Order="3" Value="SlideFileEndpoint"/>
+    <ROW XmlElement="91" Name="bindingNamespace" Flags="14" Order="4" Value="http://schemas.inspiredisplays.com"/>
+    <ROW XmlElement="91" Name="contract" Flags="14" Order="5" Value="Inspire.Server.SlideManager.ServiceContracts.ISlideFileManagerServiceContract"/>
+    <ROW XmlElement="92" Name="address" Flags="14" Order="0" Value="mex"/>
+    <ROW XmlElement="92" Name="binding" Flags="14" Order="1" Value="mexHttpBinding"/>
+    <ROW XmlElement="92" Name="contract" Flags="14" Order="2" Value="IMetadataExchange"/>
+    <ROW XmlElement="94" Name="behaviorConfiguration" Flags="14" Order="0" Value="DefaultBehavior"/>
+    <ROW XmlElement="94" Name="name" Flags="14" Order="1" Value="Inspire.Server.ScheduledSlideManager.ServiceImplementation.ScheduledSlideManagerService"/>
+    <ROW XmlElement="97" Name="baseAddress" Flags="14" Order="0" Value="http://localhost/Inspire.Server/Svc/ScheduledSlideService"/>
+    <ROW XmlElement="98" Name="address" Flags="14" Order="0"/>
+    <ROW XmlElement="98" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="98" Name="bindingConfiguration" Flags="14" Order="2" Value="BufferedHTTP"/>
+    <ROW XmlElement="98" Name="name" Flags="14" Order="3" Value="ScheduledSlideEndpoint"/>
+    <ROW XmlElement="98" Name="bindingNamespace" Flags="14" Order="4" Value="http://schemas.inspiredisplays.com/ServiceContract/"/>
+    <ROW XmlElement="98" Name="contract" Flags="14" Order="5" Value="Inspire.Server.ScheduledSlideManager.ServiceContracts.IScheduledSlideManagerServiceContract"/>
+    <ROW XmlElement="99" Name="address" Flags="14" Order="0" Value="mex"/>
+    <ROW XmlElement="99" Name="binding" Flags="14" Order="1" Value="mexHttpBinding"/>
+    <ROW XmlElement="99" Name="contract" Flags="14" Order="2" Value="IMetadataExchange"/>
+    <ROW XmlElement="101" Name="behaviorConfiguration" Flags="14" Order="0" Value="DefaultBehavior"/>
+    <ROW XmlElement="101" Name="name" Flags="14" Order="1" Value="Inspire.Users.ServiceImplementation.UserService"/>
+    <ROW XmlElement="104" Name="baseAddress" Flags="14" Order="0" Value="http://localhost/Inspire.Server/Svc/UserService"/>
+    <ROW XmlElement="105" Name="address" Flags="14" Order="0"/>
+    <ROW XmlElement="105" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="105" Name="name" Flags="14" Order="2" Value="UserEndpoint"/>
+    <ROW XmlElement="105" Name="bindingNamespace" Flags="14" Order="3" Value="http://schemas.inspiredisplays.com"/>
+    <ROW XmlElement="105" Name="contract" Flags="14" Order="4" Value="Inspire.Users.ServiceContracts.IUserServiceContract"/>
+    <ROW XmlElement="106" Name="address" Flags="14" Order="0" Value="mex"/>
+    <ROW XmlElement="106" Name="binding" Flags="14" Order="1" Value="mexHttpBinding"/>
+    <ROW XmlElement="106" Name="contract" Flags="14" Order="2" Value="IMetadataExchange"/>
+    <ROW XmlElement="108" Name="behaviorConfiguration" Flags="14" Order="0" Value="DefaultBehavior"/>
+    <ROW XmlElement="108" Name="name" Flags="14" Order="1" Value="Inspire.Server.DisplayAdmin.ServiceImplementation.DisplayAdminService"/>
+    <ROW XmlElement="111" Name="baseAddress" Flags="14" Order="0" Value="http://localhost/Inspire.Server/Svc/DisplayAdminService"/>
+    <ROW XmlElement="112" Name="address" Flags="14" Order="0"/>
+    <ROW XmlElement="112" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="112" Name="bindingConfiguration" Flags="14" Order="2" Value="BufferedHTTP"/>
+    <ROW XmlElement="112" Name="name" Flags="14" Order="3" Value="DisplayAdminEndpoint"/>
+    <ROW XmlElement="112" Name="bindingNamespace" Flags="14" Order="4" Value="http://schemas.inspiredisplays.com"/>
+    <ROW XmlElement="112" Name="contract" Flags="14" Order="5" Value="Inspire.Server.DisplayAdmin.ServiceContracts.IDisplayAdminServiceContract"/>
+    <ROW XmlElement="113" Name="address" Flags="14" Order="0" Value="mex"/>
+    <ROW XmlElement="113" Name="binding" Flags="14" Order="1" Value="mexHttpBinding"/>
+    <ROW XmlElement="113" Name="contract" Flags="14" Order="2" Value="IMetadataExchange"/>
+    <ROW XmlElement="115" Name="version" Flags="14" Order="0" Value="v4.0"/>
+    <ROW XmlElement="115" Name="sku" Flags="14" Order="1" Value=".NETFramework,Version=v4.0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlElementComponent">
+    <ROW XmlElement="0" Name="configuration" Order="0" Flags="30"/>
+    <ROW XmlElement="1" ParentElement="0" Name="appSettings" Order="0" Flags="30"/>
+    <ROW XmlElement="2" ParentElement="1" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="3" ParentElement="1" Name="add" Order="1" Flags="30"/>
+    <ROW XmlElement="4" ParentElement="1" Name="add" Order="2" Flags="30"/>
+    <ROW XmlElement="5" ParentElement="1" Name="add" Order="3" Flags="30"/>
+    <ROW XmlElement="6" ParentElement="1" Name="add" Order="4" Flags="14"/>
+    <ROW XmlElement="7" ParentElement="0" Name="connectionStrings" Order="1" Flags="30"/>
+    <ROW XmlElement="8" ParentElement="7" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="9" ParentElement="0" Name="system.web" Order="2" Flags="30"/>
+    <ROW XmlElement="10" ParentElement="9" Name="Comment" Order="0" Flags="1" Text="&#10;            Set compilation debug=&quot;true&quot; to insert debugging &#10;            symbols into the compiled page. Because this &#10;            affects performance, set this value to true only &#10;            during development.&#10;        "/>
+    <ROW XmlElement="11" ParentElement="9" Name="compilation" Order="1" Flags="30"/>
+    <ROW XmlElement="12" ParentElement="11" Name="assemblies" Order="0" Flags="30"/>
+    <ROW XmlElement="13" ParentElement="12" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="14" ParentElement="12" Name="add" Order="1" Flags="30"/>
+    <ROW XmlElement="15" ParentElement="12" Name="add" Order="2" Flags="30"/>
+    <ROW XmlElement="16" ParentElement="12" Name="add" Order="3" Flags="30"/>
+    <ROW XmlElement="17" ParentElement="9" Name="Comment" Order="2" Flags="1" Text="&#10;            The &lt;authentication&gt; section enables configuration &#10;            of the security authentication mode used by &#10;            ASP.NET to identify an incoming user. &#10;        "/>
+    <ROW XmlElement="18" ParentElement="9" Name="authentication" Order="3" Flags="30"/>
+    <ROW XmlElement="19" ParentElement="9" Name="customErrors" Order="4" Flags="30"/>
+    <ROW XmlElement="20" ParentElement="9" Name="Comment" Order="5" Flags="1" Text="&#10;            The &lt;customErrors&gt; section enables configuration &#10;            of what to do if/when an unhandled error occurs &#10;            during the execution of a request. Specifically, &#10;            it enables developers to configure html error pages &#10;            to be displayed in place of a error stack trace.&#10;&#10;        &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;GenericErrorPage.htm&quot;&gt;&#10;            &lt;error statusCode=&quot;403&quot; redirect=&quot;NoAccess.htm&quot; /&gt;&#10;            &lt;error statusCode=&quot;404&quot; redirect=&quot;FileNotFound.htm&quot; /&gt;&#10;        &lt;/customErrors&gt;&#10;        "/>
+    <ROW XmlElement="21" ParentElement="9" Name="Comment" Order="6" Flags="1" Text="Large File Support"/>
+    <ROW XmlElement="22" ParentElement="9" Name="httpRuntime" Order="7" Flags="30"/>
+    <ROW XmlElement="23" ParentElement="9" Name="Comment" Order="8" Flags="1" Text="Large File Support"/>
+    <ROW XmlElement="24" ParentElement="0" Name="Comment" Order="3" Flags="1" Text="&#10;        The system.webServer section is required for running ASP.NET AJAX under Internet&#10;        Information Services 7.0.  It is not necessary for previous version of IIS.&#10;    "/>
+    <ROW XmlElement="25" ParentElement="0" Name="system.webServer" Order="4" Flags="30"/>
+    <ROW XmlElement="26" ParentElement="25" Name="Comment" Order="0" Flags="1" Text="&lt;validation validateIntegratedModeConfiguration=&quot;false&quot;/&gt;"/>
+    <ROW XmlElement="27" ParentElement="0" Name="system.serviceModel" Order="5" Flags="30"/>
+    <ROW XmlElement="28" ParentElement="27" Name="Comment" Order="0" Flags="1" Text="Enable Streaming"/>
+    <ROW XmlElement="29" ParentElement="27" Name="Comment" Order="1" Flags="1" Text=" &lt;diagnostics&gt;&#10;&#9;   &lt;messageLogging&#10;&#9;&#9;&#9; logEntireMessage=&quot;true&quot;&#10;&#9;&#9;&#9; logMalformedMessages=&quot;true&quot;&#10;&#9;&#9;&#9; logMessagesAtServiceLevel=&quot;true&quot;&#10;&#9;&#9;&#9; logMessagesAtTransportLevel=&quot;true&quot;&#10;&#9;&#9;&#9; maxMessagesToLog=&quot;3000&quot;&#10;&#9;&#9;&#9; maxSizeOfMessageToLog=&quot;2000&quot;/&gt;&#10;&#9;  &#10;    &lt;/diagnostics&gt;"/>
+    <ROW XmlElement="30" ParentElement="27" Name="serviceHostingEnvironment" Order="2" Flags="30"/>
+    <ROW XmlElement="31" ParentElement="27" Name="behaviors" Order="3" Flags="30"/>
+    <ROW XmlElement="32" ParentElement="31" Name="serviceBehaviors" Order="0" Flags="30"/>
+    <ROW XmlElement="33" ParentElement="32" Name="behavior" Order="0" Flags="30"/>
+    <ROW XmlElement="34" ParentElement="33" Name="serviceDebug" Order="0" Flags="30"/>
+    <ROW XmlElement="35" ParentElement="33" Name="serviceMetadata" Order="1" Flags="30"/>
+    <ROW XmlElement="36" ParentElement="32" Name="behavior" Order="1" Flags="30"/>
+    <ROW XmlElement="37" ParentElement="36" Name="dataContractSerializer" Order="0" Flags="30"/>
+    <ROW XmlElement="38" ParentElement="36" Name="serviceDebug" Order="1" Flags="30"/>
+    <ROW XmlElement="39" ParentElement="36" Name="serviceMetadata" Order="2" Flags="30"/>
+    <ROW XmlElement="40" ParentElement="27" Name="bindings" Order="4" Flags="30"/>
+    <ROW XmlElement="41" ParentElement="40" Name="basicHttpBinding" Order="0" Flags="30"/>
+    <ROW XmlElement="42" ParentElement="41" Name="binding" Order="0" Flags="30"/>
+    <ROW XmlElement="43" ParentElement="42" Name="readerQuotas" Order="0" Flags="30"/>
+    <ROW XmlElement="44" ParentElement="41" Name="binding" Order="1" Flags="30"/>
+    <ROW XmlElement="45" ParentElement="44" Name="readerQuotas" Order="0" Flags="30"/>
+    <ROW XmlElement="46" ParentElement="27" Name="Comment" Order="5" Flags="1" Text="Outgoing Client config"/>
+    <ROW XmlElement="47" ParentElement="27" Name="client" Order="6" Flags="30"/>
+    <ROW XmlElement="48" ParentElement="47" Name="endpoint" Order="0" Flags="30"/>
+    <ROW XmlElement="49" ParentElement="27" Name="Comment" Order="7" Flags="1" Text="Services config"/>
+    <ROW XmlElement="50" ParentElement="27" Name="services" Order="8" Flags="30"/>
+    <ROW XmlElement="51" ParentElement="50" Name="Comment" Order="0" Flags="1" Text="ScheduleManager config"/>
+    <ROW XmlElement="52" ParentElement="50" Name="service" Order="1" Flags="30"/>
+    <ROW XmlElement="53" ParentElement="52" Name="host" Order="0" Flags="30"/>
+    <ROW XmlElement="54" ParentElement="53" Name="baseAddresses" Order="0" Flags="30"/>
+    <ROW XmlElement="55" ParentElement="54" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="56" ParentElement="52" Name="endpoint" Order="1" Flags="30"/>
+    <ROW XmlElement="57" ParentElement="52" Name="endpoint" Order="2" Flags="30"/>
+    <ROW XmlElement="58" ParentElement="50" Name="Comment" Order="2" Flags="1" Text="Display config"/>
+    <ROW XmlElement="59" ParentElement="50" Name="service" Order="3" Flags="30"/>
+    <ROW XmlElement="60" ParentElement="59" Name="host" Order="0" Flags="30"/>
+    <ROW XmlElement="61" ParentElement="60" Name="baseAddresses" Order="0" Flags="30"/>
+    <ROW XmlElement="62" ParentElement="61" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="63" ParentElement="59" Name="endpoint" Order="1" Flags="30"/>
+    <ROW XmlElement="64" ParentElement="59" Name="endpoint" Order="2" Flags="30"/>
+    <ROW XmlElement="65" ParentElement="50" Name="Comment" Order="4" Flags="1" Text="DisplayProperties config"/>
+    <ROW XmlElement="66" ParentElement="50" Name="service" Order="5" Flags="30"/>
+    <ROW XmlElement="67" ParentElement="66" Name="host" Order="0" Flags="30"/>
+    <ROW XmlElement="68" ParentElement="67" Name="baseAddresses" Order="0" Flags="30"/>
+    <ROW XmlElement="69" ParentElement="68" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="70" ParentElement="66" Name="endpoint" Order="1" Flags="30"/>
+    <ROW XmlElement="71" ParentElement="66" Name="endpoint" Order="2" Flags="30"/>
+    <ROW XmlElement="72" ParentElement="50" Name="Comment" Order="6" Flags="1" Text="DisplayGroup config"/>
+    <ROW XmlElement="73" ParentElement="50" Name="service" Order="7" Flags="30"/>
+    <ROW XmlElement="74" ParentElement="73" Name="host" Order="0" Flags="30"/>
+    <ROW XmlElement="75" ParentElement="74" Name="baseAddresses" Order="0" Flags="30"/>
+    <ROW XmlElement="76" ParentElement="75" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="77" ParentElement="73" Name="endpoint" Order="1" Flags="30"/>
+    <ROW XmlElement="78" ParentElement="73" Name="endpoint" Order="2" Flags="30"/>
+    <ROW XmlElement="79" ParentElement="50" Name="Comment" Order="8" Flags="1" Text="SlideManager config"/>
+    <ROW XmlElement="80" ParentElement="50" Name="service" Order="9" Flags="30"/>
+    <ROW XmlElement="81" ParentElement="80" Name="host" Order="0" Flags="30"/>
+    <ROW XmlElement="82" ParentElement="81" Name="baseAddresses" Order="0" Flags="30"/>
+    <ROW XmlElement="83" ParentElement="82" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="84" ParentElement="80" Name="endpoint" Order="1" Flags="30"/>
+    <ROW XmlElement="85" ParentElement="80" Name="endpoint" Order="2" Flags="30"/>
+    <ROW XmlElement="86" ParentElement="50" Name="Comment" Order="10" Flags="1" Text="SlideFileManager config"/>
+    <ROW XmlElement="87" ParentElement="50" Name="service" Order="11" Flags="30"/>
+    <ROW XmlElement="88" ParentElement="87" Name="host" Order="0" Flags="30"/>
+    <ROW XmlElement="89" ParentElement="88" Name="baseAddresses" Order="0" Flags="30"/>
+    <ROW XmlElement="90" ParentElement="89" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="91" ParentElement="87" Name="endpoint" Order="1" Flags="30"/>
+    <ROW XmlElement="92" ParentElement="87" Name="endpoint" Order="2" Flags="30"/>
+    <ROW XmlElement="93" ParentElement="50" Name="Comment" Order="12" Flags="1" Text="ScheduledSlide config"/>
+    <ROW XmlElement="94" ParentElement="50" Name="service" Order="13" Flags="30"/>
+    <ROW XmlElement="95" ParentElement="94" Name="host" Order="0" Flags="30"/>
+    <ROW XmlElement="96" ParentElement="95" Name="baseAddresses" Order="0" Flags="30"/>
+    <ROW XmlElement="97" ParentElement="96" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="98" ParentElement="94" Name="endpoint" Order="1" Flags="30"/>
+    <ROW XmlElement="99" ParentElement="94" Name="endpoint" Order="2" Flags="30"/>
+    <ROW XmlElement="100" ParentElement="50" Name="Comment" Order="14" Flags="1" Text="User config"/>
+    <ROW XmlElement="101" ParentElement="50" Name="service" Order="15" Flags="30"/>
+    <ROW XmlElement="102" ParentElement="101" Name="host" Order="0" Flags="30"/>
+    <ROW XmlElement="103" ParentElement="102" Name="baseAddresses" Order="0" Flags="30"/>
+    <ROW XmlElement="104" ParentElement="103" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="105" ParentElement="101" Name="endpoint" Order="1" Flags="30"/>
+    <ROW XmlElement="106" ParentElement="101" Name="endpoint" Order="2" Flags="30"/>
+    <ROW XmlElement="107" ParentElement="50" Name="Comment" Order="16" Flags="1" Text="DisplayAdmin config"/>
+    <ROW XmlElement="108" ParentElement="50" Name="service" Order="17" Flags="30"/>
+    <ROW XmlElement="109" ParentElement="108" Name="host" Order="0" Flags="30"/>
+    <ROW XmlElement="110" ParentElement="109" Name="baseAddresses" Order="0" Flags="30"/>
+    <ROW XmlElement="111" ParentElement="110" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="112" ParentElement="108" Name="endpoint" Order="1" Flags="30"/>
+    <ROW XmlElement="113" ParentElement="108" Name="endpoint" Order="2" Flags="30"/>
+    <ROW XmlElement="114" ParentElement="0" Name="startup" Order="6" Flags="30"/>
+    <ROW XmlElement="115" ParentElement="114" Name="supportedRuntime" Order="0" Flags="30"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlFileComponent">
+    <ROW XmlFile="Inspire.Server.ServiceHost.exe.config" FileName="Inspir~1.con|Inspire.Server.ServiceHost.exe.config" DirProperty="Endpoint_DIR" Component="Inspire.Server.SlideManager.dll" RootElement="0" Flags="89" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
+  </COMPONENT>
+</DOCUMENT>

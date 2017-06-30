@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9479f0a4-0271-499c-b793-309fad6115c1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://testserver/DisplayManager/DisplayPropertiesServiceReference.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DisplayPropertiesServiceReference.xsd" MetadataType="Schema" ID="537cc5ab-1678-4ed0-8f1b-b7a89f84282b" SourceId="1" SourceUrl="http://testserver/DisplayManager/DisplayPropertiesServiceReference.svc?xsd=xsd2" />
+    <MetadataFile FileName="DisplayPropertiesServiceReference1.xsd" MetadataType="Schema" ID="e8da3fb3-6b15-4e89-9723-d26e39c5a9a6" SourceId="1" SourceUrl="http://testserver/DisplayManager/DisplayPropertiesServiceReference.svc?xsd=xsd1" />
+    <MetadataFile FileName="DisplayPropertiesServiceReference2.xsd" MetadataType="Schema" ID="f7cac74d-faa3-4ad2-8318-7835c023e68c" SourceId="1" SourceUrl="http://testserver/DisplayManager/DisplayPropertiesServiceReference.svc?xsd=xsd0" />
+    <MetadataFile FileName="ClientDisplayPropertiesService.wsdl" MetadataType="Wsdl" ID="87e2396e-0179-467a-bc69-fb2c42797bd8" SourceId="1" SourceUrl="http://testserver/DisplayManager/DisplayPropertiesServiceReference.svc?wsdl" />
+    <MetadataFile FileName="DisplayPropertiesServiceReference.disco" MetadataType="Disco" ID="66598d9c-b45d-4772-a4f3-fef8b6e79b7b" SourceId="1" SourceUrl="http://testserver/DisplayManager/DisplayPropertiesServiceReference.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

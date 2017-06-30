@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.inspiredisplays.com" elementFormDefault="qualified" targetNamespace="http://schemas.inspiredisplays.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://twsignage/Inspire.Server/Svc/SlideFileService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/Message" />
+  <xs:element name="SlideID" nillable="true" type="xs:string" />
+  <xs:element xmlns:q1="http://schemas.microsoft.com/Message" name="SlideFileStream" type="q1:StreamBody" />
+  <xs:element name="SlideFileID" nillable="true" type="xs:string" />
+  <xs:element name="SlideFileSize" type="xs:int" />
+  <xs:complexType name="GeneralFaultContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GeneralFaultContract" nillable="true" type="tns:GeneralFaultContract" />
+</xs:schema>

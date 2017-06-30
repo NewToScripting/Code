@@ -1,0 +1,10 @@
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\bin\Debug\Inspire.Server.Services.BusinessEntities.dll
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\bin\Debug\Inspire.Server.Services.BusinessEntities.pdb
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\Inspire.Server.Services.BusinessEntities.dll
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\Inspire.Server.Services.BusinessEntities.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\bin\Debug\Inspire.Server.Services.BusinessEntities.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\bin\Debug\Inspire.Server.Services.BusinessEntities.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\Inspire.Server.Services.BusinessEntities.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Business Logic\Inspire.Server.Services.BusinessEntities\obj\Debug\Inspire.Server.Services.BusinessEntities.pdb

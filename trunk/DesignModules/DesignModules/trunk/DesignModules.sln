@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageModule", "ImageModule\ImageModule.csproj", "{D88AD297-6057-4C7B-8EB3-37385BD05893}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoModule", "VideoModule\VideoModule.csproj", "{9894825C-DCBD-47F1-B408-EA8D8A7053AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichTextModule", "RichTextModule\RichTextModule.csproj", "{7550C9BB-0F15-4E7C-88ED-C2AE977BF96A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashModule", "FlashModule\FlashModule.csproj", "{09D756F7-61B5-422B-91A4-32D9314437BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrowserModule", "BrowserModule\BrowserModule.csproj", "{8E5B8B50-9E3F-425C-B24A-75B4EFCAEA82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsModule", "EventsModule\EventsModule.csproj", "{4E0F599D-469D-406A-A8FA-6DAFE15F5DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollModule", "ScrollModule\ScrollModule.csproj", "{2C96C2E7-4C1C-459D-BB97-54786EFA8F53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSSModule", "RSSModule\RSSModule.csproj", "{C42FE9CE-592A-46AB-833F-07E413C8AF47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickTimeModule", "QuickTimeModule\QuickTimeModule.csproj", "{9CFB30BD-5AA0-4556-BEF0-37DE5208B461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleModule", "BubbleModule\BubbleModule.csproj", "{12782498-CC21-4846-9400-32849CAD9B34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaylistModule", "PlaylistModule\PlaylistModule.csproj", "{85982185-637D-47A5-B61C-AED57AD8FBF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{F052D5A8-C28A-411E-B469-59460E798527}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\ActiproSoftware.Ribbon.Wpf30.dll = Lib\ActiproSoftware.Ribbon.Wpf30.dll
+		Lib\ActiproSoftware.Shared.Wpf30.dll = Lib\ActiproSoftware.Shared.Wpf30.dll
+		Lib\AxShockwaveFlashObjects.dll = Lib\AxShockwaveFlashObjects.dll
+		Lib\DevComponents.WpfEditors.dll = Lib\DevComponents.WpfEditors.dll
+		Lib\DevComponents.WpfRibbon.dll = Lib\DevComponents.WpfRibbon.dll
+		Lib\Infragistics3.Wpf.DataPresenter.v8.1.Express.dll = Lib\Infragistics3.Wpf.DataPresenter.v8.1.Express.dll
+		Lib\Infragistics3.Wpf.v8.1.Express.dll = Lib\Infragistics3.Wpf.v8.1.Express.dll
+		Lib\Inspire.Server.Proxy.dll = Lib\Inspire.Server.Proxy.dll
+		Lib\ShockwaveFlashObjects.dll = Lib\ShockwaveFlashObjects.dll
+		Lib\Transitionals.dll = Lib\Transitionals.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsModule.Proxy", "EventsModule.Proxy\EventsModule.Proxy.csproj", "{6855CEDB-194C-44C1-B026-AF4E3F58B53B}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D88AD297-6057-4C7B-8EB3-37385BD05893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88AD297-6057-4C7B-8EB3-37385BD05893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88AD297-6057-4C7B-8EB3-37385BD05893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88AD297-6057-4C7B-8EB3-37385BD05893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9894825C-DCBD-47F1-B408-EA8D8A7053AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9894825C-DCBD-47F1-B408-EA8D8A7053AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9894825C-DCBD-47F1-B408-EA8D8A7053AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9894825C-DCBD-47F1-B408-EA8D8A7053AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7550C9BB-0F15-4E7C-88ED-C2AE977BF96A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7550C9BB-0F15-4E7C-88ED-C2AE977BF96A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7550C9BB-0F15-4E7C-88ED-C2AE977BF96A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7550C9BB-0F15-4E7C-88ED-C2AE977BF96A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D756F7-61B5-422B-91A4-32D9314437BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D756F7-61B5-422B-91A4-32D9314437BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D756F7-61B5-422B-91A4-32D9314437BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D756F7-61B5-422B-91A4-32D9314437BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E5B8B50-9E3F-425C-B24A-75B4EFCAEA82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5B8B50-9E3F-425C-B24A-75B4EFCAEA82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5B8B50-9E3F-425C-B24A-75B4EFCAEA82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5B8B50-9E3F-425C-B24A-75B4EFCAEA82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E0F599D-469D-406A-A8FA-6DAFE15F5DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E0F599D-469D-406A-A8FA-6DAFE15F5DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E0F599D-469D-406A-A8FA-6DAFE15F5DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E0F599D-469D-406A-A8FA-6DAFE15F5DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C96C2E7-4C1C-459D-BB97-54786EFA8F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C96C2E7-4C1C-459D-BB97-54786EFA8F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C96C2E7-4C1C-459D-BB97-54786EFA8F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C96C2E7-4C1C-459D-BB97-54786EFA8F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C42FE9CE-592A-46AB-833F-07E413C8AF47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C42FE9CE-592A-46AB-833F-07E413C8AF47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C42FE9CE-592A-46AB-833F-07E413C8AF47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C42FE9CE-592A-46AB-833F-07E413C8AF47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CFB30BD-5AA0-4556-BEF0-37DE5208B461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CFB30BD-5AA0-4556-BEF0-37DE5208B461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CFB30BD-5AA0-4556-BEF0-37DE5208B461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CFB30BD-5AA0-4556-BEF0-37DE5208B461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12782498-CC21-4846-9400-32849CAD9B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12782498-CC21-4846-9400-32849CAD9B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12782498-CC21-4846-9400-32849CAD9B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12782498-CC21-4846-9400-32849CAD9B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85982185-637D-47A5-B61C-AED57AD8FBF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85982185-637D-47A5-B61C-AED57AD8FBF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85982185-637D-47A5-B61C-AED57AD8FBF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85982185-637D-47A5-B61C-AED57AD8FBF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6855CEDB-194C-44C1-B026-AF4E3F58B53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6855CEDB-194C-44C1-B026-AF4E3F58B53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6855CEDB-194C-44C1-B026-AF4E3F58B53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6855CEDB-194C-44C1-B026-AF4E3F58B53B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

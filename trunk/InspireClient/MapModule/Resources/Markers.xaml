@@ -1,0 +1,375 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Make sure that all of the markers are in sequential order starting at zero so that the indexing selector in MarkerChooser.cs will work -->
+    <ControlTemplate x:Key="0">
+        <Rectangle />
+    </ControlTemplate>
+    <ControlTemplate x:Key="1">
+        <Image Width="40"  Height="40" Source="Images/Markers/1.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="2">
+        <Image Width="40"  Height="40" Source="Images/Markers/2.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="3">
+        <Image Width="40"  Height="40" Source="Images/Markers/3.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="4">
+        <Image Width="40"  Height="40" Source="Images/Markers/4.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="5">
+        <Image Width="40"  Height="40" Source="Images/Markers/5.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="6">
+        <Image Width="40"  Height="40" Source="Images/Markers/6.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="7">
+        <Image Width="40"  Height="40" Source="Images/Markers/7.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="8">
+        <Image Width="40"  Height="40" Source="Images/Markers/8.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="9">
+        <Image Width="40"  Height="40" Source="Images/Markers/9.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="10">
+        <Image Width="40"  Height="40" Source="Images/Markers/10.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="11">
+        <Image Width="40"  Height="40" Source="Images/Markers/11.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="12">
+        <Image Width="40"  Height="40" Source="Images/Markers/12.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="13">
+        <Image Width="40"  Height="40" Source="Images/Markers/13.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="14">
+        <Image Width="40"  Height="40" Source="Images/Markers/14.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="15">
+        <Image Width="40"  Height="40" Source="Images/Markers/15.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="16">
+        <Image Width="40"  Height="40" Source="Images/Markers/16.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="17">
+        <Image Width="40"  Height="40" Source="Images/Markers/17.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="18">
+        <Image Width="40"  Height="40" Source="Images/Markers/18.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="19">
+        <Image Width="40"  Height="40" Source="Images/Markers/19.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="20">
+        <Image Width="40"  Height="40" Source="Images/Markers/20.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="21">
+        <Image Width="40"  Height="40" Source="Images/Markers/21.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="22">
+        <Image Width="40"  Height="40" Source="Images/Markers/22.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="23">
+        <Image Width="40"  Height="40" Source="Images/Markers/23.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="24">
+        <Image Width="40"  Height="40" Source="Images/Markers/24.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="25">
+        <Image Width="40"  Height="40" Source="Images/Markers/25.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="26">
+        <Image Width="40"  Height="40" Source="Images/Markers/26.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="27">
+        <Image Width="40"  Height="40" Source="Images/Markers/27.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="28">
+        <Image Width="40"  Height="40" Source="Images/Markers/28.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="29">
+        <Image Width="40"  Height="40" Source="Images/Markers/29.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="30">
+        <Image Width="40"  Height="40" Source="Images/Markers/30.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="31">
+        <Image Width="40"  Height="40" Source="Images/Markers/31.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="32">
+        <Image Width="40"  Height="40" Source="Images/Markers/32.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="33">
+        <Image Width="40"  Height="40" Source="Images/Markers/33.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="34">
+        <Image Width="40"  Height="40" Source="Images/Markers/34.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="35">
+        <Image Width="40"  Height="40" Source="Images/Markers/35.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="36">
+        <Image Width="40"  Height="40" Source="Images/Markers/36.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="37">
+        <Image Width="40"  Height="40" Source="Images/Markers/37.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="38">
+        <Image Width="40"  Height="40" Source="Images/Markers/38.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="39">
+        <Image Width="40"  Height="40" Source="Images/Markers/39.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="40">
+        <Image Width="40"  Height="40" Source="Images/Markers/40.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="41">
+        <Image Width="40"  Height="40" Source="Images/Markers/41.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="42">
+        <Image Width="40"  Height="40" Source="Images/Markers/42.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="43">
+        <Image Width="40"  Height="40" Source="Images/Markers/43.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="44">
+        <Image Width="40"  Height="40" Source="Images/Markers/44.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="45">
+        <Image Width="40"  Height="40" Source="Images/Markers/45.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="46">
+        <Image Width="40"  Height="40" Source="Images/Markers/46.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="47">
+        <Image Width="40"  Height="40" Source="Images/Markers/47.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="48">
+        <Image Width="40"  Height="40" Source="Images/Markers/48.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="49">
+        <Image Width="40"  Height="40" Source="Images/Markers/49.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="50">
+        <Image Width="40"  Height="40" Source="Images/Markers/50.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="51">
+        <Image Width="40"  Height="40" Source="Images/Markers/51.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="52">
+        <Image Width="40"  Height="40" Source="Images/Markers/52.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="53">
+        <Image Width="40"  Height="40" Source="Images/Markers/53.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="54">
+        <Image Width="40"  Height="40" Source="Images/Markers/54.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="55">
+        <Image Width="40"  Height="40" Source="Images/Markers/55.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="56">
+        <Image Width="40"  Height="40" Source="Images/Markers/56.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="57">
+        <Image Width="40"  Height="40" Source="Images/Markers/57.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="58">
+        <Image Width="40"  Height="40" Source="Images/Markers/58.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="59">
+        <Grid>
+            <Image Stretch="Fill" Height="40" Source="Images/Markers/59.png"/>
+            <TextBlock Foreground="White" Margin="10,4,10,2" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Text="{Binding Name}">
+                <TextBlock.Effect>
+                    <DropShadowEffect ShadowDepth="2"/>
+                </TextBlock.Effect>
+            </TextBlock>
+        </Grid>
+    </ControlTemplate>
+    <ControlTemplate x:Key="60">
+        <Grid>
+            <Image Stretch="Fill" Height="40" Source="Images/Markers/60.png"/>
+            <TextBlock Foreground="White" Margin="10,4,10,2" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Text="{Binding Name}">
+                <TextBlock.Effect>
+                    <DropShadowEffect ShadowDepth="2"/>
+                </TextBlock.Effect>
+            </TextBlock>
+        </Grid>
+    </ControlTemplate>
+    <ControlTemplate x:Key="61">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <TextBlock Foreground="White" Margin="10,4,10,2" Visibility="Hidden" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Text="{Binding Name}"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Image Stretch="Fill" Height="40" Source="Images/Markers/61.png"/>
+                <TextBlock Foreground="White" Margin="10,4,10,2" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Text="{Binding Name}">
+                <TextBlock.Effect>
+                    <DropShadowEffect ShadowDepth="2"/>
+                </TextBlock.Effect>
+                </TextBlock>
+            </Grid>
+        </Grid>
+    </ControlTemplate>
+    <ControlTemplate x:Key="62">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <TextBlock Foreground="White" Margin="10,4,10,2" Visibility="Hidden" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Text="{Binding Name}"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Image Stretch="Fill" Height="40" Source="Images/Markers/62.png"/>
+                <TextBlock Foreground="White" Margin="10,4,10,2" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Text="{Binding Name}">
+                <TextBlock.Effect>
+                    <DropShadowEffect ShadowDepth="2"/>
+                </TextBlock.Effect>
+                </TextBlock>
+            </Grid>
+        </Grid>
+    </ControlTemplate>
+    <ControlTemplate x:Key="63">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <TextBlock Foreground="White" Margin="10,4,10,2" Visibility="Hidden" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Text="{Binding Name}"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Image Stretch="Fill" Height="40" Source="Images/Markers/63.png"/>
+                <TextBlock Foreground="White" Margin="10,4,10,2" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Text="{Binding Name}">
+                <TextBlock.Effect>
+                    <DropShadowEffect ShadowDepth="2"/>
+                </TextBlock.Effect>
+                </TextBlock>
+            </Grid>
+        </Grid>
+    </ControlTemplate>
+    <ControlTemplate x:Key="64">
+        <Image Width="40"  Height="40" Source="Images/Markers/64.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="65">
+        <Image Width="40"  Height="40" Source="Images/Markers/65.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="66">
+        <Image Width="40"  Height="40" Source="Images/Markers/66.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="67">
+        <Image Width="40"  Height="40" Source="Images/Markers/67.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="68">
+        <Image Width="40"  Height="40" Source="Images/Markers/68.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="69">
+        <Image Width="40"  Height="40" Source="Images/Markers/69.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="70">
+        <Image Width="40"  Height="40" Source="Images/Markers/70.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="71">
+        <Image Width="40"  Height="40" Source="Images/Markers/71.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="72">
+        <Image Width="40"  Height="40" Source="Images/Markers/72.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="73">
+        <Image Width="40"  Height="40" Source="Images/Markers/73.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="74">
+        <Image Width="40"  Height="40" Source="Images/Markers/74.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="75">
+        <Image Width="40"  Height="40" Source="Images/Markers/75.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="76">
+        <Image Width="40"  Height="40" Source="Images/Markers/76.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="77">
+        <Image Width="40"  Height="40" Source="Images/Markers/77.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="78">
+        <Image Width="40"  Height="40" Source="Images/Markers/78.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="79">
+        <Image Width="40"  Height="40" Source="Images/Markers/79.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="80">
+        <Image Width="40"  Height="40" Source="Images/Markers/80.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="81">
+        <Image Width="40"  Height="40" Source="Images/Markers/81.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="82">
+        <Image Width="40"  Height="40" Source="Images/Markers/82.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="83">
+        <Image Width="40"  Height="40" Source="Images/Markers/83.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="84">
+        <Image Width="40"  Height="40" Source="Images/Markers/84.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="85">
+        <Image Width="40"  Height="40" Source="Images/Markers/85.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="86">
+        <Image Width="40"  Height="40" Source="Images/Markers/86.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="87">
+        <Image Width="40"  Height="40" Source="Images/Markers/87.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="88">
+        <Image Width="40"  Height="40" Source="Images/Markers/88.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="89">
+        <Image Width="40"  Height="40" Source="Images/Markers/89.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="90">
+        <Image Width="40"  Height="40" Source="Images/Markers/90.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="91">
+        <Image Width="40"  Height="40" Source="Images/Markers/91.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="92">
+        <Image Width="40"  Height="40" Source="Images/Markers/92.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="93">
+        <Image Width="40"  Height="40" Source="Images/Markers/93.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="94">
+        <Image Width="96"  Height="96" Source="Images/Markers/94.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="95">
+        <Image Width="96"  Height="96" Source="Images/Markers/95.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="96">
+        <Image Width="96"  Height="96" Source="Images/Markers/96.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="97">
+        <Image Width="96"  Height="96" Source="Images/Markers/97.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="98">
+        <Image Width="96"  Height="96" Source="Images/Markers/98.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="99">
+        <Image Width="96"  Height="96" Source="Images/Markers/99.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="100">
+        <Image Width="96"  Height="96" Source="Images/Markers/100.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="101">
+        <Image Width="96"  Height="96" Source="Images/Markers/101.png"/>
+    </ControlTemplate>
+    <ControlTemplate x:Key="102">
+        <Image Width="96"  Height="96" Source="Images/Markers/102.png"/>
+    </ControlTemplate>
+</ResourceDictionary>

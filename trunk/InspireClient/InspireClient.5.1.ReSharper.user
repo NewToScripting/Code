@@ -1,0 +1,59 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="0D344094-B9B9-457E-A308-50D13A432FC8/f:InspireClient.config" caret="0" fromTop="0" />
+      <File id="0D344094-B9B9-457E-A308-50D13A432FC8/f:ServerSettings.config" caret="112" fromTop="2" />
+      <File id="C26A9A1E-D31B-4D0D-ACBB-B16C22DA4435/f:ScheduleManager.cs" caret="3766" fromTop="7" />
+      <File id="d:Miscellaneous Files/f:ServerSettings.config/l:C!?CODE_TOMS?installers?Configs?Client?ServerSettings.config" caret="244" fromTop="7" />
+      <File id="84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B/f:Schedule.cs" caret="2074" fromTop="0" />
+      <File id="C26A9A1E-D31B-4D0D-ACBB-B16C22DA4435/f:ScheduledSlideManager.cs" caret="1956" fromTop="7" />
+      <File id="C26A9A1E-D31B-4D0D-ACBB-B16C22DA4435/d:Service References/d:ScheduledSlideServiceReference/f:Reference.cs" caret="41426" fromTop="10" />
+      <File id="C26A9A1E-D31B-4D0D-ACBB-B16C22DA4435/f:RegistrationManager.cs" caret="1440" fromTop="0" />
+      <File id="0D344094-B9B9-457E-A308-50D13A432FC8/d:Dialogs/f:Login.xaml.cs" caret="3826" fromTop="1" />
+      <File id="d:Miscellaneous Files/f:Inspire.Client.exe.config/l:C!?CODE?installers?Configs?Client?Inspire.Client.exe.config" caret="847" fromTop="8" />
+      <File id="0D344094-B9B9-457E-A308-50D13A432FC8/f:app.config" caret="726" fromTop="11" />
+      <File id="84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B/f:AuthResult.cs" caret="243" fromTop="12" />
+      <File id="C26A9A1E-D31B-4D0D-ACBB-B16C22DA4435/f:UserManager.cs" caret="11279" fromTop="6" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="0D344094-B9B9-457E-A308-50D13A432FC8/f:ServerSettings.config" caret="112" fromTop="2" />
+      <File id="0D344094-B9B9-457E-A308-50D13A432FC8/f:app.config" caret="687" fromTop="11" />
+      <File id="d:Miscellaneous Files/f:Inspire.Client.exe.config/l:C!?CODE?installers?Configs?Client?Inspire.Client.exe.config" caret="582" fromTop="2" />
+      <File id="C26A9A1E-D31B-4D0D-ACBB-B16C22DA4435/f:UserManager.cs" caret="12268" fromTop="32" />
+      <File id="C26A9A1E-D31B-4D0D-ACBB-B16C22DA4435/f:UserManager.cs" caret="11093" fromTop="2" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="tbRegistrationCode" priority="0" />
+      <Item value="Close`0" priority="1" />
+      <Item value="OnInit`0" priority="0" />
+      <Item value="return" priority="0" />
+      <Item value="false" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBox">
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Application">
+      <Item value="MainWindow" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

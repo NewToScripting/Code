@@ -1,0 +1,12 @@
+﻿<Window x:Class="InspireDisplay.Activation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+        Title="Activation" Height="193" Width="612" Background="{StaticResource WindowBackgroundBrush}" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock Margin="22,31,43,0" FontSize="16" Height="26" VerticalAlignment="Top" Foreground="{StaticResource Foreground}">Type in your registration code to register this display.</TextBlock>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="22,63,0,0" Name="txtRegistrationCode" VerticalAlignment="Top" Width="525" />
+        <Image Height="16" ToolTip="Clear" ButtonBase.Click="imgValidate_Click" HorizontalAlignment="Left" Margin="560,66,0,0" Name="imgValidate" Source="Image/Cancel16.png"  Stretch="Fill" VerticalAlignment="Top" Width="16" />
+        <Button Content="Register" Height="29" Inspire:ButtonImage.Image="Image/Ok16.png"  HorizontalAlignment="Left" Margin="328,113,0,0" Name="btnRegister" VerticalAlignment="Top" Width="122" Click="btnRegister_Click" />
+        <Button Content="Cancel" Height="29" Inspire:ButtonImage.Image="Image/Cancel16.png" HorizontalAlignment="Left" Margin="456,113,0,0" Name="button2" VerticalAlignment="Top" Width="122" />
+    </Grid>
+</Window>

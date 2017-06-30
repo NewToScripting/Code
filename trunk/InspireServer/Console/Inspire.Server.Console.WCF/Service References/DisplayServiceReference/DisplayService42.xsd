@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.inspiredisplays.com/ServiceContract.Model/" elementFormDefault="qualified" targetNamespace="http://schemas.inspiredisplays.com/ServiceContract.Model/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://capehorn/Inspire.Server/Svc/DisplayService.svc?xsd=xsd2" namespace="http://schemas.inspiredisplays.com/DataContract.Model/" />
+  <xs:element name="GroupID" nillable="true" type="xs:string" />
+  <xs:element xmlns:q1="http://schemas.inspiredisplays.com/DataContract.Model/" name="Display" nillable="true" type="q1:Display" />
+  <xs:element name="ScheduleID" nillable="true" type="xs:string" />
+</xs:schema>

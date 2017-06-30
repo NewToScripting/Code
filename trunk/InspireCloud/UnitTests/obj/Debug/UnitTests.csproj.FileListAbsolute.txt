@@ -1,0 +1,28 @@
+C:\New_Code\InspireCloud\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\New_Code\InspireCloud\UnitTests\bin\Debug\UnitTests.dll
+C:\New_Code\InspireCloud\UnitTests\bin\Debug\UnitTests.pdb
+C:\New_Code\InspireCloud\UnitTests\bin\Debug\WeatherModule.Proxy.dll
+C:\New_Code\InspireCloud\UnitTests\bin\Debug\WeatherModule.Proxy.pdb
+C:\New_Code\InspireCloud\UnitTests\obj\Debug\UnitTests.dll
+C:\New_Code\InspireCloud\UnitTests\obj\Debug\UnitTests.pdb
+C:\New_Code\InspireCloud\UnitTests\bin\Debug\UnitTests.dll.config
+C:\New_Code\InspireCloud\UnitTests\bin\Debug\Inspire Proxy.dll
+C:\New_Code\InspireCloud\UnitTests\bin\Debug\Inspire Proxy.pdb
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\UnitTests.dll.config
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\UnitTests.dll
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\UnitTests.pdb
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\FlightAwareProxy.dll
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\FlightInfoModule.Proxy.dll
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\Inspire Proxy.dll
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\Newtonsoft.Json.dll
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\System.Net.Http.Formatting.dll
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\WeatherModule.Proxy.dll
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\FlightInfoModule.Proxy.pdb
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\FlightAwareProxy.pdb
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\WeatherModule.Proxy.pdb
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\Inspire Proxy.pdb
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\Newtonsoft.Json.xml
+C:\CODE\trunk\InspireCloud\UnitTests\bin\Debug\System.Net.Http.Formatting.xml
+C:\CODE\trunk\InspireCloud\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\CODE\trunk\InspireCloud\UnitTests\obj\Debug\UnitTests.dll
+C:\CODE\trunk\InspireCloud\UnitTests\obj\Debug\UnitTests.pdb

@@ -1,0 +1,170 @@
+﻿<Window x:Class="RSSModule.ModuleDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Commands="clr-namespace:RSSModule.Commands"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    Title="RSS Control" Height="529" Width="704" ResizeMode="NoResize" Foreground="{StaticResource Foreground}" Background="{DynamicResource PopupBackgroundBrush}" WindowStartupLocation="CenterScreen"><!---->
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:RSSModuleCommands.AddRSSFeedCommand}" Executed="AddRSSFeedExecuted" CanExecute="AddRSSFeedCanExecute" />
+        <CommandBinding Command="{x:Static Commands:RSSModuleCommands.UpScrollItemCommand}" Executed="UpScrollItemExecuted" CanExecute="UpScrollItemCanExecute" />
+        <CommandBinding Command="{x:Static Commands:RSSModuleCommands.DownScrollItemCommand}" Executed="DownScrollItemExecuted" CanExecute="DownScrollItemCanExecute" />
+    </Window.CommandBindings>
+    <Window.Resources>
+        <CollectionViewSource Source="{Binding Source={x:Static Fonts.SystemFontFamilies}}" x:Key="myFonts1"/>
+        <CollectionViewSource Source="{Binding Source={x:Static Fonts.SystemFontFamilies}}" x:Key="myFonts2"/>
+        <ContextMenu x:Key="RSSFeedContext" Background="Black">
+            <MenuItem Header="Remove RSS Feed" Click="DeleteRSSFeed" Background="Black">
+                <MenuItem.Icon>
+                    <Image Source="Resources/Images/Remove.png"
+               Width="16"
+               Height="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+        </ContextMenu>
+    </Window.Resources>
+    <Grid>
+        <ListBox Margin="12,72,214,64" Name="lbRSSFeeds">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <ContentControl MouseDoubleClick="RSSFeed_MouseDoubleClick" ContextMenu="{StaticResource RSSFeedContext}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Width="24" Height="24" Margin="3,0" Source="Resources\Images\feeds.ico" />
+                            <TextBlock HorizontalAlignment="Center" Text="{Binding}" />
+                        </StackPanel>
+                    </ContentControl>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+        <Button Margin="0,192,175,0" Width="30" Command="{x:Static Commands:RSSModuleCommands.UpScrollItemCommand}" HorizontalAlignment="Right" Height="40" VerticalAlignment="Top"/>
+        <Image IsHitTestVisible="False" Width="22" Height="22"  Source="Resources/Images/move_task_up.png"  HorizontalAlignment="Right" Margin="0,203,182,0" VerticalAlignment="Top"/>
+        <Button Margin="0,238,175,0" Width="30" Command="{x:Static Commands:RSSModuleCommands.DownScrollItemCommand}" HorizontalAlignment="Right"   Height="40" VerticalAlignment="Top"/>
+        <Image IsHitTestVisible="False" Width="22" Height="22"  Source="Resources/Images/move_task_down.png"  HorizontalAlignment="Right" Margin="0,248,182,0" VerticalAlignment="Top"/>
+       <!----> <Button Inspire:ButtonImage.Image="Resources\Images\Ok16.png" Height="35" HorizontalAlignment="Right" Margin="0,0,141,10" Name="btnSaveFeed" Click="btnSaveFeed_Click" VerticalAlignment="Bottom" Width="128">Insert</Button>
+        <Button Inspire:ButtonImage.Image="Resources\Images\Cancel16.png" Height="35" HorizontalAlignment="Right" Margin="0,0,7,10" Name="btnCancelFeed" Click="btnCancelFeed_Click" VerticalAlignment="Bottom" Width="128">Cancel</Button>
+        <Inspire:InfoTextBox Foreground="{StaticResource Foreground}" TextBoxInfo="Enter the RSS Feed URL" Height="30" Margin="110,22.48,146,0" FontSize="14" Name="tbFeedUrl" VerticalAlignment="Top" />
+        <Button Inspire:ButtonImage.Image="Resources\Images\Add.png" Height="35" HorizontalAlignment="Right" Margin="0,19,12,0" Name="btnAddButton" VerticalAlignment="Top" Width="128" Command="{x:Static Commands:RSSModuleCommands.AddRSSFeedCommand}" >Add</Button>
+        <Label Height="35" FontSize="15" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="12,22.48,0,0" Name="label1" VerticalAlignment="Top" Width="106" Foreground="{StaticResource Foreground}" >RSS Feed URL:</Label><!---->
+        <Grid HorizontalAlignment="Right" Width="169" Margin="0,72,0,126">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="106*"/>
+                <ColumnDefinition Width="63*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="0" VerticalAlignment="Bottom" Height="28" HorizontalAlignment="Left" Name="label2" Foreground="{StaticResource Foreground}" Width="101">Title Font Family:</Label>
+            <ComboBox Grid.Row="1" Grid.ColumnSpan="2" x:Name="cbTitleFontFamily" ItemsSource="{Binding Source={StaticResource myFonts1}}" DropDownClosed="cbTitleFontFamily_DropDownClosed" Margin="0,0,12,2"><!---->
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" FontFamily="{Binding}" Foreground="{DynamicResource TextBrush}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+            <Label Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="0" Foreground="{StaticResource Foreground}" Height="28" HorizontalAlignment="Left" Name="label3" VerticalAlignment="Bottom" >Description Font Family:</Label>
+            <ComboBox Grid.Row="5" Grid.ColumnSpan="2" ItemsSource="{Binding Source={StaticResource myFonts2}}" DropDownClosed="cbDescriptionFontFamily_DropDownClosed" Name="cbDescriptionFontFamily" SelectedIndex="0" Margin="0,0,12,2"><!---->
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock FontFamily="{Binding}" Text="{Binding}" Foreground="{DynamicResource TextBrush}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
+            <Label Grid.Row="3" Grid.Column="0" VerticalContentAlignment="Center" Foreground="{StaticResource Foreground}" Height="28" HorizontalAlignment="Right" Name="label4" VerticalAlignment="Bottom" >Title Font Color:</Label>
+            <Grid Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Center">
+            <Border HorizontalAlignment="Center" Background="{StaticResource CheckerBrush}" BorderThickness="1" BorderBrush="Black" Width="22" Height="22" VerticalAlignment="Center" >
+                <Rectangle x:Name="TitleColorRectangle" Width="20" Height="20" MouseDown="ChangeTitleColor_Click" HorizontalAlignment="Left" Style="{x:Null}" />
+            </Border>
+            <!--<Actipro:ButtonGroup>
+                <Actipro:SplitButton Width="50" Height="20" ImageSourceSmall="/RSSModule;component/Resources/Images/FontColor.png">
+                    <StackPanel Width="170">
+                        <Actipro:ColorPickerGallery HorizontalAlignment="Center" InitialColumnCount="10" Command="{x:Static Commands:RSSModuleCommands.ApplyTitleForeground}">
+                            <Actipro:ColorPickerGallery.CategorizedItemsSource>
+                                <x:Array Type="{x:Type media:SolidColorBrush}">
+                                    <media:SolidColorBrush Color="#FFFFFF" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="{StaticResource Foreground}" />
+                                    <media:SolidColorBrush Color="#000000" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Black" />
+                                    <media:SolidColorBrush Color="#EEECE1" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Tan" />
+                                    <media:SolidColorBrush Color="#1F497D" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Dark Blue" />
+                                    <media:SolidColorBrush Color="#4F81BD" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Blue" />
+                                    <media:SolidColorBrush Color="#C0504D" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Red" />
+                                    <media:SolidColorBrush Color="#9BBB59" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Olive Green" />
+                                    <media:SolidColorBrush Color="#8064A2" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Purple" />
+                                    <media:SolidColorBrush Color="#4BACC6" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Aqua" />
+                                    <media:SolidColorBrush Color="#F79646" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Orange" />
+                                    <media:SolidColorBrush Color="#C00000" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Dark Red" />
+                                    <media:SolidColorBrush Color="#FF0000" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Red" />
+                                    <media:SolidColorBrush Color="#FFC000" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Orange" />
+                                    <media:SolidColorBrush Color="#FFFF00" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Yellow" />
+                                    <media:SolidColorBrush Color="#92D050" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Light Green" />
+                                    <media:SolidColorBrush Color="#00B050" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Green" />
+                                    <media:SolidColorBrush Color="#00B0F0" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Light Blue" />
+                                    <media:SolidColorBrush Color="#0070C0" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Blue" />
+                                    <media:SolidColorBrush Color="#002060" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Dark Blue" />
+                                    <media:SolidColorBrush Color="#7030A0" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Purple" />
+                                </x:Array>
+                            </Actipro:ColorPickerGallery.CategorizedItemsSource>
+                        </Actipro:ColorPickerGallery>
+                    </StackPanel>
+                </Actipro:SplitButton>
+            </Actipro:ButtonGroup>-->
+        </Grid>
+            <Label Grid.Row="7" Grid.Column="0" Foreground="{StaticResource Foreground}" Height="28" HorizontalAlignment="Right" Name="label5" VerticalAlignment="Bottom" >Description Color:</Label>
+            <Grid Grid.Row="7" Grid.Column="1" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Center">
+            <!--<Border BorderThickness="1" HorizontalAlignment="Center" BorderBrush="Black" Width="22" Height="22" Grid.Column="1" Grid.Row="7">
+
+        <Grid Margin="0,0,12,199" Width="50" HorizontalAlignment="Right" Height="27" VerticalAlignment="Bottom">-->
+            <Border HorizontalAlignment="Center" Background="{StaticResource CheckerBrush}" BorderThickness="1" BorderBrush="Black" Width="22" Height="22" VerticalAlignment="Center" >
+                <Rectangle x:Name="DescColorRectangle" Width="20" Height="20" MouseDown="ChangeDescriptionColor_Click" HorizontalAlignment="Left" Style="{x:Null}" />
+            </Border>
+            <!--<Actipro:ButtonGroup>
+                <Actipro:SplitButton Width="50" Height="20"  ImageSourceSmall="/RSSModule;component/Resources/Images/FontColor.png">
+                    <StackPanel Width="170">
+                        <Actipro:ColorPickerGallery HorizontalAlignment="Center" InitialColumnCount="10" Command="{x:Static Commands:RSSModuleCommands.ApplyDescriptionForeground}">
+                            <Actipro:ColorPickerGallery.CategorizedItemsSource>
+                                <x:Array Type="{x:Type media:SolidColorBrush}">
+                                    <media:SolidColorBrush Color="#FFFFFF" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="{StaticResource Foreground}" />
+                                    <media:SolidColorBrush Color="#000000" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Black" />
+                                    <media:SolidColorBrush Color="#EEECE1" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Tan" />
+                                    <media:SolidColorBrush Color="#1F497D" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Dark Blue" />
+                                    <media:SolidColorBrush Color="#4F81BD" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Blue" />
+                                    <media:SolidColorBrush Color="#C0504D" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Red" />
+                                    <media:SolidColorBrush Color="#9BBB59" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Olive Green" />
+                                    <media:SolidColorBrush Color="#8064A2" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Purple" />
+                                    <media:SolidColorBrush Color="#4BACC6" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Aqua" />
+                                    <media:SolidColorBrush Color="#F79646" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Orange" />
+                                    <media:SolidColorBrush Color="#C00000" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Dark Red" />
+                                    <media:SolidColorBrush Color="#FF0000" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Red" />
+                                    <media:SolidColorBrush Color="#FFC000" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Orange" />
+                                    <media:SolidColorBrush Color="#FFFF00" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Yellow" />
+                                    <media:SolidColorBrush Color="#92D050" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Light Green" />
+                                    <media:SolidColorBrush Color="#00B050" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Green" />
+                                    <media:SolidColorBrush Color="#00B0F0" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Light Blue" />
+                                    <media:SolidColorBrush Color="#0070C0" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Blue" />
+                                    <media:SolidColorBrush Color="#002060" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Dark Blue" />
+                                    <media:SolidColorBrush Color="#7030A0" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Purple" />
+                                </x:Array>
+                            </Actipro:ColorPickerGallery.CategorizedItemsSource>
+                        </Actipro:ColorPickerGallery>
+                    </StackPanel>
+                </Actipro:SplitButton>
+            </Actipro:ButtonGroup>-->
+        </Grid>
+            <Label Grid.Row="2" Grid.Column="0" Foreground="{StaticResource Foreground}" Height="28" HorizontalAlignment="Right" Name="label7" VerticalAlignment="Bottom" >Title Font Size:</Label>
+            <ComboBox Grid.Row="2" Grid.Column="1" x:Name="cbTitleFontSize" HorizontalAlignment="Left" Margin="6,4,7,3" />
+        <!---->
+            <Label Grid.Row="6" Grid.Column="0" Foreground="{StaticResource Foreground}" Height="28" HorizontalAlignment="Right" Name="label6" VerticalAlignment="Bottom" >Description Size:</Label>
+            <ComboBox Grid.Row="6" Grid.Column="1" x:Name="cbDecriptionSize"  HorizontalAlignment="Left" Margin="6,4,7,3"/><!---->
+        <Label Grid.Row="8" Grid.Column="0" Foreground="{StaticResource Foreground}" Height="28" HorizontalAlignment="Right" Name="label8" VerticalAlignment="Bottom" >Seconds per Page:</Label>
+            <ComboBox Grid.Row="8" Grid.Column="1" Name="cbFeedSpeed" DropDownClosed="cbFeedSpeed_DropDownClosed" HorizontalAlignment="Left" Margin="6,2,0,5" Width="51" />
+        <!---->
+        </Grid><CheckBox Content="RSS Touch Panel" ToolTip="Shows all RSS feeds in a list format that can be scrolled." Height="25" FontSize="16" Foreground="{StaticResource Foreground}" HorizontalAlignment="Left" Margin="501,385,0,0" Name="cbTouchPanel" VerticalAlignment="Top"  Width="169"/>
+    </Grid>
+</Window>

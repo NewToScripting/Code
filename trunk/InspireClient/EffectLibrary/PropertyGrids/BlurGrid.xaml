@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="EffectLibrary.PropertyGrids.BlurGrid"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Right" Margin="5" Text="Blur Radius:" />
+        <Slider Value="{Binding Effect.Radius}" Minimum="0" Maximum="100" Grid.Column="1" Margin="2" />
+    </Grid>
+</UserControl>

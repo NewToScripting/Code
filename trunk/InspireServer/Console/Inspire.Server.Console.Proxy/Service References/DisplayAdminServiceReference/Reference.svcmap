@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f0ab2d0f-4eea-4966-90da-640faf9d4fb2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Inspire.Server/svc/DisplayAdminService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DisplayAdminService2.wsdl" MetadataType="Wsdl" ID="b9bf8031-cd57-4c91-a0c8-2663f01f48f2" SourceId="1" SourceUrl="http://contender/Inspire.Server/svc/DisplayAdminService.svc?wsdl" />
+    <MetadataFile FileName="DisplayAdminService21.wsdl" MetadataType="Wsdl" ID="e0b70171-b1b8-426c-9f61-b2f232a0dc00" SourceId="1" SourceUrl="http://contender/Inspire.Server/svc/DisplayAdminService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="DisplayAdminService1.disco" MetadataType="Disco" ID="bbc6d3ff-e6be-4c7c-a9b4-ff01c8f9abbe" SourceId="1" SourceUrl="http://contender/Inspire.Server/svc/DisplayAdminService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

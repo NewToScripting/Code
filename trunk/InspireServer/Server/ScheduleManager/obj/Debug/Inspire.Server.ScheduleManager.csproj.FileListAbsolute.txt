@@ -1,0 +1,29 @@
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduleManager\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduleManager\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.ScheduleManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduleManager\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.ScheduleManager.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduleManager\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduleManager\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduleManager\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.ScheduleManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduleManager\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.ScheduleManager.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.ScheduleManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.ScheduleManager.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.ScheduledSlideManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.ScheduledSlideManager.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduleManager\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduleManager\obj\Debug\Inspire.Server.ScheduleManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduleManager\obj\Debug\Inspire.Server.ScheduleManager.pdb
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.ScheduleManager.dll
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.ScheduleManager.pdb
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.Common.dll
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.ScheduledSlideManager.dll
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\bin\Debug\Ionic.Zip.dll
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.Common.pdb
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.ScheduledSlideManager.pdb
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\obj\Debug\Inspire.Server.ScheduleManager.dll
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\obj\Debug\Inspire.Server.ScheduleManager.pdb
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\bin\Debug\System.Data.SqlServerCe.dll
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.SlideManager.dll
+C:\CODE\trunk\InspireServer\Server\ScheduleManager\bin\Debug\Inspire.Server.SlideManager.pdb

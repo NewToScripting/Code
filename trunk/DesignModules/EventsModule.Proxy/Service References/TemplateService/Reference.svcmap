@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="95c9fed6-464c-4c38-ba48-e94262091417" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://devserver2003/inspire.clientmanager/templateservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TemplateService.disco" MetadataType="Disco" ID="e64d4f2e-2ec1-40ab-9526-8011ec1c714e" SourceId="1" SourceUrl="http://devserver2003/Inspire.ClientManager/TemplateService.svc?disco" />
+    <MetadataFile FileName="TemplateService.xsd" MetadataType="Schema" ID="2cfde6e3-497d-4aa2-b5d6-01c8b35ff688" SourceId="1" SourceUrl="http://devserver2003/Inspire.ClientManager/TemplateService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TemplateService.wsdl" MetadataType="Wsdl" ID="e2bb7ff2-d0d0-46f9-b0f3-1b6bf91ac6d5" SourceId="1" SourceUrl="http://devserver2003/Inspire.ClientManager/TemplateService.svc?wsdl" />
+    <MetadataFile FileName="TemplateService1.xsd" MetadataType="Schema" ID="e75b1297-f992-4463-a078-39db50afafae" SourceId="1" SourceUrl="http://devserver2003/Inspire.ClientManager/TemplateService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TemplateService2.xsd" MetadataType="Schema" ID="9ae51e79-c66f-4049-ad6a-c95497fa58f4" SourceId="1" SourceUrl="http://devserver2003/Inspire.ClientManager/TemplateService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

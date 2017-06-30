@@ -1,0 +1,96 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1ACF1272-D3EE-46EE-AEFB-CB22C7C26E13}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Service.ServiceImplementation</RootNamespace>
+    <AssemblyName>Service.ServiceImplementation</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeneratedCode\ClientDisplayGroupsService.cs" />
+    <Compile Include="GeneratedCode\ClientDisplayPropertiesService.cs" />
+    <Compile Include="GeneratedCode\ClientDisplayService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business Logic\Service.BusinessEntities\Service.BusinessEntities.csproj">
+      <Project>{B435B276-E8FD-4243-868C-63CC905011AF}</Project>
+      <Name>Service.BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logic\Service.BusinessLogic\Service.BusinessLogic.csproj">
+      <Project>{CCFBD59B-9AF6-435C-B8A7-8733631FE82D}</Project>
+      <Name>Service.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service.DataContracts\Inspire.DisplayManger.DataContracts.csproj">
+      <Project>{1AFFE199-8B61-49A9-BCAC-626170CAC4E2}</Project>
+      <Name>Inspire.DisplayManger.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service.FaultContracts\Service.FaultContracts.csproj">
+      <Project>{86A5AD9D-0460-40ED-8DFE-3012E7F2050E}</Project>
+      <Name>Service.FaultContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service.MessageContracts\Service.MessageContracts.csproj">
+      <Project>{05AAE23D-E72E-4728-B8E9-1AEB1FC658F9}</Project>
+      <Name>Service.MessageContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service.ServiceContracts\Service.ServiceContracts.csproj">
+      <Project>{A3F209D9-380B-4427-8073-0B7CCB259559}</Project>
+      <Name>Service.ServiceContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Roles="ServiceRole" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

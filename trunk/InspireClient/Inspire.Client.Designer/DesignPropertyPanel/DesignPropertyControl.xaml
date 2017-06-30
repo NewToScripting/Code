@@ -1,0 +1,361 @@
+﻿<UserControl x:Class="Inspire.Client.Designer.DesignPropertyPanel.DesignPropertyControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:WpfRibbon="clr-namespace:DevComponents.WpfRibbon;assembly=DevComponents.WpfRibbon"
+    xmlns:d="http://schemas.microsoft.com/expression/interactivedesigner/2006" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:DesignPropertyPanel="clr-namespace:Inspire.Client.DesignWindow.DesignPropertyPanel" mc:Ignorable="d"
+    xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
+    xmlns:DesignPropertyPanel1="clr-namespace:Inspire.Client.Designer.DesignPropertyPanel"
+    xmlns:AnimationLibrary="clr-namespace:Inspire.AnimationLibrary;assembly=Inspire.AnimationLibrary">
+    <UserControl.Resources>
+        <Style x:Key="VisibleImage" TargetType="{x:Type Image}">
+            <Setter Property="Source" Value="Images/visible.png"/>
+            <Setter Property="Visibility" Value="Collapsed"></Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Green"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=IsVisible}" Value="true">
+                    <Setter Property="UIElement.Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        
+    <Style x:Key="HideImage" TargetType="{x:Type Image}">
+            <Setter Property="Source" Value="Images/visible.png"/>
+            <Setter Property="Visibility" Value="Collapsed"></Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Red"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=IsVisible}" Value="false">
+                    <Setter Property="UIElement.Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        
+        <Style x:Key="LockImage" TargetType="{x:Type Image}">
+            <Setter Property="Source" Value="Images/lock.png"/>
+            <Setter Property="Visibility" Value="Collapsed"></Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Red"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=IsLocked}" Value="true">
+                    <Setter Property="UIElement.Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        
+        <Style x:Key="UnlockImage" TargetType="{x:Type Image}">
+            <Setter Property="Source" Value="Images/unlock.png"/>
+            <Setter Property="Visibility" Value="Collapsed"></Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Green"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=IsLocked}" Value="false">
+                    <Setter Property="UIElement.Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="UnSelectableImage" TargetType="{x:Type Image}">
+            <Setter Property="Source" Value="Images/Selectable.png"/>
+            <Setter Property="Visibility" Value="Collapsed"></Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Green"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=IsHitTestVisible}" Value="true">
+                    <Setter Property="UIElement.Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="SelectableImage" TargetType="{x:Type Image}">
+            <Setter Property="Source" Value="Images/UnSelectable.png"/>
+            <Setter Property="Visibility" Value="Collapsed"></Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Red"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=IsHitTestVisible}" Value="false">
+                    <Setter Property="UIElement.Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <LinearGradientBrush x:Key="TextBoxBorder" EndPoint="0,20" StartPoint="0,0" MappingMode="Absolute">
+            <GradientStop Color="#ABADB3" Offset="0.05"/>
+            <GradientStop Color="#E2E3EA" Offset="0.07"/>
+            <GradientStop Color="#E3E9EF" Offset="1"/>
+        </LinearGradientBrush>
+        
+        <Style x:Key="TextBoxStyle1" BasedOn="{x:Null}" TargetType="{x:Type TextBox}">
+            <Setter Property="Foreground" Value="{StaticResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="Background" Value="{StaticResource {x:Static SystemColors.WindowBrushKey}}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource TextBoxBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="AllowDrop" Value="true"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Microsoft_Windows_Themes:ListBoxChrome x:Name="Bd" SnapsToDevicePixels="true" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" RenderFocused="{TemplateBinding IsKeyboardFocusWithin}" RenderMouseOver="{TemplateBinding IsMouseOver}">
+                            <ScrollViewer x:Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                        </Microsoft_Windows_Themes:ListBoxChrome>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="Bd" Value="{StaticResource {x:Static SystemColors.ControlBrushKey}}"/>
+                                <Setter Property="Foreground" Value="{StaticResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="LayerStyle" d:IsControlPart="True" TargetType="{x:Type ListBoxItem}">
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="OverridesDefaultStyle" Value="true" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                        <ControlTemplate.Resources>
+                            <Storyboard x:Key="HoverOn">
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="contentPresenterHover" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1" />
+                                </DoubleAnimationUsingKeyFrames>
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="contentPresenterHover" Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Opacity)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1" />
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                            <Storyboard x:Key="HoverOff">
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="contentPresenterHover" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0" />
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                            <Storyboard x:Key="SelectedOn">
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Opacity)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1" />
+                                </DoubleAnimationUsingKeyFrames>
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Selected" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1" />
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                            <Storyboard x:Key="SelectedOff">
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Selected" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0" />
+                                </DoubleAnimationUsingKeyFrames>
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Opacity)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0" />
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                            <Storyboard x:Key="HoverSelectedOn">
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="contentPresenterSelected" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1" />
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                            <Storyboard x:Key="HoverSelectedOff">
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="contentPresenterSelected" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0" />
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </ControlTemplate.Resources>
+                        <Grid SnapsToDevicePixels="true" Margin="5,0,0,0">
+                            <Border x:Name="Border" Background="{x:Null}" />
+                            <Border x:Name="Selected" Opacity="0" Background="#4C000000" BorderThickness="1,1,1,1" CornerRadius="2,2,2,2" Visibility="Collapsed">
+                                <Border.BorderBrush>
+                                    <SolidColorBrush Color="{StaticResource MainColor}" />
+                                </Border.BorderBrush>
+                                <Border BorderThickness="1,1,1,1" CornerRadius="1,1,1,1">
+                                    <Border.BorderBrush>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FF000000" Offset="0" />
+                                            <GradientStop Color="#FFFFFFFF" Offset="1" />
+                                            <GradientStop Color="#FF616161" Offset="0.219" />
+                                        </LinearGradientBrush>
+                                    </Border.BorderBrush>
+                                </Border>
+                            </Border>
+                            <ContentPresenter Margin="5,2,1,2" x:Name="contentPresenterHover" VerticalAlignment="Center" d:LayoutOverrides="Height" Opacity="0">
+                                <ContentPresenter.Effect>
+                                    <DropShadowEffect Color="{StaticResource MainColor}" Opacity="1" BlurRadius="10" />
+                                </ContentPresenter.Effect>
+                            </ContentPresenter>
+                            <ContentPresenter Margin="5,2,1,2" x:Name="contentPresenterSelected" VerticalAlignment="Center" d:LayoutOverrides="Height" Opacity="0">
+                                <ContentPresenter.Effect>
+                                    <DropShadowEffect Color="{StaticResource MainColor}" Opacity="1" BlurRadius="10" />
+                                </ContentPresenter.Effect>
+                            </ContentPresenter>
+                            <ContentPresenter Margin="5,2,1,2" x:Name="contentPresenter" VerticalAlignment="Center">
+                                <ContentPresenter.Effect>
+                                    <DropShadowEffect Color="{StaticResource MainColor}" Opacity="0" BlurRadius="4" />
+                                </ContentPresenter.Effect>
+                            </ContentPresenter>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+
+                            <MultiTrigger>
+                                <MultiTrigger.ExitActions>
+                                    <BeginStoryboard Storyboard="{StaticResource HoverSelectedOff}" x:Name="HoverSelectedOff_BeginStoryboard" />
+                                </MultiTrigger.ExitActions>
+                                <MultiTrigger.EnterActions>
+                                    <BeginStoryboard Storyboard="{StaticResource HoverSelectedOn}" x:Name="HoverSelectedOn_BeginStoryboard" />
+                                </MultiTrigger.EnterActions>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="Selector.IsSelected" Value="True" />
+                                    <Condition Property="IsMouseOver" Value="True" />
+                                </MultiTrigger.Conditions>
+                            </MultiTrigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsMouseOver" Value="True" />
+                                    <Condition Property="Selector.IsSelected" Value="False" />
+                                </MultiTrigger.Conditions>
+                                <MultiTrigger.ExitActions>
+                                    <BeginStoryboard x:Name="HoverOff_BeginStoryboard" Storyboard="{StaticResource HoverOff}" />
+                                </MultiTrigger.ExitActions>
+                                <MultiTrigger.EnterActions>
+                                    <BeginStoryboard Storyboard="{StaticResource HoverOn}" />
+                                </MultiTrigger.EnterActions>
+                            </MultiTrigger>
+
+                            <Trigger Property="IsSelected" Value="true">
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard x:Name="SelectedOff_BeginStoryboard" Storyboard="{StaticResource SelectedOff}" />
+                                </Trigger.ExitActions>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard x:Name="SelectedOn_BeginStoryboard" Storyboard="{StaticResource SelectedOn}" />
+                                </Trigger.EnterActions>
+                            </Trigger>
+
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{StaticResource DisabledForegroundBrush}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground">
+                <Setter.Value>
+                    <SolidColorBrush Color="{StaticResource WhiteColor}" />
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="Selector.IsSelected" Value="True">
+                    <Setter Property="Foreground">
+                        <Setter.Value>
+                            <SolidColorBrush Color="{StaticResource MainColor}" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <DataTrigger Binding="{Binding Path=IsSelected}" Value="True">
+                    <Setter Property="Selector.IsSelected" Value="True"/>
+                </DataTrigger>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsMouseOver" Value="True" />
+                        <Condition Property="Selector.IsSelected" Value="False" />
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Foreground">
+                        <Setter.Value>
+                            <SolidColorBrush Color="{StaticResource WhiteColor}" />
+                        </Setter.Value>
+                    </Setter>
+                </MultiTrigger>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="Selector.IsSelected" Value="True" />
+                        <Condition Property="IsMouseOver" Value="True" />
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Foreground">
+                        <Setter.Value>
+                            <SolidColorBrush Color="{StaticResource WhiteColor}" />
+                        </Setter.Value>
+                    </Setter>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <DataTemplate x:Key="TitleTemplate">
+        <ListBoxItem x:Name="lbiLayer" Style="{StaticResource LayerStyle}" PreviewMouseDown="grLayer_MouseDown" Background="{StaticResource SunkenBackground}" IsHitTestVisible="True" >
+                <Border x:Name="btnLayer" BorderBrush="White" BorderThickness="1" Background="#01000000">
+                    <Grid x:Name="grLayer" IsEnabled="True" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="20"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Column="2" Margin="2" VerticalAlignment="Center" Style="{StaticResource TextBoxStyle1}" BorderThickness="0" IsReadOnly="True" Foreground="White" Background="Transparent" FontWeight="Bold" Text="{Binding Path=Content.Tag}" MouseDoubleClick="LayerTextBox_MouseDoubleClick" LostFocus="LayerTextBox_LostFocus" />
+                        <Image Grid.Column="0" x:Name="imgLock" Margin="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{StaticResource LockImage}" Width="16" PreviewMouseLeftButtonDown="Lock_PreviewMouseLeftButtonDown" />
+                        <Image Grid.Column="0" x:Name="imgUnLock" Margin="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{StaticResource UnlockImage}" Width="16" PreviewMouseLeftButtonDown="UnLock_PreviewMouseLeftButtonDown" />
+                        <Image Grid.Column="1" x:Name="imgUnSelectable" Margin="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{StaticResource UnSelectableImage}" Width="16" PreviewMouseLeftButtonDown="imgUnSelectable_PreviewMouseLeftButtonDown" />
+                        <Image Grid.Column="1" x:Name="imgSelectable" Margin="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{StaticResource SelectableImage}" Width="16" PreviewMouseLeftButtonDown="imgSelectable_PreviewMouseLeftButtonDown" />
+                        <Image Grid.Column="3" x:Name="imgVisible" Margin="2" Width="16" HorizontalAlignment="Right" Style="{StaticResource VisibleImage}" PreviewMouseLeftButtonDown="Visible_MouseLeftButtonUp"/>
+                        <Image Grid.Column="3" x:Name="imgHide" Margin="2" Width="16" HorizontalAlignment="Right" Style="{StaticResource HideImage}" PreviewMouseLeftButtonDown="Hide_MouseLeftButtonUp"/>
+                        <TextBox x:Name="txtGuid" Text="{Binding Path=GUID}" Visibility="Collapsed"></TextBox>
+                    </Grid>
+                </Border>
+            </ListBoxItem>
+        </DataTemplate>
+
+        <DataTemplate x:Key="TabTemplate">
+            <ContentControl Content="{Binding}"/>
+            <!--<Controls:TransitionElement >
+                <Controls:TransitionElement.Transition>
+                    <Transitions:FadeAndBlurTransition />
+                </Controls:TransitionElement.Transition>
+            </Controls:TransitionElement>-->
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <WpfRibbon:NavigationPane Tag="Properties" ContentTemplate="{StaticResource TabTemplate}" FlowDirection="LeftToRight" HorizontalAlignment="Right" Width="268" Background="{StaticResource WindowBackgroundBrush}">
+        <!--<WpfRibbon:PaneItem Header="Components" IsSelected="True">
+            <DesignPropertyPanel1:DesignModuleControl></DesignPropertyPanel1:DesignModuleControl>
+        </WpfRibbon:PaneItem>-->
+        <WpfRibbon:PaneItem Header="Properties" x:Name="PropertiesPane">
+            <TabControl x:Name="PropertyLayerTabControl" TabStripPlacement="Top" VerticalAlignment="Stretch" Background="{StaticResource WindowBackgroundBrush}">
+                <TabItem Header="Layers" VerticalAlignment="Stretch" Foreground="{StaticResource Foreground}">
+                    <ListBox Background="{StaticResource WindowBackgroundBrush}" x:Name="LayerPanel" VirtualizingStackPanel.IsVirtualizing="False" VirtualizingStackPanel.VirtualizationMode="Recycling"  ScrollViewer.VerticalScrollBarVisibility="Visible" ItemTemplate="{StaticResource TitleTemplate}"/>
+                </TabItem>
+                <TabItem Header="Properties" x:Name="PropertyTab" Foreground="{StaticResource Foreground}">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <Border BorderThickness="0,0,5,0">
+                            <Grid>
+                                <Grid x:Name="CanvasPropertyGrid" VerticalAlignment="Stretch" Background="{StaticResource WindowBackgroundBrush}">
+                                    <DesignPropertyPanel1:CanvasPropertyPanel x:Name="CanvasPropPanel" Background="{StaticResource WindowBackgroundBrush}"></DesignPropertyPanel1:CanvasPropertyPanel>
+                                </Grid>
+                                <DesignPropertyPanel1:PropertyPanelPart x:Name="ControlPropertyGrid" VerticalAlignment="Stretch"/>
+                            </Grid>
+                        </Border>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Animations" VerticalAlignment="Stretch" Foreground="{StaticResource Foreground}">
+                    <AnimationLibrary:StoryBoardSelector Background="{StaticResource WindowBackgroundBrush}" x:Name="AnimationPanel" VerticalAlignment="Top" />
+                </TabItem>
+            </TabControl>
+            </WpfRibbon:PaneItem>
+        <WpfRibbon:PaneItem IsSelected="True" Header="Slides">
+            <Grid Name="SlidePanel" VerticalAlignment="Stretch">
+                <DesignPropertyPanel:DesignSlideControl x:Name="designSlideControl" SnapsToDevicePixels="True" VerticalAlignment="Stretch" ></DesignPropertyPanel:DesignSlideControl>
+            </Grid>
+        </WpfRibbon:PaneItem>
+    </WpfRibbon:NavigationPane>
+</UserControl>

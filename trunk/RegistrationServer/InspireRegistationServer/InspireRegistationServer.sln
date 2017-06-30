@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InspireRegistationServer", "InspireRegistationServer\InspireRegistationServer.csproj", "{61FE83B5-C906-4679-A57C-C379C6CB8268}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InspireRegistationServerSite", "InspireRegistationServerSite\", "{C72A6566-3075-4896-82A5-0570FEEBF4EF}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.0"
+		ProjectReferences = "{61FE83B5-C906-4679-A57C-C379C6CB8268}|InspireRegistationServer.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/InspireRegistationServerSite"
+		Debug.AspNetCompiler.PhysicalPath = "InspireRegistationServerSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\InspireRegistationServerSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/InspireRegistationServerSite"
+		Release.AspNetCompiler.PhysicalPath = "InspireRegistationServerSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\InspireRegistationServerSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49206"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{90570873-FF76-4755-98C1-F638DE266FD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{44EF2755-B68D-4B32-AFAE-F0A4C0649415}"
+	ProjectSection(SolutionItems) = preProject
+		InspireRegistationServer.vsmdi = InspireRegistationServer.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = InspireRegistationServer.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61FE83B5-C906-4679-A57C-C379C6CB8268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61FE83B5-C906-4679-A57C-C379C6CB8268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61FE83B5-C906-4679-A57C-C379C6CB8268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61FE83B5-C906-4679-A57C-C379C6CB8268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C72A6566-3075-4896-82A5-0570FEEBF4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C72A6566-3075-4896-82A5-0570FEEBF4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C72A6566-3075-4896-82A5-0570FEEBF4EF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{C72A6566-3075-4896-82A5-0570FEEBF4EF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{90570873-FF76-4755-98C1-F638DE266FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90570873-FF76-4755-98C1-F638DE266FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90570873-FF76-4755-98C1-F638DE266FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90570873-FF76-4755-98C1-F638DE266FD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

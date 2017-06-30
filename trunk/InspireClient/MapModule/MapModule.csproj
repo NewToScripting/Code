@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA0F05DD-F187-4322-82C2-012B3810675F}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MapModule</RootNamespace>
+    <AssemblyName>MapModule</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\InspireClient\bin\Debug\Modules\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\InspireClient\bin\Release\Modules\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Inspire.Key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InfoStrat.VE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a464bcc72081fceb, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\InfoStrat.VE.dll</HintPath>
+    </Reference>
+    <Reference Include="InfoStrat.VE.Windows7Touch, Version=2.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\InfoStrat.VE.Windows7Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="InfoStrat.VE.WPFTouch">
+      <HintPath>..\Lib\InfoStrat.VE.WPFTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MapPoint.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.MapPoint.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.MapPoint.Geometry, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.MapPoint.Geometry.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.MapPoint.Rendering3D, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.MapPoint.Rendering3D.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.MapPoint.Rendering3D.Utility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.MapPoint.Rendering3D.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Windows7.Multitouch, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Windows7.Multitouch.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows7.Multitouch.WPF, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Windows7.Multitouch.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPushPin.xaml.cs">
+      <DependentUpon>AddPushPin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CategorySelecter.xaml.cs">
+      <DependentUpon>CategorySelecter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CategorySlider.xaml.cs">
+      <DependentUpon>CategorySlider.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DirectionItem.cs" />
+    <Compile Include="DirectionsControl.xaml.cs">
+      <DependentUpon>DirectionsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicMarker.xaml.cs">
+      <DependentUpon>DynamicMarker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InspireLocationDetails.xaml.cs">
+      <DependentUpon>InspireLocationDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InspireMapCategories.cs" />
+    <Compile Include="InspireMapLocation.cs" />
+    <Compile Include="InspireMapLocationCollection.cs" />
+    <Compile Include="InspirePushPin.cs" />
+    <Compile Include="MapAddress.cs" />
+    <Compile Include="MapCategory.cs" />
+    <Compile Include="MapHelpers.cs" />
+    <Compile Include="MapRequestManager.cs" />
+    <Compile Include="MarkerChooser.xaml.cs">
+      <DependentUpon>MarkerChooser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForm.xaml.cs">
+      <DependentUpon>PrintForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPanel.xaml.cs">
+      <DependentUpon>PropertyPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PushPointPicker.xaml.cs">
+      <DependentUpon>PushPointPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchControl.xaml.cs">
+      <DependentUpon>SearchControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ServerSettings.cs" />
+    <Compile Include="Service References\MapsSearchService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RouteService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SubCategorySlider.xaml.cs">
+      <DependentUpon>SubCategorySlider.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VEMapManager.cs" />
+    <Page Include="AddPushPin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CategorySelecter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CategorySlider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DirectionsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DynamicMarker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InspireLocationDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MapControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="DesignMapModule.cs" />
+    <Compile Include="MapContentControl.cs" />
+    <Compile Include="MapControl.xaml.cs">
+      <DependentUpon>MapControl.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MarkerChooser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrintForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProjectDataSources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <ContainsDataSources>True</ContainsDataSources>
+    </Page>
+    <Page Include="Properties\DesignTimeResources.xaml" Condition="'$(DesignTime)'=='true' OR ('$(SolutionPath)'!='' AND Exists('$(SolutionPath)') AND '$(BuildingInsideVisualStudio)'!='true' AND '$(BuildingInsideExpressionBlend)'!='true')">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <ContainsDesignTimeResources>true</ContainsDesignTimeResources>
+    </Page>
+    <Page Include="PropertyPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PushPointPicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Markers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubCategorySlider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Inspire.Key.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Service References\MapsSearchService\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MapsSearchService\common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MapsSearchService\contracts.wsdl" />
+    <None Include="Service References\MapsSearchService\contracts.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MapsSearchService\MapModule.MapsSearchService.SearchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MapsSearchService\search.wsdl" />
+    <None Include="Service References\MapsSearchService\search.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MapsSearchService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RouteService\common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RouteService\contracts.wsdl" />
+    <None Include="Service References\RouteService\contracts.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RouteService\MapModule.RouteService.MajorRoutesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RouteService\MapModule.RouteService.RouteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RouteService\route.wsdl" />
+    <None Include="Service References\RouteService\route.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RouteService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Cancel16.png" />
+    <Resource Include="Resources\Images\Ok16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inspire.Common\Inspire.Common.csproj">
+      <Project>{DA9210DD-D24D-468A-9083-F3D953E41C63}</Project>
+      <Name>Inspire.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire\Inspire.csproj">
+      <Project>{84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B}</Project>
+      <Name>Inspire</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transitionals\Transitionals.csproj">
+      <Project>{CC0300A8-D5D3-4F1F-80BD-9FEF1ACFC764}</Project>
+      <Name>Transitionals</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Markers\1.png" />
+    <Resource Include="Resources\Images\Markers\10.png" />
+    <Resource Include="Resources\Images\Markers\11.png" />
+    <Resource Include="Resources\Images\Markers\12.png" />
+    <Resource Include="Resources\Images\Markers\13.png" />
+    <Resource Include="Resources\Images\Markers\14.png" />
+    <Resource Include="Resources\Images\Markers\15.png" />
+    <Resource Include="Resources\Images\Markers\16.png" />
+    <Resource Include="Resources\Images\Markers\17.png" />
+    <Resource Include="Resources\Images\Markers\18.png" />
+    <Resource Include="Resources\Images\Markers\19.png" />
+    <Resource Include="Resources\Images\Markers\2.png" />
+    <Resource Include="Resources\Images\Markers\20.png" />
+    <Resource Include="Resources\Images\Markers\21.png" />
+    <Resource Include="Resources\Images\Markers\22.png" />
+    <Resource Include="Resources\Images\Markers\23.png" />
+    <Resource Include="Resources\Images\Markers\24.png" />
+    <Resource Include="Resources\Images\Markers\25.png" />
+    <Resource Include="Resources\Images\Markers\26.png" />
+    <Resource Include="Resources\Images\Markers\27.png" />
+    <Resource Include="Resources\Images\Markers\28.png" />
+    <Resource Include="Resources\Images\Markers\29.png" />
+    <Resource Include="Resources\Images\Markers\3.png" />
+    <Resource Include="Resources\Images\Markers\30.png" />
+    <Resource Include="Resources\Images\Markers\31.png" />
+    <Resource Include="Resources\Images\Markers\32.png" />
+    <Resource Include="Resources\Images\Markers\33.png" />
+    <Resource Include="Resources\Images\Markers\34.png" />
+    <Resource Include="Resources\Images\Markers\35.png" />
+    <Resource Include="Resources\Images\Markers\36.png" />
+    <Resource Include="Resources\Images\Markers\37.png" />
+    <Resource Include="Resources\Images\Markers\38.png" />
+    <Resource Include="Resources\Images\Markers\39.png" />
+    <Resource Include="Resources\Images\Markers\4.png" />
+    <Resource Include="Resources\Images\Markers\40.png" />
+    <Resource Include="Resources\Images\Markers\41.png" />
+    <Resource Include="Resources\Images\Markers\42.png" />
+    <Resource Include="Resources\Images\Markers\43.png" />
+    <Resource Include="Resources\Images\Markers\44.png" />
+    <Resource Include="Resources\Images\Markers\45.png" />
+    <Resource Include="Resources\Images\Markers\46.png" />
+    <Resource Include="Resources\Images\Markers\47.png" />
+    <Resource Include="Resources\Images\Markers\48.png" />
+    <Resource Include="Resources\Images\Markers\49.png" />
+    <Resource Include="Resources\Images\Markers\5.png" />
+    <Resource Include="Resources\Images\Markers\50.png" />
+    <Resource Include="Resources\Images\Markers\51.png" />
+    <Resource Include="Resources\Images\Markers\52.png" />
+    <Resource Include="Resources\Images\Markers\53.png" />
+    <Resource Include="Resources\Images\Markers\54.png" />
+    <Resource Include="Resources\Images\Markers\55.png" />
+    <Resource Include="Resources\Images\Markers\56.png" />
+    <Resource Include="Resources\Images\Markers\57.png" />
+    <Resource Include="Resources\Images\Markers\58.png" />
+    <Resource Include="Resources\Images\Markers\59.png" />
+    <Resource Include="Resources\Images\Markers\6.png" />
+    <Resource Include="Resources\Images\Markers\60.png" />
+    <Resource Include="Resources\Images\Markers\61.png" />
+    <Resource Include="Resources\Images\Markers\62.png" />
+    <Resource Include="Resources\Images\Markers\63.png" />
+    <Resource Include="Resources\Images\Markers\64.png" />
+    <Resource Include="Resources\Images\Markers\65.png" />
+    <Resource Include="Resources\Images\Markers\66.png" />
+    <Resource Include="Resources\Images\Markers\67.png" />
+    <Resource Include="Resources\Images\Markers\68.png" />
+    <Resource Include="Resources\Images\Markers\69.png" />
+    <Resource Include="Resources\Images\Markers\7.png" />
+    <Resource Include="Resources\Images\Markers\70.png" />
+    <Resource Include="Resources\Images\Markers\71.png" />
+    <Resource Include="Resources\Images\Markers\72.png" />
+    <Resource Include="Resources\Images\Markers\73.png" />
+    <Resource Include="Resources\Images\Markers\74.png" />
+    <Resource Include="Resources\Images\Markers\75.png" />
+    <Resource Include="Resources\Images\Markers\76.png" />
+    <Resource Include="Resources\Images\Markers\77.png" />
+    <Resource Include="Resources\Images\Markers\78.png" />
+    <Resource Include="Resources\Images\Markers\79.png" />
+    <Resource Include="Resources\Images\Markers\8.png" />
+    <Resource Include="Resources\Images\Markers\80.png" />
+    <Resource Include="Resources\Images\Markers\81.png" />
+    <Resource Include="Resources\Images\Markers\82.png" />
+    <Resource Include="Resources\Images\Markers\83.png" />
+    <Resource Include="Resources\Images\Markers\84.png" />
+    <Resource Include="Resources\Images\Markers\85.png" />
+    <Resource Include="Resources\Images\Markers\86.png" />
+    <Resource Include="Resources\Images\Markers\87.png" />
+    <Resource Include="Resources\Images\Markers\88.png" />
+    <Resource Include="Resources\Images\Markers\89.png" />
+    <Resource Include="Resources\Images\Markers\9.png" />
+    <Resource Include="Resources\Images\Markers\90.png" />
+    <Resource Include="Resources\Images\Markers\91.png" />
+    <Resource Include="Resources\Images\Markers\92.png" />
+    <Resource Include="Resources\Images\Markers\93.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\cancel24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <DesignData Include="SampleData\InspireMapLocationCollectionSampleData.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MapsSearchService\" />
+    <WCFMetadataStorage Include="Service References\RouteService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MapsSearchService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MapsSearchService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MapsSearchService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Markers\100.png" />
+    <Resource Include="Resources\Images\Markers\101.png" />
+    <Resource Include="Resources\Images\Markers\102.png" />
+    <Resource Include="Resources\Images\Markers\94.png" />
+    <Resource Include="Resources\Images\Markers\95.png" />
+    <Resource Include="Resources\Images\Markers\96.png" />
+    <Resource Include="Resources\Images\Markers\97.png" />
+    <Resource Include="Resources\Images\Markers\98.png" />
+    <Resource Include="Resources\Images\Markers\99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Add.png" />
+    <Resource Include="Resources\Images\search.png" />
+    <Resource Include="Resources\Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RouteService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RouteService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RouteService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

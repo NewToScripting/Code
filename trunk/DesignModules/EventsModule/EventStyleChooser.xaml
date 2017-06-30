@@ -1,0 +1,50 @@
+﻿<Window x:Class="EventsModule.EventStyleChooser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EventStyleChooser" Height="529.5" Width="640" Background="#FF111111" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="127.499000549316,154.52799987793" StartPoint="117.924003601074,149" MappingMode="Absolute" SpreadMethod="Repeat">
+                <GradientStop Color="#00000000"/>
+                <GradientStop Color="#00000000" Offset="1"/>
+                <GradientStop Color="#00000000" Offset="0.498"/>
+                <GradientStop Color="#00000000" Offset="0.55500000715255737"/>
+                <GradientStop Color="#FF000000" Offset="0.527999997138977"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid Margin="0,0,0,49.5">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="119.947998046875,156.550994873047" StartPoint="125.474998474121,146.977005004883" MappingMode="Absolute" SpreadMethod="Repeat">
+                    <GradientStop Color="#00000000"/>
+                    <GradientStop Color="#00000000" Offset="1"/>
+                    <GradientStop Color="#00000000" Offset="0.498"/>
+                    <GradientStop Color="#00000000" Offset="0.55500000715255737"/>
+                    <GradientStop Color="#FF000000" Offset="0.527999997138977"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.466*"/>
+                <ColumnDefinition Width="0.534*"/>
+            </Grid.ColumnDefinitions>
+            <Button Margin="56.432,181.5,73.716,100.989" Style="{x:Null}" Background="Transparent" Grid.Column="1" Name="btnRoomBoard" Click="btnRoomBoard_Click">
+                <Button.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="30" ShadowDepth="0" Direction="222" />
+                </Button.Effect>
+                <Image Source="Resources\Images\RoomBoard.jpg" Stretch="Fill" Grid.Column="1" />
+            </Button>
+            <Button Margin="54.216,105,62.068,27.237" Style="{x:Null}" Background="Transparent" Name="btnDirectory" Click="btnDirectory_Click">
+                <Button.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="30" ShadowDepth="0" Direction="222" />
+                </Button.Effect>
+                <Image Source="Resources\Images\Directory.jpg" Stretch="Fill">
+                </Image>
+            </Button>
+            <TextBlock Margin="40.716,34.5,22.716,0" VerticalAlignment="Top" Height="30" Grid.ColumnSpan="2" FontSize="22.667" FontWeight="Bold" TextWrapping="Wrap" Foreground="White">
+			<TextBlock.Effect>
+				<DropShadowEffect Color="Black" Direction="262" ShadowDepth="3" />
+			</TextBlock.Effect><Run Text="Select the style of events you would like to display"/></TextBlock>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="34.5,0,0,8" VerticalAlignment="Bottom" Width="214.5" Height="56.5" FontSize="21.333" FontWeight="Bold" Foreground="#FFFCFAFA" TextAlignment="Center" TextWrapping="Wrap"><Run Text="Directory Style"/><LineBreak/><Run FontSize="13.333" Text="(Multiple Events)"/></TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,74.5,8" VerticalAlignment="Bottom" Width="214.5" Height="56.5" FontSize="21.333" FontWeight="Bold" Foreground="#FFFCFAFA" TextAlignment="Center" TextWrapping="Wrap"><Run Text="Room Board Style"/><LineBreak/><Run FontSize="13.333" Text="(Single Event)"/></TextBlock>
+    </Grid>
+</Window>

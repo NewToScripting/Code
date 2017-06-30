@@ -1,0 +1,31 @@
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\bin\Debug\Inspire.Server.Console.Events.Proxy.dll.config
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\bin\Debug\Inspire.Server.Console.Events.Proxy.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\bin\Debug\Inspire.Server.Console.Events.Proxy.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.Properties.Resources.resources
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.csproj.GenerateResource.Cache
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\bin\Debug\Inspire.Server.Console.Events.Proxy.dll.config
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\bin\Debug\Inspire.Server.Console.Events.Proxy.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\bin\Debug\Inspire.Server.Console.Events.Proxy.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.Properties.Resources.resources
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.csproj.GenerateResource.Cache
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.Properties.Resources.resources
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.csproj.GenerateResource.Cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\bin\Debug\Inspire.Server.Console.Events.Proxy.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Events.Proxy\bin\Debug\Inspire.Server.Console.Events.Proxy.pdb
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Events.Proxy\bin\Debug\Inspire.Server.Console.Events.Proxy.dll
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Events.Proxy\bin\Debug\Inspire.Server.Console.Events.Proxy.pdb
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Events.Proxy\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.Properties.Resources.resources
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Events.Proxy\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Events.Proxy\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.dll
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Events.Proxy\obj\Debug\Inspire.Server.Console.Events.Proxy.pdb

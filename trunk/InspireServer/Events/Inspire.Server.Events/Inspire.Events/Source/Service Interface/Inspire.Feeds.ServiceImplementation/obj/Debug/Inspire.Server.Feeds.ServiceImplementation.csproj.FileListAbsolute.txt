@@ -1,0 +1,57 @@
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.ServiceImplementation.ServiceImplementation.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.ServiceImplementation.ServiceImplementation.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.BusinessLogic.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.MessageContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.ServiceContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.MessageContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.BusinessLogic.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.ServiceContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\obj\Debug\Inspire.Server.Feeds.ServiceImplementation.ServiceImplementation.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\obj\Debug\Inspire.Server.Feeds.ServiceImplementation.ServiceImplementation.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.ServiceImplementation.ServiceImplementation.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.ServiceImplementation.ServiceImplementation.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.BusinessLogic.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.DataContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.FaultContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.MessageContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.ServiceContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.DataAccess.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.MessageContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.BusinessLogic.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.ServiceContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.DataAccess.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.DataContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\obj\Debug\Inspire.Server.Feeds.ServiceImplementation.ServiceImplementation.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\obj\Debug\Inspire.Server.Feeds.ServiceImplementation.ServiceImplementation.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.ServiceImplementation.ServiceImplementation.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.ServiceImplementation.ServiceImplementation.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.BusinessEntities.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.BusinessLogic.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.FaultContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.MessageContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.ServiceContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.DataAccess.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.FaultContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.BusinessEntities.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.MessageContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.BusinessLogic.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.ServiceContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.DataAccess.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\bin\Debug\Inspire.Server.Feeds.DataContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\obj\Debug\Inspire.Server.Feeds.ServiceImplementation.ServiceImplementation.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\obj\Debug\Inspire.Server.Feeds.ServiceImplementation.ServiceImplementation.pdb

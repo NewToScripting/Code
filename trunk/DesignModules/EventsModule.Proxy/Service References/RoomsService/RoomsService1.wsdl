@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://schemas.inspiredisplays.com" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="RoomsService" targetNamespace="http://schemas.inspiredisplays.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/Imports">
+      <xsd:import schemaLocation="http://capehorn/Inspire.Events/Svc/RoomService.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com" />
+      <xsd:import schemaLocation="http://capehorn/Inspire.Events/Svc/RoomService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetRoomsRequestMessage" />
+  <wsdl:message name="GetRoomsResponseMessage">
+    <wsdl:part name="Rooms" element="tns:Rooms" />
+  </wsdl:message>
+  <wsdl:message name="RoomsServiceContract_GetRooms_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetRoomsFromDisplayIDRequestMessage">
+    <wsdl:part name="DisplayID" element="tns:DisplayID" />
+  </wsdl:message>
+  <wsdl:message name="GetRoomsFromDisplayIDResponseMessage">
+    <wsdl:part name="Rooms" element="tns:Rooms" />
+  </wsdl:message>
+  <wsdl:message name="RoomsServiceContract_GetRoomsFromDisplayID_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddRoomRequestMessage">
+    <wsdl:part name="parameters" element="tns:AddRoomRequestMessage" />
+  </wsdl:message>
+  <wsdl:message name="AddRoomResponseMessage" />
+  <wsdl:message name="RoomsServiceContract_AddRoom_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddRoomToDisplayAssnRequestMessage">
+    <wsdl:part name="parameters" element="tns:AddRoomToDisplayAssnRequestMessage" />
+  </wsdl:message>
+  <wsdl:message name="AddRoomToDisplayAssnResponseMessage" />
+  <wsdl:message name="RoomsServiceContract_AddRoomToDisplayAssn_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRoomToDisplayAssnRequestMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoomToDisplayAssnRequestMessage" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRoomToDisplayAssnResponseMessage" />
+  <wsdl:message name="RoomsServiceContract_DeleteRoomToDisplayAssn_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRoomRequestMessage">
+    <wsdl:part name="GUID" element="tns:GUID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRoomResponseMessage" />
+  <wsdl:message name="RoomsServiceContract_DeleteRoom_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetAliasesRequestMessage">
+    <wsdl:part name="RoomID" element="tns:RoomID" />
+  </wsdl:message>
+  <wsdl:message name="GetAliasesResponseMessage">
+    <wsdl:part name="Aliases" element="tns:Aliases" />
+  </wsdl:message>
+  <wsdl:message name="RoomsServiceContract_GetAliases_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddAliasRequestMessage">
+    <wsdl:part name="GroupAlias" element="tns:GroupAlias" />
+  </wsdl:message>
+  <wsdl:message name="AddAliasResponseMessage" />
+  <wsdl:message name="RoomsServiceContract_AddAlias_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAliasRequestMessage">
+    <wsdl:part name="AliasID" element="tns:AliasID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAliasResponseMessage" />
+  <wsdl:message name="RoomsServiceContract_DeleteAlias_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="RoomsServiceContract">
+    <wsdl:operation name="GetRooms">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract1/GetRooms" name="GetRoomsRequestMessage" message="tns:GetRoomsRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/GetRoomsResponse" name="GetRoomsResponseMessage" message="tns:GetRoomsResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/GetRoomsGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:RoomsServiceContract_GetRooms_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomsFromDisplayID">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract1/GetRoomsFromDisplayID" name="GetRoomsFromDisplayIDRequestMessage" message="tns:GetRoomsFromDisplayIDRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/GetRoomsFromDisplayIDResponse" name="GetRoomsFromDisplayIDResponseMessage" message="tns:GetRoomsFromDisplayIDResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/GetRoomsFromDisplayIDGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:RoomsServiceContract_GetRoomsFromDisplayID_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRoom">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract1/AddRoom" name="AddRoomRequestMessage" message="tns:AddRoomRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/AddRoomResponse" name="AddRoomResponseMessage" message="tns:AddRoomResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/AddRoomGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:RoomsServiceContract_AddRoom_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRoomToDisplayAssn">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/AddRoomToDisplayAssn" name="AddRoomToDisplayAssnRequestMessage" message="tns:AddRoomToDisplayAssnRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/AddRoomToDisplayAssnResponse" name="AddRoomToDisplayAssnResponseMessage" message="tns:AddRoomToDisplayAssnResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/AddRoomToDisplayAssnGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:RoomsServiceContract_AddRoomToDisplayAssn_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoomToDisplayAssn">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/DeleteRoomToDisplayAssn" name="DeleteRoomToDisplayAssnRequestMessage" message="tns:DeleteRoomToDisplayAssnRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/DeleteRoomToDisplayAssnResponse" name="DeleteRoomToDisplayAssnResponseMessage" message="tns:DeleteRoomToDisplayAssnResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/DeleteRoomToDisplayAssnGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:RoomsServiceContract_DeleteRoomToDisplayAssn_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoom">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/DeleteRoom" name="DeleteRoomRequestMessage" message="tns:DeleteRoomRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/DeleteRoomResponse" name="DeleteRoomResponseMessage" message="tns:DeleteRoomResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/DeleteRoomGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:RoomsServiceContract_DeleteRoom_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAliases">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/GetAliases" name="GetAliasesRequestMessage" message="tns:GetAliasesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/GetAliasesResponse" name="GetAliasesResponseMessage" message="tns:GetAliasesResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/GetAliasesGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:RoomsServiceContract_GetAliases_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAlias">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/AddAlias" name="AddAliasRequestMessage" message="tns:AddAliasRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/AddAliasResponse" name="AddAliasResponseMessage" message="tns:AddAliasResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/AddAliasGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:RoomsServiceContract_AddAlias_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlias">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/DeleteAlias" name="DeleteAliasRequestMessage" message="tns:DeleteAliasRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/DeleteAliasResponse" name="DeleteAliasResponseMessage" message="tns:DeleteAliasResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/RoomsServiceContract/DeleteAliasGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:RoomsServiceContract_DeleteAlias_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RoomsEndpoint" type="tns:RoomsServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRooms">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract1/GetRooms" style="document" />
+      <wsdl:input name="GetRoomsRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetRoomsResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomsFromDisplayID">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract1/GetRoomsFromDisplayID" style="document" />
+      <wsdl:input name="GetRoomsFromDisplayIDRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetRoomsFromDisplayIDResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddRoom">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract1/AddRoom" style="document" />
+      <wsdl:input name="AddRoomRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddRoomResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddRoomToDisplayAssn">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/RoomsServiceContract/AddRoomToDisplayAssn" style="document" />
+      <wsdl:input name="AddRoomToDisplayAssnRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddRoomToDisplayAssnResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoomToDisplayAssn">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/RoomsServiceContract/DeleteRoomToDisplayAssn" style="document" />
+      <wsdl:input name="DeleteRoomToDisplayAssnRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteRoomToDisplayAssnResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoom">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/RoomsServiceContract/DeleteRoom" style="document" />
+      <wsdl:input name="DeleteRoomRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteRoomResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAliases">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/RoomsServiceContract/GetAliases" style="document" />
+      <wsdl:input name="GetAliasesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetAliasesResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddAlias">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/RoomsServiceContract/AddAlias" style="document" />
+      <wsdl:input name="AddAliasRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddAliasResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlias">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/RoomsServiceContract/DeleteAlias" style="document" />
+      <wsdl:input name="DeleteAliasRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteAliasResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RoomsService">
+    <wsdl:port name="RoomsEndpoint" binding="tns:RoomsEndpoint">
+      <soap:address location="http://capehorn/Inspire.Events/Svc/RoomService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

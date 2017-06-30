@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://schemas.inspiredisplays.com/ServiceContract.Model/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="ClientDisplayService" targetNamespace="http://schemas.inspiredisplays.com/ServiceContract.Model/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/ServiceContract.Model/Imports">
+      <xsd:import schemaLocation="http://testserver/Inspire.ClientManager/Display/06112008/Service.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com/ServiceContract.Model/" />
+      <xsd:import schemaLocation="http://testserver/Inspire.ClientManager/Display/06112008/Service.svc?xsd=xsd3" namespace="http://schemas.inspiredispays.com" />
+      <xsd:import schemaLocation="http://testserver/Inspire.ClientManager/Display/06112008/Service.svc?xsd=xsd2" namespace="http://schemas.inspiredisplays.com/DataContract.Model/" />
+      <xsd:import schemaLocation="http://testserver/Inspire.ClientManager/Display/06112008/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetDisplaysRequestMessage">
+    <wsdl:part name="GroupID" element="tns:GroupID" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplaysResponseMessage">
+    <wsdl:part xmlns:q1="http://schemas.inspiredispays.com" name="Displays" element="q1:Displays" />
+  </wsdl:message>
+  <wsdl:message name="ClientDisplayServiceContract_GetDisplays_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q2:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddDisplayRequestMessage">
+    <wsdl:part xmlns:q3="http://schemas.inspiredispays.com" name="Display" element="q3:Display" />
+  </wsdl:message>
+  <wsdl:message name="AddDisplayResponseMessage" />
+  <wsdl:message name="ClientDisplayServiceContract_AddDisplay_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q4:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDisplaysRequestMessage">
+    <wsdl:part xmlns:q5="http://schemas.inspiredispays.com" name="Display" element="q5:Display" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDisplaysResponseMessage" />
+  <wsdl:message name="ClientDisplayServiceContract_UpdateDisplay_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q6:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDisplaysRequestMessage">
+    <wsdl:part xmlns:q7="http://schemas.inspiredispays.com" name="GUID" element="q7:GUID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDisplaysResponseMessage" />
+  <wsdl:message name="ClientDisplayServiceContract_DeleteDisplay_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q8:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleDisplaysRequestMessage">
+    <wsdl:part xmlns:q9="http://schemas.inspiredispays.com" name="DisplayID" element="q9:DisplayID" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleDisplaysResponseMessage">
+    <wsdl:part name="Display" element="tns:Display" />
+  </wsdl:message>
+  <wsdl:message name="ClientDisplayServiceContract_GetSingleDisplay_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q10:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplaysInScheduleRequestMessage">
+    <wsdl:part name="ScheduleID" element="tns:ScheduleID" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplaysInScheduleResponseMessage">
+    <wsdl:part xmlns:q11="http://schemas.inspiredispays.com" name="Displays" element="q11:Displays" />
+  </wsdl:message>
+  <wsdl:message name="ClientDisplayServiceContract_GetDisplaysInSchedule_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q12:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetAllDisplaysRequestMessage" />
+  <wsdl:message name="GetAllDisplaysResponseMessage">
+    <wsdl:part xmlns:q13="http://schemas.inspiredispays.com" name="Displays" element="q13:Displays" />
+  </wsdl:message>
+  <wsdl:message name="ClientDisplayServiceContract_GetAllDisplays_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q14:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="ClientDisplayServiceContract">
+    <wsdl:operation name="GetDisplays">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetDisplays" name="GetDisplaysRequestMessage" message="tns:GetDisplaysRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetDisplaysResponse" name="GetDisplaysResponseMessage" message="tns:GetDisplaysResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetDisplaysGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayServiceContract_GetDisplays_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDisplay">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/AddDisplay" name="AddDisplayRequestMessage" message="tns:AddDisplayRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/AddDisplayResponse" name="AddDisplayResponseMessage" message="tns:AddDisplayResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/AddDisplayGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayServiceContract_AddDisplay_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDisplay">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/UpdateDisplay" name="UpdateDisplaysRequestMessage" message="tns:UpdateDisplaysRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/UpdateDisplayResponse" name="UpdateDisplaysResponseMessage" message="tns:UpdateDisplaysResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/UpdateDisplayGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayServiceContract_UpdateDisplay_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDisplay">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/DeleteDisplay" name="DeleteDisplaysRequestMessage" message="tns:DeleteDisplaysRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/DeleteDisplayResponse" name="DeleteDisplaysResponseMessage" message="tns:DeleteDisplaysResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/DeleteDisplayGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayServiceContract_DeleteDisplay_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleDisplay">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetSingleDisplay" name="GetSingleDisplaysRequestMessage" message="tns:GetSingleDisplaysRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetSingleDisplayResponse" name="GetSingleDisplaysResponseMessage" message="tns:GetSingleDisplaysResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetSingleDisplayGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayServiceContract_GetSingleDisplay_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplaysInSchedule">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetDisplaysInSchedule" name="GetDisplaysInScheduleRequestMessage" message="tns:GetDisplaysInScheduleRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetDisplaysInScheduleResponse" name="GetDisplaysInScheduleResponseMessage" message="tns:GetDisplaysInScheduleResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetDisplaysInScheduleGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayServiceContract_GetDisplaysInSchedule_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDisplays">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetAllDisplays" name="GetAllDisplaysRequestMessage" message="tns:GetAllDisplaysRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetAllDisplaysResponse" name="GetAllDisplaysResponseMessage" message="tns:GetAllDisplaysResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetAllDisplaysGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayServiceContract_GetAllDisplays_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DisplaysEndpoint" type="tns:ClientDisplayServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDisplays">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetDisplays" style="document" />
+      <wsdl:input name="GetDisplaysRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetDisplaysResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddDisplay">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/AddDisplay" style="document" />
+      <wsdl:input name="AddDisplayRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddDisplayResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDisplay">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/UpdateDisplay" style="document" />
+      <wsdl:input name="UpdateDisplaysRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateDisplaysResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDisplay">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/DeleteDisplay" style="document" />
+      <wsdl:input name="DeleteDisplaysRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteDisplaysResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleDisplay">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetSingleDisplay" style="document" />
+      <wsdl:input name="GetSingleDisplaysRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetSingleDisplaysResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplaysInSchedule">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetDisplaysInSchedule" style="document" />
+      <wsdl:input name="GetDisplaysInScheduleRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetDisplaysInScheduleResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDisplays">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayServiceContract/GetAllDisplays" style="document" />
+      <wsdl:input name="GetAllDisplaysRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetAllDisplaysResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClientDisplayService">
+    <wsdl:port name="DisplaysEndpoint" binding="tns:DisplaysEndpoint">
+      <soap:address location="http://testserver/Inspire.ClientManager/Display/06112008/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

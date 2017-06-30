@@ -1,0 +1,6 @@
+C:\Users\jhaveard\Desktop\VisualOneInterface - Copy\InspireVisualOneConsoleInterface\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\VisualOneInterface - Copy\InspireVisualOneConsoleInterface\bin\Release\InspireVisualOneConsoleInterface.exe.config
+C:\Users\jhaveard\Desktop\VisualOneInterface - Copy\InspireVisualOneConsoleInterface\bin\Release\InspireVisualOneConsoleInterface.exe
+C:\Users\jhaveard\Desktop\VisualOneInterface - Copy\InspireVisualOneConsoleInterface\bin\Release\InspireVisualOneConsoleInterface.pdb
+C:\Users\jhaveard\Desktop\VisualOneInterface - Copy\InspireVisualOneConsoleInterface\obj\Release\InspireVisualOneConsoleInterface.exe
+C:\Users\jhaveard\Desktop\VisualOneInterface - Copy\InspireVisualOneConsoleInterface\obj\Release\InspireVisualOneConsoleInterface.pdb

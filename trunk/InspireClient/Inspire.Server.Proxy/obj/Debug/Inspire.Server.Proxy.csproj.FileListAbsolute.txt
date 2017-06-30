@@ -1,0 +1,15 @@
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\bin\Debug\Inspire.Server.Proxy.dll.config
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\bin\Debug\Inspire.Server.Proxy.dll
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\bin\Debug\Inspire.Server.Proxy.pdb
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\bin\Debug\Inspire.dll
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\bin\Debug\ActiproSoftware.Ribbon.Wpf30.dll
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\bin\Debug\Infragistics.ToyBox.dll
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\bin\Debug\EffectLibrary.dll
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\bin\Debug\Inspire.AnimationLibrary.dll
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\bin\Debug\ActiproSoftware.Shared.Wpf30.dll
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\bin\Debug\Inspire.pdb
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\bin\Debug\EffectLibrary.pdb
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\bin\Debug\Inspire.AnimationLibrary.pdb
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\obj\Debug\Inspire.Server.Proxy.dll
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\obj\Debug\Inspire.Server.Proxy.pdb
+C:\CODE\trunk\InspireClient\Inspire.Server.Proxy\obj\Debug\Inspire.Server.Proxy.csprojResolveAssemblyReference.cache

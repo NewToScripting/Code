@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.inspiredisplays.com" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UserService" targetNamespace="http://schemas.inspiredisplays.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/Imports">
+      <xsd:import schemaLocation="http://localhost/Inspire.Server/Svc/UserService?xsd=xsd1" namespace="http://schemas.inspiredisplays.com" />
+      <xsd:import schemaLocation="http://localhost/Inspire.Server/Svc/UserService?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUsersRequestMessage" />
+  <wsdl:message name="GetUsersResponseMessage">
+    <wsdl:part name="Users" element="tns:Users" />
+  </wsdl:message>
+  <wsdl:message name="UserServiceContract_GetUsers_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetRolesFromUserIDRequestMessage">
+    <wsdl:part name="UserID" element="tns:UserID" />
+  </wsdl:message>
+  <wsdl:message name="GetRolesFromUserIDResponseMessage">
+    <wsdl:part name="Roles" element="tns:Roles" />
+  </wsdl:message>
+  <wsdl:message name="UserServiceContract_GetRolesFromUserID_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRolesRequestMessage" />
+  <wsdl:message name="GetAllRolesResponseMessage">
+    <wsdl:part name="Roles" element="tns:Roles" />
+  </wsdl:message>
+  <wsdl:message name="UserServiceContract_GetAllRoles_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddUserRequestMessage">
+    <wsdl:part name="User" element="tns:User" />
+  </wsdl:message>
+  <wsdl:message name="AddUserResponseMessage" />
+  <wsdl:message name="UserServiceContract_AddUser_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddRolesToUserRequestMessage">
+    <wsdl:part name="parameters" element="tns:AddRolesToUserRequestMessage" />
+  </wsdl:message>
+  <wsdl:message name="AddRolesToUserResponseMessage" />
+  <wsdl:message name="UserServiceContract_AddRolesToUser_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserRequestMessage">
+    <wsdl:part name="UserID" element="tns:UserID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserResponseMessage" />
+  <wsdl:message name="UserServiceContract_DeleteUser_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRoleRequestMessage">
+    <wsdl:part name="RoleID" element="tns:RoleID" />
+    <wsdl:part name="UserID" element="tns:UserID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRoleResponseMessage" />
+  <wsdl:message name="UserServiceContract_DeleteRole_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="LoginAttemptRequestMessage">
+    <wsdl:part name="Login" element="tns:Login" />
+    <wsdl:part name="Password" element="tns:Password" />
+  </wsdl:message>
+  <wsdl:message name="LoginAttemptResponseMessage">
+    <wsdl:part name="Result" element="tns:Result" />
+  </wsdl:message>
+  <wsdl:message name="UserServiceContract_LoginAttempt_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="UserServiceContract">
+    <wsdl:operation name="GetUsers">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/GetUsers" name="GetUsersRequestMessage" message="tns:GetUsersRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/GetUsersResponse" name="GetUsersResponseMessage" message="tns:GetUsersResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/GetUsersGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:UserServiceContract_GetUsers_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRolesFromUserID">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/GetRolesFromUserID" name="GetRolesFromUserIDRequestMessage" message="tns:GetRolesFromUserIDRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/GetRolesFromUserIDResponse" name="GetRolesFromUserIDResponseMessage" message="tns:GetRolesFromUserIDResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/GetRolesFromUserIDGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:UserServiceContract_GetRolesFromUserID_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRoles">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/GetAllRoles" name="GetAllRolesRequestMessage" message="tns:GetAllRolesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/GetAllRolesResponse" name="GetAllRolesResponseMessage" message="tns:GetAllRolesResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/GetAllRolesGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:UserServiceContract_GetAllRoles_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/AddUser" name="AddUserRequestMessage" message="tns:AddUserRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/AddUserResponse" name="AddUserResponseMessage" message="tns:AddUserResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/AddUserGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:UserServiceContract_AddUser_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRolesToUser">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/AddRolesToUser" name="AddRolesToUserRequestMessage" message="tns:AddRolesToUserRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/AddRolesToUserResponse" name="AddRolesToUserResponseMessage" message="tns:AddRolesToUserResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/AddRolesToUserGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:UserServiceContract_AddRolesToUser_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/DeleteUser" name="DeleteUserRequestMessage" message="tns:DeleteUserRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/DeleteUserResponse" name="DeleteUserResponseMessage" message="tns:DeleteUserResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/DeleteUserGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:UserServiceContract_DeleteUser_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/DeleteRole" name="DeleteRoleRequestMessage" message="tns:DeleteRoleRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/DeleteRoleResponse" name="DeleteRoleResponseMessage" message="tns:DeleteRoleResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/DeleteRoleGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:UserServiceContract_DeleteRole_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginAttempt">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/LoginAttempt" name="LoginAttemptRequestMessage" message="tns:LoginAttemptRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/LoginAttemptResponse" name="LoginAttemptResponseMessage" message="tns:LoginAttemptResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/UserServiceContract/LoginAttemptGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:UserServiceContract_LoginAttempt_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UserEndpoint" type="tns:UserServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUsers">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/UserServiceContract/GetUsers" style="document" />
+      <wsdl:input name="GetUsersRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetUsersResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetRolesFromUserID">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/UserServiceContract/GetRolesFromUserID" style="document" />
+      <wsdl:input name="GetRolesFromUserIDRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetRolesFromUserIDResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRoles">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/UserServiceContract/GetAllRoles" style="document" />
+      <wsdl:input name="GetAllRolesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetAllRolesResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/UserServiceContract/AddUser" style="document" />
+      <wsdl:input name="AddUserRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddUserResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddRolesToUser">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/UserServiceContract/AddRolesToUser" style="document" />
+      <wsdl:input name="AddRolesToUserRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddRolesToUserResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/UserServiceContract/DeleteUser" style="document" />
+      <wsdl:input name="DeleteUserRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteUserResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/UserServiceContract/DeleteRole" style="document" />
+      <wsdl:input name="DeleteRoleRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteRoleResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="LoginAttempt">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/UserServiceContract/LoginAttempt" style="document" />
+      <wsdl:input name="LoginAttemptRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="LoginAttemptResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserService">
+    <wsdl:port name="UserEndpoint" binding="tns:UserEndpoint">
+      <soap:address location="http://localhost/Inspire.Server/Svc/UserService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

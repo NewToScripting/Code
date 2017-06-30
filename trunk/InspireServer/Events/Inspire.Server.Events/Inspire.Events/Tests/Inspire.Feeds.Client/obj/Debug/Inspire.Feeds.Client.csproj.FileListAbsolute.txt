@@ -1,0 +1,40 @@
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\bin\Debug\Inspire.Feeds.Client.Client.exe.config
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\bin\Debug\Inspire.Feeds.Client.Client.exe
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\bin\Debug\Inspire.Feeds.Client.Client.pdb
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.Properties.Resources.resources
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.MainForm.resources
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.ResultsGrid.resources
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.csproj.GenerateResource.Cache
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.Client.exe
+C:\Users\jhaveard\Desktop\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.Client.pdb
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\bin\Debug\Inspire.Feeds.Client.Client.exe.config
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\bin\Debug\Inspire.Feeds.Client.Client.exe
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\bin\Debug\Inspire.Feeds.Client.Client.pdb
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.Properties.Resources.resources
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.MainForm.resources
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.ResultsGrid.resources
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.csproj.GenerateResource.Cache
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.Client.exe
+C:\_INSPIRE_WORKING\06242008\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.Client.pdb
+C:\_WORKING\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\bin\Debug\Inspire.Feeds.Client.Client.exe.config
+C:\_WORKING\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\bin\Debug\Inspire.Feeds.Client.Client.exe
+C:\_WORKING\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\bin\Debug\Inspire.Feeds.Client.Client.pdb
+C:\_WORKING\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.Properties.Resources.resources
+C:\_WORKING\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.MainForm.resources
+C:\_WORKING\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.ResultsGrid.resources
+C:\_WORKING\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.csproj.GenerateResource.Cache
+C:\_WORKING\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.Client.exe
+C:\_WORKING\Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.Client.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\bin\Debug\Inspire.Feeds.Client.Client.exe.config
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.Client.exe
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.Client.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\bin\Debug\Inspire.Feeds.Client.Client.exe
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\bin\Debug\Inspire.Feeds.Client.Client.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.Properties.Resources.resources
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.MainForm.resources
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.ResultsGrid.resources
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Tests\Inspire.Feeds.Client\obj\Debug\Inspire.Feeds.Client.csproj.GenerateResource.Cache

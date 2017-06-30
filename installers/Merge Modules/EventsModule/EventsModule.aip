@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="7.7" version="7.7" Modules="msm" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_ModuleId" Value="194130CE_53CD_4902_A8AC_411F98C1BC50"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="." IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="EventEntry.dll" ComponentId="{1E08E052-E830-454C-B8BA-CD775F9D1C2A}" Directory_="APPDIR" Attributes="0" KeyPath="EventEntry.dll"/>
+    <ROW Component="EventsModule.dll" ComponentId="{05F44DED-4F38-4F70-BDF4-0BD749602B59}" Directory_="APPDIR" Attributes="0" KeyPath="EventsModule.dll"/>
+    <ROW Component="FilterModule.dll" ComponentId="{2FA8C506-FB38-4252-B207-D96FA7EC26EC}" Directory_="APPDIR" Attributes="0" KeyPath="FilterModule.dll"/>
+    <ROW Component="Inspire.Events.Proxy.dll" ComponentId="{F7E15F9C-C546-42A2-A29C-BCDEB3073F3B}" Directory_="APPDIR" Attributes="0" KeyPath="Inspire.Events.Proxy.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="TargetFeature" Title="TargetFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="Inspire.Events.Proxy.dll EventsModule.dll FilterModule.dll EventEntry.dll"/>
+    <ATTRIBUTE name="CurrentFeature" value="TargetFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="EventEntry.dll" Component_="EventEntry.dll" FileName="EventE~1.dll|EventEntry.dll" Attributes="0" SourcePath="..\..\Built_Assemblies\Obfuscated\Client\Modules\EventEntry.dll" SelfReg="false" Sequence="4"/>
+    <ROW File="EventsModule.dll" Component_="EventsModule.dll" FileName="Events~1.dll|EventsModule.dll" Attributes="0" SourcePath="..\..\Built_Assemblies\Obfuscated\Client\Modules\EventsModule.dll" SelfReg="false" Sequence="2"/>
+    <ROW File="FilterModule.dll" Component_="FilterModule.dll" FileName="Filter~1.dll|FilterModule.dll" Attributes="0" SourcePath="..\..\Built_Assemblies\Obfuscated\Client\Modules\FilterModule.dll" SelfReg="false" Sequence="3"/>
+    <ROW File="Inspire.Events.Proxy.dll" Component_="Inspire.Events.Proxy.dll" FileName="Inspir~1.dll|Inspire.Events.Proxy.dll" Attributes="0" SourcePath="..\..\Built_Assemblies\Obfuscated\Client\Modules\Inspire.Events.Proxy.dll" SelfReg="false" Sequence="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="InspireEvents-SetupFiles" PackageFileName="EventsInstaller" Languages="en" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="MSMSequences.aip" Path="&lt;AI_FRAGS&gt;MSMSequences.aip"/>
+    <ROW Fragment="MsmValidation.aip" Path="&lt;AI_FRAGS&gt;MsmValidation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsmModuleSignatureComponent">
+    <ROW ModuleID="EventsModule" Version="1.5.0" GUID="194130CE_53CD_4902_A8AC_411F98C1BC50" Name="EventsModule" Manufacturer="Inspire Digital Signage" Comments="This database contains the logic and data required to install &lt;module name&gt; component."/>
+  </COMPONENT>
+</DOCUMENT>

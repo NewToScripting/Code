@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<MeetingSpaceResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://htng.org/PWSWG/2007/01/DigitalSignage/MeetingSpaceResponse/Types">
+  <Property propertyKey="9998" propertyName="Portsmouth Hotel &amp; Conference Center">
+    <Event eventKey="20971.42" eventName="Group" eventPostAs="Newmarket Annual Meeting">
+      <Group name="Newmarket International" key="500609.42" />
+      <MeetingSpace startDateTime="2010-07-25T07:00:00" endDateTime="2010-07-25T09:00:00" roomKey="19.42" roomName="TBA" meetingKey="77388.42.20971.42" meetingName="" meetingPostAs="Day long Meeting" isPostable="true" isExhibit="false" agr_attend="54" exp_attend="54" gtd_attend="54" set_attend="0" />
+    </Event>
+    <Event eventKey="20780.42" eventName="Group" eventPostAs="DirectBook : Firstname Lastname : Company Name">
+      <Group name="Company Name" key="500679.42" />
+      <MeetingSpace startDateTime="2011-05-17T08:30:00" endDateTime="2011-05-17T17:30:00" roomKey="19.42" roomName="TBA" meetingKey="76776.42.20780.42" meetingName="" meetingPostAs="" isPostable="true" isExhibit="false" agr_attend="10" exp_attend="10" gtd_attend="10" set_attend="0" />
+    </Event>
+    <Event eventKey="20950.42" eventName="Group" eventPostAs="Newmarket Annual Meeting">
+      <Group name="Newmarket International Test Account" key="500770.42" />
+      <MeetingSpace startDateTime="2010-11-18T07:00:00" endDateTime="2010-11-18T09:00:00" roomKey="19.42" roomName="TBA" meetingKey="77351.42.20950.42" meetingName="" meetingPostAs="Day long Meeting" isPostable="true" isExhibit="false" agr_attend="54" exp_attend="54" gtd_attend="54" set_attend="0" />
+    </Event>
+  </Property>
+</MeetingSpaceResponse>

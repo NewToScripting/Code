@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.inspiredisplays.com/DataContract.Model/" elementFormDefault="qualified" targetNamespace="http://schemas.inspiredisplays.com/DataContract.Model/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Displays">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Displays" nillable="true" type="tns:Display" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Displays" nillable="true" type="tns:Displays" />
+  <xs:complexType name="Display">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GUID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HostName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VResolution" type="xs:double" />
+      <xs:element minOccurs="0" name="HResolution" type="xs:double" />
+      <xs:element minOccurs="0" name="ControllerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ControllerModel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MonitorModel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MonitorType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ActiveFlag" type="xs:int" />
+      <xs:element minOccurs="0" name="Group" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Schedules" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Orientation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsPlayerCreated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MonitorSize" type="xs:double" />
+      <xs:element minOccurs="0" name="PropertyID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastCommunication" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Display" nillable="true" type="tns:Display" />
+  <xs:complexType name="GeneralFaultContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GeneralFaultContract" nillable="true" type="tns:GeneralFaultContract" />
+</xs:schema>

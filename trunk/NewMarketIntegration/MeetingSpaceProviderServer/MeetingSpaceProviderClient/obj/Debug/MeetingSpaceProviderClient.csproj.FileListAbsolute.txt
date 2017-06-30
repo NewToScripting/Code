@@ -1,0 +1,47 @@
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\MeetingSpaceService_TestHarness.exe
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\MeetingSpaceService_TestHarness.pdb
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\Contract.dll
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\Contract.pdb
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceExportService.MainForm.resources
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceService_TestHarness.Properties.Resources.resources
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceService_TestHarness.exe
+C:\Newmarket International, Inc\Events and BEOs Toolkit v2.0\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceService_TestHarness.pdb
+C:\Users\jhaveard\Desktop\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceService_TestHarness.exe
+C:\Users\jhaveard\Desktop\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceService_TestHarness.pdb
+C:\Users\jhaveard\Desktop\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\MeetingSpaceService_TestHarness.exe
+C:\Users\jhaveard\Desktop\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\MeetingSpaceService_TestHarness.pdb
+C:\Users\jhaveard\Desktop\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\Contract.dll
+C:\Users\jhaveard\Desktop\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\Contract.pdb
+C:\Users\jhaveard\Desktop\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceExportService.MainForm.resources
+C:\Users\jhaveard\Desktop\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceService_TestHarness.Properties.Resources.resources
+C:\Users\jhaveard\Desktop\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\MeetingSpaceService_TestHarness.exe.config
+C:\Users\jhaveard\Desktop\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\jhaveard\Desktop\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\MeetingSpaceService_TestHarness.exe.config
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceService_TestHarness.exe
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceService_TestHarness.pdb
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\MeetingSpaceService_TestHarness.exe
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\MeetingSpaceService_TestHarness.pdb
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\Contract.dll
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\Contract.pdb
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceExportService.MainForm.resources
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceService_TestHarness.Properties.Resources.resources
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\jhaveard\Documents\Inspire Docs\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\GenerateResource.write.1.tlog
+C:\CODE\trunk\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceExportService.MainForm.resources
+C:\CODE\trunk\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\MeetingSpaceService_TestHarness.Properties.Resources.resources
+C:\CODE\trunk\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\GenerateResource.read.1.tlog
+C:\CODE\trunk\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\GenerateResource.write.1.tlog
+C:\CODE\trunk\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\Inspire.NewmarketInterface.Main.exe.config
+C:\CODE\trunk\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\Inspire.NewmarketInterface.Main.exe
+C:\CODE\trunk\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\Inspire.NewmarketInterface.Main.pdb
+C:\CODE\trunk\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\Inspire.NewmarketInterface.Contract.dll
+C:\CODE\trunk\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\bin\Debug\Inspire.NewmarketInterface.Contract.pdb
+C:\CODE\trunk\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\Inspire.NewmarketInterface.Main.exe
+C:\CODE\trunk\NewMarketIntegration\MeetingSpaceProviderServer\MeetingSpaceProviderClient\obj\Debug\Inspire.NewmarketInterface.Main.pdb

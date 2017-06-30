@@ -1,0 +1,25 @@
+﻿<ShapesModule:ShapeBase x:Class="ShapesModule.ShapeControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ShapesModule="clr-namespace:ShapesModule"
+    DataContext="{Binding RelativeSource={RelativeSource Self}}">
+    <ShapesModule:ShapeBase.Resources>
+        <ControlTemplate x:Key="Circle">
+            <Ellipse Stroke="{Binding BorderColor}" StrokeThickness="{Binding BorderWidth}" Fill="{Binding BackgroundColor}"  />
+        </ControlTemplate>
+        <ControlTemplate x:Key="Triangle">
+            <Viewbox>
+                <Polygon Points="125,5 250,200 5,200"
+                    Stroke="{Binding BorderColor}" StrokeThickness="{Binding BorderWidth}" Fill="{Binding BackgroundColor}" />
+            </Viewbox>
+        </ControlTemplate>
+        <ControlTemplate x:Key="Arrow">
+            <Viewbox>
+                <Canvas x:Name="Arrow55" Width="793.333" Height="1122.67" Canvas.Left="0" Canvas.Top="0">
+                    <Path x:Name="Path_11" Width="56.6146" Height="56.6146" Canvas.Left="571.654" Canvas.Top="680.604" Stretch="Fill" Fill="#FF000000" Data="F1 M 616.952,716.883L 600.816,733.019L 578.272,733.019L 596.583,714.708L 602.274,709.016L 602.138,708.878L 596.374,703.115L 578.064,684.802L 600.608,684.802L 616.744,700.938L 616.88,701.076L 616.952,701.006L 624.891,708.943M 571.654,737.219L 628.268,737.219L 628.268,680.604L 571.654,680.604L 571.654,737.219 Z "/>
+                </Canvas>
+            </Viewbox>
+        </ControlTemplate>
+    </ShapesModule:ShapeBase.Resources>
+    <ContentControl Template="{StaticResource Triangle}" />
+</ShapesModule:ShapeBase>

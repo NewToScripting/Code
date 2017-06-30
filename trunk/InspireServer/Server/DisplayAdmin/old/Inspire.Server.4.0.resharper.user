@@ -1,0 +1,162 @@
+<Configuration>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:GetSchedulesRequest.cs" caret="0" scrollPosition="0|0" />
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:GetSchedulesResponse.cs" caret="0" scrollPosition="0|0" />
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:GetSlidesRequest.cs" caret="0" scrollPosition="0|0" />
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:UpdateDisplaysRequest.cs" caret="0" scrollPosition="0|0" />
+      <File id="3068D59C-FBB2-4F0D-844C-D82650B415AA/d:GeneratedCode/f:DefaultFaultContract.cs" caret="0" scrollPosition="0|0" />
+      <File id="AA4793BD-AA2B-4263-9DDE-C3931B0DEF2F/d:GeneratedCode/f:Schedules.cs" caret="0" scrollPosition="0|0" />
+      <File id="AA4793BD-AA2B-4263-9DDE-C3931B0DEF2F/d:GeneratedCode/f:Schedule.cs" caret="0" scrollPosition="0|0" />
+      <File id="AA4793BD-AA2B-4263-9DDE-C3931B0DEF2F/d:GeneratedCode/f:SlideFiles.cs" caret="0" scrollPosition="0|0" />
+      <File id="AA4793BD-AA2B-4263-9DDE-C3931B0DEF2F/d:GeneratedCode/f:ScheduleSlides.cs" caret="0" scrollPosition="0|0" />
+      <File id="AA4793BD-AA2B-4263-9DDE-C3931B0DEF2F/d:GeneratedCode/f:SlideFile.cs" caret="0" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:ScheduleDataAccess.cs" caret="575" scrollPosition="0|0" />
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:UpdateDisplaysResponse.cs" caret="646" scrollPosition="0|0" />
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:PingDisplaysRequest.cs" caret="660" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:EventFile.cs" caret="814" scrollPosition="0|0" />
+      <File id="7DE5CCAD-E432-44C3-ACDA-896C6E0A2E1C/f:_ResourceAccessFasade.cs" caret="1192" scrollPosition="0|0" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:MainForm.cs" caret="3303" scrollPosition="0|0" />
+      <File id="281EC351-799F-4EC5-A17E-66120468A5CE/d:GeneratedCode/f:ScheduleService.cs" caret="2582" scrollPosition="0|0" />
+      <File id="C0E3D1F3-7BDD-4CEC-A9BD-20EB0B9824BF/d:GeneratedCode/f:IScheduleServiceContract.cs" caret="2299" scrollPosition="0|0" />
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:SendEventsFileResponse.cs" caret="666" scrollPosition="0|0" />
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:SendEventsFileRequest.cs" caret="662" scrollPosition="0|0" />
+      <File id="AA4793BD-AA2B-4263-9DDE-C3931B0DEF2F/d:GeneratedCode/f:Events.cs" caret="818" scrollPosition="0|0" />
+      <File id="AA4793BD-AA2B-4263-9DDE-C3931B0DEF2F/d:GeneratedCode/f:ScheduleSlide.cs" caret="0" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:EventLogger.cs" caret="0" scrollPosition="0|0" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:Program.cs" caret="0" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:app.config" caret="0" scrollPosition="0|0" />
+      <File id="7142B075-BFE9-4285-B26A-8EB190480D23/d:App_Code/f:web.config" caret="396" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="0" scrollPosition="0|15" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:SlideDataAccess.cs" caret="875" scrollPosition="0|33" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplayDataAccess.cs" caret="1574" scrollPosition="0|9" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:app.config" caret="1189" scrollPosition="0|0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="C0E3D1F3-7BDD-4CEC-A9BD-20EB0B9824BF/d:GeneratedCode/f:IScheduleServiceContract.cs" caret="3213" scrollPosition="129|9" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:MainForm.cs" caret="3751" scrollPosition="0|85" />
+      <File id="281EC351-799F-4EC5-A17E-66120468A5CE/d:GeneratedCode/f:ScheduleService.cs" caret="2626" scrollPosition="0|44" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplayDataAccess.cs" caret="2178" scrollPosition="0|44" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="2200" scrollPosition="0|29" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="2579" scrollPosition="0|29" />
+      <File id="281EC351-799F-4EC5-A17E-66120468A5CE/d:GeneratedCode/f:ScheduleService.cs" caret="0" scrollPosition="0|39" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:EventFile.cs" caret="256" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:EventFile.cs" caret="256" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:EventFile.cs" caret="256" scrollPosition="0|0" />
+      <File id="7DE5CCAD-E432-44C3-ACDA-896C6E0A2E1C/f:_ResourceAccessFasade.cs" caret="1422" scrollPosition="0|31" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:EventFile.cs" caret="633" scrollPosition="11|3" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:EventFile.cs" caret="789" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:EventFile.cs" caret="270" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="3705" scrollPosition="0|76" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="3406" scrollPosition="0|67" />
+      <File id="AA4793BD-AA2B-4263-9DDE-C3931B0DEF2F/d:GeneratedCode/f:Events.cs" caret="818" scrollPosition="0|0" />
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:SendEventsFileResponse.cs" caret="755" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="2824" scrollPosition="0|49" />
+      <File id="7DE5CCAD-E432-44C3-ACDA-896C6E0A2E1C/f:_ResourceAccessFasade.cs" caret="1314" scrollPosition="0|15" />
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:SendEventsFileRequest.cs" caret="662" scrollPosition="0|0" />
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:SendEventsFileResponse.cs" caret="666" scrollPosition="0|0" />
+      <File id="281EC351-799F-4EC5-A17E-66120468A5CE/d:GeneratedCode/f:ScheduleService.cs" caret="1980" scrollPosition="0|22" />
+      <File id="C0E3D1F3-7BDD-4CEC-A9BD-20EB0B9824BF/d:GeneratedCode/f:IScheduleServiceContract.cs" caret="2299" scrollPosition="125|8" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:MainForm.cs" caret="3978" scrollPosition="0|103" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="3515" scrollPosition="0|61" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:DisplaysProxy.cs" caret="2958" scrollPosition="0|54" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:app.config" caret="1598" scrollPosition="0|0" />
+      <File id="7142B075-BFE9-4285-B26A-8EB190480D23/d:App_Code/f:web.config" caret="2552" scrollPosition="32|6" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:app.config" caret="1340" scrollPosition="0|0" />
+    </RecentEdits>
+  </RecentFiles>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+      <setting name="UseSolutionBuilder">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.IO.FileStream">
+      <Item value="Close" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inspire.Server.Services.Client.Proxy1.Events">
+      <Item value="File" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inspire.Server.Services.Client.Proxy1.ScheduleServiceContractClient">
+      <Item value="GetEvents" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@">
+      <Item value="Mode" priority="1" />
+      <Item value="GUID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inspire.Common.Schedule.ModeEnum">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inspire.Server.Services.MessageContracts.GetEventsResponse">
+      <Item value="Events" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inspire.Server.Services.DataContracts.Events">
+      <Item value="Equals" priority="0" />
+      <Item value="File" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:byte[]">
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="UpdateDisplaysRequest" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="string" priority="1" />
+      <Item value="OriginalSlideID" priority="0" />
+      <Item value="GetDisplayIDs" priority="0" />
+      <Item value="GetDisplayHostNames" priority="1" />
+      <Item value="Version" priority="0" />
+      <Item value="DateTime" priority="1" />
+      <Item value="ToString" priority="4" />
+      <Item value="Parse" priority="1" />
+      <Item value="if" priority="1" />
+      <Item value="Properties" priority="0" />
+      <Item value="ServiceReference1" priority="0" />
+      <Item value="DisplayAdminServiceContractClient" priority="0" />
+      <Item value="Transition" priority="0" />
+      <Item value="Int32" priority="0" />
+      <Item value="else" priority="0" />
+      <Item value="TryParse" priority="0" />
+      <Item value="out" priority="1" />
+      <Item value="WriteEventToLog" priority="0" />
+      <Item value="Warning" priority="0" />
+      <Item value="PingDisplaysRequest" priority="0" />
+      <Item value="StayAlive" priority="0" />
+      <Item value="PingDisplays" priority="2" />
+      <Item value="UpdateDisplayActiveFlag" priority="1" />
+      <Item value="ExecuteScalar" priority="0" />
+      <Item value="GetDisplayID" priority="1" />
+      <Item value="NVarChar" priority="0" />
+      <Item value="Now" priority="0" />
+      <Item value="MinValue" priority="0" />
+      <Item value="Server" priority="0" />
+      <Item value="DisplayAdmin" priority="0" />
+      <Item value="DataContracts" priority="0" />
+      <Item value="GetEvents" priority="2" />
+      <Item value="Events" priority="2" />
+      <Item value="PutEvents" priority="0" />
+      <Item value="GetEventsFile" priority="1" />
+      <Item value="GetEventFile" priority="0" />
+      <Item value="File" priority="0" />
+      <Item value="EventFile" priority="0" />
+      <Item value="SendEventFile" priority="0" />
+      <Item value="SendEventsFile" priority="1" />
+      <Item value="PingDisplaysResponse" priority="1" />
+      <Item value="SendEventsFileRequest" priority="1" />
+      <Item value="SendEventsFileResponse" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

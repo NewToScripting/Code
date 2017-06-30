@@ -1,0 +1,30 @@
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\bin\Debug\Inspire.Server.Groups.BusinessEntities.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\bin\Debug\Inspire.Server.Groups.BusinessEntities.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\Inspire.Server.Groups.BusinessEntities.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\Inspire.Server.Groups.BusinessEntities.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\bin\Debug\Inspire.Server.Groups.BusinessEntities.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\bin\Debug\Inspire.Server.Groups.BusinessEntities.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\Inspire.Server.Groups.BusinessEntities.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\Inspire.Server.Groups.BusinessEntities.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\bin\Debug\Inspire.Server.Groups.BusinessEntities.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\bin\Debug\Inspire.Server.Groups.BusinessEntities.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\Inspire.Server.Groups.BusinessEntities.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\Inspire.Server.Groups.BusinessEntities.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\bin\Debug\Inspire.Server.Groups.BusinessEntities.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\bin\Debug\Inspire.Server.Groups.BusinessEntities.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\Inspire.Server.Groups.BusinessEntities.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\Inspire.Server.Groups.BusinessEntities.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\bin\Debug\Inspire.Server.Groups.BusinessEntities.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\bin\Debug\Inspire.Server.Groups.BusinessEntities.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\Inspire.Server.Groups.BusinessEntities.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\Inspire.Server.Groups.BusinessEntities.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\bin\Debug\Inspire.Server.Groups.BusinessEntities.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\bin\Debug\Inspire.Server.Groups.BusinessEntities.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\Inspire.Server.Groups.BusinessEntities.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Group\Inspire.Group\Source\Business Logic\Inspire.Groups.BusinessEntities\obj\Debug\Inspire.Server.Groups.BusinessEntities.pdb

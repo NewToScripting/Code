@@ -1,0 +1,21 @@
+C:\Users\jhaveard\Desktop\VisualOneInterface - Copy\InspireVisualOneConsoleInterface\bin\Debug\InspireVisualOneConsoleInterface.exe.config
+C:\Users\jhaveard\Desktop\VisualOneInterface - Copy\InspireVisualOneConsoleInterface\bin\Debug\InspireVisualOneConsoleInterface.exe
+C:\Users\jhaveard\Desktop\VisualOneInterface - Copy\InspireVisualOneConsoleInterface\bin\Debug\InspireVisualOneConsoleInterface.pdb
+C:\Users\jhaveard\Desktop\VisualOneInterface - Copy\InspireVisualOneConsoleInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\VisualOneInterface - Copy\InspireVisualOneConsoleInterface\obj\Debug\InspireVisualOneConsoleInterface.exe
+C:\Users\jhaveard\Desktop\VisualOneInterface - Copy\InspireVisualOneConsoleInterface\obj\Debug\InspireVisualOneConsoleInterface.pdb
+C:\Users\jhaveard\Desktop\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\bin\Debug\InspireVisualOneConsoleInterface.exe.config
+C:\Users\jhaveard\Desktop\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\bin\Debug\InspireVisualOneConsoleInterface.exe
+C:\Users\jhaveard\Desktop\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\bin\Debug\InspireVisualOneConsoleInterface.pdb
+C:\Users\jhaveard\Desktop\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\obj\Debug\InspireVisualOneConsoleInterface.exe
+C:\Users\jhaveard\Desktop\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\obj\Debug\InspireVisualOneConsoleInterface.pdb
+C:\Users\jhaveard\Documents\Inspire Docs\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Documents\Inspire Docs\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\obj\Debug\InspireVisualOneConsoleInterface.pdb
+C:\Users\jhaveard\Documents\Inspire Docs\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\bin\Debug\InspireVisualOneConsoleInterface.exe.config
+C:\Users\jhaveard\Documents\Inspire Docs\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\bin\Debug\InspireVisualOneConsoleInterface.exe
+C:\Users\jhaveard\Documents\Inspire Docs\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\bin\Debug\InspireVisualOneConsoleInterface.pdb
+C:\Users\jhaveard\Documents\Inspire Docs\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\obj\Debug\InspireVisualOneConsoleInterface.exe
+C:\CODE\trunk\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\bin\Debug\InspireVisualOneConsoleInterface.exe.config
+C:\CODE\trunk\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\obj\Debug\InspireVisualOneConsoleInterface.exe
+C:\CODE\trunk\VisualOneInterfaceConsole\InspireVisualOneConsoleInterface\obj\Debug\InspireVisualOneConsoleInterface.pdb

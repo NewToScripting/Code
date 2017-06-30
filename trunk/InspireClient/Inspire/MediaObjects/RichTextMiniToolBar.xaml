@@ -1,0 +1,158 @@
+﻿<Controls:MiniToolBar x:Class="Inspire.MediaObjects.RichTextMiniToolBar" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ribbon="http://schemas.actiprosoftware.com/winfx/xaml/ribbon"
+    xmlns:media="clr-namespace:System.Windows.Media;assembly=PresentationCore"
+    xmlns:Controls="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon.Controls;assembly=ActiproSoftware.Ribbon.WPF30"
+    xmlns:Commands="clr-namespace:Inspire.Commands;assembly=">
+    <Controls:MiniToolBar.ItemsPanel>
+        <ItemsPanelTemplate>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="2" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </ItemsPanelTemplate>
+    </Controls:MiniToolBar.ItemsPanel>
+
+    <Controls:FontFamilyComboBox MinWidth="70" Style="{StaticResource FontComboBox}" Foreground="{StaticResource TextBrush}" Command="{x:Static Commands:InspireCommands.FontFamily}" IsPreviewEnabled="True"/>
+    <Controls:ButtonGroup Grid.Column="1">
+        <Controls:FontSizeComboBox MinWidth="40" Style="{StaticResource FontComboBox}" Foreground="{StaticResource TextBrush}" Command="{x:Static Commands:InspireCommands.FontSize}" IsPreviewEnabled="True" />
+        <Controls:Button Command="EditingCommands.IncreaseFontSize" ImageSourceSmall="Resources/Images/FontSizeInc.png" />
+        <Controls:Button Command="EditingCommands.DecreaseFontSize" ImageSourceSmall="Resources/Images/FontSizeDec.png" />
+    </Controls:ButtonGroup>
+
+    <Controls:ButtonGroup Grid.Row="2" Grid.ColumnSpan="2">
+        <Controls:Button Command="EditingCommands.ToggleBold" ImageSourceSmall="Resources/Images/Bold.png" />
+        <Controls:Button Command="EditingCommands.ToggleItalic" ImageSourceSmall="Resources/Images/Italic.png" />
+        <Controls:Button Command="EditingCommands.AlignLeft" ImageSourceSmall="Resources/Images/AlignTextLeft16.png" />
+        <Controls:Button Command="EditingCommands.AlignCenter" ImageSourceSmall="Resources/Images/AlignTextCenter16.png" />
+        <Controls:Button Command="EditingCommands.AlignRight" ImageSourceSmall="Resources/Images/AlignTextRight16.png" />
+        <Controls:SplitButton Command="{x:Static Commands:InspireCommands.ApplyDefaultBackground}" 
+			ScreenTipDescription="Make text look like it was marked with a highlighter pen." ImageSourceSmall="Resources/Images/TextHighlight.png">
+            <StackPanel>
+                <Controls:PopupGallery InitialColumnCount="5" VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Center"
+					Command="{x:Static Commands:InspireCommands.ApplyBackground}" IsPreviewEnabled="True">
+                    <Controls:PopupGallery.CommandParameter>
+                        <ribbon:BrushValueCommandParameter />
+                    </Controls:PopupGallery.CommandParameter>
+                    <Controls:PopupGallery.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderThickness="1" BorderBrush="Silver" Background="{Binding BindsDirectlyToSource=True}" Width="24" Height="24" />
+                        </DataTemplate>
+                    </Controls:PopupGallery.ItemTemplate>
+
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Yellow" Color="{x:Static media:Colors.Yellow}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Lime" Color="{x:Static media:Colors.Lime}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Teal" Color="{x:Static media:Colors.Teal}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Magenta" Color="{x:Static media:Colors.Magenta}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Blue" Color="{x:Static media:Colors.Blue}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Red" Color="{x:Static media:Colors.Red}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Navy" Color="{x:Static media:Colors.Navy}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Cyan" Color="{x:Static media:Colors.Cyan}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Green" Color="{x:Static media:Colors.Green}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Purple" Color="{x:Static media:Colors.Purple}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Maroon" Color="{x:Static media:Colors.Maroon}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Olive" Color="{x:Static media:Colors.Olive}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Gray" Color="{x:Static media:Colors.Gray}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Silver" Color="{x:Static media:Colors.Silver}" />
+                    <media:SolidColorBrush ribbon:ScreenTipService.ScreenTipHeader="Black" Color="{x:Static media:Colors.Black}" />
+                </Controls:PopupGallery>
+                <Controls:Separator />
+                <Controls:Menu>
+                    <Controls:Button Label="No Color" Command="{x:Static Commands:InspireCommands.ApplyBackground}"/>
+                    <Controls:Separator />
+                    <Controls:Button Label="Stop Highlighting" IsEnabled="False" />
+                </Controls:Menu>
+            </StackPanel>
+        </Controls:SplitButton>
+        <Controls:SplitButton Command="{x:Static Commands:InspireCommands.ApplyDefaultForeground}" >
+            <StackPanel>
+                <Controls:ColorPickerGallery InitialColumnCount="10" HorizontalAlignment="Center"
+					Command="{x:Static Commands:InspireCommands.ApplyForeground}" IsPreviewEnabled="True">
+                    <Controls:ColorPickerGallery.CategorizedItemsSource>
+                        <x:Array Type="{x:Type media:SolidColorBrush}">
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Theme Colors" Controls:ColorPickerGallery.LayoutBehavior="Shaded" Color="#FFFFFF" ribbon:ScreenTipService.ScreenTipHeader="White" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Theme Colors" Controls:ColorPickerGallery.LayoutBehavior="Shaded" Color="#000000" ribbon:ScreenTipService.ScreenTipHeader="Black" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Theme Colors" Controls:ColorPickerGallery.LayoutBehavior="Shaded" Color="#EEECE1" ribbon:ScreenTipService.ScreenTipHeader="Tan" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Theme Colors" Controls:ColorPickerGallery.LayoutBehavior="Shaded" Color="#1F497D" ribbon:ScreenTipService.ScreenTipHeader="Dark Blue" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Theme Colors" Controls:ColorPickerGallery.LayoutBehavior="Shaded" Color="#4F81BD" ribbon:ScreenTipService.ScreenTipHeader="Blue" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Theme Colors" Controls:ColorPickerGallery.LayoutBehavior="Shaded" Color="#C0504D" ribbon:ScreenTipService.ScreenTipHeader="Red" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Theme Colors" Controls:ColorPickerGallery.LayoutBehavior="Shaded" Color="#9BBB59" ribbon:ScreenTipService.ScreenTipHeader="Olive Green" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Theme Colors" Controls:ColorPickerGallery.LayoutBehavior="Shaded" Color="#8064A2" ribbon:ScreenTipService.ScreenTipHeader="Purple" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Theme Colors" Controls:ColorPickerGallery.LayoutBehavior="Shaded" Color="#4BACC6" ribbon:ScreenTipService.ScreenTipHeader="Aqua" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Theme Colors" Controls:ColorPickerGallery.LayoutBehavior="Shaded" Color="#F79646" ribbon:ScreenTipService.ScreenTipHeader="Orange" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Standard Colors" Color="#C00000" ribbon:ScreenTipService.ScreenTipHeader="Dark Red" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Standard Colors" Color="#FF0000" ribbon:ScreenTipService.ScreenTipHeader="Red" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Standard Colors" Color="#FFC000" ribbon:ScreenTipService.ScreenTipHeader="Orange" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Standard Colors" Color="#FFFF00" ribbon:ScreenTipService.ScreenTipHeader="Yellow" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Standard Colors" Color="#92D050" ribbon:ScreenTipService.ScreenTipHeader="Light Green" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Standard Colors" Color="#00B050" ribbon:ScreenTipService.ScreenTipHeader="Green" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Standard Colors" Color="#00B0F0" ribbon:ScreenTipService.ScreenTipHeader="Light Blue" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Standard Colors" Color="#0070C0" ribbon:ScreenTipService.ScreenTipHeader="Blue" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Standard Colors" Color="#002060" ribbon:ScreenTipService.ScreenTipHeader="Dark Blue" />
+                            <media:SolidColorBrush Controls:PopupGallery.Category="Standard Colors" Color="#7030A0" ribbon:ScreenTipService.ScreenTipHeader="Purple" />
+                        </x:Array>
+                    </Controls:ColorPickerGallery.CategorizedItemsSource>
+                </Controls:ColorPickerGallery>
+                <Controls:Separator />
+                <Controls:Menu>
+                    <Controls:Button Label="More Colors..." Click="MoreColors_Click"  />
+                </Controls:Menu>
+            </StackPanel>
+        </Controls:SplitButton>
+        <!--<Controls:Button ImageSourceSmall="/Resources/Images/DecreaseIndent16.png" Label="Decrease Indent" />
+        <Controls:Button ImageSourceSmall="/Resources/Images/IncreaseIndent16.png" Label="Increase Indent" />
+        <Controls:SplitButton ImageSourceSmall="/Resources/Images/Bullets16.png" Label="Bullets" PopupResizeMode="Both">
+            <StackPanel>
+                <Controls:PopupGallery InitialColumnCount="6" CanFilter="True" IsSelectionHighlightVisible="False">
+                    <Controls:PopupGallery.CategorizedItemsSource>
+                        <x:Array Type="{x:Type mediaImaging:BitmapImage}">
+                            <mediaImaging:BitmapImage Controls:PopupGallery.Category="Recently Used Bullets" UriSource="/Resources/Images/GalleryBulletsType1.png" />
+                            <mediaImaging:BitmapImage Controls:PopupGallery.Category="Bullet Library" UriSource="/Resources/Images/GalleryBulletsNone.png" />
+                            <mediaImaging:BitmapImage Controls:PopupGallery.Category="Bullet Library" UriSource="/Resources/Images/GalleryBulletsType1.png" />
+                            <mediaImaging:BitmapImage Controls:PopupGallery.Category="Bullet Library" UriSource="/Resources/Images/GalleryBulletsType2.png" />
+                            <mediaImaging:BitmapImage Controls:PopupGallery.Category="Bullet Library" UriSource="/Resources/Images/GalleryBulletsType3.png" />
+                            <mediaImaging:BitmapImage Controls:PopupGallery.Category="Bullet Library" UriSource="/Resources/Images/GalleryBulletsType4.png" />
+                            <mediaImaging:BitmapImage Controls:PopupGallery.Category="Bullet Library" UriSource="/Resources/Images/GalleryBulletsType5.png" />
+                            <mediaImaging:BitmapImage Controls:PopupGallery.Category="Bullet Library" UriSource="/Resources/Images/GalleryBulletsType6.png" />
+                            <mediaImaging:BitmapImage Controls:PopupGallery.Category="Bullet Library" UriSource="/Resources/Images/GalleryBulletsType7.png" />
+                            <mediaImaging:BitmapImage Controls:PopupGallery.Category="Document Bullets" UriSource="/Resources/Images/GalleryBulletsType1.png" />
+                        </x:Array>
+                    </Controls:PopupGallery.CategorizedItemsSource>
+                    <Controls:PopupGallery.ItemTemplate>
+                        <DataTemplate>
+                            <Border Margin="2" BorderBrush="#808080" BorderThickness="1" Background="#FFFFFF" Width="40" Height="40" SnapsToDevicePixels="True">
+                                <Image Source="{Binding BindsDirectlyToSource=True}" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center" SnapsToDevicePixels="True" />
+                            </Border>
+                        </DataTemplate>
+                    </Controls:PopupGallery.ItemTemplate>
+                    <Controls:PopupGallery.ZoomedInItemTemplate>
+                        <DataTemplate>
+                            <Border Margin="2" BorderBrush="#808080" BorderThickness="1" Background="#FFFFFF" Width="70" Height="70" SnapsToDevicePixels="True">
+                                <Image Source="{Binding BindsDirectlyToSource=True}" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center" SnapsToDevicePixels="True">
+                                    <Image.LayoutTransform>
+                                        <ScaleTransform ScaleX="2" ScaleY="2" />
+                                    </Image.LayoutTransform>
+                                </Image>
+                            </Border>
+                        </DataTemplate>
+                    </Controls:PopupGallery.ZoomedInItemTemplate>
+                </Controls:PopupGallery>
+                <Controls:Separator />
+                <Controls:Menu>
+                    <Controls:PopupButton ImageSourceSmall="/Resources/Images/ChangeListLevel16.png" Label="Change List Level" />
+                    <Controls:Button Label="Define New Multilevel List..." />
+                    <Controls:Button Label="Define New List Style..." />
+                </Controls:Menu>
+            </StackPanel>
+        </Controls:SplitButton>-->
+    </Controls:ButtonGroup>
+
+</Controls:MiniToolBar>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="InspireDisplay.DisplaySettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" ResizeMode="NoResize"
+        Title="DisplaySettings" Height="289" Width="218" Background="{StaticResource WindowBackgroundBrush}" Topmost="True" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        
+        <Button Height="114" HorizontalAlignment="Left" Margin="41,154,0,0" Name="btnExit" VerticalAlignment="Top" Width="117" Click="btnExit_Click">
+            
+        </Button>
+        <Button Height="114" HorizontalAlignment="Left" Margin="41,21,0,0" Name="btnRestart" VerticalAlignment="Top" Width="117" Click="btnRestart_Click">
+            
+        </Button>
+        <Button Height="114" HorizontalAlignment="Left" Margin="17,155,0,0" IsEnabled="False" Name="btnAbout" VerticalAlignment="Top" Width="117" Visibility="Hidden">
+            
+        </Button>
+        <Button Height="114" HorizontalAlignment="Left" Margin="16,21,0,0" Name="btnRegister" VerticalAlignment="Top" Width="117" Click="btnRegister_Click" Visibility="Hidden">
+            
+        </Button>
+        <Image IsHitTestVisible="False" Source="Image/sign-up.png" Width="80" Height="80" Margin="35,51,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Hidden" />
+        <Image IsHitTestVisible="False" Source="Image/button_cancel.png" Width="80" Margin="61,179,0,0" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" />
+        <Image IsHitTestVisible="False" Source="Image/restart.png" Width="80" Height="80" Margin="61,51,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Image IsHitTestVisible="False" Source="Image/about.png" Width="80" Height="80" Margin="35,179,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Hidden" />
+        <TextBlock IsHitTestVisible="False" Foreground="White" FontSize="16" FontWeight="Bold" Margin="72,154,0,0" HorizontalAlignment="Left" Width="58" Height="25" VerticalAlignment="Top">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+            Close</TextBlock>
+        <TextBlock FontSize="16" FontWeight="Bold" Foreground="White" Height="25" HorizontalAlignment="Left" IsHitTestVisible="False" Margin="72,28,0,0" VerticalAlignment="Top" Width="58"><TextBlock.Effect><DropShadowEffect /></TextBlock.Effect>Restart</TextBlock>
+        <TextBlock FontSize="16" FontWeight="Bold" Foreground="White" Height="25" HorizontalAlignment="Left" IsHitTestVisible="False" Margin="52,155,0,0" VerticalAlignment="Top" Width="58" Visibility="Hidden"><TextBlock.Effect><DropShadowEffect /></TextBlock.Effect>About</TextBlock>
+        <TextBlock FontSize="16" FontWeight="Bold" Foreground="White" Height="25" HorizontalAlignment="Left" IsHitTestVisible="False" Margin="39,28,0,0" VerticalAlignment="Top" Width="74" Visibility="Hidden"><TextBlock.Effect><DropShadowEffect /></TextBlock.Effect>Register</TextBlock>
+    </Grid>
+</Window>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://schemas.inspiredisplays.com" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="FeedService" targetNamespace="http://schemas.inspiredisplays.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/Imports">
+      <xsd:import schemaLocation="http://devserver2003/Inspire.ClientManager/FeedServiceReference.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com" />
+      <xsd:import schemaLocation="http://devserver2003/Inspire.ClientManager/FeedServiceReference.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetFeedsRequestMessage" />
+  <wsdl:message name="GetFeedsResponseMessage">
+    <wsdl:part name="Feeds" element="tns:Feeds" />
+  </wsdl:message>
+  <wsdl:message name="FeedServiceContract_GetFeeds_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddFeedRequestMessage">
+    <wsdl:part name="Feed" element="tns:Feed" />
+  </wsdl:message>
+  <wsdl:message name="AddFeedResponseMessage" />
+  <wsdl:message name="FeedServiceContract_AddFeed_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFeedRequestMessage">
+    <wsdl:part name="Feed" element="tns:Feed" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFeedResponseMessage" />
+  <wsdl:message name="FeedServiceContract_UpdateFeed_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteFeedRequestMessage">
+    <wsdl:part name="FeedID" element="tns:FeedID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteFeedResponseMessage" />
+  <wsdl:message name="FeedServiceContract_DeleteFeed_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetEntriesRequestMessage">
+    <wsdl:part name="FeedID" element="tns:FeedID" />
+  </wsdl:message>
+  <wsdl:message name="GetEntriesResponseMessage">
+    <wsdl:part name="FeedEntrys" element="tns:FeedEntrys" />
+  </wsdl:message>
+  <wsdl:message name="FeedServiceContract_GetEntries_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddEntryRequestMessage">
+    <wsdl:part name="FeedEntry" element="tns:FeedEntry" />
+  </wsdl:message>
+  <wsdl:message name="AddEntryResponseMessage" />
+  <wsdl:message name="FeedServiceContract_AddEntry_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteEntryRequestMessage">
+    <wsdl:part name="EntryID" element="tns:EntryID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteEntryResponseMessage" />
+  <wsdl:message name="FeedServiceContract_DeleteEntry_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="FeedServiceContract">
+    <wsdl:operation name="GetFeeds">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetFeeds" name="GetFeedsRequestMessage" message="tns:GetFeedsRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetFeedsResponse" name="GetFeedsResponseMessage" message="tns:GetFeedsResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetFeedsGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:FeedServiceContract_GetFeeds_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFeed">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/AddFeed" name="AddFeedRequestMessage" message="tns:AddFeedRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/AddFeedResponse" name="AddFeedResponseMessage" message="tns:AddFeedResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/AddFeedGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:FeedServiceContract_AddFeed_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFeed">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/UpdateFeed" name="UpdateFeedRequestMessage" message="tns:UpdateFeedRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/UpdateFeedResponse" name="UpdateFeedResponseMessage" message="tns:UpdateFeedResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/UpdateFeedGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:FeedServiceContract_UpdateFeed_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFeed">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteFeed" name="DeleteFeedRequestMessage" message="tns:DeleteFeedRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteFeedResponse" name="DeleteFeedResponseMessage" message="tns:DeleteFeedResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteFeedGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:FeedServiceContract_DeleteFeed_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntries">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetEntries" name="GetEntriesRequestMessage" message="tns:GetEntriesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetEntriesResponse" name="GetEntriesResponseMessage" message="tns:GetEntriesResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetEntriesGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:FeedServiceContract_GetEntries_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddEntry">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/AddEntry" name="AddEntryRequestMessage" message="tns:AddEntryRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/AddEntryResponse" name="AddEntryResponseMessage" message="tns:AddEntryResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/AddEntryGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:FeedServiceContract_AddEntry_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEntry">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteEntry" name="DeleteEntryRequestMessage" message="tns:DeleteEntryRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteEntryResponse" name="DeleteEntryResponseMessage" message="tns:DeleteEntryResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteEntryGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:FeedServiceContract_DeleteEntry_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FeedsEndpoint" type="tns:FeedServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetFeeds">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/GetFeeds" style="document" />
+      <wsdl:input name="GetFeedsRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetFeedsResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddFeed">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/AddFeed" style="document" />
+      <wsdl:input name="AddFeedRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddFeedResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFeed">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/UpdateFeed" style="document" />
+      <wsdl:input name="UpdateFeedRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateFeedResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFeed">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteFeed" style="document" />
+      <wsdl:input name="DeleteFeedRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteFeedResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntries">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/GetEntries" style="document" />
+      <wsdl:input name="GetEntriesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetEntriesResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddEntry">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/AddEntry" style="document" />
+      <wsdl:input name="AddEntryRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddEntryResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEntry">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteEntry" style="document" />
+      <wsdl:input name="DeleteEntryRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteEntryResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FeedService">
+    <wsdl:port name="FeedsEndpoint" binding="tns:FeedsEndpoint">
+      <soap:address location="http://devserver2003/Inspire.ClientManager/FeedServiceReference.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

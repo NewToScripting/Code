@@ -1,0 +1,49 @@
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.Console\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.pdb
+C:\Users\twesterberg\Desktop\Inspire.Server.Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.dll
+C:\Users\twesterberg\Desktop\Inspire.Server.Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.pdb
+C:\Users\twesterberg\Desktop\Inspire.Server.Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.dll
+C:\Users\twesterberg\Desktop\Inspire.Server.Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.pdb
+C:\Users\twesterberg\Desktop\Inspire.Server.Console\Inspire.Server.Console.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\twesterberg\Desktop\Inspire.Server.Console\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.dll
+C:\Users\twesterberg\Desktop\Inspire.Server.Console\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.pdb
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.dll
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.pdb
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.dll
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.pdb
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.dll
+C:\Users\jhaveard\Desktop\Core Server\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.pdb
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.dll
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Objects.pdb
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.dll
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Data\bin\Debug\Inspire.Server.Console.Proxy.pdb
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.dll
+C:\CODE\trunk\InspireServer\Console\Inspire.Server.Console.Data\obj\Debug\Inspire.Server.Console.Objects.pdb

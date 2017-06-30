@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="EventsModule.EventTemplates.RoomEvents.RoomEvent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    mc:Ignorable="d"
+    SnapsToDevicePixels="True" xmlns:Diagnostics="clr-namespace:System.Diagnostics;assembly=WindowsBase">
+    <UserControl.Resources>
+        <!--<Inspire:ShortTimeConverter x:Key="shortTimeConverter" />-->
+        <!--<ObjectDataProvider x:Key="FeedEntryDS" ObjectType="{x:Type Proxy:FeedEntry}" d:IsDataSource="True"/>-->
+    </UserControl.Resources>
+    <Viewbox SnapsToDevicePixels="True" x:Name="viewbox">
+        <ItemsControl x:Name="itemsControl" ><!--Template="{Binding RelativeSource={RelativeSource AncestorType={x:Type EventTemplates:EventStack}}, Path=EventTemplate}"-->
+            <Border Background="#B20B1014" CornerRadius="20,20,20,20" Width="1024" Height="768">
+                <Grid>
+                    <StackPanel VerticalAlignment="Center">
+                        <StackPanel>
+                            <TextBlock HorizontalAlignment="Center" FontSize="70" Text="Event Group"/>
+                            <TextBlock HorizontalAlignment="Center" FontSize="50" Text="Event Name"/>
+                            <TextBlock HorizontalAlignment="Center" FontSize="40" Text="Event Type"/>
+                        </StackPanel>
+                        <StackPanel HorizontalAlignment="Center" Margin="0,40,0,0" Orientation="Horizontal">
+                            <TextBlock HorizontalAlignment="Center" Margin="0,0,20,0" FontSize="50" Text="6:30 AM"/>
+                            <TextBlock HorizontalAlignment="Center" Margin="20,0,0,0" FontSize="50" Text="10:30 AM"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </ItemsControl>
+    </Viewbox>
+</UserControl>

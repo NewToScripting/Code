@@ -1,0 +1,15 @@
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\bin\Debug\Inspire.Server.Rooms.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\bin\Debug\Inspire.Server.Rooms.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\Inspire.Server.Rooms.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\Inspire.Server.Rooms.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\bin\Debug\Inspire.Server.Rooms.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\bin\Debug\Inspire.Server.Rooms.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\Inspire.Server.Rooms.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\Inspire.Server.Rooms.BusinessEntities.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\bin\Debug\Inspire.Server.Rooms.BusinessEntities.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\bin\Debug\Inspire.Server.Rooms.BusinessEntities.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\Inspire.Server.Rooms.BusinessEntities.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\Inspire.Server.Rooms.BusinessEntities.pdb

@@ -1,0 +1,94 @@
+﻿<Window x:Class="Inspire.Server.Console.Interface.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Controls="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit"
+    xmlns:WCF="clr-namespace:Inspire.Server.Console.Interface"
+    Title="" Height="400" Width="299" WindowStyle="None" AllowsTransparency="True" Background="Transparent" ResizeMode="NoResize" MouseLeftButtonDown="DragWindow" Closing="OnClose" StateChanged="OnStateChanged" IsVisibleChanged="OnIsVisibleChanged"
+    FontSize="7.75pt"
+    Foreground="#DDD"
+    FontFamily="Verdana">
+
+    <Window.Resources>
+        <Style x:Key="ButtonFocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle SnapsToDevicePixels="true" Margin="2" Stroke="Black" StrokeDashArray="1 2" StrokeThickness="1"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <LinearGradientBrush x:Key="ButtonNormalBackground" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#F3F3F3" Offset="0"/>
+            <GradientStop Color="#EBEBEB" Offset="0.5"/>
+            <GradientStop Color="#DDDDDD" Offset="0.5"/>
+            <GradientStop Color="#CDCDCD" Offset="1"/>
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="ButtonNormalBorder" Color="#FF707070"/>
+      </Window.Resources>
+    <Border CornerRadius="5" Width="291" ClipToBounds="True" Background="{StaticResource PopupBackgroundBrush}" >
+        <Grid ClipToBounds="True" Height="400" Width="280" VerticalAlignment="Stretch" Loaded="Grid_Loaded">
+        <Button Margin="225,1,35,0" Height="23" Name="btnMinimize" VerticalAlignment="Top" Click="btnMinimize_Click">-</Button>
+        <Button Margin="0,1,13,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="22" Height="23" Content="X" Click="btnClose_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFF1E0E0" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <TabControl Margin="0,30,0,5" Name="tabMain" Background="DarkGray">
+                <TabItem Header="Displays" Name="tabItemDisplays" Foreground="{StaticResource Foreground}">
+                    <Grid>
+                        <Controls:DataGrid x:Name="grdDisplaysGrid" Margin="15,43,17,43" AutoGenerateColumns="False" >
+                            <Controls:DataGrid.Columns>
+                                <Controls:DataGridTextColumn Header="Active" DataFieldBinding="{Binding Path=ActiveFlag}" />
+                                <Controls:DataGridTextColumn Header="Last Ping" DataFieldBinding="{Binding Path=LastCommunication}" />
+                                <Controls:DataGridTextColumn Header="Host Name" DataFieldBinding="{Binding Path=HostName}" />
+                                <Controls:DataGridTextColumn Header="Name" DataFieldBinding="{Binding Path=DisplayName}" />
+                            </Controls:DataGrid.Columns>
+                        </Controls:DataGrid>
+                        <Button Height="23" HorizontalAlignment="Left" Margin="15,6,0,0" Name="btnDisplaysRefresh" VerticalAlignment="Top" Width="75" Click="btnDisplaysRefresh_Click">Refresh</Button>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Service" Name="tabItemServiceManager" Foreground="{StaticResource Foreground}">
+                <Grid Width="271" Height="318" Background="{StaticResource WindowBackgroundBrush}">
+                    <Label Height="23" Name="lblHostName" VerticalAlignment="Top" Margin="97,6,21,0">
+                        <Label.Foreground>
+                                <SolidColorBrush Color="White" />
+                        </Label.Foreground>
+                            <Label.BitmapEffect>
+                                <OuterGlowBitmapEffect GlowColor="{StaticResource MainColor}" />
+                            </Label.BitmapEffect>
+                        </Label>
+                        <Button Margin="10,69,0,0" Name="btnStart" Height="22.04" HorizontalAlignment="Left" VerticalAlignment="Top" Width="49" Click="btnStart_Click">Start</Button>
+                    <Button Height="23" Margin="113,69,106,0" Name="btnRestart" VerticalAlignment="Top">Restart</Button>
+                    <Button Height="23" Margin="65,69,0,0" Name="btnStop" VerticalAlignment="Top" Click="btnStop_Click" HorizontalAlignment="Left" Width="42">Stop</Button>
+                    <Label Foreground="{StaticResource Foreground}" Margin="10,35,0,0" Name="lblServiceStatus" HorizontalAlignment="Left" Width="88" Height="28.04" VerticalAlignment="Top">Service Status:</Label>
+                    <Label Margin="104,35,13,0" Name="lblServiceStatusValue" Height="28.04" VerticalAlignment="Top">
+                            <Label.Foreground>
+                                <SolidColorBrush Color="{StaticResource MainColor}" />
+                            </Label.Foreground>
+                            <Label.BitmapEffect>
+                                <OuterGlowBitmapEffect GlowColor="White" />
+                            </Label.BitmapEffect>
+                        </Label>
+                    <Label Foreground="{StaticResource Foreground}" Margin="10,8,0,0" Name="lblName" HorizontalAlignment="Left" Width="81" Height="28" VerticalAlignment="Top">Server Name:</Label>
+                    <Button Height="23" HorizontalAlignment="Right" Margin="0,69,50,0" Name="btnRefresh" VerticalAlignment="Top" Width="50" Click="btnRefresh_Click">Refresh</Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Events" Name="tabItemEvents" Foreground="{StaticResource Foreground}">
+                <Grid>
+                    <Controls:DataGrid x:Name="grdEventsGrid" Margin="17,43,14,0" AutoGenerateColumns="True">
+                        
+                    </Controls:DataGrid>
+                    <Button Height="23" Margin="6,6,116,0" Name="btnGetEvents" VerticalAlignment="Top" Click="btnGetEvents_Click">Get Inspire Event Log</Button>
+                </Grid>
+            </TabItem>
+            </TabControl>
+    </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1ACF1272-D3EE-46EE-AEFB-CB22C7C26E13}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspire.Server.Display</RootNamespace>
+    <AssemblyName>Inspire.Server.Display</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Inspire.ServiceHost\Lib\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLogic\DisplayAccessFasade.cs" />
+    <Compile Include="BusinessLogic\DisplayGroupAccessFasade.cs" />
+    <Compile Include="BusinessLogic\DisplayPropertyAccessFasade.cs" />
+    <Compile Include="DataAccess\DisplayDatabaseAccess.cs" />
+    <Compile Include="DataAccess\DisplayGroupDatabaseAccess.cs" />
+    <Compile Include="DataAccess\DisplayLicense.cs" />
+    <Compile Include="DataAccess\DisplayPropertyDatabaseAccess.cs" />
+    <Compile Include="DataAccess\DisplaySql.cs" />
+    <Compile Include="DataContracts\Display.cs" />
+    <Compile Include="DataContracts\DisplayGroup.cs" />
+    <Compile Include="DataContracts\DisplayGroups.cs" />
+    <Compile Include="DataContracts\DisplayProperties.cs" />
+    <Compile Include="DataContracts\DisplayProperty.cs" />
+    <Compile Include="DataContracts\Displays.cs" />
+    <Compile Include="MessageContracts\DisplayGroup\AddDisplayGroupRequestMessage.cs" />
+    <Compile Include="MessageContracts\DisplayGroup\AddDisplayGroupResponseMessage.cs" />
+    <Compile Include="MessageContracts\DisplayGroup\DeleteDisplayGroupRequestMessage.cs" />
+    <Compile Include="MessageContracts\DisplayGroup\DeleteDisplayGroupResponseMessage.cs" />
+    <Compile Include="MessageContracts\DisplayGroup\GetAllDisplayGroupsRequestMessage.cs" />
+    <Compile Include="MessageContracts\DisplayGroup\GetAllDisplayGroupsResponseMessage.cs" />
+    <Compile Include="MessageContracts\DisplayGroup\GetDisplayGroupsRequestMessage.cs" />
+    <Compile Include="MessageContracts\DisplayGroup\GetDisplayGroupsResponseMessage.cs" />
+    <Compile Include="MessageContracts\DisplayGroup\UpdateDisplayGroupRequestMessage.cs" />
+    <Compile Include="MessageContracts\DisplayGroup\UpdateDisplayGroupResponseMessage.cs" />
+    <Compile Include="MessageContracts\DisplayProperties\AddDisplayPropertyRequestMessage.cs" />
+    <Compile Include="MessageContracts\DisplayProperties\AddDisplayPropertyResponseMessage.cs" />
+    <Compile Include="MessageContracts\DisplayProperties\DeleteDisplayPropertyRequestMessage.cs" />
+    <Compile Include="MessageContracts\DisplayProperties\DeleteDisplayPropertyResponseMessage.cs" />
+    <Compile Include="MessageContracts\DisplayProperties\GetDisplayPropertiesRequestMessage.cs" />
+    <Compile Include="MessageContracts\DisplayProperties\GetDisplayPropertiesResponseMessage.cs" />
+    <Compile Include="MessageContracts\DisplayProperties\UpdateDisplayPropertyRequestMessage.cs" />
+    <Compile Include="MessageContracts\DisplayProperties\UpdateDisplayPropertyResponseMessage.cs" />
+    <Compile Include="MessageContracts\Display\AddDisplayRequestMessage.cs" />
+    <Compile Include="MessageContracts\Display\AddDisplayResponseMessage.cs" />
+    <Compile Include="MessageContracts\Display\DeleteDisplaysRequestMessage.cs" />
+    <Compile Include="MessageContracts\Display\DeleteDisplaysResponseMessage.cs" />
+    <Compile Include="MessageContracts\Display\GetAllDisplaysRequestMessage.cs" />
+    <Compile Include="MessageContracts\Display\GetAllDisplaysResponseMessage.cs" />
+    <Compile Include="MessageContracts\Display\GetDisplaysInScheduleRequestMessage.cs" />
+    <Compile Include="MessageContracts\Display\GetDisplaysInScheduleResponseMessage.cs" />
+    <Compile Include="MessageContracts\Display\GetDisplaysRequestMessage.cs" />
+    <Compile Include="MessageContracts\Display\GetDisplaysResponseMessage.cs" />
+    <Compile Include="MessageContracts\Display\GetSingleDisplaysRequestMessage.cs" />
+    <Compile Include="MessageContracts\Display\GetSingleDisplaysResponseMessage.cs" />
+    <Compile Include="MessageContracts\Display\UpdateDisplaysRequestMessage.cs" />
+    <Compile Include="MessageContracts\Display\UpdateDisplaysResponseMessage.cs" />
+    <Compile Include="Service\ClientDisplayGroupsService.cs" />
+    <Compile Include="Service\ClientDisplayPropertiesService.cs" />
+    <Compile Include="Service\ClientDisplayService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\IClientDisplayGroupsServiceContract.cs" />
+    <Compile Include="Service\IClientDisplayPropertiesServiceContract.cs" />
+    <Compile Include="Service\IClientDisplayServiceContract.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Inspire.Server.Common.csproj">
+      <Project>{888C4F19-BC38-4530-B1DE-00EB62A6CC4A}</Project>
+      <Name>Inspire.Server.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Roles="ServiceRole" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

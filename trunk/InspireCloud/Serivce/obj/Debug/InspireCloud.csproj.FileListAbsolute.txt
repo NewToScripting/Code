@@ -1,0 +1,10 @@
+C:\New_Code\InspireCloud\InspireCloud\bin\InspireCloud.dll.config
+C:\New_Code\InspireCloud\InspireCloud\bin\InspireCloud.dll
+C:\New_Code\InspireCloud\InspireCloud\bin\InspireCloud.pdb
+C:\New_Code\InspireCloud\InspireCloud\obj\Debug\InspireCloud.dll
+C:\New_Code\InspireCloud\InspireCloud\obj\Debug\InspireCloud.pdb
+C:\New_Code\InspireCloud\Cloud\bin\InspireCloud.dll.config
+C:\New_Code\InspireCloud\Cloud\bin\InspireCloud.dll
+C:\New_Code\InspireCloud\Cloud\bin\InspireCloud.pdb
+C:\New_Code\InspireCloud\Cloud\obj\Debug\InspireCloud.dll
+C:\New_Code\InspireCloud\Cloud\obj\Debug\InspireCloud.pdb

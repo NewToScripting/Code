@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="62c25869-b700-407f-8af9-97dc65f284ae" name="jhaveard@DONZI 2011-05-14 10:19:17" runUser="donzi\jhaveard" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="9712338e-2f4b-4039-9438-e5d95e829e7e">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="jhaveard_DONZI 2011-05-14 10_19_17" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-14T10:19:17.6353918-04:00" queuing="2011-05-14T10:19:21.9216370-04:00" start="2011-05-14T10:19:22.0966470-04:00" finish="2011-05-14T10:20:41.1621693-04:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="2" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="1" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DONZI" outcome="Error" timestamp="2011-05-14T10:20:41.1591691-04:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod2" storage="c:\code\trunk\registrationserver\inspireregistationserver\testproject\bin\debug\testproject.dll" id="406ba890-327e-e1c2-468b-58a47238e470">
+      <Execution id="025cb921-cb77-4dc3-b36c-7d8e3414617d" />
+      <TestMethod codeBase="C:/CODE/trunk/RegistrationServer/InspireRegistationServer/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest1, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod2" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\code\trunk\registrationserver\inspireregistationserver\testproject\bin\debug\testproject.dll" id="24e109b5-ebac-7154-c0d0-91db5c99399f">
+      <Execution id="c77b7579-8dab-488d-b927-a7f607efe05d" />
+      <TestMethod codeBase="C:/CODE/trunk/RegistrationServer/InspireRegistationServer/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.UnitTest1, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="24e109b5-ebac-7154-c0d0-91db5c99399f" executionId="c77b7579-8dab-488d-b927-a7f607efe05d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="406ba890-327e-e1c2-468b-58a47238e470" executionId="025cb921-cb77-4dc3-b36c-7d8e3414617d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c77b7579-8dab-488d-b927-a7f607efe05d" testId="24e109b5-ebac-7154-c0d0-91db5c99399f" testName="TestMethod1" computerName="DONZI" duration="00:01:18.9065132" startTime="2011-05-14T10:19:22.2556561-04:00" endTime="2011-05-14T10:20:41.1621693-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c77b7579-8dab-488d-b927-a7f607efe05d">
+    </UnitTestResult>
+    <UnitTestResult executionId="025cb921-cb77-4dc3-b36c-7d8e3414617d" testId="406ba890-327e-e1c2-468b-58a47238e470" testName="TestMethod2" computerName="DONZI" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="025cb921-cb77-4dc3-b36c-7d8e3414617d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,77 @@
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.FaultContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.FaultContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Feeds\Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.ServiceContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.DataContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\bin\Debug\Inspire.Server.Events.MessageContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Events\Inspire.Events\Source\Service Interface\Inspire.Feeds.ServiceContracts\obj\Debug\Inspire.Server.Events.ServiceContracts.pdb

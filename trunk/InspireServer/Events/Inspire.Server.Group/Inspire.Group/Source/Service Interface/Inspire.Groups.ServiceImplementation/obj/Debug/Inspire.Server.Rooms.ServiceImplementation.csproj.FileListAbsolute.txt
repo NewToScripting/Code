@@ -1,0 +1,57 @@
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.ServiceImplementation.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.ServiceImplementation.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.BusinessLogic.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.MessageContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.ServiceContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.MessageContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.BusinessLogic.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.ServiceContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\obj\Debug\Inspire.Server.Rooms.ServiceImplementation.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\obj\Debug\Inspire.Server.Rooms.ServiceImplementation.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.ServiceImplementation.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.ServiceImplementation.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.BusinessLogic.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.DataContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.FaultContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.MessageContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.ServiceContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.DataAccess.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.MessageContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.DataContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.BusinessLogic.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.DataAccess.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.ServiceContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\obj\Debug\Inspire.Server.Rooms.ServiceImplementation.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\obj\Debug\Inspire.Server.Rooms.ServiceImplementation.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.ServiceImplementation.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.ServiceImplementation.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.BusinessEntities.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.BusinessLogic.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.DataContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.FaultContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.MessageContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.ServiceContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.DataAccess.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.MessageContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.BusinessEntities.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.DataContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.BusinessLogic.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.FaultContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.DataAccess.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\bin\Debug\Inspire.Server.Rooms.ServiceContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\obj\Debug\Inspire.Server.Rooms.ServiceImplementation.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.ServiceImplementation\obj\Debug\Inspire.Server.Rooms.ServiceImplementation.pdb

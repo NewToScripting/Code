@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://hptouchsmart600/WeatherService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WeatherService.DataContracts" />
+  <xs:element name="QueryLocations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="query" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryLocationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WeatherService.DataContracts" minOccurs="0" name="QueryLocationsResult" nillable="true" type="q1:ArrayOfLocation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLatestWeatherReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WeatherService.DataContracts" minOccurs="0" name="location" nillable="true" type="q2:Location" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WeatherService.DataContracts" minOccurs="0" name="us" type="q3:UnitsSystems" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLatestWeatherReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WeatherService.DataContracts" minOccurs="0" name="GetLatestWeatherReportResult" nillable="true" type="q4:WeatherReport" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d61ab5d6-f6f5-405a-896b-5f9ea6b8371c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/inspire.events/svc/imageservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ImageService.disco" MetadataType="Disco" ID="e5fb47d1-9af8-4260-8d35-8f3239950336" SourceId="1" SourceUrl="http://capehorn/Inspire.Events/svc/ImageService.svc?disco" />
+    <MetadataFile FileName="ImageService.xsd" MetadataType="Schema" ID="8018876a-251f-4237-998c-a5c8574c389d" SourceId="1" SourceUrl="http://capehorn/Inspire.Events/svc/ImageService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ImageService1.xsd" MetadataType="Schema" ID="571c4bab-6697-4ebf-b893-c1c53b3e6f55" SourceId="1" SourceUrl="http://capehorn/Inspire.Events/svc/ImageService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ImagesService.wsdl" MetadataType="Wsdl" ID="16db3ae4-1fc8-4670-932d-ee2ef5ac6b63" SourceId="1" SourceUrl="http://capehorn/Inspire.Events/svc/ImageService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

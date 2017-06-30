@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:i0="http://schemas.inspiredisplays.com" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://ServiceContract.InspireDisplays.com" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="ScheduleService" targetNamespace="http://ServiceContract.InspireDisplays.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://schemas.inspiredisplays.com" location="http://capehorn/Inspire.Server/Svc/DisplayAdminService.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:message name="CheckAndUpdateDisplaysRequest" />
+  <wsdl:message name="UpdateDisplaysRequest" />
+  <wsdl:message name="PingDisplaysRequest" />
+  <wsdl:portType name="DisplayAdminServiceContract">
+    <wsdl:operation name="CheckAndUpdateDisplays">
+      <wsdl:input wsaw:Action="http://ServiceContract.InspireDisplays.com/ScheduleServiceContract/CheckAndUpdateDisplaysRequest" name="CheckAndUpdateDisplaysRequest" message="tns:CheckAndUpdateDisplaysRequest" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDisplays">
+      <wsdl:input wsaw:Action="http://ServiceContract.InspireDisplays.com/ScheduleServiceContract/UpdateDisplaysRequest" name="UpdateDisplaysRequest" message="tns:UpdateDisplaysRequest" />
+    </wsdl:operation>
+    <wsdl:operation name="PingDisplays">
+      <wsdl:input wsaw:Action="http://ServiceContract.InspireDisplays.com/ScheduleServiceContract/PingDisplays" name="PingDisplaysRequest" message="tns:PingDisplaysRequest" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="ScheduleService">
+    <wsdl:port name="DisplayAdminEndpoint" binding="i0:DisplayAdminEndpoint">
+      <soap:address location="http://capehorn/Inspire.Server/Svc/DisplayAdminService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

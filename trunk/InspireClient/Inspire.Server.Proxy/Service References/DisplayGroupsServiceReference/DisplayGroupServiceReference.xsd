@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.inspiredisplays.com/ServiceContract.Model/" elementFormDefault="qualified" targetNamespace="http://schemas.inspiredisplays.com/ServiceContract.Model/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://testserver/DisplayManager/DisplayGroupServiceReference.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com/DataContract.Model/" />
+  <xs:element xmlns:q1="http://schemas.inspiredisplays.com/DataContract.Model/" name="DisplayGroups" nillable="true" type="q1:DisplayGroups" />
+  <xs:element name="PropertyID" nillable="true" type="xs:string" />
+  <xs:element xmlns:q2="http://schemas.inspiredisplays.com/DataContract.Model/" name="DisplayGroup" nillable="true" type="q2:DisplayGroup" />
+  <xs:element name="GUID" nillable="true" type="xs:string" />
+</xs:schema>

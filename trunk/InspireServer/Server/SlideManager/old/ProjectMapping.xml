@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<ProjectMappingInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" FileName="ProjectMapping.xml" xmlns="http://schemas.microsoft.com/pag/project-mapping">
+  <ProjectMappingTables>
+    <ProjectMappingTable Name="Service">
+      <ProjectMappings>
+        <ProjectMapping ProjectId="8f27f35d-54c6-4675-a7bb-ccc6228bae74" ProjectPath="\GeneratedCode" ProjectName="Inspire.SlideManager.BusinessEntities">
+          <Roles>
+            <Role Name="BusinessEntityRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="0c01b9b5-607d-44e0-af97-3e13f2346f4f" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.SlideManager.BusinessLogic">
+          <Roles>
+            <Role Name="BusinessLogicRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="f61288cc-c80f-4eb7-b802-9f2916422162" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.SlideManager.DataAccess">
+          <Roles />
+        </ProjectMapping>
+        <ProjectMapping ProjectId="ae07c941-c7a9-4beb-a135-10561f02a3ad" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.SlideManager.DataContracts">
+          <Roles>
+            <Role Name="DataContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="7ac9247e-4a18-4575-a121-1e72b098c930" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.SlideManager.FaultContracts">
+          <Roles>
+            <Role Name="FaultContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="54f6da65-09fa-4760-bb8d-e1103d06d09b" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.SlideManager.MessageContracts">
+          <Roles>
+            <Role Name="MessageContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="0e8fbf2c-51ca-4cc6-9f13-fefa382bbdf9" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.SlideManager.ServiceImplementation">
+          <Roles>
+            <Role Name="ServiceRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="9cf5b819-3935-4a85-a39b-61686c9a3d08" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.SlideManager.ServiceContracts">
+          <Roles>
+            <Role Name="ServiceContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="c59fb227-0bc5-47dc-b92e-78302037576d" ProjectPath="\GeneratedCode" ProjectName="Inspire.SlideManager.Host">
+          <Roles>
+            <Role Name="HostRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="d124cd65-48ad-457f-88d8-5422d661c714" ProjectPath="\GeneratedCode" ProjectName="Inspire.SlideManager.Client">
+          <Roles>
+            <Role Name="ClientRole" />
+          </Roles>
+        </ProjectMapping>
+      </ProjectMappings>
+    </ProjectMappingTable>
+    <ProjectMappingTable Name="Server.Proxy">
+      <ProjectMappings>
+        <ProjectMapping ProjectId="c20056a9-5bfa-4bfe-a580-7fa197a7a795" ProjectPath="\GeneratedCode" ProjectName="Server.Proxy.BusinessEntities">
+          <Roles>
+            <Role Name="BusinessEntityRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="e6710053-4020-4372-b340-4c008cf242a3" ProjectPath="\GeneratedCode" ProjectName="Server.Proxy.BusinessLogic">
+          <Roles>
+            <Role Name="BusinessLogicRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="12af0d22-2bde-4c90-a683-f003bd1a8c3b" ProjectPath="\GeneratedCode" ProjectName="Server.Proxy.DataAccess">
+          <Roles />
+        </ProjectMapping>
+        <ProjectMapping ProjectId="d59130c4-6175-4d0b-9c2b-651792269a49" ProjectPath="\GeneratedCode" ProjectName="Server.Proxy.DataContracts">
+          <Roles>
+            <Role Name="DataContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="74f5a852-789a-4c68-a0bd-b6ed964f3621" ProjectPath="\GeneratedCode" ProjectName="Server.Proxy.FaultContracts">
+          <Roles>
+            <Role Name="FaultContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="2f3d0ae3-f9fa-46bf-a46d-3836f4b78d21" ProjectPath="\GeneratedCode" ProjectName="Server.Proxy.MessageContracts">
+          <Roles>
+            <Role Name="MessageContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="bebb6581-31a6-47bb-9d4e-4d2f623c25bf" ProjectPath="\GeneratedCode" ProjectName="Server.Proxy.ServiceImplementation">
+          <Roles>
+            <Role Name="ServiceRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="ed5434cd-530c-4c47-9d69-4fa56de90b8b" ProjectPath="\GeneratedCode" ProjectName="Server.Proxy.ServiceContracts">
+          <Roles>
+            <Role Name="ServiceContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="14fb23b2-2dd8-4c95-a0a2-bcab107cd737" ProjectPath="\GeneratedCode" ProjectName="Server.Proxy.Host">
+          <Roles>
+            <Role Name="HostRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="d4d592f1-7c00-487c-ae6d-4703a4658470" ProjectPath="\GeneratedCode" ProjectName="Server.Proxy.Client">
+          <Roles>
+            <Role Name="ClientRole" />
+          </Roles>
+        </ProjectMapping>
+      </ProjectMappings>
+    </ProjectMappingTable>
+  </ProjectMappingTables>
+</ProjectMappingInformation>

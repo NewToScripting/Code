@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.inspiredisplays.com" elementFormDefault="qualified" targetNamespace="http://schemas.inspiredisplays.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SlideID" nillable="true" type="xs:string" />
+  <xs:complexType name="SlideFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GUID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="File" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SlideFile" nillable="true" type="tns:SlideFile" />
+  <xs:complexType name="DefaultFaultContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DefaultFaultContract" nillable="true" type="tns:DefaultFaultContract" />
+</xs:schema>

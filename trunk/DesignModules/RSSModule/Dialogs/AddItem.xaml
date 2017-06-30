@@ -1,0 +1,15 @@
+﻿<Window x:Class="RSSModule.Dialogs.AddItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Commands="clr-namespace:RSSModule.Commands"
+    Title="Add Item" Height="177" Width="547" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" Background="{StaticResource WindowBackgroundBrush}" >
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:RSSModuleCommands.AddRSSFeedCommand}" Executed="AddRSSFeedExecuted" CanExecute="AddRSSFeedCanExecute" />
+    </Window.CommandBindings>
+    <Grid>
+        <Label Height="28" Margin="40,20,40,0" Name="lblAddItem" FontSize="15" Foreground="White" VerticalAlignment="Top">Label</Label>
+        <TextBox Margin="40,50,40,58" Name="tbFeedUrl" />
+        <Button Height="38" Margin="147,0,214,12" Name="btnOk" VerticalAlignment="Bottom" Command="{x:Static Commands:RSSModuleCommands.AddRSSFeedCommand}" Width="170">Ok</Button>
+        <Button Height="38" HorizontalAlignment="Right" Margin="0,0,40,12" Name="btnCancel" VerticalAlignment="Bottom" Width="170" Click="btnCancel_Click">Cancel</Button>
+    </Grid>
+</Window>

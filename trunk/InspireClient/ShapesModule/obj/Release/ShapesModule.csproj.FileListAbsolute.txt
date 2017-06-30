@@ -1,0 +1,17 @@
+C:\CODE\trunk\InspireClient\InspireClient\bin\Release\Modules\ShapesModule.dll
+C:\CODE\trunk\InspireClient\InspireClient\bin\Release\Modules\ShapesModule.pdb
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\PropertyPanel.baml
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\Resources\Shapes.baml
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\PropertyPanel.g.cs
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\ShapeChooser.g.cs
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\ShapeControl.g.cs
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\ShapesModule_MarkupCompile.cache
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\ShapesModule_MarkupCompile.lref
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\ShapeChooser.baml
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\ShapeControl.baml
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\ShapesModule.g.resources
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\ShapesModule.Properties.Resources.resources
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\ShapesModule.dll
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\ShapesModule.pdb
+C:\CODE\trunk\InspireClient\ShapesModule\obj\Release\ShapesModule.csproj.GenerateResource.Cache

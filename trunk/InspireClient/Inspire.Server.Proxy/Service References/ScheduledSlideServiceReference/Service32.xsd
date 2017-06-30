@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.inspiredisplays.com/ServiceContract/" elementFormDefault="qualified" targetNamespace="http://schemas.inspiredisplays.com/ServiceContract/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://devserver2003/Inspire.ClientManager/ScheduledSlide/06112008/Service.svc?xsd=xsd2" namespace="http://schemas.inspiredisplays.com/DataContract/" />
+  <xs:element name="ScheduleID" nillable="true" type="xs:string" />
+  <xs:element xmlns:q1="http://schemas.inspiredisplays.com/DataContract/" name="Schedules" nillable="true" type="q1:ScheduledSlides" />
+  <xs:element xmlns:q2="http://schemas.inspiredisplays.com/DataContract/" name="ScheduledSlide" nillable="true" type="q2:ScheduledSlide" />
+  <xs:element name="ScheduledID" nillable="true" type="xs:string" />
+  <xs:element xmlns:q3="http://schemas.inspiredisplays.com/DataContract/" name="ScheduledSlides" nillable="true" type="q3:ScheduledSlides" />
+  <xs:element name="ScheduledSlideID" nillable="true" type="xs:string" />
+  <xs:element name="SlideID" nillable="true" type="xs:string" />
+  <xs:element name="IsSlideScheduled" type="xs:boolean" />
+  <xs:element name="NewSlideID" nillable="true" type="xs:string" />
+  <xs:element name="OriginalSlideID" nillable="true" type="xs:string" />
+</xs:schema>

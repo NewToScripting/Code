@@ -1,0 +1,52 @@
+﻿<MapModule:InspireMapLocationCollection xmlns:MapModule="clr-namespace:MapModule" Capacity="25">
+	<MapModule:InspireMapLocation Altitude="0" CategoryName="Class curae" IsHome="True" LocationDescription="Donec vestibulum aenean" LocationDistance="4.23" LocationName="Fusce aliquam integer" MarkerVisible="False" Pitch="0" PriceRating="2" Roll="0" ShowPriceRating="True" Yaw="0">
+		<MapModule:InspireMapLocation.MarkerPin>
+			<MapModule:InspirePushPin Altitude="494.16" CategoryStyle="1" Description="Nam adipiscing sed vivamus aliquam" FlyToAltitude="773.63" Longitude="291.15" Latitude="384.47" MaxAltitude="910" MinAltitude="5" Name="Nullam duis accumsan"/>
+		</MapModule:InspireMapLocation.MarkerPin>
+	</MapModule:InspireMapLocation>
+	<MapModule:InspireMapLocation Altitude="196.58" CategoryName="Aptent parturient" IsHome="False" LocationDescription="Bibendum aliquet lorem morbi nunc" LocationDistance="4.23" LocationName="Blandit phasellus" MarkerVisible="True" Pitch="0" PriceRating="3" Roll="0" ShowPriceRating="False" Yaw="0">
+		<MapModule:InspireMapLocation.MarkerPin>
+			<MapModule:InspirePushPin Altitude="599.75" CategoryStyle="3" Description="Eleifend proin consequat" FlyToAltitude="469.32" Longitude="695.93" Latitude="433.9" MaxAltitude="158.25" MinAltitude="63.9" Name="Vestibulum auctor facilisi"/>
+		</MapModule:InspireMapLocation.MarkerPin>
+	</MapModule:InspireMapLocation>
+	<MapModule:InspireMapLocation Altitude="359.07" CategoryName="Adipiscing augue parturient conubia" IsHome="True" LocationDescription="Hac vestibulum" LocationDistance="4.23" LocationName="Amet dapibus vestibulum fames felis" MarkerVisible="False" Pitch="0" PriceRating="3" Roll="0" ShowPriceRating="True" Yaw="0">
+		<MapModule:InspireMapLocation.MarkerPin>
+			<MapModule:InspirePushPin Altitude="354.19" CategoryStyle="4" Description="Egestas faucibus mus parturient" FlyToAltitude="239.01" Longitude="443.8" Latitude="475.79" MaxAltitude="846.46" MinAltitude="304.21" Name="Euismod feugiat elementum"/>
+		</MapModule:InspireMapLocation.MarkerPin>
+	</MapModule:InspireMapLocation>
+	<MapModule:InspireMapLocation Altitude="705.24" CategoryName="Facilisis fermentum ipsum" IsHome="False" LocationDescription="Gravida arcu" LocationDistance="4.23" LocationName="Dictum iaculis fringilla" MarkerVisible="True" Pitch="0" PriceRating="3" Roll="0" ShowPriceRating="False" Yaw="0">
+		<MapModule:InspireMapLocation.MarkerPin>
+			<MapModule:InspirePushPin Altitude="762.01" CategoryStyle="8" Description="Elit inceptos" FlyToAltitude="286.58" Longitude="917.82" Latitude="832.38" MaxAltitude="618.66" MinAltitude="988.07" Name="Libero interdum"/>
+		</MapModule:InspireMapLocation.MarkerPin>
+	</MapModule:InspireMapLocation>
+	<MapModule:InspireMapLocation Altitude="403.25" CategoryName="Habitasse vestibulum lobortis ligula lacinia" IsHome="True" LocationDescription="4.23" LocationDistance="Eros non per natoque" LocationName="Sed nascetur posuere magna" MarkerVisible="False" Pitch="0" PriceRating="1" Roll="0" ShowPriceRating="True" Yaw="0">
+		<MapModule:InspireMapLocation.MarkerPin>
+			<MapModule:InspirePushPin Altitude="323.84" CategoryStyle="12" Description="Massa nibh nisi himenaeos litora" FlyToAltitude="923.73" Longitude="794.69" Latitude="759.75" MaxAltitude="936.78" MinAltitude="311.07" Name="Sit vestibulum imperdiet luctus metus"/>
+		</MapModule:InspireMapLocation.MarkerPin>
+	</MapModule:InspireMapLocation>
+	<MapModule:InspireMapLocation Altitude="112.24" CategoryName="Magnis malesuada nisl vel" IsHome="False" LocationDescription="Adipiscing nam penatibus nunc porttitor" LocationDistance="4.23" LocationName="Morbi pretium" MarkerVisible="True" Pitch="0" PriceRating="2" Roll="0" ShowPriceRating="False" Yaw="0">
+		<MapModule:InspireMapLocation.MarkerPin>
+			<MapModule:InspirePushPin Altitude="250.07" CategoryStyle="15" Description="Sagittis vestibulum rhoncus" FlyToAltitude="409.98" Longitude="602.38" Latitude="404.02" MaxAltitude="899.37" MinAltitude="355.14" Name="Senectus orci"/>
+		</MapModule:InspireMapLocation.MarkerPin>
+	</MapModule:InspireMapLocation>
+	<MapModule:InspireMapLocation Altitude="705.98" CategoryName="Mauris sodales pede neque mollis" IsHome="True" LocationDescription="Sociosqu sed dis adipiscing" LocationDistance="4.23" LocationName="Vestibulum venenatis nostra viverra ultrices" MarkerVisible="False" Pitch="0" PriceRating="2" Roll="0" ShowPriceRating="True" Yaw="0">
+		<MapModule:InspireMapLocation.MarkerPin>
+			<MapModule:InspirePushPin Altitude="320.91" CategoryStyle="13" Description="Aliquam netus integer vulputate" FlyToAltitude="284.97" Longitude="804.91" Latitude="323.51" MaxAltitude="434.56" MinAltitude="413.17" Name="Nulla porta volutpat maecenas"/>
+		</MapModule:InspireMapLocation.MarkerPin>
+	</MapModule:InspireMapLocation>
+	<MapModule:InspireMapLocation Altitude="170.17" CategoryName="Quisque vivamus" IsHome="False" LocationDescription="Quam aliquam" LocationDistance="4.23" LocationName="Aliquet praesent curabitur" MarkerVisible="True" Pitch="0" PriceRating="4" Roll="0" ShowPriceRating="False" Yaw="0">
+		<MapModule:InspireMapLocation.MarkerPin>
+			<MapModule:InspirePushPin Altitude="829.9" CategoryStyle="7" Description="Accumsan bibendum quis adipiscing" FlyToAltitude="740.45" Longitude="352.28" Latitude="332.9" MaxAltitude="135.22" MinAltitude="430.46" Name="Dictumst eleifend parturient urna est"/>
+		</MapModule:InspireMapLocation.MarkerPin>
+	</MapModule:InspireMapLocation>
+	<MapModule:InspireMapLocation Altitude="635.38" CategoryName="Cras primis vestibulum" IsHome="True" LocationDescription="Vestibulum facilisi adipiscing" LocationDistance="4.23" LocationName="Class sapien curae" MarkerVisible="False" Pitch="0" PriceRating="1" Roll="0" ShowPriceRating="True" Yaw="0">
+		<MapModule:InspireMapLocation.MarkerPin>
+			<MapModule:InspirePushPin Altitude="668.12" CategoryStyle="18" Description="Donec semper" FlyToAltitude="659.64" Longitude="710.35" Latitude="766.46" MaxAltitude="555.17" MinAltitude="452.03" Name="Leo habitant"/>
+		</MapModule:InspireMapLocation.MarkerPin>
+	</MapModule:InspireMapLocation>
+	<MapModule:InspireMapLocation Altitude="363.51" CategoryName="Etiam fusce" IsHome="False" LocationDescription="Lorem inceptos parturient diam interdum" LocationDistance="4.23" LocationName="Sociis lobortis nulla" MarkerVisible="True" Pitch="0" PriceRating="2" Roll="0" ShowPriceRating="False" Yaw="0">
+		<MapModule:InspireMapLocation.MarkerPin>
+			<MapModule:InspirePushPin Altitude="690.23" CategoryStyle="23" Description="Taciti tellus mus" FlyToAltitude="993.32" Longitude="992.91" Latitude="748.23" MaxAltitude="182.33" MinAltitude="138.86" Name="Augue erat"/>
+		</MapModule:InspireMapLocation.MarkerPin>
+	</MapModule:InspireMapLocation>
+</MapModule:InspireMapLocationCollection>

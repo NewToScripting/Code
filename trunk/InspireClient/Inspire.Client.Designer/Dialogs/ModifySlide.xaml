@@ -1,0 +1,12 @@
+﻿<Window x:Class="Inspire.Client.Designer.Dialogs.ModifySlide"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    Title="Modify Slide" Height="179" Width="518" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" Background="{StaticResource ListBackgroundBrush}"><!---->
+    <Grid>
+        <Image Source="Images/Question.png" HorizontalAlignment="Left" Width="75" Margin="15,5,0,70" />
+        <TextBlock TextWrapping="Wrap" Foreground="White" FontSize="16" Name="lblModify" Margin="109,17,30,62">Would you like to create a new slide, or overwrite the original?</TextBlock>
+        <Button Height="35" Width="128" Click="New_Click" Inspire:ButtonImage.Image="Images\Ok16.png" Margin="193,0,167,21" VerticalAlignment="Bottom">New</Button>
+        <Button Height="35" HorizontalAlignment="Right" Inspire:ButtonImage.Image="Images\Cancel16.png" Width="128" Click="Modify_Click" Margin="0,0,32.747,21" VerticalAlignment="Bottom">Overwrite</Button>
+    </Grid>
+</Window>

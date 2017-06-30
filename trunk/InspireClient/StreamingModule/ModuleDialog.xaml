@@ -1,0 +1,13 @@
+﻿<Window x:Class="StreamingModule.ModuleDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ModuleDialog" Height="343" Width="493">
+    <Grid>
+        <Label Height="28" HorizontalAlignment="Left" Margin="29,26,0,0" Name="label1" VerticalAlignment="Top" Width="75">Stream Url:</Label>
+        <TextBox Height="23" Margin="102,28,92,0" Name="tbStreamUrl" VerticalAlignment="Top" />
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,28,11,0" Name="btnPreview" VerticalAlignment="Top" Width="75" Click="btnPreview_Click">Preview</Button>
+        <MediaElement Margin="62,60,65,49" Name="meStreamTest" />
+        <Button Height="35" Margin="207,0,139,8" Name="btnOk" VerticalAlignment="Bottom" Click="btnOk_Click">Ok</Button>
+        <Button Height="35" HorizontalAlignment="Right" Margin="0,0,8,8" Name="btnCancel" VerticalAlignment="Bottom" Width="125" Click="btnCancel_Click">Cancel</Button>
+    </Grid>
+</Window>

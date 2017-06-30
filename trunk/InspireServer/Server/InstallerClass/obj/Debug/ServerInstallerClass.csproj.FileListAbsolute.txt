@@ -1,0 +1,25 @@
+C:\Users\jhaveard\Desktop\Core Server\InstallerClass\bin\Debug\DisplayServiceInstallerClass.dll
+C:\Users\jhaveard\Desktop\Core Server\InstallerClass\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\Users\jhaveard\Desktop\Core Server\InstallerClass\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Core Server\InstallerClass\obj\Debug\DisplayServiceInstallerClass.dll
+C:\Users\jhaveard\Desktop\Core Server\InstallerClass\obj\Debug\DisplayServiceInstallerClass.pdb
+C:\CODE\InspireServer\Core Server\InstallerClass\bin\Debug\DisplayServiceInstallerClass.dll
+C:\CODE\InspireServer\Core Server\InstallerClass\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\CODE\InspireServer\Core Server\InstallerClass\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Core Server\InstallerClass\obj\Debug\DisplayServiceInstallerClass.dll
+C:\CODE\InspireServer\Core Server\InstallerClass\obj\Debug\DisplayServiceInstallerClass.pdb
+C:\_CODE\InspireServer\Core Server\InstallerClass\bin\Debug\DisplayServiceInstallerClass.dll
+C:\_CODE\InspireServer\Core Server\InstallerClass\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\_CODE\InspireServer\Core Server\InstallerClass\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Core Server\InstallerClass\obj\Debug\DisplayServiceInstallerClass.dll
+C:\_CODE\InspireServer\Core Server\InstallerClass\obj\Debug\DisplayServiceInstallerClass.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\InstallerClass\bin\Debug\DisplayServiceInstallerClass.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\InstallerClass\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\InstallerClass\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\InstallerClass\obj\Debug\DisplayServiceInstallerClass.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\InstallerClass\obj\Debug\DisplayServiceInstallerClass.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\InstallerClass\bin\Debug\DisplayServiceInstallerClass.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\InstallerClass\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\InstallerClass\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\InstallerClass\obj\Debug\DisplayServiceInstallerClass.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\InstallerClass\obj\Debug\DisplayServiceInstallerClass.pdb

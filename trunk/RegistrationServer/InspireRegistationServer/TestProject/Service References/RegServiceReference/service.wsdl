@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="RegistrationService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="RegistrationRequestMessage">
+    <wsdl:part name="Address1" element="tns:Address1" />
+    <wsdl:part name="Address2" element="tns:Address2" />
+    <wsdl:part name="City" element="tns:City" />
+    <wsdl:part name="CompanyName" element="tns:CompanyName" />
+    <wsdl:part name="Email" element="tns:Email" />
+    <wsdl:part name="FirstName" element="tns:FirstName" />
+    <wsdl:part name="LastName" element="tns:LastName" />
+    <wsdl:part name="Phone" element="tns:Phone" />
+    <wsdl:part name="RegKey" element="tns:RegKey" />
+    <wsdl:part name="State" element="tns:State" />
+    <wsdl:part name="Zip" element="tns:Zip" />
+  </wsdl:message>
+  <wsdl:message name="RegistrationResponseMessage">
+    <wsdl:part name="RegDate" element="tns:RegDate" />
+    <wsdl:part name="RegKey" element="tns:RegKey" />
+  </wsdl:message>
+  <wsdl:portType name="IRegistrationService">
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegistrationService/Register" name="RegistrationRequestMessage" message="tns:RegistrationRequestMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRegistrationService/RegisterResponse" name="RegistrationResponseMessage" message="tns:RegistrationResponseMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IRegistrationService" type="tns:IRegistrationService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/IRegistrationService/Register" style="document" />
+      <wsdl:input name="RegistrationRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="RegistrationResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RegistrationService">
+    <wsdl:port name="BasicHttpBinding_IRegistrationService" binding="tns:BasicHttpBinding_IRegistrationService">
+      <soap:address location="http://webd19.crystaltech.com/Registration/RegistrationService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

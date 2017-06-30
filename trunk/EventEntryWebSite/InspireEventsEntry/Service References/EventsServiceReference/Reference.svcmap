@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ae08b121-5b58-4950-9cc8-e9cd50ccdb20" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/inspire.events/svc/eventservice" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EventService.disco" MetadataType="Disco" ID="0f5ff7d0-cc29-4dfe-95bd-62a7dffa3e30" SourceId="1" SourceUrl="http://localhost/Inspire.Events/Svc/EventService?disco" />
+    <MetadataFile FileName="EventService.xsd" MetadataType="Schema" ID="397f4489-ec8d-41b0-b34b-af9fa4e49f32" SourceId="1" SourceUrl="http://localhost/Inspire.Events/Svc/EventService?xsd=xsd0" />
+    <MetadataFile FileName="EventService.wsdl" MetadataType="Wsdl" ID="96cd9195-b5a9-4798-a9cf-cfc9b7bfdfe9" SourceId="1" SourceUrl="http://localhost/Inspire.Events/Svc/EventService?wsdl" />
+    <MetadataFile FileName="EventService1.xsd" MetadataType="Schema" ID="c7f2be48-cee9-497c-9ac7-1f980550d961" SourceId="1" SourceUrl="http://localhost/Inspire.Events/Svc/EventService?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

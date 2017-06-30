@@ -1,0 +1,10 @@
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Service.FaultContracts.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Service.FaultContracts.pdb
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Service.FaultContracts.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Service.FaultContracts.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Service.FaultContracts.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Service.FaultContracts.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Service.FaultContracts.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Service.FaultContracts.pdb

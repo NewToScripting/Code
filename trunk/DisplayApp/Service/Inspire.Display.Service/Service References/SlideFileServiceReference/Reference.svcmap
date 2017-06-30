@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="05fb6de3-c0ef-452b-b2ec-05933f980dac" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Inspire.Server/Svc/slidefileService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SlideFileService.xsd" MetadataType="Schema" ID="a462c1fa-73f9-43f2-b4f9-246b3d891e6d" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/SlideFileService?xsd=xsd1" />
+    <MetadataFile FileName="SlideFileService1.xsd" MetadataType="Schema" ID="f1275cfc-f6cf-49a0-8f39-f91859c9edb1" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/SlideFileService?xsd=xsd0" />
+    <MetadataFile FileName="SlideFileManagerService.wsdl" MetadataType="Wsdl" ID="804ead10-230f-473f-b18f-49a93c762950" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/SlideFileService?wsdl" />
+    <MetadataFile FileName="SlideFileService2.xsd" MetadataType="Schema" ID="5f57b39f-8f36-47bf-9aa2-e214fde78beb" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/SlideFileService?xsd=xsd2" />
+    <MetadataFile FileName="SlideFileService.disco" MetadataType="Disco" ID="34dbc1f9-c75e-4116-b9c3-16d81f3e2c7d" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/SlideFileService?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

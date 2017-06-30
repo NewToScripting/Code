@@ -1,0 +1,88 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer>
+      <setting name="UsedSolutionBuilderID">0</setting>
+    </integer>
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="B8AEEB64-39B2-4FC3-85D0-2838B4BC3280/f:MainForm.cs" caret="2839" scrollPosition="0|0" />
+      <File id="A8DA78C7-96E1-4BCB-9AEC-5B9D69DFB62A/d:GeneratedCode/f:IDirectionServiceContract.cs" caret="1280" scrollPosition="0|0" />
+      <File id="E0F103B7-80B7-49E3-82FD-74EA2345CCE4/d:GeneratedCode/f:DirectionService.cs" caret="634" scrollPosition="0|0" />
+      <File id="C7819B1D-C6F3-4199-80A1-5DC396A556DF/f:ProjectMapping.xml" caret="2045" scrollPosition="0|0" />
+      <File id="917A4A16-61FE-4228-AC40-1B9C63321384/d:GeneratedCode/f:AddDirectionRequestMessage.cs" caret="827" scrollPosition="0|0" />
+      <File id="917A4A16-61FE-4228-AC40-1B9C63321384/d:GeneratedCode/f:AddDirectionResponseMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="917A4A16-61FE-4228-AC40-1B9C63321384/d:GeneratedCode/f:AddImageRequestMessage.cs" caret="779" scrollPosition="0|0" />
+      <File id="917A4A16-61FE-4228-AC40-1B9C63321384/d:GeneratedCode/f:AddImageResponseMessage.cs" caret="736" scrollPosition="0|0" />
+      <File id="917A4A16-61FE-4228-AC40-1B9C63321384/d:GeneratedCode/f:DeleteDirectionRequestMessage.cs" caret="752" scrollPosition="0|0" />
+      <File id="917A4A16-61FE-4228-AC40-1B9C63321384/d:GeneratedCode/f:DeleteDirectionResponseMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="917A4A16-61FE-4228-AC40-1B9C63321384/d:GeneratedCode/f:DeleteImageRequestMessage.cs" caret="787" scrollPosition="0|0" />
+      <File id="917A4A16-61FE-4228-AC40-1B9C63321384/d:GeneratedCode/f:DeleteImageResponseMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="917A4A16-61FE-4228-AC40-1B9C63321384/d:GeneratedCode/f:GetAllImagesRequestMessage.cs" caret="0" scrollPosition="0|0" />
+      <File id="917A4A16-61FE-4228-AC40-1B9C63321384/d:GeneratedCode/f:GetAllImagesResponseMessage.cs" caret="850" scrollPosition="0|0" />
+      <File id="917A4A16-61FE-4228-AC40-1B9C63321384/d:GeneratedCode/f:GetDirectionsRequestMessage.cs" caret="749" scrollPosition="0|0" />
+      <File id="917A4A16-61FE-4228-AC40-1B9C63321384/d:GeneratedCode/f:GetDirectionsResponseMessage.cs" caret="787" scrollPosition="0|0" />
+      <File id="EE9F5321-9730-4D52-8DEF-B717F1211F32/d:GeneratedCode/f:GeneralFaultContract.cs" caret="994" scrollPosition="0|0" />
+      <File id="2E197084-94D1-45F7-94D7-AF1C3080A588/d:GeneratedCode/f:Direction.cs" caret="1650" scrollPosition="0|0" />
+      <File id="2E197084-94D1-45F7-94D7-AF1C3080A588/d:GeneratedCode/f:DirectionalImage.cs" caret="952" scrollPosition="0|0" />
+      <File id="2E197084-94D1-45F7-94D7-AF1C3080A588/d:GeneratedCode/f:DirectionalImages.cs" caret="0" scrollPosition="0|0" />
+      <File id="2E197084-94D1-45F7-94D7-AF1C3080A588/d:GeneratedCode/f:Directions.cs" caret="0" scrollPosition="0|0" />
+      <File id="D1530174-F1D5-49CE-8F1B-4D8EEDF33EDA/f:ResouceAccessFasade.cs" caret="0" scrollPosition="0|0" />
+      <File id="B8AEEB64-39B2-4FC3-85D0-2838B4BC3280/f:Program.cs" caret="0" scrollPosition="0|0" />
+      <File id="550D73CF-1524-43E7-83BD-116F786BA7BF/f:Service.svc" caret="120" scrollPosition="0|0" />
+      <File id="550D73CF-1524-43E7-83BD-116F786BA7BF/d:App_Code/f:web.config" caret="0" scrollPosition="0|0" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="0" scrollPosition="0|0" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:EventLogger.cs" caret="0" scrollPosition="0|0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="522" scrollPosition="0|13" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="4142" scrollPosition="0|89" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="6509" scrollPosition="0|134" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="3912" scrollPosition="0|86" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="6731" scrollPosition="0|147" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="6962" scrollPosition="0|171" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="7602" scrollPosition="0|171" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="8132" scrollPosition="0|207" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="9142" scrollPosition="0|207" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="9409" scrollPosition="0|225" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="12993" scrollPosition="0|254" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="10251" scrollPosition="0|257" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="10017" scrollPosition="0|245" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="11570" scrollPosition="0|281" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="11727" scrollPosition="0|294" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="13224" scrollPosition="0|318" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="12977" scrollPosition="0|318" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="905" scrollPosition="0|12" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="6672" scrollPosition="0|145" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="7755" scrollPosition="0|181" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="9307" scrollPosition="0|214" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="11552" scrollPosition="0|271" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="12231" scrollPosition="0|301" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="13140" scrollPosition="0|318" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="3279" scrollPosition="0|66" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:DirectionDataAccess.cs" caret="10251" scrollPosition="0|253" />
+      <File id="E7449AC8-2051-4CF2-A298-9FAFEB5C89D1/f:EventLogger.cs" caret="15" scrollPosition="0|0" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="using" priority="6" />
+      <Item value="try" priority="8" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

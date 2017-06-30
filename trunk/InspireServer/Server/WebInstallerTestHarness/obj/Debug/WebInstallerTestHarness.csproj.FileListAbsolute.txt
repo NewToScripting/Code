@@ -1,0 +1,82 @@
+C:\CODE\inspire\DisplayApp\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.exe
+C:\CODE\inspire\DisplayApp\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.pdb
+C:\CODE\inspire\DisplayApp\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.dll
+C:\CODE\inspire\DisplayApp\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\CODE\inspire\DisplayApp\WebInstallerTestHarness\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\inspire\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Form1.resources
+C:\CODE\inspire\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Properties.Resources.resources
+C:\CODE\inspire\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.csproj.GenerateResource.Cache
+C:\CODE\inspire\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.exe
+C:\CODE\inspire\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.pdb
+E:\CODE\02122009\inspire\DisplayApp\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.exe
+E:\CODE\02122009\inspire\DisplayApp\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.pdb
+E:\CODE\02122009\inspire\DisplayApp\DisplayApp\WebInstallerTestHarness\obj\Debug\ResolveAssemblyReference.cache
+E:\CODE\02122009\inspire\DisplayApp\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Form1.resources
+E:\CODE\02122009\inspire\DisplayApp\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Properties.Resources.resources
+E:\CODE\02122009\inspire\DisplayApp\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.csproj.GenerateResource.Cache
+E:\CODE\02122009\inspire\DisplayApp\DisplayApp\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.exe
+E:\CODE\02122009\inspire\DisplayApp\DisplayApp\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.pdb
+E:\CODE\02122009\inspire\DisplayApp\DisplayApp\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.dll
+E:\CODE\02122009\inspire\DisplayApp\DisplayApp\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\Users\jhaveard\Desktop\DisplayApp\DisplayApp\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.exe
+C:\Users\jhaveard\Desktop\DisplayApp\DisplayApp\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.pdb
+C:\Users\jhaveard\Desktop\DisplayApp\DisplayApp\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.dll
+C:\Users\jhaveard\Desktop\DisplayApp\DisplayApp\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\Users\jhaveard\Desktop\DisplayApp\DisplayApp\WebInstallerTestHarness\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\DisplayApp\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Form1.resources
+C:\Users\jhaveard\Desktop\DisplayApp\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Properties.Resources.resources
+C:\Users\jhaveard\Desktop\DisplayApp\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.csproj.GenerateResource.Cache
+C:\Users\jhaveard\Desktop\DisplayApp\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.exe
+C:\Users\jhaveard\Desktop\DisplayApp\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.pdb
+C:\Users\jhaveard\Desktop\DisplayApp - Copy\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.exe
+C:\Users\jhaveard\Desktop\DisplayApp - Copy\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.pdb
+C:\Users\jhaveard\Desktop\DisplayApp - Copy\DisplayApp\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.exe
+C:\Users\jhaveard\Desktop\DisplayApp - Copy\DisplayApp\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.pdb
+C:\Users\jhaveard\Desktop\DisplayApp - Copy\DisplayApp\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.dll
+C:\Users\jhaveard\Desktop\DisplayApp - Copy\DisplayApp\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\Users\jhaveard\Desktop\DisplayApp - Copy\DisplayApp\WebInstallerTestHarness\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\DisplayApp - Copy\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Form1.resources
+C:\Users\jhaveard\Desktop\DisplayApp - Copy\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Properties.Resources.resources
+C:\Users\jhaveard\Desktop\DisplayApp - Copy\DisplayApp\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.csproj.GenerateResource.Cache
+C:\CODE\InspireServer\Core Server\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.exe
+C:\CODE\InspireServer\Core Server\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.pdb
+C:\CODE\InspireServer\Core Server\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.dll
+C:\CODE\InspireServer\Core Server\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\CODE\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Form1.resources
+C:\CODE\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Properties.Resources.resources
+C:\CODE\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.csproj.GenerateResource.Cache
+C:\CODE\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.exe
+C:\CODE\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.pdb
+C:\_CODE\InspireServer\Core Server\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.exe
+C:\_CODE\InspireServer\Core Server\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.pdb
+C:\_CODE\InspireServer\Core Server\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.dll
+C:\_CODE\InspireServer\Core Server\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\_CODE\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Form1.resources
+C:\_CODE\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Properties.Resources.resources
+C:\_CODE\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.csproj.GenerateResource.Cache
+C:\_CODE\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.exe
+C:\_CODE\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.exe
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Form1.resources
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Properties.Resources.resources
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.exe
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\WebInstallerTestHarness\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.exe
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\WebInstallerTestHarness\bin\Debug\WebInstallerTestHarness.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\WebInstallerTestHarness\bin\Debug\DisplayServiceInstallerClass.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\WebInstallerTestHarness\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Form1.resources
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.Properties.Resources.resources
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\WebInstallerTestHarness\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\WebInstallerTestHarness\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.exe
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\WebInstallerTestHarness\obj\Debug\WebInstallerTestHarness.pdb

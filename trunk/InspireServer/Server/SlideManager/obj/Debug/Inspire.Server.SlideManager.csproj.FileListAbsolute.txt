@@ -1,0 +1,23 @@
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.SlideManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.SlideManager.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.SlideManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.SlideManager.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\SlideManager\bin\Debug\Inspire.Server.SlideManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\SlideManager\bin\Debug\Inspire.Server.SlideManager.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\SlideManager\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\SlideManager\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\SlideManager\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\SlideManager\obj\Debug\Inspire.Server.SlideManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\SlideManager\obj\Debug\Inspire.Server.SlideManager.pdb
+C:\CODE\trunk\InspireServer\Server\SlideManager\bin\Debug\Inspire.Server.SlideManager.dll
+C:\CODE\trunk\InspireServer\Server\SlideManager\bin\Debug\Inspire.Server.SlideManager.pdb
+C:\CODE\trunk\InspireServer\Server\SlideManager\bin\Debug\Inspire.Server.Common.dll
+C:\CODE\trunk\InspireServer\Server\SlideManager\bin\Debug\Ionic.Zip.dll
+C:\CODE\trunk\InspireServer\Server\SlideManager\bin\Debug\Inspire.Server.Common.pdb
+C:\CODE\trunk\InspireServer\Server\SlideManager\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Server\SlideManager\obj\Debug\Inspire.Server.SlideManager.dll
+C:\CODE\trunk\InspireServer\Server\SlideManager\obj\Debug\Inspire.Server.SlideManager.pdb
+C:\CODE\trunk\InspireServer\Server\SlideManager\bin\Debug\System.Data.SqlServerCe.dll

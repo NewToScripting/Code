@@ -1,0 +1,15 @@
+C:\CODE\trunk\InspireClient\InspireClient\bin\Debug\Modules\UserConfig.dll
+C:\CODE\trunk\InspireClient\InspireClient\bin\Debug\Modules\UserConfig.pdb
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\UserConfigurationControl.baml
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\Dialogs\AddRole.baml
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\Dialogs\AddUser.baml
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\UserConfigurationControl.g.cs
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\Dialogs\AddRole.g.cs
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\Dialogs\AddUser.g.cs
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\UserConfig_MarkupCompile.cache
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\UserConfig.g.resources
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\UserConfig.Properties.Resources.resources
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\UserConfig.dll
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\UserConfig.pdb
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\UserConfig.csprojResolveAssemblyReference.cache
+C:\CODE\trunk\InspireClient\UserConfig\obj\Debug\UserConfig.csproj.GenerateResource.Cache

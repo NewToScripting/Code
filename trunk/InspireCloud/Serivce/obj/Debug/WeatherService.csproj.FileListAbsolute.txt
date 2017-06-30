@@ -1,0 +1,10 @@
+C:\New_Code\InspireCloud\Cloud\bin\WeatherService.dll.config
+C:\New_Code\InspireCloud\Cloud\bin\WeatherService.dll
+C:\New_Code\InspireCloud\Cloud\bin\WeatherService.pdb
+C:\New_Code\InspireCloud\Cloud\obj\Debug\WeatherService.dll
+C:\New_Code\InspireCloud\Cloud\obj\Debug\WeatherService.pdb
+C:\New_Code\InspireCloud\Serivce\bin\WeatherService.dll.config
+C:\New_Code\InspireCloud\Serivce\bin\WeatherService.dll
+C:\New_Code\InspireCloud\Serivce\bin\WeatherService.pdb
+C:\New_Code\InspireCloud\Serivce\obj\Debug\WeatherService.dll
+C:\New_Code\InspireCloud\Serivce\obj\Debug\WeatherService.pdb

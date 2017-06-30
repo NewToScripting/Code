@@ -1,0 +1,12 @@
+C:\CODE\trunk\InspireClient\InspireClient\bin\Debug\Modules\StreamingModule.dll
+C:\CODE\trunk\InspireClient\InspireClient\bin\Debug\Modules\StreamingModule.pdb
+C:\CODE\trunk\InspireClient\StreamingModule\obj\Debug\ModuleDialog.baml
+C:\CODE\trunk\InspireClient\StreamingModule\obj\Debug\PropertyPanel.baml
+C:\CODE\trunk\InspireClient\StreamingModule\obj\Debug\ModuleDialog.g.cs
+C:\CODE\trunk\InspireClient\StreamingModule\obj\Debug\PropertyPanel.g.cs
+C:\CODE\trunk\InspireClient\StreamingModule\obj\Debug\StreamingModule_MarkupCompile.cache
+C:\CODE\trunk\InspireClient\StreamingModule\obj\Debug\StreamingModule.g.resources
+C:\CODE\trunk\InspireClient\StreamingModule\obj\Debug\StreamingModule.Properties.Resources.resources
+C:\CODE\trunk\InspireClient\StreamingModule\obj\Debug\StreamingModule.dll
+C:\CODE\trunk\InspireClient\StreamingModule\obj\Debug\StreamingModule.pdb
+C:\CODE\trunk\InspireClient\StreamingModule\obj\Debug\StreamingModule.csproj.GenerateResource.Cache

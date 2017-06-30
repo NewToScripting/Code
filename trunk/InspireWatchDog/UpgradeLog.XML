@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="InspireWatchDog">
+</Property><Property Name="Solution File" Value="C:\Users\jhaveard\Desktop\InspireWatchDog\InspireWatchDog.sln">
+</Property><Property Name="User Options File" Value="C:\Users\jhaveard\Desktop\InspireWatchDog\InspireWatchDog.suo">
+</Property><Property Name="Date" Value="Saturday, June 19, 2010">
+</Property><Property Name="Time" Value="22:52 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="InspireWatchDog.sln" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\InspireWatchDog.sln">
+</Event><Event ErrorLevel="0" Project="" Source="InspireWatchDog.suo" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\InspireWatchDog.suo">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Setup.vdproj" Source="Inspire.WatchDog.Setup\Inspire.WatchDog.Setup.vdproj" Description="Project file successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Setup\Inspire.WatchDog.Setup.vdproj">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\Inspire.WatchDog.Interface.csproj" Description="Project file successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\Inspire.WatchDog.Interface.csproj">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\App.xaml.cs" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\Window1.xaml.cs" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\Window1.xaml.cs">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\AppManager.cs" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\AppManager.cs">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\ConfigHelper.cs" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\ConfigHelper.cs">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\EventLogger.cs" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\EventLogger.cs">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\AppManagerTimer.cs" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\AppManagerTimer.cs">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\App.config" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\App.config">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\Properties\Settings.settings" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\Lib\Hardcodet.Wpf.TaskbarNotification.dll" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\Lib\Hardcodet.Wpf.TaskbarNotification.dll">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\Properties\Resources.resx" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\App.xaml" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\App.xaml">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\Window1.xaml" Description="File successfully backed up as C:\Users\jhaveard\Desktop\InspireWatchDog\Backup\Inspire.WatchDog.Interface\Window1.xaml">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\Inspire.WatchDog.Interface.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\Inspire.WatchDog.Interface.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="InspireWatchDog.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="InspireWatchDog.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Inspire.WatchDog.Interface" Source="Inspire.WatchDog.Interface\Inspire.WatchDog.Interface.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

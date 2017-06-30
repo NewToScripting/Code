@@ -1,0 +1,18 @@
+﻿<Window x:Class="Inspire.Common.Dialogs.TextPrompt"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    Width="481" WindowStartupLocation="CenterScreen" Background="Transparent" Height="248">
+    <Border Background="{StaticResource ListBackgroundBrush}" >
+        <Grid>
+            <Image Margin="17,17,0,0"  HorizontalAlignment="Left" Width="64" Height="64" Source="Images/alert.png" VerticalAlignment="Top" />
+            <TextBlock Foreground="{StaticResource Foreground}" FontSize="14" x:Name="tbLabel" Margin="114,26,20,111" TextWrapping="Wrap">Label:</TextBlock>
+            <TextBlock TextAlignment="Right" Foreground="{StaticResource Foreground}" FontSize="14" x:Name="tbTextBoxHeader" Margin="17,107,0,0" HorizontalAlignment="Left" Width="133" Height="32" VerticalAlignment="Top" /> 
+            <Inspire:InfoTextBox x:Name="tbTextBox" FontSize="14" Foreground="{StaticResource Foreground}" Margin="156,103,14,0" Height="31" VerticalAlignment="Top" />
+            <StackPanel Orientation="Horizontal" Margin="156,0,5,5" Height="51" VerticalAlignment="Bottom">
+                <Button Name="btnLeft" Width="136" Inspire:ButtonImage.Image="Images\Ok16.png" Height="35" Margin="5" Click="Button_Click">Ok</Button>
+                <Button Name="btnRight" Width="136" Inspire:ButtonImage.Image="Images\Cancel16.png" Height="35" Margin="5" Click="Button_Click_1">Cancel</Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

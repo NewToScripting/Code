@@ -1,0 +1,1138 @@
+﻿<Ribbon:RibbonWindow x:Class="Inspire.Client.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="INSPIRE Designer"
+    xmlns:ConfigurationWindow="clr-namespace:Inspire.Client.ConfigurationWindow;assembly=Inspire.Client.ConfigurationWindow" 
+    xmlns:ScheduleWindow="clr-namespace:Inspire.Client.ScheduleWindow;assembly=Inspire.Client.ScheduleWindow" 
+    xmlns:Designer="clr-namespace:Inspire.Client.Designer;assembly=Inspire.Client.Designer" 
+    xmlns:Commands="clr-namespace:Inspire.Commands;assembly=Inspire"
+    xmlns:Actipro="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon.Controls;assembly=ActiproSoftware.Ribbon.WPF30"
+    xmlns:Input="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon.Input;assembly=ActiproSoftware.Ribbon.WPF30"
+    xmlns:media="clr-namespace:System.Windows.Media;assembly=PresentationCore"
+    xmlns:UI="clr-namespace:ActiproSoftware.Windows.Controls.Ribbon.UI;assembly=ActiproSoftware.Ribbon.WPF30"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    xmlns:Ribbon="clr-namespace:DevComponents.WpfRibbon;assembly=DevComponents.WpfRibbon"
+    xmlns:DevEditors="clr-namespace:DevComponents.WpfEditors;assembly=DevComponents.WpfEditors"
+    xmlns:Dock="clr-namespace:DevComponents.WpfDock;assembly=DevComponents.WpfDock"
+    xmlns:Client="clr-namespace:Inspire.Client"
+    xmlns:ScheduleTreeView="clr-namespace:Inspire.Client.ScheduleWindow.ScheduleTreeView;assembly=Inspire.Client.ScheduleWindow"
+    xmlns:AdminTreeView="clr-namespace:Inspire.Client.ConfigurationWindow.AdminTreeView;assembly=Inspire.Client.ConfigurationWindow"
+    xmlns:DesignPropertyPanel1="clr-namespace:Inspire.Client.Designer.DesignPropertyPanel;assembly=Inspire.Client.Designer"
+    ResizeMode="CanResize" WindowStartupLocation="CenterScreen" x:Name="InspireUI"
+    MinWidth="850" 
+    MinHeight="730"
+    FontSize="7.75pt"
+    Foreground="#DDD"
+    FontFamily="Verdana">
+
+    <Ribbon:RibbonWindow.Resources>
+        <Style x:Key="AppMenuCommandButton" TargetType="{x:Type Ribbon:ButtonDropDown}">
+            <Setter Property="Padding" Value ="4,2,4,2"/>
+        </Style>
+        <Style x:Key="AppMenuSeparator" TargetType="{x:Type Separator}">
+            <Setter Property="Margin" Value ="40,0,0,0"/>
+        </Style>
+    </Ribbon:RibbonWindow.Resources>
+
+    <Ribbon:RibbonWindow.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.NewSlideCommand}" Executed="NewSlideExecuted" CanExecute="NewSlideCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.SchedulerNewSlideCommand}" Executed="SchedulerNewSlideExecuted" CanExecute="SchedulerNewSlideCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.SaveSlideCommand}" Executed="SaveSlideExecuted" CanExecute="SaveSlideCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.SaveSlideToServerCommand}" Executed="SaveSlideToServerExecuted" CanExecute="SaveSlideToServerCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.SaveSlideLocalCommand}" Executed="SaveSlideLocalExecuted" CanExecute="SaveSlideLocalCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.ExportSlideCommand}" Executed="ExportSlideExecuted" CanExecute="ExportSlideCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.LoadSlideCommand}" Executed="LoadSlideExecuted" CanExecute="LoadSlideCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.EditSlideCommand}" Executed="EditSlideExecuted" CanExecute="EditSlideCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.DeleteSlideCommand}" Executed="DeleteSlideExecuted" CanExecute="DeleteSlideCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.ClearSlideCommand}" Executed="ClearSlideExecuted" CanExecute="ClearSlideCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.ShowDesignerCommand}" Executed="ShowDesignerExecuted" CanExecute="ShowDesignerCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.ShowSchedulerCommand}" Executed="ShowSchedulerExecuted" CanExecute="ShowSchedulerCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.ShowConfigurationCommand}" Executed="ShowConfigurationExecuted" CanExecute="ShowConfigurationCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.UndoCommand}" Executed="UndoCommandExecuted" CanExecute="UndoCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.RedoCommand}" Executed="RedoCommandExecuted" CanExecute="RedoCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.DeleteCommand}" Executed="DeleteCommandExecuted" CanExecute="DeleteCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.CopyCommand}" Executed="CopyCommandExecuted" CanExecute="CopyCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.DuplicateCommand}" Executed="DuplicateCommandExecuted" CanExecute="DuplicateCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.PasteCommand}" Executed="PasteCommandExecuted" CanExecute="PasteCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.CutCommand}" Executed="CutCommandExecuted" CanExecute="CutCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.UpdateDisplaysCommand}" Executed="UpdateDisplaysCommandExecuted" CanExecute="UpdateDisplaysCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.AlignLeftCommand}" Executed="AlignLeftCommandExecuted" CanExecute="AlignLeftCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.AlignHorizontalCentersCommand}" Executed="AlignHorizontalCentersCommandExecuted" CanExecute="AlignHorizontalCentersCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.AlignRightCommand}" Executed="AlignRightCommandExecuted" CanExecute="AlignRightCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.AlignTopCommand}" Executed="AlignTopCommandExecuted" CanExecute="AlignTopCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.AlignVerticalCentersCommand}" Executed="AlignVerticalCentersCommandExecuted" CanExecute="AlignVerticalCentersCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.AlignBottomCommand}" Executed="AlignBottomCommandExecuted" CanExecute="AlignBottomCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.DistributeHorizontalCommand}" Executed="DistributeHorizontalCommandExecuted" CanExecute="DistributeHorizontalCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.DistributeVerticalCommand}" Executed="DistributeVerticalCommandExecuted" CanExecute="DistributeVerticalCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.PlayCanvasCommand}" Executed="PlayCanvasCommandExecuted" CanExecute="PlayCanvasCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.StopCanvasCommand}" Executed="StopCanvasCommandExecuted" CanExecute="StopCanvasCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.PlayScheduleCommand}" Executed="PlayScheduleCommandExecuted" CanExecute="PlayScheduleCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.ShowLayersPanel}" Executed="ShowLayersPanelCommandExecuted" CanExecute="ShowLayersPanelCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.Rotate90RightCommand}" Executed="Rotate90RightCommandExecuted" CanExecute="Rotate90RightCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.Rotate90LeftCommand}" Executed="Rotate90LeftCommandExecuted" CanExecute="Rotate90LeftCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.FlipVerticalCommand}" Executed="FlipVerticalCommandExecuted" CanExecute="FlipVerticalCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.FlipHorizontalCommand}" Executed="FlipHorizontalCommandExecuted" CanExecute="FlipHorizontalCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.LoadOfflineFileDialogCommand}" Executed="LoadOfflineFileDialogCommandExecuted" CanExecute="LoadOfflineFileDialogCanExecute" />
+    </Ribbon:RibbonWindow.CommandBindings>
+    <Grid>
+        <TextBlock Foreground="Black" VerticalAlignment="Top" HorizontalAlignment="Right" Height="20" Width="200" Margin="0,5,120,0" FontSize="14" TextAlignment="Right" Text="{Binding Inspire:User.UserName}">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="White" BlurRadius="5" Direction="-446" ShadowDepth="-2"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <DockPanel LastChildFill="True" VerticalAlignment="Top">
+            <Ribbon:Ribbon x:Name="mainApplictionRibbon" LicenseKey="DAD80300DA22"  DockPanel.Dock="Top" ><!---->
+                <Ribbon:Ribbon.QuickAccessToolbar>
+                    <Ribbon:Qat x:Name="quickAT">
+                        <Ribbon:ButtonDropDown PartVisibility="ImageOnly" Ribbon:Ribbon.KeyTip="S" ToolTip="Save Slide" Command="{x:Static Commands:InspireCommands.SaveSlideCommand}">
+                            <Ribbon:ButtonDropDown.Image>
+                                <Image Width="16" Height="16" Source="Resources/Images/save16.png" />
+                            </Ribbon:ButtonDropDown.Image>
+                        </Ribbon:ButtonDropDown>
+                        <Ribbon:ButtonDropDown PartVisibility="ImageOnly" Ribbon:Ribbon.KeyTip="Z" ToolTip="Undo" Command="{x:Static Commands:InspireCommands.UndoCommand}">
+                            <Ribbon:ButtonDropDown.Image>
+                                <Image Width="16" Height="16" Source="Resources/Images/undo16.png" />
+                            </Ribbon:ButtonDropDown.Image>
+                        </Ribbon:ButtonDropDown>
+                        <Ribbon:ButtonDropDown PartVisibility="ImageOnly" Ribbon:Ribbon.KeyTip="Y" ToolTip="Redo" Command="{x:Static Commands:InspireCommands.RedoCommand}">
+                            <Ribbon:ButtonDropDown.Image>
+                                <Image Width="16" Height="16" Source="Resources/Images/redo16.png" />
+                            </Ribbon:ButtonDropDown.Image>
+                        </Ribbon:ButtonDropDown>
+                        <Ribbon:ButtonDropDown PartVisibility="ImageOnly" Ribbon:Ribbon.KeyTip="N" ToolTip="New Slide" Command="{x:Static Commands:InspireCommands.NewSlideCommand}">
+                            <Ribbon:ButtonDropDown.Image>
+                                <Image Width="16" Height="16" Source="Resources/Images/New16.png" />
+                            </Ribbon:ButtonDropDown.Image>
+                        </Ribbon:ButtonDropDown>
+                    </Ribbon:Qat>
+                </Ribbon:Ribbon.QuickAccessToolbar>
+                <Ribbon:Ribbon.ApplicationMenu>
+                    <Ribbon:ApplicationMenu x:Name="appMenu">
+                        <Ribbon:ApplicationMenu.Image>
+                            <Image Source="AllIcons.ico" Width="24" Height="24"/>
+                        </Ribbon:ApplicationMenu.Image>
+                        <Ribbon:ApplicationMenu.AppItems>
+                            <Ribbon:ButtonDropDown Foreground="#DDD" Header="Exit Application" />
+                        </Ribbon:ApplicationMenu.AppItems>
+                        <Ribbon:ButtonDropDown Command="{x:Static Commands:InspireCommands.LoadOfflineFileDialogCommand}">
+                            <Ribbon:ButtonDropDown.Image>
+                                <Image Source="Resources/Images/New32.png" Height="32" Width="32" Margin="0,0,10,0"/>
+                            </Ribbon:ButtonDropDown.Image>
+                            <Ribbon:ButtonDropDown.Header>Import Slide / Template</Ribbon:ButtonDropDown.Header>
+
+                        </Ribbon:ButtonDropDown>
+                        <Separator />
+                        <Ribbon:ButtonDropDown>
+                            <Ribbon:ButtonDropDown.Image>
+                                <Image Source="Resources/Images/Update.png" Height="32" Width="32" Margin="0,0,10,0"/>
+                            </Ribbon:ButtonDropDown.Image>
+                            <Ribbon:ButtonDropDown.Header>Force Update for All Displays</Ribbon:ButtonDropDown.Header>
+                        </Ribbon:ButtonDropDown>
+                    </Ribbon:ApplicationMenu>
+                </Ribbon:Ribbon.ApplicationMenu>
+                <!--Scheduling Home-->
+                <Ribbon:RibbonTab Header="Home" x:Name="scheduleTab" Visibility="Collapsed" FontSize="10" Ribbon:Ribbon.KeyTip="S">
+                    <Ribbon:RibbonBarPanel Height="90" KeyboardNavigation.DirectionalNavigation="Cycle" KeyboardNavigation.TabNavigation="Cycle">
+                        <Ribbon:RibbonBar Header="Slide" Padding="3" Ribbon:Ribbon.KeyTip="FO">
+                            <Ribbon:ButtonPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.SchedulerNewSlideCommand}">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Source="Resources/Images/New32.png" Stretch="None"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>New</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                        <Ribbon:RibbonBar Header="Schedule" Padding="3" Ribbon:Ribbon.KeyTip="FO">
+                            <Ribbon:ButtonPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.NewScheduleCommand}">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Source="Resources/Images/Schedule.png" Height="35"  Stretch="Fill"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>New</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="D" Command="{x:Static Commands:InspireCommands.DeleteScheduleCommand}" >
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Source="Resources/Images/Remove.png" Stretch="Fill" SnapsToDevicePixels="True" Height="16" Width="16" Margin="3"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>Delete</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                        <Ribbon:RibbonBar Header="Update" Padding="3" Dock:DockSite.Dock="Right" Ribbon:Ribbon.KeyTip="FO">
+                            <Ribbon:ButtonPanel Orientation="Horizontal" VerticalAlignment="Stretch" Margin="7,0">
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="U" Command="{x:Static Commands:InspireCommands.UpdateDisplaysCommand}">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Source="Resources/Images/Update.png" Height="32"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>Update Displays</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                        <Ribbon:RibbonBar Header="Preview" Padding="3" Ribbon:Ribbon.KeyTip="FO" HorizontalContentAlignment="Center">
+                            <Ribbon:ButtonPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="P" Command="{x:Static Commands:InspireCommands.PlayScheduleCommand}">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Source="Resources/Images/Play32.png" Stretch="None"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>Play</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                    </Ribbon:RibbonBarPanel>
+                </Ribbon:RibbonTab>
+                <!--Designer Home-->
+                <Ribbon:RibbonTab Header="Home" x:Name="designerHomeTab" FontSize="10" Ribbon:Ribbon.KeyTip="H">
+                    <Ribbon:RibbonBarPanel Height="90" KeyboardNavigation.DirectionalNavigation="Cycle" KeyboardNavigation.TabNavigation="Cycle">
+                        <!--Preview-->
+                        <Ribbon:RibbonBar VerticalContentAlignment="Center" DialogLauncherVisible="Hidden" Header="Preview" Padding="3" Ribbon:Ribbon.KeyTip="FO">
+                            <Ribbon:ButtonPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="P" Command="{x:Static Commands:InspireCommands.PlayCanvasCommand}">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="Resources/Images/PlayPreview32.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>Preview</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>
+                            </Ribbon:ButtonPanel>
+                            <Ribbon:ButtonPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="S" Command="{x:Static Commands:InspireCommands.StopCanvasCommand}">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="Resources/Images/StopPreview32.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>Stop</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                        <!--Clipboard-->
+                        <Ribbon:RibbonBar Header="Clipboard" Padding="1" Ribbon:Ribbon.KeyTip="FO" DialogLauncherVisible="Hidden">
+                            <Ribbon:ButtonPanel Orientation="Horizontal">
+                                <Ribbon:ButtonPanel Margin="2">
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.CutCommand}" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/Cut16.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                        <Ribbon:ButtonDropDown.Header>Cut</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.PasteCommand}" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/Paste16.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                        <Ribbon:ButtonDropDown.Header>Paste</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.DeleteCommand}" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="16" Height="16" Source="Resources/Images/Remove.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                        <Ribbon:ButtonDropDown.Header>Remove</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:ButtonPanel>
+                            </Ribbon:ButtonPanel>
+                            <Ribbon:ButtonPanel>
+                                <Ribbon:ButtonPanel Margin="2">
+                                    <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="true" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="C" Command="{x:Static Commands:InspireCommands.CopyCommand}">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/Copy32.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                        <Ribbon:ButtonDropDown.Header>Copy</Ribbon:ButtonDropDown.Header>
+                                        <Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="C" Command="{x:Static Commands:InspireCommands.CopyCommand}" Header="Copy"/>
+                                        <Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="D" Command="{x:Static Commands:InspireCommands.DuplicateCommand}" Header="Duplicate"/>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:ButtonPanel>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                        <!--Slide-->
+                        <Ribbon:RibbonBar Header="Slide" Padding="3" Ribbon:Ribbon.KeyTip="FO" DialogLauncherVisible="Hidden">
+                            <Ribbon:ButtonPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.NewSlideCommand}">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Source="Resources/Images/New32.png" Stretch="None"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>New</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom"
+            InlineExpand="False" PopupType="Menu" ContentExpands="true" VerticalContentAlignment="Center"
+            Ribbon:Ribbon.KeyTip="S" Command="{x:Static Commands:InspireCommands.SaveSlideCommand}"
+            ToolTipService.PlacementTarget="{Binding ElementName=AppRibbon}" Header="Save" >
+                                    <Ribbon:ButtonDropDown.ToolTip>
+                                        <Ribbon:SuperToolTip Header="Save (Ctrl+S)">
+                                            <TextBlock TextWrapping="Wrap" Width="180">Save the slide to the server.</TextBlock>
+                                        </Ribbon:SuperToolTip>
+                                    </Ribbon:ButtonDropDown.ToolTip>
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Source="Resources/Images/Save32.png" Stretch="None"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="S" Command="{x:Static Commands:InspireCommands.SaveSlideToServerCommand}" Header="Save to Server">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/Save16.png" Width="16" Height="16" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <!--<Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="L" Command="{x:Static Commands:InspireCommands.SaveSlideLocalCommand}" Header="Save Local (Doesn't upload to server)">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/Save16.png" Width="16" Height="16" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>-->
+                                    <Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="E" Command="{x:Static Commands:InspireCommands.ExportSlideCommand}" Header="Save Slide to File (Doesn't upload to server)">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/New16.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Margin="0,10,0,0" ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.ClearSlideCommand}" >
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="20" Height="20" Source="Resources/Images/Remove.png" Stretch="None"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>Clear</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                        <!--Font-->
+                        <Ribbon:RibbonBar Header="Font" Padding="3" DialogLauncherVisible="Hidden" ResizeOrderIndex="2" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="FN">
+                            <Ribbon:RibbonBar.CollapsedImage>
+                                <Image Source="resources/images/FontColor.png" />
+                            </Ribbon:RibbonBar.CollapsedImage>
+                            <Ribbon:ButtonPanel Orientation="Horizontal">
+                                <Actipro:ButtonGroup Margin="4,0,0,0" HasBorder="False">
+                                    <Actipro:FontFamilyComboBox Width="120" IsPreviewEnabled="True" Style="{x:Null}" Command="{x:Static Commands:InspireCommands.FontFamily}" KeyTipAccessText="FF" />
+                                    <!--Style="{StaticResource FontComboBox}"-->
+                                    <Actipro:FontSizeComboBox Width="50" Style="{x:Null}" Command="{x:Static Commands:InspireCommands.FontSize}" KeyTipAccessText="FS" />
+                                    <!--Style="{StaticResource FontComboBox}"-->
+                                </Actipro:ButtonGroup>
+                                <Ribbon:ButtonPanel Orientation="Horizontal" Margin="2">
+                                    <Ribbon:ButtonDropDown ToolTip="Increase Font Size" PartVisibility="ImageOnly" Ribbon:Ribbon.KeyTip="1" Command="EditingCommands.IncreaseFontSize">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="resources/images/FontSizeInc.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ToolTip="Decrease Font Size" PartVisibility="ImageOnly" Command="EditingCommands.DecreaseFontSize">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="resources/images/FontSizeDec.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:ButtonPanel>
+                            </Ribbon:ButtonPanel>
+                            <Ribbon:ButtonPanel Orientation="Horizontal">
+                                <Ribbon:ButtonPanel Orientation="Horizontal" Margin="2">
+                                    <Ribbon:ButtonDropDown Command="EditingCommands.ToggleBold" ToolTip="Bold" PartVisibility="ImageOnly">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="resources/images/Bold.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Command="EditingCommands.ToggleItalic" ToolTip="Italic" PartVisibility="ImageOnly">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="resources/images/Italic.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Command="EditingCommands.ToggleUnderline" ToolTip="Underline" PartVisibility="ImageOnly">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="resources/images/Underline.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Command="EditingCommands.ToggleSubscript" ToolTip="Subscript" PartVisibility="ImageOnly">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="resources/images/Subscript.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Command="EditingCommands.ToggleSuperscript" ToolTip="Superscript" PartVisibility="ImageOnly">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="resources/images/Superscript.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Command="{x:Static Commands:InspireCommands.ToggleStrikethrough}" ToolTip="Strikethrough" Header="Strikethrough" PartVisibility="ImageOnly">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="resources/images/Strike.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Command="{x:Static Commands:InspireCommands.ClearFormatting}" ToolTip="Clear Formatting" Header="Clear Formatting" PartVisibility="ImageOnly">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="resources/images/ClearFormatting16.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:ButtonPanel>
+                                <Actipro:ButtonGroup HasBorder="False">
+                                    <Actipro:SplitButton Command="{x:Static Commands:InspireCommands.ApplyDefaultBackground}" KeyTipAccessText="I" ScreenTipDescription="Make text look like it was marked with a highlighter pen." ImageSourceSmall="resources/images/TextHighlight.png">
+                                        <StackPanel>
+                                            <Actipro:PopupGallery
+                                            HorizontalAlignment="Center"
+                                            Command="{x:Static Commands:InspireCommands.ApplyBackground}"
+                                            InitialColumnCount="5"
+                                            IsPreviewEnabled="True"
+                                            VerticalScrollBarVisibility="Hidden">
+                                                <Actipro:PopupGallery.CommandParameter>
+                                                    <Input:BrushValueCommandParameter/>
+                                                </Actipro:PopupGallery.CommandParameter>
+                                                <Actipro:PopupGallery.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Border
+                                                        Width="24"
+                                                        Height="24"
+                                                        Background="{Binding BindsDirectlyToSource=True}"
+                                                        BorderBrush="Silver"
+                                                        BorderThickness="1"/>
+                                                    </DataTemplate>
+                                                </Actipro:PopupGallery.ItemTemplate>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Yellow}" UI:ScreenTipService.ScreenTipHeader="Yellow"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Lime}" UI:ScreenTipService.ScreenTipHeader="Lime"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Teal}" UI:ScreenTipService.ScreenTipHeader="Teal"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Magenta}" UI:ScreenTipService.ScreenTipHeader="Magenta"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Blue}" UI:ScreenTipService.ScreenTipHeader="Blue"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Red}" UI:ScreenTipService.ScreenTipHeader="Red"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Navy}" UI:ScreenTipService.ScreenTipHeader="Navy"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Cyan}" UI:ScreenTipService.ScreenTipHeader="Cyan"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Green}" UI:ScreenTipService.ScreenTipHeader="Green"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Purple}" UI:ScreenTipService.ScreenTipHeader="Purple"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Maroon}" UI:ScreenTipService.ScreenTipHeader="Maroon"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Olive}" UI:ScreenTipService.ScreenTipHeader="Olive"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Gray}" UI:ScreenTipService.ScreenTipHeader="Gray"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Silver}" UI:ScreenTipService.ScreenTipHeader="Silver"/>
+                                                <SolidColorBrush Color="{x:Static media:Colors.Black}" UI:ScreenTipService.ScreenTipHeader="Black"/>
+                                            </Actipro:PopupGallery>
+                                            <Actipro:Separator/>
+                                            <Actipro:Menu>
+                                                <Actipro:Button Command="{x:Static Commands:InspireCommands.ApplyBackground}" Label="No Color"/>
+                                                <Actipro:Separator/>
+                                                <Actipro:Button IsEnabled="False" Label="Stop Highlighting"/>
+                                            </Actipro:Menu>
+                                        </StackPanel>
+                                    </Actipro:SplitButton>
+                                    <Actipro:SplitButton ClipToBounds="True" Command="{x:Static Commands:InspireCommands.ApplyDefaultForeground}" ScreenTipDescription="Change the font color." KeyTipAccessText="FC" >
+                                        <StackPanel>
+                                            <Actipro:ColorPickerGallery HorizontalAlignment="Center" Command="{x:Static Commands:InspireCommands.ApplyForeground}" InitialColumnCount="10" IsPreviewEnabled="True">
+                                                <Actipro:ColorPickerGallery.CategorizedItemsSource>
+                                                    <x:Array Type="{x:Type media:SolidColorBrush}">
+                                                        <media:SolidColorBrush Color="#FFFFFF" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="White"/>
+                                                        <media:SolidColorBrush Color="#000000" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Black"/>
+                                                        <media:SolidColorBrush Color="#EEECE1" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Tan"/>
+                                                        <media:SolidColorBrush Color="#1F497D" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Dark Blue"/>
+                                                        <media:SolidColorBrush Color="#4F81BD" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Blue"/>
+                                                        <media:SolidColorBrush Color="#C0504D" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Red"/>
+                                                        <media:SolidColorBrush Color="#9BBB59" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Olive Green"/>
+                                                        <media:SolidColorBrush Color="#8064A2" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Purple"/>
+                                                        <media:SolidColorBrush Color="#4BACC6" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Aqua"/>
+                                                        <media:SolidColorBrush Color="#F79646" Actipro:ColorPickerGallery.LayoutBehavior="Shaded" Actipro:PopupGallery.Category="Theme Colors" UI:ScreenTipService.ScreenTipHeader="Orange"/>
+                                                        <media:SolidColorBrush Color="#C00000" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Dark Red"/>
+                                                        <media:SolidColorBrush Color="#FF0000" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Red"/>
+                                                        <media:SolidColorBrush Color="#FFC000" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Orange"/>
+                                                        <media:SolidColorBrush Color="#FFFF00" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Yellow"/>
+                                                        <media:SolidColorBrush Color="#92D050" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Light Green"/>
+                                                        <media:SolidColorBrush Color="#00B050" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Green"/>
+                                                        <media:SolidColorBrush Color="#00B0F0" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Light Blue"/>
+                                                        <media:SolidColorBrush Color="#0070C0" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Blue"/>
+                                                        <media:SolidColorBrush Color="#002060" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Dark Blue"/>
+                                                        <media:SolidColorBrush Color="#7030A0" Actipro:PopupGallery.Category="Standard Colors" UI:ScreenTipService.ScreenTipHeader="Purple"/>
+                                                    </x:Array>
+                                                </Actipro:ColorPickerGallery.CategorizedItemsSource>
+                                            </Actipro:ColorPickerGallery>
+                                            <Actipro:Separator />
+                                            <Actipro:Menu>
+                                                <Actipro:Button Label="More Colors..." Click="MoreColors_Click"  />
+                                            </Actipro:Menu>
+                                        </StackPanel>
+                                    </Actipro:SplitButton>
+                                </Actipro:ButtonGroup>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                        <!--Paragraph-->
+                        <Ribbon:RibbonBar Header="Paragraph" Padding="3" Ribbon:Ribbon.KeyTip="FO" DialogLauncherVisible="Hidden">
+                            <Ribbon:ButtonPanel Margin="0,10,0,0" Orientation="Vertical">
+                                <Ribbon:ButtonPanel Orientation="Horizontal" Margin="2">
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="C" Command="EditingCommands.AlignLeft">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/AlignTextLeft16.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="EditingCommands.AlignCenter" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/AlignTextCenter16.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="EditingCommands.AlignRight" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/AlignTextRight16.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="EditingCommands.AlignJustify" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/AlignTextJustify16.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:ButtonPanel>
+                                <Ribbon:ButtonPanel Orientation="Horizontal" Margin="2">
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="C" Command="EditingCommands.DecreaseIndentation" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/DecreaseIndent16.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="EditingCommands.IncreaseIndentation" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/IncreaseIndent16.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="EditingCommands.ToggleBullets" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/Bullets16.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="EditingCommands.ToggleNumbering" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/Numbering16.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:ButtonPanel>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                    </Ribbon:RibbonBarPanel>
+                </Ribbon:RibbonTab>
+                <!--Format-->
+                <Ribbon:RibbonTab Header="Format" x:Name="designerFormatTab" FontSize="10" Ribbon:Ribbon.KeyTip="F">
+                    <Ribbon:RibbonBarPanel Height="90" KeyboardNavigation.DirectionalNavigation="Cycle" KeyboardNavigation.TabNavigation="Cycle">
+                        <!--Arrange-->
+                        <Ribbon:RibbonBar HorizontalContentAlignment="Center" Header="Arrange" DialogLauncherVisible="Hidden" Padding="3" Ribbon:Ribbon.KeyTip="AR">
+                            <Ribbon:ButtonPanel Orientation="Horizontal">
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom"
+            InlineExpand="True" PopupType="Menu" ContentExpands="true" VerticalContentAlignment="Center"
+            Ribbon:Ribbon.KeyTip="S" Command="{x:Static Commands:InspireCommands.BringForwardCommand}"
+            ToolTipService.PlacementTarget="{Binding ElementName=AppRibbon}" Header="Bring Forward" >
+                                    <Ribbon:ButtonDropDown.ToolTip>
+                                        <Ribbon:SuperToolTip Header="Bring Forward">
+                                            <TextBlock TextWrapping="Wrap" Width="180">Bring Forward</TextBlock>
+                                        </Ribbon:SuperToolTip>
+                                    </Ribbon:ButtonDropDown.ToolTip>
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Margin="0,4,0,0" Width="32" Height="32" Source="Resources/Images/BringForward32.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="F" Command="{x:Static Commands:InspireCommands.BringForwardCommand}" Header="Bring Forward">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/BringForward16.png" Width="16" Height="16" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="r" Command="{x:Static Commands:InspireCommands.BringToFrontCommand}" Header="Bring to Front">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/BringToFront16.png" Width="16" Height="16" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom"
+            InlineExpand="True" PopupType="Menu" ContentExpands="true" VerticalContentAlignment="Center"
+            Ribbon:Ribbon.KeyTip="S" Command="{x:Static Commands:InspireCommands.SendBackwardCommand}"
+            ToolTipService.PlacementTarget="{Binding ElementName=AppRibbon}" Header="Send Backward">
+                                    <Ribbon:ButtonDropDown.ToolTip>
+                                        <Ribbon:SuperToolTip Header="Send Backward">
+                                            <TextBlock TextWrapping="Wrap" Width="180">Send Backward</TextBlock>
+                                        </Ribbon:SuperToolTip>
+                                    </Ribbon:ButtonDropDown.ToolTip>
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Margin="0,4,0,0" Width="32" Height="32" Source="Resources/Images/SendBackward32.png" />
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="B" Command="{x:Static Commands:InspireCommands.SendBackwardCommand}" Header="Send Backward">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/SendBackward16.png" Width="16" Height="16" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="k" Command="{x:Static Commands:InspireCommands.SendToBackCommand}" Header="Send to Back">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/SendToBack16.png" Width="16" Height="16" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:ButtonDropDown>
+                                <!--<Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.ShowLayersPanel}">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="Resources/Images/SelectionPane32.png" />
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>Selection Pane</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>-->
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom"
+            InlineExpand="True" PopupType="Menu" ContentExpands="true" VerticalContentAlignment="Center"
+            Ribbon:Ribbon.KeyTip="S" Command="{x:Static Commands:InspireCommands.Rotate90RightCommand}"
+            ToolTipService.PlacementTarget="{Binding ElementName=AppRibbon}" Header="Rotate">
+                                    <Ribbon:ButtonDropDown.ToolTip>
+                                        <Ribbon:SuperToolTip Header="Rotate">
+                                            <TextBlock TextWrapping="Wrap" Width="180">Rotate</TextBlock>
+                                        </Ribbon:SuperToolTip>
+                                    </Ribbon:ButtonDropDown.ToolTip>
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Margin="0,4,0,0" Width="32" Height="32" Source="Resources/Images/Rotate32.png" />
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="R" Command="{x:Static Commands:InspireCommands.Rotate90RightCommand}" Header="Rotate Right 90º">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/Rotate16.png" Width="16" Height="16" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="L" Command="{x:Static Commands:InspireCommands.Rotate90LeftCommand}" Header="Rotate Left 90º">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/RotateLeft16.png" Width="16" Height="16" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="V" Command="{x:Static Commands:InspireCommands.FlipVerticalCommand}" Header="Flip Vertical">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/FlipVertical16.png" Width="16" Height="16" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Role="MenuItem" Ribbon:Ribbon.KeyTip="H" Command="{x:Static Commands:InspireCommands.FlipHorizontalCommand}" Header="Flip Horizontal">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/FlipHorizontal.png" Width="16" Height="16" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:ButtonDropDown>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                        <!--Alignment-->
+                        <Ribbon:RibbonBar HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Header="Alignment" DialogLauncherVisible="Hidden" Padding="3" Ribbon:Ribbon.KeyTip="FO">
+                            <Ribbon:ButtonPanel Orientation="Horizontal">
+                                <Ribbon:ButtonPanel Orientation="Vertical">
+                                <Ribbon:ButtonPanel Orientation="Horizontal" Margin="2">
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="C" Command="{x:Static Commands:InspireCommands.AlignLeftCommand}">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="16" Height="16" Source="Resources/Images/AlignObjectsLeft.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.AlignHorizontalCentersCommand}" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="16" Height="16" Source="Resources/Images/AlignObjectsCenteredHorizontal.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.AlignRightCommand}" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="16" Height="16" Source="Resources/Images/AlignObjectsRight.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="C" Command="{x:Static Commands:InspireCommands.AlignTopCommand}">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/AlignObjectsTop.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.AlignVerticalCentersCommand}" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="16" Height="16" Source="Resources/Images/AlignObjectsCenteredVertical.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.AlignBottomCommand}" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="16" Height="16" Source="Resources/Images/AlignObjectsBottom.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:ButtonPanel>
+                                <Ribbon:ButtonPanel Orientation="Horizontal" Margin="2">
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="C" Command="{x:Static Commands:InspireCommands.DistributeHorizontalCommand}">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="16" Height="16" Source="Resources/Images/DistributeObjectsHorizontal.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                        <Ribbon:ButtonDropDown.Header>Horizontal</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.DistributeVerticalCommand}" >
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="16" Height="16" Source="Resources/Images/DistributeObjectsVertical.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                        <Ribbon:ButtonDropDown.Header>Vertical</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:ButtonPanel>
+                            </Ribbon:ButtonPanel>
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.FitToSlideCommand}">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="Resources/Images/FitToCanvas32.png" />
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>Fit to Canvas</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                        <!--Size and Position-->
+                        <Ribbon:RibbonBar VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Header="Size and Position" DialogLauncherVisible="Hidden" Padding="3" Ribbon:Ribbon.KeyTip="SP">
+                            <Ribbon:ButtonPanel Orientation="Horizontal">
+                                <Ribbon:ButtonPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal" Margin="3">
+                                        <Image Width="16" Height="16" Source="Resources/Images/Height16.png" />
+                                        <TextBlock Margin="4,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Width="25" Text="Top:" />
+                                        <Client:NumUpDown Width="75" x:Name="tbTop" HorizontalContentAlignment="Left" Value="{Binding Path=(Canvas.Top), Mode=TwoWay}"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" Margin="3">
+                                        <Image Width="16" Height="16" Source="Resources/Images/Width16.png" />
+                                        <TextBlock Margin="4,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Width="25" Text="Left:" />
+                                        <Client:NumUpDown Width="75" x:Name="tbLeft" HorizontalContentAlignment="Left" Value="{Binding Path=(Canvas.Left), Mode=TwoWay}"/>
+                                    </StackPanel>
+                                </Ribbon:ButtonPanel>
+                                <Ribbon:ButtonPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal" Margin="3">
+                                        <Image Width="16" Height="16" Source="Resources/Images/Height16.png" />
+                                        <TextBlock Margin="4,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Width="40" Text="Height:" />
+                                        <Client:NumUpDown x:Name="tbHeight" Width="75" HorizontalContentAlignment="Left"  Value="{Binding Path=(Height), Mode=TwoWay}"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" Margin="3">
+                                        <Image Width="16" Height="16" Source="Resources/Images/Width16.png" />
+                                        <TextBlock Margin="4,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Width="40" Text="Width:" />
+                                        <Client:NumUpDown Width="75" x:Name="tbWidth" HorizontalContentAlignment="Left" Value="{Binding Path=(Width), Mode=TwoWay}"/>
+                                    </StackPanel>
+                                </Ribbon:ButtonPanel>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                    </Ribbon:RibbonBarPanel>
+                </Ribbon:RibbonTab>
+                <!--Animations-->
+                <!--<Ribbon:RibbonTab Header="Animations" x:Name="designerAnimationsTab" FontSize="10" Ribbon:Ribbon.KeyTip="F">
+                    <Ribbon:RibbonBarPanel Height="90" KeyboardNavigation.DirectionalNavigation="Cycle" KeyboardNavigation.TabNavigation="Cycle">-->
+                        <!--Preview-->
+                        <!--<Ribbon:RibbonBar VerticalContentAlignment="Center" DialogLauncherVisible="Hidden" Header="Preview" Padding="3" Ribbon:Ribbon.KeyTip="FO">
+                            <Ribbon:ButtonPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="P" Command="{x:Static Commands:InspireCommands.PlayCanvasCommand}">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="Resources/Images/PlayPreview32.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>Preview</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>
+                            </Ribbon:ButtonPanel>
+                            <Ribbon:ButtonPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                <Ribbon:ButtonDropDown ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="S" Command="{x:Static Commands:InspireCommands.StopCanvasCommand}">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="Resources/Images/StopPreview32.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                    <Ribbon:ButtonDropDown.Header>Stop</Ribbon:ButtonDropDown.Header>
+                                </Ribbon:ButtonDropDown>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>-->
+                        <!--Animation Gallery-->
+                        <!--<Ribbon:RibbonBar ResizeOrderIndex="2" VerticalContentAlignment="Top" DialogLauncherVisible="Hidden" Header="Animation" Padding="3" Ribbon:Ribbon.KeyTip="FO">
+                            <Ribbon:Gallery Background="White" VerticalContentAlignment="Center" Header="Animation" SuggestedContainerWidth="1200">
+                                <Ribbon:ButtonDropDown Header="None" ImagePosition="Top" PartVisibility="ImageAndHeader" Width="90" Ribbon:Gallery.Category="None">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/None.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Appear" ImagePosition="Top" PartVisibility="ImageAndHeader" Width="90" Ribbon:Gallery.Category="Entrance">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Appear.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Fade" ImagePosition="Top" PartVisibility="ImageAndHeader" Width="90" Ribbon:Gallery.Category="Entrance">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Fade.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Fly In" ImagePosition="Top" PartVisibility="ImageAndHeader" Width="90" Ribbon:Gallery.Category="Entrance">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/FlyInLeft.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Ascend In" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/FloatIn.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Descend In" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/DescendIn.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Split" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Split.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Wipe" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Wipe.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Wheel" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Wheel.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Grow and Turn" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/GrowAndTurn.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Zoom" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Zoom.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Swivel" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Swivel.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Bounce" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Bounce.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Pulse" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Emphasis">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Pulse.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Teeter" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Emphasis">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Teeter.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Spin" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Emphasis">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Spin.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Grow" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Emphasis">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Grow.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Shrink" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Emphasis">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Shrink.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Transparency" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Emphasis">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Transparency.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Disappear" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Disappear.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Fade" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/FadeOut.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Fly Out" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/FlyOutLeft.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Ascend Out" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/AscendOut.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Descend Out" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/DescendOut.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Split" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/SplitOut.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Wipe" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/WipeOut.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Wheel" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/WheelOut.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Shrink and Turn" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/ShrinkAndTurnOut.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Zoom" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/ZoomOut.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Swivel" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/SwivelOut.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                                <Ribbon:ButtonDropDown Header="Bounce Out" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                    <Ribbon:ButtonDropDown.Image>
+                                        <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/BounceOut.png"/>
+                                    </Ribbon:ButtonDropDown.Image>
+                                </Ribbon:ButtonDropDown>
+                            </Ribbon:Gallery>
+                        </Ribbon:RibbonBar>-->
+                        <!--Advanced Animation-->
+                        <!--<Ribbon:RibbonBar ResizeOrderIndex="1" VerticalContentAlignment="Center" DialogLauncherVisible="Hidden" Header="Advanced Animation" Padding="3" Ribbon:Ribbon.KeyTip="FO">-->
+                            <!--Add Animation Gallery-->
+                            <!--<Ribbon:ButtonDropDown Margin="3" Background="White" ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom"
+            InlineExpand="True" PopupType="Menu" ContentExpands="true" VerticalContentAlignment="Center"
+            ToolTipService.PlacementTarget="{Binding ElementName=AppRibbon}" Header="Add Animation">
+                                <Ribbon:ButtonDropDown.ToolTip>
+                                    <Ribbon:SuperToolTip Header="Add Animation">
+                                        <TextBlock TextWrapping="Wrap" Width="180">Choose an animation effect to add to the selected object.</TextBlock>
+                                    </Ribbon:SuperToolTip>
+                                </Ribbon:ButtonDropDown.ToolTip>
+                                <Ribbon:ButtonDropDown.Image>
+                                    <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/AddAnimation.png"/>
+                                </Ribbon:ButtonDropDown.Image>
+                                <Ribbon:Gallery ExpandVisibility="Visible" Background="White" SuggestedContainerWidth="400">
+                                    <Ribbon:ButtonDropDown Header="Appear" ImagePosition="Top" PartVisibility="ImageAndHeader" Width="90" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Appear.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Fade" ImagePosition="Top" PartVisibility="ImageAndHeader" Width="90" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Fade.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Fly In" ImagePosition="Top" PartVisibility="ImageAndHeader" Width="90" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/FlyInLeft.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Ascend In" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/FloatIn.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Descend In" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/DescendIn.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Split" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Split.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Wipe" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Wipe.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Wheel" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Wheel.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Grow and Turn" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/GrowAndTurn.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Zoom" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Zoom.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Swivel" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Swivel.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Bounce" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Entrance">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Bounce.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Pulse" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Emphasis">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Pulse.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Teeter" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Emphasis">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Teeter.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Spin" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Emphasis">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Spin.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Grow" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Emphasis">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Grow.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Shrink" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Emphasis">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Shrink.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Transparency" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Emphasis">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Transparency.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Disappear" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/Disappear.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Fade" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/FadeOut.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Fly Out" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/FlyOutLeft.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Ascend Out" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/AscendOut.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Descend Out" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/DescendOut.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Split" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/SplitOut.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Wipe" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/WipeOut.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Wheel" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/WheelOut.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Shrink and Turn" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/ShrinkAndTurnOut.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Zoom" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/ZoomOut.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Swivel" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/SwivelOut.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown Header="Bounce Out" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" Width="90" ImagePosition="Top" PartVisibility="ImageAndHeader" Ribbon:Gallery.Category="Exit">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Width="32" Height="32" Source="pack://application:,,,/Inspire.AnimationLibrary;component/Resources/Images/BounceOut.png"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:Gallery>
+                            </Ribbon:ButtonDropDown>-->
+                            <!--Animation Panel-->
+                            <!--<Ribbon:ButtonDropDown Margin="3" ImagePosition="Top" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="AP" >
+                                <Ribbon:ButtonDropDown.Image>
+                                    <Image Width="32" Height="32" Source="Resources/Images/RightPanel.png"/>
+                                </Ribbon:ButtonDropDown.Image>
+                                <Ribbon:ButtonDropDown.Header>Animation Pane</Ribbon:ButtonDropDown.Header>
+                            </Ribbon:ButtonDropDown>-->
+                        <!--</Ribbon:RibbonBar>
+                    </Ribbon:RibbonBarPanel>
+                </Ribbon:RibbonTab>-->
+                <!--Configuration-->
+                <Ribbon:RibbonTab Visibility="Collapsed" Header="Configuration" x:Name="configurationTab" FontSize="10" Ribbon:Ribbon.KeyTip="C">
+                    <Ribbon:RibbonBarPanel Height="90" KeyboardNavigation.DirectionalNavigation="Cycle" KeyboardNavigation.TabNavigation="Cycle">
+                        <Ribbon:RibbonBar Header="Manage Displays" Padding="3" Ribbon:Ribbon.KeyTip="FO">
+                            <Ribbon:ButtonPanel Orientation="Horizontal">
+                                <Ribbon:GroupPanel Margin="2">
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="C" Command="{x:Static Commands:InspireCommands.NewPropertyCommand}">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/Property.ico" Height="24" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                        <Ribbon:ButtonDropDown.Header>Add</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.EditPropertyCommand}" >
+                                        <!--<Ribbon:ButtonDropDown.Image>
+                                        <Image Source="Resources/Images/Property.ico" Height="24" Stretch="Fill"/>
+                                    </Ribbon:ButtonDropDown.Image>-->
+                                        <Ribbon:ButtonDropDown.Header>Edit</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.DeletePropertyCommand}" >
+                                        <!--<Ribbon:ButtonDropDown.Image>
+                                        <Image Source="Resources/Images/Remove.png" Stretch="None"/>
+                                    </Ribbon:ButtonDropDown.Image>-->
+                                        <Ribbon:ButtonDropDown.Header>Remove</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:GroupPanel>
+                            </Ribbon:ButtonPanel>
+                            <Ribbon:ButtonPanel>
+                                <Ribbon:GroupPanel Margin="2">
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="C" Command="{x:Static Commands:InspireCommands.NewDisplayGroupCommand}">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/DisplayGroup.ico" Height="24" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                        <Ribbon:ButtonDropDown.Header>Add</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.EditDisplayGroupCommand}" >
+                                        <!--<Ribbon:ButtonDropDown.Image>
+                                        <Image Source="Resources/Images/Redo16.png" Stretch="None"/>
+                                    </Ribbon:ButtonDropDown.Image>-->
+                                        <Ribbon:ButtonDropDown.Header>Edit</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.DeleteDisplayGroupCommand}" >
+                                        <!--<Ribbon:ButtonDropDown.Image>
+                                        <Image Source="Resources/Images/Remove.png" Stretch="None"/>
+                                    </Ribbon:ButtonDropDown.Image>-->
+                                        <Ribbon:ButtonDropDown.Header>Remove</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:GroupPanel>
+                            </Ribbon:ButtonPanel>
+                            <Ribbon:ButtonPanel Orientation="Horizontal">
+                                <Ribbon:GroupPanel Margin="2" Orientation="Vertical" >
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="C" Command="{x:Static Commands:InspireCommands.NewDisplayCommand}" HorizontalContentAlignment="Center">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/Display.ico" Height="24" Stretch="Fill"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                        <Ribbon:ButtonDropDown.Header>Add</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.EditDisplayCommand}" HorizontalContentAlignment="Center">
+                                        <!--<Ribbon:ButtonDropDown.Image>
+                                        <Image Source="Resources/Images/Redo16.png" Stretch="None"/>
+                                    </Ribbon:ButtonDropDown.Image>-->
+                                        <Ribbon:ButtonDropDown.Header>Edit</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                    <Ribbon:ButtonDropDown ImagePosition="Left" Ribbon:RibbonBar.MinAutoSizeHint="Medium" ExpandPosition="Bottom" InlineExpand="False" PopupType="Menu" ContentExpands="False" VerticalContentAlignment="Center" Ribbon:Ribbon.KeyTip="N" Command="{x:Static Commands:InspireCommands.DeleteDisplayCommand}" HorizontalContentAlignment="Center">
+                                        <Ribbon:ButtonDropDown.Image>
+                                            <Image Source="Resources/Images/Remove.png" Stretch="None"/>
+                                        </Ribbon:ButtonDropDown.Image>
+                                        <Ribbon:ButtonDropDown.Header>Remove</Ribbon:ButtonDropDown.Header>
+                                    </Ribbon:ButtonDropDown>
+                                </Ribbon:GroupPanel>
+                            </Ribbon:ButtonPanel>
+                        </Ribbon:RibbonBar>
+                    </Ribbon:RibbonBarPanel>
+                </Ribbon:RibbonTab>
+            </Ribbon:Ribbon>
+
+            <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400*" MinWidth="400"/>
+                </Grid.ColumnDefinitions>
+                <Dock:DockSite Grid.Column="0" Dock:DockSite.Dock="Right" x:Name="ConfigurationDock" LicenseKey="DAD80300DA22"><!---->
+                    <DockPanel LastChildFill="True">
+                        <Ribbon:NavigationPane x:Name="ToolBarPane" DockPanel.Dock="Left" IsExpanded="False" HorizontalAlignment="Left" Background="{StaticResource WindowBackgroundBrush}">
+                            <Ribbon:PaneItem x:Name="DesignPane" Header="Design" IsSelected="True" SmallState="True" Selector.Selected="Show_Designer">
+                                <Ribbon:PaneItem.Image>
+                                    <Image Width="24" Height="24" Source="Resources/Images/design.png"/>
+                                </Ribbon:PaneItem.Image>
+                                <DesignPropertyPanel1:DesignModuleControl x:Name="DesignPaneModulePanel"></DesignPropertyPanel1:DesignModuleControl>
+                            </Ribbon:PaneItem>
+                            <Ribbon:PaneItem x:Name="SchedulePane" Header="Schedule" Selector.Selected="Show_Scheduler">
+                                <Ribbon:PaneItem.Image>
+                                    <Image Width="24" Height="24" Source="Resources/Images/schedule.png"/>
+                                </Ribbon:PaneItem.Image>
+                                <ScheduleTreeView:ScheduleTreeControl x:Name="SchedulerTreeControl" DockPanel.Dock="Left" HorizontalAlignment="Left" VerticalAlignment="Stretch"></ScheduleTreeView:ScheduleTreeControl>
+                            </Ribbon:PaneItem>
+                            <Ribbon:PaneItem x:Name="ConfigurePane" Header="Configure" Selector.Selected="Show_Configuration">
+                                <Ribbon:PaneItem.Image>
+                                    <Image Width="24" Height="24" Source="Resources/Images/settings.png"/>
+                                </Ribbon:PaneItem.Image>
+                                <AdminTreeView:AdminTreeControl x:Name="ConfigurationTreeControl" DockPanel.Dock="Left" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
+                            </Ribbon:PaneItem>
+                        </Ribbon:NavigationPane>
+                        <Grid x:Name="WindowHolder">
+                            <ScheduleWindow:ScheduleWindow x:Name="SchedulerWindow" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed"></ScheduleWindow:ScheduleWindow>
+                            <Designer:DesignWindow x:Name="DesignerWindow" HorizontalAlignment="Left" VerticalAlignment="Top" AllowDrop="True"></Designer:DesignWindow>
+                            <ConfigurationWindow:ConfigurationWindow x:Name="ConfigureWindow" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed"></ConfigurationWindow:ConfigurationWindow>
+                        </Grid>
+                    </DockPanel>
+                </Dock:DockSite>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Ribbon:RibbonWindow>

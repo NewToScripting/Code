@@ -1,0 +1,138 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Schemas", "Schemas", "{82DCEBE6-CB0C-4A91-9A11-7B11839714C8}"
+EndProject
+Project("{1DF4D691-79FD-4E3E-B7A6-A1A5DC772BBD}") = "Feeds", "Feeds\Feeds.ssfproduct", "{EA0B6931-B83B-4B97-AB21-B98443B9D2F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B26471DC-DF05-425B-AC7B-31EC62D60D2D}"
+	ProjectSection(SolutionItems) = preProject
+		ProjectMapping.xml = ProjectMapping.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inspire.Feeds", "Inspire.Feeds", "{620245C5-4629-47F2-BFB4-57EFEF1748AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{088B5130-7CA1-45EB-96C3-ECB575D0F498}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Logic", "Business Logic", "{9D41C5D8-3677-44AF-B509-3D9B3826E5D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Server.Feeds.BusinessEntities", "Inspire.Feeds\Source\Business Logic\Inspire.Feeds.BusinessEntities\Inspire.Server.Feeds.BusinessEntities.csproj", "{7F7FCE40-AADA-4245-AC0E-E04EADC4F174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Server.Feeds.BusinessLogic", "Inspire.Feeds\Source\Business Logic\Inspire.Feeds.BusinessLogic\Inspire.Server.Feeds.BusinessLogic.csproj", "{8AD78E91-FDF7-422F-B1F2-FD882F96B6A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resource Access", "Resource Access", "{FA93E233-DF7F-463B-B8F5-F00554FC4831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Server.Feeds.DataAccess", "Inspire.Feeds\Source\Resource Access\Inspire.Feeds.DataAccess\Inspire.Server.Feeds.DataAccess.csproj", "{354D2DB9-B2E4-4870-9888-F88642790DEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service Interface", "Service Interface", "{7A335EF0-E86D-4B2A-83FD-C5510866A477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Server.Feeds.DataContracts", "Inspire.Feeds\Source\Service Interface\Inspire.Feeds.DataContracts\Inspire.Server.Feeds.DataContracts.csproj", "{B91AFF04-5FBF-473F-98D1-57BD35FB5078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Server.Feeds.FaultContracts", "Inspire.Feeds\Source\Service Interface\Inspire.Feeds.FaultContracts\Inspire.Server.Feeds.FaultContracts.csproj", "{469739D8-061A-431A-936C-E0F3906BD165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Server.Feeds.MessageContracts", "Inspire.Feeds\Source\Service Interface\Inspire.Feeds.MessageContracts\Inspire.Server.Feeds.MessageContracts.csproj", "{D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Server.Feeds.ServiceImplementation", "Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceImplementation\Inspire.Server.Feeds.ServiceImplementation.csproj", "{C0F6CFEB-25A6-4224-B6E0-EF5C87EC985A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Server.Feeds.ServiceContracts", "Inspire.Feeds\Source\Service Interface\Inspire.Feeds.ServiceContracts\Inspire.Server.Feeds.ServiceContracts.csproj", "{3253A543-020E-4DC0-A34E-99CA83A98EF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A18F9306-402C-4500-ADFF-576DDD6CE9DF}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Inspire.Feeds.Host", "Inspire.Feeds\Tests\Inspire.Feeds.Host", "{C333263D-A959-4F81-BA80-F279C2B11FB9}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		ProjectReferences = "{C0F6CFEB-25A6-4224-B6E0-EF5C87EC985A}|Inspire.Feeds.ServiceImplementation.ServiceImplementation.dll;{7F7FCE40-AADA-4245-AC0E-E04EADC4F174}|Inspire.Feeds.BusinessEntities.BusinessEntities.dll;{8AD78E91-FDF7-422F-B1F2-FD882F96B6A2}|Inspire.Feeds.BusinessLogic.BusinessLogic.dll;{B91AFF04-5FBF-473F-98D1-57BD35FB5078}|Inspire.Feeds.DataContracts.DataContracts.dll;{469739D8-061A-431A-936C-E0F3906BD165}|Inspire.Feeds.FaultContracts.FaultContracts.dll;{D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6}|Inspire.Feeds.MessageContracts.MessageContracts.dll;{3253A543-020E-4DC0-A34E-99CA83A98EF9}|Inspire.Feeds.ServiceContracts.ServiceContracts.dll;{354D2DB9-B2E4-4870-9888-F88642790DEE}|Inspire.Feeds.DataAccess.DataAccess.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Inspire.Feeds.Host"
+		Debug.AspNetCompiler.PhysicalPath = "Inspire.Feeds\Tests\Inspire.Feeds.Host\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Inspire.Feeds.Host\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Inspire.Feeds.Host"
+		Release.AspNetCompiler.PhysicalPath = "Inspire.Feeds\Tests\Inspire.Feeds.Host\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Inspire.Feeds.Host\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54419"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspire.Feeds.Client", "Inspire.Feeds\Tests\Inspire.Feeds.Client\Inspire.Feeds.Client.csproj", "{21AC6F73-54FB-40E2-A3F2-7C45CE5D8358}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functional Tests", "Functional Tests", "{8E03F5D3-4395-47C3-9037-4752BA212DB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{E3C179D4-DFAE-466F-B0AC-0DBE1EDEC76A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F7FCE40-AADA-4245-AC0E-E04EADC4F174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7FCE40-AADA-4245-AC0E-E04EADC4F174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7FCE40-AADA-4245-AC0E-E04EADC4F174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7FCE40-AADA-4245-AC0E-E04EADC4F174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AD78E91-FDF7-422F-B1F2-FD882F96B6A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AD78E91-FDF7-422F-B1F2-FD882F96B6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AD78E91-FDF7-422F-B1F2-FD882F96B6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AD78E91-FDF7-422F-B1F2-FD882F96B6A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{354D2DB9-B2E4-4870-9888-F88642790DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354D2DB9-B2E4-4870-9888-F88642790DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354D2DB9-B2E4-4870-9888-F88642790DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354D2DB9-B2E4-4870-9888-F88642790DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B91AFF04-5FBF-473F-98D1-57BD35FB5078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91AFF04-5FBF-473F-98D1-57BD35FB5078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91AFF04-5FBF-473F-98D1-57BD35FB5078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91AFF04-5FBF-473F-98D1-57BD35FB5078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{469739D8-061A-431A-936C-E0F3906BD165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469739D8-061A-431A-936C-E0F3906BD165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469739D8-061A-431A-936C-E0F3906BD165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469739D8-061A-431A-936C-E0F3906BD165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0F6CFEB-25A6-4224-B6E0-EF5C87EC985A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F6CFEB-25A6-4224-B6E0-EF5C87EC985A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F6CFEB-25A6-4224-B6E0-EF5C87EC985A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F6CFEB-25A6-4224-B6E0-EF5C87EC985A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3253A543-020E-4DC0-A34E-99CA83A98EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3253A543-020E-4DC0-A34E-99CA83A98EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3253A543-020E-4DC0-A34E-99CA83A98EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3253A543-020E-4DC0-A34E-99CA83A98EF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C333263D-A959-4F81-BA80-F279C2B11FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C333263D-A959-4F81-BA80-F279C2B11FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C333263D-A959-4F81-BA80-F279C2B11FB9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{C333263D-A959-4F81-BA80-F279C2B11FB9}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{21AC6F73-54FB-40E2-A3F2-7C45CE5D8358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21AC6F73-54FB-40E2-A3F2-7C45CE5D8358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21AC6F73-54FB-40E2-A3F2-7C45CE5D8358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21AC6F73-54FB-40E2-A3F2-7C45CE5D8358}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{088B5130-7CA1-45EB-96C3-ECB575D0F498} = {620245C5-4629-47F2-BFB4-57EFEF1748AA}
+		{A18F9306-402C-4500-ADFF-576DDD6CE9DF} = {620245C5-4629-47F2-BFB4-57EFEF1748AA}
+		{9D41C5D8-3677-44AF-B509-3D9B3826E5D6} = {088B5130-7CA1-45EB-96C3-ECB575D0F498}
+		{FA93E233-DF7F-463B-B8F5-F00554FC4831} = {088B5130-7CA1-45EB-96C3-ECB575D0F498}
+		{7A335EF0-E86D-4B2A-83FD-C5510866A477} = {088B5130-7CA1-45EB-96C3-ECB575D0F498}
+		{7F7FCE40-AADA-4245-AC0E-E04EADC4F174} = {9D41C5D8-3677-44AF-B509-3D9B3826E5D6}
+		{8AD78E91-FDF7-422F-B1F2-FD882F96B6A2} = {9D41C5D8-3677-44AF-B509-3D9B3826E5D6}
+		{354D2DB9-B2E4-4870-9888-F88642790DEE} = {FA93E233-DF7F-463B-B8F5-F00554FC4831}
+		{B91AFF04-5FBF-473F-98D1-57BD35FB5078} = {7A335EF0-E86D-4B2A-83FD-C5510866A477}
+		{469739D8-061A-431A-936C-E0F3906BD165} = {7A335EF0-E86D-4B2A-83FD-C5510866A477}
+		{D1CED0C8-A7E4-4C0C-A4D5-2BD8FF62E7D6} = {7A335EF0-E86D-4B2A-83FD-C5510866A477}
+		{C0F6CFEB-25A6-4224-B6E0-EF5C87EC985A} = {7A335EF0-E86D-4B2A-83FD-C5510866A477}
+		{3253A543-020E-4DC0-A34E-99CA83A98EF9} = {7A335EF0-E86D-4B2A-83FD-C5510866A477}
+		{C333263D-A959-4F81-BA80-F279C2B11FB9} = {A18F9306-402C-4500-ADFF-576DDD6CE9DF}
+		{21AC6F73-54FB-40E2-A3F2-7C45CE5D8358} = {A18F9306-402C-4500-ADFF-576DDD6CE9DF}
+		{8E03F5D3-4395-47C3-9037-4752BA212DB4} = {A18F9306-402C-4500-ADFF-576DDD6CE9DF}
+		{E3C179D4-DFAE-466F-B0AC-0DBE1EDEC76A} = {A18F9306-402C-4500-ADFF-576DDD6CE9DF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,302 @@
+﻿<Window x:Class="Inspire.Common.Dialogs.ProgressDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Processing..."
+        Width="400"
+        Height="180"
+        WindowStartupLocation="CenterOwner"
+        AllowsTransparency="True"
+        Opacity="1"
+        WindowStyle="None"
+        Background="#00000000"
+        ShowInTaskbar="False">
+	<Window.Resources>
+		<Storyboard x:Key="Loading Swirl" RepeatBehavior="Forever">
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#E5FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#FFFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#4CFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.3000000" Value="#66FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#7FFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#99FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#B2FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#CCFFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse7" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#CCFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#E5FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.3000000" Value="#4CFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#66FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#7FFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#99FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#B2FFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#B2FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#CCFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#E5FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.3000000" Value="#FFFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#4CFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#66FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#7FFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#99FFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#99FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#B2FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#CCFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.3000000" Value="#E5FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FFFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#4CFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#66FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#7FFFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#7FFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#99FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#B2FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.3000000" Value="#CCFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#E5FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FFFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#4CFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#66FFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse6" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#66FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#7FFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#99FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.3000000" Value="#B2FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#CCFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#E5FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#FFFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#4CFFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#4CFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#66FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#7FFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.3000000" Value="#99FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#B2FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#CCFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#E5FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#FFFFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#4CFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#66FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.3000000" Value="#7FFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#99FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#B2FFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#CCFFFFFF"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#E5FFFFFF"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+		<DropShadowEffect x:Key="BluredDot" Color="#FFFFFFFF" BlurRadius="4" ShadowDepth="0"/>
+
+        <LinearGradientBrush x:Key="ColorSwirl" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF0A458D" Offset="0"/>
+            <GradientStop Color="#FFDEF703" Offset="1"/>
+            <GradientStop Color="#FF93B218" Offset="0.96"/>
+            <GradientStop Color="#FF80A538" Offset="0.68"/>
+            <GradientStop Color="#FF547F52" Offset="0.384"/>
+            <GradientStop Color="#FF2C6071" Offset="0.012"/>
+        </LinearGradientBrush>
+    </Window.Resources>
+	<Window.Triggers>
+		<!--<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource Loading Swirl}"/>
+		</EventTrigger>-->
+	</Window.Triggers>
+
+    <Border CornerRadius="12,12,12,12"
+          BorderBrush="#FF020202"
+          BorderThickness="0,0,0,0"
+          Height="Auto" Background="Transparent">
+        <Grid Background="{x:Null}">
+            <ProgressBar Margin="8,0,12,52"
+                   x:Name="progressBar"
+                   Foreground="#FFFFA609"
+                   VerticalAlignment="Bottom"
+                   Height="25" Visibility="Hidden" />
+            <TextBlock Margin="81,0,74,83" Visibility="Visible"
+                 Text="Processing Slide. Please wait..."
+                 x:Name="txtDialogMessage"
+                 VerticalAlignment="Bottom"
+                 FontSize="16" TextAlignment="Center"
+               	Foreground="White" FontWeight="Black"
+                 TextWrapping="Wrap">
+                <TextBlock.Effect>
+                        <DropShadowEffect BlurRadius="6"
+                              Color="DarkTurquoise"
+                              Opacity="1"
+                              ShadowDepth="-2"
+                              Direction="455" />
+                    </TextBlock.Effect>
+            </TextBlock>
+            <DockPanel Height="25"
+                 VerticalAlignment="Bottom"
+                 Margin="10,0,12,25">
+                <Button x:Name="btnCancel"
+                Click="btnCancel_Click"
+                Visibility="Collapsed"
+                Content="Cancel"
+                DockPanel.Dock="Right"
+                Width="12"
+                Margin="10,0,0,0"
+                HorizontalAlignment="Right" />
+                <TextBlock x:Name="lblStatus" FontSize="18" TextAlignment="Center"
+               Foreground="White"
+               Text="---  In progress. Please stand by...  ---" FontWeight="Bold" Height="30" Width="356">
+                    <TextBlock.Effect>
+                        <DropShadowEffect BlurRadius="10"
+                              Color="DarkTurquoise"
+                              Opacity="1"
+                              ShadowDepth="-2"
+                              Direction="455" />
+                    </TextBlock.Effect>
+                </TextBlock>
+            </DockPanel>
+            <!--<Grid x:Name="LayoutRoot" Margin="157,50,175,48">
+                <Image Name="content" Opacity="0">
+                    <Image.Triggers>
+                        <EventTrigger RoutedEvent="Image.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard x:Name="rotation">
+                                    <DoubleAnimation To="1" Duration="0:0:1"
+                                        Storyboard.TargetName="content"
+                                        Storyboard.TargetProperty="Opacity"/>
+                                    <DoubleAnimation From="0" To="359" Duration="0:0:02" RepeatBehavior="Forever"
+                                        Storyboard.TargetName="angle"
+                                        Storyboard.TargetProperty="Angle"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Image.Triggers>
+                    <Image.Source>
+                        <DrawingImage>
+                            <DrawingImage.Drawing>
+                                <DrawingGroup>
+                                    <GeometryDrawing Brush="Transparent">
+                                        <GeometryDrawing.Geometry>
+                                            <RectangleGeometry Rect="0,0,1,1"/>
+                                        </GeometryDrawing.Geometry>
+                                    </GeometryDrawing>
+                                    <DrawingGroup>
+                                        <DrawingGroup.Transform>
+                                            <RotateTransform x:Name="angle" Angle="0" CenterX="0.5" CenterY="0.5"/>
+                                        </DrawingGroup.Transform>
+                                        <GeometryDrawing>
+                                            <GeometryDrawing.Pen>
+                                                <Pen Brush="{StaticResource ColorSwirl}" Thickness="0.13"/>
+                                            </GeometryDrawing.Pen>
+                                            <GeometryDrawing.Geometry>
+                                                <PathGeometry>
+                                                    <PathFigure StartPoint="0.9,0.5">
+                                                        <ArcSegment Point="0.5,0.1" RotationAngle="90" SweepDirection="Clockwise" IsLargeArc="True" Size="0.4,0.4"/>
+                                                    </PathFigure>
+                                                </PathGeometry>
+                                            </GeometryDrawing.Geometry>
+                                        </GeometryDrawing>
+                                        <GeometryDrawing Brush="#FF053B7E">
+                                            <GeometryDrawing.Geometry>
+                                                <PathGeometry>
+                                                    <PathFigure StartPoint="0.5,0">
+                                                        <LineSegment Point="0.7,0.1" />
+                                                        <LineSegment Point="0.5,0.2" />
+                                                    </PathFigure>
+                                                </PathGeometry>
+                                            </GeometryDrawing.Geometry>
+                                        </GeometryDrawing>
+                                    </DrawingGroup>
+                                </DrawingGroup>
+                            </DrawingImage.Drawing>
+                        </DrawingImage>
+                    </Image.Source>
+                </Image>
+            </Grid>-->
+            
+            <!--<Ellipse Fill="#FFFFFFFF" Stroke="#FF000000" HorizontalAlignment="Left" Margin="182,82,0,88" Width="10" x:Name="ellipse1" RenderTransformOrigin="0.5,0.5" StrokeThickness="0" BitmapEffect="{DynamicResource BluredDot}">
+        		<Ellipse.RenderTransform>
+        			<TransformGroup>
+        				<ScaleTransform ScaleX="1" ScaleY="1"/>
+        				<SkewTransform AngleX="0" AngleY="0"/>
+        				<RotateTransform Angle="0"/>
+        				<TranslateTransform X="0" Y="0"/>
+        			</TransformGroup>
+        		</Ellipse.RenderTransform>
+        	</Ellipse>
+        	<Ellipse Fill="#FFFFFFFF" Stroke="#FF000000" Margin="191,73,199,0" VerticalAlignment="Top" Height="10" x:Name="ellipse" RenderTransformOrigin="0.5,0.5" StrokeThickness="0" BitmapEffect="{DynamicResource BluredDot}">
+        		<Ellipse.RenderTransform>
+        			<TransformGroup>
+        				<ScaleTransform ScaleX="1" ScaleY="1"/>
+        				<SkewTransform AngleX="0" AngleY="0"/>
+        				<RotateTransform Angle="0"/>
+        				<TranslateTransform X="0" Y="0"/>
+        			</TransformGroup>
+        		</Ellipse.RenderTransform>
+        	</Ellipse>
+        	<Ellipse Fill="#FFFFFFFF" Stroke="#FF000000" Margin="0,73,187,0" VerticalAlignment="Top" Height="10" HorizontalAlignment="Right" x:Name="ellipse7" Width="10" RenderTransformOrigin="0.5,0.5" StrokeThickness="0" BitmapEffect="{DynamicResource BluredDot}">
+        		<Ellipse.RenderTransform>
+        			<TransformGroup>
+        				<ScaleTransform ScaleX="1" ScaleY="1"/>
+        				<SkewTransform AngleX="0" AngleY="0"/>
+        				<RotateTransform Angle="0"/>
+        				<TranslateTransform X="0" Y="0"/>
+        			</TransformGroup>
+        		</Ellipse.RenderTransform>
+        	</Ellipse>
+        	<Ellipse Fill="#FFFFFFFF" Stroke="#FF000000" Margin="0,81,177,89" HorizontalAlignment="Right" x:Name="ellipse2" Width="10" RenderTransformOrigin="0.5,0.5" StrokeThickness="0" BitmapEffect="{DynamicResource BluredDot}">
+        		<Ellipse.RenderTransform>
+        			<TransformGroup>
+        				<ScaleTransform ScaleX="1" ScaleY="1"/>
+        				<SkewTransform AngleX="0" AngleY="0"/>
+        				<RotateTransform Angle="0"/>
+        				<TranslateTransform X="0" Y="0"/>
+        			</TransformGroup>
+        		</Ellipse.RenderTransform>
+        	</Ellipse>
+        	<Ellipse Fill="#FFFFFFFF" Stroke="#FF000000" Margin="0,0,178,76" HorizontalAlignment="Right" x:Name="ellipse4" VerticalAlignment="Bottom" Width="10" Height="10" RenderTransformOrigin="0.5,0.5" StrokeThickness="0" BitmapEffect="{DynamicResource BluredDot}">
+        		<Ellipse.RenderTransform>
+        			<TransformGroup>
+        				<ScaleTransform ScaleX="1" ScaleY="1"/>
+        				<SkewTransform AngleX="0" AngleY="0"/>
+        				<RotateTransform Angle="0"/>
+        				<TranslateTransform X="0" Y="0"/>
+        			</TransformGroup>
+        		</Ellipse.RenderTransform>
+        	</Ellipse>
+        	<Ellipse Fill="#FFFFFFFF" Stroke="#FF000000" Margin="0,0,187,68" HorizontalAlignment="Right" x:Name="ellipse5" VerticalAlignment="Bottom" Width="10" Height="10" RenderTransformOrigin="0.5,0.5" StrokeThickness="0" BitmapEffect="{DynamicResource BluredDot}">
+        		<Ellipse.RenderTransform>
+        			<TransformGroup>
+        				<ScaleTransform ScaleX="1" ScaleY="1"/>
+        				<SkewTransform AngleX="0" AngleY="0"/>
+        				<RotateTransform Angle="0"/>
+        				<TranslateTransform X="0" Y="0"/>
+        			</TransformGroup>
+        		</Ellipse.RenderTransform>
+        	</Ellipse>
+        	<Ellipse Fill="#FFFFFFFF" Stroke="#FF000000" Margin="192,0,198,68" x:Name="ellipse6" VerticalAlignment="Bottom" Height="10" RenderTransformOrigin="5,0.3" StrokeThickness="0" BitmapEffect="{DynamicResource BluredDot}">
+        		<Ellipse.RenderTransform>
+        			<TransformGroup>
+        				<ScaleTransform ScaleX="1" ScaleY="1"/>
+        				<SkewTransform AngleX="0" AngleY="0"/>
+        				<RotateTransform Angle="0"/>
+        				<TranslateTransform X="0" Y="0"/>
+        			</TransformGroup>
+        		</Ellipse.RenderTransform>
+        	</Ellipse>
+        	<Ellipse Fill="#FFFFFFFF" Stroke="#FF000000" Margin="182,0,0,76" HorizontalAlignment="Left" x:Name="ellipse3" VerticalAlignment="Bottom" Width="10" Height="10" RenderTransformOrigin="0.5,0.5" StrokeThickness="0" BitmapEffect="{DynamicResource BluredDot}">
+        		<Ellipse.RenderTransform>
+        			<TransformGroup>
+        				<ScaleTransform ScaleX="1" ScaleY="1"/>
+        				<SkewTransform AngleX="0" AngleY="0"/>
+        				<RotateTransform Angle="0"/>
+        				<TranslateTransform X="0" Y="0"/>
+        			</TransformGroup>
+        		</Ellipse.RenderTransform>
+        	</Ellipse>-->
+        </Grid>
+    </Border>
+</Window>

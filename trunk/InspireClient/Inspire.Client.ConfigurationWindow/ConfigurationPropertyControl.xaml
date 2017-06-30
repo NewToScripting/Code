@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="Inspire.Client.ConfigurationWindow.ConfigurationPropertyControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:WpfRibbon="clr-namespace:DevComponents.WpfRibbon;assembly=DevComponents.WpfRibbon"
+    xmlns:ConfigurationWindow="clr-namespace:Inspire.Client.ConfigurationWindow">
+     <WpfRibbon:NavigationPane Tag="Properties"  FlowDirection="LeftToRight" HorizontalAlignment="Right" Width="268" Background="{StaticResource WindowBackgroundBrush}"><!---->
+                <WpfRibbon:PaneItem Header="Configure" IsSelected="True">
+            <ConfigurationWindow:ConfigurationModuleControl></ConfigurationWindow:ConfigurationModuleControl>
+        </WpfRibbon:PaneItem>
+    </WpfRibbon:NavigationPane>
+</UserControl>

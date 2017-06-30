@@ -1,0 +1,130 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire" xmlns:MapModule="clr-namespace:MapModule" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="MapModule.CategorySelecter"
+	x:Name="Window" WindowStartupLocation="CenterScreen"
+	Title="CategorySelecter"
+	 Background="{DynamicResource ListBackgroundBrush}" Style="{x:Null}" Width="900" Height="800">
+    <Window.Resources>
+        <DataTemplate x:Key="locationTemplate">
+            <StackPanel Orientation="Horizontal" Margin="3">
+                <Viewbox Margin="5,2,5,2" Width="48" Height="48">
+                    <MapModule:DynamicMarker SelectedTemplate="{Binding CategoryStyle}" Title="{Binding Name}"/>
+                </Viewbox>
+                <TextBlock FontSize="32" Foreground="{StaticResource Foreground}" VerticalAlignment="Bottom" Text="{Binding Name}" />
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="preLocationTemplate">
+            <StackPanel Orientation="Horizontal" Margin="3">
+                <CheckBox Margin="0,2,0,2" IsChecked="{Binding Path=AutoPopulate, Mode=TwoWay}"/>
+                <Viewbox Margin="0,0,2,0" Width="24" Height="24">
+                    <MapModule:DynamicMarker SelectedTemplate="{Binding CategoryStyle}" Title="{Binding Name}"/>
+                </Viewbox>
+                <TextBlock FontSize="14" Foreground="{StaticResource Foreground}" VerticalAlignment="Bottom" Text="{Binding Name}" />
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <DockPanel LastChildFill="True">
+        <Grid Width="300" DockPanel.Dock="Left">
+            <ListBox x:Name="lbPreCategories" Margin="8,80,8,52" ItemTemplate="{StaticResource preLocationTemplate}" >
+                <ListBox.Items>
+                    <MapModule:MapCategory CategoryStyle="94" Name="Airlines &amp; Airline Ticket Agencies" />
+                    <MapModule:MapCategory CategoryStyle="94" Name="Airports, Flying Fields &amp; Services" />
+                    <MapModule:MapCategory CategoryStyle="10" Name="Amusement Parks" />
+                    <MapModule:MapCategory CategoryStyle="11" Name="Apparel" />
+                    <MapModule:MapCategory CategoryStyle="12" Name="Art" />
+                    <MapModule:MapCategory CategoryStyle="95" Name="Banks" />
+                    <MapModule:MapCategory CategoryStyle="14" Name="Bicycles" />
+                    <MapModule:MapCategory CategoryStyle="15" Name="Boat Charter &amp; Rental Companies" />
+                    <MapModule:MapCategory CategoryStyle="16" Name="Books" />
+                    <MapModule:MapCategory CategoryStyle="17" Name="Bowling" />
+                    <MapModule:MapCategory CategoryStyle="18" Name="Bus Lines &amp; Charters" />
+                    <MapModule:MapCategory CategoryStyle="19" Name="Car Rentals" />
+                    <MapModule:MapCategory CategoryStyle="20" Name="Clubs" />
+                    <MapModule:MapCategory CategoryStyle="21" Name="Colleges &amp; Universities" />
+                    <MapModule:MapCategory CategoryStyle="22" Name="Computer Service &amp; Repair" />
+                    <MapModule:MapCategory CategoryStyle="23" Name="Copying Services" />
+                    <MapModule:MapCategory CategoryStyle="24" Name="Country Clubs" />
+                    <MapModule:MapCategory CategoryStyle="25" Name="Cruises" />
+                    <MapModule:MapCategory CategoryStyle="26" Name="Day Spas" />
+                    <MapModule:MapCategory CategoryStyle="27" Name="Dental care" />
+                    <MapModule:MapCategory CategoryStyle="28" Name="Education" />
+                    <MapModule:MapCategory CategoryStyle="44" Name="Eye Care" />
+                    <MapModule:MapCategory CategoryStyle="45" Name="Fishing" />
+                    <MapModule:MapCategory CategoryStyle="57" Name="Food &amp; Dining" />
+                    <MapModule:MapCategory CategoryStyle="47" Name="Gambling" />
+                    <MapModule:MapCategory CategoryStyle="48" Name="Golf Courses" />
+                    <MapModule:MapCategory CategoryStyle="49" Name="Guides &amp; Sightseeing" />
+                    <MapModule:MapCategory CategoryStyle="53" Name="Grocery Stores" />
+                    <MapModule:MapCategory CategoryStyle="35" Name="Hair &amp; Beauty" />
+                    <MapModule:MapCategory CategoryStyle="36" Name="Health Clubs &amp; Fitness" />
+                    <MapModule:MapCategory CategoryStyle="37" Name="Historical Sites" />
+                    <MapModule:MapCategory CategoryStyle="99" Name="Hospitals &amp; Medical Centers" />
+                    <MapModule:MapCategory CategoryStyle="39" Name="Hotels &amp; Accommodations" />
+                    <MapModule:MapCategory CategoryStyle="40" Name="Libraries" />
+                    <MapModule:MapCategory CategoryStyle="41" Name="Limousine Service" />
+                    <MapModule:MapCategory CategoryStyle="42" Name="Mailing &amp; Freight Services" />
+                    <MapModule:MapCategory CategoryStyle="43" Name="Malls" />
+                    <MapModule:MapCategory CategoryStyle="50" Name="Massage" />
+                    <MapModule:MapCategory CategoryStyle="51" Name="Movie Rental" />
+                    <MapModule:MapCategory CategoryStyle="100" Name="Movie Theaters" />
+                    <MapModule:MapCategory CategoryStyle="65" Name="Museums" />
+                    <MapModule:MapCategory CategoryStyle="66" Name="Nail Salons" />
+                    <MapModule:MapCategory CategoryStyle="64" Name="Parks &amp; Recreation" />
+                    <MapModule:MapCategory CategoryStyle="101" Name="Pharmacies" />
+                    <MapModule:MapCategory CategoryStyle="68" Name="Photography Services" />
+                    <MapModule:MapCategory CategoryStyle="69" Name="Pool &amp; Billiards" />
+                    <MapModule:MapCategory CategoryStyle="70" Name="Public Transit" />
+                    <MapModule:MapCategory CategoryStyle="71" Name="Putt Putt Golf" />
+                    <MapModule:MapCategory CategoryStyle="97" Name="Religious Services &amp; Organizations" />
+                    <MapModule:MapCategory CategoryStyle="73" Name="Resorts" />
+                    <MapModule:MapCategory CategoryStyle="74" Name="Specialty Transportation" />
+                    <MapModule:MapCategory CategoryStyle="75" Name="Sporting Goods" />
+                    <MapModule:MapCategory CategoryStyle="102" Name="Sports Stadiums" />
+                    <MapModule:MapCategory CategoryStyle="76" Name="Swimming &amp; Watersports" />
+                    <MapModule:MapCategory CategoryStyle="86" Name="Tanning Salons" />
+                    <MapModule:MapCategory CategoryStyle="87" Name="Taxicab Service" />
+                    <MapModule:MapCategory CategoryStyle="79" Name="Tennis &amp; Racquet Sports" />
+                    <MapModule:MapCategory CategoryStyle="80" Name="Theater" />
+                    <MapModule:MapCategory CategoryStyle="81" Name="Toys &amp; Games Stores" />
+                    <MapModule:MapCategory CategoryStyle="82" Name="Trade Shows, Expositions &amp; Fairs" />
+                    <MapModule:MapCategory CategoryStyle="83" Name="Trains" />
+                    <MapModule:MapCategory CategoryStyle="84" Name="Travel Agencies &amp; Bureaus" />
+                    <MapModule:MapCategory CategoryStyle="85" Name="Zoo" />
+                </ListBox.Items>
+            </ListBox>
+            <TextBlock FontSize="20" Foreground="{DynamicResource Foreground}" Height="36" HorizontalAlignment="Left" Margin="16,40,0,0" Text="Standard Categories" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" />
+        </Grid>
+    <Grid x:Name="LayoutRoot" >
+		<TextBlock Margin="29,0,0,0" TextWrapping="Wrap" Text="Categories" VerticalAlignment="Top" Foreground="{DynamicResource Foreground}" FontSize="42.667" HorizontalAlignment="Left" Width="254" Height="62.563"/>
+		<TextBlock Margin="28,35,0,0" TextWrapping="Wrap" Text="Categories" VerticalAlignment="Top" Foreground="{DynamicResource Foreground}" FontSize="42.667" HorizontalAlignment="Left" Width="254" Height="62.563" RenderTransformOrigin="0.5,0.5">
+			<TextBlock.OpacityMask>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#00000000" Offset="0.362"/>
+					<GradientStop Color="#68FFFFFF" Offset="1"/>
+					<GradientStop Color="#28636363" Offset="0.586"/>
+					<GradientStop Color="#58AAAAAA" Offset="0.711"/>
+				</LinearGradientBrush>
+			</TextBlock.OpacityMask>
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleY="1" ScaleX="-1"/>
+					<SkewTransform AngleY="0" AngleX="0"/>
+					<RotateTransform Angle="-180.437"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+		<TextBlock Margin="266,20.549,39.5,0" TextWrapping="Wrap" Text="Select the categories that you would like to appear on the map, or add your own." VerticalAlignment="Top" FontSize="16" Foreground="{DynamicResource SelectedBackgroundBrush}" Height="42.013"/>
+		<ListBox x:Name="lbCategories" Margin="8,82.07,8,52" ItemTemplate="{StaticResource locationTemplate}"/>
+		<Button ToolTip="Add Category" HorizontalAlignment="Left" Margin="8,0,0,8" Width="34" Click="Add_Click" Height="38" VerticalAlignment="Bottom" />
+        <Button ToolTip="Edit Category" Content="" HorizontalAlignment="Left" Height="38" Margin="47,0,0,8" VerticalAlignment="Bottom" Width="34" Click="Edit_Click"/>
+        <Button ToolTip="Remove Category" Content="" HorizontalAlignment="Left" Height="38" Margin="86,0,0,8" VerticalAlignment="Bottom" Width="34" Click="Delete_Click"/>
+        <Button Content="Ok" HorizontalAlignment="Right" Inspire:ButtonImage.Image="Resources\Images\Ok16.png" Height="35" Margin="0,0,130,6" VerticalAlignment="Bottom" Width="118" Click="Ok_Click" />
+        <Button Content="Cancel" HorizontalAlignment="Right" Inspire:ButtonImage.Image="Resources\Images\Cancel16.png" Height="35" Margin="0,0,8,6" VerticalAlignment="Bottom" Width="118" Click="Cancel_Click"/>
+		<Image Height="16" Width="16" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="17,0,0,18" IsHitTestVisible="False" Source="Resources/Add.png" Stretch="Fill" RenderTransformOrigin="7.625,-4.938"/>
+        <Image Height="16" Width="16" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="57,0,0,18" IsHitTestVisible="False" Stretch="Fill" Source="Resources/edit.png" />
+        <Image Height="16" Width="16" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="95,0,0,18" IsHitTestVisible="False" Stretch="Fill" Source="Resources/Remove.png"/>
+	</Grid>
+    </DockPanel>
+</Window>

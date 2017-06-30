@@ -1,0 +1,10 @@
+C:\Users\jhaveard\Desktop\Rooms\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\bin\Debug\Inspire.Rooms.DataContracts.DataContracts.dll
+C:\Users\jhaveard\Desktop\Rooms\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\bin\Debug\Inspire.Rooms.DataContracts.DataContracts.pdb
+C:\Users\jhaveard\Desktop\Rooms\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Rooms\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\Inspire.Rooms.DataContracts.DataContracts.dll
+C:\Users\jhaveard\Desktop\Rooms\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\Inspire.Rooms.DataContracts.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\bin\Debug\Inspire.Rooms.DataContracts.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\bin\Debug\Inspire.Rooms.DataContracts.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\Inspire.Rooms.DataContracts.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\RoomsManager\Inspire.Rooms\Source\Service Interface\Inspire.Rooms.DataContracts\obj\Debug\Inspire.Rooms.DataContracts.DataContracts.pdb

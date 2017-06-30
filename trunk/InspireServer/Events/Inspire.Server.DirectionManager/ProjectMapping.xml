@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<ProjectMappingInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" FileName="ProjectMapping.xml" xmlns="http://schemas.microsoft.com/pag/project-mapping">
+  <ProjectMappingTables>
+    <ProjectMappingTable Name="Events">
+      <ProjectMappings>
+        <ProjectMapping ProjectId="0169c6e8-e7e3-409b-b24a-6ea633910c16" ProjectPath="\GeneratedCode" ProjectName="Inspire.Direction.BusinessEntities">
+          <Roles>
+            <Role Name="BusinessEntityRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="d1530174-f1d5-49ce-8f1b-4d8eedf33eda" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Direction.BusinessLogic">
+          <Roles>
+            <Role Name="BusinessLogicRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="e7449ac8-2051-4cf2-a298-9fafeb5c89d1" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Direction.DataAccess">
+          <Roles />
+        </ProjectMapping>
+        <ProjectMapping ProjectId="2e197084-94d1-45f7-94d7-af1c3080a588" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Direction.DataContracts">
+          <Roles>
+            <Role Name="DataContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="ee9f5321-9730-4d52-8def-b717f1211f32" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Direction.FaultContracts">
+          <Roles>
+            <Role Name="FaultContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="917a4a16-61fe-4228-ac40-1b9c63321384" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Direction.MessageContracts">
+          <Roles>
+            <Role Name="MessageContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="e0f103b7-80b7-49e3-82fd-74ea2345cce4" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Direction.ServiceImplementation">
+          <Roles>
+            <Role Name="ServiceRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="a8da78c7-96e1-4bcb-9aec-5b9d69dfb62a" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Direction.ServiceContracts">
+          <Roles>
+            <Role Name="ServiceContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="f569e035-525c-4b51-8afd-5e3c1e39c715" ProjectPath="\GeneratedCode" ProjectName="Inspire.Direction.Host">
+          <Roles>
+            <Role Name="HostRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="b8aeeb64-39b2-4fc3-85d0-2838b4bc3280" ProjectPath="\GeneratedCode" ProjectName="Inspire.Direction.Client">
+          <Roles>
+            <Role Name="ClientRole" />
+          </Roles>
+        </ProjectMapping>
+      </ProjectMappings>
+    </ProjectMappingTable>
+  </ProjectMappingTables>
+</ProjectMappingInformation>

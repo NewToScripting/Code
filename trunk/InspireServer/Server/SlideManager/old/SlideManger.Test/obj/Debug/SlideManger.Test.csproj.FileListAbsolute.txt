@@ -1,0 +1,62 @@
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\obj\Debug\SlideManger.Test.Form1.resources
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\obj\Debug\SlideManger.Test.Properties.Resources.resources
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\obj\Debug\SlideManger.Test.csproj.GenerateResource.Cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\SlideManger.Test.exe.config
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\SlideManger.Test.exe
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\SlideManger.Test.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.SlideManager.BusinessLogic.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.SlideManager.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.SlideManager.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.SlideManager.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.SlideManager.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.SlideManager.BusinessLogic.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\obj\Debug\SlideManger.Test.exe
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager\SlideManger.Test\obj\Debug\SlideManger.Test.pdb
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\SlideManger.Test.exe.config
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\obj\Debug\SlideManger.Test.exe
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\obj\Debug\SlideManger.Test.pdb
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\SlideManger.Test.exe
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\SlideManger.Test.pdb
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\Inspire.SlideManager.BusinessLogic.dll
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\Inspire.SlideManager.DataAccess.dll
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\Inspire.SlideManager.DataContracts.dll
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\Inspire.SlideManager.DataContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\Inspire.SlideManager.DataAccess.pdb
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\Inspire.SlideManager.BusinessLogic.pdb
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\obj\Debug\SlideManger.Test.Form1.resources
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\obj\Debug\SlideManger.Test.Properties.Resources.resources
+C:\Users\jhaveard\Desktop\Inspire.Server.SlideManager_Streamed\SlideManger.Test\obj\Debug\SlideManger.Test.csproj.GenerateResource.Cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\SlideManger.Test.exe.config
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\SlideManger.Test.exe
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\SlideManger.Test.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\Inspire.SlideManager.BusinessLogic.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\Inspire.SlideManager.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\Inspire.SlideManager.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\Inspire.SlideManager.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\Inspire.SlideManager.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\bin\Debug\Inspire.SlideManager.BusinessLogic.pdb
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\obj\Debug\SlideManger.Test.Form1.resources
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\obj\Debug\SlideManger.Test.Properties.Resources.resources
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\obj\Debug\SlideManger.Test.csproj.GenerateResource.Cache
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\obj\Debug\SlideManger.Test.exe
+C:\_INSPIRE_WORKING\06242008\Inspire.Server.SlideManager_Streamed\SlideManger.Test\obj\Debug\SlideManger.Test.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\SlideManger.Test.exe.config
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\SlideManger.Test.exe
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\SlideManger.Test.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.Server.SlideManager.BusinessLogic.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.Server.SlideManager.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.Server.SlideManager.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.Server.SlideManager.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.Server.SlideManager.BusinessLogic.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.Server.SlideManager.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\bin\Debug\Inspire.Server.SlideManager.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\obj\Debug\SlideManger.Test.Form1.resources
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\obj\Debug\SlideManger.Test.Properties.Resources.resources
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\obj\Debug\SlideManger.Test.csproj.GenerateResource.Cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\obj\Debug\SlideManger.Test.exe
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\SlideManger.Test\obj\Debug\SlideManger.Test.pdb

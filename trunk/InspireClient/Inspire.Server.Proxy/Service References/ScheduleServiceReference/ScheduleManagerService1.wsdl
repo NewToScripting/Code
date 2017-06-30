@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.inspiredisplays.com/ServiceContract/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ScheduleManagerService" targetNamespace="http://schemas.inspiredisplays.com/ServiceContract/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/ServiceContract/Imports">
+      <xsd:import schemaLocation="http://devserver2003/Inspire.Server/Svc/ScheduleService.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com/ServiceContract/" />
+      <xsd:import schemaLocation="http://devserver2003/Inspire.Server/Svc/ScheduleService.svc?xsd=xsd2" namespace="http://schemas.inspiredisplays.com/DataContract/" />
+      <xsd:import schemaLocation="http://devserver2003/Inspire.Server/Svc/ScheduleService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://devserver2003/Inspire.Server/Svc/ScheduleService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSchedulesRequestMessage">
+    <wsdl:part name="DisplayID" element="tns:DisplayID" />
+  </wsdl:message>
+  <wsdl:message name="GetScheduleResponseMessage">
+    <wsdl:part name="Schedules" element="tns:Schedules" />
+  </wsdl:message>
+  <wsdl:message name="ServiceManagerServiceContract_GetSchedules_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.inspiredisplays.com/DataContract/" name="detail" element="q1:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="ServiceManagerServiceContract_GetCurrentSchedules_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.inspiredisplays.com/DataContract/" name="detail" element="q2:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleSchedulesRequestMessage">
+    <wsdl:part name="ScheduleID" element="tns:ScheduleID" />
+  </wsdl:message>
+  <wsdl:message name="GetSingleScheduleResponseMessage">
+    <wsdl:part name="Schedule" element="tns:Schedule" />
+  </wsdl:message>
+  <wsdl:message name="ServiceManagerServiceContract_GetSingleSchedule_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.inspiredisplays.com/DataContract/" name="detail" element="q3:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplaysInScheduleRequestMessage">
+    <wsdl:part name="ScheduleID" element="tns:ScheduleID" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplaysInScheduleResponseMessage">
+    <wsdl:part name="Displays" element="tns:Displays" />
+  </wsdl:message>
+  <wsdl:message name="ServiceManagerServiceContract_GetDisplaysInSchedule_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.inspiredisplays.com/DataContract/" name="detail" element="q4:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddScheduleRequestMessage">
+    <wsdl:part name="DisplayIDs" element="tns:DisplayIDs" />
+    <wsdl:part name="Schedule" element="tns:Schedule" />
+  </wsdl:message>
+  <wsdl:message name="AddScheduleResponseMessage" />
+  <wsdl:message name="ServiceManagerServiceContract_AddSchedule_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.inspiredisplays.com/DataContract/" name="detail" element="q5:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="UpdateScheduleRequestSchedule">
+    <wsdl:part name="DisplayIDs" element="tns:DisplayIDs" />
+    <wsdl:part name="Schedule" element="tns:Schedule" />
+  </wsdl:message>
+  <wsdl:message name="UpdateScheduleResponseMessage" />
+  <wsdl:message name="ServiceManagerServiceContract_UpdateSchedule_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.inspiredisplays.com/DataContract/" name="detail" element="q6:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteScheduleRequestMessage">
+    <wsdl:part name="ScheduleID" element="tns:ScheduleID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteScheduleResponseMessage" />
+  <wsdl:message name="ServiceManagerServiceContract_DeleteSchedule_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.inspiredisplays.com/DataContract/" name="detail" element="q7:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceManagerServiceContract">
+    <wsdl:operation name="GetSchedules">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/GetSchedules" name="GetSchedulesRequestMessage" message="tns:GetSchedulesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/GetSchedulesResponse" name="GetScheduleResponseMessage" message="tns:GetScheduleResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/GetSchedulesDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:ServiceManagerServiceContract_GetSchedules_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentSchedules">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/GetCurrentSchedules" name="GetSchedulesRequestMessage" message="tns:GetSchedulesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/GetCurrentSchedulesResponse" name="GetScheduleResponseMessage" message="tns:GetScheduleResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/GetCurrentSchedulesDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:ServiceManagerServiceContract_GetCurrentSchedules_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleSchedule">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/GetSingleSchedules" name="GetSingleSchedulesRequestMessage" message="tns:GetSingleSchedulesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/GetSingleScheduleResponse" name="GetSingleScheduleResponseMessage" message="tns:GetSingleScheduleResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/GetSingleScheduleDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:ServiceManagerServiceContract_GetSingleSchedule_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplaysInSchedule">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/GetDisplaysInSchedule" name="GetDisplaysInScheduleRequestMessage" message="tns:GetDisplaysInScheduleRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/GetDisplaysInScheduleResponse" name="GetDisplaysInScheduleResponseMessage" message="tns:GetDisplaysInScheduleResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/GetDisplaysInScheduleDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:ServiceManagerServiceContract_GetDisplaysInSchedule_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSchedule">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/AddSchedule" name="AddScheduleRequestMessage" message="tns:AddScheduleRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/AddScheduleResponse" name="AddScheduleResponseMessage" message="tns:AddScheduleResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/AddScheduleDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:ServiceManagerServiceContract_AddSchedule_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSchedule">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/UpdateSchedule" name="UpdateScheduleRequestSchedule" message="tns:UpdateScheduleRequestSchedule" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/UpdateScheduleResponse" name="UpdateScheduleResponseMessage" message="tns:UpdateScheduleResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/UpdateScheduleDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:ServiceManagerServiceContract_UpdateSchedule_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSchedule">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/DeleteSchedule" name="DeleteScheduleRequestMessage" message="tns:DeleteScheduleRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/DeleteScheduleResponse" name="DeleteScheduleResponseMessage" message="tns:DeleteScheduleResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceManagerServiceContract/DeleteScheduleDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:ServiceManagerServiceContract_DeleteSchedule_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ScheduleServiceEndpoint" type="tns:ServiceManagerServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSchedules">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/GetSchedules" style="document" />
+      <wsdl:input name="GetSchedulesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetScheduleResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentSchedules">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/GetCurrentSchedules" style="document" />
+      <wsdl:input name="GetSchedulesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetScheduleResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleSchedule">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/GetSingleSchedules" style="document" />
+      <wsdl:input name="GetSingleSchedulesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetSingleScheduleResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplaysInSchedule">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/GetDisplaysInSchedule" style="document" />
+      <wsdl:input name="GetDisplaysInScheduleRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetDisplaysInScheduleResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddSchedule">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/AddSchedule" style="document" />
+      <wsdl:input name="AddScheduleRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddScheduleResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSchedule">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/UpdateSchedule" style="document" />
+      <wsdl:input name="UpdateScheduleRequestSchedule">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateScheduleResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSchedule">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/DeleteSchedule" style="document" />
+      <wsdl:input name="DeleteScheduleRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteScheduleResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ScheduleManagerService">
+    <wsdl:port name="ScheduleServiceEndpoint" binding="tns:ScheduleServiceEndpoint">
+      <soap:address location="http://devserver2003/Inspire.Server/Svc/ScheduleService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

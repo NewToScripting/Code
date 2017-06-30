@@ -1,0 +1,21 @@
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Resource Access\Events.DataAccess\bin\Debug\Inspire.Direction.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Resource Access\Events.DataAccess\bin\Debug\Inspire.Direction.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Resource Access\Events.DataAccess\bin\Debug\Inspire.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Resource Access\Events.DataAccess\bin\Debug\Inspire.Direction.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Resource Access\Events.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Resource Access\Events.DataAccess\obj\Debug\Inspire.Direction.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Resource Access\Events.DataAccess\obj\Debug\Inspire.Direction.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\bin\Debug\Inspire.Direction.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\bin\Debug\Inspire.Direction.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\bin\Debug\Inspire.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\bin\Debug\Inspire.Direction.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\obj\Debug\Inspire.Direction.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\obj\Debug\Inspire.Direction.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\bin\Debug\Inspire.Direction.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\bin\Debug\Inspire.Direction.DataAccess.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\bin\Debug\Inspire.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\bin\Debug\Inspire.Direction.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\obj\Debug\Inspire.Direction.DataAccess.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Resource Access\Direction.DataAccess\obj\Debug\Inspire.Direction.DataAccess.pdb

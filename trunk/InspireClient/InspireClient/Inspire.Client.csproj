@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D344094-B9B9-457E-A308-50D13A432FC8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspire.Client</RootNamespace>
+    <AssemblyName>Inspire.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>AllIcons.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>6C2EDC8F1ADD77376FF6225F7AFE0C0E0D2AD89F</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Inspire.Client_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\twesterberg\Desktop\TestInstall\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SuiteName>Inspire Suite</SuiteName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.5.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Inspire.Key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>true</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Inspire.Client.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.Ribbon.Wpf30, Version=4.5.477.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ActiproSoftware.Ribbon.Wpf30.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiproSoftware.Shared.Wpf30, Version=4.5.477.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ActiproSoftware.Shared.Wpf30.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevComponents.WpfDock, Version=5.1.0.0, Culture=neutral, PublicKeyToken=adef513edc9ed778, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevComponents.WpfDock.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.WpfEditors, Version=5.1.0.0, Culture=neutral, PublicKeyToken=cbba4a1563683cdb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevComponents.WpfEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.WpfRibbon, Version=5.1.0.0, Culture=neutral, PublicKeyToken=2037e151916410e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevComponents.WpfRibbon.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Dialogs\Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SingleInstance.cs" />
+    <Page Include="Dialogs\DesignerLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialogs\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialogs\Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NumUpDown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ApplicationResources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Themes\DiscoveryBlue\DiscoveryBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Themes\DiscoveryBlue\DiscoveryBlueLow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Themes\ExpressionDark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\TreeResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\MainWindow.Commands.cs" />
+    <Compile Include="Dialogs\DesignerLogin.xaml.cs">
+      <DependentUpon>DesignerLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NumUpDown.xaml.cs">
+      <DependentUpon>NumUpDown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Inspire.Key.pfx" />
+    <None Include="InspireClient.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DesignModules\VideoModule\VideoModule.csproj">
+      <Project>{9894825C-DCBD-47F1-B408-EA8D8A7053AC}</Project>
+      <Name>VideoModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.AnimationLibrary\Inspire.AnimationLibrary.csproj">
+      <Project>{E1FE049D-1CBB-4990-BDC5-F81482D01D25}</Project>
+      <Name>Inspire.AnimationLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Client.ConfigurationWindow\Inspire.Client.ConfigurationWindow.csproj">
+      <Project>{105063E4-04C5-4918-9FFC-675E8F826DFC}</Project>
+      <Name>Inspire.Client.ConfigurationWindow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Client.Designer\Inspire.Client.Designer.csproj">
+      <Project>{48AF3708-C4E9-44DC-A6B1-EB02FE9A36C9}</Project>
+      <Name>Inspire.Client.Designer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Client.ScheduleWindow\Inspire.Client.ScheduleWindow.csproj">
+      <Project>{E26DFB8E-4A59-4523-AC10-C6FAC53AC4C2}</Project>
+      <Name>Inspire.Client.ScheduleWindow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Common\Inspire.Common.csproj">
+      <Project>{DA9210DD-D24D-468A-9083-F3D953E41C63}</Project>
+      <Name>Inspire.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.Server.Proxy\Inspire.Server.Proxy.csproj">
+      <Project>{C26A9A1E-D31B-4D0D-ACBB-B16C22DA4435}</Project>
+      <Name>Inspire.Server.Proxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire\Inspire.csproj">
+      <Project>{84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B}</Project>
+      <Name>Inspire</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transitionals\Transitionals.csproj">
+      <Project>{CC0300A8-D5D3-4F1F-80BD-9FEF1ACFC764}</Project>
+      <Name>Transitionals</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\New16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\DisplayGroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Display.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Property.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\New32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Save32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Bold.png" />
+    <Resource Include="Resources\Images\Clipboard.png" />
+    <Resource Include="Resources\Images\Cut.png" />
+    <Resource Include="Resources\Images\FontColor.png" />
+    <Resource Include="Resources\Images\FontSizeDec.png" />
+    <Resource Include="Resources\Images\FontSizeInc.png" />
+    <Resource Include="Resources\Images\Help.png" />
+    <Resource Include="Resources\Images\Italic.png" />
+    <Resource Include="Resources\Images\Paste16.png" />
+    <Resource Include="Resources\Images\Strike.png" />
+    <Resource Include="Resources\Images\StyleSet.png" />
+    <Resource Include="Resources\Images\Subscript.png" />
+    <Resource Include="Resources\Images\Superscript.png" />
+    <Resource Include="Resources\Images\TextHighlight.png" />
+    <Resource Include="Resources\Images\Underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Redo16.png" />
+    <Resource Include="Resources\Images\Undo16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\AlignTextCenter16.png" />
+    <Resource Include="Resources\Images\AlignTextJustify16.png" />
+    <Resource Include="Resources\Images\AlignTextLeft16.png" />
+    <Resource Include="Resources\Images\AlignTextRight16.png" />
+    <Resource Include="Resources\Images\Bullets16.png" />
+    <Resource Include="Resources\Images\IncreaseIndent16.png" />
+    <Resource Include="Resources\Images\Numbering16.png" />
+    <Resource Include="Resources\Images\ParagraphCenter16.png" />
+    <Resource Include="Resources\Images\Users16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Copy16.png" />
+    <Resource Include="Resources\Images\Cut16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\AlignObjectsBottom.png" />
+    <Resource Include="Resources\Images\AlignObjectsCenteredHorizontal.png" />
+    <Resource Include="Resources\Images\AlignObjectsCenteredVertical.png" />
+    <Resource Include="Resources\Images\AlignObjectsLeft.png" />
+    <Resource Include="Resources\Images\AlignObjectsRight.png" />
+    <Resource Include="Resources\Images\AlignObjectsTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\DistributeObjectsHorizontal.png" />
+    <Resource Include="Resources\Images\DistributeObjectsVertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\DecreaseIndent16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InspireSplashScreen.png" />
+    <Content Include="ServerSettings.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="Logo.png" />
+    <Resource Include="AllIcons.ico" />
+    <Resource Include="Resources\Images\Play32.png" />
+    <Resource Include="Resources\Images\Stop32.png" />
+    <Resource Include="Resources\Images\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Ok16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Cancel16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\demo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\copy32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\ClearFormatting16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Save16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\BringForward16.png" />
+    <Resource Include="Resources\Images\BringToFront16.png" />
+    <Resource Include="Resources\Images\SendBackward16.png" />
+    <Resource Include="Resources\Images\SendToBack16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\BringForward32.png" />
+    <Resource Include="Resources\Images\SendBackward32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\SelectionPane32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Rotate32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\FlipHorizontal.png" />
+    <Resource Include="Resources\Images\FlipVertical16.png" />
+    <Resource Include="Resources\Images\Rotate16.png" />
+    <Resource Include="Resources\Images\RotateLeft16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Height16.png" />
+    <Resource Include="Resources\Images\Width16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\FitToCanvas32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\PlayPreview32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\StopPreview32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\RightPanel.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

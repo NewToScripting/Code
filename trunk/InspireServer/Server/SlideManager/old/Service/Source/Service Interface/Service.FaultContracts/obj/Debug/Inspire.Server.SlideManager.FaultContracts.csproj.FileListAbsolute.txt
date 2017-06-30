@@ -1,0 +1,30 @@
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Inspire.Server.SlideManager.FaultContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Inspire.Server.SlideManager.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Inspire.Server.SlideManager.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Source\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Inspire.Server.SlideManager.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Inspire.Server.SlideManager.FaultContracts.pdb
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\Users\jhaveard\Desktop\Inspire Server\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Inspire.Server.SlideManager.FaultContracts.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Inspire.Server.SlideManager.FaultContracts.pdb
+C:\CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Inspire.Server.SlideManager.FaultContracts.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Inspire.Server.SlideManager.FaultContracts.pdb
+C:\_CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\_CODE\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Inspire.Server.SlideManager.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\bin\Debug\Inspire.Server.SlideManager.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Inspire.Server.SlideManager.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Core Server\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.FaultContracts\obj\Debug\Inspire.Server.SlideManager.FaultContracts.pdb

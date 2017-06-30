@@ -1,0 +1,14 @@
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\bin\Debug\Inspire.Server.Services.MessageContracts.dll
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\bin\Debug\Inspire.Server.Services.MessageContracts.pdb
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\bin\Debug\Inspire.Server.Services.DataContracts.dll
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\bin\Debug\Inspire.Server.Services.DataContracts.pdb
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\obj\Debug\Inspire.Server.Services.MessageContracts.dll
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\obj\Debug\Inspire.Server.Services.MessageContracts.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\bin\Debug\Inspire.Server.Services.MessageContracts.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\bin\Debug\Inspire.Server.Services.MessageContracts.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\bin\Debug\Inspire.Server.Services.DataContracts.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\bin\Debug\Inspire.Server.Services.DataContracts.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\obj\Debug\Inspire.Server.Services.MessageContracts.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.MessageContracts\obj\Debug\Inspire.Server.Services.MessageContracts.pdb

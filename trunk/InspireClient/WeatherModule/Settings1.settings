@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WeatherModule" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="LocationCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">wc:USFL0438</Value>
+    </Setting>
+    <Setting Name="FullName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Tampa, Florida, United States</Value>
+    </Setting>
+    <Setting Name="Country" Type="System.String" Scope="User">
+      <Value Profile="(Default)">United States</Value>
+    </Setting>
+    <Setting Name="State" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Florida</Value>
+    </Setting>
+    <Setting Name="City" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Tampa</Value>
+    </Setting>
+    <Setting Name="ZipCode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">33704</Value>
+    </Setting>
+    <Setting Name="Longitude" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">82.4576</Value>
+    </Setting>
+    <Setting Name="Latitude" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">27.9575</Value>
+    </Setting>
+    <Setting Name="DegreeType" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">F</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

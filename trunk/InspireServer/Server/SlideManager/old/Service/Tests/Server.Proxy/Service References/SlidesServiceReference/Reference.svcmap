@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0e2fc483-baa2-4290-8a46-272a32ecf6e8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/ClientManager/SlideManagerServiceReference.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SlideManagerServiceReference.disco" MetadataType="Disco" ID="d847605e-4847-4c15-9fd9-8aae8ff94ee9" SourceId="1" SourceUrl="http://z95853.rjf.com/ClientManager/SlideManagerServiceReference.svc?disco" />
+    <MetadataFile FileName="SlideManagerService.wsdl" MetadataType="Wsdl" ID="7fdc49a8-7563-4657-b781-248e417d5a6a" SourceId="1" SourceUrl="http://z95853.rjf.com/ClientManager/SlideManagerServiceReference.svc?wsdl" />
+    <MetadataFile FileName="SlideManagerServiceReference.xsd" MetadataType="Schema" ID="850db0ad-ec10-41cc-b66c-8bc85bb79a7d" SourceId="1" SourceUrl="http://z95853.rjf.com/ClientManager/SlideManagerServiceReference.svc?xsd=xsd0" />
+    <MetadataFile FileName="SlideManagerServiceReference1.xsd" MetadataType="Schema" ID="8484f306-96fe-4240-8e43-c2bfec2c83d1" SourceId="1" SourceUrl="http://z95853.rjf.com/ClientManager/SlideManagerServiceReference.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

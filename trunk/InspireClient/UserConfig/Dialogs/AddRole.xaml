@@ -1,0 +1,23 @@
+﻿<Window x:Class="UserConfig.Dialogs.AddRole"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Commands="clr-namespace:Inspire.Commands;assembly=Inspire"
+    Title="AddRole" Height="363" Width="266" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.AddRoleCommand}" Executed="AddRoleExecuted" CanExecute="AddRoleCanExecute" />
+    </Window.CommandBindings>
+    <Grid Background="{StaticResource WindowBackgroundBrush}" >
+        <StackPanel>
+            <ListBox x:Name="lbManageRoles" Height="264" Margin="5" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Name}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Button Command="{x:Static Commands:InspireCommands.AddRoleCommand}" Height="46" Margin="5,0,5,5">Add</Button>
+        </StackPanel>
+    </Grid>
+</Window>

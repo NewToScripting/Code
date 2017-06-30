@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://schemas.inspiredisplays.com/ServiceContract.Model/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="ClientDisplayPropertiesService" targetNamespace="http://schemas.inspiredisplays.com/ServiceContract.Model/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/ServiceContract.Model/Imports">
+      <xsd:import schemaLocation="http://testserver/DisplayManager/DisplayPropertiesServiceReference.svc?xsd=xsd2" namespace="http://schemas.inspiredisplays.com/ServiceContract.Model/" />
+      <xsd:import schemaLocation="http://testserver/DisplayManager/DisplayPropertiesServiceReference.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com/DataContract.Model/" />
+      <xsd:import schemaLocation="http://testserver/DisplayManager/DisplayPropertiesServiceReference.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetDisplayPropertiesRequestMessage" />
+  <wsdl:message name="GetDisplayPropertiesResponseMessage">
+    <wsdl:part name="DisplayProperties" element="tns:DisplayProperties" />
+  </wsdl:message>
+  <wsdl:message name="ClientDisplayPropertiesServiceContract_GetDisplayProperties_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q1:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddDisplayPropertyRequestMessage">
+    <wsdl:part name="DisplayProperty" element="tns:DisplayProperty" />
+  </wsdl:message>
+  <wsdl:message name="AddDisplayPropertyResponseMessage" />
+  <wsdl:message name="ClientDisplayPropertiesServiceContract_AddDisplayProperty_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q2:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDisplayPropertyRequestMessage">
+    <wsdl:part name="DisplayProperty" element="tns:DisplayProperty" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDisplayPropertyResponseMessage" />
+  <wsdl:message name="ClientDisplayPropertiesServiceContract_UpdateDisplayProperty_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q3:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDisplayPropertyRequestMessage">
+    <wsdl:part name="GUID" element="tns:GUID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDisplayPropertyResponseMessage" />
+  <wsdl:message name="ClientDisplayPropertiesServiceContract_DeleteDisplayProperty_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.inspiredisplays.com/DataContract.Model/" name="detail" element="q4:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="ClientDisplayPropertiesServiceContract">
+    <wsdl:operation name="GetDisplayProperties">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ServiceContract2/GetDisplayProperties" name="GetDisplayPropertiesRequestMessage" message="tns:GetDisplayPropertiesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayPropertiesServiceContract/GetDisplayPropertiesResponse" name="GetDisplayPropertiesResponseMessage" message="tns:GetDisplayPropertiesResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayPropertiesServiceContract/GetDisplayPropertiesGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayPropertiesServiceContract_GetDisplayProperties_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDisplayProperty">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ServiceContract2/AddDisplayProperty" name="AddDisplayPropertyRequestMessage" message="tns:AddDisplayPropertyRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayPropertiesServiceContract/AddDisplayPropertyResponse" name="AddDisplayPropertyResponseMessage" message="tns:AddDisplayPropertyResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayPropertiesServiceContract/AddDisplayPropertyGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayPropertiesServiceContract_AddDisplayProperty_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDisplayProperty">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ServiceContract2/UpdateDisplayProperty" name="UpdateDisplayPropertyRequestMessage" message="tns:UpdateDisplayPropertyRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayPropertiesServiceContract/UpdateDisplayPropertyResponse" name="UpdateDisplayPropertyResponseMessage" message="tns:UpdateDisplayPropertyResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayPropertiesServiceContract/UpdateDisplayPropertyGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayPropertiesServiceContract_UpdateDisplayProperty_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDisplayProperty">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ServiceContract2/DeleteDisplayProperty" name="DeleteDisplayPropertyRequestMessage" message="tns:DeleteDisplayPropertyRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayPropertiesServiceContract/DeleteDisplayPropertyResponse" name="DeleteDisplayPropertyResponseMessage" message="tns:DeleteDisplayPropertyResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract.Model/ClientDisplayPropertiesServiceContract/DeleteDisplayPropertyGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ClientDisplayPropertiesServiceContract_DeleteDisplayProperty_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Endpoint1" type="tns:ClientDisplayPropertiesServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDisplayProperties">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ServiceContract2/GetDisplayProperties" style="document" />
+      <wsdl:input name="GetDisplayPropertiesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetDisplayPropertiesResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddDisplayProperty">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ServiceContract2/AddDisplayProperty" style="document" />
+      <wsdl:input name="AddDisplayPropertyRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddDisplayPropertyResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDisplayProperty">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ServiceContract2/UpdateDisplayProperty" style="document" />
+      <wsdl:input name="UpdateDisplayPropertyRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateDisplayPropertyResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDisplayProperty">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract.Model/ServiceContract2/DeleteDisplayProperty" style="document" />
+      <wsdl:input name="DeleteDisplayPropertyRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteDisplayPropertyResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClientDisplayPropertiesService">
+    <wsdl:port name="Endpoint1" binding="tns:Endpoint1">
+      <soap:address location="http://testserver/DisplayManager/DisplayPropertiesServiceReference.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

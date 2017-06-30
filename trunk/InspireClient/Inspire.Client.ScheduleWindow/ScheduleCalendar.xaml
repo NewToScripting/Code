@@ -1,0 +1,516 @@
+﻿<UserControl x:Class="Inspire.Client.ScheduleWindow.ScheduleCalendar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="clr-namespace:DevComponents.WpfSchedule;assembly=DevComponents.WpfSchedule"
+    xmlns:Commands="clr-namespace:Inspire.Commands;assembly=Inspire"
+    xmlns:ScheduleWindow="clr-namespace:Inspire.Client.ScheduleWindow"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire" xmlns:ScheduledSlidePanel="clr-namespace:Inspire.Client.ScheduleWindow.ScheduledSlidePanel">
+    <UserControl.CommandBindings>
+        <!--<CommandBinding Command="{x:Static Commands:InspireCommands.EditScheduleCommand}" Executed="EditScheduleCommand_Executed" CanExecute="EditScheduleCommand_CanExecute"/>-->
+        <CommandBinding Command="{x:Static ScheduleWindow:ScheduleCalendar.RunEditScheduleCommand}" Executed="RunEditScheduleCommand_Executed" CanExecute="RunEditScheduleCommand_CanExecute"/>
+    </UserControl.CommandBindings>
+    <UserControl.Resources>
+        <s:DateTimePartConverter x:Key="DateConverter" />
+        <ContextMenu x:Key="AppContextMenu">
+            <MenuItem Header="Edit Schedule" Command="{x:Static ScheduleWindow:ScheduleCalendar.RunEditScheduleCommand}" Margin="3,0,0,0">
+                <MenuItem.Icon>
+                    <Image Source="Resources/Images/Schedule.png" Width="16"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <Separator/>
+            <MenuItem Header="Fit to Slide" Command="{x:Static Commands:InspireCommands.FitToSlideCommand}" Margin="3,0,0,0" />
+            <MenuItem Header="Add Reflection" Command="{x:Static Commands:InspireCommands.AddReflectionCommand}" Margin="3,0,0,0" />
+        </ContextMenu>
+        
+        <ContextMenu x:Key="CalendarContextMenu">
+            <MenuItem Header="Add New Schedule" Foreground="Black" Command="{x:Static Commands:InspireCommands.NewBlankScheduleCommand}" Margin="3,0,0,0">
+                <MenuItem.Icon>
+                    <Image Source="Resources/Images/Schedule.png" Width="16"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <!--<Separator/>
+            <MenuItem Header="Fit to Slide" Command="{x:Static Commands:InspireCommands.FitToSlideCommand}" Margin="3,0,0,0" />
+            <MenuItem Header="Add Reflection" Command="{x:Static Commands:InspireCommands.AddReflectionCommand}" Margin="3,0,0,0" />-->
+        </ContextMenu>
+        
+        <ToolTip x:Key="CalendarScheduleToolTip" DataContext="{Binding Path=PlacementTarget, RelativeSource={x:Static RelativeSource.Self}}">
+                <Border>
+                    <Grid>
+                        <TextBlock Text="{Binding Subject}" />
+                    </Grid>
+                </Border>
+        </ToolTip>
+        
+        <!--<Style TargetType="{x:Type s:AppointmentView}" x:Key="{ComponentResourceKey TypeInTargetAssembly=ScheduleWindow:ScheduleCalendar, ResourceId=AppView}">
+            <Setter Property="BorderBrush" Value="Red" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="CornerRadius" Value="3" />
+            <Setter Property="FontSize" Value="10.5" />
+            <Style.Triggers>
+                <Trigger Property="s:AppointmentView.IsMonthView" Value="False">
+                    <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey TypeInTargetAssembly=ScheduleWindow:ScheduleCalendar, ResourceId=WeekView}}" />
+                </Trigger>
+                <Trigger Property="s:AppointmentView.IsMonthView" Value="True">
+                    <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey TypeInTargetAssembly=ScheduleWindow:ScheduleCalendar, ResourceId=MonthView}}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>-->
+        <!-- Appointment Month View -->
+        <ControlTemplate TargetType="{x:Type s:AppointmentView}" x:Key="{ComponentResourceKey {x:Type s:AppointmentView}, MonthView}">
+            <Border Background="{TemplateBinding Background}" ToolTip="{StaticResource CalendarScheduleToolTip}"
+                           BorderBrush="{TemplateBinding BorderBrush}"
+                           BorderThickness="{TemplateBinding BorderThickness}"
+                           CornerRadius="{TemplateBinding CornerRadius}">
+                <Grid>
+                    <Border BorderThickness="1" CornerRadius="{TemplateBinding CornerRadius}">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Color="#90FFFFFF" Offset="0" />
+                                <GradientStop Color="Transparent" Offset=".4" />
+                                <GradientStop Color="Transparent" Offset="1" />
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+                    </Border>
+                    <DockPanel LastChildFill="True">
+                        <TextBlock
+           Margin="2" 
+           Text="{Binding Path=StartTime, Converter={StaticResource DateConverter}, ConverterParameter=ShortTime, RelativeSource={RelativeSource TemplatedParent}}" 
+           DockPanel.Dock="Left" 
+           TextWrapping="NoWrap" 
+           TextTrimming="None" 
+           HorizontalAlignment="Left" 
+           VerticalAlignment="Top" 
+           Padding="0"
+           TextAlignment="Left"
+           SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}"
+           Name="PART_StartTime"
+           Opacity=".7"/>
+                        <TextBlock
+             TextWrapping="NoWrap"
+             TextTrimming="CharacterEllipsis"
+             Name ="PART_Subject"
+             Padding="0" 
+             Margin="2"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Top"
+             TextAlignment="Left"
+             Text="{TemplateBinding Subject}"
+             SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+                    </DockPanel>
+                </Grid>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsAllDayEvent" Value="True">
+                    <Setter Property="Visibility" Value="Collapsed" TargetName="PART_StartTime" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                </Trigger>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="StartTimeInView" Value="False" />
+                        <Condition Property="EndTimeInView" Value="True" />
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.Setters>
+                        <Setter Property="CornerRadius" Value="0,5,5,0" />
+                    </MultiTrigger.Setters>
+                </MultiTrigger>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="StartTimeInView" Value="True" />
+                        <Condition Property="EndTimeInView" Value="False" />
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.Setters>
+                        <Setter Property="CornerRadius" Value="5,0,0,5" />
+                    </MultiTrigger.Setters>
+                </MultiTrigger>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="StartTimeInView" Value="False" />
+                        <Condition Property="EndTimeInView" Value="False" />
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.Setters>
+                        <Setter Property="CornerRadius" Value="0" />
+                    </MultiTrigger.Setters>
+                </MultiTrigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <!-- Appointment Week View -->
+        <ControlTemplate TargetType="{x:Type s:AppointmentView}" x:Key="{ComponentResourceKey {x:Type s:AppointmentView}, WeekView}">
+            <Border Background="{TemplateBinding Background}"
+                           BorderBrush="{TemplateBinding BorderBrush}"
+                           BorderThickness="{TemplateBinding BorderThickness}"
+                           CornerRadius="{TemplateBinding CornerRadius}">
+                <Grid>
+                    <Border BorderThickness="1" CornerRadius="{TemplateBinding CornerRadius}">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Color="#90FFFFFF" Offset="0" />
+                                <GradientStop Color="Transparent" Offset=".4" />
+                                <GradientStop Color="Transparent" Offset="1" />
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+                    </Border>
+                    <DockPanel LastChildFill="True">
+                        <Border Width="5" CornerRadius="{TemplateBinding TimeSideMarkerCornerRadius}" DockPanel.Dock="Left" Background="{TemplateBinding TimeSideMarkerBackground}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,0,1,1" Height="{TemplateBinding DurationHeight}" Name="DurationMarker" VerticalAlignment="Top" />
+                        <StackPanel Orientation="Vertical" Margin="1">
+                            <TextBlock
+               TextWrapping="Wrap"
+               TextTrimming="CharacterEllipsis"
+               Name ="PART_Subject"
+               Padding="0" 
+               Margin="2"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Top"
+               TextAlignment="Left"
+               Text="{TemplateBinding Subject}"
+               SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+                            <TextBlock
+               TextWrapping="Wrap"
+               Name="PART_Description"
+               Padding="0" 
+               Margin="2"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Top"
+               TextAlignment="Left"
+               Foreground="Gray"
+               Text="{TemplateBinding Description}"
+               SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+                        </StackPanel>
+                    </DockPanel>
+                    <Image Name="Reoccur" Visibility="Collapsed" HorizontalAlignment="Right" Margin="3" VerticalAlignment="Bottom" Width="16" Height="16" Source="Resources/Images/Recur.png" />
+                </Grid>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="DurationHeight" Value="NaN">
+                    <Setter Property="BorderThickness" Value="0,0,1,0" TargetName="DurationMarker" />
+                    <Setter Property="VerticalAlignment" Value="Stretch" TargetName="DurationMarker" />
+                </Trigger>
+                <Trigger Property="TimeSideMarkerBackground" Value="{x:Null}">
+                    <Setter Property="Visibility" Value="Collapsed" TargetName="DurationMarker" />
+                </Trigger>
+                <Trigger Property="IsRecurringInstance" Value="True">
+                    <Setter Property="Visibility" Value="Visible" TargetName="Reoccur" />
+                </Trigger>
+                <Trigger Property="IsAllDayEvent" Value="True">
+                    <Setter Property="Visibility" Value="Collapsed" TargetName="PART_Description" />
+                    <Setter Property="Visibility" Value="Collapsed" TargetName="DurationMarker" />
+                    <Setter Property="TextWrapping" Value="NoWrap" TargetName="PART_Subject" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <!--<Style TargetType="{x:Type WpfSchedule:AppointmentView}">
+
+            <Setter Property="ContextMenu" Value="{StaticResource AppContextMenu}" />
+
+            <Setter Property="BorderBrush" Value="Red" />
+
+            <Setter Property="Background" Value="White" />
+
+            <Setter Property="BorderThickness" Value="1" />
+
+            <Setter Property="CornerRadius" Value="0" />
+
+            <Setter Property="FontSize" Value="10.5" />
+
+            <Style.Triggers>
+
+                <Trigger Property="WpfSchedule:AppointmentView.IsMonthView" Value="False">
+
+                    <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey TypeInTargetAssembly=ScheduleWindow:ScheduleCalendar, ResourceId=WeekView}}" />
+
+                </Trigger>
+
+                <Trigger Property="WpfSchedule:AppointmentView.IsMonthView" Value="True">
+
+                    <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey TypeInTargetAssembly=ScheduleWindow:ScheduleCalendar, ResourceId=MonthView}}" />
+
+                </Trigger>
+
+            </Style.Triggers>
+
+        </Style>-->
+
+        <!-- Appointment Month View -->
+
+        <!--<ControlTemplate TargetType="{x:Type WpfSchedule:AppointmentView}" x:Key="{ComponentResourceKey {x:Type WpfSchedule:AppointmentView}, MonthView}">
+
+            <Border Background="{TemplateBinding Background}"
+
+                           BorderBrush="{TemplateBinding BorderBrush}"
+
+                           BorderThickness="{TemplateBinding BorderThickness}"
+
+                           CornerRadius="{TemplateBinding CornerRadius}" >
+
+                <Grid>
+
+                    <Border BorderThickness="1" CornerRadius="{TemplateBinding CornerRadius}">
+
+                        <Border.BorderBrush>
+
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+
+                                <GradientStop Color="#90FFFFFF" Offset="0" />
+
+                                <GradientStop Color="Transparent" Offset=".4" />
+
+                                <GradientStop Color="Transparent" Offset="1" />
+
+                            </LinearGradientBrush>
+
+                        </Border.BorderBrush>
+
+                    </Border>
+
+                    <DockPanel LastChildFill="True">
+
+                        <TextBlock
+
+           Margin="2" 
+
+           Text="{Binding Path=StartTime, Converter={StaticResource DateConverter}, ConverterParameter=ShortTime, RelativeSource={RelativeSource TemplatedParent}}" 
+
+           DockPanel.Dock="Left" 
+
+           TextWrapping="NoWrap" 
+
+           TextTrimming="None" 
+
+           HorizontalAlignment="Left" 
+
+           VerticalAlignment="Top" 
+
+           Padding="0"
+
+           TextAlignment="Left"
+
+           SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}"
+
+           Name="PART_StartTime"
+
+           Opacity=".7"/>
+
+                        <TextBlock
+
+             TextWrapping="NoWrap"
+
+             TextTrimming="CharacterEllipsis"
+
+             Name ="PART_Subject"
+
+             Padding="0" 
+
+             Margin="2"
+
+             HorizontalAlignment="Stretch"
+
+             VerticalAlignment="Top"
+
+             TextAlignment="Left"
+
+             Text="{TemplateBinding Subject}"
+
+             SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+
+                    </DockPanel>
+
+                </Grid>
+
+            </Border>
+
+            <ControlTemplate.Triggers>
+
+                <Trigger Property="IsAllDayEvent" Value="True">
+
+                    <Setter Property="Visibility" Value="Collapsed" TargetName="PART_StartTime" />
+
+                    <Setter Property="FontWeight" Value="Bold" />
+
+                </Trigger>
+
+                <MultiTrigger>
+
+                    <MultiTrigger.Conditions>
+
+                        <Condition Property="StartTimeInView" Value="False" />
+
+                        <Condition Property="EndTimeInView" Value="True" />
+
+                    </MultiTrigger.Conditions>
+
+                    <MultiTrigger.Setters>
+
+                        <Setter Property="CornerRadius" Value="0,5,5,0" />
+
+                    </MultiTrigger.Setters>
+
+                </MultiTrigger>
+
+                <MultiTrigger>
+
+                    <MultiTrigger.Conditions>
+
+                        <Condition Property="StartTimeInView" Value="True" />
+
+                        <Condition Property="EndTimeInView" Value="False" />
+
+                    </MultiTrigger.Conditions>
+
+                    <MultiTrigger.Setters>
+
+                        <Setter Property="CornerRadius" Value="5,0,0,5" />
+
+                    </MultiTrigger.Setters>
+
+                </MultiTrigger>
+
+                <MultiTrigger>
+
+                    <MultiTrigger.Conditions>
+
+                        <Condition Property="StartTimeInView" Value="False" />
+
+                        <Condition Property="EndTimeInView" Value="False" />
+
+                    </MultiTrigger.Conditions>
+
+                    <MultiTrigger.Setters>
+
+                        <Setter Property="CornerRadius" Value="0" />
+
+                    </MultiTrigger.Setters>
+
+                </MultiTrigger>
+
+            </ControlTemplate.Triggers>
+
+        </ControlTemplate>-->
+
+        <!-- Appointment Week View -->
+
+        <!--<ControlTemplate TargetType="{x:Type WpfSchedule:AppointmentView}" x:Key="{ComponentResourceKey {x:Type WpfSchedule:AppointmentView}, WeekView}">
+
+            <Border Background="{TemplateBinding Background}"
+
+                           BorderBrush="{TemplateBinding BorderBrush}"
+
+                           BorderThickness="{TemplateBinding BorderThickness}"
+
+                           CornerRadius="10" >
+
+                <Grid>
+
+                    <Border BorderThickness="1" CornerRadius="{TemplateBinding CornerRadius}">
+
+                        <Border.BorderBrush>
+
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+
+                                <GradientStop Color="#90FFFFFF" Offset="0" />
+
+                                <GradientStop Color="Transparent" Offset=".4" />
+
+                                <GradientStop Color="Transparent" Offset="1" />
+
+                            </LinearGradientBrush>
+
+                        </Border.BorderBrush>
+
+                    </Border>
+
+                    <DockPanel LastChildFill="True">
+
+                        <Border Width="5" CornerRadius="{TemplateBinding TimeSideMarkerCornerRadius}" DockPanel.Dock="Left" Background="{TemplateBinding TimeSideMarkerBackground}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,0,1,1" Height="{TemplateBinding DurationHeight}" Name="DurationMarker" VerticalAlignment="Top" />
+
+                        <StackPanel Orientation="Vertical" Margin="1">
+
+                            <TextBlock
+
+               TextWrapping="Wrap"
+
+               TextTrimming="CharacterEllipsis"
+
+               Name ="PART_Subject"
+
+               Padding="0" 
+
+               Margin="2"
+
+               HorizontalAlignment="Stretch"
+
+               VerticalAlignment="Top"
+
+               TextAlignment="Left"
+
+               Text="{TemplateBinding Subject}"
+
+               SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+
+                            <TextBlock
+
+               TextWrapping="Wrap"
+
+               Name ="PART_Description"
+
+               Padding="0" 
+
+               Margin="2"
+
+               HorizontalAlignment="Stretch"
+
+               VerticalAlignment="Top"
+
+               TextAlignment="Left"
+
+               Text="{TemplateBinding Description}"
+
+               SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+
+                        </StackPanel>
+
+                    </DockPanel>
+
+                </Grid>
+
+            </Border>
+
+            <ControlTemplate.Triggers>
+
+                <Trigger Property="DurationHeight" Value="NaN">
+
+                    <Setter Property="BorderThickness" Value="0,0,1,0" TargetName="DurationMarker" />
+
+                    <Setter Property="VerticalAlignment" Value="Stretch" TargetName="DurationMarker" />
+
+                </Trigger>
+
+                <Trigger Property="TimeSideMarkerBackground" Value="{x:Null}">
+
+                    <Setter Property="Visibility" Value="Collapsed" TargetName="DurationMarker" />
+
+                </Trigger>
+
+                <Trigger Property="IsAllDayEvent" Value="True">
+
+                    <Setter Property="Visibility" Value="Collapsed" TargetName="PART_Description" />
+
+                    <Setter Property="Visibility" Value="Collapsed" TargetName="DurationMarker" />
+
+                    <Setter Property="TextWrapping" Value="NoWrap" TargetName="PART_Subject" />
+
+                </Trigger>
+
+            </ControlTemplate.Triggers>
+
+        </ControlTemplate>-->
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="110"/>
+        </Grid.RowDefinitions>
+        <s:CalendarView Grid.Row="0" x:Name="Calendar"  ContextMenu="{StaticResource CalendarContextMenu}" Is24HourFormat="False" VisualStyle="Office2010Silver" CurrentTimeMarkerVisibility="Visible" LicenseKey="DAD80300DA22"></s:CalendarView><!---->
+        <ScheduledSlidePanel:ScheduledSlideControl Grid.Row="1" VerticalAlignment="Top" x:Name="SchedulerSlideControl" Margin="0,0,0,0"></ScheduledSlidePanel:ScheduledSlideControl>
+    </Grid>
+</UserControl>

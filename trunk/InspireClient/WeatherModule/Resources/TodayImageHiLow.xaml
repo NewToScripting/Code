@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:WeatherModule">
+    <DataTemplate DataType="{x:Type local:WeatherControl}">
+        <Viewbox>
+            <DockPanel>
+                <Image DockPanel.Dock="Top" Width="116" Source="{Binding WeatherReport.BackgroundImage, Mode=OneWay}" />
+                <StackPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <TextBlock Margin="0,0,5,0" FontSize="30" Foreground="White" Text="{Binding Path=WeatherReport.Forecast[0].LowTemperatureString}"/>
+                    <TextBlock FontSize="30" Foreground="White" Text="/" />
+                    <TextBlock Margin="5,0,0,0" FontSize="30" Foreground="White" Text="{Binding Path=WeatherReport.Forecast[0].HighTemperatureString}"/>
+                </StackPanel>
+            </DockPanel>
+        </Viewbox>
+    </DataTemplate>
+</ResourceDictionary>

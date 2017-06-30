@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://schemas.inspiredisplays.com" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="ImagesService" targetNamespace="http://schemas.inspiredisplays.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/Imports">
+      <xsd:import schemaLocation="http://capehorn/Inspire.Events/svc/ImageService.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com" />
+      <xsd:import schemaLocation="http://capehorn/Inspire.Events/svc/ImageService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetImagesRequestMessage">
+    <wsdl:part name="Type" element="tns:Type" />
+  </wsdl:message>
+  <wsdl:message name="GetImagesResponseMessage">
+    <wsdl:part name="EventImages" element="tns:EventImages" />
+  </wsdl:message>
+  <wsdl:message name="ImageServiceContract_GetImages_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddImageRequestMessage">
+    <wsdl:part name="EventImage" element="tns:EventImage" />
+    <wsdl:part name="ImageFile" element="tns:ImageFile" />
+  </wsdl:message>
+  <wsdl:message name="AddImageResponseMessage">
+    <wsdl:part name="WebPath" element="tns:WebPath" />
+  </wsdl:message>
+  <wsdl:message name="ImageServiceContract_AddImage_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteImageRequestMessage">
+    <wsdl:part name="EventImage" element="tns:EventImage" />
+  </wsdl:message>
+  <wsdl:message name="DeleteImageResponseMessage" />
+  <wsdl:message name="ImageServiceContract_DeleteImage_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="ImageServiceContract">
+    <wsdl:operation name="GetImages">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/GetImages" name="GetImagesRequestMessage" message="tns:GetImagesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ImageServiceContract/GetImagesResponse" name="GetImagesResponseMessage" message="tns:GetImagesResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ImageServiceContract/GetImagesGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ImageServiceContract_GetImages_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddImage">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/AddImage" name="AddImageRequestMessage" message="tns:AddImageRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ImageServiceContract/AddImageResponse" name="AddImageResponseMessage" message="tns:AddImageResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ImageServiceContract/AddImageGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ImageServiceContract_AddImage_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteImage">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/DeleteImage" name="DeleteImageRequestMessage" message="tns:DeleteImageRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ImageServiceContract/DeleteImageResponse" name="DeleteImageResponseMessage" message="tns:DeleteImageResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/ImageServiceContract/DeleteImageGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:ImageServiceContract_DeleteImage_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ImageEndpoint" type="tns:ImageServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetImages">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/DirectionServiceContract/GetImages" style="document" />
+      <wsdl:input name="GetImagesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetImagesResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddImage">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/DirectionServiceContract/AddImage" style="document" />
+      <wsdl:input name="AddImageRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddImageResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteImage">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/DirectionServiceContract/DeleteImage" style="document" />
+      <wsdl:input name="DeleteImageRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteImageResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ImagesService">
+    <wsdl:port name="ImageEndpoint" binding="tns:ImageEndpoint">
+      <soap:address location="http://capehorn/Inspire.Events/svc/ImageService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

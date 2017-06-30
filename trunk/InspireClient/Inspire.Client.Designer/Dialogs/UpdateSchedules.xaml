@@ -1,0 +1,12 @@
+﻿<Window x:Class="Inspire.Client.Designer.Dialogs.UpdateSchedules"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    Title="Update Schedules" Height="175" Width="515" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="{StaticResource ListBackgroundBrush}">
+        <Image Source="Images/Alert.png" HorizontalAlignment="Left" Margin="21,12,0,49" Width="71" />
+        <TextBlock Margin="131,27,31,61" Background="Transparent" Foreground="White" FontSize="15" Name="lblUpdateSched" Text="This slide currently appears in schedules, would you like to update the schedules with the modified slide?" TextWrapping="Wrap" />
+        <Button Inspire:ButtonImage.Image="Images\Cancel16.png" Height="33" Margin="0,0,31,12" Name="btnNo" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="128" Click="btnNo_Click">No</Button>
+        <Button Inspire:ButtonImage.Image="Images\Ok16.png" Margin="200,0,165,11" Height="34" Name="btnYes" VerticalAlignment="Bottom" Click="btnYes_Click">Yes</Button>
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dc66559a-c8cb-4835-966a-3a999462edaa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://devserver2003/inspire.clientmanager/directionservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DirectionService.disco" MetadataType="Disco" ID="9a5bd8c2-7017-421f-8a56-5b768c31a7ed" SourceId="1" SourceUrl="http://devserver2003/Inspire.ClientManager/DirectionService.svc?disco" />
+    <MetadataFile FileName="DirectionService.wsdl" MetadataType="Wsdl" ID="940507d3-b36e-4858-bc2a-b0dd19e979c8" SourceId="1" SourceUrl="http://devserver2003/Inspire.ClientManager/DirectionService.svc?wsdl" />
+    <MetadataFile FileName="DirectionService.xsd" MetadataType="Schema" ID="807721a4-644f-44e9-9e3b-684853a95f56" SourceId="1" SourceUrl="http://devserver2003/Inspire.ClientManager/DirectionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DirectionService1.xsd" MetadataType="Schema" ID="66eae8a6-4a78-4f65-8a1d-d7c97c44dd0f" SourceId="1" SourceUrl="http://devserver2003/Inspire.ClientManager/DirectionService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5D65895-4DF7-46F3-BC30-365D49196B4E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspire.Display.Service</RootNamespace>
+    <AssemblyName>Inspire.Display.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\Program Files %28x86%29\Inspire\Display\Endpoint\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip, Version=1.8.4.24, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLogic\ResourceAccessFasade.cs" />
+    <Compile Include="FolderAccess\ZipUtil.cs" />
+    <Compile Include="EventLogger.cs" />
+    <Compile Include="InspireDisplayService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InspireDisplayService.Designer.cs">
+      <DependentUpon>InspireDisplayService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BusinessLogic\UtilityLogic.cs" />
+    <Compile Include="Timers\DailyUpdateTimer.cs" />
+    <Compile Include="XML\Button.cs" />
+    <Compile Include="XML\Buttons.cs" />
+    <Compile Include="ServerCommunication\ProxySlideFile.cs" />
+    <Compile Include="XML\Schedule.cs" />
+    <Compile Include="ServerCommunication\ScheduledSlideServiceProxy.cs" />
+    <Compile Include="XML\Schedules.cs" />
+    <Compile Include="ServerCommunication\ScheduleServiceProxy.cs" />
+    <Compile Include="XML\ScheduleSlide.cs" />
+    <Compile Include="XML\ScheduleSlides.cs" />
+    <Compile Include="ServerCommunication\ScheduleTranslator.cs" />
+    <Compile Include="ServerCommunication\SlideFileProxy.cs" />
+    <Compile Include="Service References\ScheduledSlideServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ScheduleServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="FolderAccess\SlideFolderAccess.cs" />
+    <Compile Include="FolderAccess\StreamToBytes.cs" />
+    <Compile Include="Service References\SlideFileServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Timers\UpdateTimer.cs" />
+    <Compile Include="WCF\DisplayService.cs" />
+    <Compile Include="WCF\IDisplayServiceContract.cs" />
+    <Compile Include="WCF\UpdateDisplayRequestMessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ScheduledSlideServiceReference\Inspire.Display.Service.ScheduledSlideServiceReference.ScheduledSlides.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ScheduledSlideServiceReference\schemas.inspiredisplays.com.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ScheduledSlideServiceReference\service.wsdl" />
+    <None Include="Service References\ScheduledSlideServiceReference\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ScheduledSlideServiceReference\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ScheduledSlideServiceReference\service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ScheduleServiceReference\Inspire.Display.Service.ScheduleServiceReference.Schedule.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ScheduleServiceReference\Inspire.Display.Service.ScheduleServiceReference.Schedules.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ScheduleServiceReference\ScheduleManagerService.wsdl" />
+    <None Include="Service References\ScheduleServiceReference\ScheduleService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ScheduleServiceReference\ScheduleService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ScheduleServiceReference\ScheduleService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ScheduleServiceReference\ScheduleService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ScheduleServiceReference\ScheduleService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SlideFileServiceReference\Inspire.Display.Service.SlideFileServiceReference.AddSlideFileResponseMessage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SlideFileServiceReference\Inspire.Display.Service.SlideFileServiceReference.DeleteSlideFileResponseMessage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SlideFileServiceReference\Inspire.Display.Service.SlideFileServiceReference.GetSlideFileResponseMessage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SlideFileServiceReference\Inspire.Display.Service.SlideFileServiceReference.UpdateSlideFileResponseMessage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SlideFileServiceReference\SlideFileManagerService.wsdl" />
+    <None Include="Service References\SlideFileServiceReference\SlideFileService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SlideFileServiceReference\SlideFileService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SlideFileServiceReference\SlideFileService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ScheduledSlideServiceReference\" />
+    <WCFMetadataStorage Include="Service References\ScheduleServiceReference\" />
+    <WCFMetadataStorage Include="Service References\SlideFileServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ScheduleServiceReference\ScheduleService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ScheduleServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ScheduleServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ScheduleServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\Ionic.Zip.dll" />
+    <None Include="Service References\SlideFileServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SlideFileServiceReference\configuration.svcinfo" />
+    <None Include="Service References\SlideFileServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\SlideFileServiceReference\SlideFileService.disco" />
+    <None Include="Service References\ScheduledSlideServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ScheduledSlideServiceReference\configuration.svcinfo" />
+    <None Include="Service References\ScheduledSlideServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="ScrollModule.ESPNScroller"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire" xmlns:ScrollModule="clr-namespace:ScrollModule" IsHitTestVisible="False" SnapsToDevicePixels="True">
+    <UserControl.Resources>
+        <Storyboard x:Key="scrollTextAnim" RepeatBehavior="Forever">
+            <ParallelTimeline>
+                <DoubleAnimation To="0" Storyboard.TargetName="translate" Storyboard.TargetProperty="X" Duration="{Binding Path=ESPNScrollDuration, RelativeSource={RelativeSource AncestorType={x:Type ScrollModule:ESPNScroller}}}" />
+            </ParallelTimeline>
+        </Storyboard>
+    </UserControl.Resources>
+    <Canvas ClipToBounds="True" x:Name="espnContainer" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Grid Name="espnMarquee" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="{Binding ElementName=espnContainer, Path=ActualHeight}">
+            <Grid.RenderTransform>
+                <TranslateTransform x:Name="translate" />
+            </Grid.RenderTransform>
+            <ListBox VirtualizingStackPanel.IsVirtualizing="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Style="{x:Null}" ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                                    Background="Transparent" BorderBrush="{x:Null}" x:Name="ESPNItemsHolder"
+                                    ItemsSource="{Binding Path=ScrollItems, RelativeSource={RelativeSource AncestorType={x:Type ScrollModule:ESPNScroller}}}">
+                <ListBox.RenderTransform>
+                    <TranslateTransform>
+                    </TranslateTransform>
+                </ListBox.RenderTransform>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel Orientation="Horizontal" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="Transparent"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
+        </Grid>
+    </Canvas>
+</UserControl>

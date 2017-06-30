@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="67fc4f40-9ca5-4f7a-a825-da9d677c454d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4714/WeatherService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WeatherService.xsd" MetadataType="Schema" ID="e5049c6e-bd98-4d2b-b509-a3e0c0a7909d" SourceId="1" SourceUrl="http://localhost:4714/WeatherService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WeatherService.disco" MetadataType="Disco" ID="6bec8a1a-2fa2-44f3-ab7c-8f651fd4b6a6" SourceId="1" SourceUrl="http://localhost:4714/WeatherService.svc?disco" />
+    <MetadataFile FileName="WeatherService.wsdl" MetadataType="Wsdl" ID="cd37cec7-1c13-4b74-8bbd-045e527fc405" SourceId="1" SourceUrl="http://localhost:4714/WeatherService.svc?wsdl" />
+    <MetadataFile FileName="WeatherService1.xsd" MetadataType="Schema" ID="f8abf8d8-a148-4b32-8e26-15d708279c12" SourceId="1" SourceUrl="http://localhost:4714/WeatherService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WeatherService2.xsd" MetadataType="Schema" ID="88c9c7f2-46f6-48d2-9833-dd97519e54cc" SourceId="1" SourceUrl="http://localhost:4714/WeatherService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

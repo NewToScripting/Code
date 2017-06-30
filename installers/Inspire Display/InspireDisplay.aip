@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="7.7" version="8.0.2" Modules="enterprise" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_MINDOTNETVERSION" MultiBuildValue="DefaultBuild:3.5" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="2" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="info@inspiredisplays.com"/>
+    <ROW Property="ARPHELPLINK" Value="support@inspiredisplays.com"/>
+    <ROW Property="ARPHELPTELEPHONE" Value="1-877-512-3451"/>
+    <ROW Property="ARPPRODUCTICON" Value="InspireI.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="www.inspiredisplays.com"/>
+    <ROW Property="BannerBitmap" MultiBuildValue="DefaultBuild:topBanner.jpg" Type="1"/>
+    <ROW Property="DialogBitmap" MultiBuildValue="DefaultBuild:style24_dialog.jpg" Type="1"/>
+    <ROW Property="Manufacturer" Value="Inspire Digital Signage" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{CB4558CD-9F00-433B-8FC5-0C1A308BD038} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Inspire Display Enterprise Version" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="2.0.2"/>
+    <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:Force"/>
+    <ROW Property="SERVERNAME_PROP" Value="localhost" Type="4"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{E31D16BA-6909-41DE-AB4C-6599F533A54D}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT" MultiBuildValue="DefaultBuild:Windows NT 4.0, Windows NT 4.0 Service Pack 1, Windows NT 4.0 Service Pack 2, Windows NT 4.0 Service Pack 3, Windows NT 4.0 Service Pack 4, Windows NT 4.0 Service Pack 5, Windows NT 4.0 Service Pack 6, Windows 2000, Windows 2000 Service Pack 1, Windows 2000 Service Pack 2, Windows 2000 Service Pack 3, Windows 2000 Service Pack 4, Windows XP x86, Windows XP x86 Service Pack 1, Windows XP x86 Service Pack 2" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64" MultiBuildValue="DefaultBuild:Windows XP x64, Windows XP x64 ServicePack 1" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64Display" MultiBuildValue="DefaultBuild:Windows XP x64, Windows XP x64 ServicePack 1" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNTDisplay" MultiBuildValue="DefaultBuild:Windows NT 4.0, Windows 2000, Windows XP x86, Windows XP x86 Service Pack 1, Windows XP x86 Service Pack 2" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="App_DIR" Directory_Parent="APPDIR" DefaultDir="App"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Inspire_DIR" Directory_Parent="ProgramMenuFolder" DefaultDir="Inspire"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="Progra~1|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Slides_DIR" Directory_Parent="App_DIR" DefaultDir="Slides"/>
+    <ROW Directory="StartupFolder" Directory_Parent="TARGETDIR" DefaultDir="Startu~1|StartupFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="Watchdog_DIR" Directory_Parent="APPDIR" DefaultDir="Watchdog"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{5F80D154-316C-49AD-97AA-DF5AB013A6E1}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="ActiproSoftware.Ribbon.Wpf30.dll" ComponentId="{B1481269-52D9-452C-AFDB-5BAF361BCF8C}" Directory_="App_DIR" Attributes="0" KeyPath="ActiproSoftware.Ribbon.Wpf30.dll"/>
+    <ROW Component="ActiproSoftware.Shared.Wpf30.dll" ComponentId="{FA63E67C-BEF3-42B8-9B2A-6E720787EBF5}" Directory_="App_DIR" Attributes="0" KeyPath="ActiproSoftware.Shared.Wpf30.dll"/>
+    <ROW Component="AutoAdminLogon" ComponentId="{3F49246D-AB20-4813-87BD-92BB71CE0450}" Directory_="APPDIR" Attributes="4" KeyPath="AutoAdminLogon"/>
+    <ROW Component="AutoAdminLogon_1" ComponentId="{AE98BF60-3157-4EE6-8AD0-26FE48E15011}" Directory_="APPDIR" Attributes="4" KeyPath="AutoAdminLogon_1"/>
+    <ROW Component="BubbleModule.dll" ComponentId="{B92B70B1-E492-41D5-BB0A-6DE34CDA48D0}" Directory_="App_DIR" Attributes="0" KeyPath="BubbleModule.dll"/>
+    <ROW Component="DateTimeModule.dll" ComponentId="{5F6B7C8A-1CF9-4940-8A0C-A8B776A4057D}" Directory_="App_DIR" Attributes="0" KeyPath="DateTimeModule.dll"/>
+    <ROW Component="DefaultPassword" ComponentId="{5CEA3C2F-7C23-4154-9D41-5DF784F949D1}" Directory_="APPDIR" Attributes="4" KeyPath="DefaultPassword"/>
+    <ROW Component="DefaultUserName" ComponentId="{09721D21-3AF2-4E98-8959-07A6F8C5BA8B}" Directory_="APPDIR" Attributes="4" KeyPath="DefaultUserName"/>
+    <ROW Component="EffectLibrary.dll" ComponentId="{D5366B7F-E35E-4083-958E-E2AB301D9D80}" Directory_="App_DIR" Attributes="0" KeyPath="EffectLibrary.dll"/>
+    <ROW Component="EventEntry.dll" ComponentId="{27670DBA-86ED-4327-AB9E-1F4BD9FE738F}" Directory_="App_DIR" Attributes="0" KeyPath="EventEntry.dll"/>
+    <ROW Component="EventsModule.dll" ComponentId="{93AB5634-57A6-4CAD-A370-BEAEAF6336DD}" Directory_="App_DIR" Attributes="0" KeyPath="EventsModule.dll"/>
+    <ROW Component="FilterModule.dll" ComponentId="{B9ADB9A7-2F70-4DEA-85F7-77520E47F466}" Directory_="App_DIR" Attributes="0" KeyPath="FilterModule.dll"/>
+    <ROW Component="FlightInfoModule.Proxy.dll" ComponentId="{32A775A0-F056-421F-B2D0-72C1D544532A}" Directory_="App_DIR" Attributes="0" KeyPath="FlightInfoModule.Proxy.dll"/>
+    <ROW Component="FlightInfoModule.dll" ComponentId="{2CFDA75E-C9FE-42C8-B104-DECA021AF986}" Directory_="App_DIR" Attributes="0" KeyPath="FlightInfoModule.dll"/>
+    <ROW Component="Hardcodet.Wpf.TaskbarNotification.dll" ComponentId="{62E86F8A-B52C-4843-A05F-BFB338145BDD}" Directory_="Watchdog_DIR" Attributes="0" KeyPath="Hardcodet.Wpf.TaskbarNotification.dll"/>
+    <ROW Component="IdentityMine.Evaluators.JScript.dll" ComponentId="{EDA4B7EB-CA2D-4998-9EE2-611CB8B26878}" Directory_="App_DIR" Attributes="0" KeyPath="IdentityMine.Evaluators.JScript.dll"/>
+    <ROW Component="IdentityMine.Windows.Panels.dll" ComponentId="{3A67B527-9CD6-4CEF-B375-596BD617EFD5}" Directory_="App_DIR" Attributes="0" KeyPath="IdentityMine.Windows.Panels.dll"/>
+    <ROW Component="IdentityMine.Windows.dll" ComponentId="{05644E84-8D84-497A-99E5-7EF2AE6255E3}" Directory_="App_DIR" Attributes="0" KeyPath="IdentityMine.Windows.dll"/>
+    <ROW Component="ImageModule.dll" ComponentId="{CF66DFC2-33C6-4EB1-8C5A-0EBEB9641EA9}" Directory_="App_DIR" Attributes="0" KeyPath="ImageModule.dll"/>
+    <ROW Component="InfoStrat.VE.Windows7Touch.dll" ComponentId="{7D401C76-AB04-467F-AE92-F8E157678C08}" Directory_="App_DIR" Attributes="0" KeyPath="InfoStrat.VE.Windows7Touch.dll"/>
+    <ROW Component="InfoStrat.VE.dll" ComponentId="{1E66F479-B87F-418D-9F8B-FA55CD084C98}" Directory_="App_DIR" Attributes="0" KeyPath="InfoStrat.VE.dll"/>
+    <ROW Component="Infragistics.ToyBox.dll" ComponentId="{DC19F6C7-894F-4171-9ECD-3AFE30982BFA}" Directory_="App_DIR" Attributes="0" KeyPath="Infragistics.ToyBox.dll"/>
+    <ROW Component="Inspire" ComponentId="{501C4FBB-B56B-45D6-A917-A156725D40C8}" Directory_="Inspire_DIR" Attributes="0"/>
+    <ROW Component="Inspire.AnimationLibrary.dll" ComponentId="{AE865F57-E7C9-4DFA-8677-A894A5911BE9}" Directory_="App_DIR" Attributes="0" KeyPath="Inspire.AnimationLibrary.dll"/>
+    <ROW Component="Inspire.Common.dll" ComponentId="{928ACCE3-C420-4019-9D3F-07EC475BD26F}" Directory_="App_DIR" Attributes="0" KeyPath="Inspire.Common.dll"/>
+    <ROW Component="Inspire.Display.Service.exe" ComponentId="{06DBE3B5-CD90-4ACA-8D67-D75BB0B2BFA6}" Directory_="App_DIR" Attributes="0" KeyPath="Inspire.Display.Service.exe"/>
+    <ROW Component="Inspire.Events.Proxy.dll" ComponentId="{AC8CC5C6-0C23-402D-AE5F-CED2FFC5FF27}" Directory_="App_DIR" Attributes="0" KeyPath="Inspire.Events.Proxy.dll"/>
+    <ROW Component="Inspire.Server.Proxy.dll" ComponentId="{E833BB62-41E5-49E9-9FA9-6C9F51028575}" Directory_="App_DIR" Attributes="0" KeyPath="Inspire.Server.Proxy.dll"/>
+    <ROW Component="Inspire.WatchDog.Interface.exe" ComponentId="{560A7326-A73C-4E00-9CC9-2F22473D8C65}" Directory_="Watchdog_DIR" Attributes="0" KeyPath="Inspire.WatchDog.Interface.exe"/>
+    <ROW Component="Inspire.dll" ComponentId="{4F018A63-D72D-40ED-BC99-2D52CC6101FD}" Directory_="App_DIR" Attributes="0" KeyPath="Inspire.dll"/>
+    <ROW Component="InspireDisplay.exe" ComponentId="{1102FAE3-6A52-4506-B842-34387D133A19}" Directory_="App_DIR" Attributes="0" KeyPath="InspireDisplay.exe"/>
+    <ROW Component="Ionic.Zip.dll" ComponentId="{430A55AD-7C14-4E63-86E1-222B93AA402D}" Directory_="App_DIR" Attributes="0" KeyPath="Ionic.Zip.dll"/>
+    <ROW Component="MapModule.dll" ComponentId="{5103835A-DE58-4117-A701-D813A0E89B95}" Directory_="App_DIR" Attributes="0" KeyPath="MapModule.dll"/>
+    <ROW Component="Microsoft.MapPoint.Data.dll" ComponentId="{209D93F9-3E34-4CA2-9CE6-77C776EC67C4}" Directory_="App_DIR" Attributes="0" KeyPath="Microsoft.MapPoint.Data.dll"/>
+    <ROW Component="Microsoft.MapPoint.Geometry.dll" ComponentId="{73BE8A8A-F451-4007-86D3-9AF0D67C7D06}" Directory_="App_DIR" Attributes="0" KeyPath="Microsoft.MapPoint.Geometry.dll"/>
+    <ROW Component="Microsoft.MapPoint.Rendering3D.Utility.d" ComponentId="{063DC633-B661-441C-9CD5-922833AEB3DA}" Directory_="App_DIR" Attributes="0" KeyPath="Microsoft.MapPoint.Rendering3D.Utility.dll"/>
+    <ROW Component="Microsoft.MapPoint.Rendering3D.dll" ComponentId="{F6DDEFB0-37F6-410A-94B1-1CF8D7F7E6A4}" Directory_="App_DIR" Attributes="0" KeyPath="Microsoft.MapPoint.Rendering3D.dll"/>
+    <ROW Component="NET_Framework_4.0" ComponentId="{7112AC2A-0995-4895-8FF7-6E90D9D36794}" Directory_="APPDIR" Attributes="4" KeyPath="NET_Framework_4.0" Options="2"/>
+    <ROW Component="PlaylistModule.dll" ComponentId="{F1A57FA6-DB31-47DE-9C34-B1F4F32C784D}" Directory_="App_DIR" Attributes="0" KeyPath="PlaylistModule.dll"/>
+    <ROW Component="RSSModule.dll" ComponentId="{41C8FB24-DC21-4D1D-B3DB-B10F7A6000CD}" Directory_="App_DIR" Attributes="0" KeyPath="RSSModule.dll"/>
+    <ROW Component="ReflectionModule.dll" ComponentId="{B30010FD-95E9-4663-9666-D22F15B33728}" Directory_="App_DIR" Attributes="0" KeyPath="ReflectionModule.dll"/>
+    <ROW Component="RichTextModule.dll" ComponentId="{5F49DC2B-1A34-4619-A546-B098FC579DFD}" Directory_="App_DIR" Attributes="0" KeyPath="RichTextModule.dll"/>
+    <ROW Component="ScrollModule.dll" ComponentId="{DC3B15AF-A0B3-4110-B1DD-2A31951155DD}" Directory_="App_DIR" Attributes="0" KeyPath="ScrollModule.dll"/>
+    <ROW Component="ShapesModule.dll" ComponentId="{5987DA28-7041-462D-A67E-D03DE65380B1}" Directory_="App_DIR" Attributes="0" KeyPath="ShapesModule.dll"/>
+    <ROW Component="Slides" ComponentId="{7B157E16-19E3-4FFE-B936-E596A1CECE93}" Directory_="Slides_DIR" Attributes="0"/>
+    <ROW Component="SpinningLogo.dll" ComponentId="{BF3058DA-CBFA-4E94-A517-09C61C413E36}" Directory_="App_DIR" Attributes="0" KeyPath="SpinningLogo.dll"/>
+    <ROW Component="System.Windows.Controls.Input.Toolkit.dl" ComponentId="{C1476032-D619-4306-A635-D52DD49BE617}" Directory_="App_DIR" Attributes="0" KeyPath="System.Windows.Controls.Input.Toolkit.dll"/>
+    <ROW Component="Transitionals.dll" ComponentId="{A3C8EC90-75CF-4218-A5EF-60C626B491B2}" Directory_="App_DIR" Attributes="0" KeyPath="Transitionals.dll"/>
+    <ROW Component="VideoModule.dll" ComponentId="{4286A8A3-120E-4787-BAB3-2199831C730A}" Directory_="App_DIR" Attributes="0" KeyPath="VideoModule.dll"/>
+    <ROW Component="WPFToolkit.dll" ComponentId="{52545D07-5CC2-4133-80AB-FF0B77306B9D}" Directory_="App_DIR" Attributes="0" KeyPath="WPFToolkit.dll"/>
+    <ROW Component="WeatherModule.Proxy.dll" ComponentId="{FC983D14-7EE5-409B-B616-5041501B1397}" Directory_="App_DIR" Attributes="0" KeyPath="WeatherModule.Proxy.dll"/>
+    <ROW Component="WeatherModule.dll" ComponentId="{9D74629E-125A-441D-8EF5-8D4D693B29B8}" Directory_="App_DIR" Attributes="0" KeyPath="WeatherModule.dll"/>
+    <ROW Component="Windows7.Multitouch.WPF.dll" ComponentId="{EB1CA6A7-8176-4385-B877-6AA93BACA4A2}" Directory_="App_DIR" Attributes="0" KeyPath="Windows7.Multitouch.WPF.dll"/>
+    <ROW Component="Windows7.Multitouch.dll" ComponentId="{88A5886F-B42D-4ED8-98BA-46C093C3DCB1}" Directory_="App_DIR" Attributes="0" KeyPath="Windows7.Multitouch.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="3" Level="1" Directory_="APPDIR" Attributes="0" Components="Ionic.Zip.dll MapModule.dll Microsoft.MapPoint.Data.dll Microsoft.MapPoint.Rendering3D.dll Microsoft.MapPoint.Rendering3D.Utility.d PlaylistModule.dll ReflectionModule.dll RichTextModule.dll RSSModule.dll ScrollModule.dll ShapesModule.dll SpinningLogo.dll Transitionals.dll VideoModule.dll WeatherModule.dll WeatherModule.Proxy.dll Windows7.Multitouch.dll Windows7.Multitouch.WPF.dll ActiproSoftware.Ribbon.Wpf30.dll ActiproSoftware.Shared.Wpf30.dll BubbleModule.dll DateTimeModule.dll EffectLibrary.dll EventEntry.dll EventsModule.dll FilterModule.dll FlightInfoModule.dll FlightInfoModule.Proxy.dll IdentityMine.Evaluators.JScript.dll IdentityMine.Windows.dll IdentityMine.Windows.Panels.dll ImageModule.dll InfoStrat.VE.dll InfoStrat.VE.Windows7Touch.dll Infragistics.ToyBox.dll Inspire.AnimationLibrary.dll Inspire.Common.dll Inspire.dll Inspire.Events.Proxy.dll InspireDisplay.exe Inspire.Display.Service.exe AutoAdminLogon AutoAdminLogon_1 DefaultUserName DefaultPassword Hardcodet.Wpf.TaskbarNotification.dll Inspire.WatchDog.Interface.exe AI_ExePath Slides Inspire.Server.Proxy.dll WPFToolkit.dll Microsoft.MapPoint.Geometry.dll System.Windows.Controls.Input.Toolkit.dl Inspire"/>
+    <ROW Feature="NET_Framework_4.0" Title=".NET Framework 4.0" Description=".NET Framework 4.0" Display="5" Level="1" Attributes="0" Components="NET_Framework_4.0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="ActiproSoftware.Ribbon.Wpf30.dll" Component_="ActiproSoftware.Ribbon.Wpf30.dll" FileName="Actipr~1.dll|ActiproSoftware.Ribbon.Wpf30.dll" Attributes="0" SourcePath="..\..\trunk\DisplayApp\InspireDisplay\bin\Release\ActiproSoftware.Ribbon.Wpf30.dll" SelfReg="false" Sequence="19"/>
+    <ROW File="ActiproSoftware.Shared.Wpf30.dll" Component_="ActiproSoftware.Shared.Wpf30.dll" FileName="Actipr~2.dll|ActiproSoftware.Shared.Wpf30.dll" Attributes="0" SourcePath="..\..\trunk\DisplayApp\InspireDisplay\bin\Release\ActiproSoftware.Shared.Wpf30.dll" SelfReg="false" Sequence="20"/>
+    <ROW File="BubbleModule.dll" Component_="BubbleModule.dll" FileName="Bubble~1.dll|BubbleModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\BubbleModule.dll" SelfReg="false" Sequence="21"/>
+    <ROW File="DateTimeModule.dll" Component_="DateTimeModule.dll" FileName="DateTi~1.dll|DateTimeModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\DateTimeModule.dll" SelfReg="false" Sequence="22"/>
+    <ROW File="EffectLibrary.dll" Component_="EffectLibrary.dll" FileName="Effect~1.dll|EffectLibrary.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\EffectLibrary.dll" SelfReg="false" Sequence="23"/>
+    <ROW File="EventEntry.dll" Component_="EventEntry.dll" FileName="EventE~1.dll|EventEntry.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\EventEntry.dll" SelfReg="false" Sequence="24"/>
+    <ROW File="EventsModule.dll" Component_="EventsModule.dll" FileName="Events~1.dll|EventsModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\EventsModule.dll" SelfReg="false" Sequence="25"/>
+    <ROW File="FilterModule.dll" Component_="FilterModule.dll" FileName="Filter~1.dll|FilterModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\FilterModule.dll" SelfReg="false" Sequence="26"/>
+    <ROW File="FlightInfoModule.Proxy.dll" Component_="FlightInfoModule.Proxy.dll" FileName="Flight~2.dll|FlightInfoModule.Proxy.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\FlightInfoModule.Proxy.dll" SelfReg="false" Sequence="28"/>
+    <ROW File="FlightInfoModule.dll" Component_="FlightInfoModule.dll" FileName="Flight~1.dll|FlightInfoModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\FlightInfoModule.dll" SelfReg="false" Sequence="27"/>
+    <ROW File="Hardcodet.Wpf.TaskbarNotification.dll" Component_="Hardcodet.Wpf.TaskbarNotification.dll" FileName="Hardco~1.dll|Hardcodet.Wpf.TaskbarNotification.dll" Attributes="0" SourcePath="..\..\trunk\InspireWatchDog\Inspire.WatchDog.Interface\bin\Release\Hardcodet.Wpf.TaskbarNotification.dll" SelfReg="false" Sequence="42"/>
+    <ROW File="IdentityMine.Evaluators.JScript.dll" Component_="IdentityMine.Evaluators.JScript.dll" FileName="Identi~1.dll|IdentityMine.Evaluators.JScript.dll" Attributes="0" SourcePath="..\..\trunk\DisplayApp\InspireDisplay\bin\Release\IdentityMine.Evaluators.JScript.dll" SelfReg="false" Sequence="29"/>
+    <ROW File="IdentityMine.Windows.Panels.dll" Component_="IdentityMine.Windows.Panels.dll" FileName="Identi~3.dll|IdentityMine.Windows.Panels.dll" Attributes="0" SourcePath="..\..\trunk\DisplayApp\InspireDisplay\bin\Release\IdentityMine.Windows.Panels.dll" SelfReg="false" Sequence="31"/>
+    <ROW File="IdentityMine.Windows.dll" Component_="IdentityMine.Windows.dll" FileName="Identi~2.dll|IdentityMine.Windows.dll" Attributes="0" SourcePath="..\..\trunk\DisplayApp\InspireDisplay\bin\Release\IdentityMine.Windows.dll" SelfReg="false" Sequence="30"/>
+    <ROW File="ImageModule.dll" Component_="ImageModule.dll" FileName="ImageM~1.dll|ImageModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\ImageModule.dll" SelfReg="false" Sequence="32"/>
+    <ROW File="InfoStrat.VE.Windows7Touch.dll" Component_="InfoStrat.VE.Windows7Touch.dll" FileName="InfoSt~2.dll|InfoStrat.VE.Windows7Touch.dll" Attributes="0" SourcePath="..\..\trunk\DisplayApp\InspireDisplay\bin\Release\InfoStrat.VE.Windows7Touch.dll" SelfReg="false" Sequence="34"/>
+    <ROW File="InfoStrat.VE.dll" Component_="InfoStrat.VE.dll" FileName="InfoSt~1.dll|InfoStrat.VE.dll" Attributes="0" SourcePath="..\..\trunk\DisplayApp\InspireDisplay\bin\Release\InfoStrat.VE.dll" SelfReg="false" Sequence="33"/>
+    <ROW File="Infragistics.ToyBox.dll" Component_="Infragistics.ToyBox.dll" FileName="Infrag~1.dll|Infragistics.ToyBox.dll" Attributes="0" SourcePath="..\..\trunk\DisplayApp\InspireDisplay\bin\Release\Infragistics.ToyBox.dll" SelfReg="false" Sequence="35"/>
+    <ROW File="Inspire.AnimationLibrary.dll" Component_="Inspire.AnimationLibrary.dll" FileName="Inspir~1.dll|Inspire.AnimationLibrary.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\Inspire.AnimationLibrary.dll" SelfReg="false" Sequence="36"/>
+    <ROW File="Inspire.Common.dll" Component_="Inspire.Common.dll" FileName="Inspir~2.dll|Inspire.Common.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\Inspire.Common.dll" SelfReg="false" Sequence="37"/>
+    <ROW File="Inspire.Display.Service.exe" Component_="Inspire.Display.Service.exe" FileName="Inspir~1.exe|Inspire.Display.Service.exe" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\Inspire.Display.Service.exe" SelfReg="false" Sequence="41"/>
+    <ROW File="Inspire.Events.Proxy.dll" Component_="Inspire.Events.Proxy.dll" FileName="Inspir~3.dll|Inspire.Events.Proxy.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\Inspire.Events.Proxy.dll" SelfReg="false" Sequence="39"/>
+    <ROW File="Inspire.Server.Proxy.dll" Component_="Inspire.Server.Proxy.dll" FileName="Inspir~4.dll|Inspire.Server.Proxy.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\Inspire.Server.Proxy.dll" SelfReg="false" Sequence="44"/>
+    <ROW File="Inspire.WatchDog.Interface.exe" Component_="Inspire.WatchDog.Interface.exe" FileName="Inspir~1.exe|Inspire.WatchDog.Interface.exe" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\Inspire.WatchDog.Interface.exe" SelfReg="false" Sequence="43"/>
+    <ROW File="Inspire.dll" Component_="Inspire.dll" FileName="Inspire.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\Inspire.dll" SelfReg="false" Sequence="38"/>
+    <ROW File="InspireDisplay.exe" Component_="InspireDisplay.exe" FileName="Inspir~2.exe|InspireDisplay.exe" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\InspireDisplay.exe" SelfReg="false" Sequence="40"/>
+    <ROW File="Ionic.Zip.dll" Component_="Ionic.Zip.dll" FileName="IonicZ~1.dll|Ionic.Zip.dll" Attributes="0" SourcePath="..\..\trunk\DisplayApp\InspireDisplay\bin\Release\Ionic.Zip.dll" SelfReg="false" Sequence="1"/>
+    <ROW File="MapModule.dll" Component_="MapModule.dll" FileName="MapMod~1.dll|MapModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\MapModule.dll" SelfReg="false" Sequence="2"/>
+    <ROW File="Microsoft.MapPoint.Data.dll" Component_="Microsoft.MapPoint.Data.dll" FileName="Micros~1.dll|Microsoft.MapPoint.Data.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\Lib\Microsoft.MapPoint.Data.dll" SelfReg="false" Sequence="3"/>
+    <ROW File="Microsoft.MapPoint.Geometry.dll" Component_="Microsoft.MapPoint.Geometry.dll" FileName="Micros~4.dll|Microsoft.MapPoint.Geometry.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\Lib\Microsoft.MapPoint.Geometry.dll" SelfReg="false" Sequence="46"/>
+    <ROW File="Microsoft.MapPoint.Rendering3D.Utility.dll" Component_="Microsoft.MapPoint.Rendering3D.Utility.d" FileName="Micros~3.dll|Microsoft.MapPoint.Rendering3D.Utility.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\Lib\Microsoft.MapPoint.Rendering3D.Utility.dll" SelfReg="false" Sequence="5"/>
+    <ROW File="Microsoft.MapPoint.Rendering3D.dll" Component_="Microsoft.MapPoint.Rendering3D.dll" FileName="Micros~2.dll|Microsoft.MapPoint.Rendering3D.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\Lib\Microsoft.MapPoint.Rendering3D.dll" SelfReg="false" Sequence="4"/>
+    <ROW File="PlaylistModule.dll" Component_="PlaylistModule.dll" FileName="Playli~1.dll|PlaylistModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\PlaylistModule.dll" SelfReg="false" Sequence="6"/>
+    <ROW File="RSSModule.dll" Component_="RSSModule.dll" FileName="RSSMod~1.dll|RSSModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\RSSModule.dll" SelfReg="false" Sequence="9"/>
+    <ROW File="ReflectionModule.dll" Component_="ReflectionModule.dll" FileName="Reflec~1.dll|ReflectionModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\ReflectionModule.dll" SelfReg="false" Sequence="7"/>
+    <ROW File="RichTextModule.dll" Component_="RichTextModule.dll" FileName="RichTe~1.dll|RichTextModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\RichTextModule.dll" SelfReg="false" Sequence="8"/>
+    <ROW File="ScrollModule.dll" Component_="ScrollModule.dll" FileName="Scroll~1.dll|ScrollModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\ScrollModule.dll" SelfReg="false" Sequence="10"/>
+    <ROW File="ShapesModule.dll" Component_="ShapesModule.dll" FileName="Shapes~1.dll|ShapesModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\ShapesModule.dll" SelfReg="false" Sequence="11"/>
+    <ROW File="SpinningLogo.dll" Component_="SpinningLogo.dll" FileName="Spinni~1.dll|SpinningLogo.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\SpinningLogo.dll" SelfReg="false" Sequence="12"/>
+    <ROW File="System.Windows.Controls.Input.Toolkit.dll" Component_="System.Windows.Controls.Input.Toolkit.dl" FileName="System~1.dll|System.Windows.Controls.Input.Toolkit.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\Lib\System.Windows.Controls.Input.Toolkit.dll" SelfReg="false" Sequence="47"/>
+    <ROW File="Transitionals.dll" Component_="Transitionals.dll" FileName="Transi~1.dll|Transitionals.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\Transitionals\bin\Release\Transitionals.dll" SelfReg="false" Sequence="13"/>
+    <ROW File="VideoModule.dll" Component_="VideoModule.dll" FileName="VideoM~1.dll|VideoModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\VideoModule.dll" SelfReg="false" Sequence="14"/>
+    <ROW File="WPFToolkit.dll" Component_="WPFToolkit.dll" FileName="WPFToo~1.dll|WPFToolkit.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\Lib\WPFToolkit.dll" SelfReg="false" Sequence="45"/>
+    <ROW File="WeatherModule.Proxy.dll" Component_="WeatherModule.Proxy.dll" FileName="Weathe~2.dll|WeatherModule.Proxy.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\WeatherModule.Proxy.dll" SelfReg="false" Sequence="16"/>
+    <ROW File="WeatherModule.dll" Component_="WeatherModule.dll" FileName="Weathe~1.dll|WeatherModule.dll" Attributes="0" SourcePath="..\Built_Assemblies\Obfuscated\Display\WeatherModule.dll" SelfReg="false" Sequence="15"/>
+    <ROW File="Windows7.Multitouch.WPF.dll" Component_="Windows7.Multitouch.WPF.dll" FileName="Window~2.dll|Windows7.Multitouch.WPF.dll" Attributes="0" SourcePath="..\..\trunk\DisplayApp\InspireDisplay\bin\Release\Windows7.Multitouch.WPF.dll" SelfReg="false" Sequence="18"/>
+    <ROW File="Windows7.Multitouch.dll" Component_="Windows7.Multitouch.dll" FileName="Window~1.dll|Windows7.Multitouch.dll" Attributes="0" SourcePath="..\..\trunk\DisplayApp\InspireDisplay\bin\Release\Windows7.Multitouch.dll" SelfReg="false" Sequence="17"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" Options="2" EulaPathLocId="*" IntroTextPathLocId="*"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="InspireDisplay-SetupFiles" PackageFileName="DisplayInstaller" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\install" ExtUI="true"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
+    <ROW DigitalCertificate="..\..\trunk\InspireCert\Inspire.Key.pfx" TimeStampUrl="http://timestamp.verisign.com/scripts/timstamp.dll" SignerDescription="[|ProductName]" DescriptionUrl="www.inspiredisplays.com" SignOptions="0" SignTool="0" Password="1999B1A4D793F2030C80BE53BA42FF11"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FirewallExceptionComponent">
+    <ROW FirewallException="Inspire_Display_TCP" DisplayName="Inspire Display - TCP" Enabled="1" Scope="*" Condition="1" Port="80" Protocol="TCP"/>
+    <ROW FirewallException="Inspire_Display_UDP" DisplayName="Inspire Display - UDP" Enabled="1" Scope="*" Condition="1" Port="80" Protocol="UDP"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_CommitAccounts" Description="Commit the creation of user accounts on the local computer" DescriptionLocId="ActionText.Description.AI_CommitAccounts"/>
+    <ROW Action="AI_CreateAccount" Description="Creating user account on the local computer" Template="Account: [1]" DescriptionLocId="ActionText.Description.AI_CreateAccount" TemplateLocId="ActionText.Template.AI_CreateAccount"/>
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DownloadPrereq" Description="Downloading prerequisite software" Template="Downloading [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_DownloadPrereq" TemplateLocId="ActionText.Template.AI_DownloadPrereq"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractPrereq" Description="Extracting prerequisite software" Template="Extracting [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_ExtractPrereq" TemplateLocId="ActionText.Template.AI_ExtractPrereq"/>
+    <ROW Action="AI_FwConfig" Description="Executing Windows Firewall configurations" Template="Configuring Windows Firewall rule: &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_FwConfig" TemplateLocId="ActionText.Template.AI_FwConfig"/>
+    <ROW Action="AI_FwInstall" Description="Generating actions to configure Windows Firewall" DescriptionLocId="ActionText.Description.AI_FwInstall"/>
+    <ROW Action="AI_FwRemove" Description="Executing Windows Firewall configurations" Template="Configuring Windows Firewall rule:  &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_FwRemove" TemplateLocId="ActionText.Template.AI_FwRemove"/>
+    <ROW Action="AI_FwRollback" Description="Rolling back Windows Firewall configurations." Template="Rolling back Windows Firewall configurations." DescriptionLocId="ActionText.Description.AI_FwRollback" TemplateLocId="ActionText.Template.AI_FwRollback"/>
+    <ROW Action="AI_FwUninstall" Description="Generating actions to configure Windows Firewall" DescriptionLocId="ActionText.Description.AI_FwUninstall"/>
+    <ROW Action="AI_InstallPostPrerequisite" Description="Installing prerequisite software" Template="Installing [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_InstallPrerequisite" Description="Installing prerequisite software" Template="Installing [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_ProcessAccounts" Description="Generating actions to create user accounts on the local computer" Template="Account: [1], Attributes: [2]" DescriptionLocId="ActionText.Description.AI_ProcessAccounts" TemplateLocId="ActionText.Template.AI_ProcessAccounts"/>
+    <ROW Action="AI_RemoveAccount" Description="Removing user account from the local computer" Template="Account: [1]" DescriptionLocId="ActionText.Description.AI_RemoveAccount" TemplateLocId="ActionText.Template.AI_RemoveAccount"/>
+    <ROW Action="AI_RollbackAccount" Description="Rolling back the creation of user accounts on the local computer" Template="Account: [1]" DescriptionLocId="ActionText.Description.AI_RollbackAccount" TemplateLocId="ActionText.Template.AI_RollbackAccount"/>
+    <ROW Action="AI_UninstallAccounts" Description="Generating actions to create user accounts on the local computer" Template="Account: [1], Attributes: [2]" DescriptionLocId="ActionText.Description.AI_ProcessAccounts" TemplateLocId="ActionText.Template.AI_ProcessAccounts"/>
+    <ROW Action="AI_VerifyPrereq" Description="Verifying prerequisites" Template="[1] was not installed correctly." DescriptionLocId="ActionText.Description.AI_VerifyPrereq" TemplateLocId="ActionText.Template.AI_VerifyPrereq"/>
+    <ROW Action="AI_XmlConfig" Description="Executing XML file configurations" Template="Configuring XML file: &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_XmlConfig" TemplateLocId="ActionText.Template.AI_XmlConfig"/>
+    <ROW Action="AI_XmlInstall" Description="Generating actions to configure XML files" DescriptionLocId="ActionText.Description.AI_XmlInstall"/>
+    <ROW Action="AI_XmlRemove" Description="Executing XML file configurations" Template="Configuring XML file: &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_XmlRemove" TemplateLocId="ActionText.Template.AI_XmlRemove"/>
+    <ROW Action="AI_XmlRollback" Description="Rolling back XML file configurations." Template="Rolling back XML file configurations." DescriptionLocId="ActionText.Description.AI_XmlRollback" TemplateLocId="ActionText.Template.AI_XmlRollback"/>
+    <ROW Action="AI_XmlUninstall" Description="Generating actions to configure XML files" DescriptionLocId="ActionText.Description.AI_XmlUninstall"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_DOTNET35_CLIENTPROFILE_SEARCH" Signature_="AI_DotNet35ClientProfileSearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="AI_DOTNET35_SEARCH" Signature_="AI_DotNet35SearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="AI_DOTNET40_CLIENTPROFILE_SEARCH" Signature_="AI_DotNet40ClientProfileSearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="AI_DOTNET40_SEARCH" Signature_="AI_DotNet40SearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="NetFirewall.dll" SourcePath="&lt;AI_CUSTACTS&gt;NetFirewall.dll"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+    <ROW Name="style24_dialog.jpg" SourcePath="&lt;AI_THEMES&gt;classic\resources\style24_dialog.jpg"/>
+    <ROW Name="topBanner.jpg" SourcePath="..\icons\topBanner.jpg"/>
+    <ROW Name="userAccounts.dll" SourcePath="&lt;AI_CUSTACTS&gt;userAccounts.dll"/>
+    <ROW Name="xmlCfg.dll" SourcePath="&lt;AI_CUSTACTS&gt;xmlCfg.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="ServerNameDialog" Control="Back" Type="PushButton" X="180" Y="243" Width="56" Height="17" Attributes="3" Text="[ButtonText_Back]" Control_Next="BannerBitmap" TextLocId="-" Options="1"/>
+    <ROW Dialog_="ServerNameDialog" Control="BannerBitmap" Type="Bitmap" X="0" Y="0" Width="370" Height="44" Attributes="1048577" Text="[BannerBitmap]" Control_Next="BannerLine"/>
+    <ROW Dialog_="ServerNameDialog" Control="BannerLine" Type="Line" X="0" Y="44" Width="372" Height="0" Attributes="1" Control_Next="BottomLine"/>
+    <ROW Dialog_="ServerNameDialog" Control="BottomLine" Type="Line" X="5" Y="234" Width="368" Height="0" Attributes="1" Control_Next="Description"/>
+    <ROW Dialog_="ServerNameDialog" Control="Cancel" Type="PushButton" X="304" Y="243" Width="56" Height="17" Attributes="3" Text="[ButtonText_Cancel]" Control_Next="Back" TextLocId="-" Options="1"/>
+    <ROW Dialog_="ServerNameDialog" Control="Description" Type="Text" X="25" Y="23" Width="280" Height="15" Attributes="196611" Text="New Dialog Description..." Control_Next="Logo"/>
+    <ROW Dialog_="ServerNameDialog" Control="Logo" Type="Text" X="4" Y="228" Width="70" Height="12" Attributes="1" Text="Advanced Installer" Control_Next="Title"/>
+    <ROW Dialog_="ServerNameDialog" Control="Next" Type="PushButton" X="236" Y="243" Width="56" Height="17" Attributes="3" Text="[ButtonText_Next]" Control_Next="Cancel" TextLocId="-"/>
+    <ROW Dialog_="ServerNameDialog" Control="Title" Type="Text" X="15" Y="6" Width="200" Height="15" Attributes="196611" Text="New Dialog" TextStyle="[DlgTitleFont]" Control_Next="Text_1"/>
+    <ROW Dialog_="ServerNameDialog" Control="Text_1" Type="Text" X="25" Y="120" Width="50" Height="11" Attributes="65539" Property="TEXT_1_PROP" Text="Server name:" Control_Next="Edit_1"/>
+    <ROW Dialog_="ServerNameDialog" Control="Edit_1" Type="Edit" X="25" Y="131" Width="147" Height="18" Attributes="3" Property="SERVERNAME_PROP" Text="{260}" Control_Next="Text_2"/>
+    <ROW Dialog_="ServerNameDialog" Control="Text_2" Type="Text" X="25" Y="69" Width="323" Height="47" Attributes="65539" Property="TEXT_2_PROP" Text="For multiple sign system, please enter server hostname. For single sign system leave server name as &quot;localhost&quot; and then click &quot;Next&quot;. " Control_Next="Next"/>
+    <ATTRIBUTE name="FixedSizeBitmaps" value="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="ServerNameDialog" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="ServerNameDialog" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="4"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="2"/>
+    <ROW Dialog_="PrepareDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="2"/>
+    <ROW Dialog_="ServerNameDialog" Control_="Cancel" Event="SpawnDialog" Argument="CancelDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="ServerNameDialog" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="ServerNameDialog" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="301"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="201"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="Slides_DIR" Component_="Slides"/>
+    <ROW Directory_="Inspire_DIR" Component_="Inspire"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_CleanPrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_CommitAccounts" Type="11777" Source="userAccounts.dll" Target="CommitAccounts" WithoutSeq="true"/>
+    <ROW Action="AI_CreateAccount" Type="11265" Source="userAccounts.dll" Target="CreateAccount" WithoutSeq="true"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DownloadPrereq" Type="1" Source="Prereq.dll" Target="DownloadPrereq"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_ExtractPrereq" Type="65" Source="Prereq.dll" Target="ExtractPrereq"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_FwConfig" Type="11265" Source="NetFirewall.dll" Target="OnFwConfig" WithoutSeq="true"/>
+    <ROW Action="AI_FwInstall" Type="1" Source="NetFirewall.dll" Target="OnFwInstall"/>
+    <ROW Action="AI_FwRemove" Type="11265" Source="NetFirewall.dll" Target="OnFwRemove" WithoutSeq="true"/>
+    <ROW Action="AI_FwRollback" Type="11521" Source="NetFirewall.dll" Target="OnFwRollback" WithoutSeq="true"/>
+    <ROW Action="AI_FwUninstall" Type="1" Source="NetFirewall.dll" Target="OnFwUninstall"/>
+    <ROW Action="AI_InstallPostPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPostPrereq"/>
+    <ROW Action="AI_InstallPrerequisite" Type="65" Source="Prereq.dll" Target="InstallPrereq"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_ProcessAccounts" Type="1" Source="userAccounts.dll" Target="ProcessAccounts"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_RemoveAccount" Type="11265" Source="userAccounts.dll" Target="RemoveAccount" WithoutSeq="true"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_RollbackAccount" Type="11521" Source="userAccounts.dll" Target="RemoveAccount" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_UninstallAccounts" Type="1" Source="userAccounts.dll" Target="UninstallAccounts"/>
+    <ROW Action="AI_VerifyPrereq" Type="1" Source="Prereq.dll" Target="VerifyPrereq"/>
+    <ROW Action="AI_XmlConfig" Type="11265" Source="xmlCfg.dll" Target="OnXmlConfig" WithoutSeq="true"/>
+    <ROW Action="AI_XmlInstall" Type="1" Source="xmlCfg.dll" Target="OnXmlInstall"/>
+    <ROW Action="AI_XmlRemove" Type="11265" Source="xmlCfg.dll" Target="OnXmlRemove" WithoutSeq="true"/>
+    <ROW Action="AI_XmlRollback" Type="11521" Source="xmlCfg.dll" Target="OnXmlRollback" WithoutSeq="true"/>
+    <ROW Action="AI_XmlUninstall" Type="1" Source="xmlCfg.dll" Target="OnXmlUninstall"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder]Inspire\Display"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="DefaultBuild:[ProgramMenuFolder]Inspire"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="ServerNameDialog" HCentering="50" VCentering="50" Width="370" Height="270" Attributes="3" Title="[ProductName] [Setup]" Control_First="Next" Control_Default="Next" Control_Cancel="Cancel"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="InspireI.exe" SourcePath="..\icons\InspireI.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_ProcessAccounts" Condition="VersionNT AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="1551"/>
+    <ROW Action="AI_UninstallAccounts" Condition="VersionNT AND (REMOVE = &quot;ALL&quot;)" Sequence="1649"/>
+    <ROW Action="AI_XmlInstall" Condition="(REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5101"/>
+    <ROW Action="AI_XmlUninstall" Condition="(REMOVE)" Sequence="3101"/>
+    <ROW Action="AI_VerifyPrereq" Sequence="1201"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+    <ROW Action="AI_FwInstall" Condition="(VersionNT &gt;= 501) AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5849"/>
+    <ROW Action="AI_FwUninstall" Condition="(VersionNT &gt;= 501) AND (REMOVE=&quot;ALL&quot;)" Sequence="1699"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_InstallPrerequisite" Sequence="1283"/>
+    <ROW Action="AI_InstallPostPrerequisite" Sequence="1301"/>
+    <ROW Action="AI_ExtractPrereq" Sequence="1282"/>
+    <ROW Action="AI_DownloadPrereq" Sequence="1281"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="( Version9X OR ( NOT VersionNT64 ) OR ( VersionNT64 AND ((VersionNT64 &lt;&gt; 502) OR (((VersionNT64 = 502) AND (ServicePackLevel &gt;= 1)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 502) OR (((VersionNT64 = 502) AND (ServicePackLevel &lt;&gt; 1)) OR (MsiNTProductType &lt;&gt; 1))) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT64Display]" DescriptionLocId="AI.LaunchCondition.NoSpecificNT64" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="( Version9X OR VersionNT64 OR ( VersionNT AND ((VersionNT &lt;&gt; 400) OR ((VersionNT = 400) AND (ServicePackLevel &gt;= 1))) AND ((VersionNT &lt;&gt; 400) OR ((VersionNT = 400) AND (ServicePackLevel &lt;&gt; 1))) AND ((VersionNT &lt;&gt; 400) OR ((VersionNT = 400) AND (ServicePackLevel &lt;&gt; 2))) AND ((VersionNT &lt;&gt; 400) OR ((VersionNT = 400) AND (ServicePackLevel &lt;&gt; 3))) AND ((VersionNT &lt;&gt; 400) OR ((VersionNT = 400) AND (ServicePackLevel &lt;&gt; 4))) AND ((VersionNT &lt;&gt; 400) OR ((VersionNT = 400) AND (ServicePackLevel &lt;&gt; 5))) AND ((VersionNT &lt;&gt; 400) OR ((VersionNT = 400) AND (ServicePackLevel &lt;&gt; 6))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &gt;= 1))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &lt;&gt; 1))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &lt;&gt; 2))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &lt;&gt; 3))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &lt;&gt; 4))) AND (((VersionNT &lt;&gt; 501) OR ((VersionNT = 501) AND (ServicePackLevel &gt;= 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 501) OR ((VersionNT = 501) AND (ServicePackLevel &lt;&gt; 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 501) OR ((VersionNT = 501) AND (ServicePackLevel &lt;&gt; 2))) OR VersionNT64) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNTDisplay]" DescriptionLocId="AI.LaunchCondition.NoSpecificNT" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(AI_DOTNET35_SEARCH = &quot;#1&quot;) OR (AI_DOTNET35_CLIENTPROFILE_SEARCH = &quot;#1&quot;) OR (AI_DOTNET40_CLIENTPROFILE_SEARCH = &quot;#1&quot;) OR (AI_DOTNET40_SEARCH = &quot;#1&quot;)" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_MINDOTNETVERSION]" DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_DotNet35ClientProfileSearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\DotNetClient\v3.5" Name="Install" Type="2"/>
+    <ROW Signature_="AI_DotNet35SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5" Name="Install" Type="2"/>
+    <ROW Signature_="AI_DotNet40ClientProfileSearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client" Name="Install" Type="2"/>
+    <ROW Signature_="AI_DotNet40SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" Name="Install" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="AutoAdminLogon" Root="2" Key="Software" Name="AutoAdminLogon" Value="1" Component_="AutoAdminLogon"/>
+    <ROW Registry="AutoAdminLogon_1" Root="2" Key="Software\Microsoft\Windows NT\CurrentVersion\Winlogon" Name="AutoAdminLogon" Value="1" Component_="AutoAdminLogon_1"/>
+    <ROW Registry="DefaultPassword" Root="2" Key="Software\Microsoft\Windows NT\CurrentVersion\Winlogon" Name="DefaultPassword" Value="!nspire8" Component_="DefaultPassword"/>
+    <ROW Registry="DefaultUserName" Root="2" Key="Software\Microsoft\Windows NT\CurrentVersion\Winlogon" Name="DefaultUserName" Value="InspireAdmin" Component_="DefaultUserName"/>
+    <ROW Registry="NET_Framework_4.0" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="NET_Framework_4.0" Value="1" Component_="NET_Framework_4.0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiServCtrlComponent">
+    <ROW ServiceControl="Inspire.Display.Service.exe" Name="InspireDisplay" Event="161" Wait="1" Component_="Inspire.Display.Service.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiServInstComponent">
+    <ROW ServiceInstall="Inspire.Display.Service.exe" Name="InspireDisplay" DisplayName="Inspire Display Service" ServiceType="16" StartType="2" ErrorControl="1" Component_="Inspire.Display.Service.exe" Description="Inspire Digital Signage Display Service"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="InspireDisplay.exe" Directory_="Inspire_DIR" Name="Inspir~1|Inspire Display" Component_="InspireDisplay.exe" Target="[#InspireDisplay.exe]" Hotkey="0" Icon_="InspireI.exe" IconIndex="0" ShowCmd="1" WkDir="App_DIR"/>
+    <ROW Shortcut="Inspire_Display" Directory_="StartupFolder" Name="Inspir~1|Inspire Display" Component_="InspireDisplay.exe" Target="[#InspireDisplay.exe]" Hotkey="0" Icon_="InspireI.exe" IconIndex="0" ShowCmd="1" WkDir="App_DIR"/>
+    <ROW Shortcut="Inspire_Display_1" Directory_="DesktopFolder" Name="Inspir~1|Inspire Display" Component_="InspireDisplay.exe" Target="[#InspireDisplay.exe]" Hotkey="0" Icon_="InspireI.exe" IconIndex="0" ShowCmd="1" WkDir="App_DIR"/>
+    <ROW Shortcut="Inspire_WatchDog" Directory_="StartupFolder" Name="Inspir~2|Inspire WatchDog" Component_="Inspire.WatchDog.Interface.exe" Target="[#Inspire.WatchDog.Interface.exe]" Hotkey="0" Icon_="InspireI.exe" IconIndex="0" ShowCmd="1" WkDir="Watchdog_DIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="NET_Framework_4.0" DisplayName=".NET Framework 4.0" SetupFileUrl="http://inspiredisplays.com/FTP/dotNetFx40_Full_x86_x64.exe" Location="1" ExactSize="0" MinWin9xVer="47" MinWinNTVer="25" Operator="1" Type="1" Feature="NET_Framework_4.0"/>
+    <ATTRIBUTE name="PrereqsOrder" value="NET_Framework_4.0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="Install" Prereq="NET_Framework_4.0" SearchType="9" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Install" RefContent="M1" Order="1" Property="PreReqSearch_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.UserAccountsComponent">
+    <ROW UserName="InspireAdmin" Password="1999B1A4D793F2030C80BE53BA42FF11" Comment="Inspire Administrator" Attributes="65536" Groups="S-1-5-32-544" ErrorControl="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlAttributeComponent">
+    <ROW XmlElement="44" Name="key" Flags="15" Order="0" Value="ServerName"/>
+    <ROW XmlElement="44" Name="value" Flags="14" Order="1" Value="[SERVERNAME_PROP]"/>
+    <ROW XmlElement="45" Name="key" Flags="14" Order="0" Value="LogErrors"/>
+    <ROW XmlElement="45" Name="value" Flags="14" Order="1" Value="True"/>
+    <ROW XmlElement="46" Name="key" Flags="14" Order="0" Value="SlideFileCode"/>
+    <ROW XmlElement="46" Name="value" Flags="14" Order="1" Value="wookie"/>
+    <ROW XmlElement="47" Name="key" Flags="14" Order="0" Value="SlideFileType"/>
+    <ROW XmlElement="47" Name="value" Flags="14" Order="1" Value=".zip"/>
+    <ROW XmlElement="48" Name="key" Flags="14" Order="0" Value="HttpType"/>
+    <ROW XmlElement="48" Name="value" Flags="14" Order="1" Value="http://"/>
+    <ROW XmlElement="49" Name="key" Flags="14" Order="0" Value="SlideDirectory"/>
+    <ROW XmlElement="49" Name="value" Flags="14" Order="1" Value="Slides\"/>
+    <ROW XmlElement="50" Name="key" Flags="14" Order="0" Value="updateInterval"/>
+    <ROW XmlElement="50" Name="value" Flags="14" Order="1" Value="1"/>
+    <ROW XmlElement="51" Name="key" Flags="14" Order="0" Value="DailyUpdateTime"/>
+    <ROW XmlElement="51" Name="value" Flags="14" Order="1" Value="02:00:00 AM"/>
+    <ROW XmlElement="55" Name="key" Flags="14" Order="0" Value="ScheduleSlideService"/>
+    <ROW XmlElement="55" Name="value" Flags="14" Order="1" Value="/Inspire.Server/Svc/ScheduledSlideService"/>
+    <ROW XmlElement="56" Name="key" Flags="14" Order="0" Value="SlideFileService"/>
+    <ROW XmlElement="56" Name="value" Flags="14" Order="1" Value="/Inspire.Server/Svc/SlideFileService"/>
+    <ROW XmlElement="57" Name="key" Flags="14" Order="0" Value="ScheduleService"/>
+    <ROW XmlElement="57" Name="value" Flags="14" Order="1" Value="/Inspire.Server/Svc/ScheduleService"/>
+    <ROW XmlElement="61" Name="debug" Flags="14" Order="0" Value="true"/>
+    <ROW XmlElement="63" Name="mode" Flags="14" Order="0" Value="Windows"/>
+    <ROW XmlElement="64" Name="mode" Flags="14" Order="0" Value="Off"/>
+    <ROW XmlElement="70" Name="name" Flags="14" Order="0" Value="StreamedHTTP"/>
+    <ROW XmlElement="70" Name="closeTimeout" Flags="14" Order="1" Value="00:10:00"/>
+    <ROW XmlElement="70" Name="openTimeout" Flags="14" Order="2" Value="00:10:00"/>
+    <ROW XmlElement="70" Name="receiveTimeout" Flags="14" Order="3" Value="00:10:00"/>
+    <ROW XmlElement="70" Name="sendTimeout" Flags="14" Order="4" Value="00:10:00"/>
+    <ROW XmlElement="70" Name="allowCookies" Flags="14" Order="5" Value="false"/>
+    <ROW XmlElement="70" Name="bypassProxyOnLocal" Flags="14" Order="6" Value="false"/>
+    <ROW XmlElement="70" Name="hostNameComparisonMode" Flags="14" Order="7" Value="StrongWildcard"/>
+    <ROW XmlElement="70" Name="maxBufferSize" Flags="14" Order="8" Value="65536"/>
+    <ROW XmlElement="70" Name="maxBufferPoolSize" Flags="14" Order="9" Value="524288"/>
+    <ROW XmlElement="70" Name="maxReceivedMessageSize" Flags="14" Order="10" Value="2147483647"/>
+    <ROW XmlElement="70" Name="messageEncoding" Flags="14" Order="11" Value="Text"/>
+    <ROW XmlElement="70" Name="textEncoding" Flags="14" Order="12" Value="utf-8"/>
+    <ROW XmlElement="70" Name="transferMode" Flags="14" Order="13" Value="Streamed"/>
+    <ROW XmlElement="70" Name="useDefaultWebProxy" Flags="14" Order="14" Value="true"/>
+    <ROW XmlElement="71" Name="maxDepth" Flags="14" Order="0" Value="32"/>
+    <ROW XmlElement="71" Name="maxStringContentLength" Flags="14" Order="1" Value="8192"/>
+    <ROW XmlElement="71" Name="maxArrayLength" Flags="14" Order="2" Value="2147483647"/>
+    <ROW XmlElement="71" Name="maxBytesPerRead" Flags="14" Order="3" Value="4096"/>
+    <ROW XmlElement="71" Name="maxNameTableCharCount" Flags="14" Order="4" Value="16384"/>
+    <ROW XmlElement="72" Name="mode" Flags="14" Order="0" Value="None"/>
+    <ROW XmlElement="73" Name="clientCredentialType" Flags="14" Order="0" Value="None"/>
+    <ROW XmlElement="73" Name="proxyCredentialType" Flags="14" Order="1" Value="None"/>
+    <ROW XmlElement="73" Name="realm" Flags="14" Order="2"/>
+    <ROW XmlElement="74" Name="clientCredentialType" Flags="14" Order="0" Value="UserName"/>
+    <ROW XmlElement="74" Name="algorithmSuite" Flags="14" Order="1" Value="Default"/>
+    <ROW XmlElement="75" Name="name" Flags="14" Order="0" Value="ScheduledSlideEndpoint"/>
+    <ROW XmlElement="75" Name="closeTimeout" Flags="14" Order="1" Value="00:01:00"/>
+    <ROW XmlElement="75" Name="openTimeout" Flags="14" Order="2" Value="00:01:00"/>
+    <ROW XmlElement="75" Name="receiveTimeout" Flags="14" Order="3" Value="00:10:00"/>
+    <ROW XmlElement="75" Name="sendTimeout" Flags="14" Order="4" Value="00:01:00"/>
+    <ROW XmlElement="75" Name="allowCookies" Flags="14" Order="5" Value="false"/>
+    <ROW XmlElement="75" Name="bypassProxyOnLocal" Flags="14" Order="6" Value="false"/>
+    <ROW XmlElement="75" Name="hostNameComparisonMode" Flags="14" Order="7" Value="StrongWildcard"/>
+    <ROW XmlElement="75" Name="maxBufferSize" Flags="14" Order="8" Value="65536"/>
+    <ROW XmlElement="75" Name="maxBufferPoolSize" Flags="14" Order="9" Value="524288"/>
+    <ROW XmlElement="75" Name="maxReceivedMessageSize" Flags="14" Order="10" Value="65536"/>
+    <ROW XmlElement="75" Name="messageEncoding" Flags="14" Order="11" Value="Text"/>
+    <ROW XmlElement="75" Name="textEncoding" Flags="14" Order="12" Value="utf-8"/>
+    <ROW XmlElement="75" Name="transferMode" Flags="14" Order="13" Value="Buffered"/>
+    <ROW XmlElement="75" Name="useDefaultWebProxy" Flags="14" Order="14" Value="true"/>
+    <ROW XmlElement="76" Name="maxDepth" Flags="14" Order="0" Value="32"/>
+    <ROW XmlElement="76" Name="maxStringContentLength" Flags="14" Order="1" Value="8192"/>
+    <ROW XmlElement="76" Name="maxArrayLength" Flags="14" Order="2" Value="16384"/>
+    <ROW XmlElement="76" Name="maxBytesPerRead" Flags="14" Order="3" Value="4096"/>
+    <ROW XmlElement="76" Name="maxNameTableCharCount" Flags="14" Order="4" Value="16384"/>
+    <ROW XmlElement="77" Name="mode" Flags="14" Order="0" Value="None"/>
+    <ROW XmlElement="78" Name="clientCredentialType" Flags="14" Order="0" Value="None"/>
+    <ROW XmlElement="78" Name="proxyCredentialType" Flags="14" Order="1" Value="None"/>
+    <ROW XmlElement="78" Name="realm" Flags="14" Order="2"/>
+    <ROW XmlElement="79" Name="clientCredentialType" Flags="14" Order="0" Value="UserName"/>
+    <ROW XmlElement="79" Name="algorithmSuite" Flags="14" Order="1" Value="Default"/>
+    <ROW XmlElement="83" Name="name" Flags="14" Order="0" Value="DisplayAdminService_Behavior"/>
+    <ROW XmlElement="84" Name="includeExceptionDetailInFaults" Flags="14" Order="0" Value="true"/>
+    <ROW XmlElement="85" Name="httpGetEnabled" Flags="14" Order="0" Value="true"/>
+    <ROW XmlElement="87" Name="behaviorConfiguration" Flags="14" Order="0" Value="DisplayAdminService_Behavior"/>
+    <ROW XmlElement="87" Name="name" Flags="14" Order="1" Value="Inspire.Display.WCF.DisplayService"/>
+    <ROW XmlElement="90" Name="baseAddress" Flags="14" Order="0" Value="http://localhost/inspire/displayservice"/>
+    <ROW XmlElement="91" Name="address" Flags="14" Order="0"/>
+    <ROW XmlElement="91" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="91" Name="bindingConfiguration" Flags="14" Order="2" Value="StreamedHTTP"/>
+    <ROW XmlElement="91" Name="name" Flags="14" Order="3" Value="DisplayEndpoint"/>
+    <ROW XmlElement="91" Name="bindingNamespace" Flags="14" Order="4" Value="http://schemas.inspiredisplays.com/ServiceContract/"/>
+    <ROW XmlElement="91" Name="contract" Flags="14" Order="5" Value="Inspire.Display.WCF.IDisplayServiceContract"/>
+    <ROW XmlElement="92" Name="address" Flags="14" Order="0" Value="mex"/>
+    <ROW XmlElement="92" Name="binding" Flags="14" Order="1" Value="mexHttpBinding"/>
+    <ROW XmlElement="92" Name="contract" Flags="14" Order="2" Value="IMetadataExchange"/>
+    <ROW XmlElement="94" Name="binding" Flags="14" Order="0" Value="basicHttpBinding"/>
+    <ROW XmlElement="94" Name="bindingConfiguration" Flags="14" Order="1" Value="StreamedHTTP"/>
+    <ROW XmlElement="94" Name="contract" Flags="14" Order="2" Value="SlideFileServiceReference.SlideFileManagerServiceContract"/>
+    <ROW XmlElement="94" Name="name" Flags="14" Order="3" Value="SlideFileEndpoint"/>
+    <ROW XmlElement="95" Name="binding" Flags="14" Order="0" Value="basicHttpBinding"/>
+    <ROW XmlElement="95" Name="bindingConfiguration" Flags="14" Order="1" Value="StreamedHTTP"/>
+    <ROW XmlElement="95" Name="contract" Flags="14" Order="2" Value="ScheduleServiceReference.ServiceManagerServiceContract"/>
+    <ROW XmlElement="95" Name="name" Flags="14" Order="3" Value="ScheduleServiceEndpoint"/>
+    <ROW XmlElement="96" Name="binding" Flags="14" Order="0" Value="basicHttpBinding"/>
+    <ROW XmlElement="96" Name="bindingConfiguration" Flags="14" Order="1" Value="StreamedHTTP"/>
+    <ROW XmlElement="96" Name="contract" Flags="14" Order="2" Value="ScheduledSlideServiceReference.ScheduledSlideManagerServiceContract"/>
+    <ROW XmlElement="96" Name="name" Flags="14" Order="3" Value="ScheduledSlideEndpoint"/>
+    <ROW XmlElement="98" Name="version" Flags="14" Order="0" Value="v4.0"/>
+    <ROW XmlElement="98" Name="sku" Flags="14" Order="1" Value=".NETFramework,Version=v4.0"/>
+    <ROW XmlElement="101" Name="name" Flags="14" Order="0" Value="userSettings"/>
+    <ROW XmlElement="101" Name="type" Flags="14" Order="1" Value="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+    <ROW XmlElement="102" Name="name" Flags="14" Order="0" Value="InspireDisplay.Properties.Settings"/>
+    <ROW XmlElement="102" Name="type" Flags="14" Order="1" Value="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+    <ROW XmlElement="102" Name="allowExeDefinition" Flags="14" Order="2" Value="MachineToLocalUser"/>
+    <ROW XmlElement="102" Name="requirePermission" Flags="14" Order="3" Value="false"/>
+    <ROW XmlElement="105" Name="name" Flags="14" Order="0" Value="DefaultSlideGuid"/>
+    <ROW XmlElement="105" Name="serializeAs" Flags="14" Order="1" Value="String"/>
+    <ROW XmlElement="108" Name="key" Flags="14" Order="0" Value="HTTP"/>
+    <ROW XmlElement="108" Name="value" Flags="14" Order="1" Value="http://"/>
+    <ROW XmlElement="109" Name="key" Flags="15" Order="0" Value="ServerHostName"/>
+    <ROW XmlElement="109" Name="value" Flags="14" Order="1" Value="[SERVERNAME_PROP]"/>
+    <ROW XmlElement="110" Name="key" Flags="14" Order="0" Value="EventRefreshInterval"/>
+    <ROW XmlElement="110" Name="value" Flags="14" Order="1" Value="1"/>
+    <ROW XmlElement="111" Name="key" Flags="14" Order="0" Value="LookAheadTime"/>
+    <ROW XmlElement="111" Name="value" Flags="14" Order="1" Value="01:00:00"/>
+    <ROW XmlElement="112" Name="key" Flags="14" Order="0" Value="LookBehindTime"/>
+    <ROW XmlElement="112" Name="value" Flags="14" Order="1" Value="00:00:00"/>
+    <ROW XmlElement="113" Name="key" Flags="14" Order="0" Value="EventManagerConfig"/>
+    <ROW XmlElement="113" Name="value" Flags="14" Order="1" Value="/Inspire.Events/Svc/EventService"/>
+    <ROW XmlElement="114" Name="key" Flags="14" Order="0" Value="RoomManagerConfig"/>
+    <ROW XmlElement="114" Name="value" Flags="14" Order="1" Value="/Inspire.Events/Svc/RoomService"/>
+    <ROW XmlElement="115" Name="key" Flags="14" Order="0" Value="DirectionManagerConfig"/>
+    <ROW XmlElement="115" Name="value" Flags="14" Order="1" Value="/Inspire.Events/Svc/DirectionService"/>
+    <ROW XmlElement="116" Name="key" Flags="14" Order="0" Value="LogErrors"/>
+    <ROW XmlElement="116" Name="value" Flags="14" Order="1" Value="True"/>
+    <ROW XmlElement="117" Name="key" Flags="14" Order="0" Value="WeatherServiceConfig"/>
+    <ROW XmlElement="117" Name="value" Flags="14" Order="1" Value="http://inspire.cloudapp.net/weatherservice.svc"/>
+    <ROW XmlElement="118" Name="key" Flags="14" Order="0" Value="FlightInfoConfig"/>
+    <ROW XmlElement="118" Name="value" Flags="14" Order="1" Value="http://inspire.cloudapp.net/FlightInfoService.svc"/>
+    <ROW XmlElement="122" Name="binding" Flags="14" Order="0" Value="basicHttpBinding"/>
+    <ROW XmlElement="122" Name="bindingConfiguration" Flags="14" Order="1" Value="BufferedHTTP"/>
+    <ROW XmlElement="122" Name="contract" Flags="14" Order="2" Value="DirectionReference.DirectionServiceContract"/>
+    <ROW XmlElement="122" Name="name" Flags="14" Order="3" Value="DirectionEndpoint"/>
+    <ROW XmlElement="123" Name="binding" Flags="14" Order="0" Value="basicHttpBinding"/>
+    <ROW XmlElement="123" Name="bindingConfiguration" Flags="14" Order="1" Value="BufferedHTTP"/>
+    <ROW XmlElement="123" Name="contract" Flags="14" Order="2" Value="RoomsService.RoomsServiceContract"/>
+    <ROW XmlElement="123" Name="name" Flags="14" Order="3" Value="RoomsEndpoint"/>
+    <ROW XmlElement="124" Name="binding" Flags="14" Order="0" Value="basicHttpBinding"/>
+    <ROW XmlElement="124" Name="bindingConfiguration" Flags="14" Order="1" Value="BufferedHTTP"/>
+    <ROW XmlElement="124" Name="contract" Flags="14" Order="2" Value="EventReference.EventServiceContract"/>
+    <ROW XmlElement="124" Name="name" Flags="14" Order="3" Value="FeedsEndpoint"/>
+    <ROW XmlElement="125" Name="address" Flags="14" Order="0" Value="http://inspire.cloudapp.net/weatherservice.svc"/>
+    <ROW XmlElement="125" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="125" Name="bindingConfiguration" Flags="14" Order="2" Value="BufferedHTTP"/>
+    <ROW XmlElement="125" Name="contract" Flags="14" Order="3" Value="WeatherService.IWeatherService"/>
+    <ROW XmlElement="125" Name="name" Flags="14" Order="4" Value="WeatherServiceEndpoint"/>
+    <ROW XmlElement="126" Name="address" Flags="14" Order="0" Value="http://inspire.cloudapp.net/FlightInfoService.svc"/>
+    <ROW XmlElement="126" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="126" Name="bindingConfiguration" Flags="14" Order="2" Value="BufferedHTTP"/>
+    <ROW XmlElement="126" Name="contract" Flags="14" Order="3" Value="FlightService.IFlightInfoService"/>
+    <ROW XmlElement="126" Name="name" Flags="14" Order="4" Value="FlightInfoServiceEndpoint"/>
+    <ROW XmlElement="129" Name="name" Flags="14" Order="0" Value="StreamedHTTP"/>
+    <ROW XmlElement="129" Name="transferMode" Flags="14" Order="1" Value="Streamed"/>
+    <ROW XmlElement="129" Name="maxReceivedMessageSize" Flags="14" Order="2" Value="1073741824"/>
+    <ROW XmlElement="129" Name="receiveTimeout" Flags="14" Order="3" Value="00:01:00"/>
+    <ROW XmlElement="129" Name="openTimeout" Flags="14" Order="4" Value="00:01:00"/>
+    <ROW XmlElement="129" Name="closeTimeout" Flags="14" Order="5" Value="00:01:00"/>
+    <ROW XmlElement="129" Name="sendTimeout" Flags="14" Order="6" Value="00:10:00"/>
+    <ROW XmlElement="129" Name="maxBufferSize" Flags="14" Order="7" Value="1073741824"/>
+    <ROW XmlElement="132" Name="maxDepth" Flags="14" Order="0" Value="32"/>
+    <ROW XmlElement="132" Name="maxStringContentLength" Flags="14" Order="1" Value="8192"/>
+    <ROW XmlElement="132" Name="maxArrayLength" Flags="14" Order="2" Value="1073741824"/>
+    <ROW XmlElement="132" Name="maxBytesPerRead" Flags="14" Order="3" Value="4096"/>
+    <ROW XmlElement="132" Name="maxNameTableCharCount" Flags="14" Order="4" Value="16384"/>
+    <ROW XmlElement="133" Name="name" Flags="14" Order="0" Value="BufferedHTTP"/>
+    <ROW XmlElement="133" Name="transferMode" Flags="14" Order="1" Value="Buffered"/>
+    <ROW XmlElement="133" Name="maxReceivedMessageSize" Flags="14" Order="2" Value="1073741824"/>
+    <ROW XmlElement="133" Name="closeTimeout" Flags="14" Order="3" Value="00:01:00"/>
+    <ROW XmlElement="133" Name="openTimeout" Flags="14" Order="4" Value="00:01:00"/>
+    <ROW XmlElement="133" Name="receiveTimeout" Flags="14" Order="5" Value="00:10:00"/>
+    <ROW XmlElement="133" Name="sendTimeout" Flags="14" Order="6" Value="00:01:00"/>
+    <ROW XmlElement="134" Name="maxDepth" Flags="14" Order="0" Value="32"/>
+    <ROW XmlElement="134" Name="maxStringContentLength" Flags="14" Order="1" Value="8192"/>
+    <ROW XmlElement="134" Name="maxArrayLength" Flags="14" Order="2" Value="1073741824"/>
+    <ROW XmlElement="134" Name="maxBytesPerRead" Flags="14" Order="3" Value="4096"/>
+    <ROW XmlElement="134" Name="maxNameTableCharCount" Flags="14" Order="4" Value="16384"/>
+    <ROW XmlElement="136" Name="useLegacyV2RuntimeActivationPolicy" Flags="14" Order="0" Value="true"/>
+    <ROW XmlElement="137" Name="version" Flags="14" Order="0" Value="v4.0"/>
+    <ROW XmlElement="140" Name="key" Flags="15" Order="0" Value="AppPath"/>
+    <ROW XmlElement="140" Name="value" Flags="14" Order="1" Value="[APPDIR]App\InspireDisplay.exe"/>
+    <ROW XmlElement="141" Name="key" Flags="14" Order="0" Value="AppName"/>
+    <ROW XmlElement="141" Name="value" Flags="14" Order="1" Value="InspireDisplay"/>
+    <ROW XmlElement="143" Name="key" Flags="14" Order="0" Value="KillErrorScreen"/>
+    <ROW XmlElement="143" Name="value" Flags="14" Order="1" Value="True"/>
+    <ROW XmlElement="144" Name="key" Flags="14" Order="0" Value="ErrorScreenName"/>
+    <ROW XmlElement="144" Name="value" Flags="14" Order="1" Value="WerFault"/>
+    <ROW XmlElement="145" Name="key" Flags="14" Order="0" Value="LogEvents"/>
+    <ROW XmlElement="145" Name="value" Flags="14" Order="1" Value="True"/>
+    <ROW XmlElement="146" Name="key" Flags="14" Order="0" Value="DailyRebootTime"/>
+    <ROW XmlElement="146" Name="value" Flags="14" Order="1" Value="12:30:00 AM"/>
+    <ROW XmlElement="147" Name="key" Flags="14" Order="0" Value="DailyReboot"/>
+    <ROW XmlElement="147" Name="value" Flags="14" Order="1" Value="True"/>
+    <ROW XmlElement="149" Name="key" Flags="14" Order="0" Value="BiHourlyReboot"/>
+    <ROW XmlElement="149" Name="value" Flags="14" Order="1" Value="True"/>
+    <ROW XmlElement="151" Name="key" Flags="14" Order="0" Value="SleepDuringReboot"/>
+    <ROW XmlElement="151" Name="value" Flags="14" Order="1" Value="True"/>
+    <ROW XmlElement="153" Name="key" Flags="14" Order="0" Value="MapSearchServiceConfig"/>
+    <ROW XmlElement="153" Name="value" Flags="14" Order="1" Value="http://dev.virtualearth.net/webservices/v1/searchservice/searchservice.svc"/>
+    <ROW XmlElement="154" Name="key" Flags="14" Order="0" Value="MapRouteServiceConfig"/>
+    <ROW XmlElement="154" Name="value" Flags="14" Order="1" Value="http://dev.virtualearth.net/webservices/v1/routeservice/routeservice.svc"/>
+    <ROW XmlElement="155" Name="address" Flags="14" Order="0" Value="http://dev.virtualearth.net/webservices/v1/searchservice/searchservice.svc"/>
+    <ROW XmlElement="155" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="155" Name="bindingConfiguration" Flags="14" Order="2" Value="BufferedHTTP"/>
+    <ROW XmlElement="155" Name="contract" Flags="14" Order="3" Value="MapsSearchService.ISearchService"/>
+    <ROW XmlElement="155" Name="name" Flags="14" Order="4" Value="MapSearchServiceEndpoint"/>
+    <ROW XmlElement="156" Name="address" Flags="14" Order="0" Value="http://dev.virtualearth.net/webservices/v1/routeservice/routeservice.svc"/>
+    <ROW XmlElement="156" Name="binding" Flags="14" Order="1" Value="basicHttpBinding"/>
+    <ROW XmlElement="156" Name="bindingConfiguration" Flags="14" Order="2" Value="BufferedHTTP"/>
+    <ROW XmlElement="156" Name="contract" Flags="14" Order="3" Value="RouteService.IRouteService"/>
+    <ROW XmlElement="156" Name="name" Flags="14" Order="4" Value="MapRouteServiceEndpoint"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlElementComponent">
+    <ROW XmlElement="42" Name="configuration" Order="0" Flags="30"/>
+    <ROW XmlElement="43" ParentElement="42" Name="appSettings" Order="0" Flags="30"/>
+    <ROW XmlElement="44" ParentElement="43" Name="add" Order="0" Flags="14"/>
+    <ROW XmlElement="45" ParentElement="43" Name="add" Order="1" Flags="30"/>
+    <ROW XmlElement="46" ParentElement="43" Name="add" Order="2" Flags="30"/>
+    <ROW XmlElement="47" ParentElement="43" Name="add" Order="3" Flags="30"/>
+    <ROW XmlElement="48" ParentElement="43" Name="add" Order="4" Flags="30"/>
+    <ROW XmlElement="49" ParentElement="43" Name="add" Order="5" Flags="30"/>
+    <ROW XmlElement="50" ParentElement="43" Name="add" Order="6" Flags="30"/>
+    <ROW XmlElement="51" ParentElement="43" Name="add" Order="7" Flags="30"/>
+    <ROW XmlElement="52" ParentElement="43" Name="Comment" Order="8" Flags="1" Text="HH:MM:SS AM"/>
+    <ROW XmlElement="53" ParentElement="43" Name="Comment" Order="9" Flags="1" Text="900000 milliseconds = 15 minutes"/>
+    <ROW XmlElement="54" ParentElement="43" Name="Comment" Order="10" Flags="1" Text="60000 milliseconds = 1 minute"/>
+    <ROW XmlElement="55" ParentElement="43" Name="add" Order="11" Flags="30"/>
+    <ROW XmlElement="56" ParentElement="43" Name="add" Order="12" Flags="30"/>
+    <ROW XmlElement="57" ParentElement="43" Name="add" Order="13" Flags="30"/>
+    <ROW XmlElement="58" ParentElement="42" Name="connectionStrings" Order="1" Flags="30"/>
+    <ROW XmlElement="59" ParentElement="42" Name="system.web" Order="2" Flags="30"/>
+    <ROW XmlElement="60" ParentElement="59" Name="Comment" Order="0" Flags="1" Text="&#10;            Set compilation debug=&quot;true&quot; to insert debugging &#10;            symbols into the compiled page. Because this &#10;            affects performance, set this value to true only &#10;            during development.&#10;        "/>
+    <ROW XmlElement="61" ParentElement="59" Name="compilation" Order="1" Flags="30"/>
+    <ROW XmlElement="62" ParentElement="59" Name="Comment" Order="2" Flags="1" Text="&#10;            The &lt;authentication&gt; section enables configuration &#10;            of the security authentication mode used by &#10;            ASP.NET to identify an incoming user. &#10;        "/>
+    <ROW XmlElement="63" ParentElement="59" Name="authentication" Order="3" Flags="30"/>
+    <ROW XmlElement="64" ParentElement="59" Name="customErrors" Order="4" Flags="30"/>
+    <ROW XmlElement="65" ParentElement="59" Name="Comment" Order="5" Flags="1" Text="&#10;            The &lt;customErrors&gt; section enables configuration &#10;            of what to do if/when an unhandled error occurs &#10;            during the execution of a request. Specifically, &#10;            it enables developers to configure html error pages &#10;            to be displayed in place of a error stack trace.&#10;&#10;        &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;GenericErrorPage.htm&quot;&gt;&#10;            &lt;error statusCode=&quot;403&quot; redirect=&quot;NoAccess.htm&quot; /&gt;&#10;            &lt;error statusCode=&quot;404&quot; redirect=&quot;FileNotFound.htm&quot; /&gt;&#10;        &lt;/customErrors&gt;&#10;        "/>
+    <ROW XmlElement="66" ParentElement="42" Name="system.serviceModel" Order="3" Flags="30"/>
+    <ROW XmlElement="67" ParentElement="66" Name="Comment" Order="0" Flags="1" Text="Call to server 2097151"/>
+    <ROW XmlElement="68" ParentElement="66" Name="bindings" Order="1" Flags="30"/>
+    <ROW XmlElement="69" ParentElement="68" Name="basicHttpBinding" Order="0" Flags="30"/>
+    <ROW XmlElement="70" ParentElement="69" Name="binding" Order="0" Flags="30"/>
+    <ROW XmlElement="71" ParentElement="70" Name="readerQuotas" Order="0" Flags="30"/>
+    <ROW XmlElement="72" ParentElement="70" Name="security" Order="1" Flags="30"/>
+    <ROW XmlElement="73" ParentElement="72" Name="transport" Order="0" Flags="30"/>
+    <ROW XmlElement="74" ParentElement="72" Name="message" Order="1" Flags="30"/>
+    <ROW XmlElement="75" ParentElement="69" Name="binding" Order="1" Flags="30"/>
+    <ROW XmlElement="76" ParentElement="75" Name="readerQuotas" Order="0" Flags="30"/>
+    <ROW XmlElement="77" ParentElement="75" Name="security" Order="1" Flags="30"/>
+    <ROW XmlElement="78" ParentElement="77" Name="transport" Order="0" Flags="30"/>
+    <ROW XmlElement="79" ParentElement="77" Name="message" Order="1" Flags="30"/>
+    <ROW XmlElement="80" ParentElement="66" Name="Comment" Order="2" Flags="1" Text="Display Service Host"/>
+    <ROW XmlElement="81" ParentElement="66" Name="behaviors" Order="3" Flags="30"/>
+    <ROW XmlElement="82" ParentElement="81" Name="serviceBehaviors" Order="0" Flags="30"/>
+    <ROW XmlElement="83" ParentElement="82" Name="behavior" Order="0" Flags="30"/>
+    <ROW XmlElement="84" ParentElement="83" Name="serviceDebug" Order="0" Flags="30"/>
+    <ROW XmlElement="85" ParentElement="83" Name="serviceMetadata" Order="1" Flags="30"/>
+    <ROW XmlElement="86" ParentElement="66" Name="services" Order="4" Flags="30"/>
+    <ROW XmlElement="87" ParentElement="86" Name="service" Order="0" Flags="30"/>
+    <ROW XmlElement="88" ParentElement="87" Name="host" Order="0" Flags="30"/>
+    <ROW XmlElement="89" ParentElement="88" Name="baseAddresses" Order="0" Flags="30"/>
+    <ROW XmlElement="90" ParentElement="89" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="91" ParentElement="87" Name="endpoint" Order="1" Flags="30"/>
+    <ROW XmlElement="92" ParentElement="87" Name="endpoint" Order="2" Flags="30"/>
+    <ROW XmlElement="93" ParentElement="66" Name="client" Order="5" Flags="30"/>
+    <ROW XmlElement="94" ParentElement="93" Name="endpoint" Order="0" Flags="30"/>
+    <ROW XmlElement="95" ParentElement="93" Name="endpoint" Order="1" Flags="30"/>
+    <ROW XmlElement="96" ParentElement="93" Name="endpoint" Order="2" Flags="30"/>
+    <ROW XmlElement="97" ParentElement="42" Name="startup" Order="4" Flags="30"/>
+    <ROW XmlElement="98" ParentElement="97" Name="supportedRuntime" Order="0" Flags="30"/>
+    <ROW XmlElement="99" Name="configuration" Order="0" Flags="30"/>
+    <ROW XmlElement="100" ParentElement="99" Name="configSections" Order="0" Flags="30"/>
+    <ROW XmlElement="101" ParentElement="100" Name="sectionGroup" Order="0" Flags="30"/>
+    <ROW XmlElement="102" ParentElement="101" Name="section" Order="0" Flags="30"/>
+    <ROW XmlElement="103" ParentElement="99" Name="userSettings" Order="1" Flags="30"/>
+    <ROW XmlElement="104" ParentElement="103" Name="InspireDisplay.Properties.Settings" Order="0" Flags="30"/>
+    <ROW XmlElement="105" ParentElement="104" Name="setting" Order="0" Flags="30"/>
+    <ROW XmlElement="106" ParentElement="105" Name="value" Order="0" Flags="30" Text="DefaultSlide"/>
+    <ROW XmlElement="107" ParentElement="99" Name="appSettings" Order="2" Flags="30"/>
+    <ROW XmlElement="108" ParentElement="107" Name="add" Order="0" Flags="30"/>
+    <ROW XmlElement="109" ParentElement="107" Name="add" Order="1" Flags="14"/>
+    <ROW XmlElement="110" ParentElement="107" Name="add" Order="2" Flags="30"/>
+    <ROW XmlElement="111" ParentElement="107" Name="add" Order="3" Flags="30"/>
+    <ROW XmlElement="112" ParentElement="107" Name="add" Order="4" Flags="30"/>
+    <ROW XmlElement="113" ParentElement="107" Name="add" Order="5" Flags="30"/>
+    <ROW XmlElement="114" ParentElement="107" Name="add" Order="6" Flags="30"/>
+    <ROW XmlElement="115" ParentElement="107" Name="add" Order="7" Flags="30"/>
+    <ROW XmlElement="116" ParentElement="107" Name="add" Order="8" Flags="30"/>
+    <ROW XmlElement="117" ParentElement="107" Name="add" Order="9" Flags="30"/>
+    <ROW XmlElement="118" ParentElement="107" Name="add" Order="10" Flags="30"/>
+    <ROW XmlElement="119" ParentElement="99" Name="system.serviceModel" Order="3" Flags="30"/>
+    <ROW XmlElement="120" ParentElement="119" Name="Comment" Order="0" Flags="1" Text="Begin outbound calls to events server  ****************************************************************************************"/>
+    <ROW XmlElement="121" ParentElement="119" Name="client" Order="1" Flags="30"/>
+    <ROW XmlElement="122" ParentElement="121" Name="endpoint" Order="0" Flags="30"/>
+    <ROW XmlElement="123" ParentElement="121" Name="endpoint" Order="1" Flags="30"/>
+    <ROW XmlElement="124" ParentElement="121" Name="endpoint" Order="2" Flags="30"/>
+    <ROW XmlElement="125" ParentElement="121" Name="endpoint" Order="3" Flags="30"/>
+    <ROW XmlElement="126" ParentElement="121" Name="endpoint" Order="4" Flags="30"/>
+    <ROW XmlElement="127" ParentElement="119" Name="bindings" Order="2" Flags="30"/>
+    <ROW XmlElement="128" ParentElement="127" Name="basicHttpBinding" Order="0" Flags="30"/>
+    <ROW XmlElement="129" ParentElement="128" Name="binding" Order="0" Flags="30"/>
+    <ROW XmlElement="130" ParentElement="129" Name="Comment" Order="0" Flags="1" Text="maxRequestLength=&quot;65536&quot;"/>
+    <ROW XmlElement="131" ParentElement="129" Name="Comment" Order="1" Flags="1" Text="messageEncoding=&quot;Mtom&quot;"/>
+    <ROW XmlElement="132" ParentElement="129" Name="readerQuotas" Order="2" Flags="30"/>
+    <ROW XmlElement="133" ParentElement="128" Name="binding" Order="1" Flags="30"/>
+    <ROW XmlElement="134" ParentElement="133" Name="readerQuotas" Order="0" Flags="30"/>
+    <ROW XmlElement="135" ParentElement="119" Name="Comment" Order="3" Flags="1" Text="End outbound calls to events server  ****************************************************************************************"/>
+    <ROW XmlElement="136" ParentElement="99" Name="startup" Order="4" Flags="30"/>
+    <ROW XmlElement="137" ParentElement="136" Name="supportedRuntime" Order="0" Flags="30"/>
+    <ROW XmlElement="138" Name="configuration" Order="0" Flags="30"/>
+    <ROW XmlElement="139" ParentElement="138" Name="appSettings" Order="0" Flags="30"/>
+    <ROW XmlElement="140" ParentElement="139" Name="add" Order="0" Flags="14"/>
+    <ROW XmlElement="141" ParentElement="139" Name="add" Order="1" Flags="30"/>
+    <ROW XmlElement="142" ParentElement="139" Name="Comment" Order="2" Flags="1" Text="Kill Screen Error Window"/>
+    <ROW XmlElement="143" ParentElement="139" Name="add" Order="3" Flags="30"/>
+    <ROW XmlElement="144" ParentElement="139" Name="add" Order="4" Flags="30"/>
+    <ROW XmlElement="145" ParentElement="139" Name="add" Order="5" Flags="30"/>
+    <ROW XmlElement="146" ParentElement="139" Name="add" Order="6" Flags="30"/>
+    <ROW XmlElement="147" ParentElement="139" Name="add" Order="7" Flags="30"/>
+    <ROW XmlElement="148" ParentElement="139" Name="Comment" Order="8" Flags="1" Text="Daily Reboot"/>
+    <ROW XmlElement="149" ParentElement="139" Name="add" Order="9" Flags="30"/>
+    <ROW XmlElement="150" ParentElement="139" Name="Comment" Order="10" Flags="1" Text="Hourly Reboot"/>
+    <ROW XmlElement="151" ParentElement="139" Name="add" Order="11" Flags="30"/>
+    <ROW XmlElement="152" ParentElement="139" Name="Comment" Order="12" Flags="1" Text="HH:MM:SS AM"/>
+    <ROW XmlElement="153" ParentElement="107" Name="add" Order="11" Flags="30"/>
+    <ROW XmlElement="154" ParentElement="107" Name="add" Order="12" Flags="30"/>
+    <ROW XmlElement="155" ParentElement="121" Name="endpoint" Order="5" Flags="30"/>
+    <ROW XmlElement="156" ParentElement="121" Name="endpoint" Order="6" Flags="30"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlFileComponent">
+    <ROW XmlFile="Inspire.Display.Service.exe.config" FileName="Inspir~2.con|Inspire.Display.Service.exe.config" DirProperty="App_DIR" Component="Inspire.Common.dll" RootElement="42" Flags="89" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
+    <ROW XmlFile="Inspire.WatchDog.Interface.exe.config" FileName="Inspir~1.con|Inspire.WatchDog.Interface.exe.config" DirProperty="Watchdog_DIR" Component="Inspire.WatchDog.Interface.exe" RootElement="138" Flags="89" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
+    <ROW XmlFile="InspireDisplay.exe.config" FileName="Inspir~1.con|InspireDisplay.exe.config" DirProperty="App_DIR" Component="Inspire.Common.dll" RootElement="99" Flags="89" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
+  </COMPONENT>
+</DOCUMENT>

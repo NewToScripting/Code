@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="EventsModule.ConfigureEventSource"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    xmlns:Commands="clr-namespace:EventsModule.Commands"
+    Background="Gray" Foreground="White" x:Name="currentConfig" >
+    <UserControl.CommandBindings>
+        <CommandBinding Command="Commands:EventsModuleCommands.SaveDataSourceCommand" CanExecute="SaveDataSource_CanExecute" Executed="SaveDataSource_Executed" />
+        <CommandBinding Command="Commands:EventsModuleCommands.ClearDataSourceCommand" CanExecute="ClearDataSource_CanExecute" Executed="ClearDataSource_Executed" />
+        <CommandBinding Command="Commands:EventsModuleCommands.AddDataSourceCommand" CanExecute="AddDataSource_CanExecute" Executed="AddDataSource_Executed" />
+        <CommandBinding Command="Commands:EventsModuleCommands.EditDataSourceCommand" CanExecute="EditDataSource_CanExecute" Executed="EditDataSource_Executed" />
+        <CommandBinding Command="Commands:EventsModuleCommands.RemoveDataSourceCommand" CanExecute="RemoveDataSource_CanExecute" Executed="RemoveDataSource_Executed" />
+    </UserControl.CommandBindings>
+    <Grid Width="675">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="444*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.ColumnSpan="2" FlowDirection="LeftToRight" Height="50" VerticalAlignment="Bottom">
+            <Button Command="Commands:EventsModuleCommands.SaveDataSourceCommand" Height="38" Margin="5,5,0,5" Inspire:ButtonImage.Image="Resources\Images\Ok16.png" VerticalAlignment="Bottom" Content="Save" Grid.ColumnSpan="2"  HorizontalAlignment="Right" Width="142.208" />
+            <Button Command="Commands:EventsModuleCommands.ClearDataSourceCommand" Height="38" Margin="5" Inspire:ButtonImage.Image="Resources\Images\Cancel16.png" VerticalAlignment="Bottom" Content="Cancel" Grid.Column="1"  HorizontalAlignment="Right" Width="150.566" />
+        </StackPanel>
+        <TextBlock Height="30" Margin="9,21.109,0,0" Text="Event Sources:" VerticalAlignment="Top" HorizontalAlignment="Left" Width="108" />
+        <TextBlock Height="30" Margin="51.106,58.883,0,0" Text="Name:" VerticalAlignment="Top" HorizontalAlignment="Left" Width="43.329" />
+        <TextBlock Height="30" Margin="22.22,91.102,0,0" Text="Description:" VerticalAlignment="Top" HorizontalAlignment="Left" Width="90" />
+        <ComboBox x:Name="cbDataSources" SelectionChanged="cbDataSources_SelectionChanged" Margin="90,13.332,0,0" Height="33" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="226">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" Foreground="{StaticResource TextBrush}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBox IsEnabled="{Binding ElementName=currentConfig, Path=IsEditMode}" Text="{Binding Name}" Grid.ColumnSpan="2" Height="30" Margin="90.448,53.328,0,0" Name="tbDataSourceName" VerticalAlignment="Top" HorizontalAlignment="Left" Width="226" />
+        <TextBox IsEnabled="{Binding ElementName=currentConfig, Path=IsEditMode}" Text="{Binding Description}" Grid.ColumnSpan="2" Height="59" Margin="90,88.88,0,0" Name="tbDataSourceDescription" VerticalAlignment="Top" TextWrapping="Wrap" HorizontalAlignment="Left" Width="226" />
+        <TextBlock Height="26" Margin="54,203,0,0" Text="Type:" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40.435" />
+        <ComboBox IsEnabled="{Binding ElementName=currentConfig, Path=IsEditMode}" Height="33" Margin="90,193,0,0" Name="cbType" SelectedIndex="0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="225.916" >
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding EventFormatName}" Foreground="{StaticResource TextBrush}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
+        <Button Command="Commands:EventsModuleCommands.AddDataSourceCommand" Height="33" Margin="322,13.332,0,0" Inspire:ButtonImage.Image="Resources\Images\Add.png" VerticalAlignment="Top" HorizontalAlignment="Left" Width="110" Content="New" />
+        <Button Command="Commands:EventsModuleCommands.EditDataSourceCommand" Height="33" Margin="438,13.332,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="110" Content="Edit" />
+        <Button Command="Commands:EventsModuleCommands.RemoveDataSourceCommand" Height="33" Margin="554,13.332,0,0" Inspire:ButtonImage.Image="Resources\Images\Remove.png" VerticalAlignment="Top" HorizontalAlignment="Left" Width="110" Content="Remove"/>
+        <TextBox IsEnabled="{Binding ElementName=currentConfig, Path=IsEditMode}" Text="{Binding Path=Uri}" Height="30" Margin="90,157,0,0" Name="tbEventFilePath" VerticalAlignment="Top" HorizontalAlignment="Left" Width="264" />
+        <Button IsEnabled="{Binding ElementName=currentConfig, Path=IsEditMode}" Inspire:ButtonImage.Image="Resources\Images\Search.png" Height="30" HorizontalAlignment="Left" Margin="360,157,0,0" Name="btnSearch" Click="btnSearch_Click" VerticalAlignment="Top" Width="36.663"></Button>
+        <TextBlock Height="30" HorizontalAlignment="Left" Margin="5,164,0,0" Text="Sever File Path:" VerticalAlignment="Top" Width="109" />
+        <CheckBox IsEnabled="{Binding ElementName=currentConfig, Path=IsEditMode}" IsChecked="{Binding Path=Default}"  Foreground="{StaticResource Foreground}" x:Name="cbIsDefault" Content="Default Event Source" Margin="90,232,0,0" Height="22" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="160.583" />
+        <CheckBox IsEnabled="{Binding ElementName=currentConfig, Path=IsEditMode}" IsChecked="{Binding Path=Active}" Foreground="{StaticResource Foreground}" Margin="90,260,0,0" Name="cbIsActive" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="160" Height="22" VerticalAlignment="Top">Active Event Source</CheckBox>
+        <Button IsEnabled="{Binding ElementName=currentConfig, Path=IsEditMode}" Height="33" Margin="322,193,0,0" x:Name="btnEventDefs" VerticalAlignment="Top" Click="EditEventDefs_Click" HorizontalAlignment="Left" Width="110">Edit File Definitions</Button>
+    </Grid>
+</UserControl>

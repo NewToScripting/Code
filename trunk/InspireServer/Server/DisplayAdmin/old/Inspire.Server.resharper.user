@@ -1,0 +1,83 @@
+<Configuration>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.IO.FileStream">
+      <Item value="Close" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inspire.Server.Services.Client.Proxy1.Events">
+      <Item value="File" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inspire.Server.Services.Client.Proxy1.ScheduleServiceContractClient">
+      <Item value="GetEvents" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@">
+      <Item value="Mode" priority="1" />
+      <Item value="GUID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inspire.Common.Schedule.ModeEnum">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inspire.Server.Services.MessageContracts.GetEventsResponse">
+      <Item value="Events" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Inspire.Server.Services.DataContracts.Events">
+      <Item value="Equals" priority="0" />
+      <Item value="File" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:byte[]">
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <EditorManager>
+    <RecentFiles>
+      <File id="79285D83-2F23-4C78-9B55-3A6098AB7E69/d:GeneratedCode/f:GetSchedulesRequest.cs" caret="0" scrollPosition="0|0" />
+      <File id="4EAAB8D2-1B8F-4F5F-BC1E-3EA53E88332F/f:Slides.cs" caret="0" scrollPosition="0|0" />
+      <File id="7142B075-BFE9-4285-B26A-8EB190480D23/f:ScheduleServiceReference.svc" caret="0" scrollPosition="0|0" />
+      <File id="C0E3D1F3-7BDD-4CEC-A9BD-20EB0B9824BF/d:GeneratedCode/f:IScheduleServiceContract.cs" caret="464" scrollPosition="0|4" />
+      <File id="7142B075-BFE9-4285-B26A-8EB190480D23/d:App_Code/f:web.config" caret="0" scrollPosition="0|0" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:app.config" caret="0" scrollPosition="0|0" />
+      <File id="7142B075-BFE9-4285-B26A-8EB190480D23/f:web - Copy.config" caret="0" scrollPosition="0|0" />
+      <File id="C48B07D9-6C83-4798-ADE0-710DDFC14A2F/f:Inspire.Server.Services.HostModel.host" caret="0" scrollPosition="0|0" />
+      <File id="AA4793BD-AA2B-4263-9DDE-C3931B0DEF2F/d:GeneratedCode/f:Schedule.cs" caret="0" scrollPosition="0|0" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:MainForm.cs" caret="0" scrollPosition="0|0" />
+      <File id="AD29B959-D534-410D-8789-E5AF4214EDD8/f:MainForm.Designer.cs" caret="0" scrollPosition="0|0" />
+      <File id="4EAAB8D2-1B8F-4F5F-BC1E-3EA53E88332F/f:Schedule.cs" caret="0" scrollPosition="0|0" />
+      <File id="281EC351-799F-4EC5-A17E-66120468A5CE/f:Translator.cs" caret="0" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:Schedule.cs" caret="0" scrollPosition="0|0" />
+      <File id="895961CE-7F5E-4433-B44C-CAF1E996B39E/f:_ResourceAccessFasade.cs" caret="0" scrollPosition="0|0" />
+      <File id="281EC351-799F-4EC5-A17E-66120468A5CE/d:GeneratedCode/f:ScheduleService.cs" caret="2243" scrollPosition="0|34" />
+    </RecentFiles>
+  </EditorManager>
+  <FileStructureView>
+    <AutoScrollToSource>False</AutoScrollToSource>
+    <TrackCaretLocation>False</TrackCaretLocation>
+  </FileStructureView>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <ReFormatCode>
+    <ReorderMembers>False</ReorderMembers>
+    <OptimizeUsings>False</OptimizeUsings>
+    <RemoveRedundantThis>False</RemoveRedundantThis>
+    <ShortenReferences>False</ShortenReferences>
+  </ReFormatCode>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <SharedSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </SharedSolutionDisabledTemplatesManager>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <Providers />
+  </UnitTestRunner>
+  <UserSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </UserSolutionDisabledTemplatesManager>
+</Configuration>

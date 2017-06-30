@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="EventsModule.GroupControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" IsHitTestVisible="False">
+        <StackPanel>
+        <TextBlock Margin="0,10,0,5" x:Name="GroupHeader" FontSize="20" Foreground="Black"/>
+            <StackPanel x:Name="EventRows" Margin="10,0,0,0">
+            </StackPanel>
+        </StackPanel>
+</UserControl>

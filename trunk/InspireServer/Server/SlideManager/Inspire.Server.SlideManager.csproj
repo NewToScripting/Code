@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E8FBF2C-51CA-4CC6-9F13-FEFA382BBDF9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspire.Server.SlideManager</RootNamespace>
+    <AssemblyName>Inspire.Server.SlideManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Inspire.ServiceHost\Lib\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLogic\SlideManagerAccessFasade.cs" />
+    <Compile Include="BusinessLogic\StreamToBytes.cs" />
+    <Compile Include="DataAccess\ButtonDataAccess.cs" />
+    <Compile Include="DataAccess\RuleDataAccess.cs" />
+    <Compile Include="DataAccess\SlideDataAccess.cs" />
+    <Compile Include="DataAccess\SlideFileDataAccess.cs" />
+    <Compile Include="DataAccess\SlideFileSql.cs" />
+    <Compile Include="DataAccess\SlideFolderAccess.cs" />
+    <Compile Include="DataAccess\SlideSQL.cs" />
+    <Compile Include="DataAccess\StreamToBytes.cs" />
+    <Compile Include="DataAccess\TagDataAccess.cs" />
+    <Compile Include="DataContracts\Button.cs" />
+    <Compile Include="DataContracts\Buttons.cs" />
+    <Compile Include="DataContracts\Rule.cs" />
+    <Compile Include="DataContracts\Slide.cs" />
+    <Compile Include="DataContracts\SlideFile.cs" />
+    <Compile Include="DataContracts\SlideRules.cs" />
+    <Compile Include="DataContracts\Slides.cs" />
+    <Compile Include="DataContracts\Tag.cs" />
+    <Compile Include="DataContracts\Tags.cs" />
+    <Compile Include="MessageContracts\AddSlideFileRequestMessage.cs" />
+    <Compile Include="MessageContracts\AddSlideFileResponseMessage.cs" />
+    <Compile Include="MessageContracts\AddSlideRequestMessage.cs" />
+    <Compile Include="MessageContracts\AddSlideResponseMessage.cs" />
+    <Compile Include="MessageContracts\AddButtonRequestMessage.cs" />
+    <Compile Include="MessageContracts\AddButtonResponseMessage.cs" />
+    <Compile Include="MessageContracts\DeleteSlideFileRequestMessage.cs" />
+    <Compile Include="MessageContracts\DeleteSlideFileResponseMessage.cs" />
+    <Compile Include="MessageContracts\DeleteSlideRequestMessage.cs" />
+    <Compile Include="MessageContracts\DeleteSlideResponseMessage.cs" />
+    <Compile Include="MessageContracts\DeleteButtonRequestMessage.cs" />
+    <Compile Include="MessageContracts\DeleteButtonResponseMessage.cs" />
+    <Compile Include="MessageContracts\GetAllSlidesRequestMessage.cs" />
+    <Compile Include="MessageContracts\GetAllSlidesResponseMessage.cs" />
+    <Compile Include="MessageContracts\GetSlideFileRequestMessage.cs" />
+    <Compile Include="MessageContracts\GetSlideFileResponseMessage.cs" />
+    <Compile Include="MessageContracts\GetSlideRequestMessage.cs" />
+    <Compile Include="MessageContracts\GetSlideResponseMessage.cs" />
+    <Compile Include="MessageContracts\UpdateSlideFileRequestMessage.cs" />
+    <Compile Include="MessageContracts\UpdateSlideFileResponseMessage.cs" />
+    <Compile Include="MessageContracts\UpdateSlideRequestMessage.cs" />
+    <Compile Include="MessageContracts\UpdateSlideResponseMessage.cs" />
+    <Compile Include="Service\ISlideFileManagerServiceContract.cs" />
+    <Compile Include="Service\ISlideManagerServiceContract.cs" />
+    <Compile Include="Service\SlideFileManagerService.cs" />
+    <Compile Include="Service\SlideManagerService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Inspire.Server.Common.csproj">
+      <Project>{888C4F19-BC38-4530-B1DE-00EB62A6CC4A}</Project>
+      <Name>Inspire.Server.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Roles="ServiceRole" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

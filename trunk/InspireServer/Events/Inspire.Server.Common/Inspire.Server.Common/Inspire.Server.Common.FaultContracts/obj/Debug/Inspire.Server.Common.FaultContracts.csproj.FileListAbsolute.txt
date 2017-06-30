@@ -1,0 +1,30 @@
+C:\CODE\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\CODE\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\CODE\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\Transfer\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Events Server\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\bin\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\bin\Debug\Inspire.Server.Common.FaultContracts.pdb
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\Inspire.Server.Common.FaultContracts.dll
+C:\CODE\trunk\InspireServer\Events\Inspire.Server.Common\Inspire.Server.Common\Inspire.Server.Common.FaultContracts\obj\Debug\Inspire.Server.Common.FaultContracts.pdb

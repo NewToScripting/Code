@@ -1,0 +1,42 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectGuid>{ea0b6931-b83b-4b97-ab21-b98443b9d2f5}</ProjectGuid>
+    <RootNamespace>Feeds</RootNamespace>
+    <AssemblyName>Feeds</AssemblyName>
+    <Name>Feeds</Name>
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Model Include="Feeds.ServiceContract.Model.servicecontract">
+      <SubType>Content</SubType>
+    </Model>
+  </ItemGroup>
+  <ItemGroup>
+    <Model Include="Feeds.DataContract.Model.datacontract">
+      <SubType>Content</SubType>
+    </Model>
+    <Content Include="Feeds.DataContract.Model.datacontract.diagram">
+      <SubType>Content</SubType>
+      <DependentUpon>Feeds.DataContract.Model.datacontract</DependentUpon>
+    </Content>
+    <Model Include="Feeds.Host.Model.host">
+      <SubType>Content</SubType>
+    </Model>
+    <Content Include="Feeds.ServiceContract.Model.servicecontract.diagram">
+      <SubType>Content</SubType>
+      <DependentUpon>Feeds.ServiceContract.Model.servicecontract</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <SFBasePath>$(DevEnvDir)\PublicAssemblies</SFBasePath>
+  </PropertyGroup>
+  <!-- Since this project flavor isnt supposed to be build, we do nothing in the following Targets -->
+  <Target Name="Build">
+  </Target>
+  <Target Name="Clean">
+  </Target>
+  <Target Name="Rebuild">
+  </Target>
+</Project>

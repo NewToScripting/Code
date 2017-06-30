@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A200B8AA-66FB-4BA9-86A9-4631FFD473E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspire.Server.ScheduledSlideManager</RootNamespace>
+    <AssemblyName>Inspire.Server.ScheduledSlideManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Inspire.ServiceHost\Lib\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLogic\ScheduledSlideAccessFasade.cs" />
+    <Compile Include="DataAccess\ScheduledSlideDatabaseAccess.cs" />
+    <Compile Include="DataAccess\ScheduledSlideSQL.cs" />
+    <Compile Include="DataAccess\SlideButtonDataAccess.cs" />
+    <Compile Include="DataContracts\ScheduledSlide.cs" />
+    <Compile Include="DataContracts\ScheduledSlides.cs" />
+    <Compile Include="MessageContracts\AddSlideNavagationRequestMessage.cs" />
+    <Compile Include="MessageContracts\AddSlideNavagationResponseMessage.cs" />
+    <Compile Include="MessageContracts\AddScheduledSlideRequestMessage.cs" />
+    <Compile Include="MessageContracts\AddScheduledSlideResponseMessage.cs" />
+    <Compile Include="MessageContracts\GetScheduledSlidesNoThumbRequestMessage.cs" />
+    <Compile Include="MessageContracts\GetScheduledSlidesNoThumbResponseMessage.cs" />
+    <Compile Include="MessageContracts\DeleteSlideNavagationRequestMessage.cs" />
+    <Compile Include="MessageContracts\DeleteSlideNavagationResponseMessage.cs" />
+    <Compile Include="MessageContracts\DeleteScheduledSlideRequestMessage.cs" />
+    <Compile Include="MessageContracts\DeleteScheduledSlideResponseMessage.cs" />
+    <Compile Include="MessageContracts\GetScheduledSlidesRequestMessage.cs" />
+    <Compile Include="MessageContracts\GetScheduledSlidesResponseMessage.cs" />
+    <Compile Include="MessageContracts\IsSlideScheduledRequestMessage.cs" />
+    <Compile Include="MessageContracts\IsSlideScheduledResponseMessage.cs" />
+    <Compile Include="MessageContracts\UpdateOriginalSlideIdsRequestMessage.cs" />
+    <Compile Include="MessageContracts\UpdateOriginalSlideIdsResponseMessage.cs" />
+    <Compile Include="MessageContracts\UpdateScheduleSlideRequestMessage.cs" />
+    <Compile Include="MessageContracts\UpdateScheduleSlideResponseMessage.cs" />
+    <Compile Include="Service\IScheduledSlideManagerServiceContract.cs" />
+    <Compile Include="Service\ScheduledSlideManagerService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Inspire.Server.Common.csproj">
+      <Project>{888C4F19-BC38-4530-B1DE-00EB62A6CC4A}</Project>
+      <Name>Inspire.Server.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SlideManager\Inspire.Server.SlideManager.csproj">
+      <Project>{0E8FBF2C-51CA-4CC6-9F13-FEFA382BBDF9}</Project>
+      <Name>Inspire.Server.SlideManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Roles="ServiceRole" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

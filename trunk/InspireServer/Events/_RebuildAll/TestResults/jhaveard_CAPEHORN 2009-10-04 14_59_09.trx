@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="743adecc-7e3a-4ffc-abd8-cf530202a66c" name="jhaveard@CAPEHORN 2009-10-04 14:59:09" runUser="CAPEHORN\jhaveard" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="f87716d9-9b5a-43ed-b471-b2677316cf16">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\CODE\InspireServer\Events Server\_RebuildAll\TestResults\jhaveard_CAPEHORN 2009-10-04 14_59_09">
+      <DeploymentItem filename="C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.dll" />
+      <DeploymentItem filename="C:\CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceImplementation\bin\Debug\Inspire.Server.Direction.ServiceImplementation.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Error">
+    <Counters total="2" executed="2" passed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="CAPEHORN" outcome="Error" timestamp="2009-10-04T14:59:40.8786137-04:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <Times creation="2009-10-04T14:59:09.5486137-04:00" queuing="2009-10-04T14:59:11.1136137-04:00" start="2009-10-04T14:59:11.3996137-04:00" finish="2009-10-04T14:59:40.8796137-04:00" />
+  <TestDefinitions>
+    <UnitTest name="DeleteEventFileFormatUsingEndpoint" storage="c:\code\inspireserver\events server\_rebuildall\events.unit.tests\bin\debug\events.unit.tests.dll" id="72012b41-eba2-66f2-4b25-a5e8a2c23363">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\bin\Debug\Events.Unit.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Events.Unit.Tests.EventTests, Events.Unit.Tests" name="DeleteEventFileFormatUsingEndpoint" />
+    </UnitTest>
+    <UnitTest name="UpdateEventFileFormatUsingEndpoint" storage="c:\code\inspireserver\events server\_rebuildall\events.unit.tests\bin\debug\events.unit.tests.dll" id="7d4d63fd-9be2-02c1-e3da-6f1b1f138a0d">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="54fa86a7-1a02-4234-afc3-8012e57f393e" />
+      <TestMethod codeBase="C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\bin\Debug\Events.Unit.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Events.Unit.Tests.EventTests, Events.Unit.Tests" name="UpdateEventFileFormatUsingEndpoint" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7d4d63fd-9be2-02c1-e3da-6f1b1f138a0d" executionId="54fa86a7-1a02-4234-afc3-8012e57f393e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72012b41-eba2-66f2-4b25-a5e8a2c23363" executionId="d9e4ade1-b0b4-405d-92dd-b6e90d4245ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="54fa86a7-1a02-4234-afc3-8012e57f393e" testId="7d4d63fd-9be2-02c1-e3da-6f1b1f138a0d" testName="UpdateEventFileFormatUsingEndpoint" computerName="CAPEHORN" duration="00:00:07.0970964" startTime="2009-10-04T14:59:11.5756137-04:00" endTime="2009-10-04T14:59:19.3476137-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d9e4ade1-b0b4-405d-92dd-b6e90d4245ea" testId="72012b41-eba2-66f2-4b25-a5e8a2c23363" testName="DeleteEventFileFormatUsingEndpoint" computerName="CAPEHORN" duration="00:00:21.5230000" startTime="2009-10-04T14:59:19.3566137-04:00" endTime="2009-10-04T14:59:40.8796137-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

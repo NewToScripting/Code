@@ -1,0 +1,13 @@
+C:\CODE\trunk\InspireClient\InspireClient\bin\Debug\Modules\FilterModule.dll
+C:\CODE\trunk\InspireClient\InspireClient\bin\Debug\Modules\FilterModule.pdb
+C:\CODE\trunk\InspireClient\FilterModule\obj\Debug\AlphabitFilter.baml
+C:\CODE\trunk\InspireClient\FilterModule\obj\Debug\PropertyPanel.baml
+C:\CODE\trunk\InspireClient\FilterModule\obj\Debug\AlphabitFilter.g.cs
+C:\CODE\trunk\InspireClient\FilterModule\obj\Debug\PropertyPanel.g.cs
+C:\CODE\trunk\InspireClient\FilterModule\obj\Debug\FilterModule_MarkupCompile.cache
+C:\CODE\trunk\InspireClient\FilterModule\obj\Debug\FilterModule.g.resources
+C:\CODE\trunk\InspireClient\FilterModule\obj\Debug\FilterModule.Properties.Resources.resources
+C:\CODE\trunk\InspireClient\FilterModule\obj\Debug\FilterModule.dll
+C:\CODE\trunk\InspireClient\FilterModule\obj\Debug\FilterModule.pdb
+C:\CODE\trunk\InspireClient\FilterModule\obj\Debug\FilterModule.csproj.GenerateResource.Cache
+C:\CODE\trunk\InspireClient\FilterModule\obj\Debug\FilterModule.csprojResolveAssemblyReference.cache

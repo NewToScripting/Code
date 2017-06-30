@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b0c3dec9-3a1c-4515-9dc1-a5fcd63e835a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://devserver2003/inspire.events/svc/eventservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EventService2.xsd" MetadataType="Schema" ID="d8572050-1d33-4855-a431-88649bc4fdbc" SourceId="1" SourceUrl="http://devserver2003/Inspire.Events/Svc/EventService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EventService1.wsdl" MetadataType="Wsdl" ID="cc33d4e3-a669-4dfa-9fb7-97bd0ea4ceec" SourceId="1" SourceUrl="http://devserver2003/Inspire.Events/Svc/EventService.svc?wsdl" />
+    <MetadataFile FileName="EventService1.disco" MetadataType="Disco" ID="b784110c-44b2-4d9d-88b5-a5c541622036" SourceId="1" SourceUrl="http://devserver2003/Inspire.Events/Svc/EventService.svc?disco" />
+    <MetadataFile FileName="EventService3.xsd" MetadataType="Schema" ID="8f8e261a-8734-42b5-bd4c-58a482a1133e" SourceId="1" SourceUrl="http://devserver2003/Inspire.Events/Svc/EventService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

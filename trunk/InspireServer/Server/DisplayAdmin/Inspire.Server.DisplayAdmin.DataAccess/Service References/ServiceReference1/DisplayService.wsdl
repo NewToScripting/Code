@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.inspiredisplays.com/ServiceContract/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DisplayService" targetNamespace="http://schemas.inspiredisplays.com/ServiceContract/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="UpdateDisplayRequestMessage" />
+  <wsdl:portType name="DisplayServiceContract">
+    <wsdl:operation name="UpdateDisplay">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/UpdateDisplay" name="UpdateDisplayRequestMessage" message="tns:UpdateDisplayRequestMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DisplayEndpoint" type="tns:DisplayServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateDisplay">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/UpdateDisplay" style="document" />
+      <wsdl:input name="UpdateDisplayRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DisplayService">
+    <wsdl:port name="DisplayEndpoint" binding="tns:DisplayEndpoint">
+      <soap:address location="http://localhost/inspire/displayservice" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

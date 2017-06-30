@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="BubbleModule.PropertyPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+    <UserControl.Resources>
+        <!--<Storyboard x:Key="SlideIn">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-245"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="SlideOut">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>-->
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <!--<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource SlideIn}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.HideProperties">
+            <BeginStoryboard Storyboard="{StaticResource SlideOut}"/>
+        </EventTrigger>-->
+    </UserControl.Triggers>
+    <Border Margin="0,0,-15,0" Background="{StaticResource SunkenBackground}" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" x:Name="grid" Width="260">
+        <Border.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                <SkewTransform AngleX="0" AngleY="0"/>
+                <RotateTransform Angle="0"/>
+                <TranslateTransform X="0" Y="0"/>
+            </TransformGroup>
+        </Border.RenderTransform>
+        <Border.BitmapEffect>
+            <BevelBitmapEffect BevelWidth="3"
+                    EdgeProfile="BulgedUp" Relief=".1" />
+        </Border.BitmapEffect>
+        <StackPanel Margin="5" HorizontalAlignment="Stretch" Background="{StaticResource SunkenBackground}">
+            <Inspire:PropertyBase Name="propBase" Margin="5,5,10,5"/>
+            <Expander IsExpanded="True" Grid.Row="2" Width="236" Margin="0,5,0,5" Header="Content Bubble Properties">
+            <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="130*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Column="0">
+                <Label Height="25" Margin="5" Name="txtWidth" VerticalAlignment="Top" Foreground="White" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" HorizontalAlignment="Right" >Title:</Label>
+                <Label Margin="5" Name="txtHeight" HorizontalContentAlignment="Right" Height="25" VerticalAlignment="Top" Foreground="White" VerticalContentAlignment="Center" HorizontalAlignment="Right" >Title Size:</Label>
+                <Label Margin="5" Name="txtAlignment" HorizontalContentAlignment="Right" Height="25" VerticalAlignment="Top" Foreground="White" VerticalContentAlignment="Center" HorizontalAlignment="Right" >Alignment:</Label>
+                <Label Margin="5" Name="lblColor" HorizontalContentAlignment="Right" Height="25" VerticalAlignment="Top" Foreground="White" VerticalContentAlignment="Center" HorizontalAlignment="Right" >Color:</Label>
+                <Label Margin="5" Name="lblBakColor" HorizontalContentAlignment="Right" Height="25" VerticalAlignment="Top" Foreground="White" VerticalContentAlignment="Center" HorizontalAlignment="Right" >Background Color:</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <TextBox VerticalContentAlignment="Center" Text="{Binding Path=Content.Content.HeaderTitle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="25"  Name="textBox2" VerticalAlignment="Top" Margin="5"/>
+                <TextBox VerticalContentAlignment="Center" Text="{Binding Path=Content.Content.TitleSize, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Name="textBox3" Margin="5" Height="25" VerticalAlignment="Top" />
+                <ComboBox Text="{Binding Path=Content.Content.TitleAlignment, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" x:Name="tbAlignment" VerticalAlignment="Top" Margin="5" Height="25" >
+                    <ComboBoxItem Content="Left"/>
+                    <ComboBoxItem Content="Center"/>
+                    <ComboBoxItem Content="Stretch"/>
+                    <ComboBoxItem Content="Right"/>
+                </ComboBox>
+                <Border HorizontalAlignment="Left" BorderThickness="1" BorderBrush="Black" Background="{StaticResource CheckerBrush}" Width="22" Height="22" VerticalAlignment="Bottom" Margin="5">
+                    <Rectangle x:Name="btnFontColor" Width="20" Height="20" MouseDown="ChangeTitleColor_Click" HorizontalAlignment="Left" Style="{x:Null}" Fill="{Binding Path=Content.Content.Color, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                </Border>
+                        <Border HorizontalAlignment="Left" BorderThickness="1" BorderBrush="Black" Background="{StaticResource CheckerBrush}" Width="22" Height="22" VerticalAlignment="Bottom" Margin="5">
+                            <Rectangle x:Name="btnBakColor" Width="20" Height="20" MouseDown="ChangeBackgroundColor_Click" HorizontalAlignment="Left" Style="{x:Null}" Fill="{Binding Path=Content.Content.BackgroundColor, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </Expander>
+        </StackPanel>
+    </Border>
+</UserControl>

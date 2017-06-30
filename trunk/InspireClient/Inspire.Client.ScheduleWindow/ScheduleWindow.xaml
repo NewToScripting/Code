@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Inspire.Client.ScheduleWindow.ScheduleWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Commands="clr-namespace:Inspire.Commands;assembly=Inspire"
+    xmlns:SchedulePropertyPanel="clr-namespace:Inspire.Client.ScheduleWindow.SchedulePropertyPanel"
+    xmlns:ScheduledSlidePanel="clr-namespace:Inspire.Client.ScheduleWindow.ScheduledSlidePanel"    
+    xmlns:Controls="clr-namespace:Transitionals.Controls;assembly=Transitionals"    
+    xmlns:WpfDock="clr-namespace:DevComponents.WpfDock;assembly=DevComponents.WpfDock">
+    <UserControl.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.UpdateScheduleCommand}" Executed="UpdateScheduleExecuted" CanExecute="UpdateScheduleCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.SaveScheduleCommand}" Executed="SaveScheduleExecuted" CanExecute="SaveScheduleCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.CancelScheduleCommand}" Executed="CancelScheduleExecuted" CanExecute="CancelScheduleCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.ConfigureTouchscreenButtons}" Executed="ConfigureTouchscreenButtonsExecuted" CanExecute="ConfigureTouchscreenButtonsCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.ConfigureTransitionCommand}" Executed="ConfigureTransitionExecuted" CanExecute="ConfigureTransitionCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.SaveTouchscreenButtonsCommand}" Executed="SaveTouchscreenButtonsExecuted" CanExecute="SaveTouchscreenButtonsCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.CancelTouchscreenButtonsCommand}" Executed="CancelTouchscreenButtonsExecuted" CanExecute="CancelTouchscreenButtonsCanExecute" />
+        <!--<CommandBinding Command="{x:Static Commands:InspireCommands.NewScheduleCommand}" Executed="NewScheduleExecuted" CanExecute="NewScheduleCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.NewBlankScheduleCommand}" Executed="NewBlankScheduleExecuted" CanExecute="NewBlankScheduleCanExecute" />-->
+        <!--
+        <CommandBinding Command="{x:Static Commands:InspireCommands.EditScheduleCommand}" Executed="EditScheduleExecuted" CanExecute="EditScheduleCanExecute" />
+        
+        
+        <CommandBinding Command="{x:Static Commands:InspireCommands.DeleteScheduleCommand}" Executed="DeleteScheduleExecuted" CanExecute="DeleteScheduleCanExecute" />-->
+        <!--<CommandBinding Command="{x:Static Commands:InspireCommands.FillCalendarCommand}" Executed="FillCalendarCommandExecuted" CanExecute="FillCalendarCommandCanExecute" />-->
+        <!--<CommandBinding Command="{x:Static Commands:InspireCommands.FillScheduledSlidesCommand}" Executed="FillScheduledSlidesCommandExecuted" CanExecute="FillScheduledSlidesCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.ClearScheduledSlidesCommand}" Executed="ClearScheduledSlidesCommandExecuted" CanExecute="ClearScheduledSlidesCommandCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.PreviewScheduleForDisplayCommand}" Executed="PreviewScheduleForDisplayExecuted" CanExecute="PreviewScheduleForDisplayCanExecute" />
+        <CommandBinding Command="{x:Static Commands:InspireCommands.PreviewCurrentContentsCommand}" Executed="PreviewCurrentContentsExecuted" CanExecute="PreviewCurrentContentsCanExecute" />-->
+    </UserControl.CommandBindings>
+    <DockPanel>
+        <!--<ScheduleTreeView:ScheduleTreeControl x:Name="SchedulerTreeControl" DockPanel.Dock="Left" HorizontalAlignment="Left" VerticalAlignment="Stretch"></ScheduleTreeView:ScheduleTreeControl>-->
+        <SchedulePropertyPanel:SchedulePropertyControl x:Name="SchedulerPropertyControl" DockPanel.Dock="Right" SnapsToDevicePixels="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></SchedulePropertyPanel:SchedulePropertyControl>
+        <!--<StackPanel >-->
+        <!--<WpfDock:DockSite DockPanel.Dock="Bottom" VerticalAlignment="Stretch" SnapsToDevicePixels="True" >-->
+            <!--<DockPanel LastChildFill="True">-->
+                <!--<ScheduledSlidePanel:ScheduledSlideControl Grid.Column="0" DockPanel.Dock="Bottom" x:Name="SchedulerSlideControl" Margin="0,0,0,0"></ScheduledSlidePanel:ScheduledSlideControl>-->
+        <Grid Background="{StaticResource DarkBrush}" DockPanel.Dock="Top" SnapsToDevicePixels="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Controls:TransitionElement SnapsToDevicePixels="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="SchedulerHolder" />
+        </Grid>
+        <!--</DockPanel>
+        </WpfDock:DockSite>-->
+        <!--</StackPanel>-->
+    </DockPanel>
+</UserControl>

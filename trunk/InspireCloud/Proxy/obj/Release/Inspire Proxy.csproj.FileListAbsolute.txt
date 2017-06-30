@@ -1,0 +1,11 @@
+C:\New_Code\InspireCloud\Proxy\bin\Inspire Proxy.dll.config
+C:\New_Code\InspireCloud\Proxy\bin\Inspire Proxy.dll
+C:\New_Code\InspireCloud\Proxy\bin\Inspire Proxy.pdb
+C:\New_Code\InspireCloud\Proxy\obj\Release\Inspire Proxy.dll
+C:\New_Code\InspireCloud\Proxy\obj\Release\Inspire Proxy.pdb
+C:\CODE\trunk\InspireCloud\Proxy\bin\Inspire Proxy.dll.config
+C:\CODE\trunk\InspireCloud\Proxy\bin\Inspire Proxy.dll
+C:\CODE\trunk\InspireCloud\Proxy\bin\Inspire Proxy.pdb
+C:\CODE\trunk\InspireCloud\Proxy\obj\Release\Inspire Proxy.csprojResolveAssemblyReference.cache
+C:\CODE\trunk\InspireCloud\Proxy\obj\Release\Inspire Proxy.dll
+C:\CODE\trunk\InspireCloud\Proxy\obj\Release\Inspire Proxy.pdb

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="29f7a4e7-0b85-4093-8ce9-d18f09b322f2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Inspire.Server/Svc/ScheduleService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ScheduleService.xsd" MetadataType="Schema" ID="831eecd0-f2b5-4a9e-94dc-2bb50708fd3d" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/ScheduleService?xsd=xsd4" />
+    <MetadataFile FileName="ScheduleService1.xsd" MetadataType="Schema" ID="b33619dd-da6e-43fd-b4a5-511ddca1db9f" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/ScheduleService?xsd=xsd2" />
+    <MetadataFile FileName="ScheduleService2.xsd" MetadataType="Schema" ID="4814c57b-7d82-4cdd-a834-e378374518ae" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/ScheduleService?xsd=xsd0" />
+    <MetadataFile FileName="ScheduleService.disco" MetadataType="Disco" ID="bd45e0a2-cb7c-4003-9437-932f6c11cf46" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/ScheduleService?disco" />
+    <MetadataFile FileName="ScheduleService3.xsd" MetadataType="Schema" ID="f5069cc7-b189-4d8e-8abc-57e008087e6c" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/ScheduleService?xsd=xsd3" />
+    <MetadataFile FileName="ScheduleService4.xsd" MetadataType="Schema" ID="813256c3-781b-4d2e-9b2f-d06c80cceff2" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/ScheduleService?xsd=xsd1" />
+    <MetadataFile FileName="ScheduleManagerService.wsdl" MetadataType="Wsdl" ID="e0ad09b6-15ae-4ee9-8426-c619c71fe94a" SourceId="1" SourceUrl="http://localhost/Inspire.Server/Svc/ScheduleService?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

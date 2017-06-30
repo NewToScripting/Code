@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="12bd0a7a-d48e-4e5f-b6f6-2da0731271ea" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/ClientManager/SlideFileManagerServiceReference.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SlideFileManagerInspire.SlideManager.wsdl" MetadataType="Wsdl" ID="18581977-10ed-4adf-8021-5cf1fbb6ba7d" SourceId="1" SourceUrl="http://z95853.rjf.com/ClientManager/SlideFileManagerServiceReference.svc?wsdl" />
+    <MetadataFile FileName="SlideFileManagerServiceReference.disco" MetadataType="Disco" ID="dc21b964-2392-4f47-9e3a-813b7556133c" SourceId="1" SourceUrl="http://z95853.rjf.com/ClientManager/SlideFileManagerServiceReference.svc?disco" />
+    <MetadataFile FileName="SlideFileManagerServiceReference.xsd" MetadataType="Schema" ID="6a0efcfe-a94c-49f7-a9c9-cf41c1e92227" SourceId="1" SourceUrl="http://z95853.rjf.com/ClientManager/SlideFileManagerServiceReference.svc?xsd=xsd0" />
+    <MetadataFile FileName="SlideFileManagerServiceReference1.xsd" MetadataType="Schema" ID="cbdd99e6-7275-41df-b557-033256844adf" SourceId="1" SourceUrl="http://z95853.rjf.com/ClientManager/SlideFileManagerServiceReference.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

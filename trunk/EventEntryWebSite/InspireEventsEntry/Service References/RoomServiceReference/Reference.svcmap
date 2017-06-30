@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e4431550-046b-4ba2-8585-e3ca8b9c42e1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Inspire.Events/Svc/roomservice" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RoomService.disco" MetadataType="Disco" ID="73c5d506-f1fc-44b7-8188-076bb1293225" SourceId="1" SourceUrl="http://localhost/Inspire.Events/Svc/RoomService?disco" />
+    <MetadataFile FileName="RoomsService.wsdl" MetadataType="Wsdl" ID="54a324ed-66f7-4bab-bf7f-f2d20ccabef4" SourceId="1" SourceUrl="http://localhost/Inspire.Events/Svc/RoomService?wsdl" />
+    <MetadataFile FileName="RoomService.xsd" MetadataType="Schema" ID="40d2d758-a96b-4973-982c-a287e54ee443" SourceId="1" SourceUrl="http://localhost/Inspire.Events/Svc/RoomService?xsd=xsd0" />
+    <MetadataFile FileName="RoomService1.xsd" MetadataType="Schema" ID="f9796e95-7cdb-417e-bfc3-f9f569e1b705" SourceId="1" SourceUrl="http://localhost/Inspire.Events/Svc/RoomService?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

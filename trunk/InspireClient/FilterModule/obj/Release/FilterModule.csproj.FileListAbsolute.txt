@@ -1,0 +1,12 @@
+C:\CODE\trunk\InspireClient\InspireClient\bin\Release\Modules\FilterModule.dll
+C:\CODE\trunk\InspireClient\InspireClient\bin\Release\Modules\FilterModule.pdb
+C:\CODE\trunk\InspireClient\FilterModule\obj\Release\AlphabitFilter.baml
+C:\CODE\trunk\InspireClient\FilterModule\obj\Release\PropertyPanel.baml
+C:\CODE\trunk\InspireClient\FilterModule\obj\Release\AlphabitFilter.g.cs
+C:\CODE\trunk\InspireClient\FilterModule\obj\Release\PropertyPanel.g.cs
+C:\CODE\trunk\InspireClient\FilterModule\obj\Release\FilterModule_MarkupCompile.cache
+C:\CODE\trunk\InspireClient\FilterModule\obj\Release\FilterModule.g.resources
+C:\CODE\trunk\InspireClient\FilterModule\obj\Release\FilterModule.Properties.Resources.resources
+C:\CODE\trunk\InspireClient\FilterModule\obj\Release\FilterModule.dll
+C:\CODE\trunk\InspireClient\FilterModule\obj\Release\FilterModule.pdb
+C:\CODE\trunk\InspireClient\FilterModule\obj\Release\FilterModule.csproj.GenerateResource.Cache

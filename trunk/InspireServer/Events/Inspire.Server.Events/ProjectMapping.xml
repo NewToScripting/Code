@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<ProjectMappingInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" FileName="ProjectMapping.xml" xmlns="http://schemas.microsoft.com/pag/project-mapping">
+  <ProjectMappingTables>
+    <ProjectMappingTable Name="Inspire.Feeds">
+      <ProjectMappings>
+        <ProjectMapping ProjectId="7f7fce40-aada-4245-ac0e-e04eadc4f174" ProjectPath="\GeneratedCode" ProjectName="Inspire.Feeds.BusinessEntities">
+          <Roles>
+            <Role Name="BusinessEntityRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="8ad78e91-fdf7-422f-b1f2-fd882f96b6a2" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Feeds.BusinessLogic">
+          <Roles>
+            <Role Name="BusinessLogicRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="354d2db9-b2e4-4870-9888-f88642790dee" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Feeds.DataAccess">
+          <Roles />
+        </ProjectMapping>
+        <ProjectMapping ProjectId="b91aff04-5fbf-473f-98d1-57bd35fb5078" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Feeds.DataContracts">
+          <Roles>
+            <Role Name="DataContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="469739d8-061a-431a-936c-e0f3906bd165" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Feeds.FaultContracts">
+          <Roles>
+            <Role Name="FaultContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="d1ced0c8-a7e4-4c0c-a4d5-2bd8ff62e7d6" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Feeds.MessageContracts">
+          <Roles>
+            <Role Name="MessageContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="c0f6cfeb-25a6-4224-b6e0-ef5c87ec985a" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Feeds.ServiceImplementation">
+          <Roles>
+            <Role Name="ServiceRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="3253a543-020e-4dc0-a34e-99ca83a98ef9" ProjectPath="\GeneratedCode" ProjectName="Inspire.Server.Feeds.ServiceContracts">
+          <Roles>
+            <Role Name="ServiceContractRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="c333263d-a959-4f81-ba80-f279c2b11fb9" ProjectPath="\GeneratedCode" ProjectName="Inspire.Feeds.Host">
+          <Roles>
+            <Role Name="HostRole" />
+          </Roles>
+        </ProjectMapping>
+        <ProjectMapping ProjectId="21ac6f73-54fb-40e2-a3f2-7c45ce5d8358" ProjectPath="\GeneratedCode" ProjectName="Inspire.Feeds.Client">
+          <Roles>
+            <Role Name="ClientRole" />
+          </Roles>
+        </ProjectMapping>
+      </ProjectMappings>
+    </ProjectMappingTable>
+  </ProjectMappingTables>
+</ProjectMappingInformation>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://schemas.inspiredisplays.com" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="EventService" targetNamespace="http://schemas.inspiredisplays.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/Imports">
+      <xsd:import schemaLocation="http://devserver2003/Inspire.Events/Svc/EventService.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com" />
+      <xsd:import schemaLocation="http://devserver2003/Inspire.Events/Svc/EventService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="AddEventRequestMessage">
+    <wsdl:part name="HospitalityEvent" element="tns:HospitalityEvent" />
+  </wsdl:message>
+  <wsdl:message name="AddEventResponseMessage" />
+  <wsdl:message name="EventServiceContract_AddEvent_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEventRequestMessage">
+    <wsdl:part name="HospitalityEvent" element="tns:HospitalityEvent" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEventResponseMessage" />
+  <wsdl:message name="EventServiceContract_UpdateEvent_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetEventsRequestMessage">
+    <wsdl:part name="EventDescriptionID" element="tns:EventDescriptionID" />
+  </wsdl:message>
+  <wsdl:message name="GetEventsResponseMessage">
+    <wsdl:part name="HospitalityEvents" element="tns:HospitalityEvents" />
+  </wsdl:message>
+  <wsdl:message name="EventServiceContract_GetEvents_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteEventRequestMessage">
+    <wsdl:part name="EventID" element="tns:EventID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteEventResponseMessage" />
+  <wsdl:message name="EventServiceContract_DeleteEvent_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetEventDefinitionsRequestMessage" />
+  <wsdl:message name="GetEventDefinitionsResponseMessage">
+    <wsdl:part name="EventDefinitions" element="tns:EventDefinitions" />
+  </wsdl:message>
+  <wsdl:message name="EventServiceContract_GetEventDefinitions_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetDefaultEventDefinitionRequestMessage" />
+  <wsdl:message name="GetDefaultEventDefinitionResponseMessage">
+    <wsdl:part name="EventDefinition" element="tns:EventDefinition" />
+  </wsdl:message>
+  <wsdl:message name="EventServiceContract_GetDefaultEventDefinition_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddEventDefinitionRequestMessage">
+    <wsdl:part name="Feed" element="tns:Feed" />
+  </wsdl:message>
+  <wsdl:message name="AddEventDefinitionResponseMessage" />
+  <wsdl:message name="EventServiceContract_AddEventDefinition_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteEventDefinitionRequestMessage">
+    <wsdl:part name="EventDefinitionID" element="tns:EventDefinitionID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteEventDefinitionResponseMessage" />
+  <wsdl:message name="EventServiceContract_DeleteEventDefinition_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetEventsFilteredRequestMessage">
+    <wsdl:part name="EventDescriptionID" element="tns:EventDescriptionID" />
+    <wsdl:part name="HostName" element="tns:HostName" />
+  </wsdl:message>
+  <wsdl:message name="GetEventsFilteredResponseMessage">
+    <wsdl:part name="HospitalityEvents" element="tns:HospitalityEvents" />
+  </wsdl:message>
+  <wsdl:message name="EventServiceContract_GetEventsFiltered_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetEventsNonFilteredRequestMessage">
+    <wsdl:part name="EventDescriptionID" element="tns:EventDescriptionID" />
+    <wsdl:part name="HostName" element="tns:HostName" />
+  </wsdl:message>
+  <wsdl:message name="GetEventsNonFilteredResponseMessage">
+    <wsdl:part name="HospitalityEvents" element="tns:HospitalityEvents" />
+  </wsdl:message>
+  <wsdl:message name="EventServiceContract_GetEventsNonFiltered_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="LoadEventsRequestMessage" />
+  <wsdl:message name="LoadEventsResponseMessage" />
+  <wsdl:message name="EventServiceContract_LoadEvents_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEventDefinitionRequestMessage">
+    <wsdl:part name="EventDefinition" element="tns:EventDefinition" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEventDefinitionResponseMessage" />
+  <wsdl:message name="EventServiceContract_UpdateEventDefinition_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="SetDefaultEventDefinitionRequestMessage">
+    <wsdl:part name="EventDefinitionID" element="tns:EventDefinitionID" />
+  </wsdl:message>
+  <wsdl:message name="SetDefaultEventDefinitionResponseMessage" />
+  <wsdl:message name="EventServiceContract_SetDefaultEventDefinition_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="TruncateEventsRequestMessage">
+    <wsdl:part name="EventDefinitionID" element="tns:EventDefinitionID" />
+  </wsdl:message>
+  <wsdl:message name="TruncateEventsResponseMessage" />
+  <wsdl:message name="EventServiceContract_TruncateEvents_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetEventFileFormatRequestMessage">
+    <wsdl:part name="EventFileFormatGuid" element="tns:EventFileFormatGuid" />
+  </wsdl:message>
+  <wsdl:message name="GetEventFileFormatResponseMessage">
+    <wsdl:part name="EventFileFormat" element="tns:EventFileFormat" />
+  </wsdl:message>
+  <wsdl:message name="EventServiceContract_GetEventFileFormat_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetEventFileFormatsRequestMessage" />
+  <wsdl:message name="GetEventFileFormatsResponseMessage">
+    <wsdl:part name="EventFileFormats" element="tns:EventFileFormats" />
+  </wsdl:message>
+  <wsdl:message name="EventServiceContract_GetEventFileFormats_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddEventFileFormatRequestMessage">
+    <wsdl:part name="EventFileFormat" element="tns:EventFileFormat" />
+  </wsdl:message>
+  <wsdl:message name="AddEventFileFormatResponseMessage" />
+  <wsdl:message name="EventServiceContract_AddEventFileFormat_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEventFileFormatRequestMessage">
+    <wsdl:part name="EventFileFormat" element="tns:EventFileFormat" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEventFileFormatResponseMessage" />
+  <wsdl:message name="EventServiceContract_UpdateEventFileFormat_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteEventFileFormatRequestMessage">
+    <wsdl:part name="EventFileFormatID" element="tns:EventFileFormatID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteEventFileFormatResponseMessage" />
+  <wsdl:message name="EventServiceContract_DeleteEventFileFormat_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="EventServiceContract">
+    <wsdl:operation name="AddEvent">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/AddEvent" name="AddEventRequestMessage" message="tns:AddEventRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/AddEventResponse" name="AddEventResponseMessage" message="tns:AddEventResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/AddEventGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_AddEvent_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEvent">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/UpdateEvent" name="UpdateEventRequestMessage" message="tns:UpdateEventRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/UpdateEventResponse" name="UpdateEventResponseMessage" message="tns:UpdateEventResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/UpdateEventGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_UpdateEvent_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEvents">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetEvents" name="GetEventsRequestMessage" message="tns:GetEventsRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetEventsResponse" name="GetEventsResponseMessage" message="tns:GetEventsResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetEventsGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_GetEvents_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEvent">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteEvents" name="DeleteEventRequestMessage" message="tns:DeleteEventRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/DeleteEventResponse" name="DeleteEventResponseMessage" message="tns:DeleteEventResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/DeleteEventGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_DeleteEvent_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventDefinitions">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetEventDefinitions" name="GetEventDefinitionsRequestMessage" message="tns:GetEventDefinitionsRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetEventDefinitionsResponse" name="GetEventDefinitionsResponseMessage" message="tns:GetEventDefinitionsResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetEventDefinitionsGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_GetEventDefinitions_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultEventDefinition">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetDefaultEventDefinition" name="GetDefaultEventDefinitionRequestMessage" message="tns:GetDefaultEventDefinitionRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetDefaultEventDefinitionResponse" name="GetDefaultEventDefinitionResponseMessage" message="tns:GetDefaultEventDefinitionResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetDefaultEventDefinitionGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_GetDefaultEventDefinition_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddEventDefinition">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/AddEventDefinition" name="AddEventDefinitionRequestMessage" message="tns:AddEventDefinitionRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/AddEventDefinitionResponse" name="AddEventDefinitionResponseMessage" message="tns:AddEventDefinitionResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/AddEventDefinitionGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_AddEventDefinition_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEventDefinition">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteEventDefinition" name="DeleteEventDefinitionRequestMessage" message="tns:DeleteEventDefinitionRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/DeleteEventDefinitionResponse" name="DeleteEventDefinitionResponseMessage" message="tns:DeleteEventDefinitionResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/DeleteEventDefinitionGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_DeleteEventDefinition_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventsFiltered">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetEventsFiltered" name="GetEventsFilteredRequestMessage" message="tns:GetEventsFilteredRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetEventsFilteredResponse" name="GetEventsFilteredResponseMessage" message="tns:GetEventsFilteredResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetEventsFilteredGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_GetEventsFiltered_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventsNonFiltered">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetEventsNonFiltered" name="GetEventsNonFilteredRequestMessage" message="tns:GetEventsNonFilteredRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetEventsNonFilteredResponse" name="GetEventsNonFilteredResponseMessage" message="tns:GetEventsNonFilteredResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetEventsNonFilteredGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_GetEventsNonFiltered_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadEvents">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/LoadEvents" name="LoadEventsRequestMessage" message="tns:LoadEventsRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/LoadEventsResponse" name="LoadEventsResponseMessage" message="tns:LoadEventsResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/LoadEventsGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_LoadEvents_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEventDefinition">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/UpdateEventDefinition" name="UpdateEventDefinitionRequestMessage" message="tns:UpdateEventDefinitionRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/UpdateEventDefinitionResponse" name="UpdateEventDefinitionResponseMessage" message="tns:UpdateEventDefinitionResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/UpdateEventDefinitionGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_UpdateEventDefinition_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultEventDefinition">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/SetDefaultEventDefinition" name="SetDefaultEventDefinitionRequestMessage" message="tns:SetDefaultEventDefinitionRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/SetDefaultEventDefinitionResponse" name="SetDefaultEventDefinitionResponseMessage" message="tns:SetDefaultEventDefinitionResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/SetDefaultEventDefinitionGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_SetDefaultEventDefinition_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TruncateEvents">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/TruncateEvents" name="TruncateEventsRequestMessage" message="tns:TruncateEventsRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/TruncateEventsResponse" name="TruncateEventsResponseMessage" message="tns:TruncateEventsResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/TruncateEventsGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_TruncateEvents_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventFileFormat">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetEventFileFormat" name="GetEventFileFormatRequestMessage" message="tns:GetEventFileFormatRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetEventFileFormatResponse" name="GetEventFileFormatResponseMessage" message="tns:GetEventFileFormatResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetEventFileFormatGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_GetEventFileFormat_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventFileFormats">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/GetEventFileFormats" name="GetEventFileFormatsRequestMessage" message="tns:GetEventFileFormatsRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetEventFileFormatsResponse" name="GetEventFileFormatsResponseMessage" message="tns:GetEventFileFormatsResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/GetEventFileFormatsGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_GetEventFileFormats_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddEventFileFormat">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/AddEventFileFormat" name="AddEventFileFormatRequestMessage" message="tns:AddEventFileFormatRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/AddEventFileFormatResponse" name="AddEventFileFormatResponseMessage" message="tns:AddEventFileFormatResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/AddEventFileFormatGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_AddEventFileFormat_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEventFileFormat">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/UpdateEventFileFormat" name="UpdateEventFileFormatRequestMessage" message="tns:UpdateEventFileFormatRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/UpdateEventFileFormatResponse" name="UpdateEventFileFormatResponseMessage" message="tns:UpdateEventFileFormatResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/UpdateEventFileFormatGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_UpdateEventFileFormat_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEventFileFormat">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteEventFileFormat" name="DeleteEventFileFormatRequestMessage" message="tns:DeleteEventFileFormatRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/DeleteEventFileFormatResponse" name="DeleteEventFileFormatResponseMessage" message="tns:DeleteEventFileFormatResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/EventServiceContract/DeleteEventFileFormatGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:EventServiceContract_DeleteEventFileFormat_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FeedsEndpoint" type="tns:EventServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddEvent">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/AddEvent" style="document" />
+      <wsdl:input name="AddEventRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddEventResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEvent">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/UpdateEvent" style="document" />
+      <wsdl:input name="UpdateEventRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateEventResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEvents">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/GetEvents" style="document" />
+      <wsdl:input name="GetEventsRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetEventsResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEvent">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteEvents" style="document" />
+      <wsdl:input name="DeleteEventRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteEventResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventDefinitions">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/GetEventDefinitions" style="document" />
+      <wsdl:input name="GetEventDefinitionsRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetEventDefinitionsResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultEventDefinition">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/GetDefaultEventDefinition" style="document" />
+      <wsdl:input name="GetDefaultEventDefinitionRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetDefaultEventDefinitionResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddEventDefinition">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/AddEventDefinition" style="document" />
+      <wsdl:input name="AddEventDefinitionRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddEventDefinitionResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEventDefinition">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteEventDefinition" style="document" />
+      <wsdl:input name="DeleteEventDefinitionRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteEventDefinitionResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventsFiltered">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/GetEventsFiltered" style="document" />
+      <wsdl:input name="GetEventsFilteredRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetEventsFilteredResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventsNonFiltered">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/GetEventsNonFiltered" style="document" />
+      <wsdl:input name="GetEventsNonFilteredRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetEventsNonFilteredResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="LoadEvents">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/LoadEvents" style="document" />
+      <wsdl:input name="LoadEventsRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="LoadEventsResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEventDefinition">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/UpdateEventDefinition" style="document" />
+      <wsdl:input name="UpdateEventDefinitionRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateEventDefinitionResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultEventDefinition">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/SetDefaultEventDefinition" style="document" />
+      <wsdl:input name="SetDefaultEventDefinitionRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SetDefaultEventDefinitionResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="TruncateEvents">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/TruncateEvents" style="document" />
+      <wsdl:input name="TruncateEventsRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="TruncateEventsResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventFileFormat">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/GetEventFileFormat" style="document" />
+      <wsdl:input name="GetEventFileFormatRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetEventFileFormatResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventFileFormats">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/GetEventFileFormats" style="document" />
+      <wsdl:input name="GetEventFileFormatsRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetEventFileFormatsResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddEventFileFormat">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/AddEventFileFormat" style="document" />
+      <wsdl:input name="AddEventFileFormatRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddEventFileFormatResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEventFileFormat">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/UpdateEventFileFormat" style="document" />
+      <wsdl:input name="UpdateEventFileFormatRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateEventFileFormatResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEventFileFormat">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/FeedServiceContract/DeleteEventFileFormat" style="document" />
+      <wsdl:input name="DeleteEventFileFormatRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteEventFileFormatResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EventService">
+    <wsdl:port name="FeedsEndpoint" binding="tns:FeedsEndpoint">
+      <soap:address location="http://devserver2003/Inspire.Events/Svc/EventService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

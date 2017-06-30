@@ -1,0 +1,18 @@
+﻿<Window x:Class="Inspire.Client.ConfigurationWindow.Dialogs.DisplayGroupForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    xmlns:Commands="clr-namespace:Inspire.Commands;assembly=Inspire"
+    Title="Display Group Info" Height="238" Width="485" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.SaveGroupFormCommand}" Executed="SaveGroupFormExecuted" CanExecute="SaveGroupFormCanExecute" />
+    </Window.CommandBindings>
+    <Grid Background="{StaticResource PopupBackgroundBrush}">
+        <Label HorizontalAlignment="Left" Margin="12,25,0,0" Foreground="White" Name="lblGroupName" Width="89" Height="25" VerticalAlignment="Top">Group Name :</Label>
+        <Inspire:InfoTextBox TextBoxInfo="Enter A Name For The Display Group" Margin="95,27,12,0" Name="tbGroupName" Height="25" VerticalAlignment="Top" />
+        <Label HorizontalAlignment="Left" Margin="18,56,0,0" Foreground="White" Name="label1" Width="79" Height="25" VerticalAlignment="Top">Description :</Label>
+        <Inspire:InfoTextBox TextBoxInfo="Enter A Description For The Group Of Displays" Name="tbGroupDescription" Margin="95,58,12,46" TextWrapping="Wrap" />
+        <Button Height="35" Margin="189,0,146,5" Name="btnSave" VerticalAlignment="Bottom" Command="{x:Static Commands:InspireCommands.SaveGroupFormCommand}" >Save</Button>
+        <Button Height="35" HorizontalAlignment="Right" Margin="0,0,12,5" Name="btnCancel" VerticalAlignment="Bottom" Width="128" Click="btnCancel_Click">Cancel</Button>
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="PlaylistModule.PlaylistControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:transitionalsControls="clr-namespace:Transitionals.Controls;assembly=Transitionals"
+    xmlns:PlaylistModule="clr-namespace:PlaylistModule"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire" x:Name="plEl">
+    <UserControl.Resources>
+        <Inspire:ImageStringConverter x:Key="imageConverter"/>
+    </UserControl.Resources>
+        <transitionalsControls:TransitionElement VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <transitionalsControls:TransitionElement.Resources>
+                <DataTemplate DataType="{x:Type PlaylistModule:Picture}">
+                    <Grid>
+                    <Image Source="{Binding Uri, Converter={StaticResource imageConverter}}" Stretch="{Binding Stretch}">
+                    </Image>
+                </Grid>
+                </DataTemplate>
+
+                <DataTemplate DataType="{x:Type PlaylistModule:Movie}">
+                    <Grid>
+                    <MediaElement HorizontalAlignment="Center" LoadedBehavior="Manual" VerticalAlignment="Center" Stretch="{Binding Stretch}"><!--x:Name="PART_MovieElement"-->
+                            <MediaElement.Triggers>
+                                <EventTrigger RoutedEvent="MediaElement.Loaded">
+                                    <EventTrigger.Actions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <MediaTimeline Source="{Binding Uri}"  RepeatBehavior="Forever" />
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger.Actions>
+                                </EventTrigger>
+                            </MediaElement.Triggers>
+                        </MediaElement>
+                    </Grid>
+                </DataTemplate>
+            </transitionalsControls:TransitionElement.Resources>
+        </transitionalsControls:TransitionElement>
+</UserControl>

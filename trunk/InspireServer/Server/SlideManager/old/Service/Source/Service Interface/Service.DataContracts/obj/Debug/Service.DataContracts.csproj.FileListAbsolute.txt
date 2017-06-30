@@ -1,0 +1,10 @@
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.DataContracts\bin\Debug\Service.DataContracts.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.DataContracts\bin\Debug\Service.DataContracts.pdb
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.DataContracts\obj\Debug\Service.DataContracts.dll
+C:\_WORKING\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.DataContracts\obj\Debug\Service.DataContracts.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.DataContracts\bin\Debug\Service.DataContracts.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.DataContracts\bin\Debug\Service.DataContracts.pdb
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.DataContracts\obj\Debug\Service.DataContracts.dll
+C:\_WORKING_NO_SERVER\Inspire.Server.SlideManager\Service\Source\Service Interface\Service.DataContracts\obj\Debug\Service.DataContracts.pdb

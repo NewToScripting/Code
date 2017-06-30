@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="7.7" version="7.7" Modules="professional" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_MINDOTNETVERSION" MultiBuildValue="DefaultBuild:4.0 Client Profile" ValueLocId="-"/>
+    <ROW Property="AI_MINRAM" MultiBuildValue="DefaultBuild:512" ValueLocId="-"/>
+    <ROW Property="AI_MINXRESOLUTION" MultiBuildValue="DefaultBuild:800" ValueLocId="-"/>
+    <ROW Property="AI_MINYRESOLUTION" MultiBuildValue="DefaultBuild:600" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="support@inspiredisplays.com"/>
+    <ROW Property="ARPHELPTELEPHONE" Value="1-877-512-3456"/>
+    <ROW Property="ARPPRODUCTICON" Value="InspireI.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="www.inspiredisplays.com"/>
+    <ROW Property="BannerBitmap" MultiBuildValue="DefaultBuild:header6.jpg" Type="1"/>
+    <ROW Property="DialogBitmap" MultiBuildValue="DefaultBuild:style23_dialog.jpg" Type="1"/>
+    <ROW Property="Manufacturer" Value="Inspire Digital Signage" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{ECE72BC1-C4CB-4F98-8F51-B86A678A188C} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Inspire Client" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.5.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{F603BAD0-DB26-4BF4-8A17-6A254B9F7448}"/>
+    <ROW Property="WindowsFamily9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT" MultiBuildValue="DefaultBuild:Windows XP x86 Service Pack 3" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="AppDataFolder" Directory_Parent="TARGETDIR" DefaultDir="AppDat~1|AppDataFolder" IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Internet_Explorer_DIR" Directory_Parent="Microsoft_DIR" DefaultDir="Intern~1|Internet Explorer"/>
+    <ROW Directory="Microsoft_DIR" Directory_Parent="AppDataFolder" DefaultDir="Micros~1|Microsoft"/>
+    <ROW Directory="Modules_DIR" Directory_Parent="APPDIR" DefaultDir="Modules"/>
+    <ROW Directory="Quick_Launch_DIR" Directory_Parent="Internet_Explorer_DIR" DefaultDir="QuickL~1|Quick Launch"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="StartMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="StartM~1|StartMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{BA0ED397-F918-4B89-81CC-4F38616E7394}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="ActiproSoftware.Ribbon.Wpf30.dll" ComponentId="{C50E2C2E-29A8-4415-B7B4-BDE32E763F8D}" Directory_="APPDIR" Attributes="0" KeyPath="ActiproSoftware.Ribbon.Wpf30.dll"/>
+    <ROW Component="ActiproSoftware.Ribbon.Wpf30.dll_1" ComponentId="{C8E37D44-A5CA-44D4-AB30-A7679E3FE79C}" Directory_="Modules_DIR" Attributes="0" KeyPath="ActiproSoftware.Ribbon.Wpf30.dll_1"/>
+    <ROW Component="ActiproSoftware.Shared.Wpf30.dll" ComponentId="{01388CCB-FA85-4875-A5B7-753F8D1D5C6C}" Directory_="APPDIR" Attributes="0" KeyPath="ActiproSoftware.Shared.Wpf30.dll"/>
+    <ROW Component="ActiproSoftware.Shared.Wpf30.dll_1" ComponentId="{71E3CB63-AFAD-4E74-A996-FE8DAA725802}" Directory_="Modules_DIR" Attributes="0" KeyPath="ActiproSoftware.Shared.Wpf30.dll_1"/>
+    <ROW Component="BubbleModule.dll" ComponentId="{60DB9C0B-300E-4FB5-A7CC-BF074DAA3140}" Directory_="Modules_DIR" Attributes="0" KeyPath="BubbleModule.dll"/>
+    <ROW Component="DateTimeModule.dll" ComponentId="{CF4EC3F1-506D-4FF1-8E57-62EBF25FDAE6}" Directory_="Modules_DIR" Attributes="0" KeyPath="DateTimeModule.dll"/>
+    <ROW Component="DevComponents.WpfDock.dll" ComponentId="{E2312265-7AE3-4424-8C61-42139E86586D}" Directory_="APPDIR" Attributes="0" KeyPath="DevComponents.WpfDock.dll"/>
+    <ROW Component="DevComponents.WpfEditors.dll" ComponentId="{C29602BF-34D2-45A1-8F8D-8FC20B04F5B1}" Directory_="APPDIR" Attributes="0" KeyPath="DevComponents.WpfEditors.dll"/>
+    <ROW Component="DevComponents.WpfEditors.dll_1" ComponentId="{C07E755D-6725-4939-880B-C481040AAE7E}" Directory_="Modules_DIR" Attributes="0" KeyPath="DevComponents.WpfEditors.dll_1"/>
+    <ROW Component="DevComponents.WpfRibbon.dll" ComponentId="{E0969777-9477-43A3-8ED7-94B4A6903990}" Directory_="APPDIR" Attributes="0" KeyPath="DevComponents.WpfRibbon.dll"/>
+    <ROW Component="DevComponents.WpfRibbon.dll_1" ComponentId="{524E55C3-6E02-4D9C-8D14-55AC9F579EFA}" Directory_="Modules_DIR" Attributes="0" KeyPath="DevComponents.WpfRibbon.dll_1"/>
+    <ROW Component="DevComponents.WpfSchedule.dll" ComponentId="{6947895E-50D1-4FBC-AB58-5C4A6A78F8F0}" Directory_="APPDIR" Attributes="0" KeyPath="DevComponents.WpfSchedule.dll"/>
+    <ROW Component="EffectLibrary.dll" ComponentId="{5ED7156B-6E29-4170-AC92-D48D20050E9C}" Directory_="APPDIR" Attributes="0" KeyPath="EffectLibrary.dll"/>
+    <ROW Component="EffectLibrary.dll_1" ComponentId="{A959726D-13DC-4ACD-A51B-9EAA486FF38E}" Directory_="Modules_DIR" Attributes="0" KeyPath="EffectLibrary.dll_1"/>
+    <ROW Component="IdentityMine.Evaluators.JScript.dll" ComponentId="{3955DCD5-FBA8-4046-9C9E-040DBB3E16C7}" Directory_="Modules_DIR" Attributes="0" KeyPath="IdentityMine.Evaluators.JScript.dll"/>
+    <ROW Component="IdentityMine.Windows.Panels.dll" ComponentId="{177FAB30-0BFB-4F39-A710-244FFFFA3C8A}" Directory_="Modules_DIR" Attributes="0" KeyPath="IdentityMine.Windows.Panels.dll"/>
+    <ROW Component="IdentityMine.Windows.dll" ComponentId="{EB7FC3CE-BD73-4849-9784-FC91A897BAAC}" Directory_="Modules_DIR" Attributes="0" KeyPath="IdentityMine.Windows.dll"/>
+    <ROW Component="ImageModule.dll" ComponentId="{703B8F16-85E9-4F72-A5EC-FE527C9F9BF0}" Directory_="Modules_DIR" Attributes="0" KeyPath="ImageModule.dll"/>
+    <ROW Component="Infragistics.ToyBox.dll" ComponentId="{86E5518F-10B5-4107-806C-EEA58A125C15}" Directory_="APPDIR" Attributes="0" KeyPath="Infragistics.ToyBox.dll"/>
+    <ROW Component="Infragistics.ToyBox.dll_1" ComponentId="{11B95EE5-4068-40E9-B7A2-27B1263D30CE}" Directory_="Modules_DIR" Attributes="0" KeyPath="Infragistics.ToyBox.dll_1"/>
+    <ROW Component="Inspire.AnimationLibrary.dll" ComponentId="{7353AC75-8CFC-462B-81C5-A401098CB0DE}" Directory_="APPDIR" Attributes="0" KeyPath="Inspire.AnimationLibrary.dll"/>
+    <ROW Component="Inspire.AnimationLibrary.dll_1" ComponentId="{86A8093A-A978-4463-8812-EF7456DCCD54}" Directory_="Modules_DIR" Attributes="0" KeyPath="Inspire.AnimationLibrary.dll_1"/>
+    <ROW Component="Inspire.Client.ConfigurationWindow.dll" ComponentId="{2FC8FB63-AEE3-4C29-8677-F9526F36E0A6}" Directory_="APPDIR" Attributes="0" KeyPath="Inspire.Client.ConfigurationWindow.dll"/>
+    <ROW Component="Inspire.Client.ConfigurationWindow.dll_1" ComponentId="{9F2D7EBA-2670-4F0D-B3E3-2B13D1DECD8A}" Directory_="Modules_DIR" Attributes="0" KeyPath="Inspire.Client.ConfigurationWindow.dll_1"/>
+    <ROW Component="Inspire.Client.Designer.dll" ComponentId="{2F155ADF-786F-4868-B990-1C323F7D49DB}" Directory_="APPDIR" Attributes="0" KeyPath="Inspire.Client.Designer.dll"/>
+    <ROW Component="Inspire.Client.Designer.dll_1" ComponentId="{68F5FF7F-524E-4B2A-B0FA-6AEDB4ECA4AA}" Directory_="Modules_DIR" Attributes="0" KeyPath="Inspire.Client.Designer.dll_1"/>
+    <ROW Component="Inspire.Client.ScheduleWindow.dll" ComponentId="{3D8A0C0A-C1DD-427E-BB36-86EDD86BA78A}" Directory_="APPDIR" Attributes="0" KeyPath="Inspire.Client.ScheduleWindow.dll"/>
+    <ROW Component="Inspire.Client.exe" ComponentId="{7C538E1E-3435-40B8-B101-623C98767DEB}" Directory_="APPDIR" Attributes="0" KeyPath="Inspire.Client.exe"/>
+    <ROW Component="Inspire.Client.exe.config" ComponentId="{30335550-9D1A-4147-841F-A2F709810E76}" Directory_="APPDIR" Attributes="0" KeyPath="Inspire.Client.exe.config" Type="0"/>
+    <ROW Component="Inspire.Common.dll" ComponentId="{B8C0FFB1-BA1C-4C3E-873D-2D5AE130683B}" Directory_="APPDIR" Attributes="0" KeyPath="Inspire.Common.dll"/>
+    <ROW Component="Inspire.Common.dll_1" ComponentId="{8B2D7017-8112-4E38-A61B-BC349B7CF73D}" Directory_="Modules_DIR" Attributes="0" KeyPath="Inspire.Common.dll_1"/>
+    <ROW Component="Inspire.Server.Proxy.dll" ComponentId="{0BC9E049-CEE5-483E-B939-DA67D84CA7FC}" Directory_="APPDIR" Attributes="0" KeyPath="Inspire.Server.Proxy.dll"/>
+    <ROW Component="Inspire.Server.Proxy.dll_1" ComponentId="{2625AC26-196F-4EA5-8090-303D87873EC1}" Directory_="Modules_DIR" Attributes="0" KeyPath="Inspire.Server.Proxy.dll_1"/>
+    <ROW Component="Inspire.dll" ComponentId="{C7B74893-139B-4608-A7A1-C7BDA021C7B3}" Directory_="APPDIR" Attributes="0" KeyPath="Inspire.dll"/>
+    <ROW Component="Inspire.dll_1" ComponentId="{2ACBB0A4-E6CB-4589-A759-1D6EE5E8C258}" Directory_="Modules_DIR" Attributes="0" KeyPath="Inspire.dll_1"/>
+    <ROW Component="Ionic.Zip.dll" ComponentId="{9C409499-3A6B-42BC-8FAD-F036D5A02542}" Directory_="APPDIR" Attributes="0" KeyPath="Ionic.Zip.dll"/>
+    <ROW Component="Ionic.Zip.dll_1" ComponentId="{C9DC1DFC-BC38-49E3-8B4B-F8F2690E8D4D}" Directory_="Modules_DIR" Attributes="0" KeyPath="Ionic.Zip.dll_1"/>
+    <ROW Component="NET_Framework_4.0" ComponentId="{4A74F88A-7AFF-4BCF-86FF-08B72D52F352}" Directory_="APPDIR" Attributes="4" KeyPath="NET_Framework_4.0" Options="2"/>
+    <ROW Component="PlaylistModule.dll" ComponentId="{91DE41F1-B8B6-4B35-8709-1ADD8D7A2BB7}" Directory_="Modules_DIR" Attributes="0" KeyPath="PlaylistModule.dll"/>
+    <ROW Component="QuickTimeModule.dll" ComponentId="{DE3F7A59-6B90-456D-8DDE-77236F23155B}" Directory_="Modules_DIR" Attributes="0" KeyPath="QuickTimeModule.dll"/>
+    <ROW Component="Quick_Launch" ComponentId="{073B507A-B85C-461A-9182-50E0ADB780D7}" Directory_="Quick_Launch_DIR" Attributes="0"/>
+    <ROW Component="RSSModule.dll" ComponentId="{6E6BF0F2-62C5-4828-B4A5-9AB495098C31}" Directory_="Modules_DIR" Attributes="0" KeyPath="RSSModule.dll"/>
+    <ROW Component="ReflectionModule.dll" ComponentId="{CD0543B3-7C6E-4050-8710-73698B83B0A0}" Directory_="Modules_DIR" Attributes="0" KeyPath="ReflectionModule.dll"/>
+    <ROW Component="RichTextModule.dll" ComponentId="{34D9B862-76C1-4A29-8362-077C6C825191}" Directory_="Modules_DIR" Attributes="0" KeyPath="RichTextModule.dll"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{22772BB5-34F9-4023-92FA-8DC0BCEC2CF8}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="ScrollModule.dll" ComponentId="{C42D2255-A8C4-4F61-94EF-B611B159186F}" Directory_="Modules_DIR" Attributes="0" KeyPath="ScrollModule.dll"/>
+    <ROW Component="ShapesModule.dll" ComponentId="{8B5BBE88-F6C7-4316-9BA4-385D596F45E8}" Directory_="Modules_DIR" Attributes="0" KeyPath="ShapesModule.dll"/>
+    <ROW Component="Transitionals.dll" ComponentId="{A796EEEF-200B-439F-A668-7BBC73B62A61}" Directory_="APPDIR" Attributes="0" KeyPath="Transitionals.dll"/>
+    <ROW Component="Transitionals.dll_1" ComponentId="{67BF3F38-A60F-4099-8593-3CAA8BC1F5A4}" Directory_="Modules_DIR" Attributes="0" KeyPath="Transitionals.dll_1"/>
+    <ROW Component="UserConfig.dll" ComponentId="{E08A19D0-5725-4029-A266-623A61566476}" Directory_="Modules_DIR" Attributes="0" KeyPath="UserConfig.dll"/>
+    <ROW Component="VideoModule.dll" ComponentId="{DCB01797-596F-4D14-B571-365E08851405}" Directory_="Modules_DIR" Attributes="0" KeyPath="VideoModule.dll"/>
+    <ROW Component="WPFToolkit.dll" ComponentId="{9580C607-C8A3-45EB-837B-32B70F37464F}" Directory_="Modules_DIR" Attributes="0" KeyPath="WPFToolkit.dll"/>
+    <ROW Component="WeatherModule.Proxy.dll" ComponentId="{10548546-7243-4595-BC6C-684C9094B42D}" Directory_="Modules_DIR" Attributes="0" KeyPath="WeatherModule.Proxy.dll"/>
+    <ROW Component="WeatherModule.dll" ComponentId="{E365E52D-DAE7-4E20-B8A3-97FC646553C3}" Directory_="Modules_DIR" Attributes="0" KeyPath="WeatherModule.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_ExePath Inspire.Client.exe ActiproSoftware.Ribbon.Wpf30.dll ActiproSoftware.Shared.Wpf30.dll DevComponents.WpfDock.dll DevComponents.WpfEditors.dll DevComponents.WpfRibbon.dll DevComponents.WpfSchedule.dll EffectLibrary.dll Infragistics.ToyBox.dll Inspire.AnimationLibrary.dll Inspire.Client.ConfigurationWindow.dll Inspire.Client.Designer.dll Inspire.Client.ScheduleWindow.dll Inspire.Common.dll Inspire.dll Inspire.Server.Proxy.dll Ionic.Zip.dll Transitionals.dll ActiproSoftware.Ribbon.Wpf30.dll_1 ActiproSoftware.Shared.Wpf30.dll_1 BubbleModule.dll DateTimeModule.dll DevComponents.WpfEditors.dll_1 DevComponents.WpfRibbon.dll_1 EffectLibrary.dll_1 IdentityMine.Evaluators.JScript.dll IdentityMine.Windows.dll IdentityMine.Windows.Panels.dll ImageModule.dll Infragistics.ToyBox.dll_1 Inspire.AnimationLibrary.dll_1 Inspire.Client.ConfigurationWindow.dll_1 Inspire.Client.Designer.dll_1 Inspire.Common.dll_1 Inspire.dll_1 Inspire.Server.Proxy.dll_1 Ionic.Zip.dll_1 PlaylistModule.dll QuickTimeModule.dll ReflectionModule.dll RichTextModule.dll RSSModule.dll ScrollModule.dll ShapesModule.dll Transitionals.dll_1 UserConfig.dll VideoModule.dll WeatherModule.dll WeatherModule.Proxy.dll WPFToolkit.dll Inspire.Client.exe.config SHORTCUTDIR Quick_Launch"/>
+    <ROW Feature="NET_Framework_4.0" Title=".NET Framework 4.0" Description=".NET Framework 4.0" Display="3" Level="1" Attributes="0" Components="NET_Framework_4.0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="ActiproSoftware.Ribbon.Wpf30.dll" Component_="ActiproSoftware.Ribbon.Wpf30.dll" FileName="Actipr~1.dll|ActiproSoftware.Ribbon.Wpf30.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\ActiproSoftware.Ribbon.Wpf30.dll" SelfReg="false" Sequence="2"/>
+    <ROW File="ActiproSoftware.Ribbon.Wpf30.dll_1" Component_="ActiproSoftware.Ribbon.Wpf30.dll_1" FileName="Actipr~1.dll|ActiproSoftware.Ribbon.Wpf30.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\ActiproSoftware.Ribbon.Wpf30.dll" SelfReg="false" Sequence="19"/>
+    <ROW File="ActiproSoftware.Shared.Wpf30.dll" Component_="ActiproSoftware.Shared.Wpf30.dll" FileName="Actipr~2.dll|ActiproSoftware.Shared.Wpf30.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\ActiproSoftware.Shared.Wpf30.dll" SelfReg="false" Sequence="3"/>
+    <ROW File="ActiproSoftware.Shared.Wpf30.dll_1" Component_="ActiproSoftware.Shared.Wpf30.dll_1" FileName="Actipr~2.dll|ActiproSoftware.Shared.Wpf30.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\ActiproSoftware.Shared.Wpf30.dll" SelfReg="false" Sequence="20"/>
+    <ROW File="BubbleModule.dll" Component_="BubbleModule.dll" FileName="Bubble~1.dll|BubbleModule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\BubbleModule.dll" SelfReg="false" Sequence="21"/>
+    <ROW File="DateTimeModule.dll" Component_="DateTimeModule.dll" FileName="DateTi~1.dll|DateTimeModule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\DateTimeModule.dll" SelfReg="false" Sequence="22"/>
+    <ROW File="DevComponents.WpfDock.dll" Component_="DevComponents.WpfDock.dll" FileName="DevCom~1.dll|DevComponents.WpfDock.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\DevComponents.WpfDock.dll" SelfReg="false" Sequence="4"/>
+    <ROW File="DevComponents.WpfEditors.dll" Component_="DevComponents.WpfEditors.dll" FileName="DevCom~2.dll|DevComponents.WpfEditors.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\DevComponents.WpfEditors.dll" SelfReg="false" Sequence="5"/>
+    <ROW File="DevComponents.WpfEditors.dll_1" Component_="DevComponents.WpfEditors.dll_1" FileName="DevCom~1.dll|DevComponents.WpfEditors.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\DevComponents.WpfEditors.dll" SelfReg="false" Sequence="23"/>
+    <ROW File="DevComponents.WpfRibbon.dll" Component_="DevComponents.WpfRibbon.dll" FileName="DevCom~3.dll|DevComponents.WpfRibbon.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\DevComponents.WpfRibbon.dll" SelfReg="false" Sequence="6"/>
+    <ROW File="DevComponents.WpfRibbon.dll_1" Component_="DevComponents.WpfRibbon.dll_1" FileName="DevCom~2.dll|DevComponents.WpfRibbon.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\DevComponents.WpfRibbon.dll" SelfReg="false" Sequence="24"/>
+    <ROW File="DevComponents.WpfSchedule.dll" Component_="DevComponents.WpfSchedule.dll" FileName="DevCom~4.dll|DevComponents.WpfSchedule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\DevComponents.WpfSchedule.dll" SelfReg="false" Sequence="7"/>
+    <ROW File="EffectLibrary.dll" Component_="EffectLibrary.dll" FileName="Effect~1.dll|EffectLibrary.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\EffectLibrary.dll" SelfReg="false" Sequence="8"/>
+    <ROW File="EffectLibrary.dll_1" Component_="EffectLibrary.dll_1" FileName="Effect~1.dll|EffectLibrary.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\EffectLibrary.dll" SelfReg="false" Sequence="25"/>
+    <ROW File="IdentityMine.Evaluators.JScript.dll" Component_="IdentityMine.Evaluators.JScript.dll" FileName="Identi~1.dll|IdentityMine.Evaluators.JScript.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\IdentityMine.Evaluators.JScript.dll" SelfReg="false" Sequence="26"/>
+    <ROW File="IdentityMine.Windows.Panels.dll" Component_="IdentityMine.Windows.Panels.dll" FileName="Identi~3.dll|IdentityMine.Windows.Panels.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\IdentityMine.Windows.Panels.dll" SelfReg="false" Sequence="28"/>
+    <ROW File="IdentityMine.Windows.dll" Component_="IdentityMine.Windows.dll" FileName="Identi~2.dll|IdentityMine.Windows.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\IdentityMine.Windows.dll" SelfReg="false" Sequence="27"/>
+    <ROW File="ImageModule.dll" Component_="ImageModule.dll" FileName="ImageM~1.dll|ImageModule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\ImageModule.dll" SelfReg="false" Sequence="29"/>
+    <ROW File="Infragistics.ToyBox.dll" Component_="Infragistics.ToyBox.dll" FileName="Infrag~1.dll|Infragistics.ToyBox.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Infragistics.ToyBox.dll" SelfReg="false" Sequence="9"/>
+    <ROW File="Infragistics.ToyBox.dll_1" Component_="Infragistics.ToyBox.dll_1" FileName="Infrag~1.dll|Infragistics.ToyBox.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\Infragistics.ToyBox.dll" SelfReg="false" Sequence="30"/>
+    <ROW File="Inspire.AnimationLibrary.dll" Component_="Inspire.AnimationLibrary.dll" FileName="Inspir~1.dll|Inspire.AnimationLibrary.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Inspire.AnimationLibrary.dll" SelfReg="false" Sequence="10"/>
+    <ROW File="Inspire.AnimationLibrary.dll_1" Component_="Inspire.AnimationLibrary.dll_1" FileName="Inspir~1.dll|Inspire.AnimationLibrary.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\Inspire.AnimationLibrary.dll" SelfReg="false" Sequence="31"/>
+    <ROW File="Inspire.Client.ConfigurationWindow.dll" Component_="Inspire.Client.ConfigurationWindow.dll" FileName="Inspir~2.dll|Inspire.Client.ConfigurationWindow.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Inspire.Client.ConfigurationWindow.dll" SelfReg="false" Sequence="11"/>
+    <ROW File="Inspire.Client.ConfigurationWindow.dll_1" Component_="Inspire.Client.ConfigurationWindow.dll_1" FileName="Inspir~2.dll|Inspire.Client.ConfigurationWindow.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\Inspire.Client.ConfigurationWindow.dll" SelfReg="false" Sequence="32"/>
+    <ROW File="Inspire.Client.Designer.dll" Component_="Inspire.Client.Designer.dll" FileName="Inspir~3.dll|Inspire.Client.Designer.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Inspire.Client.Designer.dll" SelfReg="false" Sequence="12"/>
+    <ROW File="Inspire.Client.Designer.dll_1" Component_="Inspire.Client.Designer.dll_1" FileName="Inspir~3.dll|Inspire.Client.Designer.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\Inspire.Client.Designer.dll" SelfReg="false" Sequence="33"/>
+    <ROW File="Inspire.Client.ScheduleWindow.dll" Component_="Inspire.Client.ScheduleWindow.dll" FileName="Inspir~4.dll|Inspire.Client.ScheduleWindow.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Inspire.Client.ScheduleWindow.dll" SelfReg="false" Sequence="13"/>
+    <ROW File="Inspire.Client.exe" Component_="Inspire.Client.exe" FileName="Inspir~1.exe|Inspire.Client.exe" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Inspire.Client.exe" SelfReg="false" Sequence="1"/>
+    <ROW File="Inspire.Client.exe.config" Component_="Inspire.Client.exe.config" FileName="Inspir~1.con|Inspire.Client.exe.config" Attributes="0" SourcePath="..\Configs\Client\Inspire.Client.exe.config" SelfReg="false" Sequence="51"/>
+    <ROW File="Inspire.Common.dll" Component_="Inspire.Common.dll" FileName="Inspir~5.dll|Inspire.Common.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Inspire.Common.dll" SelfReg="false" Sequence="14"/>
+    <ROW File="Inspire.Common.dll_1" Component_="Inspire.Common.dll_1" FileName="Inspir~4.dll|Inspire.Common.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\Inspire.Common.dll" SelfReg="false" Sequence="34"/>
+    <ROW File="Inspire.Server.Proxy.dll" Component_="Inspire.Server.Proxy.dll" FileName="Inspir~6.dll|Inspire.Server.Proxy.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Inspire.Server.Proxy.dll" SelfReg="false" Sequence="16"/>
+    <ROW File="Inspire.Server.Proxy.dll_1" Component_="Inspire.Server.Proxy.dll_1" FileName="Inspir~5.dll|Inspire.Server.Proxy.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\Inspire.Server.Proxy.dll" SelfReg="false" Sequence="36"/>
+    <ROW File="Inspire.dll" Component_="Inspire.dll" FileName="Inspire.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Inspire.dll" SelfReg="false" Sequence="15"/>
+    <ROW File="Inspire.dll_1" Component_="Inspire.dll_1" FileName="Inspire.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\Inspire.dll" SelfReg="false" Sequence="35"/>
+    <ROW File="Ionic.Zip.dll" Component_="Ionic.Zip.dll" FileName="IonicZ~1.dll|Ionic.Zip.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Ionic.Zip.dll" SelfReg="false" Sequence="17"/>
+    <ROW File="Ionic.Zip.dll_1" Component_="Ionic.Zip.dll_1" FileName="IonicZ~1.dll|Ionic.Zip.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\Ionic.Zip.dll" SelfReg="false" Sequence="37"/>
+    <ROW File="PlaylistModule.dll" Component_="PlaylistModule.dll" FileName="Playli~1.dll|PlaylistModule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\PlaylistModule.dll" SelfReg="false" Sequence="38"/>
+    <ROW File="QuickTimeModule.dll" Component_="QuickTimeModule.dll" FileName="QuickT~1.dll|QuickTimeModule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\QuickTimeModule.dll" SelfReg="false" Sequence="39"/>
+    <ROW File="RSSModule.dll" Component_="RSSModule.dll" FileName="RSSMod~1.dll|RSSModule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\RSSModule.dll" SelfReg="false" Sequence="42"/>
+    <ROW File="ReflectionModule.dll" Component_="ReflectionModule.dll" FileName="Reflec~1.dll|ReflectionModule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\ReflectionModule.dll" SelfReg="false" Sequence="40"/>
+    <ROW File="RichTextModule.dll" Component_="RichTextModule.dll" FileName="RichTe~1.dll|RichTextModule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\RichTextModule.dll" SelfReg="false" Sequence="41"/>
+    <ROW File="ScrollModule.dll" Component_="ScrollModule.dll" FileName="Scroll~1.dll|ScrollModule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\ScrollModule.dll" SelfReg="false" Sequence="43"/>
+    <ROW File="ServerSettings.config" Component_="Inspire.Client.exe.config" FileName="Server~1.con|ServerSettings.config" Attributes="0" SourcePath="..\Configs\Client\ServerSettings.config" SelfReg="false" Sequence="52"/>
+    <ROW File="ShapesModule.dll" Component_="ShapesModule.dll" FileName="Shapes~1.dll|ShapesModule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\ShapesModule.dll" SelfReg="false" Sequence="44"/>
+    <ROW File="Transitionals.dll" Component_="Transitionals.dll" FileName="Transi~1.dll|Transitionals.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Transitionals.dll" SelfReg="false" Sequence="18"/>
+    <ROW File="Transitionals.dll_1" Component_="Transitionals.dll_1" FileName="Transi~1.dll|Transitionals.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\Transitionals.dll" SelfReg="false" Sequence="45"/>
+    <ROW File="UserConfig.dll" Component_="UserConfig.dll" FileName="UserCo~1.dll|UserConfig.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\UserConfig.dll" SelfReg="false" Sequence="46"/>
+    <ROW File="VideoModule.dll" Component_="VideoModule.dll" FileName="VideoM~1.dll|VideoModule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\VideoModule.dll" SelfReg="false" Sequence="47"/>
+    <ROW File="WPFToolkit.dll" Component_="WPFToolkit.dll" FileName="WPFToo~1.dll|WPFToolkit.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\WPFToolkit.dll" SelfReg="false" Sequence="50"/>
+    <ROW File="WeatherModule.Proxy.dll" Component_="WeatherModule.Proxy.dll" FileName="Weathe~2.dll|WeatherModule.Proxy.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\WeatherModule.Proxy.dll" SelfReg="false" Sequence="49"/>
+    <ROW File="WeatherModule.dll" Component_="WeatherModule.dll" FileName="Weathe~1.dll|WeatherModule.dll" Attributes="0" SourcePath="..\..\trunk\InspireClient\InspireClient\bin\Release\Modules\WeatherModule.dll" SelfReg="false" Sequence="48"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="InspireClient-SetupFiles" PackageFileName="ClientInstaller" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\install"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DownloadPrereq" Description="Downloading prerequisite software" Template="Downloading [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_DownloadPrereq" TemplateLocId="ActionText.Template.AI_DownloadPrereq"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractPrereq" Description="Extracting prerequisite software" Template="Extracting [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_ExtractPrereq" TemplateLocId="ActionText.Template.AI_ExtractPrereq"/>
+    <ROW Action="AI_InstallPostPrerequisite" Description="Installing prerequisite software" Template="Installing [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_InstallPrerequisite" Description="Installing prerequisite software" Template="Installing [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_VerifyPrereq" Description="Verifying prerequisites" Template="[1] was not installed correctly." DescriptionLocId="ActionText.Description.AI_VerifyPrereq" TemplateLocId="ActionText.Template.AI_VerifyPrereq"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_DOTNET40_CLIENTPROFILE_SEARCH" Signature_="AI_DotNet40ClientProfileSearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="AI_DOTNET40_SEARCH" Signature_="AI_DotNet40SearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="header6.jpg" SourcePath="..\icons\header6.jpg"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+    <ROW Name="style23_dialog.jpg" SourcePath="&lt;AI_THEMES&gt;classic\resources\style23_dialog.jpg"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="4"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="2"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR"/>
+    <ROW Directory_="Quick_Launch_DIR" Component_="Quick_Launch"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_CleanPrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DownloadPrereq" Type="1" Source="Prereq.dll" Target="DownloadPrereq"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_ExtractPrereq" Type="65" Source="Prereq.dll" Target="ExtractPrereq"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_InstallPostPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPostPrereq"/>
+    <ROW Action="AI_InstallPrerequisite" Type="65" Source="Prereq.dll" Target="InstallPrereq"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_VerifyPrereq" Type="1" Source="Prereq.dll" Target="VerifyPrereq"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder]Inspire\Client"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="DefaultBuild:[DesktopFolder]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="InspireI.exe" SourcePath="..\icons\InspireI.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_VerifyPrereq" Sequence="1201"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_InstallPrerequisite" Sequence="1283"/>
+    <ROW Action="AI_InstallPostPrerequisite" Sequence="1301"/>
+    <ROW Action="AI_ExtractPrereq" Sequence="1282"/>
+    <ROW Action="AI_DownloadPrereq" Sequence="1281"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(AI_DOTNET40_CLIENTPROFILE_SEARCH = &quot;#1&quot;) OR (AI_DOTNET40_SEARCH = &quot;#1&quot;)" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_MINDOTNETVERSION]" DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="PhysicalMemory &gt;= AI_MINRAM" Description="[ProductName] cannot be installed on systems with less physical memory than [AI_MINRAM] MB." DescriptionLocId="AI.LaunchCondition.RAM" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="ScreenX &gt;= AI_MINXRESOLUTION AND ScreenY &gt;= AI_MINYRESOLUTION" Description="[ProductName] cannot be installed on systems with screen resolution smaller than [AI_MINXRESOLUTION] x [AI_MINYRESOLUTION]." DescriptionLocId="AI.LaunchCondition.Resolution" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="Version9X OR VersionNT64 OR ((VersionNT &gt; 501) OR ((VersionNT = 501) AND (ServicePackLevel &gt;= 3)))" Description="[ProductName] cannot be installed on systems earlier than [WindowsTypeNT]" DescriptionLocId="AI.LaunchCondition.NoSpecificNT" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsFamily9X]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_DotNet40ClientProfileSearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client" Name="Install" Type="2"/>
+    <ROW Signature_="AI_DotNet40SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" Name="Install" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="NET_Framework_4.0" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="NET_Framework_4.0" Value="1" Component_="NET_Framework_4.0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Inspire_Client" Directory_="SHORTCUTDIR" Name="Inspir~1|Inspire Client" Component_="Inspire.Client.exe" Target="[#Inspire.Client.exe]" Description="Create, Manage, and Schedule Content." Hotkey="0" Icon_="InspireI.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Inspire_Client_1" Directory_="DesktopFolder" Name="Inspir~1|Inspire Client" Component_="Inspire.Client.exe" Target="[#Inspire.Client.exe]" Description="Create, Manage, and Schedule Content." Hotkey="0" Icon_="InspireI.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Inspire_Client_2" Directory_="Quick_Launch_DIR" Name="Inspir~1|Inspire Client" Component_="Inspire.Client.exe" Target="[#Inspire.Client.exe]" Description="Create, Manage, and Schedule Content." Hotkey="0" Icon_="InspireI.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Inspire_Client_3" Directory_="StartMenuFolder" Name="Inspir~1|Inspire Client" Component_="Inspire.Client.exe" Target="[#Inspire.Client.exe]" Description="Create, Manage, and Schedule Content." Hotkey="0" Icon_="InspireI.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="NET_Framework_4.0" DisplayName=".NET Framework 4.0" SetupFileUrl="http://inspiredisplays.com/FTP/dotNetFx40_Full_x86_x64.exe" Location="1" ExactSize="0" MinWin9xVer="47" MinWinNTVer="25" Operator="1" Type="1" Feature="NET_Framework_4.0"/>
+    <ATTRIBUTE name="PrereqsOrder" value="NET_Framework_4.0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="Install" Prereq="NET_Framework_4.0" SearchType="9" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Install" RefContent="M1" Order="1" Property="PreReqSearch"/>
+  </COMPONENT>
+</DOCUMENT>

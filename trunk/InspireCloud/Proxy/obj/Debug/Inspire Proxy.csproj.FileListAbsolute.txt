@@ -1,0 +1,10 @@
+C:\New_Code\InspireCloud\Proxy\bin\Inspire Proxy.dll.config
+C:\New_Code\InspireCloud\Proxy\bin\Inspire Proxy.dll
+C:\New_Code\InspireCloud\Proxy\bin\Inspire Proxy.pdb
+C:\New_Code\InspireCloud\Proxy\obj\Debug\Inspire Proxy.dll
+C:\New_Code\InspireCloud\Proxy\obj\Debug\Inspire Proxy.pdb
+C:\CODE\trunk\InspireCloud\Proxy\bin\Inspire Proxy.dll.config
+C:\CODE\trunk\InspireCloud\Proxy\bin\Inspire Proxy.dll
+C:\CODE\trunk\InspireCloud\Proxy\bin\Inspire Proxy.pdb
+C:\CODE\trunk\InspireCloud\Proxy\obj\Debug\Inspire Proxy.dll
+C:\CODE\trunk\InspireCloud\Proxy\obj\Debug\Inspire Proxy.pdb

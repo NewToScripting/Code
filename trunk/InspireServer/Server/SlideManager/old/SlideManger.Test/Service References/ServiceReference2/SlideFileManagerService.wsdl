@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://schemas.inspiredisplays.com" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="SlideFileManagerService" targetNamespace="http://schemas.inspiredisplays.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/Imports">
+      <xsd:import schemaLocation="http://jhaveard-pc/SlideManager/SlideFileManagerServiceReference.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com" />
+      <xsd:import schemaLocation="http://jhaveard-pc/SlideManager/SlideFileManagerServiceReference.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://jhaveard-pc/SlideManager/SlideFileManagerServiceReference.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/Message" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSlideFlieRequestMessage">
+    <wsdl:part name="SlideID" element="tns:SlideID" />
+  </wsdl:message>
+  <wsdl:message name="GetSlideFileResponseMessage">
+    <wsdl:part name="SlideFileStream" element="tns:SlideFileStream" />
+  </wsdl:message>
+  <wsdl:message name="GetSlideFileResponseMessage_Headers">
+    <wsdl:part name="SlideFileID" element="tns:SlideFileID" />
+  </wsdl:message>
+  <wsdl:message name="AddSlideFileRequestMessage">
+    <wsdl:part name="SlideFileStream" element="tns:SlideFileStream" />
+  </wsdl:message>
+  <wsdl:message name="AddSlideFileRequestMessage_Headers">
+    <wsdl:part name="SlideFileID" element="tns:SlideFileID" />
+    <wsdl:part name="SlideFileSize" element="tns:SlideFileSize" />
+  </wsdl:message>
+  <wsdl:message name="AddSlideFileResponseMessage" />
+  <wsdl:message name="SlideFileManagerServiceContract_AddSlideFile_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSlideFilerRequestMessage">
+    <wsdl:part name="SlideFileStream" element="tns:SlideFileStream" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSlideFilerRequestMessage_Headers">
+    <wsdl:part name="SlideFileID" element="tns:SlideFileID" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSlideFileResponseMessage" />
+  <wsdl:message name="SlideFileManagerServiceContract_UpdateSlideFile_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSlideFlieRequestMessage">
+    <wsdl:part name="SlideID" element="tns:SlideID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSlideFlieResponseMessage" />
+  <wsdl:message name="SlideFileManagerServiceContract_DeleteSlideFile_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="SlideFileManagerServiceContract">
+    <wsdl:operation name="GetSlideFile">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract1/GetSlideFile" name="GetSlideFlieRequestMessage" message="tns:GetSlideFlieRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/SlideFileManagerServiceContract/GetSlideFileResponse" name="GetSlideFileResponseMessage" message="tns:GetSlideFileResponseMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSlideFile">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract1/AddSlideFile" name="AddSlideFileRequestMessage" message="tns:AddSlideFileRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/SlideFileManagerServiceContract/AddSlideFileResponse" name="AddSlideFileResponseMessage" message="tns:AddSlideFileResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/SlideFileManagerServiceContract/AddSlideFileDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:SlideFileManagerServiceContract_AddSlideFile_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSlideFile">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract1/UpdateSlideFile" name="UpdateSlideFilerRequestMessage" message="tns:UpdateSlideFilerRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/SlideFileManagerServiceContract/UpdateSlideFileResponse" name="UpdateSlideFileResponseMessage" message="tns:UpdateSlideFileResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/SlideFileManagerServiceContract/UpdateSlideFileDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:SlideFileManagerServiceContract_UpdateSlideFile_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSlideFile">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract1/DeleteSlideFile" name="DeleteSlideFlieRequestMessage" message="tns:DeleteSlideFlieRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/SlideFileManagerServiceContract/DeleteSlideFileResponse" name="DeleteSlideFlieResponseMessage" message="tns:DeleteSlideFlieResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/SlideFileManagerServiceContract/DeleteSlideFileDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:SlideFileManagerServiceContract_DeleteSlideFile_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SlideFileEndpoint" type="tns:SlideFileManagerServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSlideFile">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract1/GetSlideFile" style="document" />
+      <wsdl:input name="GetSlideFlieRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetSlideFileResponseMessage">
+        <soap:header message="tns:GetSlideFileResponseMessage_Headers" part="SlideFileID" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSlideFile">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract1/AddSlideFile" style="document" />
+      <wsdl:input name="AddSlideFileRequestMessage">
+        <soap:header message="tns:AddSlideFileRequestMessage_Headers" part="SlideFileID" use="literal" />
+        <soap:header message="tns:AddSlideFileRequestMessage_Headers" part="SlideFileSize" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddSlideFileResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSlideFile">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract1/UpdateSlideFile" style="document" />
+      <wsdl:input name="UpdateSlideFilerRequestMessage">
+        <soap:header message="tns:UpdateSlideFilerRequestMessage_Headers" part="SlideFileID" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UpdateSlideFileResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSlideFile">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract1/DeleteSlideFile" style="document" />
+      <wsdl:input name="DeleteSlideFlieRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteSlideFlieResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SlideFileManagerService">
+    <wsdl:port name="SlideFileEndpoint" binding="tns:SlideFileEndpoint">
+      <soap:address location="http://jhaveard-pc/SlideManager/SlideFileManagerServiceReference.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

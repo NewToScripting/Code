@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inspire</RootNamespace>
+    <AssemblyName>Inspire</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Inspire.Key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>true</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.Ribbon.Wpf30, Version=4.5.477.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ActiproSoftware.Ribbon.Wpf30.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiproSoftware.Shared.Wpf30, Version=4.5.477.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ActiproSoftware.Shared.Wpf30.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.ToyBox, Version=1.0.2570.22297, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Infragistics.ToyBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.JScript">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationTypes">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmountRatingControl.xaml.cs">
+      <DependentUpon>AmountRatingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AuthResult.cs" />
+    <Compile Include="AutoCompleteBox.cs" />
+    <Compile Include="ButtonImage.cs" />
+    <Compile Include="ClientConfigManager.cs" />
+    <Compile Include="Clipper.cs" />
+    <Compile Include="Clock.cs" />
+    <Compile Include="CollectionHelpers.cs" />
+    <Compile Include="ColorPicker.cs" />
+    <Compile Include="ColorPickerDialog.xaml.cs">
+      <DependentUpon>ColorPickerDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ColorPickerSupportingClasses.cs" />
+    <Compile Include="Commands\ChangeBackgroundColorCommand.cs" />
+    <Compile Include="Commands\ChangeBorderColorCommand.cs" />
+    <Compile Include="Commands\ChangeCanvasBackground.cs" />
+    <Compile Include="Commands\ChangeInnerGlowColorCommand.cs" />
+    <Compile Include="Commands\ChangeScaleCommand.cs" />
+    <Compile Include="Commands\ChangeSkewCommand.cs" />
+    <Compile Include="Commands\InspireCommands.cs" />
+    <Compile Include="ContentControl3D.cs" />
+    <Compile Include="ControlPosition.cs" />
+    <Compile Include="Converters.cs" />
+    <Compile Include="Encryption.cs" />
+    <Compile Include="Helpers\EnumerableFunctions.cs" />
+    <Compile Include="Helpers\FileAssociation.cs" />
+    <Compile Include="Helpers\InteractionHelper.cs" />
+    <Compile Include="Helpers\ThumbnailCreator.cs" />
+    <Compile Include="Interfaces\IFilterable.cs" />
+    <Compile Include="Interfaces\IInspireCanvas.cs" />
+    <Compile Include="Interfaces\IUpdateVisualState.cs" />
+    <Compile Include="LinearClipper.cs" />
+    <Compile Include="Rating.cs" />
+    <Compile Include="RatingAutomationPeer.cs" />
+    <Compile Include="RatingItem.cs" />
+    <Compile Include="RatingItemAutomationPeer.cs" />
+    <Compile Include="RatingSelectionMode.cs" />
+    <Compile Include="RegistrationRequest.cs" />
+    <Compile Include="SlideButton.cs" />
+    <Compile Include="CustomExceptions.cs" />
+    <Compile Include="DataField.cs" />
+    <Compile Include="DataSource.cs" />
+    <Compile Include="DateHelper.cs" />
+    <Compile Include="Definitions.cs" />
+    <Compile Include="EasingHelpers.cs" />
+    <Compile Include="Files.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="FishEyePanel.cs" />
+    <Compile Include="FontStyler.xaml.cs">
+      <DependentUpon>FontStyler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GlassBehavior.cs" />
+    <Compile Include="Helpers\SlideSorters.cs" />
+    <Compile Include="Helpers\UIHelper.cs" />
+    <Compile Include="InfoTextBox.cs" />
+    <Compile Include="InnerGlowBorder.cs" />
+    <Compile Include="InspireApp.cs" />
+    <Compile Include="InspireModules.cs" />
+    <Compile Include="Interfaces\IConfigurable.cs" />
+    <Compile Include="Interfaces\IDesignContentControl.cs" />
+    <Compile Include="Interfaces\IDragCanvas.cs" />
+    <Compile Include="Interfaces\IPlayable.cs" />
+    <Compile Include="Interfaces\IPropertyPanel.cs" />
+    <Compile Include="Interfaces\IResizable.cs" />
+    <Compile Include="LoadingControl.xaml.cs">
+      <DependentUpon>LoadingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MediaObjects\DesignContentControl.cs" />
+    <Compile Include="Display.cs" />
+    <Compile Include="DisplayGroup.cs" />
+    <Compile Include="DisplayProperty.cs" />
+    <Compile Include="Interfaces\IDesignerCommand.cs" />
+    <Compile Include="Interfaces\ILockable.cs" />
+    <Compile Include="Interfaces\IMediaModule.cs" />
+    <Compile Include="Interfaces\ISelectable.cs" />
+    <Compile Include="MediaObjects\DesignControlHolder.cs" />
+    <Compile Include="MediaObjects\DesignDateTime.cs" />
+    <Compile Include="MediaObjects\DesignReflection.cs" />
+    <Compile Include="MediaObjects\DesignRichText.cs" />
+    <Compile Include="MediaObjects\MediaModule.cs" />
+    <Compile Include="MediaObjects\ReflectionControl.cs" />
+    <Compile Include="MediaObjects\RichTextMiniToolBar.xaml.cs">
+      <DependentUpon>RichTextMiniToolBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paths.cs" />
+    <Compile Include="PennerDoubleAnimation.cs" />
+    <Compile Include="PlayingMonitor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyBase.xaml.cs">
+      <DependentUpon>PropertyBase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PulseLocatorControl.xaml.cs">
+      <DependentUpon>PulseLocatorControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RotationHelpers.cs" />
+    <Compile Include="RoutingHelper.cs" />
+    <Compile Include="Schedule.cs" />
+    <Compile Include="ScheduledSlide.cs" />
+    <Compile Include="ScrollPanelWrapper.cs" />
+    <Compile Include="ServerSettings.cs" />
+    <Compile Include="Services\WeakEventHandlers\DispatcherTimerTickEventManager.cs" />
+    <Compile Include="Services\WeakEventHandlers\LayoutUpdatedEventManager.cs" />
+    <Compile Include="Services\WeakEventHandlers\LoadedEventManager.cs" />
+    <Compile Include="Services\WeakEventHandlers\MediaEndedEventManager.cs" />
+    <Compile Include="Services\PropertyPanelService.cs" />
+    <Compile Include="Services\SelectionService.cs" />
+    <Compile Include="Interfaces\IUndoService.cs" />
+    <Compile Include="Services\UndoService.cs" />
+    <Compile Include="Services\WeakEventHandlers\MouseDoubleClickEventHandler.cs" />
+    <Compile Include="Services\WeakEventHandlers\MouseDownEventHandler.cs" />
+    <Compile Include="Services\WeakEventHandlers\UnLoadedEventManager.cs" />
+    <Compile Include="Services\ZoomService.cs" />
+    <Compile Include="Slide.cs" />
+    <Compile Include="SlideButtons.cs" />
+    <Compile Include="SlideFile.cs" />
+    <Compile Include="SlideTimer.cs" />
+    <Compile Include="TouchScreenKeyboard.cs" />
+    <Compile Include="TypeConverters\NullableConverter.cs" />
+    <Compile Include="UpdatableSlideCollection.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="VisualStates.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="AmountRatingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ColorPickerDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FontStyler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LoadingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MediaObjects\RichTextMiniToolBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyBase.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PulseLocatorControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="themes\ControlStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\Touchscreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\TreeResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MediaObjects\Resources\Images\FontSizeDec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MediaObjects\Resources\Images\FontSizeInc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MediaObjects\Resources\Images\AlignTextCenter16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MediaObjects\Resources\Images\Italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MediaObjects\Resources\Images\Bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MediaObjects\Resources\Images\FontColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MediaObjects\Resources\Images\TextHighlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MediaObjects\Resources\Images\AlignTextLeft16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MediaObjects\Resources\Images\AlignTextRight16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="themes\Resources\Images\Paste16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EffectLibrary\EffectLibrary.csproj">
+      <Project>{51F9DB65-B87A-43EF-B306-5122845C7F72}</Project>
+      <Name>EffectLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspire.AnimationLibrary\Inspire.AnimationLibrary.csproj">
+      <Project>{E1FE049D-1CBB-4990-BDC5-F81482D01D25}</Project>
+      <Name>Inspire.AnimationLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transitionals\Transitionals.csproj">
+      <Project>{CC0300A8-D5D3-4F1F-80BD-9FEF1ACFC764}</Project>
+      <Name>Transitionals</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="themes\Resources\Images\demo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="themes\Resources\Images\Schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="themes\Resources\Images\Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="themes\Resources\Images\Display.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="themes\Resources\Images\Property.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="themes\Resources\Images\New16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="themes\Resources\Images\DisplayGroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Inspire.Key.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://schemas.inspiredisplays.com/ServiceContract/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="DisplayAdminService" targetNamespace="http://schemas.inspiredisplays.com/ServiceContract/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/ServiceContract/Imports">
+      <xsd:import schemaLocation="http://capehorn/inspire/DisplayService.svc?xsd=xsd2" namespace="http://schemas.inspiredisplays.com/ServiceContract/" />
+      <xsd:import schemaLocation="http://capehorn/inspire/DisplayService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://capehorn/inspire/DisplayService.svc?xsd=xsd1" namespace="http://DataContract.InspireDisplays.com" />
+      <xsd:import schemaLocation="http://capehorn/inspire/DisplayService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://capehorn/inspire/DisplayService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/Message" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SendScheduleRequestMessage">
+    <wsdl:part name="Schedules" element="tns:Schedules" />
+  </wsdl:message>
+  <wsdl:message name="SendScheduleResponseMessage">
+    <wsdl:part name="SlideIDs" element="tns:SlideIDs" />
+  </wsdl:message>
+  <wsdl:message name="SendSlideRequestMessage">
+    <wsdl:part name="SlideFileStream" element="tns:SlideFileStream" />
+  </wsdl:message>
+  <wsdl:message name="SendSlideRequestMessage_Headers">
+    <wsdl:part name="SlideFileID" element="tns:SlideFileID" />
+    <wsdl:part name="SlideFileSize" element="tns:SlideFileSize" />
+  </wsdl:message>
+  <wsdl:message name="SendSlideResponseMessage" />
+  <wsdl:message name="StayAliveRequestMessage" />
+  <wsdl:message name="StayAliveResponseMessage" />
+  <wsdl:message name="SendScheduleListRequestMessage">
+    <wsdl:part name="Schedules" element="tns:Schedules" />
+  </wsdl:message>
+  <wsdl:message name="SendScheduleListResponseMessage">
+    <wsdl:part name="SlideIDs" element="tns:SlideIDs" />
+  </wsdl:message>
+  <wsdl:portType name="DisplayAdminServiceContract">
+    <wsdl:operation name="SendSchedule">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/SendSchedule" name="SendScheduleRequestMessage" message="tns:SendScheduleRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/DisplayAdminServiceContract/SendScheduleResponse" name="SendScheduleResponseMessage" message="tns:SendScheduleResponseMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSlide">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/SendSlides" name="SendSlideRequestMessage" message="tns:SendSlideRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/DisplayAdminServiceContract/SendSlideResponse" name="SendSlideResponseMessage" message="tns:SendSlideResponseMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StayAlive">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/StayAlive" name="StayAliveRequestMessage" message="tns:StayAliveRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/DisplayAdminServiceContract/StayAliveResponse" name="StayAliveResponseMessage" message="tns:StayAliveResponseMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendScheduleList">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/SendScheduleList" name="SendScheduleListRequestMessage" message="tns:SendScheduleListRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/ServiceContract/DisplayAdminServiceContract/SendScheduleListResponse" name="SendScheduleListResponseMessage" message="tns:SendScheduleListResponseMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DisplayEndpoint" type="tns:DisplayAdminServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendSchedule">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/SendSchedule" style="document" />
+      <wsdl:input name="SendScheduleRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SendScheduleResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSlide">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/SendSlides" style="document" />
+      <wsdl:input name="SendSlideRequestMessage">
+        <soap:header message="tns:SendSlideRequestMessage_Headers" part="SlideFileID" use="literal" />
+        <soap:header message="tns:SendSlideRequestMessage_Headers" part="SlideFileSize" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SendSlideResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StayAlive">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/StayAlive" style="document" />
+      <wsdl:input name="StayAliveRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="StayAliveResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendScheduleList">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/ServiceContract/ServiceContract1/SendScheduleList" style="document" />
+      <wsdl:input name="SendScheduleListRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SendScheduleListResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DisplayAdminService">
+    <wsdl:port name="DisplayEndpoint" binding="tns:DisplayEndpoint">
+      <soap:address location="http://capehorn/inspire/DisplayService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

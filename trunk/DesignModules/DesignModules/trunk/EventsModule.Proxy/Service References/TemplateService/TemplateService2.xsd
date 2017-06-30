@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.inspiredisplays.com" elementFormDefault="qualified" targetNamespace="http://schemas.inspiredisplays.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://devserver2003/Inspire.ClientManager/TemplateService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/Message" />
+  <xs:complexType name="FeedTemplates">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FeedTemplates" nillable="true" type="tns:FeedTemplate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FeedTemplates" nillable="true" type="tns:FeedTemplates" />
+  <xs:complexType name="FeedTemplate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GUID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rows" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ThumbNail" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fields" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FeedTemplate" nillable="true" type="tns:FeedTemplate" />
+  <xs:complexType name="GeneralFaultContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GeneralFaultContract" nillable="true" type="tns:GeneralFaultContract" />
+  <xs:element name="templateID" nillable="true" type="xs:string" />
+  <xs:element xmlns:q1="http://schemas.microsoft.com/Message" name="TemplateStream" type="q1:StreamBody" />
+  <xs:element name="FileSize" type="xs:int" />
+</xs:schema>

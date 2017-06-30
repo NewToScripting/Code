@@ -1,0 +1,18 @@
+﻿<Window x:Class="Inspire.Client.ScheduleWindow.ScheduledSlidePanel.SlideTransition"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Controls="clr-namespace:Transitionals.Controls;assembly=Transitionals" xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire" Title="SlideTransition" Height="442" Width="725" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="{StaticResource PopupBackgroundBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="248*" />
+            <ColumnDefinition Width="415*" />
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lbTransitions" Margin="21,39,28,61"/>
+        <Controls:TransitionElement x:Name="teTransitionElement" ClipToBounds="False" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Column="1" Margin="6,39,23,61"></Controls:TransitionElement>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right">
+            <Button Grid.Column="1" Height="35" Inspire:ButtonImage.Image="/Resources/Images/Ok16.png" Width="128" Margin="5" Name="btnSelect" VerticalAlignment="Bottom" Click="btnSelect_Click" >Save</Button>
+            <Button Grid.Column="1" Height="35" Margin="5,0,5,5" Inspire:ButtonImage.Image="/Resources/Images/Cancel16.png" HorizontalAlignment="Right" Name="btnClose" VerticalAlignment="Bottom" Width="128" Click="btnClose_Click">Cancel</Button>
+        </StackPanel>
+    </Grid>
+</Window>

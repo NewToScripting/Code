@@ -1,0 +1,9 @@
+<Modules>
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="System.Windows.Forms" />
+  <Module PersistentId="0D344094-B9B9-457E-A308-50D13A432FC8" ModuleId="Inspire.Client" />
+  <Module PersistentId="84A04C1A-8DA9-47AB-A9D1-B6C63B0EE99B" ModuleId="Inspire" />
+  <Module PersistentId="C26A9A1E-D31B-4D0D-ACBB-B16C22DA4435" ModuleId="Inspire.Server.Proxy" />
+  <Module PersistentId="DA9210DD-D24D-468A-9083-F3D953E41C63" ModuleId="Inspire.Common" />
+  <Module PersistentId="51F9DB65-B87A-43EF-B306-5122845C7F72" ModuleId="EffectLibrary" />
+  <Module PersistentId="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Windows.Forms_1" />
+</Modules>

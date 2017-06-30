@@ -1,0 +1,11 @@
+C:\New_Code\InspireCloud\LegacyWeatherModuleProxy\bin\Release\WeatherModule.Proxy.dll.config
+C:\New_Code\InspireCloud\LegacyWeatherModuleProxy\bin\Release\WeatherModule.Proxy.dll
+C:\New_Code\InspireCloud\LegacyWeatherModuleProxy\bin\Release\WeatherModule.Proxy.pdb
+C:\New_Code\InspireCloud\LegacyWeatherModuleProxy\obj\Release\WeatherModule.Proxy.dll
+C:\New_Code\InspireCloud\LegacyWeatherModuleProxy\obj\Release\WeatherModule.Proxy.pdb
+C:\CODE\trunk\InspireCloud\LegacyWeatherModuleProxy\bin\Release\WeatherModule.Proxy.dll.config
+C:\CODE\trunk\InspireCloud\LegacyWeatherModuleProxy\bin\Release\WeatherModule.Proxy.dll
+C:\CODE\trunk\InspireCloud\LegacyWeatherModuleProxy\bin\Release\WeatherModule.Proxy.pdb
+C:\CODE\trunk\InspireCloud\LegacyWeatherModuleProxy\obj\Release\WeatherModule.Proxy.csprojResolveAssemblyReference.cache
+C:\CODE\trunk\InspireCloud\LegacyWeatherModuleProxy\obj\Release\WeatherModule.Proxy.dll
+C:\CODE\trunk\InspireCloud\LegacyWeatherModuleProxy\obj\Release\WeatherModule.Proxy.pdb

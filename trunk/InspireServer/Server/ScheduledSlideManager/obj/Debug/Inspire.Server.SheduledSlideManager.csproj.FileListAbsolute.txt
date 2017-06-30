@@ -1,0 +1,14 @@
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduledSlides\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduledSlides\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.SheduledSlideManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduledSlides\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.SheduledSlideManager.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduledSlides\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduledSlides\Service\Source\Service Interface\Service.ServiceImplementation\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduledSlides\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.SheduledSlideManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\Inspire.Server.ScheduledSlides\Service\Source\Service Interface\Service.ServiceImplementation\obj\Debug\Inspire.Server.SheduledSlideManager.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduledSlideManager\bin\Debug\Inspire.Server.SheduledSlideManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduledSlideManager\bin\Debug\Inspire.Server.SheduledSlideManager.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduledSlideManager\bin\Debug\Inspire.Server.Common.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduledSlideManager\bin\Debug\Inspire.Server.Common.pdb
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduledSlideManager\obj\Debug\ResolveAssemblyReference.cache
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduledSlideManager\obj\Debug\Inspire.Server.SheduledSlideManager.dll
+C:\_CODE_DEPLOYED\_CODE_NO_SERVER\InspireServer\Server\ScheduledSlideManager\obj\Debug\Inspire.Server.SheduledSlideManager.pdb

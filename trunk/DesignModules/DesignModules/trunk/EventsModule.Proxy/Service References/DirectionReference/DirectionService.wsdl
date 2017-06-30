@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://schemas.inspiredisplays.com" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="DirectionService" targetNamespace="http://schemas.inspiredisplays.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.inspiredisplays.com/Imports">
+      <xsd:import schemaLocation="http://devserver2003/Inspire.ClientManager/DirectionService.svc?xsd=xsd1" namespace="http://schemas.inspiredisplays.com" />
+      <xsd:import schemaLocation="http://devserver2003/Inspire.ClientManager/DirectionService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllImagesRequestMessage" />
+  <wsdl:message name="GetAllImagesResponseMessage">
+    <wsdl:part name="DirectionalImages" element="tns:DirectionalImages" />
+  </wsdl:message>
+  <wsdl:message name="DirectionServiceContract_GetAllImages_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddImageRequestMessage">
+    <wsdl:part name="DirectionImage" element="tns:DirectionImage" />
+    <wsdl:part name="ImageFile" element="tns:ImageFile" />
+  </wsdl:message>
+  <wsdl:message name="AddImageResponseMessage">
+    <wsdl:part name="WebPath" element="tns:WebPath" />
+  </wsdl:message>
+  <wsdl:message name="DirectionServiceContract_AddImage_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteImageRequestMessage">
+    <wsdl:part name="DirectionalImage" element="tns:DirectionalImage" />
+  </wsdl:message>
+  <wsdl:message name="DeleteImageResponseMessage" />
+  <wsdl:message name="DirectionServiceContract_DeleteImage_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="GetDirectionsRequestMessage">
+    <wsdl:part name="DisplayID" element="tns:DisplayID" />
+  </wsdl:message>
+  <wsdl:message name="GetDirectionsResponseMessage">
+    <wsdl:part name="Directions" element="tns:Directions" />
+  </wsdl:message>
+  <wsdl:message name="DirectionServiceContract_GetDirections_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="AddDirectionRequestMessage">
+    <wsdl:part name="Directions" element="tns:Directions" />
+  </wsdl:message>
+  <wsdl:message name="AddDirectionResponseMessage" />
+  <wsdl:message name="DirectionServiceContract_AddDirection_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDirectionRequestMessage">
+    <wsdl:part name="DirectionID" element="tns:DirectionID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDirectionResponseMessage" />
+  <wsdl:message name="DirectionServiceContract_DeleteDirection_GeneralFaultContractFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:GeneralFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="DirectionServiceContract">
+    <wsdl:operation name="GetAllImages">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/GetAllImages" name="GetAllImagesRequestMessage" message="tns:GetAllImagesRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/GetAllImagesResponse" name="GetAllImagesResponseMessage" message="tns:GetAllImagesResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/GetAllImagesGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:DirectionServiceContract_GetAllImages_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddImage">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/AddImage" name="AddImageRequestMessage" message="tns:AddImageRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/AddImageResponse" name="AddImageResponseMessage" message="tns:AddImageResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/AddImageGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:DirectionServiceContract_AddImage_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteImage">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/DeleteImage" name="DeleteImageRequestMessage" message="tns:DeleteImageRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/DeleteImageResponse" name="DeleteImageResponseMessage" message="tns:DeleteImageResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/DeleteImageGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:DirectionServiceContract_DeleteImage_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDirections">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/GetDirections" name="GetDirectionsRequestMessage" message="tns:GetDirectionsRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/GetDirectionsResponse" name="GetDirectionsResponseMessage" message="tns:GetDirectionsResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/GetDirectionsGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:DirectionServiceContract_GetDirections_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDirection">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/AddDirection" name="AddDirectionRequestMessage" message="tns:AddDirectionRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/AddDirectionResponse" name="AddDirectionResponseMessage" message="tns:AddDirectionResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/AddDirectionGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:DirectionServiceContract_AddDirection_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDirection">
+      <wsdl:input wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/DeleteDirection" name="DeleteDirectionRequestMessage" message="tns:DeleteDirectionRequestMessage" />
+      <wsdl:output wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/DeleteDirectionResponse" name="DeleteDirectionResponseMessage" message="tns:DeleteDirectionResponseMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.inspiredisplays.com/DirectionServiceContract/DeleteDirectionGeneralFaultContractFault" name="GeneralFaultContractFault" message="tns:DirectionServiceContract_DeleteDirection_GeneralFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DirectionEndpoint" type="tns:DirectionServiceContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllImages">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/DirectionServiceContract/GetAllImages" style="document" />
+      <wsdl:input name="GetAllImagesRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetAllImagesResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddImage">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/DirectionServiceContract/AddImage" style="document" />
+      <wsdl:input name="AddImageRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddImageResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteImage">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/DirectionServiceContract/DeleteImage" style="document" />
+      <wsdl:input name="DeleteImageRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteImageResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetDirections">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/DirectionServiceContract/GetDirections" style="document" />
+      <wsdl:input name="GetDirectionsRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetDirectionsResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddDirection">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/DirectionServiceContract/AddDirection" style="document" />
+      <wsdl:input name="AddDirectionRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddDirectionResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDirection">
+      <soap:operation soapAction="http://schemas.inspiredisplays.com/DirectionServiceContract/DeleteDirection" style="document" />
+      <wsdl:input name="DeleteDirectionRequestMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DeleteDirectionResponseMessage">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GeneralFaultContractFault">
+        <soap:fault use="literal" name="GeneralFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DirectionService">
+    <wsdl:port name="DirectionEndpoint" binding="tns:DirectionEndpoint">
+      <soap:address location="http://devserver2003/Inspire.ClientManager/DirectionService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

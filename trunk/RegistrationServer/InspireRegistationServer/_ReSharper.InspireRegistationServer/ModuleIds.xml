@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="61FE83B5-C906-4679-A57C-C379C6CB8268" ModuleId="InspireRegistationServer" />
+  <Module PersistentId="7EFBCB35-EDFE-4CA5-87A1-1E62DBB48BEF" ModuleId="WebSite1" />
+  <Module PersistentId="90570873-FF76-4755-98C1-F638DE266FD4" ModuleId="TestProject" />
+</Modules>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="VisualOneInterface">
+</Property><Property Name="Solution File" Value="C:\Users\jhaveard\Documents\Inspire Docs\VisualOneInterfaceConsole\VisualOneInterface.sln">
+</Property><Property Name="Date" Value="Thursday, October 14, 2010">
+</Property><Property Name="Time" Value="0:29 AM">
+</Property></Properties><Event ErrorLevel="0" Project="InspireVisualOneConsoleInterface" Source="InspireVisualOneConsoleInterface\InspireVisualOneConsoleInterface.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="InspireVisualOneConsoleInterface" Source="InspireVisualOneConsoleInterface\InspireVisualOneConsoleInterface.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="VisualOneInterface.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="VisualOneInterface.sln" Description="Converted">
+</Event><Event ErrorLevel="1" Project="InspireVisualOneConsoleInterface" Source="InspireVisualOneConsoleInterface\App.config" Description="File not found.  Unable to determine whether the file requires upgrade.">
+</Event><Event ErrorLevel="3" Project="InspireVisualOneConsoleInterface" Source="InspireVisualOneConsoleInterface\App.config" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="InspireVisualOneConsoleInterface" Source="InspireVisualOneConsoleInterface\InspireVisualOneConsoleInterface.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

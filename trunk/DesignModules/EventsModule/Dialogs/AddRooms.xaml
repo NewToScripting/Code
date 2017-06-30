@@ -1,0 +1,43 @@
+﻿<Window x:Class="EventsModule.Dialogs.AddRooms"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Add Rooms: Drag Rooms from panel to panel to include or exclude meetings on the displays." Height="520" Width="732" WindowStartupLocation="CenterScreen">
+    <Grid Background="{StaticResource WindowBackgroundBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="200"></ColumnDefinition>
+            <ColumnDefinition MinWidth="200"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="300" Height="300*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="0" Margin="4,0,4,0">
+            <TextBlock HorizontalAlignment="Center" Text="Rooms" Margin="5" Foreground="#FFFFFFFF"></TextBlock>
+            <ListBox x:Name="lbRoomList" VerticalAlignment="Stretch" Height="412" SelectionMode="Multiple" AllowDrop="True" Margin="5,0,30,0"> <!--Drop="lbRoomList_Drop"-->
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Foreground="White" Text="{Binding Name}" /><!--PreviewMouseLeftButtonDown="RoomItem_PreviewMouseLeftButtonDown" MouseLeftButtonDown="RoomItem_MouseLeftButtonDown"-->
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="0" Margin="0,0,4,0">
+            <TextBlock HorizontalAlignment="Center" Text="Displays shows meeting for the following rooms:" Margin="5" Foreground="#FFFFFFFF"></TextBlock>
+            <ListBox x:Name="lbDisplayRoomList" VerticalAlignment="Stretch" Height="412" SelectionMode="Multiple" AllowDrop="True" Width="304" Margin="30,0,0,0"> <!--Drop="lbDisplayRoomList_Drop"-->
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Foreground="White" Text="{Binding Name}"/> <!--PreviewMouseLeftButtonDown="DisplayRoom_PreviewMouseLeftButtonDown" MouseLeftButtonDown="DisplayRoom_MouseLeftButtonDown"-->
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <Button HorizontalAlignment="Stretch" Width="170" Height="38" Margin="5,5,0,0" Click="Save_Click">Save</Button>
+                <Button HorizontalAlignment="Stretch" Width="170" Margin="5,5,0,0" Click="Cancel_Click" Height="38">Cancel</Button>
+            </StackPanel>
+        </StackPanel>
+        <Button Grid.ColumnSpan="2" Width="30" Height="25" Margin="338,114,338,342" Content=">" Click="IncludeRoom_Click" />
+        <Button Grid.ColumnSpan="2" Width="30" Height="25" Margin="338,152,338,304" Content=">>" Click="IncludeAllRooms_Click" />
+        <Button Grid.ColumnSpan="2" Width="30" Height="25" Margin="338,192,338,264" Content="&lt;&lt;" Click="ExcludeAllRooms_Click" />
+        <Button Grid.ColumnSpan="2" Width="30" Height="25" Margin="338,233,338,223" Content="&lt;" Click="ExcludeRoom_Click"  />
+    </Grid>
+</Window>

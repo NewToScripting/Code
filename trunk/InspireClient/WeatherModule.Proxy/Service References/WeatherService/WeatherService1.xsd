@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCFServiceWebRole1" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFServiceWebRole1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfLocation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Location" nillable="true" type="tns:Location" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLocation" nillable="true" type="tns:ArrayOfLocation" />
+  <xs:complexType name="Location">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitude" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="LocationCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Longitude" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Location" nillable="true" type="tns:Location" />
+  <xs:simpleType name="WeatherReport.UnitsSystems">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Imperial" />
+      <xs:enumeration value="Metric" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="WeatherReport.UnitsSystems" nillable="true" type="tns:WeatherReport.UnitsSystems" />
+  <xs:complexType name="WeatherReport">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Forecast" nillable="true" type="tns:ArrayOfWeatherRange" />
+      <xs:element minOccurs="0" name="LatestWeather" nillable="true" type="tns:WeatherPoint" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="tns:Location" />
+      <xs:element minOccurs="0" name="SkyCode" type="xs:int" />
+      <xs:element minOccurs="0" name="UnitsSystem" type="tns:WeatherReport.UnitsSystems" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WeatherReport" nillable="true" type="tns:WeatherReport" />
+  <xs:complexType name="ArrayOfWeatherRange">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WeatherRange" nillable="true" type="tns:WeatherRange" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWeatherRange" nillable="true" type="tns:ArrayOfWeatherRange" />
+  <xs:complexType name="WeatherRange">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Weather">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EndTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="HighTemperature" type="xs:double" />
+          <xs:element minOccurs="0" name="LowTemperature" type="xs:double" />
+          <xs:element minOccurs="0" name="StartTime" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WeatherRange" nillable="true" type="tns:WeatherRange" />
+  <xs:complexType name="Weather">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Humidity" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Precipitation" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="SkyCondition" nillable="true" type="tns:Sky" />
+      <xs:element minOccurs="0" name="UnitsSystem" type="tns:WeatherReport.UnitsSystems" />
+      <xs:element minOccurs="0" name="WindVector" nillable="true" type="tns:Wind" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Weather" nillable="true" type="tns:Weather" />
+  <xs:complexType name="Sky">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SkyCondition" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SkyImage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Sky" nillable="true" type="tns:Sky" />
+  <xs:complexType name="Wind">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Direction" type="tns:WindDirections" />
+      <xs:element minOccurs="0" name="Speed" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Wind" nillable="true" type="tns:Wind" />
+  <xs:simpleType name="WindDirections">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="N" />
+      <xs:enumeration value="NNE" />
+      <xs:enumeration value="NE" />
+      <xs:enumeration value="ENE" />
+      <xs:enumeration value="E" />
+      <xs:enumeration value="ESE" />
+      <xs:enumeration value="SE" />
+      <xs:enumeration value="SSE" />
+      <xs:enumeration value="S" />
+      <xs:enumeration value="SSW" />
+      <xs:enumeration value="SW" />
+      <xs:enumeration value="WSW" />
+      <xs:enumeration value="W" />
+      <xs:enumeration value="WNW" />
+      <xs:enumeration value="NW" />
+      <xs:enumeration value="NNW" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="WindDirections" nillable="true" type="tns:WindDirections" />
+  <xs:complexType name="WeatherPoint">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Weather">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="FeelsLike" type="xs:double" />
+          <xs:element minOccurs="0" name="Temperature" type="xs:double" />
+          <xs:element minOccurs="0" name="Time" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WeatherPoint" nillable="true" type="tns:WeatherPoint" />
+</xs:schema>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="MapModule.AddPushPin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Style="{x:Null}"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire" Title="AddPushPin" Height="313" Width="451" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Foreground="{DynamicResource TextBrush}" Background="{DynamicResource WindowBackgroundBrush}">
+    <Grid>
+        <TextBlock Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Right" Text="Name:" Width="42" Margin="30,19,0,0" />
+        <Inspire:InfoTextBox x:Name="tbName" TextBoxInfo="Name" Margin="76,10,0,0" HorizontalAlignment="Left" Width="341" Height="31" VerticalAlignment="Top" />
+        <TextBlock Height="20" HorizontalAlignment="Left" Margin="1,48,0,0" Text="Description:" TextAlignment="Right" VerticalAlignment="Top" Width="69" />
+        <Inspire:InfoTextBox x:Name="tbDescription" TextWrapping="Wrap" TextBoxInfo="Description of the location" Height="74" HorizontalAlignment="Left" Margin="76,47,0,0" VerticalAlignment="Top" Width="341" />
+        <TextBlock Height="20" HorizontalAlignment="Left" Margin="12,135,0,0" Name="textBlock2" Text="Category:" TextAlignment="Right" VerticalAlignment="Top" Width="60" />
+        <TextBlock x:Name="tbCategory" Text="Category Here" FontSize="18" FontStyle="Italic" Height="31" IsEnabled="False" HorizontalAlignment="Left" Margin="80,130,0,0" VerticalAlignment="Top" Width="341" />
+        <!--<ComboBox x:Name="cbCategory" Height="31" HorizontalAlignment="Left" Margin="76,127,0,0" VerticalAlignment="Top" Width="275" />
+        <Button Content="Add" Height="31" HorizontalAlignment="Left" Margin="354,127,0,0" Name="btnCategory" VerticalAlignment="Top" Width="63" Click="btnCategory_Click" />-->
+        <Button Inspire:ButtonImage.Image="Resources\Images\Ok16.png" Height="35" Name="btnOk" VerticalAlignment="Bottom" Margin="0,0,146,12" HorizontalAlignment="Right" Width="128" Click="btnOk_Click">Ok</Button>
+        <Button Inspire:ButtonImage.Image="Resources\Images\Cancel16.png" Height="35" HorizontalAlignment="Right" Name="btnCancel" Click="btnCancel_Click" VerticalAlignment="Bottom" Width="128" Margin="0,0,12,12">Cancel</Button>
+        <Inspire:AmountRatingControl Visibility="Collapsed" HorizontalAlignment="Left" Margin="76,164,0,0" x:Name="amtControl" VerticalAlignment="Top" Height="26" Width="87" />
+        <CheckBox x:Name="cbShowAvgPriceControl" Visibility="Collapsed"  Content="Include Avg. Price Indicator" Foreground="{StaticResource TextBrush}" Margin="181,170,0,0" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="182" />
+        <TextBlock Visibility="Collapsed" Height="20" HorizontalAlignment="Left" Margin="12,170,0,0" Text="Avg Price" TextAlignment="Right" VerticalAlignment="Top" Width="60" />
+        <CheckBox IsChecked="True" Content="Marker Visible" Foreground="{StaticResource TextBrush}" Height="20" HorizontalAlignment="Left" Margin="181,196,0,0" Name="cbMarkerVisible" VerticalAlignment="Top" Width="112" />
+    </Grid>
+</Window>

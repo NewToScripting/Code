@@ -1,0 +1,41 @@
+﻿<Window x:Class="WeatherModule.ModuleDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    xmlns:Commands="clr-namespace:WeatherModule.Commands"
+    Title="ModuleDialog" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Height="338" Width="344" Foreground="{DynamicResource TextBrush}" Background="{DynamicResource WindowBackgroundBrush}">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:WeatherCommands.InsertWeatherCommand}" Executed="InsertWeatherExecuted" CanExecute="InsertWeatherCanExecute" />
+    </Window.CommandBindings>
+    <Window.Resources>
+        <ObjectDataProvider x:Key="searchResults"/>
+    </Window.Resources>
+    <Grid>
+        <Label Height="22" HorizontalAlignment="Left" Margin="7,26,0,0" VerticalAlignment="Top" Width="96">Zip or location:</Label>
+        <Label Height="32" HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" Margin="38,54,0,0">Location:</Label>
+        <Inspire:InfoTextBox TextBoxInfo="Enter Zip / Location" Margin="98,20,16,0" Name="tbLocation" TextChanged="tbLocation_TextChanged" Height="28" VerticalAlignment="Top" />
+        <ListBox Margin="98,54,16,0" Name="resultsListBox" SelectedIndex="0" Foreground="{DynamicResource TextBrush}" SelectionChanged="resultsListBox_SelectionChanged" ItemsSource="{Binding Source={StaticResource searchResults}}" Height="87" VerticalAlignment="Top">
+            <ListBox.ItemContainerStyle>
+                <Style>
+                    <Setter Property="ContentControl.Content" Value="{Binding Path=FullName}"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+        <ComboBox Text="{Binding Path=Value}" Margin="98,147,16,0" Name="cbWeatherResource" Height="28" VerticalAlignment="Top" SelectedIndex="2">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Foreground="{DynamicResource TextBrush}" Text="{Binding Path=Value}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label HorizontalAlignment="Left" Margin="27,149,0,117" Width="76">Days/Style:</Label>
+        <Button Inspire:ButtonImage.Image="Resources\Images\Ok16.png" Height="35" Name="btnOk" Command="{x:Static Commands:WeatherCommands.InsertWeatherCommand}" VerticalAlignment="Bottom" Margin="0,0,146,12" HorizontalAlignment="Right" Width="128">Ok</Button>
+        <Button Inspire:ButtonImage.Image="Resources\Images\Cancel16.png" Height="35" HorizontalAlignment="Right" Name="btnCancel" Click="btnCancelFeed_Click" VerticalAlignment="Bottom" Width="128" Margin="0,0,12,12">Cancel</Button>
+        <GroupBox Foreground="{DynamicResource TextBrush}" Header="Degree Type" Height="60" Margin="98,0,16,53" VerticalAlignment="Bottom">
+            <Grid>
+            <RadioButton Foreground="{DynamicResource TextBrush}" Name="rbF" IsChecked="True" GroupName="DegType" HorizontalAlignment="Left" Margin="6,6,0,0" Width="132" Height="25.04" VerticalAlignment="Top">Fahrenheit</RadioButton>
+            <RadioButton Foreground="{DynamicResource TextBrush}" Name="rbC" Margin="0,6" GroupName="DegType" HorizontalAlignment="Right" Width="101">Celsius</RadioButton>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

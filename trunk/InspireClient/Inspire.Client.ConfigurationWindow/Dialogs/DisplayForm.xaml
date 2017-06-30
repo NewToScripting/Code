@@ -1,0 +1,67 @@
+﻿<Window x:Class="Inspire.Client.ConfigurationWindow.Dialogs.DisplayForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Inspire="clr-namespace:Inspire;assembly=Inspire"
+    xmlns:Commands="clr-namespace:Inspire.Commands;assembly=Inspire"
+    Title="Display" Height="470" Width="717" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    
+    <Window.Resources>
+
+        <DataTemplate x:Key="GroupComboTemplate">
+            <Grid Width="Auto" Height="Auto">
+                <TextBlock Foreground="{StaticResource Foreground}" Text="{Binding Mode=OneWay, Path=GroupName}" />
+            </Grid>
+        </DataTemplate>
+        
+        <DataTemplate x:Key="PropertyComboTemplate">
+            <Grid Width="Auto" Height="Auto">
+                <TextBlock Foreground="{StaticResource Foreground}" Text="{Binding Mode=OneWay, Path=PropertyName}" />
+            </Grid>
+        </DataTemplate>
+        
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static Commands:InspireCommands.SaveDisplayFormCommand}" Executed="SaveDisplayFormExecuted" CanExecute="SaveDisplayFormCanExecute" />
+    </Window.CommandBindings>
+    
+    <Grid Background="{StaticResource PopupBackgroundBrush}">
+        <Label Foreground="White" Height="32" HorizontalAlignment="Left" Margin="21,68,0,0" VerticalAlignment="Top" Width="130" FlowDirection="RightToLeft">: Display Name</Label>
+        <Label Foreground="White" Height="32" HorizontalAlignment="Left" Margin="21,100,0,0" VerticalAlignment="Top" Width="130" FlowDirection="RightToLeft">: Hostname</Label>
+        <Label Foreground="White" Height="32" HorizontalAlignment="Left" Margin="8,132,0,0" VerticalAlignment="Top" Width="143" FlowDirection="RightToLeft">: Horizontal Resolution</Label>
+        <Label Foreground="White" Height="32" HorizontalAlignment="Left" Margin="21,164,0,0" VerticalAlignment="Top" Width="130" FlowDirection="RightToLeft">: Vertical Reslution</Label>
+        <Label Foreground="White" HorizontalAlignment="Left" Margin="21,196,0,208" Width="130" FlowDirection="RightToLeft">: Location</Label>
+        <Label Foreground="White" Height="32" HorizontalAlignment="Left" Margin="21,0,0,178" VerticalAlignment="Bottom" Width="130" FlowDirection="RightToLeft">: Controller Type</Label>
+        <Label Foreground="White" Height="32" HorizontalAlignment="Left" Margin="21,0,0,146" VerticalAlignment="Bottom" Width="130" FlowDirection="RightToLeft">: Controller Model</Label>
+        <Label Foreground="White" Height="32" HorizontalAlignment="Left" Margin="21,0,0,114" VerticalAlignment="Bottom" Width="130" FlowDirection="RightToLeft">: Monitor Type</Label>
+        <Label Foreground="White" Height="32" HorizontalAlignment="Left" Margin="21,0,0,82" VerticalAlignment="Bottom" Width="130" FlowDirection="RightToLeft">: Monitor Model</Label>
+        <Label Foreground="White" Height="32" HorizontalAlignment="Left" Margin="21,0,0,50" VerticalAlignment="Bottom" Width="130" FlowDirection="RightToLeft">: Monitor Size</Label>
+        
+        <Inspire:InfoTextBox TextBoxInfo="Enter A Name For The Display" Height="25" Margin="157,68,331,0" x:Name="txtDispName" VerticalAlignment="Top" />
+        <Inspire:InfoTextBox TextBoxInfo="Enter The Hostname for the Display" Height="25" Margin="157,100,331,0" x:Name="txtHostName" VerticalAlignment="Top" />
+        <Inspire:InfoTextBox TextBoxInfo="Enter The Display's Horizontal Resolution" Height="25" Margin="157,132,331,0" x:Name="txtHRes" VerticalAlignment="Top" />
+        <Inspire:InfoTextBox TextBoxInfo="Enter The Display's Vertical Resolution" Height="25" Margin="157,164,331,0" x:Name="txtVRes" VerticalAlignment="Top" />
+        <Inspire:InfoTextBox TextBoxInfo="Where Is The Display Located?" Height="25" Margin="157,198,331,219" x:Name="txtLoc" />
+        <Inspire:InfoTextBox TextBoxInfo="What Is The Controller Type?" Height="25" Margin="157,0,331,187" x:Name="txtContType" VerticalAlignment="Bottom" />
+        <Inspire:InfoTextBox TextBoxInfo="Enter The Model For The Controller" Height="25" Margin="157,0,331,155" x:Name="txtContModel" VerticalAlignment="Bottom" />
+        <Inspire:InfoTextBox TextBoxInfo="What Type Of Monitor? Brand?" Height="25" Margin="157,0,331,123" x:Name="txtMonType" VerticalAlignment="Bottom" />
+        <Inspire:InfoTextBox TextBoxInfo="What Is The Model Number?" Height="25" Margin="157,0,331,91" x:Name="txtMonMod" VerticalAlignment="Bottom" />
+        <Inspire:InfoTextBox TextBoxInfo="Enter The Monitor Size in Inches" Height="25" Margin="157,0,331,59" x:Name="txtMonSize" VerticalAlignment="Bottom" />
+        
+        <Label Foreground="White" FlowDirection="RightToLeft" Height="32" HorizontalAlignment="Right" Margin="0,68,220,0" VerticalAlignment="Top" Width="110">: OS</Label>
+        <Label Foreground="White" FlowDirection="RightToLeft" Height="32" HorizontalAlignment="Right" Margin="0,100,220,0" VerticalAlignment="Top" Width="110">: Domain</Label>
+        <Label Foreground="White" FlowDirection="RightToLeft" HorizontalAlignment="Right" Margin="0,0,220,182" Width="110" Height="32" VerticalAlignment="Bottom">: Group</Label>
+        <Label Foreground="White" FlowDirection="RightToLeft" HorizontalAlignment="Right" Margin="0,131,220,0" Width="110" Height="32" VerticalAlignment="Top">: Status</Label>
+        <Label Foreground="White" FlowDirection="RightToLeft" HorizontalAlignment="Right" Margin="0,165,220,0" Width="110" Height="38" VerticalAlignment="Top">: Orientation</Label>
+        <Label Foreground="White" FlowDirection="RightToLeft" HorizontalAlignment="Right" Margin="0,196,220,214" Width="110">: Property</Label>
+        
+        <Inspire:InfoTextBox TextBoxInfo="OS Installed On Controller?" Height="25" HorizontalAlignment="Right" Margin="0,68,20,0" Name="txtOS" VerticalAlignment="Top" Width="194" />
+        <Inspire:InfoTextBox TextBoxInfo="Domain Controller Is On" Height="25" HorizontalAlignment="Right" Margin="0,100,20,0" Name="txtDomain" VerticalAlignment="Top" Width="194" />
+        <TextBox IsReadOnly="True" HorizontalAlignment="Right" Margin="0,131,20,0" Name="txtStatus" Width="194" Height="25" VerticalAlignment="Top" />
+        <Inspire:InfoTextBox TextBoxInfo="Horizontal / Vertical?" HorizontalAlignment="Right" Margin="0,165,20,0" Name="txtOrientation" Width="194" Height="25" VerticalAlignment="Top" />
+        <Button Height="35" HorizontalAlignment="Right" Margin="0,0,139,5" VerticalAlignment="Bottom" Width="128" Command="{x:Static Commands:InspireCommands.SaveDisplayFormCommand}">Save</Button>
+        <Button Height="35" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="128" Margin="0,0,5,5" Click="btnCancel_Click">Cancel</Button>
+        <ComboBox Height="25" HorizontalAlignment="Right" Margin="0,197,20,220" Name="cbProperty" Width="194" ItemTemplate="{StaticResource PropertyComboTemplate}" DropDownClosed="cbProperty_DropDownClosed" />
+        <ComboBox HorizontalAlignment="Right" Margin="0,0,20,189" Name="cbGroup"  Width="194" Height="25" VerticalAlignment="Bottom" ItemTemplate="{StaticResource GroupComboTemplate}" />
+        <Label Height="28" HorizontalAlignment="Right" Margin="0,0,12,122" Name="lblGuid" VerticalAlignment="Bottom" Width="292" Visibility="Hidden">Label</Label>
+    </Grid>
+</Window>

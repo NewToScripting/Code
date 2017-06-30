@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="43d92c52-2f10-4dc7-b44f-80414c5d05cd" name="jhaveard@CAPEHORN 2009-10-04 15:47:51" runUser="CAPEHORN\jhaveard" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="f87716d9-9b5a-43ed-b471-b2677316cf16">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\CODE\InspireServer\Events Server\_RebuildAll\TestResults\jhaveard_CAPEHORN 2009-10-04 15_47_51">
+      <DeploymentItem filename="C:\CODE\InspireServer\Events Server\Inspire.Server.Events\Inspire.Events\Source\Resource Access\Inspire.Feeds.DataAccess\bin\Debug\Inspire.Server.Events.DataAccess.dll" />
+      <DeploymentItem filename="C:\CODE\InspireServer\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.ServiceImplementation\bin\Debug\Inspire.Server.Direction.ServiceImplementation.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="CAPEHORN" outcome="Error" timestamp="2009-10-04T15:48:13.2716137-04:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <Times creation="2009-10-04T15:47:51.5226137-04:00" queuing="2009-10-04T15:47:53.0166137-04:00" start="2009-10-04T15:47:53.2776137-04:00" finish="2009-10-04T15:48:13.2726137-04:00" />
+  <TestDefinitions>
+    <UnitTest name="LoadNewEvents" storage="c:\code\inspireserver\events server\_rebuildall\events.unit.tests\bin\debug\events.unit.tests.dll" id="b862f161-07fc-bd47-d9af-d26885785c72">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\CODE\InspireServer\Events Server\_RebuildAll\Events.Unit.Tests\bin\Debug\Events.Unit.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Events.Unit.Tests.EventTests, Events.Unit.Tests" name="LoadNewEvents" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b862f161-07fc-bd47-d9af-d26885785c72" executionId="4c3a65fb-5fe7-4c79-90af-e385fb3e244f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4c3a65fb-5fe7-4c79-90af-e385fb3e244f" testId="b862f161-07fc-bd47-d9af-d26885785c72" testName="LoadNewEvents" computerName="CAPEHORN" duration="00:00:19.8830000" startTime="2009-10-04T15:47:53.3896137-04:00" endTime="2009-10-04T15:48:13.2726137-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

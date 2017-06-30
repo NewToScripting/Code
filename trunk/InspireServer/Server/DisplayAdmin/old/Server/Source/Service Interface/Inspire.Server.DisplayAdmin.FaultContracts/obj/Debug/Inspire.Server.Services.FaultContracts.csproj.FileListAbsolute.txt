@@ -1,0 +1,10 @@
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\bin\Debug\Inspire.Server.Services.FaultContracts.dll
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\bin\Debug\Inspire.Server.Services.FaultContracts.pdb
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\Inspire.Server.Services.FaultContracts.dll
+C:\TSSERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\Inspire.Server.Services.FaultContracts.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\bin\Debug\Inspire.Server.Services.FaultContracts.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\bin\Debug\Inspire.Server.Services.FaultContracts.pdb
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\Inspire.Server.Services.FaultContracts.dll
+C:\WORKING_NO_SERVER\Inspire.Server\Inspire.Server.Services\Source\Service Interface\Inspire.Server.Services.FaultContracts\obj\Debug\Inspire.Server.Services.FaultContracts.pdb

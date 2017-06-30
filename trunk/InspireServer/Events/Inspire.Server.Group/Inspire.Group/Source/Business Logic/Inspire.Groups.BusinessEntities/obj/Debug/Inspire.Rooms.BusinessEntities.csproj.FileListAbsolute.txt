@@ -1,0 +1,10 @@
+C:\Users\jhaveard\Desktop\Rooms\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\bin\Debug\Inspire.Rooms.BusinessEntities.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Rooms\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\bin\Debug\Inspire.Rooms.BusinessEntities.BusinessEntities.pdb
+C:\Users\jhaveard\Desktop\Rooms\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jhaveard\Desktop\Rooms\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\Inspire.Rooms.BusinessEntities.BusinessEntities.dll
+C:\Users\jhaveard\Desktop\Rooms\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\Inspire.Rooms.BusinessEntities.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\bin\Debug\Inspire.Rooms.BusinessEntities.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\bin\Debug\Inspire.Rooms.BusinessEntities.BusinessEntities.pdb
+C:\_INSPIRE_WORKING\06242008\RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\Inspire.Rooms.BusinessEntities.BusinessEntities.dll
+C:\_INSPIRE_WORKING\06242008\RoomsManager\Inspire.Rooms\Source\Business Logic\Inspire.Rooms.BusinessEntities\obj\Debug\Inspire.Rooms.BusinessEntities.BusinessEntities.pdb

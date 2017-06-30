@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://DataContract.InspireDisplays.com" elementFormDefault="qualified" targetNamespace="http://DataContract.InspireDisplays.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Schedules">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Schedules" nillable="true" type="tns:Schedule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Schedules" nillable="true" type="tns:Schedules" />
+  <xs:complexType name="Schedule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GUID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EndTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Priority" type="xs:int" />
+      <xs:element minOccurs="0" name="Days" type="xs:int" />
+      <xs:element minOccurs="0" name="Mode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScheduleSlides" nillable="true" type="tns:ScheduleSlides" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Schedule" nillable="true" type="tns:Schedule" />
+  <xs:complexType name="ScheduleSlides">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ScheduleSlides" nillable="true" type="tns:ScheduleSlide" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScheduleSlides" nillable="true" type="tns:ScheduleSlides" />
+  <xs:complexType name="ScheduleSlide">
+    <xs:sequence>
+      <xs:element name="GUID" nillable="true" type="xs:string" />
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element name="Duration" type="xs:dateTime" />
+      <xs:element name="ScheduleID" nillable="true" type="xs:string" />
+      <xs:element name="OriginalSlideID" nillable="true" type="xs:string" />
+      <xs:element name="Version" nillable="true" type="xs:string" />
+      <xs:element name="Transition" nillable="true" type="xs:string" />
+      <xs:element name="TransitionSpeed" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScheduleSlide" nillable="true" type="tns:ScheduleSlide" />
+</xs:schema>

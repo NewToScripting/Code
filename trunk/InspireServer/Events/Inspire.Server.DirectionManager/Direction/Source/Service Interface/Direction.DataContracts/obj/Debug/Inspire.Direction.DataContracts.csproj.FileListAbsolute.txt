@@ -1,0 +1,15 @@
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.DataContracts\bin\Debug\Inspire.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.DataContracts\bin\Debug\Inspire.Direction.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.DataContracts\obj\Debug\Inspire.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Events\Source\Service Interface\Events.DataContracts\obj\Debug\Inspire.Direction.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.DataContracts\bin\Debug\Inspire.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.DataContracts\bin\Debug\Inspire.Direction.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.DataContracts\obj\Debug\Inspire.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\DirectionManager\Direction\Source\Service Interface\Direction.DataContracts\obj\Debug\Inspire.Direction.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.DataContracts\bin\Debug\Inspire.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.DataContracts\bin\Debug\Inspire.Direction.DataContracts.pdb
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.DataContracts\obj\Debug\ResolveAssemblyReference.cache
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.DataContracts\obj\Debug\Inspire.Direction.DataContracts.dll
+C:\_INSPIRE_WORKING\06242008\QA Ready\Events Server\Inspire.Server.DirectionManager\Direction\Source\Service Interface\Direction.DataContracts\obj\Debug\Inspire.Direction.DataContracts.pdb
